@@ -916,6 +916,30 @@ Changes:
       label.textContent = discount + '% OFF';
       label.style.display = discount > 0 ? 'inline-block' : 'none';
     }
+
+    const btn =
+      section.querySelector('button[name="add"]') ||
+      (form && form.querySelector('button[type="submit"]'));
+
+    if (btn) {
+      btn.disabled = !variant.available;
+
+      const text = variant.available
+        ? 'Add to Cart  -  ' + formatPrice(discountedPrice)
+        : 'Sold Out  -  ' + formatPrice(discountedPrice);
+
+      // Prefer a dedicated text element so icons/spinners inside the button survive
+      const textEl =
+        btn.querySelector('[data-add-to-cart-text]') ||
+        btn.querySelector('[data-atc-text]') ||
+        btn.querySelector('span:not([class*="icon"]):not([class*="loader"])');
+
+      if (textEl) {
+        textEl.textContent = text;
+      } else {
+        btn.textContent = text;
+      }
+    }
   }
 
   // Listen on the whole section so events from inputs outside the <form> are caught
