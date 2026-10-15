@@ -1,0 +1,102 @@
+  <div class="form-vertical appear-delay-1">
+    <!-- <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+          <script>
+            hbspt.forms.create({
+              region: "na1",
+              portalId: "3362171",
+              formId: "e8b7a149-1881-4a3f-94b6-94063c7b56e3"
+            });
+          </script> -->
+    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+      <script>
+        hbspt.forms.create({
+          portalId: "3362171",
+          formId: "e8b7a149-1881-4a3f-94b6-94063c7b56e3"
+        });
+      </script>
+     <!-- formId: "a1458032-91b2-4f25-8221-70a7a7e77994" -->
+    {% comment %}
+          {%- assign form_id = 'contact-' | append: section.id -%}
+          {%- form 'contact', id: form_id -%}
+
+            {%- if form.posted_successfully? -%}
+              <p class="note note--success">
+                {{ 'contact.form.post_success' | t }}
+              </p>
+            {%- endif -%}
+
+            {{ form.errors | default_errors }}
+
+            <div class="grid grid--small">
+              <div class="grid__item medium-up--one-half">
+                <label for="ContactFormName-{{ section.id }}">First Name</label>
+                <input type="text" id="ContactFormName-{{ section.id }}" class="input-full" name="contact[First Name]" autocapitalize="words" value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}">
+              </div>
+<div class="grid__item medium-up--one-half">
+                <label for="ContactFormEmail-{{ section.id }}">Last Name</label>
+                <input type="text" id="ContactFormEmail-{{ section.id }}" class="input-full" name="contact[Last Name]" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+              </div>          
+            </div>
+            <div class="grid grid--small">
+              <div class="grid__item medium-up--one-half">
+                <label for="ContactFormEmail-{{ section.id }}">{{ 'contact.form.email' | t }}</label>
+                <input type="email" id="ContactFormEmail-{{ section.id }}" class="input-full" name="contact[email]" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+              </div>
+              <div class="grid__item medium-up--one-half">
+                <label for="ContactFormEmail-{{ section.id }}">Phone Nmber</label>
+                <input type="tel" id="ContactFormEmail-{{ section.id }}" class="input-full" name="contact[Phone Nmber]" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+              </div>
+            </div>
+
+             <div class="grid grid--small">
+              <div class="grid__item medium-up--one-half">
+                <label for="ContactFormEmail-{{ section.id }}">Are you a spa owner/esthetician? <span class="red">*</span></label>
+                <select name="contact[esthetician]">
+                  <option value="a"></option>
+                  <option value="b"></option>
+                  <option value="c"></option>
+                </select>
+              </div>
+              <div class="grid__item medium-up--one-half">
+                <label for="ContactFormEmail-{{ section.id }}">Years Of Experience</label>
+                <select name="contact[Experience]">
+                  <option value="a"></option>
+                  <option value="b"></option>
+                  <option value="c"></option>
+                </select>
+              </div>
+            </div>
+            <div class="checkbox-field">
+              <label for="ContactFormEmail-{{ section.id }}" class="rp_label">Do you own a microcurrent machine?<span class="red">*</span></label>
+              <div class="wrp_box">
+              <div class="checkbox_mail">                
+              <input type="checkbox" class="input-full" name="contact[Phone Nmber]"  value="Yes">
+                <label>Yes</label>
+              </div>
+              <div class="checkbox_mail">                
+              <input type="checkbox" class="input-full" name="contact[Phone Nmber]"  value="No">
+              <label>No</label>
+              </div>
+              </div>
+            </div>
+            <label for="ContactFormEmail-{{ section.id }}">What best describes you?<span class="red">*</span></label>
+            <select name="contact[describes]">
+              <option value="a"></option>
+              <option value="b"></option>
+              <option value="c"></option>
+            </select>
+            <label for="ContactFormMessage-{{ section.id }}">What state do you live in?<span class="red">*</span></label>
+            <input type="text" id="ContactFormEmail-{{ section.id }}" class="input-full" name="contact[state]" autocapitalize="off" value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}">
+
+            <label for="contact-form-submit-{{ section.id }}" class="hidden-label">{{ 'contact.form.send' | t }}</label>
+            <button type="submit" id="contact-form-submit-{{ section.id }}" class="btn">Submit</button>          
+          {%- endform -%}
+          {% endcomment %}
+        </div>
+
+        <style>
+           .actions {
+    display: flex !important;
+    justify-content: end !important;
+}
+        </style>

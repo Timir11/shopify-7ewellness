@@ -1,0 +1,72 @@
+{% schema %}
+{
+  "name": "As Seen In Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section Heading",
+      "default": "AS SEEN IN"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Select Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "As Seen In Section",
+      "category": "Custom Sections"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="as-seen-in-section">
+  <h2>{{ section.settings.heading }}</h2>
+  <div class="image-container">
+    {% for block in section.blocks %}
+      {% if block.type == 'image' %}
+        <div class="image-wrapper">
+          <img src="{{ block.settings.image | img_url: 'medium' }}" alt="As Seen In">
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+<style>
+.as-seen-in-section {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+}
+.as-seen-in-section h2 {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.image-wrapper img {
+  max-width: 100%;
+  height: auto;
+}
+  @media only screen and (max-width: 767px) {
+    .tabs {        
+        flex-wrap: unset !important;
+    }
+}
+</style>

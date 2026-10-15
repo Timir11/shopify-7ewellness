@@ -1,0 +1,86 @@
+{
+  "sections": {
+    "collection-filters": {
+      "type": "collection-filters",
+      "disabled": true,
+      "settings": {
+        "enable_color_swatches": false,
+        "collection_sort_enable": false
+      }
+    },
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "collection_image_enable": true,
+        "description_enable": false
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "per_row_desktop": 3,
+            "per_row_mobile": "1"
+          }
+        }
+      },
+      "block_order": [
+        "product_grid"
+      ],
+      "settings": {}
+    },
+    "08c85762-02ee-4924-b8c7-dda37d72261b": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--15064316641334__08c85762-02ee-4924-b8c7-dda37d72261b-liquid-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>Why Myolearning?<\/h2><p>Myolearning is a platform that allows you to expand upon your microcurrent knowledge, all at your own pace! Learn the foundation and fundamentals of microcurrent from our founder, Pooja Johari, and get certified so you can incorporate it into your professional services. In these classes you will learn the history, techniques, and safety of microcurrent through powerpoint presentations and hands-on demonstrations. New classes will be continuously added as we build upon this curriculum to give you the best educational platform about microcurrent technology.<\/p>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15064316641334__08c85762-02ee-4924-b8c7-dda37d72261b-liquid-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "1762818c-6b0f-4f9c-9add-eed64cc556b4": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--15064316641334__1762818c-6b0f-4f9c-9add-eed64cc556b4-liquid-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h5>Still Have Questions?\nEmail us at <a href=\"mailto:info@7ewellness.com\">info@7ewellness.com<\/a><\/h5>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15064316641334__1762818c-6b0f-4f9c-9add-eed64cc556b4-liquid-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "alt": false,
+        "lazyload_images": true
+      }
+    }
+  },
+  "order": [
+    "collection-filters",
+    "collection-header",
+    "main-collection",
+    "08c85762-02ee-4924-b8c7-dda37d72261b",
+    "1762818c-6b0f-4f9c-9add-eed64cc556b4"
+  ]
+}

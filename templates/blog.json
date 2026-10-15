@@ -1,0 +1,73 @@
+{
+  "sections": {
+    "rich_text_M4EN7C": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_wbN89b": {
+          "type": "heading",
+          "settings": {
+            "title": "7e Beauty Blog"
+          }
+        },
+        "text_HCLnki": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>Learn about the benefits of microcurrent, and how it's leveraged as a holistic treatment for mind, body and skin wellness<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_wbN89b",
+        "text_HCLnki"
+      ],
+      "disabled": true,
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": false
+      }
+    },
+    "main": {
+      "type": "blog-template",
+      "blocks": {
+        "trending_blog_JBCqn6": {
+          "type": "trending-blog",
+          "settings": {
+            "title": "",
+            "blog": "news-and-press-release",
+            "post_limit": 4
+          }
+        },
+        "popular_blog_Mt8krg": {
+          "type": "popular-blog",
+          "settings": {
+            "title": "Trending",
+            "blog": "myolift-reviews",
+            "post_limit": 3
+          }
+        }
+      },
+      "block_order": [
+        "trending_blog_JBCqn6",
+        "popular_blog_Mt8krg"
+      ],
+      "settings": {
+        "layout": "grid",
+        "post_limit": 6,
+        "blog_show_tag_filter": true,
+        "blog_show_rss": false,
+        "blog_show_tags": false,
+        "blog_show_date": true,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "blog_show_excerpt": true,
+        "blog_image_size": "natural"
+      }
+    }
+  },
+  "order": [
+    "rich_text_M4EN7C",
+    "main"
+  ]
+}

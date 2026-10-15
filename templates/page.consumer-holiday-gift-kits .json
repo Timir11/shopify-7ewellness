@@ -1,0 +1,124 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "3af290d3-0f90-4e1d-b8fb-da1cd3942703": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14811361312822__3af290d3-0f90-4e1d-b8fb-da1cd3942703-1665472206d0100250-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/desktop_consumer_landing_page_banner_5-1-2023_revised.png",
+            "image_mobile": "shopify:\/\/shop_images\/7e-_new_year_banner-2022-mobile_640_x_1136px_640_x_1156px_848ae1e8-2e64-4faf-b7a7-d9863d0c565e.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--14811361312822__3af290d3-0f90-4e1d-b8fb-da1cd3942703-1665472206d0100250-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "8e6bed0c-1891-4a3d-abfb-8e2d76c99b81": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14811361312822__8e6bed0c-1891-4a3d-abfb-8e2d76c99b81-16654721961eec1285-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<!--<h2>Tis THE SEASON<\/h2>\n<h6>To Uplift Your Confidence With A Limited Edition Set<\/h6>-->\n<h2>Tis THE SEASON<\/h2>\n<h6>To Indulge In Self Care<\/h6>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14811361312822__8e6bed0c-1891-4a3d-abfb-8e2d76c99b81-16654721961eec1285-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "alt": false
+      }
+    },
+    "c42241c1-bf09-4779-a50f-ac5974f650e1": {
+      "type": "testimonials",
+      "blocks": {
+        "template--14811361312822__c42241c1-bf09-4779-a50f-ac5974f650e1-16654723268c573acd-0": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>\"I love this masks! use them everyday and alternate the forehead & the eye mask by using the splitting cord. They are very convenient  to use and you can reuse them several times.\"<\/p><p><strong>★★★★★<\/strong><\/p>",
+            "author": "Karen"
+          }
+        },
+        "template--14811361312822__c42241c1-bf09-4779-a50f-ac5974f650e1-16654723268c573acd-1": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>\"I decided to upgrade to the MyoLift QT for a few reasons. The app which guides me to how to use it on a daily basis, the mask and the device itself. I used the eye mask last night and the hands free option is wonderful. I did the facial routine and have definitely noticed a difference in my face.\"<\/p><p><strong>★★★★★<\/strong><\/p>",
+            "author": "Diem"
+          }
+        },
+        "8a1af72e-ed5c-4ffc-9ce1-474b7b2f3b2a": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>\"I'm so glad I found the MyoLift Mini. After my first use I saw immediate results which makes me excited to continue using it to make those results last. I love the ability to see the connectivity and I love how it feels so similar to this process during a facial.\"<\/p><p><strong>★★★★★<\/strong><\/p>",
+            "author": "Rachel"
+          }
+        }
+      },
+      "block_order": [
+        "template--14811361312822__c42241c1-bf09-4779-a50f-ac5974f650e1-16654723268c573acd-0",
+        "template--14811361312822__c42241c1-bf09-4779-a50f-ac5974f650e1-16654723268c573acd-1",
+        "8a1af72e-ed5c-4ffc-9ce1-474b7b2f3b2a"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "round_images": true,
+        "alt": true
+      }
+    },
+    "e615bb35-0572-489f-8a5c-ce5067bf02fb": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14811361312822__e615bb35-0572-489f-8a5c-ce5067bf02fb-166555845007976cd9-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"checkout_btn_phl\">\n<a href=\"javascript:void(0);\" data-toggle=\"modal\" data-target=\"#checkoutModal\" class=\"btn\">Continue To Checkout<\/a>\n<\/div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14811361312822__e615bb35-0572-489f-8a5c-ce5067bf02fb-166555845007976cd9-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "3af290d3-0f90-4e1d-b8fb-da1cd3942703",
+    "8e6bed0c-1891-4a3d-abfb-8e2d76c99b81",
+    "c42241c1-bf09-4779-a50f-ac5974f650e1",
+    "e615bb35-0572-489f-8a5c-ce5067bf02fb"
+  ]
+}

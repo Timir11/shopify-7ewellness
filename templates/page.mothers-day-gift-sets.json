@@ -1,0 +1,99 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "165025518398dc9679": {
+      "type": "slideshow",
+      "blocks": {
+        "1650255183670555ca-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 60,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-right",
+            "image": "shopify:\/\/shop_images\/Banners-Consumer_1920_x_700_px.png",
+            "image_mobile": "shopify:\/\/shop_images\/mobile-banner_revised.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "1650255183670555ca-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "16502580091432503b": {
+      "type": "rich-text",
+      "blocks": {
+        "165025800921eac737-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p><strong>Our best-selling sets are back!<\/strong><br\/>Purchase any set & receive a FREE MyoLift Brush.<br\/>Spoil your mom with these limited edition sets.<br\/><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "165025800921eac737-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": false
+      }
+    },
+    "1650258913fb8ebe3e": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "",
+        "description": "",
+        "home_featured_products": "mothers-day-gift-sets-1",
+        "rows": 2,
+        "per_row_desktop": 3,
+        "per_row_mobile": "1",
+        "view_all": false,
+        "alt": false
+      }
+    },
+    "16502581578e9fad6a": {
+      "type": "advanced-content",
+      "blocks": {
+        "4b550888-58fa-443a-b5bb-399bab9edfb7": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"mothersday-blog\">\n<div class=\"desktop-image\">\n<a href=\"https:\/\/www.7ewellness.com\/blogs\/infuse-your-spa\/why-microcurrent-is-the-perfect-mothers-day-gift\"><img class=\"lazyload\" data-sizes=\"auto\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2745\/9950\/files\/blog-image-for-consumer-landing-page_1296x.jpg?v=1651128573\"><\/a><\/div>\n<div class=\"mobile-image\">\n<a href=\"https:\/\/www.7ewellness.com\/blogs\/infuse-your-spa\/why-microcurrent-is-the-perfect-mothers-day-gift\"><img class=\"lazyload\" data-sizes=\"auto\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2745\/9950\/files\/mobile_blog-image_1600x.png?v=1650353096\"><\/a><\/div>\n<\/div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "4b550888-58fa-443a-b5bb-399bab9edfb7"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "165025518398dc9679",
+    "16502580091432503b",
+    "1650258913fb8ebe3e",
+    "16502581578e9fad6a"
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "164701526357befb22": {
+      "type": "faq",
+      "blocks": {
+        "16470152633ab81ba1-0": {
+          "type": "question",
+          "settings": {
+            "title": "Lesson 1.0 | Intro to 7E Wellness",
+            "text": "<p>a. <a href=\"https:\/\/www.dropbox.com\/s\/uey412sva0zwesr\/Lesson%20Plan%201.0%20Introduction%20to%207E%20Wellness.docx?dl=1\" title=\"Lesson plan Intro to 7E Wellness\">Lesson Plan: Introduction to 7E Wellness<\/a><\/p><p><a href=\"https:\/\/www.dropbox.com\/s\/pr0nu5ib78ca64n\/Lesson%201.0%20Introduction%20to%207E%20Wellness%20teacher%20copy.pdf?dl=1\" title=\"PPT Intro to 7E Wellness\">b. Powerpoint Presentation: Introduction to 7E Wellness<\/a><\/p>"
+          }
+        },
+        "16470152633ab81ba1-1": {
+          "type": "question",
+          "settings": {
+            "title": "Lesson 1.1 | Intro to Microcurrent Technologies",
+            "text": "<p>a. <a href=\"https:\/\/www.dropbox.com\/s\/98cf4nb7qdm8hvu\/Lesson%20Plan%201.1%20Introduction%20to%20Microcurrent%20Technologies.docx?dl=1\" title=\"Lesson Plan: Intro to Microcurrent Technologies\">Lesson Plan: Intro to Microcurrent Technologies<\/a><\/p><p>b. <a href=\"https:\/\/www.dropbox.com\/s\/shmotkhah58te62\/Lesson%201.1%20Intro%20to%20Microcurrent%20Technologies%20teacher%20copy.pdf?dl=1\" title=\"Powerpoint Presentation: Intro to Microcurrent Technologies\">Powerpoint Presentation: Intro to Microcurrent Technologies<\/a><\/p>"
+          }
+        },
+        "eb825e2e-bf1e-4663-9612-4bff183dfa4d": {
+          "type": "question",
+          "settings": {
+            "title": "Lesson 1.2 | Understanding Microcurrent Waveforms",
+            "text": "<p>a. <a href=\"https:\/\/www.dropbox.com\/s\/i6r4p09qvf7dp54\/Lesson%20Plan%201.2%20Understanding%20Microcurrent%20Waveforms.docx?dl=1\" title=\"Lesson Plan: Understanding Microcurrent Waveforms\">Lesson Plan: Understanding Microcurrent Waveforms<\/a><\/p><p>b. <a href=\"https:\/\/www.dropbox.com\/s\/oyhh7s3g3kyd0yb\/Lesson%201.2%20Understanding%20Microcurrent%20Waveform%20teacher%20copy.pdf?dl=1\" title=\"Powerpoint Presentation: Understanding Microcurrent Waveforms\">Powerpoint Presentation: Understanding Microcurrent Waveforms<\/a><\/p>"
+          }
+        },
+        "170e16d7-a654-4cf9-b1e0-df26e032d182": {
+          "type": "question",
+          "settings": {
+            "title": "Lesson 1.3 | Microcurrent, the Skin, and the Muscles",
+            "text": "<p>a. <a href=\"https:\/\/www.dropbox.com\/s\/ompgb8befsrvd4s\/Lesson%20Plan%201.3%20Microcurrent%20and%20the%20SKin%20and%20Muscles.docx?dl=1\" title=\"Lesson Plan: Microcurrent, the Skin, and the Muscles\">Lesson Plan: Microcurrent, the Skin, and the Muscles<\/a><\/p><p>b. <a href=\"https:\/\/www.dropbox.com\/s\/s7i8t33xxneqbqu\/Lesson%201.3%20Microcurrent%20the%20skin%20%26%20muscles%20teacher%20copy.pdf?dl=1\" title=\"Powerpoint Presentation: Microcurrent, the Skin, and the Muscles\">Powerpoint Presentation: Microcurrent, the Skin, and the Muscles<\/a><\/p>"
+          }
+        },
+        "6f7834e3-2469-4d41-870f-0935e3aa5e5e": {
+          "type": "question",
+          "settings": {
+            "title": "Lesson 2.1 | Introduction to MyoLift™ MD",
+            "text": "<p>a. <a href=\"https:\/\/www.dropbox.com\/s\/j8vyvhhp725hqz4\/Lesson%20Plan%202.1%20MyoLift%20MD%20Operations%20Manual.docx?dl=1\" title=\"Lesson Plan MyoLift™ MD Operations Manual\">Lesson Plan: Introduction to MyoLift™ MD (Operations Manual)<\/a><\/p><p>b. <a href=\"https:\/\/www.dropbox.com\/s\/fdc4t09zb2k78ws\/Lesson%202.1a%20Myolift%20MD%20Operations%20Manual.pdf?dl=1\" title=\"Powerpoint Presentation: Introduction to MyoLift™ MD (Operations Manual)\">Powerpoint Presentation: Introduction to MyoLift™ MD (Operations Manual)<\/a><\/p><p>c. <a href=\"https:\/\/www.dropbox.com\/s\/xoo8xjvklsh1w0h\/Lesson%202.1b%20Myolift%20MD%20Training%20Manual.pdf?dl=1\" title=\"Powerpoint Presentation: Introduction to MyoLift™ MD (Training Manual)\">Powerpoint Presentation: Introduction to MyoLift™ MD (Training Manual)<\/a><\/p>"
+          }
+        },
+        "d2d39d1f-1141-45bc-a4a6-9ce62a3aacf2": {
+          "type": "question",
+          "settings": {
+            "title": "Lesson 2.2 | MyoLift™ MD Waveform Patterns & Preset Treatments",
+            "text": "<p>a. <a href=\"https:\/\/www.dropbox.com\/s\/zuezjkax67pet9q\/Lesson%202.2%20MyoLift%20MD%20Waveforms%20and%20Preset%20Programs.pdf?dl=1\" title=\"Powerpoint Presentation: MyoLift™ MD Waveform Patterns & Preset Treatments\">Powerpoint Presentation: MyoLift™ MD Waveform Patterns & Preset Treatments<\/a><\/p><p>b. <a href=\"https:\/\/www.dropbox.com\/s\/9sp1jasrh4y98qx\/Quick%20Reference%20Guide.pdf?dl=0\" title=\"Powerpoint Presentation: MyoLift™ MD Quick Reference Guide\">Powerpoint Presentation: MyoLift™ MD Quick Reference Guide<\/a><\/p>"
+          }
+        },
+        "c46043c6-8c6f-4413-b571-c059e14295b8": {
+          "type": "question",
+          "settings": {
+            "title": "Lesson 3.1 | Introduction to MyoLift™ Beauty Glow Treatment",
+            "text": "<p>a. <a href=\"https:\/\/www.dropbox.com\/s\/1i7lmb7r3opyof8\/Lesson%20Plan%203.1%20Introduction%20to%20MyoLift%20Beauty%20%26%20MyoLift%20Beauty%20Glow%20Treatment%20Protocol.docx?dl=1\" title=\"Lesson Plan: Introduction to MyoLift™ Beauty Glow Treatment\">Lesson Plan: Introduction to MyoLift™ Beauty Glow Treatment<\/a><\/p><p>b. <a href=\"https:\/\/www.dropbox.com\/s\/1g4oisynoxoxls6\/Lesson%203.1%20Myolift%20Beauty%20Training%20Manual%20teachers%20copy.pdf?dl=1\" title=\"Powerpoint Introduction to Glow Treatment\">Powerpoint Presentation: Introduction to MyoLift™ Beauty Glow Treatment<\/a><\/p>"
+          }
+        },
+        "cbc50693-b151-4a6c-85db-a49ed4eefa03": {
+          "type": "question",
+          "settings": {
+            "title": "Lesson 3.2 | MyoLift™ Beauty Glow Demo",
+            "text": "<p>a. <a href=\"https:\/\/www.dropbox.com\/s\/g0niqry8o9xn5j9\/Lesson%20Plan%203.2%20MyoLift%20Beauty%20Glow%20Video%20Demonstration.docx?dl=1\" title=\"Lesson Plan: MyoLift™ Beauty Glow Demo\">Lesson Plan: MyoLift™ Beauty Glow Demo<\/a><\/p><p>b. <a href=\"https:\/\/www.dropbox.com\/s\/j8qnlqmwawnylao\/Myolift%20Beauty%20Glow%20Protocol.mp4?dl=0\" title=\"Powerpoint Presentation: MyoLift™ Beauty Glow Demo\">Powerpoint Presentation: MyoLift™ Beauty Glow Demo<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16470152633ab81ba1-0",
+        "16470152633ab81ba1-1",
+        "eb825e2e-bf1e-4663-9612-4bff183dfa4d",
+        "170e16d7-a654-4cf9-b1e0-df26e032d182",
+        "6f7834e3-2469-4d41-870f-0935e3aa5e5e",
+        "d2d39d1f-1141-45bc-a4a6-9ce62a3aacf2",
+        "c46043c6-8c6f-4413-b571-c059e14295b8",
+        "cbc50693-b151-4a6c-85db-a49ed4eefa03"
+      ],
+      "settings": {
+        "title": "DAY ONE"
+      }
+    },
+    "164740370361ea6acb": {
+      "type": "faq",
+      "blocks": {
+        "1647403703ca3431db-0": {
+          "type": "question",
+          "settings": {
+            "title": "Lesson 3.3 | Introduction to Conductivity Gel",
+            "text": "<p>a.<a href=\"https:\/\/www.dropbox.com\/s\/qha3qlg7e074pzq\/Lesson%20Plan%203.3%207E%20Conductivity%20Gel%20Brochure.docx?dl=1\" title=\"Lesson Plan: Introduction to Conductivity Gel\">Lesson Plan: Introduction to Conductivity Gel<\/a><\/p>"
+          }
+        },
+        "1647403703ca3431db-1": {
+          "type": "question",
+          "settings": {
+            "title": "Lesson 3.4 | MyoLift™ Beauty Glow Student Practical",
+            "text": "<p>a.<a href=\"https:\/\/www.dropbox.com\/s\/y9bons2w6mk1paw\/Lesson%20Plan%203.4%20MyoLift%20Beauty%20Glow%20Treatment%20Student%20Practical.docx?dl=1\" title=\"Lesson Plan: MyoLift™ Beauty Glow Student Practical\">Lesson Plan: MyoLift™ Beauty Glow Student Practical<\/a><\/p>"
+          }
+        },
+        "08a4fa4b-5ef7-4e49-b02d-0ae87849c2f9": {
+          "type": "question",
+          "settings": {
+            "title": "Lesson 4.1 | Client Consultation & Assessment",
+            "text": "<p>a. <a href=\"https:\/\/www.dropbox.com\/s\/jmzot6no8784hh5\/Lesson%20Plan%204.1%20Consultation%20and%20Assessment.docx?dl=1\" title=\"Lesson Plan: Client Consultation & Assessment\">Lesson Plan: Client Consultation & Assessment<\/a><\/p><p>b. <a href=\"https:\/\/www.dropbox.com\/s\/p0al3junfm5mwb9\/Lesson%204.1%20Client%20Consutlation%20%26%20Assessment.pdf?dl=1\" title=\"Powerpoint Presentation: Client Consultation & Assessment\">Powerpoint Presentation: Client Consultation & Assessment<\/a><\/p>"
+          }
+        },
+        "b6e32308-79aa-4625-b14e-aa0e9c535591": {
+          "type": "question",
+          "settings": {
+            "title": "Lesson 5.1 | Introduction to MyoLift™ Beauty Classic Treatment",
+            "text": "<p>a. <a href=\"https:\/\/www.dropbox.com\/s\/4q9bu2vsv2r3acb\/Lesson%20Plan%205.1%20Introduction%20to%20MyoLift%20Beauty%20Classic%20Treatment%20Protocol.docx?dl=1\" title=\"Lesson Plan: Introduction to MyoLift™ Beauty Classic Treatment\">Lesson Plan: Introduction to MyoLift™ Beauty Classic Treatment<\/a><\/p><p>b. <a href=\"https:\/\/www.dropbox.com\/s\/g89gpnbidq4gw4y\/MyoLift%20Beauty%20Protocol%20Manual.pdf?dl=1\" title=\"Powerpoint Presentation: MyoLift™ Beauty Protocol Manual\">Powerpoint Presentation: MyoLift™ Beauty Protocol Manual<\/a><\/p>"
+          }
+        },
+        "622b8060-45e8-4d9b-b3f3-3685ed6cbfec": {
+          "type": "question",
+          "settings": {
+            "title": "Lesson 5.2 | MyoLift™ Beauty Classic Demo",
+            "text": "<p>a. <a href=\"https:\/\/www.dropbox.com\/s\/8wmucf3eznlokge\/Lesson%20Plan%205.2%20MyoLift%20Beauty%20Class%20Video%20Presentation.docx?dl=1\" title=\"Lesson Plan for Classic Demo\">Lesson Plan: MyoLift™ Beauty Classic Demo<\/a><\/p><p>b. <a href=\"https:\/\/www.dropbox.com\/s\/g3pc6d2b7i26e9h\/Myolift%20Classic%20Beauty%20Protocol.mp4?dl=0\" title=\"Powerpoint Presentation: MyoLift™ Beauty Classic Demo\">Powerpoint Presentation: MyoLift™ Beauty Classic Demo<\/a><\/p>"
+          }
+        },
+        "f47d6f0c-1a27-467b-ae88-c79b7d07a89c": {
+          "type": "question",
+          "settings": {
+            "title": "Lesson 5.3 | MyoLift™ Beauty Classic Treatment Student Practical",
+            "text": "<p>a.<a href=\"https:\/\/www.dropbox.com\/s\/u2qwmvvrzz43vo4\/Lesson%20Plan%205.3%20MyoLift%20Beauty%20Classic%20Student%20Practical.docx?dl=1\" title=\"Lesson Plan: MyoLift™ Beauty Classic Treatment Student Practical\">Lesson Plan: MyoLift™ Beauty Classic Treatment Student Practical<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1647403703ca3431db-0",
+        "1647403703ca3431db-1",
+        "08a4fa4b-5ef7-4e49-b02d-0ae87849c2f9",
+        "b6e32308-79aa-4625-b14e-aa0e9c535591",
+        "622b8060-45e8-4d9b-b3f3-3685ed6cbfec",
+        "f47d6f0c-1a27-467b-ae88-c79b7d07a89c"
+      ],
+      "settings": {
+        "title": "DAY 2"
+      }
+    },
+    "1647403921dd63d4dc": {
+      "type": "faq",
+      "blocks": {
+        "164740392186237ba4-0": {
+          "type": "question",
+          "settings": {
+            "title": "Lesson 6.1 | Introduction to MyoLift™ Mini Operations",
+            "text": "<p>a. <a href=\"https:\/\/www.dropbox.com\/s\/xav7po5cb0volak\/Lesson%20Plan%206.1%20MyoLift%20Mini%20Operations.docx?dl=1\" title=\"Lesson Plan: Introduction to MyoLift™ Mini Operations\">Lesson Plan: Introduction to MyoLift™ Mini Operations<\/a><\/p><p>b. <a href=\"https:\/\/www.dropbox.com\/s\/yfu503cjelrtfen\/Lesson%206.1%20MyoLift%20Mini%20Operations%20teacher%20copy.pdf?dl=1\" title=\"Powerpoint Presentation: Introduction to MyoLift™ Mini Operations\">Powerpoint Presentation: Introduction to MyoLift™ Mini Operations<\/a><\/p>"
+          }
+        },
+        "164740392186237ba4-1": {
+          "type": "question",
+          "settings": {
+            "title": "Lesson 6.2 | MyoLift™ Mini Treatment Protocol",
+            "text": "<p>a.<a href=\"https:\/\/www.dropbox.com\/s\/i9usq7ykrjjsxss\/Lesson%206.2%20Myolift%20Mini%20Treatment%20Protocol%20teacher%20copy.pdf?dl=1\" title=\"Powerpoint Presentation: MyoLift™ Mini Treatment Protocol\">Powerpoint Presentation: MyoLift™ Mini Treatment Protocol<\/a><\/p>"
+          }
+        },
+        "bd958e7c-e147-41c9-ac98-2f40a09f2485": {
+          "type": "question",
+          "settings": {
+            "title": "Lesson 6.3 | MyoLift™ Mini Treatment Student Practical",
+            "text": "<p>a.<a href=\"https:\/\/www.dropbox.com\/s\/6b412a1fv1ar91i\/Lesson%20Plan%206.3%20MyoLift%20Mini%20Student%20Practical.docx?dl=1\" title=\"Lesson Plan: MyoLift™ Mini Treatment Student Practical\">Lesson Plan: MyoLift™ Mini Treatment Student Practical<\/a><\/p>"
+          }
+        },
+        "0bff9e62-73f7-4420-a711-2b0f5fa74aea": {
+          "type": "question",
+          "settings": {
+            "title": "Lesson 7.1 | MyoLift™ Marketing",
+            "text": "<p>a.<a href=\"https:\/\/www.dropbox.com\/s\/lpgo9daciz3tce7\/Lesson%20Plan%207.1%20MyoLift%20Marketing.docx?dl=1\" title=\"Lesson Plan: MyoLift™ Marketing\">Lesson Plan: MyoLift™ Marketing<\/a><\/p>"
+          }
+        },
+        "14627d44-e1e4-4a78-a8b1-56b831d44cb3": {
+          "type": "question",
+          "settings": {
+            "title": "Lesson 8.1 | MyoLift™ Microcurrent Certification",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "164740392186237ba4-0",
+        "164740392186237ba4-1",
+        "bd958e7c-e147-41c9-ac98-2f40a09f2485",
+        "0bff9e62-73f7-4420-a711-2b0f5fa74aea",
+        "14627d44-e1e4-4a78-a8b1-56b831d44cb3"
+      ],
+      "settings": {
+        "title": "DAY 3"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "164701526357befb22",
+    "164740370361ea6acb",
+    "1647403921dd63d4dc"
+  ]
+}

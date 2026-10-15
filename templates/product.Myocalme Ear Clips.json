@@ -1,0 +1,197 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "okendo_star_rating_TADRAg": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "metafiled_description_thCG4N": {
+          "type": "metafiled_description",
+          "settings": {
+            "is_meta_description": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "trust_badge_ka3aKe": {
+          "type": "trust_badge",
+          "settings": {
+            "trust_image": "shopify:\/\/shop_images\/Background_2x_9930748b-1cc8-4d33-b97d-a8c4c9db56ff.png"
+          }
+        },
+        "pop_up_rJzQ4w": {
+          "type": "pop_up",
+          "settings": {
+            "title": "Shipping & Handling",
+            "content": "<p>Free USA Ground shipment, Orders are processed within 2 business day. <\/p><p>International Orders Ships within 3 business day.  <\/p><p>International customers are required to pay Duty with their local custom agency. <\/p>"
+          }
+        },
+        "tab_TPkht9": {
+          "type": "tab",
+          "settings": {
+            "title": "What is this for?",
+            "content": "<p>These ear clips are intended to:<\/p><ul><li>Facilitate the delivery of cranial electrotherapy stimulation (CES) by connecting to the earlobes.<br\/><\/li><li>Serve as replacement accessories for the MyoCalme device.<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "tab_ddakF6": {
+          "type": "tab",
+          "settings": {
+            "title": "What is included?",
+            "content": "<p>One pair of <strong>Myocalme Ear Clips<\/strong>.<\/p>",
+            "page": ""
+          }
+        },
+        "66232a31-cb5f-4a67-97cf-d0377bb2fac6": {
+          "type": "tab",
+          "settings": {
+            "title": "How To Use",
+            "content": "<ol><li><strong>Preparation<\/strong>: Ensure the MyoCalme device is turned off.<br\/><\/li><li><strong>Application of Conductive Gel<\/strong>: Apply a small amount of conductive gel to the pads of the ear clips.<br\/><\/li><li><strong>Attachment<\/strong>: Gently attach the ear clips to your earlobes, ensuring a secure and comfortable fit.<br\/><\/li><li><strong>Connection<\/strong>: Plug the ear clips into the MyoCalme device using the appropriate cable.<br\/><\/li><\/ol><p><strong>Operation<\/strong>: Turn on the MyoCalme device and select the desired settings as per the user manual.<\/p>",
+            "page": ""
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "title": "Benefits",
+            "content": "<ul><li><strong>Effective Therapy<\/strong>: Ensures consistent and effective delivery of CES therapy.<br\/><\/li><li><strong>Convenience<\/strong>: Easy to attach and detach, facilitating hassle-free use.<br\/><\/li><li><strong>Replacement<\/strong>: Ideal as a spare or replacement to maintain uninterrupted therapy sessions.<br\/><\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed": {
+          "type": "tab",
+          "settings": {
+            "title": "Ingredients",
+            "content": "{{ product.metafields.custom.ingredients.value.ingredients | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "tab_QLEFEc": {
+          "type": "tab",
+          "settings": {
+            "title": "Product Features",
+            "content": "<ul><li><strong>Compatibility<\/strong>: Designed specifically for use with the MyoCalme device.<br\/><\/li><li><strong>Design<\/strong>: Comfortable and secure fit for effective CES therapy.<br\/><\/li><li><strong>SKU<\/strong>: 200-020<br\/><\/li><li><strong>Price<\/strong>: $9.99<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "tab_gFP7Fx": {
+          "type": "tab",
+          "settings": {
+            "title": "Device Support",
+            "content": "{{ product.metafields.custom.device_support.value.device_support | metafield_tag }}",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "okendo_star_rating_TADRAg",
+        "price",
+        "description",
+        "metafiled_description_thCG4N",
+        "buy_buttons",
+        "trust_badge_ka3aKe",
+        "pop_up_rJzQ4w",
+        "tab_TPkht9",
+        "tab_ddakF6",
+        "66232a31-cb5f-4a67-97cf-d0377bb2fac6",
+        "tab",
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed",
+        "tab_QLEFEc",
+        "tab_gFP7Fx"
+      ],
+      "settings": {
+        "product_image_size": "medium",
+        "product_image_type": "slider",
+        "thumbnail_height": "fixed",
+        "product_zoom_enable": true,
+        "enable_video_looping": true,
+        "product_video_style": "unmuted",
+        "product_label": "",
+        "btn_url": "",
+        "btn_txt": "",
+        "sku_enable": false
+      }
+    },
+    "17479202358c174cfb": {
+      "type": "apps",
+      "blocks": {
+        "okendo_reviews_widget_aNT3xU": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}",
+            "widget_type": "reviews_widget"
+          }
+        }
+      },
+      "block_order": [
+        "okendo_reviews_widget_aNT3xU"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "settings": {
+        "max_width": true
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {}
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "product_recommendations_heading": "Related products",
+        "related_count": 4
+      }
+    },
+    "featured_collection_pht7X9": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.featured_collection_grid.name",
+      "settings": {
+        "custom_class": "",
+        "title": "Featured collection grid",
+        "description": "",
+        "home_featured_products": "shop-all-microcurrent-accessories-tools",
+        "rows": 1,
+        "per_row_desktop": 4,
+        "per_row_mobile": "1",
+        "view_all": false,
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "17479202358c174cfb",
+    "sub",
+    "collection-return",
+    "product-recommendations",
+    "featured_collection_pht7X9"
+  ]
+}

@@ -1,0 +1,494 @@
+<style>
+/* Basic tab styles */
+.tabs  {
+    background: #F1F1F1;
+    padding: 40px 160px;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+ .tab-text {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom:16px;
+}
+
+.tab-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tab-links li {
+    margin-right: 15px;
+}
+
+.tab-links li a {
+    text-decoration: none;
+    padding: 8px 12px;
+    border: 1px solid #0000003d;
+    display: inline-block;
+    border-radius: 30px;
+    color: #333;
+    /* font-weight: bold; */
+    font-size: 14px;
+   text-align: center;
+}
+
+.tab-links li a.active {
+    background-color: #E8DFEE;
+    /* border-bottom: 3px solid #007bff; */
+   
+}
+
+.tab-content {
+    margin-top: 20px;
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 45px;
+}
+  .tab-flex{
+    display:flex;
+    flex-wrap: wrap;
+  }
+  .tab-pane {
+      display: none;
+  }
+  .tab-pane.active {
+      display: block;
+  }
+  .main-product-tab .tab-links{
+    border:none !IMPORTANT;
+    margin-bottom:20px;
+  }
+  .product-tabs-img  {
+      width: 130px;
+      margin-bottom: 10px;
+  }
+  .tab-title{
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .tab-left , .tab-right{
+    width:50%;
+    padding:0px 6px;
+  }
+  .tab-image{
+    width:100%;
+  }
+.button-flex {
+    margin: 38px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    align-content: center;
+    justify-content: space-around;
+}
+  .add-to-cart a {
+    border-radius: 30px;
+    background: #231F20;
+    padding: 10px 22px;
+    color: #ffffff;
+}
+  .add-to-cart{
+    font-size:16px;
+  }
+  .underline{
+    text-decoration:underline;
+    display:flex;
+  }
+  @media (max-width:991px){
+    .tabs {
+    padding: 20px 70px;
+  }
+    .tab-content {
+    padding: 18px;
+  }
+  @media (max-width:768px){
+    .tab-left, .tab-right {
+     width: 100%; 
+    }
+  }
+  @media (max-width:575px){
+    .tab-text {
+      font-size: 24px;
+      line-height:24px;
+    }
+    .tab-links li a {
+      font-size: 12px;
+    }
+    .product-tabs-img {
+      width: 190px;
+    }
+    .underline P{
+      margin:0px;
+    }
+    .tabs {
+    padding: 20px 22px;
+    }
+    .add-to-cart {
+    font-size: 12px;
+  }
+    .p-tab-description{
+       font-size: 12px;
+    }
+    .tab-title {
+    font-size: 18px;
+}
+  }
+
+</style>
+
+<section style="position:relative">
+  <div class="tabs main-product-tab">
+    <div class="tab-text " >MyoLift<sup>TM</sup> Microcurrent Products</div>
+      <ul class="tab-links main-tab">
+        {%  for block in section.blocks %}
+          {% if block.settings.product and  block.settings.product != ' blank ' %} 
+          <li><a href="#" class="{% if forloop.index == 1 %} active {% endif %}"  data-tab="tab{{ forloop.index }}"> {{ block.settings.product.title }} </a></li>
+        {% endif %}
+      {% endfor %}
+       
+      </ul>
+      
+      <div class="tab-content">
+         {%  for block in section.blocks %}
+         {% if block.settings.product and  block.settings.product != blank %} 
+          <div id="tab{{ forloop.index }}" class="tab-pane {% if forloop.index == 1 %} active {% endif %}">
+            <div class="tab-flex">
+            <div class="tab-left">
+               <div class="product-tabs-img">
+                 <a href="{{  block.settings.product.url }}">
+                <img src="{{ block.settings.product.featured_image | img_url: 'original' }}" alt="{{ forloop.index }}" width="" height="" />
+                 </a>
+              </div>
+              <a class="tab-title "href="{{ block.settings.product.url }}"> {{ block.settings.product.title }} </a>
+              <div class="p-tab-description">
+                {{ block.settings.product_des }}
+              </div>
+            </div>
+            <div class="tab-right">
+            {% if block.settings.product and block.settings.image != blank %}
+              <div class="tab-image">
+                 <a href="{{  block.settings.product.url }}"><img src="{{ block.settings.image | img_url: 'original' }}" alt="{{ forloop.index }}" width="" height="" /></a>
+              </div>
+              {% endif %}
+                <div class="button-flex">
+                {%- assign product = block.settings.product -%}
+                {% assign current_variant = product.selected_or_first_available_variant %}
+                {%- assign product_id = 'AddToCartForm-' | append: product.id -%}
+                {%- form 'product',
+                product,
+                id: product_id,
+                class: 'product-single__form small--text-center'
+                -%}
+                <input type="hidden" name="data-product-id" value="{{ product.id }}">
+                <button {% if product.empty? %} type="button" {% else %} type="submit" {% endif %} name="add"
+                  data-add-to-cart class="coll_product_cart btn add-to-cart 123" {% unless current_variant.available %}
+                  disabled="disabled" {% endunless %}>
+                  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-cart" viewBox="0 0 64 64">
+                      <title>icon-cart</title><path d="M14 17.44h46.79l-7.94 25.61H20.96l-9.65-35.1H3">
+                      </path><circle cx="27" cy="53" r="2"></circle><circle cx="47" cy="53" r="2">
+                      </circle>
+                    </svg>
+                  <span data-add-to-cart-text="" data-default-text="Add to Cart">
+                    Add to Cart - {{ current_variant.price | money }}
+                  </span>
+                </button>
+                <select name="id" id="ProductSelect-{{ product.id }}" class="product-single__variants no-js"
+                  data-product-select>
+                  {%- for variant in product.variants -%}
+                  {%- if variant.available -%}
+                  <option value="{{ variant.id }}" {%- if variant==product.selected_or_first_available_variant -%}
+                    selected="selected" {%- endif -%}>
+                    {{ variant.title }} - {{ variant.price | money_with_currency }}
+                  </option>
+                  {%- else -%}
+                  <option disabled="disabled">
+                    {{ variant.title }} - {{ 'products.product.sold_out' | t }}
+                  </option>
+                  {%- endif -%}
+                  {%- endfor -%}
+                </select>
+                <input type="hidden" value="1" name="quantity">
+                {%- unless product.empty? -%}
+                <textarea class="hide" aria-hidden="true" aria-label="Product JSON"
+                  data-variant-json>{{ product.variants | json }}</textarea>
+                {%- if product.options.size > 1 -%}
+                <textarea class="hide" aria-hidden="true" aria-label="Variant JSON"
+                  data-current-variant-json>{{ current_variant | json }}</textarea>
+                {%- endif -%}
+                {%- endunless -%}
+                {% endform %}
+                  
+                <a class="underline learn_more_parent"
+                  href="{{ block.settings.product.url }}">{{ block.settings.button_text }} View More
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width="20px" height="20px"
+                    viewBox="0 0 24 24">
+                    <g data-name="Layer 2">
+                      <g data-name="diagonal-arrow-right-up">
+                        <rect width="24" height="24" transform="rotate(180 12 12)" opacity="0" />
+                        <path
+                          d="M18 7.05a1 1 0 0 0-1-1L9 6a1 1 0 0 0 0 2h5.56l-8.27 8.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0L16 9.42V15a1 1 0 0 0 1 1 1 1 0 0 0 1-1z" />
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+                  
+                </div>
+            </div>
+            </div>
+          </div>
+        {% endif %}
+        {% endfor %}
+          <!-- <div id="tab2" class="tab-pane">
+              <h2>Content for Tab 2</h2>
+              <p>This is the content for Tab 2.</p>
+          </div>
+          <div id="tab3" class="tab-pane">
+              <h2>Content for Tab 3</h2>
+              <p>This is the content for Tab 3.</p>
+          </div>
+        <div id="tab4" class="tab-pane">
+              <h2>Content for Tab 3</h2>
+              <p>This is the content for Tab 3.</p>
+          </div>
+        <div id="tab5" class="tab-pane">
+              <h2>Content for Tab 3</h2>
+              <p>This is the content for Tab 3.</p>
+          </div>- -->
+          {% include 'floating-btn-mycommunity' %}
+      </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all tab links
+    const tabLinks = document.querySelectorAll('.tab-links a');
+    
+    // Get all tab panes (content sections)
+    const tabPanes = document.querySelectorAll('.tab-pane');
+
+    // Add event listener to each tab link
+    tabLinks.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault(); // Prevent the default anchor behavior
+            
+            // Remove 'active' class from all tab links and tab content
+            tabLinks.forEach(function(link) {
+                link.classList.remove('active');
+            });
+            tabPanes.forEach(function(pane) {
+                pane.classList.remove('active');
+            });
+
+            // Add 'active' class to the clicked tab and corresponding tab content
+            this.classList.add('active');
+            const tabId = this.getAttribute('data-tab');
+            const activePane = document.getElementById(tabId);
+            activePane.classList.add('active');
+        });
+    });
+});
+
+
+</script>
+<style>
+  .table-wrapper th,.table-wrapper td{
+      background-color: #fff;
+    font-size: 14px;
+  }
+  .table-wrapper th{
+    font-weight: normal;
+  }
+  .table-wrapper td{
+    font-weight: 700;
+  }
+  .table-wrapper tr{
+    border-top: 0.7px solid #ccc;
+    border-bottom: 0.7px solid #ccc;
+    font-size: 14px;
+  }
+  .table-wrapper{
+        margin: 15px 0px;
+  }
+  .p-tab-description{
+     font-size: 14px;
+  }
+</style>
+
+
+                  
+{% schema %}
+  {
+    "name": "mycommunity-product",
+    "settings": [],
+     "blocks":[
+      {
+        "name":"Product",
+        "type":"Product",
+        "limit": 5,
+        "settings":[
+          {
+              "type":"product",
+            "id":"product",
+            "label":"Product"
+          },
+          {
+            "type":"html",
+            "id":"product_des",
+            "label":"Description"
+          },
+          {
+            "type":"image_picker",
+            "id":"image",
+            "label":"Image"
+          },
+          
+          {
+            "type": "richtext",
+            "id": "button_text",
+            "label": "Button text"
+          }
+        ]
+      }
+    ],
+    
+    "presets":[
+    {
+      "name":"mycommunity-product"
+    }
+  ]
+  }
+{% endschema %}
+
+
+<style>
+  .tabs.main-product-tab {
+    display: flex;
+    flex-direction: column;
+}
+  .tab-content {
+    margin-top: 0px;
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 45px;
+}
+  .tab-text {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+  .main-product-tab .tab-links {
+    border: none !IMPORTANT;
+    margin-bottom: 10px;
+}
+  .tab-image img{
+    width:100% !important;
+  }
+  .add-to-cart {
+    display: flex !important;
+    flex-direction: row !important;
+    padding:0px;
+}
+.add-to-cart a {
+    display: flex !important;
+    align-items: center !important;
+    gap: 7px;
+    font-size: 17px;
+}
+  .icon {
+    width: 23px !important;
+    height: 33px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  td {
+    display: flex !important;
+    justify-content: end !important;
+}
+  table {
+    background: #cccccc !important;
+    border: 0 none;
+    border-spacing: 1px;
+    position: relative;
+    width: 100%;
+}
+  @media screen and (max-width:768px){
+  .tab-text {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    line-height: 37px;
+}
+    .add-to-cart a {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0px;
+    font-size: 15px;
+}
+    .floating-btn-mycommunity button {
+    border-radius: 50px;
+    transform: rotate(0deg);
+    writing-mode: horizontal-tb;
+}
+ .button-flex {
+    margin: 38px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    align-content: center;
+    justify-content: center;
+}
+  }
+
+  .learn_more_parent{
+    display:flex;
+    font-size:15px;
+    gap:5px;
+    align-items:center;
+  }
+  .button-flex {
+    margin: 38px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    align-content: center;
+    justify-content: center;
+}
+  .tab-pane img {
+    width: 100%;
+     max-width: 100%; 
+    margin-bottom: 10px;
+}
+  .floating-btn-mycommunity button {
+    background-color: #000;
+    color: var(--colorBtnPrimaryText);
+    border: none;
+    padding: 15px;
+    border-radius: 0px 18px 18px 0px !important;
+    font-size: 12px;
+    text-align: center;
+    writing-mode: vertical-rl;
+    white-space: nowrap;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    transform: rotate(180deg);
+}
+  .tabs {
+    
+     border-radius: 0px !important; 
+    
+}
+</style>

@@ -1,0 +1,158 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1645484861fe46f575": {
+      "type": "featured-product",
+      "blocks": {
+        "1645484861f1f889f8-0": {
+          "type": "price",
+          "settings": {}
+        },
+        "1645484861f1f889f8-1": {
+          "type": "description",
+          "settings": {
+            "is_tab": true
+          }
+        },
+        "1645484861f1f889f8-2": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "color_swatches": false
+          }
+        },
+        "1645484861f1f889f8-3": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        }
+      },
+      "block_order": [
+        "1645484861f1f889f8-0",
+        "1645484861f1f889f8-1",
+        "1645484861f1f889f8-2",
+        "1645484861f1f889f8-3"
+      ],
+      "settings": {
+        "featured_product": "myolift-mini-lp",
+        "product_image_size": "medium",
+        "product_image_type": "stacked",
+        "product_zoom_enable": false,
+        "enable_video_looping": true,
+        "product_video_style": "muted",
+        "sku_enable": false
+      }
+    },
+    "1645503447349349ea": {
+      "type": "text-columns",
+      "blocks": {
+        "1645503447866ac847-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_width": 650,
+            "title": "<h3>Not sure if this is the right device for you?<\/h3>",
+            "text": "<p>Take our 2 minute quiz and find your match.<\/p>",
+            "button_label": "GET STARTED",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1645503447866ac847-0"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "alt": false
+      }
+    },
+    "16454848754ee58a54": {
+      "type": "rich-text",
+      "blocks": {
+        "16454848759695f448-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Rich text"
+          }
+        },
+        "16454848759695f448-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16454848759695f448-0",
+        "16454848759695f448-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": false
+      }
+    },
+    "1645484882ba6dda65": {
+      "type": "faq",
+      "blocks": {
+        "1645484882daf77121-0": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "1645484882daf77121-1": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1645484882daf77121-0",
+        "1645484882daf77121-1"
+      ],
+      "settings": {
+        "title": "FAQs"
+      }
+    },
+    "1645484885b0cba9cd": {
+      "type": "apps",
+      "blocks": {
+        "bb171400-c28e-46a1-b547-838a40b009a4": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "",
+            "widget_type": "reviews_widget"
+          }
+        }
+      },
+      "block_order": [
+        "bb171400-c28e-46a1-b547-838a40b009a4"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1645484861fe46f575",
+    "1645503447349349ea",
+    "16454848754ee58a54",
+    "1645484882ba6dda65",
+    "1645484885b0cba9cd"
+  ]
+}

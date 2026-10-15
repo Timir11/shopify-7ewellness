@@ -1,0 +1,68 @@
+<style>
+  body:not(.qkf-custom-page) .tmenu_custom,
+  body.qkf-custom-page .tmenu_item_level_0:not(.tmenu_custom) {
+    display: none !important;
+  }
+</style>
+
+<script>
+  (() => {
+    const customMenuPages = [
+      '/pages/resources',
+      '/pages/myolift-md',
+      '/pages/myolift-600-training-and-tutorials',
+      '/pages/myolift-mini-pro',
+      '/pages/myolift™-triwave-for-professionals',
+      '/pages/myocalme',
+      '/pages/professional-wholesale',
+      '/pages/resources-myolift-md',
+      '/pages/resources-myolift-600-training-and-tutorials',
+      '/pages/resources-myolift-mini-pro',
+      '/pages/resources-myolift™-triwave-for-professionals',
+      '/collections/wholesale-skincare',
+      '/collections/wholesale-microcurrent-conductivity-gels',
+      '/collections/wholesale-microcurrent-masks',
+      '/collections/wholesale-all-accessories',
+      '/collections/wholesale-shop-all'
+    ];
+
+    const isWholesalerProductPage =
+      {% if request.page_type == 'product'
+        and customer
+        and customer.tags contains 'Wholesaler'
+      %}
+        true
+      {% else %}
+        false
+      {% endif %};
+
+    function updateCustomMenu() {
+      let currentPath = window.location.pathname;
+
+      try {
+        currentPath = decodeURIComponent(currentPath);
+      } catch (error) {
+        // Keep the original pathname if it cannot be decoded.
+      }
+
+      currentPath = currentPath.replace(/\/+$/, '') || '/';
+
+      const shouldShowCustomMenu =
+        customMenuPages.includes(currentPath) ||
+        isWholesalerProductPage;
+
+      document.body.classList.toggle(
+        'qkf-custom-page',
+        shouldShowCustomMenu
+      );
+    }
+
+    document.addEventListener('smartmenu-loaded', updateCustomMenu);
+
+    // Also execute immediately in case Smart Menu loaded
+    // before this event listener was registered.
+    if (document.body) {
+      updateCustomMenu();
+    }
+  })();
+</script>

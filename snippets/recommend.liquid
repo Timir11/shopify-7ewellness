@@ -1,0 +1,113 @@
+<div class="recommendation_slider" data-collection="{{ settings.cart_collection }}">
+  <div class="section-title">
+    <h2>Limited Time Specials</h2>
+  </div>
+  <div class="carousel flex_wrp wrap">
+    {% assign collection_get = collections[settings.cart_collection] %}
+    {% for product in collection_get.products %}
+      <div class="wrp_collections">
+        <div class="product_wrp">
+          <div class="product_images">
+            <div class="tags">
+              {% liquid
+                assign product_tags = product.tags | join: ','
+                assign has_custom_label = false
+                if product.metafields.theme.label and product.metafields.theme.label != blank
+                  assign has_custom_label = true
+                  assign custom_label = product.metafields.theme.label.value
+                elsif product_tags contains '_label_'
+                  for tag in product.tags
+                    if tag contains '_label_'
+                      assign tag_starts_with = tag | slice: 0
+                      if tag_starts_with == '_'
+                        assign has_custom_label = true
+                        assign custom_label = tag | replace: '_label_', ''
+                      endif
+                    endif
+                  endfor
+                endif
+              %}
+              {%- if has_custom_label -%}
+                <div class="grid-product__tag grid-product__tag--sale">{{ custom_label }}</div>
+                <!-- grid-product__tag--custom -->
+              {%- endif -%}
+              {%- if sold_out -%}
+                {%- unless collection.handle == 'rezenerate-x-myolift' -%}
+                  <div class="grid-product__tag grid-product__tag--sold-out">
+                    {{ 'products.product.sold_out' | t }}
+                  </div>
+                {%- endunless -%}
+              {%- endif -%}
+            </div>
+            <img src="{{ product.featured_image | img_url:'master' }}" alt="{{ product.title }}">
+          </div>
+          <div class="product_content">
+            <div class="product_title">{{ product.title }}</div>
+            <div class="product_price">{{ product.selected_or_first_available_variant.price | money }}</div>
+            <div class="button">
+              {%- form 'product', product, id: productID, class: 'product-single__form small--text-center' -%}
+                <input type="hidden" name="data-product-id" value="{{ product.id }}">
+                <!-- <button class="btn">ADD TO CART</button> -->
+                {%- liquid
+                  assign enable_dynamic_buttons = false
+                  if show_dynamic_checkout and template != 'product.preorder'
+                    assign enable_dynamic_buttons = true
+                  endif
+                  assign current_variant = product.selected_or_first_available_variant
+                -%}
+                {%- if enable_dynamic_buttons -%}
+                  <div class="payment-buttons">
+                {%- endif -%}
+                {%- liquid
+                  assign default_text = 'products.product.add_to_cart' | t
+                  assign button_text = 'products.product.add_to_cart' | t
+                  if template == 'product.preorder'
+                    assign default_text = 'products.product.preorder' | t
+                    assign button_text = 'products.product.preorder' | t
+                  endif
+                  unless current_variant.available
+                    assign button_text = 'products.product.sold_out' | t
+                  endunless
+                -%}
+                {%- if enable_dynamic_buttons -%}{{ form | payment_button }}{%- endif -%}
+                {%- if enable_dynamic_buttons -%}</div>{%- endif -%}
+                <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                <input type="hidden" name="quantity" value="1">
+                <button
+                  {% if product.empty? %}
+                    type="button"
+                  {% else %}
+                    type="submit"
+                  {% endif %}
+                  class="coll_product_cart btn add-to-cart"
+                  {% unless current_variant.available %}
+                    disabled="disabled"
+                  {% endunless %}
+                >
+                  <span data-add-to-cart-text data-default-text="{{ default_text }}">
+                    {{ button_text }}
+                  </span>
+                </button>
+              {%- endform -%}
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+<script>
+  //   $(document).ready(function() {
+  // $(".carousel").slick({
+  //    slidesToShow: 1,
+  //    infinite:false,
+  //    slidesToScroll: 1,
+  //    autoplay: false,
+  //    autoplaySpeed: 2000,
+  //   centerMode: true,
+  // centerPadding: '20%',
+  //      // dots: false, Boolean
+  //     // arrows: false, Boolean
+  //   });
+  //   });
+</script>

@@ -1,0 +1,153 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1653365616d642ee8d": {
+      "type": "slideshow",
+      "blocks": {
+        "1653365616613d47a0-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 40,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/1st_scroll_banner.png",
+            "image_mobile": "shopify:\/\/shop_images\/mobile_banner.png"
+          }
+        }
+      },
+      "block_order": [
+        "1653365616613d47a0-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "1655367623dbb77164": {
+      "type": "rich-text",
+      "blocks": {
+        "1655367623002692be-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>Come Take A Hands On Microcurrent Class & Receive A MyoLift Device At A <strong>Discounted Price! <\/strong><\/p>"
+          }
+        },
+        "b441d60e-ebde-492a-952b-1073274e2be5": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>This hands-on microcurrent class is led by our licensed Aesthetics educator, Isabel Calleros. This comprehensive class provides you with a better understanding of microcurrent through presentations and live demonstrations! A choice of one of our most popular MyoLift microcurrent devices (MyoLift Mini or MyoLift 600) is included in the class price. Experience professional microcurrent training with your own MyoLift Microcurrent device.<br\/><br\/>Prerequisite: Must be an AP Esthetician to participate. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1655367623002692be-1",
+        "b441d60e-ebde-492a-952b-1073274e2be5"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "alt": false
+      }
+    },
+    "164750184654268337": {
+      "type": "advanced-content",
+      "blocks": {
+        "164750184632c2dd43-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"address_wraper\">\n<div class=\"when\">\n<h4>When<\/h4>\n<p>August 9, 2022 <\/p>\n<p>9:00AM - 4:00PM<\/p>\n<\/div>\n<hr>\n<div class=\"when\">\n<h4>Where<\/h4>\n<p>2626 E 82nd St, Suite 103<\/p>\n<p>Bloomington, MN 55425<\/p>\n<\/div>\n<\/div>\n<a class=\"btn\" href=\"https:\/\/sspa.memberclicks.net\/index.php?option=com_mcform&view=ngforms&id=2128814#!\/\">Register Here<\/a>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "164750184632c2dd43-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "alt": false
+      }
+    },
+    "1655369204520ff1c4": {
+      "type": "rich-text",
+      "blocks": {
+        "1655369204b61e719b-0": {
+          "type": "heading",
+          "settings": {
+            "title": "What Is Microcurrent?"
+          }
+        },
+        "1655369204b61e719b-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>Microcurrent is a non-invasive skin treatment that works with the body’s own electrical system to tone and lift the facial muscles. When delivered consistently, microcurrent boosts ATP production which is the energy used in cellular functions. It helps build collagen and increases the skin’s ability to absorb products and nutrients, bringing a refreshed hydrated appearance of the skin.<br\/><br\/> As with any electrical current device, there are certain precautions that need to be addressed prior to treatment. You will learn about microcurrent safety precautions, contraindications, and protocols used with MyoLift devices. <br\/><br\/><strong>Read more about our professional microcurrent devices <\/strong><a href=\"\/pages\/skincare-professionals\" title=\"Skin Care Professionals\"><strong>here<\/strong><\/a><strong>.<\/strong><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1655369204b61e719b-0",
+        "1655369204b61e719b-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "alt": false
+      }
+    },
+    "1655369671ff547a6a": {
+      "type": "advanced-content",
+      "blocks": {
+        "1655369671e7155f55-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<p>With over 45 years of experience, Isabel is credited for being  the sole individual who brought aesthetics to Arizona. She opened and operated Arizona’s first licensed school of aesthetics and has  an extensive background that will provide an impactful and learning experience for all. Isabel teaches to beauty schools throughout the U.S. as well as internationally and is a beauty expert that will set you up for microcurrent success!<\/p>",
+            "width": "66%",
+            "alignment": "center"
+          }
+        },
+        "1655369671e7155f55-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/photo.png",
+            "link": "",
+            "width": "33%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "1655369671e7155f55-1",
+        "1655369671e7155f55-0"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1653365616d642ee8d",
+    "1655367623dbb77164",
+    "164750184654268337",
+    "1655369204520ff1c4",
+    "1655369671ff547a6a"
+  ]
+}

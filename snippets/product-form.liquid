@@ -1,0 +1,243 @@
+{% form 'product', product, id: form_id, class: 'product-single__form small--text-center' %}
+  <input type="hidden" name="data-product-id" value="{{ product.id }}">
+
+  {% if content_for_header contains 'skiocheck.com' %}
+    <div class="mh-plan">
+      {% render 'skio-plan-picker' %}
+    </div>
+  {% endif %}
+  {%- liquid
+    assign gift_card_recipient_feature_active = false
+    if block.settings.show_gift_card_recipient and product.gift_card?
+      assign gift_card_recipient_feature_active = true
+    endif
+
+    assign enable_dynamic_buttons = false
+    if show_dynamic_checkout and gift_card_recipient_feature_active == false
+      unless template contains 'preorder'
+        assign enable_dynamic_buttons = true
+      endunless
+    endif
+  -%}
+
+  {%- if gift_card_recipient_feature_active -%}
+    {%- render 'gift-card-recipient-form', product: product, form: form, section: section -%}
+  {%- endif -%}
+
+  {%- if enable_dynamic_buttons -%}
+    <div class="payment-buttons">
+  {%- endif -%}
+
+  {%- liquid
+    assign default_text = 'products.product.add_to_cart' | t
+    assign button_text = 'products.product.add_to_cart' | t
+    if template contains 'preorder'
+      assign default_text = 'products.product.preorder' | t
+      assign button_text = 'products.product.preorder' | t
+    endif
+    unless current_variant.available
+      assign button_text = 'products.product.sold_out' | t
+    endunless
+  -%}
+
+  <button
+    {% if product.empty? %}
+      type="button"
+    {% else %}
+      type="submit"
+    {% endif %}
+    name="add"
+    data-add-to-cart
+    class="btn btn--full add-to-cart{% if enable_dynamic_buttons and product.selling_plan_groups == empty %} btn--tertiary{% endif %}"
+    {% unless current_variant.available %}
+      disabled="disabled"
+    {% endunless %}
+  >
+    <span data-add-to-cart-text data-default-text="{{ default_text }}">
+      {{ button_text }}
+    </span>
+    <span>-</span>
+
+    {%- assign variant_discount = 0 -%}
+    {%- if current_variant.metafields.custom.discount_percentage != blank -%}
+      {%- assign variant_discount = current_variant.metafields.custom.discount_percentage | plus: 0 -%}
+    {%- endif -%}
+
+    {%- assign product_discount = 0 -%}
+    {%- if product.metafields.custom.discount_percentage != blank -%}
+      {%- assign product_discount = product.metafields.custom.discount_percentage | plus: 0 -%}
+    {%- endif -%}
+
+    {%- if variant_discount > 0 -%}
+      {%- assign custom_discount_percentage = variant_discount -%}
+    {%- elsif product_discount > 0 -%}
+      {%- assign custom_discount_percentage = product_discount -%}
+    {%- else -%}
+      {%- assign custom_discount_percentage = 0 -%}
+    {%- endif -%}
+    {%- assign regular_price_cents = current_variant.price -%}
+
+    {%- if custom_discount_percentage > 0 -%}
+      {%- assign discount_fraction = custom_discount_percentage | divided_by: 100.0 -%}
+      {%- assign discount_multiplier = 1.0 | minus: discount_fraction -%}
+      {%- assign discounted_price_cents = regular_price_cents | times: discount_multiplier | round -%}
+
+      {%- if product.handle == 'restore-gel' -%}
+        <!-- SPECIAL 'restore-gel': Show regular price as discounted-price (no slashed) -->
+        <span class="discounted-price atc_variant_price">
+          {{ regular_price_cents | money }}
+        </span>
+      {%- else -%}
+        <!-- NORMAL DISCOUNT: slashed + discounted -->
+        <!-- Added classes for JS targeting -->
+        <span class="discounted-price atc_variant_price" style="color: #ffffffff; font-weight: bold;">
+          {{ discounted_price_cents | money }}
+        </span>
+        <span
+          class="slashed-price atc_variant_price"
+          style="text-decoration: line-through; color: #888; font-size: 0.9em;"
+        >
+          {{ regular_price_cents | money }}
+        </span>
+
+      {%- endif -%}
+    {%- else -%}
+      <!-- NO DISCOUNT: Regular price only -->
+      <!-- Added class for JS targeting -->
+      <span class="discounted-price atc_variant_price">
+        {{ regular_price_cents | money }}
+      </span>
+      <span class="slashed-price" style="display:none;"></span>
+      <!-- Hidden when no discount -->
+    {%- endif -%}
+  </button>
+
+  <a class="quick-view-product" href="/products/{{product.handle}}">View Product</a>
+
+  {%- if enable_dynamic_buttons -%}
+    {{ form | payment_button }}
+  {%- endif -%}
+
+  {%- if enable_dynamic_buttons -%}
+    </div>
+  {%- endif -%}
+  {% if product.handle == 'myolift-600-atp-kit-microcurrent-certification'
+    or product.handle == 'at-home-microcurrent-devices-myolift-mini-for-face'
+    or product.handle == 'myolift-mini-home-care-starter-kit'
+    or product.handle == 'at-home-microcurrent-devices-myolift-qt-plus-facial-toning'
+    or product.handle == '7e-myolift-bundle-of-joy'
+    or product.handle == 'at-home-microcurrent-devices-myolift-triwave'
+    or product.handle == 'myolift™-mini-spa-starter-kit'
+    or product.handle == 'myolift™-600-plus-show-special'
+    or product.handle == 'myolift-600-microcurrent-certification'
+    or collection.handle == 'microcurrent-accessories-masks'
+    or collection.handle == 'conductive-gels'
+    or collection.handle == 'shop-all-microcurrent-accessories-tools'
+    or collection.handle == 'shop-skincare'
+  %}
+    <h5 style="margin-top:10px;text-align: center;font-weight:bold;display:none">Discount Applied At Checkout</h5>
+  {% endif %}
+  <div class="shopify-payment-terms product__policies">{{ form | payment_terms }}</div>
+
+  <select name="id" id="ProductSelect-{{ section_id }}" class="product-single__variants no-js" data-product-select>
+    {%- for variant in product.variants -%}
+      {%- assign variant_discount = 0 -%}
+      {%- if variant.metafields.custom.discount_percentage != blank -%}
+        {%- assign variant_discount = variant.metafields.custom.discount_percentage | plus: 0 -%}
+      {%- endif -%}
+
+      {%- if variant.available -%}
+        <option
+          value="{{ variant.id }}"
+          {% if variant == product.selected_or_first_available_variant %}
+            selected="selected"
+          {% endif %}
+          data-price="{{ variant.price }}"
+          data-discount-percentage="{{ variant_discount }}"
+        >
+          {{ variant.title }} - {{ variant.price | money_with_currency }}
+        </option>
+      {%- else -%}
+        <option disabled="disabled">{{ variant.title }} - {{ 'products.product.sold_out' | t }}</option>
+      {%- endif -%}
+    {%- endfor -%}
+  </select>
+{% endform %}
+
+<!-- Added JavaScript at end of form -->
+
+<script>
+  // function formatMoney(cents) {
+  //  return (cents / 100).toLocaleString("en-US", {style:"currency", currency:"USD"});
+  // }
+
+  function getCurrentCurrency() {
+    const activeCurrency = document.querySelector(
+      '#CurrencyList [data-disclosure-option][aria-current="true"]'
+    );
+
+    return activeCurrency?.getAttribute('data-value') || 'USD';
+  }
+
+  function formatMoney(cents) {
+    const currency = getCurrentCurrency();
+
+    return (cents / 100).toLocaleString("en-US", {
+      style: "currency",
+      currency: currency
+    });
+  }
+
+  function updatePrices() {
+    const select = document.querySelector('[data-product-select]');
+    if (!select) return;
+
+    const selectedOption = select.options[select.selectedIndex];
+    const variantPriceCents = Number(selectedOption.getAttribute('data-price'));
+
+    // Get VARIANT discount first
+    let discountPercent = Number(selectedOption.getAttribute('data-discount-percentage') || 0);
+
+    // FALLBACK: If variant has no discount, use PRODUCT discount
+    if (discountPercent === 0) {
+      discountPercent = {{ product.metafields.custom.discount_percentage | default: 0 | plus: 0 }};
+    }
+
+    let discountedPrice = variantPriceCents;
+
+    if (discountPercent > 0) {
+      discountedPrice = Math.round(variantPriceCents * (1 - (discountPercent / 100)));
+
+      // Update all discounted prices
+      document.querySelectorAll('.discounted-price').forEach(el => {
+        el.textContent = formatMoney(discountedPrice);
+      });
+
+      // Update all slashed prices and show them
+      document.querySelectorAll('.slashed-price').forEach(el => {
+        el.textContent = formatMoney(variantPriceCents);
+        el.style.display = 'inline';
+      });
+    } else {
+      // No discount - show regular price only
+      document.querySelectorAll('.discounted-price').forEach(el => {
+        el.textContent = formatMoney(variantPriceCents);
+      });
+      document.querySelectorAll('.slashed-price').forEach(el => {
+        el.style.display = 'none';
+      });
+    }
+  }
+
+  // Listen for changes
+  document.querySelector('[data-product-select]').addEventListener('change', updatePrices);
+  document.addEventListener('DOMContentLoaded', updatePrices);
+
+
+    // Optional: Listen to Skio subscription changes if Skio emits a custom event (replace event name as needed)
+    // document.addEventListener('skio:planChange', function(e) {
+    //   // Update discount based on Skio subscription (if applicable)
+    //   // customDiscount = e.detail.discountPercentage;
+    //   updatePrices();
+    // });
+</script>

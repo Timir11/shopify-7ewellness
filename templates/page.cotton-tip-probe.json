@@ -1,0 +1,260 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1653365616d642ee8d": {
+      "type": "slideshow",
+      "blocks": {
+        "1653365616613d47a0-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 40,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/banner-_desktop_revised_1-min.png",
+            "image_mobile": "shopify:\/\/shop_images\/mobile-banner_2cb32dd7-f480-4d36-b7b1-a3e38e19ec62.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "1653365616613d47a0-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "165511169756496a21": {
+      "type": "rich-text",
+      "blocks": {
+        "16551116971933886a-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>These probes are convenient and easy to use with any MyoLift Device.<br\/> No conductive gel is needed, just a small amount of our <br\/>Replenish Spritzer mixed with water.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16551116971933886a-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": false
+      }
+    },
+    "16551120495d2a15dc": {
+      "type": "text-columns",
+      "blocks": {
+        "165511204942b7fe73-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/1_9b40a707-f4df-4989-b8e8-3916a89b0cbb.png",
+            "image_mask": "none",
+            "image_width": 100,
+            "title": "Easier to target muscles",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "165511204942b7fe73-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/2_bcfcc446-df14-4564-8619-778664bcc89a.png",
+            "image_mask": "none",
+            "image_width": 100,
+            "title": "Precise & defined point of contact",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "ad47cf93-d154-4d29-9e34-94029cc89e21": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/3_7f1980e5-3334-49f9-9adb-b1cf26c1b6d2.png",
+            "image_mask": "none",
+            "image_width": 100,
+            "title": "Fits any single use, paper brand of cotton tips",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "4d489386-88b9-41cc-a829-f591aea0a785": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/4_798bccd0-cf19-4ded-85e3-0d61ac0866b4.png",
+            "image_mask": "none",
+            "image_width": 100,
+            "title": "No conductive gel needed",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "2762ab32-cfef-4f8b-b4d9-4f4c16b35ac3": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/5_3406cf5f-6638-4426-b601-09d272092d74.png",
+            "image_mask": "none",
+            "image_width": 100,
+            "title": "Stronger current delivery",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "c5c5b746-4ae5-432a-ab1d-853d7469e8c2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/6_416210b6-ff1a-4e9f-a820-e670adbd73fa.png",
+            "image_mask": "none",
+            "image_width": 100,
+            "title": "Lightweight & comfortable grip",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "165511204942b7fe73-0",
+        "165511204942b7fe73-1",
+        "ad47cf93-d154-4d29-9e34-94029cc89e21",
+        "4d489386-88b9-41cc-a829-f591aea0a785",
+        "2762ab32-cfef-4f8b-b4d9-4f4c16b35ac3",
+        "c5c5b746-4ae5-432a-ab1d-853d7469e8c2"
+      ],
+      "custom_css": [
+        ".image-wrap {background-image: none;}"
+      ],
+      "settings": {
+        "title": "Benefits Include",
+        "align_text": "center",
+        "alt": false
+      }
+    },
+    "1655115843302d8c9c": {
+      "type": "advanced-content",
+      "blocks": {
+        "165511584313e0cad5-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>Simply Soak In\nReplenish Spritzer\n+ Water<\/h2>\n<div class=\"text-center\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2745\/9950\/files\/arrow_scoll_4_1024x1024.png?v=1655121931\" style=\"width: auto;\" class=\"d-none d-md-block\" \/>\n\n\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2745\/9950\/files\/arrow_1_1024x1024.png?v=1655121954\" class=\"d-block d-md-none\" style=\"width: auto;\" \/>\n<\/div>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "165511584313e0cad5-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_1.png",
+            "link": "",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "165511584313e0cad5-1",
+        "165511584313e0cad5-0"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "1655115881b4f59955": {
+      "type": "advanced-content",
+      "blocks": {
+        "1655115881a418a56c-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_2.png",
+            "link": "",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "1655115881a418a56c-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>Allows You\nTo  Isolate\nEach Muscle<\/h2>\n<div class=\"text-center\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2745\/9950\/files\/arrow_scoll_4_2_1024x1024.png?v=1655121931\" class=\"d-none d-md-block\"\nstyle=\"width: auto;\" \/>\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2745\/9950\/files\/arrow_1_1024x1024.png?v=1655121954\" class=\" d-block d-md-none\" style=\"width: auto;\" \/>\n<\/div>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "1655115881a418a56c-0",
+        "1655115881a418a56c-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "1655114500677ba9b0": {
+      "type": "slideshow",
+      "blocks": {
+        "1655114500862638ae-0": {
+          "type": "image",
+          "settings": {
+            "title": "Cotton Tip\nHydrate & Energize Protocol",
+            "title_size": 62,
+            "subheading": "",
+            "link": "",
+            "link_text": "VIEW HERE",
+            "color_accent": "#231f20",
+            "text_align": "vertical-top horizontal-center",
+            "image": "shopify:\/\/shop_images\/bg_7th_scroll_cotton_tip.png"
+          }
+        }
+      },
+      "block_order": [
+        "1655114500862638ae-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1653365616d642ee8d",
+    "165511169756496a21",
+    "16551120495d2a15dc",
+    "1655115843302d8c9c",
+    "1655115881b4f59955",
+    "1655114500677ba9b0"
+  ]
+}

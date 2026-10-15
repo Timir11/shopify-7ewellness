@@ -1,0 +1,636 @@
+<div class="collection-tabs-section real-customer">
+  <h2 class="tab-title">{{ section.settings.section_heading }}</h2>
+  <div class="tabs tabs-mobile-slider">
+    {% for block in section.blocks %}
+    {% if block.type == 'tab_title' %}
+    <button class="tab-button tab-button-{{ section.id }}" data-tab="tab-{{ forloop.index }}">
+      {{ block.settings.heading }}
+    </button>
+    {% endif %}
+    {% endfor %}
+  </div>
+  <div class="tab-content">
+    {% for block in section.blocks %}
+    {% if block.type == 'tab_title' %}
+    <div class="review_slider review_grid tab-products tab-products-{{ section.id }} tab-{{ forloop.index }}"
+      data-tab="tab-{{ forloop.index }}" style="display: none;">
+      {%- for i in (1..7) -%}
+      {%- capture first_image -%}first_image{{i}}{%- endcapture -%}
+      {%- capture second_image -%}second_image{{i}}{%- endcapture -%}
+      {%- capture review_content -%}review_content{{i}}{%- endcapture -%}
+      {%- capture review_image -%}review_image{{i}}{%- endcapture -%}
+      {%- capture review_product -%}review_product{{i}}{%- endcapture -%}
+
+      {% assign first_image = block.settings[first_image] %}
+      {% assign second_image = block.settings[second_image] %}
+      {% assign review_product = block.settings[review_product] %}
+      {% if block.settings[review_content] != blank %}
+      <div class="grid">
+        <div class="grid__item medium-up--two-thirds">
+          <div class="wrp_all_div">
+            <div class="customer_review">
+              {% if block.settings[review_image] %}
+              <div class="review_image">
+                <img src="{{ block.settings[review_image] | image_url }}" width="80" height="80">
+              </div>
+              {% endif %}
+              <div class="review_content">
+                {{ block.settings[review_content] }}
+              </div>
+            </div>
+            {% if review_product != blank %}
+            {%- assign product = all_products[review_product] -%}
+            {% if product.available %}
+            <div class="wrp_div_full">
+              <img src="{{ product.featured_image | image_url }}" alt="{{ product.title }}" width="115" height="100">
+              <div class="wrp_all_details">
+                <a href="{{ product.url }}">
+                  <h4>{{ product.title }}</h4>
+                </a>
+                {% assign current_variant = product.selected_or_first_available_variant %}
+                {%- assign product_id = 'AddToCartForm-' | append: product.id -%}
+                {%- form 'product',
+                product,
+                id: product_id,
+                class: 'product-single__form small--text-center'
+                -%}
+                <input type="hidden" name="data-product-id" value="{{ product.id }}">
+                <button {% if product.empty? %} type="button" {% else %} type="submit" {% endif %} name="add"
+                  data-add-to-cart class="coll_product_cart btn add-to-cart 123" {% unless current_variant.available %}
+                  disabled="disabled" {% endunless %}>
+                  <span data-add-to-cart-text="" data-default-text="Shop Recommended Products">
+                    Shop Recommended Products
+                  </span>
+                </button>
+                <!--
+                                <input type="hidden" value="{{ product.selected_or_first_available_variant.id }}" name="id">
+                              -->
+                <select name="id" id="ProductSelect-{{ product.id }}" class="product-single__variants no-js"
+                  data-product-select>
+                  {%- for variant in product.variants -%}
+                  {%- if variant.available -%}
+                  <option value="{{ variant.id }}" {%- if variant==product.selected_or_first_available_variant -%}
+                    selected="selected" {%- endif -%}>
+                    {{ variant.title }} - {{ variant.price | money_with_currency }}
+                  </option>
+                  {%- else -%}
+                  <option disabled="disabled">
+                    {{ variant.title }} - {{ 'products.product.sold_out' | t }}
+                  </option>
+                  {%- endif -%}
+                  {%- endfor -%}
+                </select>
+                <input type="hidden" value="1" name="quantity">
+                {%- unless product.empty? -%}
+                <textarea class="hide" aria-hidden="true" aria-label="Product JSON"
+                  data-variant-json>{{ product.variants | json }}</textarea>
+                {%- if product.options.size > 1 -%}
+                <textarea class="hide" aria-hidden="true" aria-label="Variant JSON"
+                  data-current-variant-json>{{ current_variant | json }}</textarea>
+                {%- endif -%}
+                {%- endunless -%}
+                {% endform %}
+              </div>
+            </div>
+            {% endif %}
+            {% endif %}
+          </div>
+        </div>
+        {% if first_image != blank or second_image != blank %}
+        <div class="grid__item medium-up--one-third">
+          <image-compare class="comparison comparison-{{ section.id }} comparison--style-classic"
+            data-section-id="{{ section.id }}">
+            <div class="comparison__draggable" data-draggable style="width=150px;">
+              <div class="comparison__image-wrapper" data-primary-image style="width=150px;">
+                {%- render 'image-element', img: first_image, img_width: 2000, loading: true, classes: comparison__image -%}
+              </div>
+            </div>
+            <div class="comparison__image-wrapper" data-secondary-image>
+              {%- render 'image-element', img: second_image, img_width: 2000, loading: true, classes: comparison__image -%}
+            </div>
+            <button class="comparison__button" data-button>
+              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-left"
+                viewBox="0 0 284.49 498.98">
+                <title>icon-chevron-left</title>
+                <path
+                  d="M249.49 0a35 35 0 0 1 24.75 59.75L84.49 249.49l189.75 189.74a35.002 35.002 0 1 1-49.5 49.5L10.25 274.24a35 35 0 0 1 0-49.5L224.74 10.25A34.89 34.89 0 0 1 249.49 0Z" />
+              </svg>
+              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-right"
+                viewBox="0 0 284.49 498.98">
+                <title>icon-chevron</title>
+                <path
+                  d="M35 498.98a35 35 0 0 1-24.75-59.75l189.74-189.74L10.25 59.75a35.002 35.002 0 0 1 49.5-49.5l214.49 214.49a35 35 0 0 1 0 49.5L59.75 488.73A34.89 34.89 0 0 1 35 498.98Z" />
+              </svg>
+            </button>
+          </image-compare>
+        </div>
+        {% endif %}
+      </div>
+      {% endif %}
+      {%- endfor -%}
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>
+{% schema %}
+{
+"name": "Real Customer Section",
+"settings": [
+{
+"type": "text",
+"id": "section_heading",
+"label": "Section Heading"
+}
+],
+"blocks": [
+{
+"type": "tab_title",
+"name": "Tab Title",
+"settings": [
+{
+"type": "text",
+"id": "heading",
+"label": "Tab Heading"
+},
+{
+"type": "header",
+"content": "Review 1"
+},
+{
+"type": "richtext",
+"id": "review_content1",
+"label": "Review Contet"
+},
+{
+"type": "image_picker",
+"id": "review_image1",
+"label": "Review Star"
+},
+{
+"type": "product",
+"id": "review_product1",
+"label": "Review Product"
+},
+{
+"type": "image_picker",
+"id": "first_image1",
+"label": "First Image"
+},
+{
+"type": "image_picker",
+"id": "second_image1",
+"label": "Second Image"
+},
+{
+"type": "header",
+"content": "Review 2"
+},
+{
+"type": "richtext",
+"id": "review_content2",
+"label": "Review Contet"
+},
+{
+"type": "image_picker",
+"id": "review_image2",
+"label": "Review Star"
+},
+{
+"type": "product",
+"id": "review_product2",
+"label": "Review Product"
+},
+{
+"type": "image_picker",
+"id": "first_image2",
+"label": "First Image"
+},
+{
+"type": "image_picker",
+"id": "second_image2",
+"label": "Second Image"
+},
+{
+"type": "header",
+"content": "Review 3"
+},
+{
+"type": "richtext",
+"id": "review_content3",
+"label": "Review Contet"
+},
+{
+"type": "image_picker",
+"id": "review_image3",
+"label": "Review Star"
+},
+{
+"type": "product",
+"id": "review_product3",
+"label": "Review Product"
+},
+{
+"type": "image_picker",
+"id": "first_image3",
+"label": "First Image"
+},
+{
+"type": "image_picker",
+"id": "second_image3",
+"label": "Second Image"
+},
+{
+"type": "header",
+"content": "Review 4"
+},
+{
+"type": "richtext",
+"id": "review_content4",
+"label": "Review Contet"
+},
+{
+"type": "image_picker",
+"id": "review_image4",
+"label": "Review Star"
+},
+{
+"type": "product",
+"id": "review_product4",
+"label": "Review Product"
+},
+{
+"type": "image_picker",
+"id": "first_image4",
+"label": "First Image"
+},
+{
+"type": "image_picker",
+"id": "second_image4",
+"label": "Second Image"
+}
+]
+},
+{
+"type": "collection_tab",
+"name": "Collection Tab",
+"settings": [
+{
+"type": "collection",
+"id": "collection",
+"label": "Select Collection"
+},
+{
+"type": "header",
+"content": "Review Cotnent"
+},
+{
+"type": "image_picker",
+"id": "review_image",
+"label": "Review Star"
+},
+{
+"type": "richtext",
+"id": "review_content",
+"label": "Review Contet"
+}
+]
+}
+],
+"presets": [
+{
+"name": "Real customer"
+}
+]
+}
+{% endschema %}
+
+<style>
+  .wrp_all_details h4 {
+    color: #231F20;
+    font-size: 14.4px;
+    font-weight: 600;
+    line-height: 133.333%;
+  }
+
+  .add-to-cart {
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .add-to-cart:hover {
+    background: #333;
+  }
+
+  .grid__item# {
+    float: left;
+    padding-left: 0px;
+    width: 312px;
+    min-height: 1px;
+  }
+
+  .wrp_all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tab-right {
+    flex: 0 0 60%;
+  }
+
+  .tab-left {
+    flex: 0 0 40%;
+    height: 340px;
+  }
+
+  .tab-right img {
+    width: 100px;
+    max-height: 100px;
+  }
+
+  .wrp_div_full {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .wrp_all_details {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .wrp_div_full button.coll_product_cart.btn.add-to-cart.\31 23 {
+    width: 100%;
+    /* max-width: 80%; */
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 15px;
+  }
+
+  .wrp_div_full form.product-single__form.small--text-center {
+    width: 100%;
+    max-width: 80%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .review_content p {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    width: 90%;
+  }
+
+  .customer_review {
+    padding-bottom: 20px;
+  }
+
+  .wrp_all_div {
+    padding: 15px;
+  }
+
+  .mob_show {
+    display: none !important;
+  }
+
+  .review_slider .grid.slick-slide {
+    background: #FFF;
+    box-shadow: 0px 4px 14.3px -2px rgba(0, 0, 0, 0.11);
+    opacity: 0.5;
+    transform: scale(0.9);
+  }
+
+  .review_slider .grid.slick-slide.slick-active {
+    max-width: 873px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 1;
+    transform: scale(1);
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  .review_slider .grid.slick-slide .grid__item.medium-up--one-third {
+    width: 430px;
+    padding-left: 0;
+  }
+
+  .review_slider .slick-active-center {
+    transform: scale(1.1);
+    /* Enlarge the active slide */
+    transition: transform 0.3s ease-in-out;
+    opacity: 1;
+  }
+
+  .review_slider .slick-slide {
+    margin: 0;
+    opacity: 0.6;
+    /* Fade out non-active slides */
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .review_slider .wrp_div_full img {
+    border-radius: 7px;
+    border: 1px solid #757575;
+    background: lightgray 50% / cover no-repeat;
+  }
+
+  .review_slider .slick-track {
+    left: calc(50% - 350px);
+  }
+
+  @media only screen and (max-width: 768px) {
+    .review_slider .grid.slick-slide.slick-active {
+      max-width: 100%;
+      flex-direction: column-reverse;
+    }
+
+    .review_slider .slick-track {
+      left: auto;
+    }
+
+    .review_slider .grid.slick-slide .grid__item.medium-up--one-third {
+      width: 100%;
+      padding-left: 0;
+    }
+
+    .review_slider .grid__item.medium-up--two-thirds {
+      padding-left: 0;
+    }
+
+    .mob_show {
+      display: block;
+    }
+
+    .mob_hide {
+      display: none !important;
+    }
+
+    .tab-right {
+      flex: 0 0 100%;
+    }
+
+    .tab-right img.mob_show {
+      width: 100%;
+      max-height: 100%;
+    }
+
+    .wrp_all_div {
+      padding: 5px;
+    }
+
+    .customer_review {
+      padding-bottom: 20px;
+      padding: 10px;
+    }
+
+    .review_image {
+      padding-bottom: 10px;
+    }
+
+    .wrp_div_full button.coll_product_cart.btn.add-to-cart.\31 23 {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .collection-tabs-section {
+      padding: 5px !important;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const tabs = document.querySelectorAll('.tab-button-{{ section.id }}');
+    const tabContents = document.querySelectorAll('.tab-products-{{ section.id }}');
+
+    // Function to initialize Slick slider
+    function initializeSlickSlider() {
+      $('.review_slider').not('.slick-initialized').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        adaptiveHeight: false,
+        infinite: true,
+        focusOnSelect: true,
+        draggable: true,
+        centerMode: true,
+        centerPadding: '10%',
+        responsive: [{
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 1,
+            centerPadding: '5%'
+          }
+        },
+        {
+          breakpoint: 320,
+          settings: {
+            draggable: false,
+            slidesToShow: 1,
+            centerPadding: '0%'
+          }
+        }
+        ]
+      });
+
+      $('.review_slider').on('afterChange', function (event, slick, currentSlide) {
+        $('.slick-slide').removeClass('slick-active-center');
+        $('.slick-current').addClass('slick-active-center');
+      });
+
+      if ($(window).width() < 769) {
+        $('.tabs-mobile-slider').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+          arrows: false,
+          infinite: true,
+          swipeToSlide: true,
+          centerMode: true,
+          focusOnSelect: true,
+        });
+      }
+    }
+
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        // Remove active class from all tabs
+        tabs.forEach(t => t.classList.remove('active'));
+
+        // Add active class to clicked tab
+        tab.classList.add('active');
+
+        // Hide all tab contents
+        tabContents.forEach(content => content.style.display = 'none');
+
+        // Get the target tab data
+        const targetTab = tab.getAttribute('data-tab');
+
+        // Find the matching collection content
+        tabContents.forEach(content => {
+          const contentTab = content.getAttribute('data-tab');
+
+          // Match the tab data with content data-tab
+          if (contentTab === targetTab) {
+            content.style.display = 'block';
+            // Destroy existing slider if any
+            if ($(content).find('.review_slider').hasClass('slick-initialized')) {
+              $(content).find('.review_slider').slick('unslick');
+            }
+            // Reinitialize slider
+            setTimeout(() => {
+              initializeSlickSlider();
+            }, 500);
+          }
+        });
+      });
+    });
+
+    // Initialize first tab and slider on page load
+    if (tabs.length > 0) {
+      tabs[0].classList.add('active');
+      if (document.querySelector('.tab-products-{{ section.id }}.tab-1')) {
+        document.querySelector('.tab-products-{{ section.id }}.tab-1').style.display = 'block';
+        // Initialize slider on first tab
+        setTimeout(() => {
+          initializeSlickSlider();
+        }, 500);
+      }
+    }
+  });
+</script>{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{%-\r\n                render 'image-element',\r\n                img: first_image,\r\n
+    \               img_width: 2000,\r\n                loading: true,\r\n                classes:
+    comparison__image comparison__image--1,\r\n                -%}"
+  to: "{%- render 'image-element', img: first_image, img_width: 2000, loading: true,
+    classes: comparison__image -%}"
+  position: 5506..5614
+- from: "{%-\r\n              render 'image-element',\r\n              img: second_image,\r\n
+    \             img_width: 2000,\r\n              loading: true,\r\n              classes:
+    comparison__image comparison__image--2,\r\n              -%}"
+  to: "{%- render 'image-element', img: second_image, img_width: 2000, loading: true,
+    classes: comparison__image -%}"
+  position: 5746..5855
+{%- endcomment -%}

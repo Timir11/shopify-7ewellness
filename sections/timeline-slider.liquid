@@ -1,0 +1,76 @@
+<div class="timeline-slider">
+  <div class="index-section {% if section.settings.altColor %}index-section--alt{% endif %}">
+    <div class="timeline-carousel">
+      {% for block in section.blocks %}
+        <div class="timeline-item">
+          <div class="year">{{ block.settings.year }}</div>
+          <span class="dot"></span>
+          <div class="img">
+            <img src="{{ block.settings.img | img_url: 'original' }}">
+          </div>
+          <div class="desc">{{ block.settings.txt }}</div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<script>
+  $('.timeline-carousel').slick({
+    arrows: false,
+    dots: true,
+    slidesToShow: 3.5,
+    slidesToScroll: 1,
+    autoplay: false,
+    infinite: false,
+    responsive:[
+      {
+        breakpoint: 768,
+        settings:{
+         slidesToShow: 1.5,
+         slidesToScroll: 1,
+        }
+      }
+    ]
+  });
+</script>
+{% schema %}
+{
+  "name": "Timeline Slider",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "altColor",
+      "label": "Use alternate background",
+      "default":false
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Item",
+      "type": "text",
+      "settings": [
+        {
+          "type": "text",
+          "id":"year",
+          "label": "Year"
+        },
+        {
+          "type": "image_picker",
+          "id": "img",
+          "label": "Image"
+        },
+        {
+          "type": "richtext",
+          "id": "txt",
+          "label": "Description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Timeline Slider"
+    }
+  ]
+}
+{% endschema %}

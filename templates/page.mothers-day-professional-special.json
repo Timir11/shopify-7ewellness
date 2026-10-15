@@ -1,0 +1,89 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1649655246d2ed3429": {
+      "type": "slideshow",
+      "blocks": {
+        "1649655246cf94b310-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 50,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-right",
+            "image": "shopify:\/\/shop_images\/banner-professional-mother_s-day-2024-revised.png",
+            "image_mobile": "shopify:\/\/shop_images\/mobile-professional_mother_s_day_banner-REVISED.png"
+          }
+        }
+      },
+      "block_order": [
+        "1649655246cf94b310-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "lazyload_images": true
+      }
+    },
+    "advanced_content_QTDUkb": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_Q9YcjX": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>Elevate your services with our <br> special edition professional mothers day sets<\/h2>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_Q9YcjX"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "edfa9d28-386f-410b-8538-baa6f99d5e5a": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14622985257014__edfa9d28-386f-410b-8538-baa6f99d5e5a-1681900271ad3b68d0-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"checkout_btn_phl\">\n<a data-toggle=\"modal\" data-target=\"#checkoutModal\" class=\"btn\">Continue To Checkout<\/a>\n<\/div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14622985257014__edfa9d28-386f-410b-8538-baa6f99d5e5a-1681900271ad3b68d0-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "alt": false,
+        "lazyload_images": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1649655246d2ed3429",
+    "advanced_content_QTDUkb",
+    "edfa9d28-386f-410b-8538-baa6f99d5e5a"
+  ]
+}

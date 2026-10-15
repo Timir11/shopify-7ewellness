@@ -1,0 +1,44 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "164750184654268337": {
+      "type": "advanced-content",
+      "blocks": {
+        "785deba0-5c97-41ce-9b74-453d880ebc80": {
+          "type": "liquid",
+          "settings": {
+            "code": "<!--<iframe width=\"100%\" height=\"630\" src=\"https:\/\/youtu.be\/kHvNh2im_xs\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>-->\n<iframe width=\"100%\" height=\"650\" src=\"https:\/\/www.youtube.com\/embed\/kHvNh2im_xs?rel=0\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+            "width": "50%",
+            "alignment": "top-middle"
+          }
+        },
+        "3989559f-99b3-4a2f-8440-1f0efe459d4e": {
+          "type": "liquid",
+          "settings": {
+            "code": "<!-- Calendly inline widget begin -->\n<div class=\"calendly-inline-widget\" data-url=\"https:\/\/calendly.com\/7e_myolift\/30min?primary_color=e8dfee\" style=\"min-width:320px;height:630px;\"><\/div>\n<script type=\"text\/javascript\" src=\"https:\/\/assets.calendly.com\/assets\/external\/widget.js\" async><\/script>\n<!-- Calendly inline widget end -->",
+            "width": "50%",
+            "alignment": "top-middle"
+          }
+        }
+      },
+      "block_order": [
+        "785deba0-5c97-41ce-9b74-453d880ebc80",
+        "3989559f-99b3-4a2f-8440-1f0efe459d4e"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "alt": false,
+        "lazyload_images": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "164750184654268337"
+  ]
+}

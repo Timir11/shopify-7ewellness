@@ -1,0 +1,122 @@
+{% doc %}
+  @prompt
+    need html block to add html
+
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-html-block-{{ ai_gen_id }} {
+    padding: {{ block.settings.padding }}px;
+    background-color: {{ block.settings.background_color }};
+    border-radius: {{ block.settings.border_radius }}px;
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+
+  .ai-html-block-{{ ai_gen_id }} * {
+    max-width: 100%;
+  }
+
+  .ai-html-block-{{ ai_gen_id }} img {
+    height: auto;
+    display: block;
+  }
+
+  .ai-html-block-{{ ai_gen_id }} table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto;
+    display: block;
+    white-space: nowrap;
+  }
+
+  .ai-html-block-placeholder-{{ ai_gen_id }} {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+    border: 2px dashed #dee2e6;
+    border-radius: {{ block.settings.border_radius }}px;
+    color: #6c757d;
+  }
+
+  .ai-html-block-placeholder-{{ ai_gen_id }} h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+    color: #495057;
+  }
+
+  .ai-html-block-placeholder-{{ ai_gen_id }} p {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-html-block-{{ ai_gen_id }} {
+      padding: {{ block.settings.padding | times: 0.7 }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-html-block-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  {% if block.settings.custom_html != blank %}
+    {{ block.settings.custom_html }}
+  {% else %}
+    <div class="ai-html-block-placeholder-{{ ai_gen_id }}">
+      <h3>Custom HTML Block</h3>
+      <p>Add your custom HTML code in the block settings to get started.</p>
+    </div>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Custom HTML",
+  "settings": [
+    {
+      "type": "header",
+      "content": "HTML content"
+    },
+    {
+      "type": "html",
+      "id": "custom_html",
+      "label": "Custom HTML"
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "padding",
+      "min": 0,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Border radius",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom HTML"
+    }
+  ]
+}
+{% endschema %}

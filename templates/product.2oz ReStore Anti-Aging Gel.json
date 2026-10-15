@@ -1,0 +1,240 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "okendo_star_rating_TADRAg": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "metafiled_description_thCG4N": {
+          "type": "metafiled_description",
+          "settings": {
+            "is_meta_description": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "trust_badge_ka3aKe": {
+          "type": "trust_badge",
+          "settings": {
+            "trust_image": "shopify:\/\/shop_images\/Background_2x_9930748b-1cc8-4d33-b97d-a8c4c9db56ff.png"
+          }
+        },
+        "pop_up_rJzQ4w": {
+          "type": "pop_up",
+          "settings": {
+            "title": "Shipping & Handling",
+            "content": "<p>Free USA Ground shipment, Orders are processed within 2 business day. <\/p><p>International Orders Ships within 3 business day.  <\/p><p>International customers are required to pay Duty with their local custom agency. <\/p>"
+          }
+        },
+        "tab_Fbe7Bk": {
+          "type": "tab",
+          "settings": {
+            "title": "Who is this for?",
+            "content": "<p>Suitable for all skin types; Formulated specifically for mature and aging skin.<br\/><\/p>",
+            "page": ""
+          }
+        },
+        "tab_NVUzAc": {
+          "type": "tab",
+          "settings": {
+            "title": "How to use it?",
+            "content": "<ol><li><strong>Cleanse<\/strong> the skin thoroughly before treatment.<\/li><li><strong>Apply<\/strong> a generous layer of ReStore Gel to the face, neck, or treatment area.<\/li><li><strong>Perform microcurrent therapy<\/strong> with your MyoLift or other compatible device, following recommended glide or pinch techniques.<\/li><li><strong>Rinse or massage<\/strong> remaining gel into the skin post-treatment.<\/li><li><strong>Follow with serums or moisturizers<\/strong> for enhanced benefits.<\/li><\/ol>",
+            "page": ""
+          }
+        },
+        "tab_TrJhtC": {
+          "type": "tab",
+          "settings": {
+            "title": "Benefits",
+            "content": "<ul><li><strong>Hydrates & Firms the Skin<\/strong>: Improves skin texture and resilience through deep, long-lasting hydration.<\/li><li><strong>Stimulates Collagen & Elastin<\/strong>: Supports the production of skin-firming proteins for improved elasticity.<\/li><li><strong>Calms & Rejuvenates<\/strong>: Soothes inflammation while rejuvenating skin cells for a youthful appearance.<\/li><li><strong>Boosts Microcurrent Effectiveness<\/strong>: Optimizes current delivery for superior toning and lifting results.<\/li><li><strong>Improves Radiance<\/strong>: Skin looks refreshed, brighter, and more supple after each use.<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "tab_KVXhMT": {
+          "type": "tab",
+          "settings": {
+            "title": "Ingredients",
+            "content": "<p>Filtered Water (Aqua), Vegetable Glycerin, Carbomer, Xanthan Gum, Hyaluronic Acid, Citrus Aurantium (Neroli) Oil, Copper, Ascophyllum Nodosum (Sea Kelp) Extract, Collagen Peptide Complex, Zinc, Camellia Sinensis (Green Tea) Leaf Extract, Sodium Hydroxide.<\/p>",
+            "page": ""
+          }
+        },
+        "tab_c7dTBm": {
+          "type": "tab",
+          "settings": {
+            "title": "Product Features",
+            "content": "<ul><li><strong>Microcurrent-Conductive Formula<\/strong>: Designed to maximize the delivery and performance of low-level electrical stimulation.<\/li><li><strong>Anti-Aging Powerhouse<\/strong>: Formulated to combat fine lines, wrinkles, and skin laxity at the cellular level.<\/li><li><strong>Hydration & Repair<\/strong>: Delivers moisture while supporting the skin’s natural barrier and healing functions.<\/li><li><strong>Professional Size<\/strong>: 16oz value size ideal for spas, estheticians, or long-term home use.<\/li><li><strong>Clean, Nourishing Base<\/strong>: Free of harsh chemicals—powered by plant extracts and bioactive ingredients.<\/li><\/ul>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "okendo_star_rating_TADRAg",
+        "price",
+        "description",
+        "metafiled_description_thCG4N",
+        "buy_buttons",
+        "trust_badge_ka3aKe",
+        "pop_up_rJzQ4w",
+        "tab_Fbe7Bk",
+        "tab_NVUzAc",
+        "tab_TrJhtC",
+        "tab_KVXhMT",
+        "tab_c7dTBm"
+      ],
+      "settings": {
+        "product_image_size": "medium",
+        "product_image_type": "slider",
+        "thumbnail_height": "fixed",
+        "product_zoom_enable": true,
+        "enable_video_looping": true,
+        "product_video_style": "unmuted",
+        "product_label": "",
+        "btn_url": "",
+        "btn_txt": "",
+        "sku_enable": false
+      }
+    },
+    "product_specification_k6pJXf": {
+      "type": "product-specification",
+      "blocks": {
+        "how_to_use_TYCPce": {
+          "type": "how-to-use",
+          "settings": {
+            "tab_heading": "How To Use",
+            "heading": "Bio-Active Complex: Your Skin’s Renewal Boost",
+            "section_content": "<p>The Bio-Active Complex in ReStore Gel combines peptides, antioxidants, minerals, and plant extracts to deeply hydrate and stimulate collagen production. It helps firm, smooth, and protect mature skin while supporting natural repair for a youthful glow.<\/p>",
+            "image": "shopify:\/\/shop_images\/desktop_16._4oz_ReNu_Conductive_Tx_Gel_For_Stressed.png",
+            "mobile_image": "shopify:\/\/shop_images\/mobile_16oz_ReStore_Anti-aging_Conductive_Gel.png",
+            "link": "",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "image_banner_x79tVf": {
+          "type": "image-banner",
+          "settings": {
+            "tab_heading": "Benefits",
+            "heading": "What Makes Our Conductive Gel So Special?",
+            "image_banner": "shopify:\/\/shop_images\/1_96_2.png",
+            "mobile_image_banner": "shopify:\/\/shop_images\/1_96_3.png",
+            "image_content": "<p> ReStore Gel hydrates, firms, and lifts aging skin while enhancing microcurrent treatments. Its gentle formula reduces fine lines, soothes inflammation, and strengthens the skin barrier, leaving your skin radiant and revitalized.<\/p>"
+          }
+        },
+        "ingredients_ae3mk8": {
+          "type": "ingredients",
+          "settings": {
+            "tab_heading": "Ingredients",
+            "heading": "Our Active Ingredients",
+            "ingredient_img1": "shopify:\/\/shop_images\/Group_1000007751.png",
+            "ingredients_text1": " Green Tea",
+            "ingredient_img2": "shopify:\/\/shop_images\/Group_1000007764.png",
+            "ingredients_text2": "Copper",
+            "ingredient_img3": "shopify:\/\/shop_images\/Group_1000007765.png",
+            "ingredients_text3": "Collagen Peptides",
+            "ingredient_img4": "shopify:\/\/shop_images\/Group_1000007770.png",
+            "ingredients_text4": "Zinc Minerals"
+          }
+        },
+        "faq_wbpJmj": {
+          "type": "faq",
+          "settings": {
+            "tab_heading": "FAQs",
+            "heading": "Frequently Asked Questions",
+            "title1": "Can I use this gel with any microcurrent device?",
+            "text1": "<p> Yes! Restore Gel is compatible with all <a href=\"https:\/\/www.7ewellness.com\/\" title=\"https:\/\/www.7ewellness.com\/\">microcurrent devices<\/a>.<\/p>",
+            "title2": "Do I need to wash it off after my treatment?",
+            "text2": "<p>It’s optional! You can either leave it on as a hydrating treatment or rinse off if preferred.<\/p>",
+            "title3": "How often should I use Restore Gel?",
+            "text3": "<p>Use it every time you perform a microcurrent session to ensure maximum conductivity and skin benefits.<\/p>",
+            "title4": "Is it suitable for sensitive skin?",
+            "text4": "<p>Absolutely! Restore Gel is formulated to be gentle and nourishing for all skin types.<\/p>",
+            "title5": "",
+            "text5": "",
+            "title6": "",
+            "text6": "",
+            "title7": "",
+            "text7": ""
+          }
+        },
+        "reviews_8NYwWW": {
+          "type": "reviews",
+          "settings": {
+            "tab_heading": "Reviews",
+            "enable_review": true
+          }
+        }
+      },
+      "block_order": [
+        "how_to_use_TYCPce",
+        "image_banner_x79tVf",
+        "ingredients_ae3mk8",
+        "faq_wbpJmj",
+        "reviews_8NYwWW"
+      ],
+      "settings": {
+        "heading": ""
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "settings": {
+        "max_width": true
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {}
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "product_recommendations_heading": "Related products",
+        "related_count": 4
+      }
+    },
+    "featured_collection_pht7X9": {
+      "type": "featured-collection",
+      "settings": {
+        "custom_class": "",
+        "title": "Featured collection grid",
+        "description": "",
+        "home_featured_products": "shop-all-microcurrent-accessories-tools",
+        "rows": 1,
+        "per_row_desktop": 4,
+        "per_row_mobile": "1",
+        "view_all": false,
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product_specification_k6pJXf",
+    "sub",
+    "collection-return",
+    "product-recommendations",
+    "featured_collection_pht7X9"
+  ]
+}

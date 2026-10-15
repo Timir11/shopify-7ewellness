@@ -1,0 +1,218 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "okendo_star_rating_TADRAg": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "metafiled_description_thCG4N": {
+          "type": "metafiled_description",
+          "settings": {
+            "is_meta_description": false
+          }
+        },
+        "skio_subscriptions_yc_s20_app_block_atkKfh": {
+          "type": "shopify:\/\/apps\/skio-subscriptions-yc-s20\/blocks\/app-block\/de50f7a4-0bb0-4d4c-84e2-c03dce83436d",
+          "disabled": true,
+          "settings": {
+            "form_id": "product-form-{{section.id}}",
+            "start_onetime": "true",
+            "onetime_first": "true",
+            "default_subscription": "",
+            "group_border_radius": 5,
+            "group_border_shadow": true,
+            "group_border_selected_color": "#000000",
+            "onetime_title": "One Time",
+            "subscription_title": "Subscribe",
+            "prepaid_title": "Prepaid",
+            "discount_format": "percent",
+            "discount_style": "bubble",
+            "discount_prefix": "Save",
+            "discount_suffix": "",
+            "discount_color": "#0fa573"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "trust_badge_ka3aKe": {
+          "type": "trust_badge",
+          "settings": {
+            "trust_image": "shopify:\/\/shop_images\/Background_2x_9930748b-1cc8-4d33-b97d-a8c4c9db56ff.png"
+          }
+        },
+        "pop_up_rJzQ4w": {
+          "type": "pop_up",
+          "settings": {
+            "title": "Shipping & Handling",
+            "content": "<p>Free USA Ground shipment, Orders are processed within 2 business day. <\/p><p>International Orders Ships within 3 business day.  <\/p><p>International customers are required to pay Duty with their local custom agency. <\/p>"
+          }
+        },
+        "tab_TPkht9": {
+          "type": "tab",
+          "settings": {
+            "title": "Who is this for?",
+            "content": "<p>Perfect for anyone looking to reduce fine lines and wrinkles around the lips. Ideal for both beginners and experienced microcurrent users. Not suitable for those with adhesive-related skin sensitivities.<\/p>",
+            "page": ""
+          }
+        },
+        "tab_ddakF6": {
+          "type": "tab",
+          "settings": {
+            "title": "What is included?",
+            "content": "<p>1 x Conductive Lip Mask<\/p>",
+            "page": ""
+          }
+        },
+        "66232a31-cb5f-4a67-97cf-d0377bb2fac6": {
+          "type": "tab",
+          "settings": {
+            "title": "How to use it?",
+            "content": "<ol><li><strong>Cleanse<\/strong> the lip area to remove makeup or oils.<br\/><\/li><li><strong>Apply conductive serum<\/strong> like the 7E Wellness Replenish Spritzer (avoid oil-based products).<br\/><\/li><li><strong>Peel<\/strong> the plastic backing off the mask.<br\/><\/li><li><strong>Position<\/strong> the lip mask securely over the lips.<br\/><\/li><li><strong>Connect<\/strong> to your MyoLift™ device using the provided lead wire splitters.<br\/><\/li><li><strong>Select settings<\/strong> (Educate or Erase mode) and adjust frequency as needed.<br\/><\/li><li><strong>Treat for 10–30 minutes<\/strong>, splitting time between modes.<br\/><\/li><li><strong>Post-treatment<\/strong>, remove the mask, clean the area, and store the mask in a sealed bag.<\/li><\/ol>",
+            "page": ""
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "title": "Benefits",
+            "content": "<ul><li>Reduces fine lines and wrinkles around the lips<br\/><\/li><li>Stimulates collagen and elastin production<br\/><\/li><li>Improves lip area tone and texture<br\/><\/li><li>Convenient for at-home use<br\/><\/li><li>Cost-effective skincare solution<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed": {
+          "type": "tab",
+          "settings": {
+            "title": "Ingredients",
+            "content": "{{ product.metafields.custom.ingredients.value.ingredients | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "tab_QLEFEc": {
+          "type": "tab",
+          "settings": {
+            "title": "Product Features",
+            "content": "<ul><li>Hands-free design for effortless use<br\/><\/li><li>Reusable for up to 10–12 treatments<br\/><\/li><li>No conductive gel required<br\/><\/li><li>Compatible with <a href=\"https:\/\/www.7ewellness.com\/products\/at-home-microcurrent-devices-myolift-qt-plus-facial-toning\" target=\"_blank\" title=\"https:\/\/www.7ewellness.com\/products\/at-home-microcurrent-devices-myolift-qt-plus-facial-toning\">MyoLift™ QT Plus<\/a> & Mini<br\/><\/li><li>FDA approved<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "tab_gFP7Fx": {
+          "type": "tab",
+          "settings": {
+            "title": "Device Support",
+            "content": "{{ product.metafields.custom.device_support.value.device_support | metafield_tag }}",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "okendo_star_rating_TADRAg",
+        "price",
+        "description",
+        "metafiled_description_thCG4N",
+        "skio_subscriptions_yc_s20_app_block_atkKfh",
+        "buy_buttons",
+        "trust_badge_ka3aKe",
+        "pop_up_rJzQ4w",
+        "tab_TPkht9",
+        "tab_ddakF6",
+        "66232a31-cb5f-4a67-97cf-d0377bb2fac6",
+        "tab",
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed",
+        "tab_QLEFEc",
+        "tab_gFP7Fx"
+      ],
+      "settings": {
+        "product_image_size": "medium",
+        "product_image_type": "slider",
+        "thumbnail_height": "fixed",
+        "product_zoom_enable": true,
+        "enable_video_looping": true,
+        "product_video_style": "unmuted",
+        "product_label": "",
+        "btn_url": "",
+        "btn_txt": "",
+        "sku_enable": false
+      }
+    },
+    "174798430493c6df4c": {
+      "type": "apps",
+      "blocks": {
+        "okendo_reviews_widget_jcn7bN": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}",
+            "widget_type": "reviews_widget"
+          }
+        }
+      },
+      "block_order": [
+        "okendo_reviews_widget_jcn7bN"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "settings": {
+        "max_width": true
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {}
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "product_recommendations_heading": "Related products",
+        "related_count": 4
+      }
+    },
+    "featured_collection_pht7X9": {
+      "type": "featured-collection",
+      "settings": {
+        "custom_class": "",
+        "title": "Featured collection grid",
+        "description": "",
+        "home_featured_products": "shop-all-microcurrent-accessories-tools",
+        "rows": 1,
+        "per_row_desktop": 4,
+        "per_row_mobile": "1",
+        "view_all": false,
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "174798430493c6df4c",
+    "sub",
+    "collection-return",
+    "product-recommendations",
+    "featured_collection_pht7X9"
+  ]
+}

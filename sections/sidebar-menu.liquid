@@ -1,0 +1,203 @@
+{%- assign main_menu_handle = section.settings.primary_menu | default: 'main-menu' -%}
+{%- assign main_menu = linklists[main_menu_handle] -%}
+{% if customer and customer.tags contains 'WHOLESALERS' %}
+  {% if template contains 'wholesale-resources'
+    or collection.handle contains 'wholesale-shop-all'
+    or page.handle contains 'resources-myolift-md'
+    or page.handle contains 'resources-myolift-600-training-and-tutorials'
+    or page.handle contains 'resources-myolift-mini-pro'
+    or page.handle contains 'resources-myolift™-triwave-for-professionals'
+    or page.handle contains 'myocalme' %}
+    {%- assign main_menu_handle = section.settings.primary_menu_resources | default: 'main-menu' -%}
+    {%- assign main_menu = linklists[main_menu_handle] -%}
+  {% endif %}
+{% endif %}
+
+<section
+  id="sidebar-menu"
+  class="SidebarMenu Drawer Drawer--small Drawer--fromLeft"
+  aria-hidden="true"
+  data-section-id="{{ section.id }}"
+  data-section-type="sidebar-menu"
+>
+  <header class="Drawer__Header" data-drawer-animated-left>
+    <button
+      class="Drawer__Close Icon-Wrapper--clickable"
+      data-action="close-drawer"
+      data-drawer-id="sidebar-menu"
+      aria-label="{{ 'header.navigation.close_sidebar' | t }}"
+    >
+      <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64">
+        <path d="M19 17.61l27.12 27.13m0-27.12L19 44.74"></path>
+      </svg>
+    </button>
+  </header>
+
+  <div class="Drawer__Content"> 
+    <div class="Drawer__Main" data-drawer-animated-left data-scrollable>
+      <div class="Drawer__Container">
+        <nav
+          class="SidebarMenu__Nav SidebarMenu__Nav--primary"
+        >
+          {%- for link in main_menu.links -%}
+            <div class="Collapsible">
+              {%- if link.links != blank -%}
+                <button
+                  class="Collapsible__Button Heading u-h6"
+                  data-action="toggle-collapsible"
+                  {% if link.links != blank %}
+                    aria-expanded="false"
+                  {% endif %}
+                >
+                  {% comment %}
+                    {% if link.url != blank and link.url != '/' %}
+                      <a href="{{ link.url }}">
+                    {% endif %}
+                  {% endcomment %}
+                  {{- link.title | escape -}}
+                  {% comment %}
+                    {% if link.url != blank and link.url != '/' %}
+                      </a>
+                    {% endif %}
+                  {% endcomment %}
+                  <span class="Collapsible__Plus"></span>
+                </button>
+
+                <div class="Collapsible__Inner">
+                  <div class="Collapsible__Content">
+                    {%- for sub_link in link.links -%}
+                      <div class="Collapsible">
+                        {%- if sub_link.links != blank -%}
+                          <button
+                            class="Collapsible__Button Heading Text--subdued Link--primary u-h7"
+                            data-action="toggle-collapsible"
+                            {% if sub_link.links != blank %}
+                              aria-expanded="false"
+                            {% endif %}
+                          >
+                            {% comment %}
+                              {% if sub_link.url != blank and sub_link.url != '/' %}
+                                <a href="{{ sub_link.url }}">
+                              {% endif %}
+                            {% endcomment %}
+                            {{- sub_link.title | escape -}}
+                            {% comment %}
+                              {% if sub_link.url != blank and sub_link.url != '/' %}
+                                </a>
+                              {% endif %}
+                            {% endcomment %}
+                            <span class="Collapsible__Plus"></span>
+                          </button>
+
+                          <div class="Collapsible__Inner">
+                            <div class="Collapsible__Content">
+                              <ul class="Linklist Linklist--bordered Linklist--spacingLoose">
+                                {%- for sub_sub_link in sub_link.links -%}
+                                  <li class="Linklist__Item">
+                                    <a href="{{ sub_sub_link.url }}" class="Text--subdued Link Link--primary">
+                                      {{- sub_sub_link.title | escape -}}
+                                    </a>
+                                  </li>
+                                {%- endfor -%}
+                              </ul>
+                            </div>
+                          </div>
+                        {%- else -%}
+                          <a
+                            href="{{ sub_link.url }}"
+                            class="Collapsible__Button Heading Text--subdued Link Link--primary u-h7"
+                          >
+                            {{- sub_link.title | escape -}}
+                          </a>
+                        {%- endif -%}
+                      </div>
+                    {%- endfor -%}
+                  </div>
+                </div>
+              {%- else -%}
+                <a href="{{ link.url }}" class="Collapsible__Button Heading Link Link--primary u-h6">
+                  {{- link.title | escape -}}
+                </a>
+              {%- endif -%}
+            </div>
+          {%- endfor -%}
+        </nav>
+
+        {%- assign secondary_menu = linklists[section.settings.secondary_menu] -%}
+
+        <nav class="SidebarMenu__Nav SidebarMenu__Nav--secondary">
+          <ul class="Linklist Linklist--spacingLoose">
+            {%- for link in secondary_menu.links -%}
+              <li class="Linklist__Item">
+                <a href="{{ link.url }}" class="Text--subdued Link Link--primary">{{ link.title | escape }}</a>
+              </li>
+            {%- endfor -%}
+
+            {%- comment -%}We automatically add some links to the secondary menu{%- endcomment -%}
+          </ul>
+        </nav>
+        <div class="analyze-your-skin">
+          <a href="https://www.7ewellness.com/collections/all" class="mobile_menu_btn ai-skin-btn">Shop Now</a>
+        </div>
+        <div class="side-menu-img">
+          <a href="https://www.7ewellness.com/collections/all"
+            ><img
+              src="https://cdn.shopify.com/s/files/1/2745/9950/files/Navigation_Banners_a6725ce7-ef27-42ee-a72f-b514939dfa84.png?v=1789831641"
+              alt="menu-img"
+          ></a>
+        </div>
+        <nav class="SidebarMenu__BottomNav SidebarMenu__Nav SidebarMenu__Nav--secondary">
+          <ul class="Linklist Linklist--spacingLoose">
+            <li class="Linklist__Item">
+              <strong class="Text--subdued Link Link--primary"> 7E for Professionals </strong>
+              <p class="Professionals_text">Access your exclusive 7E professional portal—built for licensed pros to unlock wholesale pricing and essential business support.</p>
+              <div class="mobile_menu_content">
+                <a href="https://shopify.com/27459950/account" class="btn login-btn mobile_menu_btn">Login</a>
+                <a href="https://www.7ewellness.com/pages/skincare-professionals" class="btn mobile_menu_btn">Learn More</a>
+              </div>
+            </li>
+            <li class="Linklist__Item contact_us_link_list">
+              <a href="https://www.7ewellness.com/pages/contact-us" class="Text--subdued Link Link--primary">
+                {% comment %} <svg width="15" height="16" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.0621 18.9693C15.1077 20.9236 10.1028 19.0873 5.88327 14.8677C1.66372 10.6482 -0.172609 5.64325 1.7817 3.68893L3.06847 2.40216C3.9568 1.51383 5.42054 1.53731 6.33784 2.45461L8.33092 4.4477C9.24822 5.36499 9.2717 6.82874 8.38337 7.71706L8.10699 7.99345C7.62737 8.47307 7.58045 9.24679 8.0261 9.78685C8.45597 10.3078 8.9194 10.8266 9.42188 11.3291C9.92435 11.8316 10.4432 12.295 10.9641 12.7249C11.5042 13.1705 12.2779 13.1236 12.7575 12.644L13.0339 12.3676C13.9222 11.4793 15.386 11.5028 16.3033 12.4201L18.2964 14.4131C19.2137 15.3304 19.2371 16.7942 18.3488 17.6825L17.0621 18.9693Z" fill="#231F20" stroke="#231F20" stroke-width="1"/>
+                  <path d="M15.6264 7.75071C15.3825 7.15553 15.0188 6.5979 14.5356 6.11463C14.0796 5.65865 13.5574 5.30918 12.9999 5.06622" stroke="#231F20" stroke-width="1" stroke-linecap="round"/>
+                  <path d="M12.9999 1.66341C14.3346 2.14691 15.5868 2.92365 16.6568 3.99364C17.7536 5.09049 18.5423 6.37883 19.0229 7.75113" stroke="#231F20" stroke-width="1" stroke-linecap="round"/>
+                </svg> {% endcomment %}
+                <strong>Contact Us</strong>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div id="my-icons" class="site-footer__section">
+          {%- render 'social-icons', social_class: 'footer__social' -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Sidebar menu",
+  "settings": [
+    {
+      "type": "link_list",
+      "id": "primary_menu",
+      "label": "Primary menu",
+      "default": "main-menu"
+    },
+    {
+      "type": "link_list",
+      "id": "primary_menu_resources",
+      "label": "Primary menu on Pro Resources",
+      "default": "main-menu"
+    },
+    {
+      "type": "link_list",
+      "id": "secondary_menu",
+      "label": "Secondary menu",
+      "info": "This menu won't show dropdown items."
+    }
+  ]
+}
+{% endschema %}

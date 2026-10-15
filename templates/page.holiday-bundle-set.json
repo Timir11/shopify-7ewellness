@@ -1,0 +1,145 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "0c8535f5-a08c-4528-87eb-6d2bbbff871d": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14982314065974__0c8535f5-a08c-4528-87eb-6d2bbbff871d-image-1": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "https:\/\/www.7ewellness.com\/collections\/2024-fall-holiday-kits",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Holiday-Kits---Banner-desktop-consumer.png",
+            "image_mobile": "shopify:\/\/shop_images\/Holiday-Kits---Banner-mobile-consumer.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--14982314065974__0c8535f5-a08c-4528-87eb-6d2bbbff871d-image-1"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "164750184654268337": {
+      "type": "advanced-content",
+      "blocks": {
+        "164750184632c2dd43-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<p>Glow all season long with our exclusive<\/p><h2><em>MyoLift™ Gift Sets<\/em><\/h2>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "164750184632c2dd43-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "advanced_content_jqmAPG": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_3M44YF": {
+          "type": "liquid",
+          "settings": {
+            "code": "<center>\n<h2 class=\"section-header__title\">What Is True Microcurrent™ Technology?<\/h2><p>True Microcurrent™ technology is a low level of electrical current \nthat mirrors the body's own natural current.<\/p><\/center>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "image_fLzfex": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_7.png",
+            "link": "",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "liquid_3L4gke": {
+          "type": "liquid",
+          "settings": {
+            "code": "<center><a href=\"\/checkout\" class=\"btn\">COntinue to Checkout<\/a><\/center>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_3M44YF",
+        "image_fLzfex",
+        "liquid_3L4gke"
+      ],
+      "custom_css": [
+        ".index-section {margin: 0; padding: 60px 0px; background: #e3e3e3;}",
+        ".autumLeaves {background: rgba(103, 103, 103, 0.19);}",
+        ".image-wrap {padding: 0 !important; background: none; height: auto !important;}",
+        "img {max-width: 700px; margin: 0 auto;}",
+        "h2 {font-size: 32px; margin-bottom: 15px; font-weight: 700px;}",
+        "p {font-size: 20px; font-weight: 600; max-width: 700px;}",
+        ".btn {border-radius: 0; text-transform: uppercase; font-size: 18px; padding: 15px 25px;}",
+        "@media screen and (max-width: 480px) {h2 {font-size: 24px; } p {font-size: 16px; }}"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "advanced_content_XzTaef": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_ziE3Jj": {
+          "type": "liquid",
+          "settings": {
+            "code": "<center><a href=\"\/checkout\" class=\"btn\">COntinue to Checkout<\/a><\/center>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_ziE3Jj"
+      ],
+      "custom_css": [
+        ".index-section {margin: 0; padding: 0px 0px 80px; background: #fef5e6;}",
+        ".btn {border-radius: 0; text-transform: uppercase; font-size: 18px; padding: 15px 25px;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "alt": false,
+        "lazyload_images": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "0c8535f5-a08c-4528-87eb-6d2bbbff871d",
+    "164750184654268337",
+    "advanced_content_jqmAPG",
+    "advanced_content_XzTaef"
+  ]
+}

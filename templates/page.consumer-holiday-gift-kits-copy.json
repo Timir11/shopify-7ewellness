@@ -1,0 +1,124 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "062c9472-5f45-4e90-bb1a-164bf83d4efc": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14846295605302__062c9472-5f45-4e90-bb1a-164bf83d4efc-16685938445aab1b0d-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/black_fiday_consumer-holiday_banner_revised.png",
+            "image_mobile": "shopify:\/\/shop_images\/mobile_black_fiday_consumer-holiday_banner.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--14846295605302__062c9472-5f45-4e90-bb1a-164bf83d4efc-16685938445aab1b0d-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "164750184654268337": {
+      "type": "advanced-content",
+      "blocks": {
+        "164750184632c2dd43-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<!--<h2>Tis THE SEASON<\/h2>\n<h6>To Uplift Your Confidence With A Limited Edition Set<\/h6>-->\n<h2>Tis THE SEASON<\/h2>\n<h6>To Indulge In Self Care<\/h6>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "164750184632c2dd43-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "alt": false
+      }
+    },
+    "671ad0ea-8966-465c-a27b-229ac96ee7df": {
+      "type": "testimonials",
+      "blocks": {
+        "template--14846295605302__671ad0ea-8966-465c-a27b-229ac96ee7df-1668596138792a7705-0": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>\"I love this masks! use them everyday and alternate the forehead & the eye mask by using the splitting cord. They are very convenient  to use and you can reuse them several times.\"<\/p><p><strong>★★★★★<\/strong><\/p>",
+            "author": "Karen"
+          }
+        },
+        "template--14846295605302__671ad0ea-8966-465c-a27b-229ac96ee7df-1668596138792a7705-1": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>\"I decided to upgrade to the MyoLift QT for a few reasons. The app which guides me to how to use it on a daily basis, the mask and the device itself. I used the eye mask last night and the hands free option is wonderful. I did the facial routine and have definitely noticed a difference in my face.\"<\/p><p><strong>★★★★★<\/strong><\/p>",
+            "author": "Diem"
+          }
+        },
+        "b2fbcd68-264f-4666-bbc4-a733513fe2b1": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>\"I'm so glad I found the MyoLift Mini. After my first use I saw immediate results which makes me excited to continue using it to make those results last. I love the ability to see the connectivity and I love how it feels so similar to this process during a facial.\"<\/p><p><strong>★★★★★<\/strong><\/p>",
+            "author": "Rachel"
+          }
+        }
+      },
+      "block_order": [
+        "template--14846295605302__671ad0ea-8966-465c-a27b-229ac96ee7df-1668596138792a7705-0",
+        "template--14846295605302__671ad0ea-8966-465c-a27b-229ac96ee7df-1668596138792a7705-1",
+        "b2fbcd68-264f-4666-bbc4-a733513fe2b1"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "round_images": true,
+        "alt": true
+      }
+    },
+    "6890f4ce-2dd2-4481-8adc-2d8d87dc3434": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14846295605302__6890f4ce-2dd2-4481-8adc-2d8d87dc3434-16685961307969e576-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"checkout_btn_phl\">\n<a href=\"javascript:void(0);\" data-toggle=\"modal\" data-target=\"#checkoutModal\" class=\"btn\">Continue To Checkout<\/a>\n<\/div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14846295605302__6890f4ce-2dd2-4481-8adc-2d8d87dc3434-16685961307969e576-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "062c9472-5f45-4e90-bb1a-164bf83d4efc",
+    "164750184654268337",
+    "671ad0ea-8966-465c-a27b-229ac96ee7df",
+    "6890f4ce-2dd2-4481-8adc-2d8d87dc3434"
+  ]
+}

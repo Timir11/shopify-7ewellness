@@ -1,0 +1,512 @@
+<style>
+  /* Basic tab styles */
+  .tabs {
+    padding: 40px 160px;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+  }
+  .tab-text {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+
+  .tab-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .tab-links li {
+    margin-right: 15px;
+  }
+
+  .tab-links li a {
+    text-decoration: none;
+    padding: 8px 12px;
+    border: 1px solid #0000003d;
+    display: inline-block;
+    border-radius: 30px;
+    color: #333;
+    /* font-weight: bold; */
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .tab-links li a.active {
+    background-color: #e8dfee;
+    /* border-bottom: 3px solid #007bff; */
+  }
+
+  .tab-content {
+    margin-top: 20px;
+    border-radius: 18px;
+    padding: 45px;
+  }
+  .tab-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .tab-pane {
+    display: none;
+  }
+  .tab-pane.active {
+    display: block;
+  }
+  .main-product-tab .tab-links {
+    border: none !important;
+    margin-bottom: 20px;
+  }
+  .product-tabs-img {
+    width: 130px;
+    margin-bottom: 10px;
+  }
+  .tab-title {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .tab-left,
+  .tab-right {
+    width: 50%;
+    padding: 0px 6px;
+  }
+  .tab-image {
+    width: 100%;
+  }
+  .button-flex {
+    margin: 38px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    align-content: center;
+    justify-content: space-around;
+  }
+  .add-to-cart a {
+    border-radius: 30px;
+    background: #231f20;
+    padding: 10px 22px;
+    color: #ffffff;
+  }
+  .add-to-cart {
+    font-size: 16px;
+  }
+  .underline {
+    text-decoration: underline;
+    display: flex;
+  }
+  @media (max-width: 991px) {
+    .tabs {
+      padding: 20px 70px;
+    }
+    .tab-content {
+      padding: 18px;
+    }
+  }
+  @media (max-width: 768px) {
+    .tab-left,
+    .tab-right {
+      width: 100%;
+    }
+  }
+  @media (max-width: 575px) {
+    .tab-text {
+      font-size: 24px;
+      line-height: 24px;
+    }
+    .tab-links li a {
+      font-size: 12px;
+    }
+    .product-tabs-img {
+      width: 190px;
+    }
+    .underline P {
+      margin: 0px;
+    }
+    .tabs {
+      padding: 20px 22px;
+    }
+    .add-to-cart {
+      font-size: 12px;
+    }
+    .p-tab-description {
+      font-size: 12px;
+    }
+    .tab-title {
+      font-size: 18px;
+    }
+  }
+  .resources-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+
+  .resource-item {
+    width: calc(25% - 1rem);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: #2d2d2d;
+    display: flex;
+    flex-direction: column;
+  }
+  .resource-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .resource-text {
+    padding: 1rem;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #fff;
+  }
+  @media (max-width: 768px) {
+    .resource-item {
+      width: calc(50% - 10px); /* 2 per row with 20px gap */
+    }
+    .tab-content {
+      padding: 0 !important;
+    }
+    .tab-links {
+      width: 100% !important;
+    }
+    .tab-links li a {
+      width: 100%;
+    }
+    .tab-links li {
+      width: calc(50% - 20px);
+    }
+  }
+</style>
+
+<section style="position:relative">
+  <div class="tabs main-product-tab">
+    <ul class="tab-links main-tab">
+      {% for block in section.blocks %}
+        {% if block.settings['tab-button-text'] %}
+          <li>
+            <a href="#" class="{% if forloop.index == 1 %} active {% endif %}" data-tab="tab{{ forloop.index }}">
+              {{ block.settings['tab-button-text'] }}
+            </a>
+          </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+    <div class="tab-content">
+      {% for block in section.blocks %}
+        <div id="tab{{ forloop.index }}" class="tab-pane {% if forloop.index == 1 %} active {% endif %}">
+          {% if block.settings['heading-1'] != blank %}
+            <h2 style="text-align: center;">{{ block.settings['heading-1'] }}</h2>
+          {% endif %}
+
+          {% assign items1 = block.settings['resource-type-1'] | split: ';' %}
+          <div class="resources-group">
+            {% for item in items1 %}
+              {% assign fields = item | strip | split: '||' %}
+              {% assign image = '' %}
+              {% assign url = '' %}
+              {% assign text = '' %}
+
+              {% for field in fields %}
+                {% assign pair = field | split: '::' %}
+                {% if pair[0] == 'image' %}
+                  {% assign image = pair[1] %}
+                {% elsif pair[0] == 'url' %}
+                  {% assign url = pair[1] %}
+                {% elsif pair[0] == 'text' %}
+                  {% assign text = pair[1] %}
+                {% endif %}
+              {% endfor %}
+
+              <div class="resource-item">
+                {% if image != blank %}
+                  {% if url != blank %}
+                    <a href="{{ url | strip }}">
+                  {% endif %}
+                  <img src="{{ image | strip }}" alt="Resource Image">
+                  <div class="resource-text">{{ text }}</div>
+                  {% if url != blank %}
+                    </a>
+                  {% endif %}
+                {% endif %}
+              </div>
+            {% endfor %}
+          </div>
+
+          {% if block.settings['heading-2'] != blank %}
+            <h2 style="text-align: center;">{{ block.settings['heading-2'] }}</h2>
+          {% endif %}
+
+          {% assign items2 = block.settings['resource-type-2'] | split: ';' %}
+          <div class="resources-group" style="justify-content: center;">
+            {% for item in items2 %}
+              {% assign fields = item | strip | split: '||' %}
+              {% assign image = '' %}
+              {% assign url = '' %}
+              {% assign text = '' %}
+
+              {% for field in fields %}
+                {% assign pair = field | split: '::' %}
+                {% if pair[0] == 'image' %}
+                  {% assign image = pair[1] %}
+                {% elsif pair[0] == 'url' %}
+                  {% assign url = pair[1] %}
+                {% elsif pair[0] == 'text' %}
+                  {% assign text = pair[1] %}
+                {% endif %}
+              {% endfor %}
+
+              <div class="resource-item">
+                {% if image != blank %}
+                  {% if url != blank %}
+                    <a href="{{ url | strip }}">
+                  {% endif %}
+                  <img src="{{ image | strip }}" alt="Resource Image">
+                  <div class="resource-text">{{ text }}</div>
+                  {% if url != blank %}
+                    </a>
+                  {% endif %}
+                {% endif %}
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Get all tab links
+    const tabLinks = document.querySelectorAll('.tab-links a');
+
+    // Get all tab panes (content sections)
+    const tabPanes = document.querySelectorAll('.tab-pane');
+
+    // Add event listener to each tab link
+    tabLinks.forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        e.preventDefault(); // Prevent the default anchor behavior
+
+        // Remove 'active' class from all tab links and tab content
+        tabLinks.forEach(function (link) {
+          link.classList.remove('active');
+        });
+        tabPanes.forEach(function (pane) {
+          pane.classList.remove('active');
+        });
+
+        // Add 'active' class to the clicked tab and corresponding tab content
+        this.classList.add('active');
+        const tabId = this.getAttribute('data-tab');
+        const activePane = document.getElementById(tabId);
+        activePane.classList.add('active');
+      });
+    });
+  });
+</script>
+<style>
+  .table-wrapper th,
+  .table-wrapper td {
+    background-color: #fff;
+    font-size: 14px;
+  }
+  .table-wrapper th {
+    font-weight: normal;
+  }
+  .table-wrapper td {
+    font-weight: 700;
+  }
+  .table-wrapper tr {
+    border-top: 0.7px solid #ccc;
+    border-bottom: 0.7px solid #ccc;
+    font-size: 14px;
+  }
+  .table-wrapper {
+    margin: 15px 0px;
+  }
+  .p-tab-description {
+    font-size: 14px;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Custom JSON Blocks",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "tab",
+      "name": "Resource Tab",
+      "settings": [
+        {
+          "type": "html",
+          "id": "tab-button-text",
+          "label": "Tab Button Text"
+        },
+        {
+          "type": "text",
+          "id": "heading-1",
+          "label": "Heading for resource 1"
+        },
+        {
+          "type": "textarea",
+          "id": "resource-type-1",
+          "label": "Data input 1",
+          "info": "Format: image::URL||url::LINK||text::BUTTON_TEXT;"
+        },
+        {
+          "type": "text",
+          "id": "heading-2",
+          "label": "Heading for resource 2"
+        },
+        {
+          "type": "textarea",
+          "id": "resource-type-2",
+          "label": "Data input 2",
+          "info": "Format: image::URL||url::LINK||text::BUTTON_TEXT;..."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Wholesale page tabs",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+  .tabs.main-product-tab {
+    display: flex;
+    flex-direction: column;
+  }
+  .tab-content {
+    margin-top: 0px;
+    border-radius: 18px;
+    padding: 45px;
+  }
+  .tab-text {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  .main-product-tab .tab-links {
+    border: none !important;
+    margin-bottom: 10px;
+  }
+  .tab-image img {
+    width: 100% !important;
+  }
+  .add-to-cart {
+    display: flex !important;
+    flex-direction: row !important;
+    padding: 0px;
+  }
+  .add-to-cart a {
+    display: flex !important;
+    align-items: center !important;
+    gap: 7px;
+    font-size: 17px;
+  }
+  .icon {
+    width: 23px !important;
+    height: 33px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  td {
+    display: flex !important;
+    justify-content: end !important;
+  }
+  table {
+    background: #cccccc !important;
+    border: 0 none;
+    border-spacing: 1px;
+    position: relative;
+    width: 100%;
+  }
+  @media screen and (max-width: 768px) {
+    .tab-text {
+      text-align: center;
+      font-size: 40px;
+      font-weight: bold;
+      margin-bottom: 5px;
+      line-height: 37px;
+    }
+    .add-to-cart a {
+      display: flex !important;
+      align-items: center !important;
+      gap: 0px;
+      font-size: 15px;
+    }
+    .floating-btn-mycommunity button {
+      border-radius: 50px;
+      transform: rotate(0deg);
+      writing-mode: horizontal-tb;
+    }
+    .button-flex {
+      margin: 38px 0px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 22px;
+      align-content: center;
+      justify-content: center;
+    }
+  }
+
+  .learn_more_parent {
+    display: flex;
+    font-size: 15px;
+    gap: 5px;
+    align-items: center;
+  }
+  .button-flex {
+    margin: 38px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+    align-content: center;
+    justify-content: center;
+  }
+  .tab-pane img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .floating-btn-mycommunity button {
+    background-color: #000;
+    color: var(--colorBtnPrimaryText);
+    border: none;
+    padding: 15px;
+    border-radius: 0px 18px 18px 0px !important;
+    font-size: 12px;
+    text-align: center;
+    writing-mode: vertical-rl;
+    white-space: nowrap;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    transform: rotate(180deg);
+  }
+  .tabs {
+    border-radius: 0px !important;
+  }
+</style>

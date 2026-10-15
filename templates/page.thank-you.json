@@ -1,0 +1,44 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "164750184654268337": {
+      "type": "advanced-content",
+      "blocks": {
+        "164750184632c2dd43-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/product.png",
+            "link": "",
+            "width": "33%",
+            "alignment": "center"
+          }
+        },
+        "164750184632c2dd43-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>Thanks! We will notify you when this product becomes available!<\/h2>\n<a href=\"\/\" class=\"btn\">\nContinue Shopping<\/a>",
+            "width": "66%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "164750184632c2dd43-0",
+        "164750184632c2dd43-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "164750184654268337"
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "164694323392e62a5d": {
+      "type": "faq",
+      "blocks": {
+        "1646943233a6f71293-0": {
+          "type": "question",
+          "settings": {
+            "title": "Getting Started With Myolift QT",
+            "text": "<p>Welcome<\/p><p>Congratulations on becoming a MyoLift™ microcurrent device owner! We know this is a big step in your wellness so we have designed this support portal to ensure you have access to all the information you need. If your questions or concerns are not answered in this page, please contact 7E Wellness Headquarters by email at info@7ewellness.com or by phone at (888) 412-3160<\/p><p>What’s in your MyoLift™ QT BoxLet's make sure you have everything. When your MyoLift™ QT delivery arrives, you should have the following items included in your package:• MyoLift™ QT Smart Current™ Handheld device• Conductive Lip Mask• Conductive Eye Mask• Conductive Forehead Mask• 2oz ReStore Conductive Tx Gel• Lead Wire• Charging Wire• Reminder Card with App QR Codes + Warranty InformationDoes it look like you're missing something? Make sure to connect with our team via phone or email and have your order number on hand for a speedy resolution!<\/p><p> <\/p><p>Registering your DeviceWhen you register your MyoLift™ QT device on our website using the link below, you will automatically unlock an extra year of warranty coverage as well as 10% off your next online order. Your 10% coupon code will be emailed to you within 24 hours of registering your device.Registering your device also unlocks your customer support training portal for MyoLift QT on the 7E Wellness website, allowing you to take full advantage of ongoing 7E customer education.Register: <a href=\"https:\/\/www.7ewellness.com\/pages\/register-my-myolift?fbclid=IwAR1aUJVd4doC_plRRQCa1ez9Dt9qjBby6SDiafMd3wpMKJOBfOx5t_ENSUc\" target=\"_blank\" title=\"Register Your Device\">https:\/\/www.7ewellness.com\/pages\/register-my-myolift<\/a><\/p><p> <\/p>"
+          }
+        },
+        "1646943233a6f71293-1": {
+          "type": "question",
+          "settings": {
+            "title": "Myolift QT APP",
+            "text": "<p><strong>First Launch<\/strong>: Creating your AccountWhen you first open your MyoLift™ QT app you will see our welcome videos. Please watch these before moving forward! These videos will answer common FAQs and share important information about your device.After watching your welcome videos you have the opportunity to create your account and set up your login credentials. We <em>strongly<\/em> recommend writing your login credentials down somewhere. If you forget or misplace your login credentials you will need to recreate an account. You cannot use the same user ID email as you did before.When you're setting up your account you will be able to log personal details like what your trouble areas are, your skin type and more! You can review or edit these fields later on by selecting \"My Profile\" from the app menu.Once account setup is complete you will be re-routed to the main dashboard of the MyoLift™ QT app. This dashboard should display a variety of treatment options (example: Forehead Mask Treatment 10 Mins, Conductive Gloves, Quick Treatment 5 Mins).Connecting your Device to the AppTreatments with the MyoLift™ QT device will require the smartphone app. You will be able to download the MyoLift QT™ app on both iOS and Android devices.To connect your MyoLift™ QT device, make sure your Bluetooth on your smartphone is turned on and ready to connect once you are ready to begin your Smart Current™ treatment.Forgot login Credentials?If you forget your login credentials you will need to recreate an account. You will not be able to use the same user ID email as you did before. For this reason it's very important to write down your original login credentials and save them somewhere you will not forget.<\/p>"
+          }
+        },
+        "d73f02db-b11d-4238-8da7-2774c7ad3fd1": {
+          "type": "question",
+          "settings": {
+            "title": "Quick Reference",
+            "text": "<p><a href=\"https:\/\/www.dropbox.com\/s\/4td7imxv8xkf0oe\/MyoLift%E2%84%A2%20QT%20Vocabulary.pdf?dl=1\" title=\"7E MyoLift™ QT Microcurrent Vocabulary\">7E MyoLift™ QT Microcurrent Vocabulary<\/a><\/p><p><a href=\"https:\/\/www.dropbox.com\/s\/7ayxcw4mctcfrix\/QT%20Facial%20Muscle%20Chart.png?dl=1\" title=\"Facial Muscle Chart\">Facial Muscle Chart<\/a><\/p><p><a href=\"https:\/\/www.dropbox.com\/s\/zc9jyyixf0q8yxv\/MyoLift%20QT%20FAQ%20.pdf?dl=1\" title=\"Frequently Asked Questions\">Frequently Asked Questions<\/a><\/p>"
+          }
+        },
+        "20a0a9fa-bdde-487d-a7e0-f53685b844bb": {
+          "type": "question",
+          "settings": {
+            "title": "Welcome Video Tutorials",
+            "text": "<p>1. <a href=\"https:\/\/www.youtube.com\/watch?v=jg8evfW4IlE&feature=emb_logo\" target=\"_blank\" title=\"https:\/\/www.youtube.com\/watch?v=jg8evfW4IlE&feature=emb_logo\">Welcome<\/a><\/p><p>2. <a href=\"https:\/\/www.youtube.com\/watch?v=z2wjNUrzvt4&feature=emb_logo\" target=\"_blank\" title=\"https:\/\/www.youtube.com\/watch?v=z2wjNUrzvt4&feature=emb_logo\">Unboxing Your Myolift QT<\/a><\/p><p>3. <a href=\"https:\/\/www.youtube.com\/watch?v=wvWbiX9QfKQ\" target=\"_blank\" title=\"https:\/\/www.youtube.com\/watch?v=wvWbiX9QfKQ\">Using Your Myolift QT<\/a><\/p>"
+          }
+        },
+        "8ae3cb24-6ada-49de-b5fe-e5b62118b2dc": {
+          "type": "question",
+          "settings": {
+            "title": "Treatment Video Tutorials",
+            "text": "<p>Note: Educate and Erase terms are used in this video but your device may reflect Stretch and Lift. The waveform is the same, this is just a change in terminology we have made since the creation of this video.<\/p><p>1. <a href=\"https:\/\/www.youtube.com\/watch?v=kLkyrGnOfck\" target=\"_blank\" title=\"https:\/\/www.youtube.com\/watch?v=kLkyrGnOfck\">15 Minutes Full Face<\/a><\/p><p>2. <a href=\"https:\/\/www.youtube.com\/watch?v=Yrd3yg1WF4g\" target=\"_blank\" title=\"https:\/\/www.youtube.com\/watch?v=Yrd3yg1WF4g\">Conductive Gloves<\/a><\/p>"
+          }
+        },
+        "860895c4-deae-452c-adf5-77518144b59b": {
+          "type": "question",
+          "settings": {
+            "title": "Further Education",
+            "text": "<p><a href=\"https:\/\/www.7ewellness.com\/pages\/events\">Ongoing Educational Opportunities (Webinars, Certification and more!)<\/a><\/p><p><a href=\"https:\/\/www.7ewellness.com\/blogs\/infuse-your-spa\/7e-myolift%E2%84%A2-microcurrent-contraindications\">Contraindications<\/a><\/p>"
+          }
+        },
+        "c167a1e3-9c93-45f8-af60-95042a895b67": {
+          "type": "question",
+          "settings": {
+            "title": "Warranty",
+            "text": "<p>The MyoLift QT warranty is one year from the original date of purchase. MyoLift QT devices are warranted to the original consumer for a period of one year. The device is warranted against defective materials or workmanship. This warranty is null and void if the product has been damaged by accident, misuse, neglect, improper service, or repaired by unauthorized personnel. This warranty does not extend to any devices that have been altered or modified, or damaged products or parts that have had the serial number removed, altered, defaced, or rendered illegible. The warranty does not cover normal wear and tear or replacement of adapter, electrical cord, applicators and other accessories. For warranty service, for a product covered under the warranty period, please use the information in the \"Returns\" section to acquire a Return Merchandise Authorize form (RMA). Please send products insured, packed with sufficient protection, postage insurance, prepaid to the address. Customer’s duty\/brokerage fee, if any, must be paid by the consumer.<br\/><br\/><strong>If you register your MyoLift™ QT device on our website using the link below, you will automatically unlock an extra year of warranty coverage!<\/strong>Register: <a href=\"https:\/\/www.7ewellness.com\/pages\/register-my-myolift?fbclid=IwAR06vTjaqqllgqVmreV4MyMW_hUiDl-oZc2lIkfvDIKsYX3_XtnRMPCe2x4\" target=\"_blank\">https:\/\/www.7ewellness.com\/pages\/register-my-myolift<\/a><\/p>"
+          }
+        },
+        "2d697079-c732-4cd9-9593-78297dd40983": {
+          "type": "question",
+          "settings": {
+            "title": "Returns & Exchange",
+            "text": "<p>The MyoLift QT warranty is one year from the original date of purchase. MyoLift QT devices are warranted to the original consumer for a period of one year. The device is warranted against defective materials or workmanship. This warranty is null and void if the product has been damaged by accident, misuse, neglect, improper service, or repaired by unauthorized personnel. This warranty does not extend to any devices that have been altered or modified, or damaged products or parts that have had the serial number removed, altered, defaced, or rendered illegible. The warranty does not cover normal wear and tear or replacement of adapter, electrical cord, applicators and other accessories. For warranty service, for a product covered under the warranty period, please use the information in the \"Returns\" section to acquire a Return Merchandise Authorize form (RMA). Please send products insured, packed with sufficient protection, postage insurance, prepaid to the address. Customer’s duty\/brokerage fee, if any, must be paid by the consumer.<br\/><br\/><strong>If you register your MyoLift™ QT device on our website using the link below, you will automatically unlock an extra year of warranty coverage!<\/strong>Register: <a href=\"https:\/\/www.7ewellness.com\/pages\/register-my-myolift?fbclid=IwAR06vTjaqqllgqVmreV4MyMW_hUiDl-oZc2lIkfvDIKsYX3_XtnRMPCe2x4\" target=\"_blank\">https:\/\/www.7ewellness.com\/pages\/register-my-myolift<\/a><\/p>"
+          }
+        },
+        "82fb82ab-fbeb-4c92-958c-0daed7bf62b9": {
+          "type": "question",
+          "settings": {
+            "title": "Download FAQ",
+            "text": "<p><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2745\/9950\/files\/MyoLift_QT_FAQ_1.pdf?v=1623864075\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2745\/9950\/files\/MyoLift_QT_FAQ_1.pdf?v=1623864075\">Download Now<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1646943233a6f71293-0",
+        "1646943233a6f71293-1",
+        "d73f02db-b11d-4238-8da7-2774c7ad3fd1",
+        "20a0a9fa-bdde-487d-a7e0-f53685b844bb",
+        "8ae3cb24-6ada-49de-b5fe-e5b62118b2dc",
+        "860895c4-deae-452c-adf5-77518144b59b",
+        "c167a1e3-9c93-45f8-af60-95042a895b67",
+        "2d697079-c732-4cd9-9593-78297dd40983",
+        "82fb82ab-fbeb-4c92-958c-0daed7bf62b9"
+      ],
+      "settings": {
+        "title": "Myolift QT Customer Portal"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "164694323392e62a5d"
+  ]
+}

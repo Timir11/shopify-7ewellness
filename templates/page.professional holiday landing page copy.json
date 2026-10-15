@@ -1,0 +1,127 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "e8d75be7-051f-4c65-8b00-83754b3479da": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14846151000118__e8d75be7-051f-4c65-8b00-83754b3479da-1668571562baad1817-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/black_fiday_professional-holiday_banner_revised-min.png",
+            "image_mobile": "shopify:\/\/shop_images\/mobile_professional_black_friday_banner_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--14846151000118__e8d75be7-051f-4c65-8b00-83754b3479da-1668571562baad1817-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "164750184654268337": {
+      "type": "advanced-content",
+      "blocks": {
+        "164750184632c2dd43-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>Tis THE SEASON<\/h2>\n<h6>To Uplift Your Clients With MyoLift Treatments<\/h6>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "164750184632c2dd43-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "350c7c9e-d3fb-4a76-8d85-dfba68334e06": {
+      "type": "testimonials",
+      "blocks": {
+        "template--14846151000118__350c7c9e-d3fb-4a76-8d85-dfba68334e06-16685728228a7073c3-0": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>\"I love how the microcurrent is enhanced by the hyaluronic acid and the copper peptides.<br\/>The 16 oz. size can last through about 6 months of regular use.<br\/>Highly Recommend!\"<\/p><p><strong>★★★★★<\/strong><\/p>",
+            "author": "Allison"
+          }
+        },
+        "template--14846151000118__350c7c9e-d3fb-4a76-8d85-dfba68334e06-16685728228a7073c3-1": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>\"I bought the MyoLift 600 almost two years ago . My clients are very happy with the results as well as myself! I highly recommend it!<\/p><p>Microcurrent is my favorite service and the results are wow!\"<\/p><p><strong>★★★★★<\/strong><\/p>",
+            "author": "Rocio"
+          }
+        },
+        "482da5c7-96be-41ea-b735-8c3892f916be": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>\"Fantastic pro device, this was a great purchase and especially with the bundled items! Impressive device with outstanding results! My clients and I are in love with this treatment!\"<\/p><p><strong>★★★★★<\/strong><\/p>",
+            "author": "Diana"
+          }
+        }
+      },
+      "block_order": [
+        "template--14846151000118__350c7c9e-d3fb-4a76-8d85-dfba68334e06-16685728228a7073c3-0",
+        "template--14846151000118__350c7c9e-d3fb-4a76-8d85-dfba68334e06-16685728228a7073c3-1",
+        "482da5c7-96be-41ea-b735-8c3892f916be"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "round_images": true,
+        "alt": true
+      }
+    },
+    "2b5d1475-53ed-4e1d-ad92-f3840eed05a4": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14846151000118__2b5d1475-53ed-4e1d-ad92-f3840eed05a4-166857218617c8aaf4-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"checkout_btn_phl\">\n<a data-toggle=\"modal\" data-target=\"#checkoutModal\" class=\"btn\">Continue To Checkout<\/a>\n<\/div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14846151000118__2b5d1475-53ed-4e1d-ad92-f3840eed05a4-166857218617c8aaf4-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "alt": false,
+        "lazyload_images": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "e8d75be7-051f-4c65-8b00-83754b3479da",
+    "164750184654268337",
+    "350c7c9e-d3fb-4a76-8d85-dfba68334e06",
+    "2b5d1475-53ed-4e1d-ad92-f3840eed05a4"
+  ]
+}

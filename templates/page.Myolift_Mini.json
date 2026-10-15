@@ -1,0 +1,284 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1645484861fe46f575": {
+      "type": "featured-product",
+      "blocks": {
+        "1645484861f1f889f8-0": {
+          "type": "price",
+          "settings": {}
+        },
+        "1645484861f1f889f8-1": {
+          "type": "description",
+          "settings": {
+            "is_tab": true
+          }
+        },
+        "1645484861f1f889f8-2": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "color_swatches": false
+          }
+        },
+        "1645484861f1f889f8-3": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        }
+      },
+      "block_order": [
+        "1645484861f1f889f8-0",
+        "1645484861f1f889f8-1",
+        "1645484861f1f889f8-2",
+        "1645484861f1f889f8-3"
+      ],
+      "settings": {
+        "featured_product": "myolift-mini-lp",
+        "product_image_size": "medium",
+        "product_image_type": "stacked",
+        "product_zoom_enable": false,
+        "enable_video_looping": true,
+        "product_video_style": "muted",
+        "sku_enable": false
+      }
+    },
+    "16458069061833c6cc": {
+      "type": "slideshow",
+      "blocks": {
+        "1645806906787e69a5-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Untitled_design_30_f371784c-b820-4b83-a441-e9edb515471b.png",
+            "image_mobile": "shopify:\/\/shop_images\/Untitled_design_31.png"
+          }
+        }
+      },
+      "block_order": [
+        "1645806906787e69a5-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "164566924518fb45d3": {
+      "type": "slideshow",
+      "blocks": {
+        "1645669245a1195586-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Transition_desktop_2x_f005d4d7-814f-4055-a146-d0fd0f732ad4.png"
+          }
+        }
+      },
+      "block_order": [
+        "1645669245a1195586-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "164566916944e4c352": {
+      "type": "rich-text",
+      "blocks": {
+        "16456691698154c8c4-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Portable & Affordable with Professional Results"
+          }
+        },
+        "16456691698154c8c4-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>⟡  FDA-cleared and clinically proven for beauty professionals.  ⟡<\/p><p>⟡  True microcurrent technology exercises and re-educates the facial muscles. ⟡<\/p><p>⟡ Best microcurrent machine for estheticians looking to expand their menu of services. ⟡<\/p><p>⟡ Treatments are easy to learn and use while still delivering outstanding results. ⟡<\/p><p>⟡ Thanks to its small size, Mini can be used at home or while traveling. ⟡<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16456691698154c8c4-0",
+        "16456691698154c8c4-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": true
+      }
+    },
+    "164556966208ffa97e": {
+      "type": "rich-text",
+      "blocks": {
+        "164556966241262ea3-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Not sure if this is the right device for you? Take our 2 minute quiz and find your match."
+          }
+        },
+        "053bf969-e868-49b0-8988-4b9d4095e735": {
+          "type": "button",
+          "settings": {
+            "link": "",
+            "link_text": "GET STARTED"
+          }
+        }
+      },
+      "block_order": [
+        "164556966241262ea3-0",
+        "053bf969-e868-49b0-8988-4b9d4095e735"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": true
+      }
+    },
+    "16456696261470a758": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Screen_Shot_2022-02-23_at_8.28.12_PM.png",
+        "subtitle": "",
+        "title": "Image with text",
+        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "layout": "right",
+        "alt": true
+      }
+    },
+    "1645669636d5258e08": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Screen_Shot_2022-02-23_at_8.28.27_PM.png",
+        "subtitle": "",
+        "title": "Image with text",
+        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "layout": "left",
+        "alt": false
+      }
+    },
+    "1645569511e5cda5e6": {
+      "type": "slideshow",
+      "blocks": {
+        "1645569511ae7b4c38-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/before_after_desktop_qt_2x_4121a005-13aa-419d-8cf0-836995532e12.png",
+            "image_mobile": "shopify:\/\/shop_images\/before_after_mobile_qt_2x_77c40402-fdca-4b6d-ac4d-c4ff365561c2.png"
+          }
+        }
+      },
+      "block_order": [
+        "1645569511ae7b4c38-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "1645484882ba6dda65": {
+      "type": "faq",
+      "blocks": {
+        "1645484882daf77121-0": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "1645484882daf77121-1": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1645484882daf77121-0",
+        "1645484882daf77121-1"
+      ],
+      "settings": {
+        "title": "FAQs"
+      }
+    },
+    "1645484885b0cba9cd": {
+      "type": "apps",
+      "blocks": {
+        "bb171400-c28e-46a1-b547-838a40b009a4": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "",
+            "widget_type": "reviews_widget"
+          }
+        }
+      },
+      "block_order": [
+        "bb171400-c28e-46a1-b547-838a40b009a4"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1645484861fe46f575",
+    "16458069061833c6cc",
+    "164566924518fb45d3",
+    "164566916944e4c352",
+    "164556966208ffa97e",
+    "16456696261470a758",
+    "1645669636d5258e08",
+    "1645569511e5cda5e6",
+    "1645484882ba6dda65",
+    "1645484885b0cba9cd"
+  ]
+}

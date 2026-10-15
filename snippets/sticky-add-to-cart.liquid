@@ -1,0 +1,456 @@
+<style>
+  .stickyattached-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .stickyattached-wrapper-outer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: white;
+    padding: 0.5rem;
+    border-top: 1px solid #eee;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+    transition: transform 0.3s ease;
+    transform: translateY(100%); /* Start hidden */
+  }
+
+  .stickyattached-product-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 50%;
+  }
+
+  .stickyattached-product-title {
+    font-weight: 500;
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+
+  form.stickyattached-form,
+  .stickyattached-membership-dropdown {
+    width: 35%;
+  }
+
+  .stickyattached-form .add-to-cart {
+    font-size: 14px;
+  }
+
+  .stickyattached-product-info img {
+    width: 65px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    height: 65px;
+  }
+  .stickyattached-discounted-price {
+    font-weight: bold;
+  }
+
+  .stickyattached-compare-price {
+    text-decoration: line-through;
+    color: gray;
+    margin-left: 4px;
+  }
+
+  .stickyattached-discount-tag {
+    color: #8c6e4f;
+    font-size: 13px;
+    margin-left: 6px;
+  }
+
+  .stickyattached-membership-dropdown select {
+    font-size: 14px;
+    color: #2e3a59;
+  }
+
+  .stickyattached-add-to-cart-btn {
+    background: #1c1c1e;
+    color: white;
+    padding: 0.6rem 1rem;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  .stickyattached-cart-icon {
+    margin-right: 6px;
+  }
+  .stickyattached-select {
+    padding: 8px 32px 8px 18px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fff;
+    appearance: none; /* Hide native arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 10 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23666'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 10px 6px;
+
+    cursor: pointer;
+  }
+  .stickyattached-price {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .stickyattached-price__compare {
+    color: #000;
+    text-decoration: line-through;
+    margin-left: 8px;
+  }
+
+  .stickyattached-price__current {
+    color: #000;
+    font-weight: 700; /* Bold */
+  }
+
+  .stickyattached-price__discount {
+    color: #000;
+    font-size: 14px;
+    margin-left: 8px;
+  }
+
+  .varaint_button_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .varaint_button_wrapper:has(.btn_item:nth-child(2):not(:only-child)){
+    justify-content: flex-end;
+  }
+
+  @media (max-width: 768px) {
+    .stickyattached-membership-dropdown {
+      width: 50%;
+      margin-top: 0.8rem;
+    }
+
+    form.stickyattached-form {
+      width: 48%;
+      margin-top: 0.8rem;
+    }
+
+    .stickyattached-select {
+      padding: 8px 32px 8px 16px;
+    }
+
+    .stickyattached-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .stickyattached-product-info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 90%;
+    }
+  }
+</style>
+<div class="stickyattached-wrapper-outer">
+  <div class="stickyattached stickyattached-wrapper grid">
+    <div class="stickyattached-product-info grid__item medium-up--one-half one-whole">
+      <img src="{{ product.featured_image | image_url: width: 100 }}" alt="{{ product.title }}">
+      <div>
+        <p class="stickyattached-product-title">{{ product.title }}</p>
+        {% comment %}
+          <p class="stickyattached-product-price">
+            <span class="stickyattached-discounted-price">{{ product.price | money }}</span>
+            {% if product.compare_at_price > product.price %}
+              <span class="stickyattached-compare-price">{{ product.compare_at_price | money }}</span>
+              <span class="stickyattached-discount-tag">5% off</span>
+            {% endif %}
+          </p>
+        {% endcomment %}
+        <div id="stickyattached-variant-price" class="stickyattached-variant-price">
+          {% assign price = product.selected_or_first_available_variant.price %}
+          {% assign compare_price = product.selected_or_first_available_variant.compare_at_price %}
+          <div class="stickyattached-price">
+            <span class="stickyattached-price__current">
+              {{ price | money }}
+            </span>
+
+            {% if compare_price > price %}
+              <span class="stickyattached-price__compare">
+                {{ compare_price | money }}
+              </span>
+
+              {% assign discount_percent = 100
+                | times: compare_price
+                | minus: price
+                | divided_by: compare_price
+                | round
+              %}
+              <span class="stickyattached-price__discount"> ({{ discount_percent }}% OFF) </span>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="varaint_button_wrapper grid__item medium-up--one-half one-whole">
+      {%- for option in product.options_with_values -%}
+        {% if option.values.size > 1 %}
+          <div
+            class="btn_item stickyattached-membership-dropdown"
+          >
+            <select
+              id="stickyattached-option-{{ forloop.index }}"
+              name="options[{{ option.name }}]"
+              class="stickyattached-select"
+              data-option-index="{{ forloop.index0 }}"
+            >
+              {%- for value in option.values -%}
+                <option
+                  value="{{ value | escape }}"
+                  {% if option.selected_value == value %}
+                    selected
+                  {% endif %}
+                >
+                  {{ value.variant.title }}
+                </option>
+              {%- endfor -%}
+            </select>
+          </div>
+        {% endif %}
+      {%- endfor -%}
+
+      <div id="stickyattached-variants-data" style="display:none;">
+        {%- for variant in product.variants -%}
+          <div
+            class="stickyattached-variant"
+            data-id="{{ variant.id }}"
+            data-options="{{ variant.options | join: '|' }}"
+            data-price="{{ variant.price | money }}"
+            data-compare="{{ variant.compare_at_price | money }}"
+            data-available="{{ variant.available }}"
+          ></div>
+        {%- endfor -%}
+      </div>
+
+      <form class="stickyattached-form btn_item" method="post" action="/cart/add">
+        <input class="stickyattached-variant-id" type="hidden" name="id" value="{{ product.variants.first.id }}">
+        <button type="submit" name="add" data-add-to-cart="" class="btn btn--full add-to-cart">
+          <span data-add-to-cart-text="" data-default-text="Add to cart"> Add to cart </span>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script id="stickyattached-variant-data" type="application/json">
+  {{ product.variants | json }}
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const stickyBar = document.querySelector('.stickyattached-wrapper-outer');
+    const addToCartBtn = document.querySelector('.stickyattached-add-to-cart-btn');
+    const dropdown = document.querySelector('.stickyattached-membership-dropdown select');
+    const target = document.querySelector('.okeReviews-widget-holder');
+
+    const allSections = document.querySelectorAll('.shopify-section');
+  let totalHeight = 0;
+
+  for (const section of allSections) {
+    if (section.compareDocumentPosition(target) & Node.DOCUMENT_POSITION_FOLLOWING) {
+      // Section comes before the target
+      totalHeight += section.offsetHeight;
+    } else {
+      break; // Stop when we reach or pass the target
+    }
+  }
+
+  console.log('Total height of .shopify-section before target:', totalHeight);
+    
+    let targetCrossCount = 0;
+
+    console.log(target,"target");
+
+    const selects = document.querySelectorAll('.stickyattached-select');
+    const priceEl = document.querySelector('.stickyattached-variant-price');
+    const variantIdInput = document.querySelector('.stickyattached-variant-id');
+
+    function updateStickyPrice() {
+      const selects = document.querySelectorAll('.stickyattached-select');
+      const selectedValues = Array.from(selects)
+        .map((s) => s.value)
+        .join('|');
+
+      const variants = document.querySelectorAll('.stickyattached-variant');
+      let match = null;
+
+      variants.forEach((variant) => {
+        if (variant.dataset.options === selectedValues) {
+          match = variant;
+        }
+      });
+
+      if (match) {
+        const price = match.dataset.price;
+        const compare = match.dataset.compare;
+        const available = match.dataset.available === 'true';
+
+        const stickyPriceDiv = document.getElementById('stickyattached-variant-price');
+        // Update the hidden input inside the form
+        const variantInput = document.querySelector('.stickyattached-variant-id');
+        if (variantInput) {
+          variantInput.value = match.id;
+        }
+
+        // Strip currency symbols for calculation (basic approach)
+        const priceNum = parseFloat(price.replace(/[^\d.]/g, ''));
+        const compareNum = parseFloat(compare.replace(/[^\d.]/g, ''));
+
+        let stickyPriceDivHtml = '';
+
+        if (compare && compareNum > priceNum) {
+          const discountPercent = Math.round(((compareNum - priceNum) / compareNum) * 100);
+
+          stickyPriceDivHtml = `
+     <div class="stickyattached-price">
+       <span class="stickyattached-price__current">${price}</span>
+  <span class="stickyattached-price__compare">${compare}</span>
+
+  <span class="stickyattached-price__discount">${discountPercent}% OFF</span>
+</div>
+
+    `;
+        } else {
+          stickyPriceDivHtml = `<span class="text-black font-semibold">${price}</span>`;
+        }
+
+        stickyPriceDiv.innerHTML = stickyPriceDivHtml;
+
+        // Optional: Disable Add to Cart button if unavailable
+        const addToCartButton = document.querySelector('.stickyattached-button');
+        const variantIdInput = document.querySelector('.stickyattached-variant-id');
+        if (variantIdInput) variantIdInput.value = match.dataset.id;
+
+        if (addToCartButton) {
+          addToCartButton.disabled = !available;
+          addToCartButton.textContent = available ? 'Add to Cart' : 'Sold Out';
+        }
+      } else {
+        console.log('No matching variant');
+      }
+    }
+
+    document.querySelectorAll('.stickyattached-select').forEach((select) => {
+      select.addEventListener('change', updateStickyPrice);
+    });
+
+    // ----- 1. Sticky bar show/hide logic based on scroll -----
+    // let lastScrollY = window.scrollY;
+    // window.addEventListener('scroll', function () {
+    //   const currentScrollY = window.scrollY;
+    //   const directionDown = currentScrollY > lastScrollY;
+    //   const secondFold = window.innerHeight * 4;
+
+    //   if (directionDown && currentScrollY >= secondFold) {
+    //     stickyBar.style.transform = 'translateY(0)';
+    //   } else if (!directionDown && currentScrollY < window.innerHeight) {
+    //     stickyBar.style.transform = 'translateY(100%)';
+    //   }
+    //    // Initial setup — hide if on first fold
+    //   if (window.scrollY < window.innerHeight * 4) {
+    //     stickyBar.style.transform = 'translateY(100%)';
+    //   }
+
+    //   lastScrollY = currentScrollY;
+    // });
+    if (!stickyBar || !target) return;
+
+  // let isTargetOutOfView = false; // flag
+
+  // // IntersectionObserver to track the target
+  // const observer = new IntersectionObserver(
+  //   (entries) => {
+  //     entries.forEach((entry) => {
+  //       // If the target is not intersecting (i.e., out of view)
+  //        isTargetOutOfView = !isTargetOutOfView;
+  //       console.log("observer",isTargetOutOfView)
+  //       targetCrossCount = targetCrossCount+1;
+  //       if(targetCrossCount % 2 ===0 ){
+  //          stickyBar.style.transform = 'translateY(0)';
+  //         console.log(targetCrossCount,"if")
+         
+  //       }
+  //       if(isTargetOutOfView){
+  //         console.log("show")
+  //       }
+        
+  //     });
+  //   },
+  //   {
+  //     root: null,
+  //     threshold: 0, // Trigger as soon as target touches the viewport
+  //   }
+  // );
+
+  // observer.observe(target);
+
+  // function toggleStickyBar() {
+  //   console.log("toggle sticky",targetCrossCount,isTargetOutOfView)
+  //   if (isTargetOutOfView) {
+  //     stickyBar.style.transform = 'translateY(0)';
+  //   } else {
+  //     stickyBar.style.transform = 'translateY(100%)';
+  //   }
+  // }
+
+ 
+
+  window.addEventListener('scroll', function () {
+    const scrollY = window.scrollY;
+     const targetBottom = target.offsetTop;
+    console.log("scroll",scrollY,targetBottom)
+    if (scrollY >= targetBottom ) {
+      stickyBar.style.transform = 'translateY(0)';
+    } else {
+      stickyBar.style.transform = 'translateY(100%)';
+    }
+  });
+  // Initial state
+  stickyBar.style.transform = 'translateY(100%)';
+
+    // ----- 2. Dropdown tracking -----
+    if (dropdown) {
+      dropdown.addEventListener('change', function () {
+        console.log('Membership selected:', this.value);
+      });
+    }
+
+    // ----- 3. Add to Cart loading effect -----
+    if (addToCartBtn) {
+      addToCartBtn.addEventListener('click', function () {
+        console.log('Add to cart clicked');
+        addToCartBtn.classList.add('stickyattached-loading');
+        setTimeout(() => {
+          addToCartBtn.classList.remove('stickyattached-loading');
+        }, 1000);
+      });
+    }
+
+    // ----- 4. Variant selection & price update -----
+  });
+</script>

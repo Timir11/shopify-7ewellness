@@ -1,0 +1,279 @@
+{
+  "sections": {
+    "1643605049ba44478c": {
+      "type": "featured-product",
+      "blocks": {
+        "164360504963fce107-0": {
+          "type": "price",
+          "settings": {}
+        },
+        "164360504963fce107-3": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        },
+        "164360504963fce107-1": {
+          "type": "description",
+          "settings": {
+            "is_tab": true
+          }
+        },
+        "164360504963fce107-2": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "color_swatches": false
+          }
+        }
+      },
+      "block_order": [
+        "164360504963fce107-0",
+        "164360504963fce107-3",
+        "164360504963fce107-1",
+        "164360504963fce107-2"
+      ],
+      "settings": {
+        "featured_product": "myolift-qt-lp",
+        "product_image_size": "medium",
+        "product_image_type": "slider",
+        "product_zoom_enable": false,
+        "enable_video_looping": true,
+        "product_video_style": "muted",
+        "sku_enable": false
+      }
+    },
+    "1645806305b328ae60": {
+      "type": "slideshow",
+      "blocks": {
+        "164580630564bb7fd3-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Product_Icons_Mobile_2x_f29f6a21-faef-4cca-8d66-ab14a0ddc11a.png",
+            "image_mobile": "shopify:\/\/shop_images\/Untitled_design_29.png"
+          }
+        }
+      },
+      "block_order": [
+        "164580630564bb7fd3-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 10,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "1644342608b694f8ae": {
+      "type": "slideshow",
+      "blocks": {
+        "1644342608c2e47a58-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Transition_desktop_2x_f005d4d7-814f-4055-a146-d0fd0f732ad4.png",
+            "image_mobile": "shopify:\/\/shop_images\/mobile_transition_mainlavendar_2x_62a127a4-e4a6-4697-967e-3fd038ae8ad6.png"
+          }
+        }
+      },
+      "block_order": [
+        "1644342608c2e47a58-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "16436051554840e03a": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Screen_Shot_2022-01-31_at_12.05.48_AM.png",
+        "image2": "shopify:\/\/shop_images\/mask.png",
+        "subtitle": "",
+        "title": "Smart App Included",
+        "text": "<p>The Myolift QT Plus app guides you with an easy to follow 6 step video and pre-set facial treatments. It comes with 3 pre-set protocols:<\/p><p>⟡ <\/p><p><strong>Face Lift: <\/strong>15 minute treatment with dual-tip probes.<\/p><p><\/p><p><strong>Eye Lift:  <\/strong>10 minute hands-free treatment with our Conductive Eye Mask.<\/p><p><\/p><p><strong>Lip Lift:  <\/strong>10 minute hands-free treatment with our Conductive Lip Mask.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "layout": "right",
+        "alt": true
+      }
+    },
+    "1643605778b0bea575": {
+      "type": "text-columns",
+      "blocks": {
+        "1643605778ace7dec5-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/offline_icon_16936634-7970-4c4c-8082-69e2786639e4.png",
+            "image_width": 150,
+            "title": "Offline Mode for Portability & Convenience",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "1643605778ace7dec5-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/language_icon_c7d9aa2a-c9ae-4c1d-9376-4de441ff07a4.png",
+            "image_width": 150,
+            "title": "Multiple Languages Available",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1643605778ace7dec5-0",
+        "1643605778ace7dec5-1"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "alt": true
+      }
+    },
+    "1643605842e51523a7": {
+      "type": "slideshow",
+      "blocks": {
+        "1643605842a812369d-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/before_after_desktop_qt_2x_41661227-7faf-4220-85b8-88cfa65ef960.png",
+            "image_mobile": "shopify:\/\/shop_images\/before_after_mobile_qt_2x_46eb9529-edf8-4548-b418-0137f11f9f32.png"
+          }
+        }
+      },
+      "block_order": [
+        "1643605842a812369d-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "1643641109b5953754": {
+      "type": "rich-text",
+      "blocks": {
+        "4cca9af6-be72-4cc8-a148-910a7d1744a1": {
+          "type": "button",
+          "settings": {
+            "link": "",
+            "link_text": "See More Before & Afters"
+          }
+        }
+      },
+      "block_order": [
+        "4cca9af6-be72-4cc8-a148-910a7d1744a1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": false
+      }
+    },
+    "1643605816e6e3a06b": {
+      "type": "faq",
+      "blocks": {
+        "16436058164bf5e25c-0": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "16436058164bf5e25c-1": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "678f789b-a463-4b3b-a6eb-d2f0d638383f": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16436058164bf5e25c-0",
+        "16436058164bf5e25c-1",
+        "678f789b-a463-4b3b-a6eb-d2f0d638383f"
+      ],
+      "settings": {
+        "title": "FAQs"
+      }
+    },
+    "1643605883e76d96f8": {
+      "type": "apps",
+      "blocks": {
+        "37b19005-f979-4f81-80e4-877a3f6d1775": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "at-home-microcurrent-devices-myolift-qt-plus-facial-toning",
+            "widget_type": "reviews_widget"
+          }
+        }
+      },
+      "block_order": [
+        "37b19005-f979-4f81-80e4-877a3f6d1775"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "1643605049ba44478c",
+    "1645806305b328ae60",
+    "1644342608b694f8ae",
+    "16436051554840e03a",
+    "1643605778b0bea575",
+    "1643605842e51523a7",
+    "1643641109b5953754",
+    "1643605816e6e3a06b",
+    "1643605883e76d96f8"
+  ]
+}

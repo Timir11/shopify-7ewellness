@@ -1,0 +1,431 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "okendo_star_rating_K9PnHi": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "sales_point": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "globe",
+            "text": "Free US Domestic Ground Shipping"
+          }
+        },
+        "30703011-9513-4ebc-8f63-6ddf41dabf98": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "checkmark",
+            "text": "Happiness Guarantee"
+          }
+        },
+        "custom_dtB9fY": {
+          "type": "custom",
+          "disabled": true,
+          "settings": {
+            "code": "<P style=\"background: yellow;padding: 10px 15px; border-radius: 30px; display: inline-block;margin: 0; font-size: 20px;line-height: 1;\">WOMEN'S DAY SALE <b>15% OFF<\/b><\/P>"
+          }
+        },
+        "custom_jcyB6q": {
+          "type": "custom",
+          "disabled": true,
+          "settings": {
+            "code": "<a style=\"background: yellow;\npadding: 4px 8px; border-radius: 30px;\" href=\"https:\/\/www.7ewellness.com\/pages\/7e-events\">REGISTER FOR PRODUCT DEMO WEBINAR<\/a>"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed": {
+          "type": "tab",
+          "settings": {
+            "title": "What's Included",
+            "content": "<ul><li>Myocalme Pro device<\/li><li>Rechargeable battery <\/li><li>Lead wire<\/li><li>Ear clips<\/li><li>Charging cable<\/li><li>2oz Restore conductive gel <\/li><li>Vitalizing Sheet Mask <\/li><li>Revital C Serum<\/li><li>Instruction manual<\/li><li><strong>FREE Anti Aging Serum <\/strong><\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "title": "How To Use",
+            "content": "<ol><li>Lie down in a comfortable position<\/li><li>Plug in the cable and ear clips. <\/li><li>Add conductive gel and pinch it in between the ear clip. Wear the ear clips on your ear lobes. (make sure you don't have any ear jewellery on). <\/li><li>Turn on the device by pressing the middle button once. A long beep will indicate that it's turned on and deliver  the current at Level 1. You may increase the level by tapping the middle button again. At level 2 you might feel like you are rocking on a boat. This is a normal sensation and will go away in 5 mins.<\/li><li>Wear the Myocalme device until it turns OFF for 30 mins.<\/li><li>Recharge until the next day.<\/li><\/ol>",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {}
+        },
+        "e51e9259-1487-4458-8555-3cf18377ca6a": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Text block"
+          }
+        }
+      },
+      "block_order": [
+        "price",
+        "okendo_star_rating_K9PnHi",
+        "variant_picker",
+        "sales_point",
+        "30703011-9513-4ebc-8f63-6ddf41dabf98",
+        "custom_dtB9fY",
+        "custom_jcyB6q",
+        "buy_buttons",
+        "description",
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed",
+        "tab",
+        "share",
+        "e51e9259-1487-4458-8555-3cf18377ca6a"
+      ],
+      "settings": {
+        "product_image_size": "medium",
+        "product_image_type": "stacked",
+        "thumbnail_height": "flexible",
+        "product_zoom_enable": true,
+        "enable_video_looping": true,
+        "product_video_style": "muted",
+        "sku_enable": false
+      }
+    },
+    "rich_text_KkzDrM": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_w9bQ8y": {
+          "type": "heading",
+          "settings": {
+            "title": "How It Works!"
+          }
+        },
+        "text_xAtcyp": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>The Myocalme Pro is a microcurrent technology that has a frequency specific waveform delivered on the ear lobes to impact the deep neurological pathways to balance out the brain activities and induce alpha signals in the brain. The alpha state is typically referred to a very calm and relaxed state of the brain activity. <\/p><p>The Myocalme Pro creates an ideal homeostasis balance in the neurological pathway placing it in the parasympathetic restoration zone. In other words, Myocalme Pro helps stimulate a deep relaxation that can reduce chronic stress and nurture sleep.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_w9bQ8y",
+        "text_xAtcyp"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": false
+      }
+    },
+    "1a3fcdc4-d72b-493f-808b-8c1fe9c08002": {
+      "type": "featured-video",
+      "settings": {
+        "title": "",
+        "video_url": "https:\/\/vimeo.com\/913126634?share=copy",
+        "alt": false
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "settings": {
+        "max_width": true
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {}
+    },
+    "bc10f931-1f0d-48e0-a2c5-0f785996b934": {
+      "type": "featured-video",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=nGku66n9v_w&t=34s",
+        "alt": true
+      }
+    },
+    "164556780200309513": {
+      "type": "apps",
+      "blocks": {
+        "2a3dd040-0528-4160-a336-9edeec07fd6f": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "disabled": true,
+          "settings": {
+            "product": "conductive-mask-bundle-with-lead-wire-splitter",
+            "widget_type": "combined_widget"
+          }
+        }
+      },
+      "block_order": [
+        "2a3dd040-0528-4160-a336-9edeec07fd6f"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "product_recommendations_heading": "You may also like",
+        "related_count": 14
+      }
+    },
+    "fe61abff-264d-4437-ab02-6865dd969edd": {
+      "type": "rich-text",
+      "blocks": {
+        "template--14622986076214__fe61abff-264d-4437-ab02-6865dd969edd-1681779828fad2dee5-0": {
+          "type": "heading",
+          "settings": {
+            "title": ""
+          }
+        },
+        "template--14622986076214__fe61abff-264d-4437-ab02-6865dd969edd-1681779828fad2dee5-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p><strong>Give the experience of ultimate relaxation with MyoCalme Pro because a well rested client is a loyal Client!!<\/strong><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14622986076214__fe61abff-264d-4437-ab02-6865dd969edd-1681779828fad2dee5-0",
+        "template--14622986076214__fe61abff-264d-4437-ab02-6865dd969edd-1681779828fad2dee5-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": false
+      }
+    },
+    "e78b38c7-932e-4516-bd3d-041ee2258ce0": {
+      "type": "hero-video",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "title_size": 40,
+        "subheading": "",
+        "link_text": "",
+        "link": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "video_url": "https:\/\/vimeo.com\/818565352?share=copy",
+        "section_height": "450px",
+        "mobile_height": "400px"
+      }
+    },
+    "e6376905-8979-4a3c-817a-e048be143d33": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/6_a16abbc0-14b2-430f-8dba-16a8a3a5e853-min.png",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "What Are The Benefits?",
+        "text": "<p>✓Better sleep <\/p><p>✓Sharpened Focus<\/p><p>✓Increased Relaxation<\/p><p>✓Heightened Calmness <\/p><p>✓Balanced Hormonal levels<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "50",
+        "layout": "left",
+        "alt": true,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "64298d6b-3af5-4761-92d4-2149ee8c551e": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Untitled_design_73.png",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Clinical Studies",
+        "text": "<p>Dr. Bikson, who is a recgonized leader in electrotherapy devices for neurological disorders, observed through MRI imaging that the effect of this stimulation was on the midbrain, temporal cortex, cerebellum, and the brain stem.<\/p><p>This CES technology creates ideal balance by placing the ANS in the restoration zone.<\/p><p>*The black lines show the path of the CES current.<br\/><\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "50",
+        "layout": "right",
+        "alt": true,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "de420bc3-a630-41c7-9399-69dc6fd88819": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Untitled_design_74.png",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Clinical Studies",
+        "text": "<p>Dr. Kennerly from North Texas State University, found significant changes following 20 minutes of CES therapy. Those changes were found throughout the brain, indicating a full brain response to CES. He inferred that these changes were consistent with decreased anxiety and increased relaxation. <\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "50",
+        "layout": "left",
+        "alt": true,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "rich_text_97K9gA": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_EyEdxc": {
+          "type": "heading",
+          "settings": {
+            "title": ""
+          }
+        },
+        "text_HtMDHk": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p><strong>Unleash tranquility with our delightful Myocalme Pro that speaks louder than words!<\/strong><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_EyEdxc",
+        "text_HtMDHk"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "alt": true
+      }
+    },
+    "82661063-6b2d-42c2-99a6-3f564c944933": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Screenshot_2023-04-24_at_3.56.46_PM.png",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Gua Sha + Microcurrent",
+        "text": "<p>Gua Sha tool is commonly used for tension release and facial massages. When a conductive Gua Sha is used in conjunction with microcurrent, it enhances the results by combining the benefits of both Gua Sha and Microcurrent and saves time in doing the facial treatments. Additionally the benefits are deeper and long lasting.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "50",
+        "layout": "right",
+        "alt": true,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "69598366-9e78-488c-a9c6-2384392c2702": {
+      "type": "hero-video",
+      "disabled": true,
+      "settings": {
+        "title": "Gua Sha",
+        "title_size": 60,
+        "subheading": "Under Eye Treatment",
+        "link_text": "",
+        "link": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-left",
+        "video_url": "https:\/\/vimeo.com\/818574291",
+        "section_height": "650px",
+        "mobile_height": "auto"
+      }
+    },
+    "fd73d280-8a44-41b2-a4ac-def334f77604": {
+      "type": "hero-video",
+      "disabled": true,
+      "settings": {
+        "title": "Gua Sha",
+        "title_size": 60,
+        "subheading": "Cheek Treatment",
+        "link_text": "",
+        "link": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-right",
+        "video_url": "https:\/\/vimeo.com\/818576895",
+        "section_height": "650px",
+        "mobile_height": "auto"
+      }
+    },
+    "16819433829012c034": {
+      "type": "apps",
+      "blocks": {
+        "6ef03fbe-a3ba-4cec-aa52-ff8d71da290a": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}",
+            "widget_type": "reviews_widget"
+          }
+        }
+      },
+      "block_order": [
+        "6ef03fbe-a3ba-4cec-aa52-ff8d71da290a"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_KkzDrM",
+    "1a3fcdc4-d72b-493f-808b-8c1fe9c08002",
+    "sub",
+    "collection-return",
+    "bc10f931-1f0d-48e0-a2c5-0f785996b934",
+    "164556780200309513",
+    "product-recommendations",
+    "fe61abff-264d-4437-ab02-6865dd969edd",
+    "e78b38c7-932e-4516-bd3d-041ee2258ce0",
+    "e6376905-8979-4a3c-817a-e048be143d33",
+    "64298d6b-3af5-4761-92d4-2149ee8c551e",
+    "de420bc3-a630-41c7-9399-69dc6fd88819",
+    "rich_text_97K9gA",
+    "82661063-6b2d-42c2-99a6-3f564c944933",
+    "69598366-9e78-488c-a9c6-2384392c2702",
+    "fd73d280-8a44-41b2-a4ac-def334f77604",
+    "16819433829012c034"
+  ]
+}

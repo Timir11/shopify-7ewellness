@@ -1,0 +1,289 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {}
+    },
+    "164480694824a9395d": {
+      "type": "slideshow",
+      "blocks": {
+        "1644806948c85674f7-0": {
+          "type": "image",
+          "settings": {
+            "title": "The science \nbehind the \nnon-invasive \nface lift",
+            "title_size": 52,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "#231f20",
+            "text_align": "vertical-top horizontal-left",
+            "image": "shopify:\/\/shop_images\/desktop-hero_30bcce86-d587-4cb7-8556-66c01abcdaf8-min.png",
+            "image_mobile": "shopify:\/\/shop_images\/Mobile-hero_2x_9a39229a-3f3d-481e-9a40-9a18478019f1-min.png"
+          }
+        }
+      },
+      "block_order": [
+        "1644806948c85674f7-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "164496902221378c36": {
+      "type": "slideshow",
+      "blocks": {
+        "164496902249640d55-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 40,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/How-It-Works_howitworks_desktop_c4d85e0f-25bb-467c-8d43-c1e5b02092b3.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/How-It-Works_Infographic-mobile_7967e8e9-a7e0-42e0-9aba-1d475c6ee8ff.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "164496902249640d55-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "1644806965926ddccd": {
+      "type": "background-image-text",
+      "disabled": true,
+      "settings": {
+        "subtitle": "",
+        "title": "What is TRUE Microcurrent?",
+        "text": "<p>True Microcurrent is low level electrical impulses that mimic the body's own natural signal to communicate to the muscles and skin cells. It is gentle enough to be a very relaxing treatment.<\/p><p>True Microcurrent when delivered consistently, boosts ATP production which is the life energy used in cellular functions. It helps build collagen and elastin structure resulting in toning and firming of the skin. True Microcurrent also helps to tighten the facial muscles <span style=\"text-decoration:underline\">without making them twitch.<\/span><\/p><p>True microcurrent also helps the skin to absorb products and nutrients, bringing a refreshed hydrated appearance of the skin.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "image": "shopify:\/\/shop_images\/How-To_mobile_2x_c835a243-d817-407f-b7e0-6503ff93676b.png",
+        "desktop_size": 10,
+        "color_border": "#ffffff",
+        "layout": "left",
+        "lazyload_images": true
+      }
+    },
+    "1650552387861a7dfa": {
+      "type": "faq",
+      "blocks": {
+        "5a2f84c9-2f08-495e-b42d-6b7f75304aaf": {
+          "type": "question",
+          "settings": {
+            "title": "What is True Microcurrent™?",
+            "text": "<p>True Microcurrent™ is low level electrical impulses that mimic the body's own natural signal to communicate to the muscles and skin cells. It is gentle enough to be a very relaxing treatment.<\/p><p>True Microcurrent when delivered consistently, boosts ATP production which is the life energy used in cellular functions. It helps build collagen and elastin structure resulting in toning and firming of the skin. True Microcurrent also helps to tighten the facial muscles <span style=\"text-decoration:underline\">without making them twitch.<\/span><\/p><p>True microcurrent also helps the skin to absorb products and nutrients, bringing a refreshed hydrated appearance of the skin.<\/p>"
+          }
+        },
+        "1650552387b57a3560-1": {
+          "type": "question",
+          "settings": {
+            "title": "How do these non-invasive microcurrent face lifts work?",
+            "text": "<p>When a microcurrent facial device is slowly moved over your entire face and neck, it sends low-level electrical pulses through your skin and deep down into your muscles and connective tissues in a way that’s very similar to using weights at the gym. Once they’ve been stimulated, your muscles and connective tissues build up over time becoming more sculpted than before, leaving your skin looking tighter and smoother. Similar to a workout for your face, it sculpts, tightens, and smooths the other muscles throughout your body.<\/p>"
+          }
+        },
+        "4d7908ae-6b5d-4484-a120-b478a9847cc3": {
+          "type": "question",
+          "settings": {
+            "title": "Why do microcurrent facials work?",
+            "text": "<p>As you age, your skin undergoes a radical transformation and both your collagen and elastin production decrease substantially over time. As a protein, collagen is responsible for providing support to all of the surrounding tissues. So, when collagen production in your skin starts to wane, you’ll notice more sagging and wrinkling in your face and neck. Elastin is also a protein, but its job is to help your skin resume its original shape after it’s been pulled and stretched. When you have less elastin, your skin can no longer bounce back from these events and your once tight skin starts to sag. <\/p><p>The reason microcurrent facials work so well is because consistent use of a home face lift device leads to the tightening of those same facial muscles which then boosts your natural collagen and elastin production—leaving the skin on your face and neck firmer, more elastic, and better hydrated than it was before. Plus, your microcurrent device also produces cellular energy, known as ATP. ATP—or Adenosine triphosphate—protects your skin from aging. So, using a microcurrent device regularly will help restore moisture and soothe the skin on your face and neck helping you look younger and well-rested.<\/p>"
+          }
+        },
+        "36eed792-76d7-4e09-82bc-36070b70f579": {
+          "type": "question",
+          "settings": {
+            "title": "What are the benefits of True Microcurrent™ facials?",
+            "text": "<p>- Increased your circulation<\/p><p>- Tightened and toned skin<\/p><p>- Boosted natural collagen and elastin production<\/p><p>- Lifted and sculpted appearance <\/p><p>- Diminished dullness, fine lines, and wrinkles<\/p><p>- Reduced inflammation<\/p><p>- Supple, radiant and rejuvenated complexion<\/p><p>- Instant, cumulative and long-lasting results<\/p>"
+          }
+        },
+        "29340075-2a92-4f54-b840-1a149f52b254": {
+          "type": "question",
+          "settings": {
+            "title": "What do the results look like?",
+            "text": "<p><a href=\"\/pages\/reviews\" title=\"Reviews\">Click here to read about and see our customers' results.<\/a><\/p>"
+          }
+        },
+        "1650552387b57a3560-0": {
+          "type": "question",
+          "settings": {
+            "title": "Can microcurrent facials be done at home?",
+            "text": "<p>Yes, you can purchase one of our at home face lift devices (<a href=\"https:\/\/www.7ewellness.com\/collections\/devices\/products\/qt-plus\" title=\"qt-plus\">Microcurrent QT<\/a> or <a href=\"https:\/\/www.7ewellness.com\/collections\/devices\/products\/7e-myolift-microcurrent-facial-machine\" title=\"7e-myolift-microcurrent-facial-machine\">Microcurrent Mini<\/a>) and see the exact same results as you would from a salon microcurrent treatment. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "5a2f84c9-2f08-495e-b42d-6b7f75304aaf",
+        "1650552387b57a3560-1",
+        "4d7908ae-6b5d-4484-a120-b478a9847cc3",
+        "36eed792-76d7-4e09-82bc-36070b70f579",
+        "29340075-2a92-4f54-b840-1a149f52b254",
+        "1650552387b57a3560-0"
+      ],
+      "settings": {
+        "title": "True Microcurrent™ FAQs"
+      }
+    },
+    "1650553339af4209bb": {
+      "type": "slideshow",
+      "blocks": {
+        "1650553339df277b83-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Transition_desktop_2x_f005d4d7-814f-4055-a146-d0fd0f732ad4.png"
+          }
+        }
+      },
+      "block_order": [
+        "1650553339df277b83-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "1644809335eee97032": {
+      "type": "text-columns",
+      "blocks": {
+        "baab4259-fb7c-461d-a21c-b8a752ac954c": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/noninvasive_2x_8f51e940-8c90-46a3-8392-95db52d06c2c.png",
+            "image_mask": "none",
+            "image_width": 130,
+            "title": "Non-Invasive",
+            "text": "<p>Microcurrent facials are painless, require no downtime and produce zero scars. <\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "a1dbffff-cbe6-4e6f-b862-fe2cb63196a1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/clinicallytested_2x_0303a78f-1208-41ce-879f-b2fc9ed045cb.png",
+            "image_mask": "none",
+            "image_width": 130,
+            "title": "Clinically Proven",
+            "text": "<p>Scientific evidence backs the transformative results of microcurrent facials.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "1644809335cd00eee3-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/natural_2x_0425b25f-b373-4a8e-93ec-73454260d6f2.png",
+            "image_mask": "none",
+            "image_width": 130,
+            "title": "100% Natural",
+            "text": "<p>Microcurrents stimulate cellular activity in the skin naturally without any chemicals.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "1644809335cd00eee3-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/fdcleares_2x_bec76e4d-5295-4080-9bab-238c4f58ffc0.png",
+            "image_mask": "none",
+            "image_width": 130,
+            "title": "FDA Cleared",
+            "text": "<p>Our microcurrent devices are FDA cleared and safe to use on all skin types.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "baab4259-fb7c-461d-a21c-b8a752ac954c",
+        "a1dbffff-cbe6-4e6f-b862-fe2cb63196a1",
+        "1644809335cd00eee3-1",
+        "1644809335cd00eee3-0"
+      ],
+      "settings": {
+        "title": "Safe and Effective",
+        "align_text": "center",
+        "alt": true
+      }
+    },
+    "164481132043ebb23a": {
+      "type": "slideshow",
+      "blocks": {
+        "1644811320e8718042-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/black_purple_mobile_2x_fadc4871-406b-4e1c-8034-3c430a525eb3.png"
+          }
+        }
+      },
+      "block_order": [
+        "1644811320e8718042-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": -70,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "1645221972ef0ced32": {
+      "type": "featured-collection-slider",
+      "settings": {
+        "title": "Shop True Microcurrent™ Devices",
+        "description": "",
+        "home_featured_products": "at-home-microcurrent-devices",
+        "per_row": "small",
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "164480694824a9395d",
+    "164496902221378c36",
+    "1644806965926ddccd",
+    "1650552387861a7dfa",
+    "1650553339af4209bb",
+    "1644809335eee97032",
+    "164481132043ebb23a",
+    "1645221972ef0ced32"
+  ]
+}

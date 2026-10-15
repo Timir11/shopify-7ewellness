@@ -1,0 +1,263 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "okendo_star_rating_86PEbK": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "metafiled_description_qEjXRg": {
+          "type": "metafiled_description",
+          "settings": {
+            "is_meta_description": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "trust_badge_fnw8MT": {
+          "type": "trust_badge",
+          "settings": {
+            "trust_image": "shopify:\/\/shop_images\/Background_2x_b2da5ce2-1572-4ce8-99ed-3537ae30367f.png"
+          }
+        },
+        "pop_up_TVQDch": {
+          "type": "pop_up",
+          "settings": {
+            "title": "Shipping & Handling",
+            "content": ""
+          }
+        },
+        "tab_D73bXQ": {
+          "type": "tab",
+          "settings": {
+            "title": "Who is this for?",
+            "content": "<ul><li>Mature skin in need of firming and rejuvenation<\/li><li>Individuals with dry, dull, or uneven skin tone<\/li><li>Those experiencing loss of elasticity or sagging<\/li><li>Anyone looking for a preventative anti-aging routine<\/li><li>All skin types, including sensitive skin<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "tab_9WFjPD": {
+          "type": "tab",
+          "settings": {
+            "title": "How to use it?",
+            "content": "<ul><li>Use after MyoLift’s <a href=\"https:\/\/www.7ewellness.com\/pages\/how-microcurrent-facial-therapy-works\" target=\"_blank\" title=\"https:\/\/www.7ewellness.com\/pages\/how-microcurrent-facial-therapy-works\">microcurrent treatment<\/a><\/li><li>May also be used without microcurrent. Simply apply nightly to clean, dry skin<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "tab_JPx4zk": {
+          "type": "tab",
+          "settings": {
+            "title": "Benefits",
+            "content": "<ul><li><strong>Hydration:<\/strong> Hyaluronic Acid, Glycerin, and Aqua plump the skin and reduce dryness-related wrinkles.<\/li><li><strong>Collagen Boost:<\/strong> Copper Peptides and Polypeptides enhance firmness and elasticity.<\/li><li><strong>Antioxidant Protection:<\/strong> Vitamin E, Neroli, and Zinc guard against free radical damage.<\/li><li><strong>Exfoliation and Renewal:<\/strong> Willow Bark promotes smoother, brighter skin.<\/li><li><strong>Healing and Repair<\/strong>: Zinc and Copper Peptides support skin recovery and health.<br\/><br\/><\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "tab_gjKa3B": {
+          "type": "tab",
+          "settings": {
+            "title": "Ingredient List",
+            "content": "<p>Aqua Filtered Water, Copper Peptides, Polypeptides, Hyaluronic Acid, Zinc, Tocopheryl, Acetate (Vitamin E), Vegetable Glycerin, Carbomer, Citrus, Aurantium Amara (Neroli), Salix Alba (Willow Bark Extract), Phenoxyethanol<\/p>",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {}
+        },
+        "e51e9259-1487-4458-8555-3cf18377ca6a": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Text block"
+          }
+        }
+      },
+      "block_order": [
+        "okendo_star_rating_86PEbK",
+        "price",
+        "description",
+        "variant_picker",
+        "metafiled_description_qEjXRg",
+        "buy_buttons",
+        "trust_badge_fnw8MT",
+        "pop_up_TVQDch",
+        "tab_D73bXQ",
+        "tab_9WFjPD",
+        "tab_JPx4zk",
+        "tab_gjKa3B",
+        "share",
+        "e51e9259-1487-4458-8555-3cf18377ca6a"
+      ],
+      "settings": {
+        "product_image_size": "medium",
+        "product_image_type": "slider",
+        "thumbnail_height": "fixed",
+        "product_zoom_enable": true,
+        "enable_video_looping": true,
+        "product_video_style": "muted",
+        "product_label": "",
+        "btn_url": "",
+        "btn_txt": "",
+        "sku_enable": false
+      }
+    },
+    "product_specification_9najPe": {
+      "type": "product-specification",
+      "blocks": {
+        "how_to_use_YbfHXp": {
+          "type": "how-to-use",
+          "settings": {
+            "tab_heading": "How To Use",
+            "heading": "Here’s how Copper Peptide works",
+            "section_content": "<p>Copper peptides are powerful skin rejuvenators, responsible for collagen synthesis and stabilization. They restore <a href=\"https:\/\/www.7ewellness.com\/collections\/shop-by-concern-firmness\" target=\"_blank\" title=\"https:\/\/www.7ewellness.com\/collections\/shop-by-concern-firmness\"><strong>firmness<\/strong><\/a>, rebuild elasticity, and soften fine lines and wrinkles, working deep within the skin for visible anti-aging benefits.<br\/><\/p>",
+            "image": "shopify:\/\/shop_images\/how-it-works-peptide-serum_5c66484a-0dde-43c6-9fa2-297d7c47d394.png",
+            "mobile_image": "shopify:\/\/shop_images\/mobile-how-it-works-peptide-serum.png",
+            "link": "",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "novel_shoppable_video_novel_product_eQy7H8": {
+          "type": "shopify:\/\/apps\/novel-shoppable-video\/blocks\/novel-product\/67e3531b-60c1-40d3-83d1-8f5aba7081ef",
+          "settings": {
+            "journeyid": "66863e3f84b2370008043433"
+          }
+        },
+        "image_banner_M699EN": {
+          "type": "image-banner",
+          "settings": {
+            "tab_heading": "Benefits",
+            "heading": "More-in-one Serum",
+            "image_banner": "shopify:\/\/shop_images\/1-96.png",
+            "mobile_image_banner": "shopify:\/\/shop_images\/serum_mobile.png",
+            "image_content": "<ul><li>Provides skin with a hydrating balance which significantly reduces the loss of cutaneous elasticity.<\/li><li>Soothes irritation, and prevents premature skin aging.<\/li><li>Gives the skin a healthy and youthful look.<\/li><\/ul><p>The properties of copper peptides, polypeptides, and hyaluronic acid present in this Anti-Aging Peptide Serum for face help to remove fine lines and wrinkles from the face, neck, eyes, and smile lines.<\/p>"
+          }
+        },
+        "ingredients_kaEVeq": {
+          "type": "ingredients",
+          "settings": {
+            "tab_heading": "Ingredients",
+            "heading": "Our Key Ingredients",
+            "ingredient_img1": "shopify:\/\/shop_images\/copper-peptides.png",
+            "ingredients_text1": "Copper Peptides",
+            "ingredient_img2": "shopify:\/\/shop_images\/hyaluronic-acid.png",
+            "ingredients_text2": "Hyaluronic Acid",
+            "ingredient_img3": "shopify:\/\/shop_images\/willow-bark-extract.png",
+            "ingredients_text3": "Willow Bark Extract",
+            "ingredient_img4": "shopify:\/\/shop_images\/vegetable-glycerin.png",
+            "ingredients_text4": "Vegetable Glycerin"
+          }
+        },
+        "faq_BmAXBk": {
+          "type": "faq",
+          "settings": {
+            "tab_heading": "FAQs",
+            "heading": "Frequently Asked Questions",
+            "title1": "How do I know Copper Peptide Serum is for me?",
+            "text1": "<p>If you’re looking to improve and maintain your skin’s plump, dewy look while targeting early signs of aging, then this super blue serum is for you!<\/p>",
+            "title2": "What are the benefits of using the Copper Peptide Serum?",
+            "text2": "<p>The Copper Peptide Serum enhances <strong>skin elasticity, hydration, and firmness<\/strong> while supporting <strong>collagen production<\/strong>. It helps <strong>reduce fine lines and wrinkles<\/strong>, promotes <strong>cell regeneration<\/strong>, and improves <strong>overall skin texture<\/strong> for a youthful, radiant glow.<\/p>",
+            "title3": "Do I use it in my morning or night routine?",
+            "text3": "<p>You can use the serum <strong>both morning and night<\/strong>. Apply it after cleansing and before your moisturizer to maximize hydration and anti-aging benefits.<\/p>",
+            "title4": "How can I pair it with a microcurrent device?",
+            "text4": "<p>Apply a thin layer of the serum before using your <strong>microcurrent device<\/strong> to enhance conductivity and <strong>boost absorption<\/strong>. Follow with a conductive gel for optimal results.<\/p>",
+            "title5": "I am a mom-to-be. Can I use this serum?",
+            "text5": "<p>We recommend consulting with your doctor before using any new skincare product during pregnancy. While our serum is formulated with <strong>skin-loving ingredients<\/strong>, it’s always best to confirm its suitability with a healthcare professional.<\/p>",
+            "title6": "",
+            "text6": "",
+            "title7": "",
+            "text7": ""
+          }
+        },
+        "reviews_3RnyCW": {
+          "type": "reviews",
+          "settings": {
+            "tab_heading": "Reviews",
+            "enable_review": true
+          }
+        }
+      },
+      "block_order": [
+        "how_to_use_YbfHXp",
+        "novel_shoppable_video_novel_product_eQy7H8",
+        "image_banner_M699EN",
+        "ingredients_kaEVeq",
+        "faq_BmAXBk",
+        "reviews_3RnyCW"
+      ],
+      "settings": {
+        "heading": ""
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "settings": {
+        "max_width": true
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {}
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "product_recommendations_heading": "Complete your microcurrent routine",
+        "related_count": 4
+      }
+    },
+    "featured_collection_BJRcVw": {
+      "type": "featured-collection",
+      "settings": {
+        "custom_class": "",
+        "title": "Our Microcurrent Devices",
+        "description": "",
+        "home_featured_products": "shop-skincare",
+        "rows": 1,
+        "per_row_desktop": 4,
+        "per_row_mobile": "1",
+        "view_all": false,
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product_specification_9najPe",
+    "sub",
+    "collection-return",
+    "product-recommendations",
+    "featured_collection_BJRcVw"
+  ]
+}

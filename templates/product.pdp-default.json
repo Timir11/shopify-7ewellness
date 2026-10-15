@@ -1,0 +1,149 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "okendo_star_rating_k6pEMJ": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "sales_point": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "globe",
+            "text": "Free US Domestic Ground Shipping"
+          }
+        },
+        "30703011-9513-4ebc-8f63-6ddf41dabf98": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "checkmark",
+            "text": "Happiness Guarantee"
+          }
+        },
+        "custom_GqwFTi": {
+          "type": "custom",
+          "disabled": true,
+          "settings": {
+            "code": "<P style=\"background: yellow;padding: 10px 15px; border-radius: 30px; display: inline-block;margin: 0; font-size: 20px;line-height: 1;\">WOMEN'S DAY SALE <b>15% OFF<\/b><\/P>"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": true
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "title": "Shipping information",
+            "content": "<p>Free USA Ground shipment, Orders are processed within 2 business day. <\/p><p>International Orders Ships within 3 business day.  <\/p><p>International customers are required to pay Duty with their local custom agency. <\/p>",
+            "page": ""
+          }
+        },
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "What's Included",
+            "content": "<p>• Eye Mask,<br\/>• Lip Mask,<br\/>• Forehead Mask,<br\/>• 16oz Renu Conductive Tx Gel,<br\/>• 16oz ReStore Conductive Tx Gel,<br\/>• 8oz RePlenish Hydrating Spritzer,<br\/>• 4oz ATP Booster Mask,<br\/>• Splitter Wire<br\/>• One pair of our Conductive Gloves<\/p>",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "price",
+        "okendo_star_rating_k6pEMJ",
+        "variant_picker",
+        "sales_point",
+        "30703011-9513-4ebc-8f63-6ddf41dabf98",
+        "custom_GqwFTi",
+        "buy_buttons",
+        "description",
+        "tab",
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed",
+        "share"
+      ],
+      "settings": {
+        "product_image_size": "small",
+        "product_image_type": "slider",
+        "thumbnail_height": "flexible",
+        "product_zoom_enable": true,
+        "enable_video_looping": true,
+        "product_video_style": "muted",
+        "sku_enable": false
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "settings": {
+        "max_width": true
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {}
+    },
+    "164556780200309513": {
+      "type": "apps",
+      "blocks": {
+        "2a3dd040-0528-4160-a336-9edeec07fd6f": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}",
+            "widget_type": "combined_widget"
+          }
+        }
+      },
+      "block_order": [
+        "2a3dd040-0528-4160-a336-9edeec07fd6f"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "product_recommendations_heading": "You may also like",
+        "related_count": 14
+      }
+    }
+  },
+  "order": [
+    "main",
+    "sub",
+    "collection-return",
+    "164556780200309513",
+    "product-recommendations"
+  ]
+}

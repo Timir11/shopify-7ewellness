@@ -1,0 +1,257 @@
+<div class="slide_wrp bgimg">
+  <div class="page-width">
+  <div class="slide_title">
+    <h2 class="section-header__title appear-delay">{{ section.settings.title }}</h2>  
+  </div>
+  <div class="image_wrp">
+    <div class="image_slide">
+      {% for block in section.blocks %}
+        <div class="slide_image">
+          <img src="{{ block.settings.image | img_url:'master' }}" alt="{{ block.settings.image.alt }}">
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  </div>
+  <div class="btn_wrp ">
+    <a href="{{ section.settings.btn_url }}" class="btn btn--tertiary btn--small my_class2">
+      <span class="link">{{ section.settings.btn_text }}</span>                                                  
+    </a>
+  </div>
+</div>
+<script>
+  {% if template.suffix == 'free-myocommunity' %}
+    $(document).ready(function(){
+    $(".image_slide").slick({
+       slidesToShow: 8,   
+       slidesToScroll: 1,
+       loop:true,
+       infinite:true,
+      autoplay:true,
+       responsive: [
+      {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 6,
+            slidesToScroll: 1, 
+            arrows:false,
+            dots:false,
+          }
+        },
+        {
+          breakpoint: 765,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 1, 
+            arrows:false,
+            dots:false,
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows:false,
+            dots:false,
+          }
+        }
+      ]
+    });
+  })
+  {% else %}
+    $(document).ready(function(){
+      $(".image_slide").slick({
+         slidesToShow: 5,   
+         slidesToScroll: 1,
+         responsive: [
+          {
+            breakpoint: 765,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 1, 
+              arrows:false,
+              dots:false,
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              arrows:false,
+              dots:false,
+            }
+          }
+        ]
+      });
+    })
+  {% endif %}
+</script>
+{% schema %}
+  {
+    "name": "Image Slider",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"      
+      },
+       {
+        "type": "text",
+        "id": "btn_text",
+        "label": "Button Text"      
+      },
+      {
+        "type": "text",
+        "id": "btn_url",
+        "label": "Button URL"      
+      }
+    ],
+      "blocks": [
+    {
+      "type": "imageslider",
+      "name": "Image slider",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"      
+        }
+      ]
+    }
+    ],
+    "presets": [{
+      "name": "Image Slider"
+    }]
+  }
+{% endschema %}
+
+
+
+<style>
+  h2.section-header__title.appear-delay {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bolder;
+}
+  .image_wrp {
+    margin: 62px 0px;
+}
+  .btn_wrp {
+    width: 207px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  .slide_wrp.bgimg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  a.btn.btn--tertiary.btn--small {
+    padding: 12px 0px;
+    width: 78%;
+}
+  .btn--tertiary:hover, .rte .btn--tertiary:hover {
+    background-color: black;
+    color: #e8dfee;
+}
+
+  .slide_wrp.bgimg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 49px;
+    margin-top: -75px;
+}
+  
+  .my_class2{
+    background:black !important;
+    color: #e8dfee !important;
+    text-decoration:none !important;
+    font-weight:200 !important;
+    
+  }
+
+@media screen and (max-width:768px){
+  .slide_wrp.bgimg {
+    overflow: hidden;
+}
+  .wrp_div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+  .wrp_icon {
+    flex-wrap: wrap;
+}
+  .contact-form {
+    flex: 0 0 92%;
+}
+  header.site-header {
+  
+    border-bottom: 1px solid grey;
+}
+  .feature-row__item.feature-row__images.feature-row__item--overlap-images.aos-init.aos-animate {
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+  .feature-row__first-image {
+    margin-right: 0px;
+}
+  .new-page-section .feature-row__item--overlap-images>* {
+    width: 84% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  .feature-row__first-image {
+    margin-right: 0px !important;
+}
+
+.feature-row {
+    padding-top: 50px;
+    padding-bottom: 18px;
+}
+  .feature-row--50 .feature-row__images {
+    max-width: 100%;
+    padding-left: 37px;
+     padding-right: 0px;
+}
+  .feature-row__item {
+    flex: 0 1 47%;
+    margin-top: 2px;
+    /* padding: 0; */
+}
+  .feature-row__item.feature-row__images.feature-row__item--overlap-images.aos-init.aos-animate {
+    flex-wrap: wrap;
+    gap: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+  .feature-row__item.feature-row__text.feature-row__text--left.text-center.aos-init.aos-animate {
+    padding: 0px;
+}
+  .new-page-section.index-section {
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+  
+}
+
+
+  .slide_wrp.bgimg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 49px;
+    margin-top: 33px;
+}
+</style>

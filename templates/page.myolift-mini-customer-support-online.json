@@ -1,0 +1,207 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1647015222e7360e7c": {
+      "type": "faq",
+      "blocks": {
+        "164701522245448ad5-0": {
+          "type": "question",
+          "settings": {
+            "title": "Welcome",
+            "text": "<p>Congratulations on becoming a MyoLift™ microcurrent device owner! We know this is a big step in your wellness and aesthetics business, so we have designed this support portal to ensure you have access to all the information you need. In addition to the information on this page, we encourage you to join our exclusive closed Facebook community for in-depth and ongoing education for your MyoLift. If your questions or concerns are not answered in this page, please contact 7E Wellness Headquarters by email at info@7ewellness.com or by phone at (888) 412-3160<\/p><p>What’s in your MyoLift™ Mini Box7E MyoLift™ Mini True Microcurrent MachineClassic Ball Tip Applicator ProbesLead WireCharger4oz ReStore Conductive Tx Gel<\/p>"
+          }
+        },
+        "164701522245448ad5-1": {
+          "type": "question",
+          "settings": {
+            "title": "Basic Tutorials",
+            "text": "<p> <a href=\"https:\/\/www.dropbox.com\/s\/826wflkd8jsv806\/Professional%20Myolift%20Manual%20Design%20032120.pdf?dl=1\" title=\"MyoLift™ Mini Manual\">MyoLift™ Mini Manual<\/a><\/p><p>   <a href=\"https:\/\/www.dropbox.com\/s\/6x51u3x8d746mhr\/MyoLift%20Mini%20Introduction.mp4?dl=0\" title=\"MyoLift Mini introduction and tutorial\">MyoLift™ Mini Introduction and Tutorial<\/a><\/p>"
+          }
+        },
+        "adbfb793-c4de-402b-8839-9ab412410d08": {
+          "type": "question",
+          "settings": {
+            "title": "Quick Reference",
+            "text": "<p><a href=\"https:\/\/www.dropbox.com\/s\/3h6xt70ca4rc0bj\/7EW%20Myolift%20Mini%20Quick%20Reference%20Guide%20Final%2011-30-2020.pdf?dl=1\" title=\"MyoLift™ Mini Quick Reference Guide\">MyoLift™ Mini Quick Reference Guide<\/a><\/p><p><a href=\"https:\/\/zoom.us\/rec\/play\/7sF-Ibz--243GdfHtASDBvctW43pe6msgyQaqfEFzRnkASJVMVOgM7NEY-EQsN9r5KBT0XipdZFYyZ0b?continueMode=true\">Cotton Tip Probe Tutorial Video<\/a><\/p><p><a href=\"https:\/\/www.dropbox.com\/s\/fvjzvwnhytcffgi\/cotton%20tip%20probes%20brochure%20022820%20opt01%20%281%29.pdf?dl=0\">Cotton Tip Probe Brochure<\/a><\/p><p><a href=\"https:\/\/www.dropbox.com\/s\/j1ebcgubw3yyxzg\/How%20to%20use%20sticky%20pads%20with%20Myolift.mp4?dl=0\">How to Use Adhesive Electrodes<\/a><\/p><p><a href=\"https:\/\/www.youtube.com\/watch?v=fvDoV6ks5VA&t=539s\" title=\"7E Conductive Glove Demo\">7E Conductive Glove Demo<\/a><\/p><p><a href=\"https:\/\/www.dropbox.com\/s\/jrxqmsh8saecsdq\/Myolift%20movements%20step%20by%20step.mp4?dl=0\">Step-By-Step MyoLift™ Movements<\/a><\/p><p><a href=\"https:\/\/www.dropbox.com\/s\/n17zftyfujzhyxg\/Facial%20Muscle%20Chart2020.png?dl=1\" title=\"Facial Muscle Chart\">Facial Muscle Chart<\/a><\/p>"
+          }
+        },
+        "edcf890a-8110-4215-a7c0-d09524090acd": {
+          "type": "question",
+          "settings": {
+            "title": "Supporting Materials",
+            "text": "<p><a href=\"https:\/\/www.dropbox.com\/s\/9egcfpsnujp3lb2\/How%20Microcurrent%20Stimulation%20Produces%20ATP%20--%20One%20Mechanism.pdf?dl=0\">How Microcurrent Stimulation Produces ATP<\/a><\/p><p><a href=\"https:\/\/www.dropbox.com\/s\/zivwjjx486lwng5\/MYOLIFT%20microcurrent%20Dr%20Gordon.pdf?dl=0\">Microcurrent Research Article by Dr. Virginia Gordon<\/a><\/p><p><a href=\"https:\/\/www.dropbox.com\/s\/qtgs3arqhk1uo14\/CLIENT%20CONSENT%20FORM%20FOR%20TRADESHOWS%20-%202019.docx?dl=0\">Client Consent Form<\/a><\/p><p><a href=\"https:\/\/www.7ewellness.com\/blogs\/infuse-your-spa\/7e-myolift%E2%84%A2-microcurrent-contraindications\">Contraindications<\/a><\/p><p><a href=\"https:\/\/www.7ewellness.com\/pages\/7e-events\" target=\"_blank\" title=\"https:\/\/www.7ewellness.com\/pages\/7e-events\">Ongoing Educational Opportunities (Webinars, Certification and more!)<\/a><\/p><p><a href=\"https:\/\/www.7ewellness.com\/blogs\/infuse-your-spa\">Infuse Your Spa Blog<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "164701522245448ad5-0",
+        "164701522245448ad5-1",
+        "adbfb793-c4de-402b-8839-9ab412410d08",
+        "edcf890a-8110-4215-a7c0-d09524090acd"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "FAQs"
+      }
+    },
+    "164986580078449947": {
+      "type": "featured-product",
+      "blocks": {
+        "1649865800d325c337-0": {
+          "type": "price",
+          "settings": {}
+        },
+        "1649865800d325c337-1": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "1649865800d325c337-2": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "color_swatches": false
+          }
+        },
+        "1649865800d325c337-3": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        }
+      },
+      "block_order": [
+        "1649865800d325c337-0",
+        "1649865800d325c337-1",
+        "1649865800d325c337-2",
+        "1649865800d325c337-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "featured_product": "renu-conductive-16-0z",
+        "product_image_size": "medium",
+        "product_image_type": "stacked",
+        "product_zoom_enable": false,
+        "enable_video_looping": true,
+        "product_video_style": "muted",
+        "sku_enable": false
+      }
+    },
+    "1649865809c693c256": {
+      "type": "featured-collection-slider",
+      "disabled": true,
+      "settings": {
+        "title": "Featured collection",
+        "description": "",
+        "home_featured_products": "conductive-gels",
+        "per_row": "small",
+        "alt": false
+      }
+    },
+    "1649865948e6f3d2dc": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Featured collection grid",
+        "description": "",
+        "home_featured_products": "shop-all-microcurrent-accessories-tools",
+        "rows": 2,
+        "per_row_desktop": 3,
+        "per_row_mobile": "1",
+        "view_all": true,
+        "alt": true
+      }
+    },
+    "164986603134b31b20": {
+      "type": "featured-product",
+      "blocks": {
+        "1649866031cadb8f88-0": {
+          "type": "price",
+          "settings": {}
+        },
+        "1649866031cadb8f88-1": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "1649866031cadb8f88-2": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "color_swatches": false
+          }
+        },
+        "1649866031cadb8f88-3": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        }
+      },
+      "block_order": [
+        "1649866031cadb8f88-0",
+        "1649866031cadb8f88-1",
+        "1649866031cadb8f88-2",
+        "1649866031cadb8f88-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "featured_product": "restore-gel",
+        "product_image_size": "small",
+        "product_image_type": "stacked",
+        "product_zoom_enable": false,
+        "enable_video_looping": true,
+        "product_video_style": "muted",
+        "sku_enable": false
+      }
+    },
+    "1652704730a52f18ba": {
+      "type": "rich-text",
+      "blocks": {
+        "1652704730230ab1cc-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Professional Portal"
+          }
+        },
+        "1652704730230ab1cc-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>Sign up for professional account and get access to exclusive content such as training videos, marketing materials and much more.<\/p><p><\/p><p><a href=\"https:\/\/wholesale.7ewellness.com\/accounts\/sign_up\" target=\"_blank\" title=\"https:\/\/wholesale.7ewellness.com\/accounts\/sign_up\">SIGN UP<\/a><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1652704730230ab1cc-0",
+        "1652704730230ab1cc-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1647015222e7360e7c",
+    "164986580078449947",
+    "1649865809c693c256",
+    "1649865948e6f3d2dc",
+    "164986603134b31b20",
+    "1652704730a52f18ba"
+  ]
+}

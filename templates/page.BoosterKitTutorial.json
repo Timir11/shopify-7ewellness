@@ -1,0 +1,67 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "text_columns_zQ38e6": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_jWrLMc": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/3_45b7a486-8862-4ff7-b278-0f0f1c105545.png",
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "Wrinkle Reduction Kit",
+            "text": "",
+            "button_label": "View More",
+            "button_link": "shopify:\/\/pages\/wrinkle-reduction-kit"
+          }
+        },
+        "text_block_PUEJGB": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/2_8a30ff3a-5087-4992-9003-633584668266.png",
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "Firm & Bright Kit",
+            "text": "",
+            "button_label": "View More",
+            "button_link": "shopify:\/\/pages\/firm-bright-kit"
+          }
+        },
+        "text_block_ATAmww": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/1_6f49ed19-4b9b-4576-8738-7fed9725c761.png",
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "Moisture Boosting Kit",
+            "text": "",
+            "button_label": "View More",
+            "button_link": "shopify:\/\/pages\/moisture-boosting-kit"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_jWrLMc",
+        "text_block_PUEJGB",
+        "text_block_ATAmww"
+      ],
+      "settings": {
+        "title": "Beauty Bootcamp Tutorial",
+        "align_text": "center",
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "text_columns_zQ38e6"
+  ]
+}

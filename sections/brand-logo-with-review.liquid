@@ -1,0 +1,113 @@
+<section class="review-slider">
+  <div class="slider-for">
+      {% for block in section.blocks %}
+          {% if block.type == 'logo_image' %}
+              <div class="slide">
+                  {% if block.settings.review_text  != blank %}
+                      <p>{{ block.settings.review_text }}</p>
+                  {% endif %}
+              </div>
+          {% endif %}
+      {% endfor %}
+  </div>
+
+  <div class="slider-nav page-width">
+      {% for block in section.blocks %}
+          {% if block.type == 'logo_image' %}
+              <div class="thumb logo-bar__item">
+                  {%- if block.settings.image != blank -%}
+                    {%- render 'image-element',
+                      img: block.settings.image,
+                      widths: '180, 360, 540, 750',
+                      classes: 'logo-bar__image',
+                      sizeVariable: '160px',
+                      fallback: '110px',
+                    -%}
+                  {%- else -%}
+                    {{ 'logo' | placeholder_svg_tag: 'placeholder-svg' }}
+                  {%- endif -%}
+              </div>
+          {% endif %}
+      {% endfor %}
+  </div>
+
+</section>
+
+<script>
+  $(document).ready(function () {
+    $('.slider-for').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.slider-nav',
+      autoplay: true,
+      autoplaySpeed: 3000,
+      infinite: true
+    });
+
+    $('.slider-nav').slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      asNavFor: '.slider-for',
+      dots: false,
+      centerMode: true,
+      centerPadding: '0px',
+      focusOnSelect: true,
+      infinite: true,
+      responsive: [{
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 4
+          }
+        },
+        {
+          breakpoint: 520,
+          settings: {
+            slidesToShow: 3
+          }
+        }
+      ]
+    });
+  });
+</script>
+
+{% schema %}
+{
+    "name": "Brand Logo with Review",
+    "settings": [
+        
+    ],
+    "blocks": [
+      {
+        "type": "logo_image",
+        "name": "Review Block",
+        "settings": [
+          {
+            "type": "text",
+            "id": "review_text",
+            "label": "Brand Review Text"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Brand Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Brand Logo with Review",
+        "blocks": [
+          {
+            "type": "logo_image"
+          },
+          {
+            "type": "logo_image"
+          }
+        ]
+      }
+    ]
+}
+{% endschema %}

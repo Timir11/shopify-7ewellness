@@ -1,0 +1,373 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "okendo_star_rating_ccjHNf": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "sales_point": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "globe",
+            "text": "Free US Domestic Ground Shipping"
+          }
+        },
+        "30703011-9513-4ebc-8f63-6ddf41dabf98": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "checkmark",
+            "text": "Happiness Guarantee"
+          }
+        },
+        "custom_aNaydb": {
+          "type": "custom",
+          "disabled": true,
+          "settings": {
+            "code": "<P style=\"background: yellow;padding: 10px 15px; border-radius: 30px; display: inline-block;margin: 0; font-size: 20px;line-height: 1;\">WOMEN'S DAY SALE <b>15% OFF<\/b><\/P>"
+          }
+        },
+        "custom_Krjp9U": {
+          "type": "custom",
+          "disabled": true,
+          "settings": {
+            "code": "<a style=\"background: yellow;\npadding: 4px 8px; border-radius: 30px;\" href=\"https:\/\/www.7ewellness.com\/pages\/7e-events\">REGISTER FOR PRODUCT DEMO WEBINAR<\/a>"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "What's Included",
+            "content": "<ul><li>2 Electrodes<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "title": "Shipping information",
+            "content": "<p>Free USA Ground shipment, Orders are processed within 2 business day. <\/p><p>International Orders Ships within 3 business day.  <\/p><p>International customers are required to pay Duty with their local custom agency. <\/p>",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {}
+        },
+        "e51e9259-1487-4458-8555-3cf18377ca6a": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Text block"
+          }
+        }
+      },
+      "block_order": [
+        "price",
+        "okendo_star_rating_ccjHNf",
+        "variant_picker",
+        "sales_point",
+        "30703011-9513-4ebc-8f63-6ddf41dabf98",
+        "custom_aNaydb",
+        "custom_Krjp9U",
+        "buy_buttons",
+        "description",
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed",
+        "tab",
+        "share",
+        "e51e9259-1487-4458-8555-3cf18377ca6a"
+      ],
+      "settings": {
+        "product_image_size": "medium",
+        "product_image_type": "stacked",
+        "thumbnail_height": "flexible",
+        "product_zoom_enable": true,
+        "enable_video_looping": true,
+        "product_video_style": "muted",
+        "sku_enable": false
+      }
+    },
+    "1a3fcdc4-d72b-493f-808b-8c1fe9c08002": {
+      "type": "featured-video",
+      "settings": {
+        "title": "",
+        "video_url": "https:\/\/vimeo.com\/818565352?share=copy",
+        "alt": false
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "settings": {
+        "max_width": true
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {}
+    },
+    "bc10f931-1f0d-48e0-a2c5-0f785996b934": {
+      "type": "featured-video",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=nGku66n9v_w&t=34s",
+        "alt": true
+      }
+    },
+    "164556780200309513": {
+      "type": "apps",
+      "blocks": {
+        "2a3dd040-0528-4160-a336-9edeec07fd6f": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "disabled": true,
+          "settings": {
+            "product": "conductive-mask-bundle-with-lead-wire-splitter",
+            "widget_type": "combined_widget"
+          }
+        }
+      },
+      "block_order": [
+        "2a3dd040-0528-4160-a336-9edeec07fd6f"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "product_recommendations_heading": "You may also like",
+        "related_count": 14
+      }
+    },
+    "fe61abff-264d-4437-ab02-6865dd969edd": {
+      "type": "rich-text",
+      "blocks": {
+        "template--14622986076214__fe61abff-264d-4437-ab02-6865dd969edd-1681779828fad2dee5-0": {
+          "type": "heading",
+          "settings": {
+            "title": ""
+          }
+        },
+        "template--14622986076214__fe61abff-264d-4437-ab02-6865dd969edd-1681779828fad2dee5-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<h3><strong>The beauty secret combining ancient Ayurvedic tools with scientific microcurrent to achieve healthy and glowing skin.<\/strong><\/h3>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14622986076214__fe61abff-264d-4437-ab02-6865dd969edd-1681779828fad2dee5-0",
+        "template--14622986076214__fe61abff-264d-4437-ab02-6865dd969edd-1681779828fad2dee5-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": false
+      }
+    },
+    "e78b38c7-932e-4516-bd3d-041ee2258ce0": {
+      "type": "hero-video",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "title_size": 40,
+        "subheading": "",
+        "link_text": "",
+        "link": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "video_url": "https:\/\/vimeo.com\/818565352?share=copy",
+        "section_height": "450px",
+        "mobile_height": "400px"
+      }
+    },
+    "e6376905-8979-4a3c-817a-e048be143d33": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Untitled_design_49.png",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Why It's Unique",
+        "text": "<p>The MyoLift™ Gua Sha is thin and perfectly designed to sculpt big and small facial muscles and relax any stressed or hardened tissue that are otherwise harder to target. This tool can be used with any MyoLift™ device for a combined fascia release, tension release, relaxing and energizing microcurrent facial.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "50",
+        "layout": "left",
+        "alt": true,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "64298d6b-3af5-4761-92d4-2149ee8c551e": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/3_287b61b6-ee16-4bba-a562-0d0627cc1fd9.png",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Kansa Metal",
+        "text": "<p>Kansa, also known as bronze, is believed to be a healing metal in India’s ancient tradition of Ayurveda.<br\/><br\/>The healing metal works on the skin to reach and activate connective tissues. When used as a massager on the face, Kansa boosts the immunity for its natural antimicrobial and healing properties supporting prana flow. Kansa is also known to help balance pH levels of the skin. <\/p><p>*this statement is not a medical claim and not cleared with FDA<br\/><\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "50",
+        "layout": "right",
+        "alt": true,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "de420bc3-a630-41c7-9399-69dc6fd88819": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Untitled_design_47.png",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Benefits",
+        "text": "<p>✓Lymphatic drainage <\/p><p>✓Blood circulation<\/p><p>✓Activate collagen production<\/p><p>✓Fascia release to ease muscle tension<\/p><p>✓Edema reduction <\/p><p>✓Boost ATP Production<\/p><p>✓Balance pH level of the skin<\/p><p>✓Reduce appearance of wrinkles and fine lines<\/p><p>✓Look refreshed & energized<\/p><p>✓Increase hydration<\/p><p>✓Increase skin elasticity<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "50",
+        "layout": "left",
+        "alt": true,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "82661063-6b2d-42c2-99a6-3f564c944933": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Screenshot_2023-04-24_at_3.56.46_PM.png",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Gua Sha + Microcurrent",
+        "text": "<p>Gua Sha tool is commonly used for tension release and facial massages. When a conductive Gua Sha is used in conjunction with microcurrent, it enhances the results by combining the benefits of both Gua Sha and Microcurrent and saves time in doing the facial treatments. Additionally the benefits are deeper and long lasting.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "50",
+        "layout": "right",
+        "alt": true,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "69598366-9e78-488c-a9c6-2384392c2702": {
+      "type": "hero-video",
+      "settings": {
+        "title": "Gua Sha",
+        "title_size": 60,
+        "subheading": "Under Eye Treatment",
+        "link_text": "",
+        "link": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-left",
+        "video_url": "https:\/\/vimeo.com\/818574291",
+        "section_height": "650px",
+        "mobile_height": "auto"
+      }
+    },
+    "fd73d280-8a44-41b2-a4ac-def334f77604": {
+      "type": "hero-video",
+      "settings": {
+        "title": "Gua Sha",
+        "title_size": 60,
+        "subheading": "Cheek Treatment",
+        "link_text": "",
+        "link": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-right",
+        "video_url": "https:\/\/vimeo.com\/818576895",
+        "section_height": "650px",
+        "mobile_height": "auto"
+      }
+    },
+    "16819433829012c034": {
+      "type": "apps",
+      "blocks": {
+        "6ef03fbe-a3ba-4cec-aa52-ff8d71da290a": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}",
+            "widget_type": "reviews_widget"
+          }
+        }
+      },
+      "block_order": [
+        "6ef03fbe-a3ba-4cec-aa52-ff8d71da290a"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1a3fcdc4-d72b-493f-808b-8c1fe9c08002",
+    "sub",
+    "collection-return",
+    "bc10f931-1f0d-48e0-a2c5-0f785996b934",
+    "164556780200309513",
+    "product-recommendations",
+    "fe61abff-264d-4437-ab02-6865dd969edd",
+    "e78b38c7-932e-4516-bd3d-041ee2258ce0",
+    "e6376905-8979-4a3c-817a-e048be143d33",
+    "64298d6b-3af5-4761-92d4-2149ee8c551e",
+    "de420bc3-a630-41c7-9399-69dc6fd88819",
+    "82661063-6b2d-42c2-99a6-3f564c944933",
+    "69598366-9e78-488c-a9c6-2384392c2702",
+    "fd73d280-8a44-41b2-a4ac-def334f77604",
+    "16819433829012c034"
+  ]
+}

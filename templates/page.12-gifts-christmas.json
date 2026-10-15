@@ -1,0 +1,86 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "de556c4c-de2d-4a39-84cc-43b41587b187": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14860786434102__de556c4c-de2d-4a39-84cc-43b41587b187-16704945840cad349f-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/banner_cbb96d18-4ffe-4be0-96c9-246b59fc907d.png",
+            "image_mobile": "shopify:\/\/shop_images\/mobile_banner_82342b0b-391c-49e0-9e9b-feea429558c0.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--14860786434102__de556c4c-de2d-4a39-84cc-43b41587b187-16704945840cad349f-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "164750184654268337": {
+      "type": "advanced-content",
+      "blocks": {
+        "164750184632c2dd43-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2><em>Lift up your skin from within with the power of personalised skincare bundles.",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "164750184632c2dd43-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "alt": false
+      }
+    },
+    "02ab35e8-16b7-4367-be1a-3c769147f7d3": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14860786434102__02ab35e8-16b7-4367-be1a-3c769147f7d3-1670569424bf569bb2-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"checkout_btn_phl\">\n<a href=\"javascript:void(0);\" data-toggle=\"modal\" data-target=\"#checkoutModal\" class=\"btn\">Continue To Checkout<\/a>\n<\/div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14860786434102__02ab35e8-16b7-4367-be1a-3c769147f7d3-1670569424bf569bb2-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "de556c4c-de2d-4a39-84cc-43b41587b187",
+    "164750184654268337",
+    "02ab35e8-16b7-4367-be1a-3c769147f7d3"
+  ]
+}

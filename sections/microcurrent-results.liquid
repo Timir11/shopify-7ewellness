@@ -1,0 +1,73 @@
+<div class="microcurrent-results">
+  <div class="page-width">
+    <div class="title">
+      <h5>Results</h5>
+      <h2>{{ section.settings.title }}</h2>
+      <p>{{ section.settings.title_text }}</p>
+    </div>
+  </div>
+  <div class="microcurrent-result-wraper">
+    {% for block in section.blocks %}
+      <div class="microcurrent-result">
+        <img src="{{ block.settings.img | img_url: 'original' }}" alt="result{{ forloop.index }}" />
+        <div class="txt">
+          <h3>{{ block.settings.title }}</h3>
+          <p>{{ block.settings.text }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Microcurrent Results",
+    "settings": [
+      {
+        "type":"text",
+        "id":"title",
+        "label":"Title"
+      },
+      {
+        "type":"text",
+        "id":"title_text",
+        "label":"Title Text"
+      }
+    ],
+    "blocks":[
+      {
+        "type":"text",
+        "name":"Result",
+        "settings":[
+          {
+            "type":"image_picker",
+            "id":"img",
+            "label":"Image"
+          },
+          {
+            "type":"text",
+            "id":"title",
+            "label":"Title"
+          },
+          {
+            "type":"text",
+            "id":"text",
+            "label":"Text"
+          }
+          
+        ]
+      }
+    ],
+    "presets":[
+      {
+        "name": "Microcurrent Results"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

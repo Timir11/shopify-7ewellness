@@ -1,0 +1,226 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1645383603ceda0d05": {
+      "type": "featured-product",
+      "blocks": {
+        "164538360347ac0c2d-0": {
+          "type": "price",
+          "settings": {}
+        },
+        "164538360347ac0c2d-1": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "164538360347ac0c2d-2": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "color_swatches": false
+          }
+        },
+        "164538360347ac0c2d-3": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        }
+      },
+      "block_order": [
+        "164538360347ac0c2d-0",
+        "164538360347ac0c2d-1",
+        "164538360347ac0c2d-2",
+        "164538360347ac0c2d-3"
+      ],
+      "settings": {
+        "featured_product": "myolift™-600-atp-booster-kit-draft",
+        "product_image_size": "medium",
+        "product_image_type": "slider",
+        "product_zoom_enable": false,
+        "enable_video_looping": true,
+        "product_video_style": "muted",
+        "sku_enable": false
+      }
+    },
+    "1645807103dbf5b004": {
+      "type": "slideshow",
+      "blocks": {
+        "164580710302d78b67-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Untitled_design_30_2ac5112e-ea3c-41e5-85c7-3259eb1cf550.png",
+            "image_mobile": "shopify:\/\/shop_images\/Untitled_design_31.png"
+          }
+        }
+      },
+      "block_order": [
+        "164580710302d78b67-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "16453836352009c0bb": {
+      "type": "rich-text",
+      "blocks": {
+        "16453836357496a3cc-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Not sure if this is the right device for you? Take our 2 minute quiz and find your match."
+          }
+        },
+        "49fcbdb0-1726-43c4-bb79-4f15792b275d": {
+          "type": "button",
+          "settings": {
+            "link": "",
+            "link_text": "GET STARTED"
+          }
+        }
+      },
+      "block_order": [
+        "16453836357496a3cc-0",
+        "49fcbdb0-1726-43c4-bb79-4f15792b275d"
+      ],
+      "disabled": true,
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": true
+      }
+    },
+    "164580728253a9f73c": {
+      "type": "slideshow",
+      "blocks": {
+        "16458072825721b193-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Iconography_transition_da240375-4204-4110-a240-041607167701.png",
+            "image_mobile": "shopify:\/\/shop_images\/Icons_Mobile_91950572-97d2-44e6-8ccb-603ac61c5e9c.png"
+          }
+        }
+      },
+      "block_order": [
+        "16458072825721b193-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "1645383795c6f01540": {
+      "type": "slideshow",
+      "blocks": {
+        "1645383795c8093e43-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/before_after_desktop_qt_2x_4121a005-13aa-419d-8cf0-836995532e12.png",
+            "image_mobile": "shopify:\/\/shop_images\/before_after_mobile_qt_2x_77c40402-fdca-4b6d-ac4d-c4ff365561c2.png"
+          }
+        }
+      },
+      "block_order": [
+        "1645383795c8093e43-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "164538364139618239": {
+      "type": "faq",
+      "blocks": {
+        "164538364199350ffc-0": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "164538364199350ffc-1": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "164538364199350ffc-0",
+        "164538364199350ffc-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "FAQs"
+      }
+    },
+    "164538372373b09e9b": {
+      "type": "apps",
+      "blocks": {
+        "f9cbb1a8-0de2-42e6-843d-4f415c3264e6": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "",
+            "widget_type": "reviews_widget"
+          }
+        }
+      },
+      "block_order": [
+        "f9cbb1a8-0de2-42e6-843d-4f415c3264e6"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1645383603ceda0d05",
+    "1645807103dbf5b004",
+    "16453836352009c0bb",
+    "164580728253a9f73c",
+    "1645383795c6f01540",
+    "164538364139618239",
+    "164538372373b09e9b"
+  ]
+}

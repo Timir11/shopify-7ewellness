@@ -1,0 +1,74 @@
+{
+  "sections": {
+    "16470250167edbdade": {
+      "type": "advanced-content",
+      "blocks": {
+        "16470250164a196fcf-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<style>\n.p{\n.margin-top: 20px;\n.margin-bottom: 30px;\n}\n<\/style>\n<center>\n<p>\n<!--<b>30 Day Money Back Guarantee.<\/b>\n<br>\nPlease allow 2 days for processing before your order is shipped.\n<br>\n<b>For Customer Support: 1-858-657-9226.<\/b>-->\n<div class=\"d-flex cart-icons\">\n<div class=\"img\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2745\/9950\/files\/reader_choice_icon_b0774f8c-b37f-4d61-999a-4f98389e0008.png?v=1699696954\" \/>\n<\/div>\n<div class=\"img\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2745\/9950\/files\/rating_icon_a613dff0-d41a-4d8b-bf07-d795ebf3a28b.png?v=1699696954\" \/>\n<\/div>\n<div class=\"img\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2745\/9950\/files\/free_shipping_722997d9-bb31-491a-905b-dbbf92550ff8.png?v=1699696955\" \/>\n<\/div>\n<\/div>\n<b style=\"padding-top: 20px;\">For Customer Support: 1-858-657-9226.<\/b>\n<\/p>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "16470250164a196fcf-1"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".cart-icons {display: flex; justify-content: center; align-items: centre; gap: 20px; margin-bottom: 30px;}",
+        ".cart-icons-wrap {background: #fff;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "alt": false,
+        "custom_class": "",
+        "lazyload_images": true
+      }
+    },
+    "main": {
+      "type": "main-cart",
+      "settings": {}
+    },
+    "featured-collection": {
+      "type": "featured-collection-slider",
+      "disabled": true,
+      "settings": {
+        "title": "Popular picks",
+        "description": "",
+        "home_featured_products": "conductive-gels",
+        "per_row": "small",
+        "alt": true
+      }
+    },
+    "1721728284b0639dad": {
+      "type": "apps",
+      "blocks": {
+        "rebuy_personalization_engine_rebuy_widget_hJRWbE": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "159930",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "rebuy_personalization_engine_rebuy_widget_hJRWbE"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    }
+  },
+  "order": [
+    "16470250167edbdade",
+    "main",
+    "featured-collection",
+    "1721728284b0639dad"
+  ]
+}

@@ -1,0 +1,96 @@
+<div class="image_with_text_slide {{section.settings.custom_class}}" data-section-id="{{ section.id }}">
+  <div class="page-width">
+    <div class="slider-container">
+      <!-- Thumbnail Navigation -->
+      <div class="testimonial-slider-nav">
+        {% for block in section.blocks %}
+          <div class="">
+            {% if block.settings.title %}
+              <h2>{{ block.settings.title }}</h2>
+            {% endif %}
+            {% if block.settings.sub_text %}
+              <p class="review_subtext">{{ block.settings.sub_text }}</p>              
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+      <!-- Main Testimonial Slider -->
+      <div class="testimonial-slider">
+        {% for block in section.blocks %}
+          <div class="testimonial-slide">
+            <img src="{{ block.settings.image | img_url:'master' }}" alt="Expert-{{forloop.index}}">
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Text With Image Slide",
+  "settings": [
+    {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Add Custom Class for section"
+    },
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Custmoer Image"
+        },
+        {
+          "type": "html",
+          "id": "sub_text",
+          "label": "Sub Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Text With Image Slide",
+      "blocks": [
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+<script>
+  $(document).ready(function(){
+    $('.testimonial-slider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: true,
+      arrows: false,
+      asNavFor: '.testimonial-slider-nav',
+    })
+
+    $('.testimonial-slider-nav').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: false,
+      arrows: true,
+      asNavFor: '.testimonial-slider',
+    });
+  });
+</script>

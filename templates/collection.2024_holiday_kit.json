@@ -1,0 +1,139 @@
+{
+  "sections": {
+    "1646241523e51c9c10": {
+      "type": "slideshow",
+      "blocks": {
+        "1646241523bb5fefbd-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Product_Desktop_banner_2x_954b5358-a731-46e2-83fb-a1fd6592b6aa.png"
+          }
+        }
+      },
+      "block_order": [
+        "1646241523bb5fefbd-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "collection_image_enable": true,
+        "description_enable": false
+      }
+    },
+    "collection-filters": {
+      "type": "collection-filters",
+      "disabled": true,
+      "settings": {
+        "enable_color_swatches": false,
+        "collection_sort_enable": false
+      }
+    },
+    "16467169996c2830cb": {
+      "type": "featured-collections",
+      "blocks": {
+        "1646716998bd5963f4-0": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "at-home-microcurrent-devices",
+            "image": "shopify:\/\/shop_images\/Device_collection_image_2x_c025cd00-0d98-4280-9a9d-9424538b5044.png"
+          }
+        },
+        "1646716998bd5963f4-1": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "conductive-gels",
+            "image": "shopify:\/\/shop_images\/Gel_collection_image_2x_5fcd4ad9-bf70-41c2-95d9-006b3d1ab2f3.png"
+          }
+        },
+        "1646716998bd5963f4-2": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "microcurrent-accessories-masks",
+            "image": "shopify:\/\/shop_images\/Masks_collection_image_2x_7af3b2e0-9dc6-4514-8be6-9538f97b67ee.png"
+          }
+        },
+        "1646716998bd5963f4-3": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "shop-all-microcurrent-accessories-tools",
+            "image": "shopify:\/\/shop_images\/Accessories__collection_image_2x_a73aef32-357d-47f3-82d7-0cdcdc398215.png"
+          }
+        }
+      },
+      "block_order": [
+        "1646716998bd5963f4-0",
+        "1646716998bd5963f4-1",
+        "1646716998bd5963f4-2",
+        "1646716998bd5963f4-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Browse Other Collections",
+        "alt": false
+      }
+    },
+    "16499604269d970ffb": {
+      "type": "rich-text",
+      "blocks": {
+        "9267f5be-095a-44fa-8724-df679fe38dd0": {
+          "type": "button",
+          "settings": {
+            "link": "shopify:\/\/pages\/mothers-day-professional-special",
+            "link_text": "Button"
+          }
+        }
+      },
+      "block_order": [
+        "9267f5be-095a-44fa-8724-df679fe38dd0"
+      ],
+      "disabled": true,
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": false
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "product_grid"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "1646241523e51c9c10",
+    "collection-header",
+    "main-collection",
+    "collection-filters",
+    "16467169996c2830cb",
+    "16499604269d970ffb"
+  ]
+}

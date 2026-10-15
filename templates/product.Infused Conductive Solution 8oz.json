@@ -1,0 +1,250 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "okendo_star_rating_TADRAg": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "metafiled_description_thCG4N": {
+          "type": "metafiled_description",
+          "settings": {
+            "is_meta_description": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "trust_badge_ka3aKe": {
+          "type": "trust_badge",
+          "settings": {
+            "trust_image": "shopify:\/\/shop_images\/Background_2x_9930748b-1cc8-4d33-b97d-a8c4c9db56ff.png"
+          }
+        },
+        "pop_up_rJzQ4w": {
+          "type": "pop_up",
+          "settings": {
+            "title": "Shipping & Handling",
+            "content": "<p>Free USA Ground shipment, Orders are processed within 2 business day. <\/p><p>International Orders Ships within 3 business day.  <\/p><p>International customers are required to pay Duty with their local custom agency. <\/p>"
+          }
+        },
+        "tab_ddakF6": {
+          "type": "tab",
+          "settings": {
+            "title": "What is included?",
+            "content": "{{ product.metafields.custom.what_is_included.value.what_is_included | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "66232a31-cb5f-4a67-97cf-d0377bb2fac6": {
+          "type": "tab",
+          "settings": {
+            "title": "How To Use",
+            "content": "<p><strong>For Cotton Tip Use:<\/strong><\/p><ol><li>Start with clean, misted skin (use toner or facial spritz).<\/li><li>Pour a small amount of solution into a clean glass or ceramic dish.<\/li><li>Dip paper-based cotton tips into the solution for <strong>5–7 seconds<\/strong>.<\/li><li>Insert the soaked cotton tip into your <strong>metal microcurrent probe tip<\/strong> for secure contact.<\/li><li>Perform your treatment—<strong>no conductive gel required<\/strong> in this method.<\/li><\/ol><p><strong>For Glove Use:<\/strong><\/p><ol><li>Lightly moisten your <a href=\"https:\/\/www.7ewellness.com\/products\/conductive-gloves\" target=\"_blank\" title=\"https:\/\/www.7ewellness.com\/products\/conductive-gloves\"><strong>microcurrent gloves<\/strong><\/a> with the solution.<\/li><li>Reapply as needed to maintain conductivity throughout the session.<\/li><\/ol>",
+            "page": ""
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "title": "Benefits",
+            "content": "<ul><li><strong>Enhanced Conductivity:<\/strong> Improves the flow and delivery of microcurrent for more effective treatments<\/li><li><strong>Nutrient-Infused Skin Support:<\/strong> Delivers essential minerals to strengthen and rejuvenate the skin<\/li><li><strong>Hydration Without Heaviness:<\/strong> Glycerin and magnesium help retain moisture without leaving residue<\/li><li><strong>Minimizes Redness & Irritation:<\/strong> Zinc and copper calm the skin and support post-treatment healing<\/li><li><strong>Mess-Free Application:<\/strong> Perfect for precision treatments with no gel required when using cotton tips<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed": {
+          "type": "tab",
+          "settings": {
+            "title": "Ingredients",
+            "content": "<ul><li><strong>Magnesium:<\/strong> Enhances current delivery and maintains hydration balance<\/li><li><strong>Copper:<\/strong> Supports collagen production and skin regeneration<\/li><li><strong>Zinc:<\/strong> Reduces inflammation, boosts healing, and improves skin clarity<\/li><li><strong>Glycerin:<\/strong> A natural humectant that locks in moisture for soft, supple skin<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "tab_QLEFEc": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Product Features",
+            "content": "<p>{{ product.metafields.custom.product_features.value.product_features | metafield_tag }}<\/p>",
+            "page": ""
+          }
+        },
+        "tab_gFP7Fx": {
+          "type": "tab",
+          "settings": {
+            "title": "Device Support",
+            "content": "{{ product.metafields.custom.device_support.value.device_support | metafield_tag }}",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "okendo_star_rating_TADRAg",
+        "price",
+        "description",
+        "metafiled_description_thCG4N",
+        "buy_buttons",
+        "trust_badge_ka3aKe",
+        "pop_up_rJzQ4w",
+        "tab_ddakF6",
+        "66232a31-cb5f-4a67-97cf-d0377bb2fac6",
+        "tab",
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed",
+        "tab_QLEFEc",
+        "tab_gFP7Fx"
+      ],
+      "settings": {
+        "product_image_size": "medium",
+        "product_image_type": "slider",
+        "thumbnail_height": "fixed",
+        "product_zoom_enable": true,
+        "enable_video_looping": true,
+        "product_video_style": "unmuted",
+        "product_label": "",
+        "btn_url": "",
+        "btn_txt": "",
+        "sku_enable": false
+      }
+    },
+    "product_specification_k6pJXf": {
+      "type": "product-specification",
+      "blocks": {
+        "how_to_use_zBC8cQ": {
+          "type": "how-to-use",
+          "settings": {
+            "tab_heading": "How To Use",
+            "heading": "How it works",
+            "section_content": "<p>This solution is infused with Magnesium, Copper, and Zinc to boost microcurrent conductivity while calming, hydrating, and supporting skin regeneration—perfect for precise treatments and overall skin health.<\/p>",
+            "image": "shopify:\/\/shop_images\/desktop_8_2oz_Infused_Conductive_Solution.png",
+            "mobile_image": "shopify:\/\/shop_images\/mobile_8_2oz_Infused_Conductive_Solution.png",
+            "link": "",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "image_banner_XH8Q7H": {
+          "type": "image-banner",
+          "settings": {
+            "tab_heading": "Benefits",
+            "heading": "Why You’ll Love It",
+            "image_banner": "shopify:\/\/shop_images\/1_96_2.png",
+            "mobile_image_banner": "shopify:\/\/shop_images\/1_96_3.png",
+            "image_content": "<p>Delivers effective microcurrent flow for targeted treatments<br\/><\/p><p>Nourishes skin with essential minerals<br\/><\/p><p>No gel needed when used with cotton tips<br\/><\/p><p>Great for facial mapping, lip plumping, and brow lifts<br\/><\/p><p>8oz size offers extended use and value<\/p>"
+          }
+        },
+        "ingredients_LDwfhH": {
+          "type": "ingredients",
+          "settings": {
+            "tab_heading": "Ingredients",
+            "heading": "Our Active Ingredient",
+            "ingredient_img1": "shopify:\/\/shop_images\/Group_1000007772.png",
+            "ingredients_text1": "Magnesium",
+            "ingredient_img2": "shopify:\/\/shop_images\/Group_1000007764.png",
+            "ingredients_text2": "Copper",
+            "ingredient_img3": "shopify:\/\/shop_images\/Group_1000007770.png",
+            "ingredients_text3": "Zinc Minerals",
+            "ingredient_img4": "shopify:\/\/shop_images\/Ellipse_2773.png",
+            "ingredients_text4": "Glycerin"
+          }
+        },
+        "faq_AHBBwq": {
+          "type": "faq",
+          "settings": {
+            "tab_heading": "FAQs",
+            "heading": "Frequently Asked Questions",
+            "title1": "Is this solution safe for all skin types?",
+            "text1": "<p>Yes, it’s formulated to be gentle and effective on all skin types—including sensitive, mature, and acne-prone skin.<\/p>",
+            "title2": "Can I use this daily?",
+            "text2": "<p>Absolutely. It’s safe for daily use during your microcurrent treatments, whether at home or in a professional setting.<\/p>",
+            "title3": "Do I still need a conductive gel with this product?",
+            "text3": "<p>Not if you're using <a href=\"https:\/\/www.7ewellness.com\/products\/cotton-tip-handle-only\" target=\"_blank\" title=\"https:\/\/www.7ewellness.com\/products\/cotton-tip-handle-only\"><strong>cotton tip probes<\/strong><\/a>—this solution replaces the need for gel. For gloves, it works as a hydrating activator.<\/p>",
+            "title4": "What makes this different from regular conductive gels?",
+            "text4": "<p>Unlike traditional gels, this is a <strong>mineral-rich liquid formula<\/strong> that’s easier to use for precision work and provides added skin benefits like hydration, healing, and barrier support.<\/p>",
+            "title5": "Will it irritate my skin?",
+            "text5": "<p>No. It’s powered by calming ingredients like Zinc and Copper that actually help <strong>reduce redness, inflammation, and irritation<\/strong>.<\/p>",
+            "title6": "",
+            "text6": "",
+            "title7": "Frequently asked question",
+            "text7": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "reviews_8NYwWW": {
+          "type": "reviews",
+          "settings": {
+            "tab_heading": "Reviews",
+            "enable_review": true
+          }
+        }
+      },
+      "block_order": [
+        "how_to_use_zBC8cQ",
+        "image_banner_XH8Q7H",
+        "ingredients_LDwfhH",
+        "faq_AHBBwq",
+        "reviews_8NYwWW"
+      ],
+      "settings": {
+        "heading": ""
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "settings": {
+        "max_width": true
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {}
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "product_recommendations_heading": "Related products",
+        "related_count": 4
+      }
+    },
+    "featured_collection_pht7X9": {
+      "type": "featured-collection",
+      "settings": {
+        "custom_class": "",
+        "title": "Featured collection grid",
+        "description": "",
+        "home_featured_products": "shop-all-microcurrent-accessories-tools",
+        "rows": 1,
+        "per_row_desktop": 4,
+        "per_row_mobile": "1",
+        "view_all": false,
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product_specification_k6pJXf",
+    "sub",
+    "collection-return",
+    "product-recommendations",
+    "featured_collection_pht7X9"
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1662204540db2518ea": {
+      "type": "slideshow",
+      "blocks": {
+        "16622045405ac514db-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/desktop-banner.png",
+            "image_mobile": "shopify:\/\/shop_images\/mobile-banner_de9e66bc-f27b-4c0f-8ca5-69c81a029ecb.png"
+          }
+        }
+      },
+      "block_order": [
+        "16622045405ac514db-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "166220478708fdba13": {
+      "type": "rich-text",
+      "blocks": {
+        "16622047872fcf5b03-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Try microcurrent in your treatment room risk free"
+          }
+        },
+        "16622047872fcf5b03-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>Join our exclusive program and try one of our professional microcurrent devices complimentary<\/p><p><\/p><p><em>Limited spots available, sign up now.<\/em><\/p><p><\/p>"
+          }
+        },
+        "9a1d4a32-d504-4c70-b703-de6e8c2a17ba": {
+          "type": "button",
+          "settings": {
+            "link": "https:\/\/share.hsforms.com\/1ub8InhqaQ3y-NzGq116uPw2029n",
+            "link_text": "SIGN UP HERE"
+          }
+        }
+      },
+      "block_order": [
+        "16622047872fcf5b03-0",
+        "16622047872fcf5b03-1",
+        "9a1d4a32-d504-4c70-b703-de6e8c2a17ba"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": false
+      }
+    },
+    "16623617828c044d11": {
+      "type": "text-columns",
+      "blocks": {
+        "1662361782ab28abb0-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Program-benefits_Question-icon.png",
+            "image_width": 150,
+            "title": "",
+            "text": "<p>Ask questions + <strong><br\/>Create Customized Treatments<\/strong><\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "1662361782ab28abb0-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Program-benefits_Physically-and-visually-icon.png",
+            "image_width": 150,
+            "title": "",
+            "text": "<p>Visually Witness<br\/><strong>Microcurrent Facial Results<\/strong><\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "949af248-00a7-4593-bf72-559584eeb7dd": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Program-benefits_produce-ROI-icon.png",
+            "image_width": 150,
+            "title": "",
+            "text": "<p>Test & Prove<br\/><strong>ROI<\/strong><\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "d35e8aff-1c00-4adf-90f5-53fd8462248a": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Program-benefits_location-icon.png",
+            "image_width": 150,
+            "title": "",
+            "text": "<p>Find Appropriate<br\/><strong>Location Fit<\/strong><\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1662361782ab28abb0-0",
+        "1662361782ab28abb0-1",
+        "949af248-00a7-4593-bf72-559584eeb7dd",
+        "d35e8aff-1c00-4adf-90f5-53fd8462248a"
+      ],
+      "settings": {
+        "title": "Program Benefits",
+        "align_text": "center",
+        "alt": false
+      }
+    },
+    "16623631313a039ff7": {
+      "type": "advanced-content",
+      "blocks": {
+        "1662363131a8b85c55-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/myolift-600.png",
+            "link": "",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "a1c729a2-6b5a-4c99-9fb0-2bffa995cb18": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/myolift-md.png",
+            "link": "",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "1662363131a8b85c55-0",
+        "a1c729a2-6b5a-4c99-9fb0-2bffa995cb18"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "alt": false
+      }
+    },
+    "16623602530a572e83": {
+      "type": "testimonials",
+      "blocks": {
+        "1662360253f748713e-0": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>“We are going to be launching within the next two weeks, and the customer service and training with Jacque has been great. She has answered all of my questions. Looking forward to providing this service very soon!<\/p><p><strong>★★★★★<\/strong><\/p>",
+            "author": "Jennifer"
+          }
+        },
+        "1662360253f748713e-1": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>I bought my Myolift 600 almost two years ago. My clients are very happy with the results as well as myself! I highly<br\/>recommend it!<br\/><br\/>Microcurrent is my favorite service,<br\/>results are WOW!<\/p><p><strong>★★★★★<\/strong><\/p>",
+            "author": "Rocio"
+          }
+        }
+      },
+      "block_order": [
+        "1662360253f748713e-0",
+        "1662360253f748713e-1"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "round_images": true,
+        "alt": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1662204540db2518ea",
+    "166220478708fdba13",
+    "16623617828c044d11",
+    "16623631313a039ff7",
+    "16623602530a572e83"
+  ]
+}

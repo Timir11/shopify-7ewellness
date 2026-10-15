@@ -1,0 +1,260 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "okendo_star_rating_TADRAg": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "metafiled_description_thCG4N": {
+          "type": "metafiled_description",
+          "settings": {
+            "is_meta_description": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "trust_badge_ka3aKe": {
+          "type": "trust_badge",
+          "settings": {
+            "trust_image": "shopify:\/\/shop_images\/Background_2x_9930748b-1cc8-4d33-b97d-a8c4c9db56ff.png"
+          }
+        },
+        "pop_up_rJzQ4w": {
+          "type": "pop_up",
+          "settings": {
+            "title": "Shipping & Handling",
+            "content": "<p>Free USA Ground shipment, Orders are processed within 2 business day. <\/p><p>International Orders Ships within 3 business day.  <\/p><p>International customers are required to pay Duty with their local custom agency. <\/p>"
+          }
+        },
+        "tab_TPkht9": {
+          "type": "tab",
+          "settings": {
+            "title": "Who is this for?",
+            "content": "{{ product.metafields.custom.who_is_this_for.value.who_is_this_for | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "tab_ddakF6": {
+          "type": "tab",
+          "settings": {
+            "title": "What is included?",
+            "content": "{{ product.metafields.custom.what_is_included.value.what_is_included | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "66232a31-cb5f-4a67-97cf-d0377bb2fac6": {
+          "type": "tab",
+          "settings": {
+            "title": "How to use it?",
+            "content": "<ol><li>Begin with a clean, dry face.<\/li><li><strong>Before applying<\/strong> the conductivity gel, spray <strong>RePlenish Spritzer<\/strong> generously on the face and neck to enhance hydration.<\/li><li><strong>During treatment<\/strong>, reapply as needed to keep skin moist and maintain conductivity.<\/li><li>After treatment, <strong>gently remove excess gel<\/strong> and follow with your favorite moisturizer or serum.<\/li><\/ol>",
+            "page": ""
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "title": "Benefits",
+            "content": "<ul><li><strong>Natural Humectant:<\/strong> Hyaluronic acid draws moisture into the skin and prevents dehydration<\/li><li><strong>Anti-Inflammatory Support:<\/strong> Chamomile and lavender help reduce redness, calm inflammation, and relieve dry, irritated skin<\/li><li><strong>Enhanced Conductivity:<\/strong> Keeps skin hydrated for improved microcurrent flow and device performance<\/li><li><strong>Skin Comfort & Glow:<\/strong> Leaves skin feeling refreshed, smooth, and radiant<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed": {
+          "type": "tab",
+          "settings": {
+            "title": "Ingredients",
+            "content": "<p><strong>Filtered Water (Aqua), Vegetable Glycerin, Hyaluronic Acid, Chamomilla Recutita (Chamomile) Flower Extract, Lavandula Angustifolia (Lavender) Oil, Pelargonium Graveolens (Geranium) Oil, Zinc.<\/strong><\/p>",
+            "page": ""
+          }
+        },
+        "tab_QLEFEc": {
+          "type": "tab",
+          "settings": {
+            "title": "Product Features",
+            "content": "<ul><li><strong>Microcurrent-Compatible:<\/strong> Reactivates and hydrates conductive gels mid-treatment<\/li><li><strong>Deep Hydration:<\/strong> Powered by hyaluronic acid to attract and lock in moisture<\/li><li><strong>Calming Botanical Blend:<\/strong> Soothes inflamed, red, or irritated skin<\/li><li><strong>Non-Sticky & Lightweight:<\/strong> Absorbs quickly without leaving residue<\/li><li><strong>Multi-Use:<\/strong> Great before, during, and after microcurrent treatments<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "tab_gFP7Fx": {
+          "type": "tab",
+          "settings": {
+            "title": "Device Support",
+            "content": "{{ product.metafields.custom.device_support.value.device_support | metafield_tag }}",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "okendo_star_rating_TADRAg",
+        "price",
+        "description",
+        "metafiled_description_thCG4N",
+        "buy_buttons",
+        "trust_badge_ka3aKe",
+        "pop_up_rJzQ4w",
+        "tab_TPkht9",
+        "tab_ddakF6",
+        "66232a31-cb5f-4a67-97cf-d0377bb2fac6",
+        "tab",
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed",
+        "tab_QLEFEc",
+        "tab_gFP7Fx"
+      ],
+      "settings": {
+        "product_image_size": "medium",
+        "product_image_type": "slider",
+        "thumbnail_height": "fixed",
+        "product_zoom_enable": true,
+        "enable_video_looping": true,
+        "product_video_style": "unmuted",
+        "product_label": "",
+        "btn_url": "",
+        "btn_txt": "",
+        "sku_enable": false
+      }
+    },
+    "product_specification_k6pJXf": {
+      "type": "product-specification",
+      "blocks": {
+        "how_to_use_4AraaD": {
+          "type": "how-to-use",
+          "settings": {
+            "tab_heading": "How To Use",
+            "heading": "How it works",
+            "section_content": "<p><strong>The RePlenish Spritzer is your go-to hydration support during microcurrent treatments. It rehydrates conductive gels mid-session and keeps your skin supple, comfortable, and well-prepped for optimal results—without any sticky residue.<\/strong><\/p>",
+            "image": "shopify:\/\/shop_images\/desktop_8_2OZ_REPLENISH_SPRITZER.png",
+            "mobile_image": "shopify:\/\/shop_images\/mobile_8_2OZ_REPLENISH_SPRITZER.png",
+            "link": "",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "image_banner_BG6ePX": {
+          "type": "image-banner",
+          "settings": {
+            "tab_heading": "Benefits",
+            "heading": "What Makes Our Gel So Special?",
+            "image_banner": "shopify:\/\/shop_images\/1_96_2.png",
+            "mobile_image_banner": "shopify:\/\/shop_images\/1_96_3.png",
+            "image_content": "<p><strong>Formulated with hyaluronic acid, chamomile, and lavender, this lightweight spray delivers calming, moisture-rich benefits to all skin types. Use it before, during, or after your microcurrent routine for a refreshed, balanced glow.<\/strong><\/p>"
+          }
+        },
+        "ingredients_i6aWGd": {
+          "type": "ingredients",
+          "settings": {
+            "tab_heading": "Ingredients",
+            "heading": "Our key ingredients",
+            "ingredient_img1": "shopify:\/\/shop_images\/image_12_97db61d1-8eee-476d-a6fb-aee6a0b2350c.png",
+            "ingredients_text1": "Hyaluronic Acid",
+            "ingredient_img2": "shopify:\/\/shop_images\/Group_1000007777.png",
+            "ingredients_text2": "Chamomile",
+            "ingredient_img3": "shopify:\/\/shop_images\/image_13_db999e99-7b51-40fd-b61c-a1906128cd34.png",
+            "ingredients_text3": "Lavender oil",
+            "ingredient_img4": "shopify:\/\/shop_images\/Ellipse_2774.png",
+            "ingredients_text4": "Vegetable Glycerin"
+          }
+        },
+        "faq_AHBBwq": {
+          "type": "faq",
+          "settings": {
+            "tab_heading": "FAQs",
+            "heading": "Frequently Asked Questions",
+            "title1": "How does the RePlenish Hydrating Conducting Spritzer work?",
+            "text1": "<p>This spritzer is infused with hydrating ingredients that moisturize and balance your skin. It acts as a <a href=\"https:\/\/www.7ewellness.com\/collections\/conductive-gels\" target=\"_blank\" title=\"https:\/\/www.7ewellness.com\/collections\/conductive-gels\">conductive gel<\/a> substitute during microcurrent treatments by improving the skin’s conductivity, allowing the microcurrent to work more efficiently. The mist helps the microcurrent energy penetrate deeper into the skin, providing more effective results in terms of collagen stimulation, firming, and hydration.<\/p>",
+            "title2": "Is the RePlenish Hydrating Conducting Spritzer suitable for all skin types?",
+            "text2": "<p>Yes, the RePlenish Spritzer is suitable for all skin types. Whether you have dry, oily, combination, or sensitive skin, this mist is designed to provide essential hydration without causing irritation. It is lightweight, non-greasy, and absorbs quickly into the skin, leaving your skin feeling refreshed and balanced.<\/p>",
+            "title3": " How do I use the RePlenish Hydrating Conducting Spritzer?",
+            "text3": "<p>Step 1: Prep – Mist your face with the spritzer to prep your skin before starting your microcurrent treatment.<\/p><p>Step 2: During Treatment – Lightly mist throughout your treatment to maintain hydration and ensure optimal conductivity for the MyoLift microcurrent device.<\/p><p>Step 3: As a Hydrating Boost – Use the spritzer throughout the day to refresh and hydrate your skin, especially if your skin feels dry or tight.<\/p>",
+            "title4": "Can I use the RePlenish Hydrating Conducting Spritzer without a microcurrent device?",
+            "text4": "<p>Yes, the RePlenish Hydrating Conducting Spritzer can be used on its own as a hydrating facial mist. It’s perfect for daily hydration, especially in dry environments, as it helps to restore moisture and balance. If you're not using it for microcurrent, it still provides excellent skin hydration, leaving your skin feeling fresh and revitalized.<\/p>",
+            "title5": "How does the RePlenish Hydrating Conducting Spritzer enhance microcurrent treatments?",
+            "text5": "<p>The RePlenish Spritzer is specially designed to boost the effectiveness of your MyoLift microcurrent treatments. By improving the skin’s conductivity, it allows the microcurrent energy to be more easily absorbed by the skin, which enhances the penetration of the current. This results in more efficient treatment, providing deeper stimulation of collagen and elastin, improving firmness, and leaving the skin feeling plump and rejuvenated.<\/p>",
+            "title6": " Can I use the RePlenish Hydrating Conducting Spritzer with other skincare products?",
+            "text6": "<p>Yes, you can easily incorporate the RePlenish Hydrating Conducting Spritzer into your regular skincare routine. After using the spritzer to prep your skin, you can apply your usual serum, moisturizer, or treatment. It helps lock in moisture and boosts the effectiveness of your skincare products by providing a better base layer.<\/p>",
+            "title7": " How often should I use the RePlenish Hydrating Conducting Spritzer?",
+            "text7": "<p>For microcurrent treatments, use the RePlenish Hydrating Conducting Spritzer every time you use the MyoLift microcurrent device to ensure proper conductivity and hydration. You can also mist your face throughout the day as a refreshing facial spritz, especially if you’re in need of hydration or to calm your skin after exposure to environmental stressors.<\/p>"
+          }
+        },
+        "reviews_8NYwWW": {
+          "type": "reviews",
+          "settings": {
+            "tab_heading": "Reviews",
+            "enable_review": true
+          }
+        }
+      },
+      "block_order": [
+        "how_to_use_4AraaD",
+        "image_banner_BG6ePX",
+        "ingredients_i6aWGd",
+        "faq_AHBBwq",
+        "reviews_8NYwWW"
+      ],
+      "name": "Product Specifications",
+      "settings": {
+        "heading": ""
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "settings": {
+        "max_width": true
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {}
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "product_recommendations_heading": "Related products",
+        "related_count": 4
+      }
+    },
+    "featured_collection_pht7X9": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.featured_collection_grid.name",
+      "settings": {
+        "custom_class": "",
+        "title": "Featured collection grid",
+        "description": "",
+        "home_featured_products": "shop-all-microcurrent-accessories-tools",
+        "rows": 1,
+        "per_row_desktop": 4,
+        "per_row_mobile": "1",
+        "view_all": false,
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product_specification_k6pJXf",
+    "sub",
+    "collection-return",
+    "product-recommendations",
+    "featured_collection_pht7X9"
+  ]
+}

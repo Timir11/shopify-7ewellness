@@ -1,0 +1,376 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "rich_text_NdtLyJ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Ydpekj": {
+          "type": "heading",
+          "settings": {
+            "title": "Real Reviews & Results!"
+          }
+        },
+        "text_BGH4Tt": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>See what people are saying about Myolift and real life results<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Ydpekj",
+        "text_BGH4Tt"
+      ],
+      "name": "t:sections.rich-text.presets.rich_text.name",
+      "settings": {
+        "custom_class": "review-page-heading",
+        "align_text": "center",
+        "narrow_column": false,
+        "alt": false
+      }
+    },
+    "brand_logo_with_review_wqAmV4": {
+      "type": "brand-logo-with-review",
+      "blocks": {
+        "logo_image_UDgFjF": {
+          "type": "logo_image",
+          "settings": {
+            "review_text": "The 7E Wellness MyoLift Mini is a standout device for lifting and toning aging skin, offering non-invasive treatments once reserved for dermatologists' offices.",
+            "image": "shopify:\/\/shop_images\/9_a842c708-9298-456a-b35f-1278b9778706.png"
+          }
+        },
+        "logo_image_CPUd8X": {
+          "type": "logo_image",
+          "settings": {
+            "review_text": "The MyoLift Mini boosts confidence with tailored, pro-level treatments and lasting results.",
+            "image": "shopify:\/\/shop_images\/17.png"
+          }
+        },
+        "logo_image_dqf3zX": {
+          "type": "logo_image",
+          "settings": {
+            "review_text": "The Best Microcurrent Devices for a Snatched Jawline in Minutes.",
+            "image": "shopify:\/\/shop_images\/6_41150ebf-c2e8-4968-ab18-a2a75dfc29eb.png"
+          }
+        },
+        "logo_image_pfxJMY": {
+          "type": "logo_image",
+          "settings": {
+            "review_text": "Pro aestheticians and DIY skincare fans alike are obsessed with this microcurrent device from MyoLift.",
+            "image": "shopify:\/\/shop_images\/7_1.png"
+          }
+        },
+        "logo_image_7KpBmm": {
+          "type": "logo_image",
+          "settings": {
+            "review_text": "7E Wellness is redefining at-home skincare with FDA-cleared, pro-grade microcurrent devices.",
+            "image": "shopify:\/\/shop_images\/2_2_242a3ed4-e331-4214-9d64-1fcb2667591b.png"
+          }
+        },
+        "logo_image_nLXJaj": {
+          "type": "logo_image",
+          "settings": {
+            "review_text": "Best Microcurrent Device For Fine Lines: 7E Wellness MyoLift QT Plus Facial Toning Device.",
+            "image": "shopify:\/\/shop_images\/1_2_7403c9b2-7309-403a-94b4-90e6b667aeec.png"
+          }
+        }
+      },
+      "block_order": [
+        "logo_image_UDgFjF",
+        "logo_image_CPUd8X",
+        "logo_image_dqf3zX",
+        "logo_image_pfxJMY",
+        "logo_image_7KpBmm",
+        "logo_image_nLXJaj"
+      ],
+      "name": "Brand Logo with Review",
+      "settings": {}
+    },
+    "slider_with_tabs_Wxi9Nd": {
+      "type": "slider-with-tabs",
+      "blocks": {
+        "tab_name_aDNHXz": {
+          "type": "tab_name",
+          "settings": {
+            "tab_name": "Myolift QT",
+            "imgdrop": [
+              "before-after-images-p473pg7y"
+            ]
+          }
+        },
+        "tab_name_WRmBzm": {
+          "type": "tab_name",
+          "settings": {
+            "tab_name": "Myolift Mini",
+            "imgdrop": [
+              "before-after-images-tx1qf5lo"
+            ]
+          }
+        },
+        "tab_name_eTBPRd": {
+          "type": "tab_name",
+          "settings": {
+            "tab_name": "Myolift Triwave",
+            "imgdrop": [
+              "before-after-images-hxgztwum"
+            ]
+          }
+        }
+      },
+      "block_order": [
+        "tab_name_aDNHXz",
+        "tab_name_WRmBzm",
+        "tab_name_eTBPRd"
+      ],
+      "name": "Slider With Tabs",
+      "settings": {
+        "alt_bg": false,
+        "full_width": false,
+        "title": "At Home Devices Before and After"
+      }
+    },
+    "text_with_icons_qxqVaD": {
+      "type": "text-with-icons",
+      "blocks": {
+        "text_block_BTJTwk": {
+          "type": "text_block",
+          "settings": {
+            "hide_icon": true,
+            "icon": "chat",
+            "title": "91%",
+            "text": "<p>Noticed, immediate skin lift after doing the treatment<\/p>"
+          }
+        },
+        "text_block_cU7ztL": {
+          "type": "text_block",
+          "settings": {
+            "hide_icon": true,
+            "icon": "chat",
+            "title": "85%",
+            "text": "<p>Noticed, forehead fine lines reduced<\/p>"
+          }
+        },
+        "text_block_KqFKnC": {
+          "type": "text_block",
+          "settings": {
+            "hide_icon": true,
+            "icon": "chat",
+            "title": "91%",
+            "text": "<p>Noticed, Crow’s feet appeared reduced<\/p>"
+          }
+        },
+        "text_block_c8rzkN": {
+          "type": "text_block",
+          "settings": {
+            "hide_icon": true,
+            "icon": "chat",
+            "title": "100%",
+            "text": "<p>Felt good after doing the treatment<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_block_BTJTwk",
+        "text_block_cU7ztL",
+        "text_block_KqFKnC",
+        "text_block_c8rzkN"
+      ],
+      "name": "t:common.text_with_icons.presets.text_with_icons.name",
+      "settings": {
+        "custom_class": "counter-section",
+        "title": "",
+        "align_text": "center",
+        "desktop_columns_per_row": 4,
+        "icon_color": "#000000",
+        "button_label": "",
+        "button_link": "",
+        "alt": false
+      }
+    },
+    "slider_with_tabs_LnpG3n": {
+      "type": "slider-with-tabs",
+      "blocks": {
+        "tab_name_Cjqfb7": {
+          "type": "tab_name",
+          "settings": {
+            "tab_name": "Myolift 600",
+            "imgdrop": [
+              "before-after-images-jfzjqtld"
+            ]
+          }
+        },
+        "tab_name_ERXhd6": {
+          "type": "tab_name",
+          "settings": {
+            "tab_name": "Myolift MD",
+            "imgdrop": [
+              "before-after-images-dylgliir"
+            ]
+          }
+        }
+      },
+      "block_order": [
+        "tab_name_Cjqfb7",
+        "tab_name_ERXhd6"
+      ],
+      "name": "Slider With Tabs",
+      "settings": {
+        "alt_bg": false,
+        "full_width": false,
+        "title": "Professional  Devices Before and After"
+      }
+    },
+    "review_slideshow_VYnrEb": {
+      "type": "review-slideshow",
+      "blocks": {
+        "image_VrhFeb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/review-pic-3.jpg",
+            "text": "<p>I love this and use it on trips all the time; I’ll just run it back and forth on my face while I doom scroll on Instagram. And it really has made a difference in the jowl area.<\/p>",
+            "customer_name": "- Mindy Kaling",
+            "sub_text": "American Actress, Screenwriter, and Producer"
+          }
+        },
+        "image_JpjTPk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/review-pic-1.png",
+            "text": "<p>Despite having over 25 years of professional experience as a skin practitioner, I use MyoLift QT myself and never travel without it. The device is genius—compact, lightweight, and incredibly easy to use.<\/p>",
+            "customer_name": "- Dr. Meder",
+            "sub_text": ""
+          }
+        },
+        "image_tJ9GL4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Review-pic-4.png",
+            "text": "<p>The Microcurrent, especially Myo lift is so exciting because the results really are incredible. And I tell every client, no matter if you're 25or 85, you will see a difference in your skin. And that difference will be cumulative. Microcurrent machine, it is an investment that you're making into your business.<\/p>",
+            "customer_name": "- Joanna Vargas",
+            "sub_text": ""
+          }
+        },
+        "image_zcEa3a": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Review-pic-5.png",
+            "text": "<p>This beauty tool is a game changer for firming and toning your skin. Just glide it across your face in upward motions for a few minutes a day to stimulate and contour. It’s like a mini face workout that leaves you glowing and lifted.<\/p>",
+            "customer_name": "- Sarah Akram",
+            "sub_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_VrhFeb",
+        "image_JpjTPk",
+        "image_tJ9GL4",
+        "image_zcEa3a"
+      ],
+      "custom_css": [
+        ".expert-review-section {border-top: 1px solid #000; border-bottom: 1px solid #000;}"
+      ],
+      "settings": {
+        "custom_class": "",
+        "title": "What Experts Say"
+      }
+    },
+    "advanced_content_DTaen6": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_hXWRgT": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "code": "<center><h1> Microcurrent Face Lift Before and After  <br>Reviews and Results!<\/h1>\n<p>Does a non-surgical facelift work? This is the question most people who are curious about devices for face lifting may come across. The answer is yes and the best part is that it requires zero downtime.<\/p>\n<p>Due to their non-invasive nature, microcurrent face-lifting devices have a remarkable ability to show results without the need for any downtime.<\/p>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "image_eGaWpp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Myolift-60-day-update.jpg",
+            "link": "https:\/\/www.youtube.com\/watch?v=Hd5GNCvOdQc",
+            "width": "50%",
+            "alignment": "center",
+            "hide-on-mobile": false
+          }
+        },
+        "image_dbCNxE": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/aging-gracefully.jpg",
+            "link": "https:\/\/www.youtube.com\/watch?v=ZxlfAx9dFKU",
+            "width": "50%",
+            "alignment": "center",
+            "hide-on-mobile": false
+          }
+        }
+      },
+      "block_order": [
+        "liquid_hXWRgT",
+        "image_eGaWpp",
+        "image_dbCNxE"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "alt": false,
+        "custom_class": "review-page-video",
+        "lazyload_images": true
+      }
+    },
+    "featured_collection_azKi43": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.featured_collection_grid.name",
+      "settings": {
+        "custom_class": "",
+        "title": "Explore Our Products",
+        "description": "",
+        "home_featured_products": "at-home-microcurrent-devices",
+        "rows": 1,
+        "per_row_desktop": 4,
+        "per_row_mobile": "1",
+        "view_all": false,
+        "alt": false
+      }
+    },
+    "1671130556a5cd5219": {
+      "type": "apps",
+      "blocks": {
+        "ff051ff8-496e-4955-b189-326bef58ad32": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "",
+            "widget_type": "reviews_widget"
+          }
+        }
+      },
+      "block_order": [
+        "ff051ff8-496e-4955-b189-326bef58ad32"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_NdtLyJ",
+    "brand_logo_with_review_wqAmV4",
+    "slider_with_tabs_Wxi9Nd",
+    "text_with_icons_qxqVaD",
+    "slider_with_tabs_LnpG3n",
+    "review_slideshow_VYnrEb",
+    "advanced_content_DTaen6",
+    "featured_collection_azKi43",
+    "1671130556a5cd5219"
+  ]
+}

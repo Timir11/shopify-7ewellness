@@ -1,0 +1,1922 @@
+{%- liquid
+  assign current_variant = product.selected_or_first_available_variant
+-%}
+
+ <!-- product description tab for desktop -->
+ <div class="product-specification-section">
+  <div class="product-info-tab desktop-only">
+    <div id="tabs">
+      <div class="product-info-top-tab-block">
+        <ul class="page-width">
+          {% for block in section.blocks %}
+            {% case block.type %}
+              {%- when '@app' -%}
+                <li><a href="#tabs-{{ forloop.index }}"></a></li>
+              {% when 'result' %}
+              <li><a href="#tabs-{{ forloop.index }}">{{ block.settings.tab_heading }}</a></li>
+              {% when 'mobile-application' %}
+                <li><a href="#tabs-{{ forloop.index }}">{{ block.settings.tab_heading }}</a></li>
+              {%- when 'treatment' -%}
+                <li><a href='#tabs-{{ forloop.index }}'>{{ block.settings.tab_heading }}</a></li>
+              {%- when 'faq' -%}
+                <li><a href='#tabs-{{ forloop.index }}'>{{ block.settings.tab_heading }}</a></li>
+              {%- when 'how-to-use' -%}
+                <li><a href='#tabs-{{ forloop.index }}'>{{ block.settings.tab_heading }}</a></li>
+              {% when 'video' %}
+                <li><a href="#tabs-{{ forloop.index }}">{{ block.settings.tab_heading }}</a></li>
+              {% when 'closer-look' %}
+                <li><a href='#tabs-{{ forloop.index }}'>{{ block.settings.tab_heading }}</a></li>              
+              {% when 'benefits' %}
+                <li><a href='#tabs-{{ forloop.index }}'>{{ block.settings.tab_heading }}</a></li>              
+              {% when 'technology' %}
+                <li><a href='#tabs-{{ forloop.index }}'>{{ block.settings.tab_heading }}</a></li>              
+              {% when 'image-banner' %}
+                <li><a href='#tabs-{{ forloop.index }}'>{{ block.settings.tab_heading }}</a></li>              
+              {% when 'ingredients' %}
+                <li><a href='#tabs-{{ forloop.index }}'>{{ block.settings.tab_heading }}</a></li>              
+            {% endcase %}
+          {% endfor %}
+              <li><a href='#tab-review'>Reviews</a></li>              
+        </ul>
+      </div>
+
+      <div class="page-width  product-specification-content-block-wrapper">
+        <div class="results-block">
+          {% for block in section.blocks %}
+            <div id="tabs-{{ forloop.index }}" class="product-specification-tabs">
+              {% case block.type %}
+                {%- when '@app' -%}
+                  <div class="app-block">
+                  {% render block %}
+                  </div>
+                {% when 'result' %}
+                  {% liquid
+                    assign per_row_desktop = block.settings.per_row_desktop
+                    assign per_row_mobile = block.settings.per_row_mobile
+    
+                    case per_row_desktop
+                      when 1
+                      assign grid_large_width = 'result-col-1'
+                      when 2
+                        assign grid_large_width = 'result-col-2'
+                      when 3
+                        assign grid_large_width = 'result-col-3'
+                      when 4
+                        assign grid_large_width = 'result-col-4'
+                    endcase
+    
+                    if per_row_mobile contains '2'
+                      assign per_row_mobile = 2
+                      assign grid_small_width = 'mobile-col-2'
+                    endif
+    
+                    if per_row_mobile contains '1'
+                      assign per_row_mobile = 1
+                      assign grid_small_width = 'mobile-col-1'
+                    endif
+                  %}
+                  <div class="grid product-info-results">
+                   {%- if block.settings.title -%}
+                      <h2 class="section_heading">{{ block.settings.title }}</h2>
+                    {%- endif -%}
+                    
+                    <div class="grid__item">
+                      <div class="gird_image_wrapper">
+                        {%- for i in (1..8) -%}
+                          {%- capture result_image -%}result_image{{i}}{%- endcapture -%}
+                          {%- capture mobile_result_image -%}mobile_result_image{{i}}{%- endcapture -%}
+                          {%- if block.settings[result_image] != blank and block.settings[mobile_result_image] != blank -%}
+                            {% comment %} <img src="{{ block.settings[result_image] | image_url }}" alt="result image {{i}}" class="single-img" /> {% endcomment %}
+                            <picture>
+                              <source media="(max-width: 600px)" srcset="{{ block.settings[mobile_result_image] | image_url }}">
+                              <img src="{{ block.settings[result_image] | image_url }}" alt="result image {{i}}" class="single-img">
+                            </picture>
+
+                          {%- endif -%}
+                        {%- endfor -%}
+                      </div>
+    
+                      {% comment %} {%- if block.settings.first_image1 and block.settings.second_image1 -%}
+                        <div class="comparison-container">
+                          <image-compare class="comparison comparison-{{ section.id }} comparison--style-classic" data-section-id="{{ section.id }}">
+                            <div class="comparison__draggable" data-draggable style="width=150px;">
+                              <div class="comparison__image-wrapper" data-primary-image style="width=150px;">
+                                {%- render 'image-element',
+                                  img: block.settings.first_image1,
+                                  img_width: 2000,
+                                  loading: true,
+                                  classes:  comparison__image comparison__image--1,
+                                -%}
+                              </div>
+                            </div>
+                            <div class="comparison__image-wrapper" data-secondary-image>
+                              {%- render 'image-element',
+                                img: block.settings.second_image1,
+                                img_width: 2000,
+                                loading: true,
+                                classes:  comparison__image comparison__image--2,
+                              -%}
+                            </div>
+                            <button class="comparison__button" data-button>
+                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-left" viewBox="0 0 284.49 498.98"><title>icon-chevron-left</title><path d="M249.49 0a35 35 0 0 1 24.75 59.75L84.49 249.49l189.75 189.74a35.002 35.002 0 1 1-49.5 49.5L10.25 274.24a35 35 0 0 1 0-49.5L224.74 10.25A34.89 34.89 0 0 1 249.49 0Z"/></svg>
+                              <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-chevron-right" viewBox="0 0 284.49 498.98"><title>icon-chevron</title><path d="M35 498.98a35 35 0 0 1-24.75-59.75l189.74-189.74L10.25 59.75a35.002 35.002 0 0 1 49.5-49.5l214.49 214.49a35 35 0 0 1 0 49.5L59.75 488.73A34.89 34.89 0 0 1 35 498.98Z"/></svg>
+                            </button>
+                          </image-compare>
+                        </div>
+                      {%- endif -%} {% endcomment %}
+                      
+                      <div class="grid digits-results {{ grid_small_width }} {{ grid_large_width }}">
+                        {%- for i in (1..4) -%}
+    
+                          {%- capture text -%}text{{i}}{%- endcapture -%}
+                          {%- capture content -%}content{{i}}{%- endcapture -%}
+                          {%- if block.settings[text] != blank or block.settings[content] != blank -%}
+                            <div class="grid__item">
+                                <h2 class="h2">{{ block.settings[text] }}</h2>
+                                {% if block.settings[content] %}
+                                  <p>{{ block.settings[content] }}</p>                              
+                                {% endif %}
+                            </div>                
+                          {%- endif -%}
+                        {%- endfor -%}
+                      </div>
+                    </div>
+                  </div>
+                {% when 'mobile-application' %}
+                  <div class="grid">
+                    {%- liquid
+                      assign image_width = block.settings.image_width
+                      assign overlap_images = true
+                      if block.settings.image == blank
+                        assign overlap_images = false
+                        assign placeholder_images = true
+                      endif
+                    -%}
+                    <div class="page-width QT-application-block feature-row-wrapper feature-row--{{ image_width }}">
+                      {%- capture image_layout -%}
+                        <div class="feature-row__item feature-row__images{% if overlap_images %} feature-row__item--overlap-images{% endif %} {% if placeholder_images %}feature-row__item--placeholder-images{% endif %}" data-aos>
+                          {% if block.settings.video_url != blank %}
+                            {%- if block.settings.video_url.type == "youtube" -%}
+                              <iframe src="//www.youtube.com/embed/{{ block.settings.video_url.id }}?rel=0&showinfo=0&vq=720" width="850" height="480" frameborder="0" allowfullscreen></iframe>
+                            {%- endif -%}
+                            {%- if block.settings.video_url.type == "vimeo" -%}
+                              <iframe src="//player.vimeo.com/video/{{ block.settings.video_url.id }}?color={{ settings.color_button | remove: "#" }}&byline=0&portrait=0&badge=0" width="850" height="480" frameborder="0" allowfullscreen></iframe>
+                            {%- endif -%}
+                          {% else %}
+                            {%- if block.settings.image != blank -%}
+                              <div class="feature-row__first-image">
+                                {%- if block.settings.button_label != blank and block.settings.button_link != blank -%}<a href="{{ block.settings.button_link }}">{%- endif -%}
+                                  <div class="image-wrap" style="height: 0; padding-bottom: {{ 100 | divided_by: block.settings.image.aspect_ratio }}%;">
+                                    {%- liquid
+                                      assign sizeVariable = 'calc(0.4 * 50vw)'
+                                      assign fallback = '40vw'
+    
+                                      assign imageWidth = block.settings.image_width | times: 1
+                                      if imageWidth >= 50
+                                        assign loading = block.settings.lazyload_images
+                                      else
+                                        assign loading = true
+                                      endif
+                                    -%}
+                                    {%- render 'image-element',
+                                      img: block.settings.image,
+                                      widths: '180, 360, 540, 750, 900, 1080',
+                                      loading: loading,
+                                      sizeVariable: sizeVariable,
+                                      fallback: fallback,
+                                      classes: 'feature-row__image',
+                                    -%}
+                                  </div>
+                                {%- if block.settings.button_label != blank and block.settings.button_link != blank -%}</a>{%- endif -%}
+                              </div>
+                            {%- endif -%}
+    
+                            {%- if block.settings.image == blank -%}
+                              <div class="placeholder-image-wrap">
+                                <div class="image-wrap">
+                                  {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                                </div>
+                              </div>
+                            {%- endif -%}
+                        {%- endif -%}  
+                        </div>
+                      {%- endcapture -%}
+    
+                      <div class="feature-row qt-mobile-app-content {{ block.settings.custom_class }}" style="background-color: {{ block.settings.bg_color }}; border-color: {{ block.settings.border_color}};">
+                        {%- if block.settings.layout == 'left' -%}
+                          {{ image_layout }}
+                        {%- endif -%}
+    
+                        <div class="feature-row__item feature-row__text feature-row__text--{{ block.settings.layout }} text-{{ block.settings.align_text }}" data-aos>
+                          {%- if block.settings.subtitle != blank -%}
+                            <div class="subheading appear-delay{% cycle '','-1','-2','-3','-4' %}">{{ block.settings.subtitle }}</div>
+                          {%- endif -%}
+                          {%- if block.settings.title != blank -%}
+                            <h2 class="h1 appear-delay{% cycle '','-1','-2','-3','-4' %}">{{ block.settings.title | escape }}</h2>
+                          {%- endif -%}
+                          {%- if block.settings.text != blank -%}
+                            <div class="rte appear-delay{% cycle '','-1','-2','-3','-4' %}">{{ block.settings.text }}</div>
+                          {%- endif -%}
+    
+                          {%- if block.settings.button_label != blank -%}
+                            <div class="appear-delay{% cycle '','-1','-2','-3','-4' %}">
+                              <a href="{{ block.settings.button_link }}" class="btn{% if block.settings.button_style == 'secondary' %} btn--tertiary{% endif %}">
+                                {{ block.settings.button_label }}
+                              </a>
+                            </div>
+                          {%- endif -%}
+                        </div>
+    
+                        {%- if block.settings.layout == 'right' -%}
+                          {{ image_layout }}
+                        {%- endif -%}
+                      </div>
+                    </div>
+                  </div>
+                {%- when 'treatment' -%}
+                  <div class="treatments_wrapper grid">
+                    {%- if block.settings.title -%}
+                      <h2 class="section_heading">{{ block.settings.title }}</h2>
+                    {%- endif -%}
+    
+                    <div class="tab-container">
+                      <!-- Left Step Navigation -->
+                      <div class="tab-menu">
+                        {%- for i in (1..5) -%}
+                          {%- capture step_title -%}step_title{{i}}{%- endcapture -%}
+                          {%- if step_title != blank -%}
+                            <button class="tab-button {% if i == 1 %}active {% endif %}" data-tab="step{{i}}"><span>{{i}}</span> <span class="step_title">{{ block.settings[step_title] }}</span></button>
+                          {%- endif -%}
+                        {%- endfor -%}
+                      </div>
+    
+                      <!-- Right Content Section -->
+                      <div class="tab-content">
+                        {%- for i in (1..5) -%}
+                          {%- capture step_image -%}step_image{{i}}{%- endcapture -%}
+                          {%- capture step_content -%}step_content{{i}}{%- endcapture -%}
+                          {%- if step_image != blank and step_content != blank -%}
+                            <div id="step{{i}}" class="tab-pane {% if i == 1 %}active {% endif %}">
+                              <div class="step-content-block">
+                                <img class="step_image" src="{{  block.settings[step_image] |  image_url }}" alt="Step {{i}} Image" width="250" height="350">
+                                <div class="step_content">{{  block.settings[step_content] }}</div>
+                              </div>
+                            </div>
+                          {%- endif -%}
+                        {%- endfor -%}
+                      </div>
+                    </div>
+                  </div>
+                {%- when 'faq' -%}
+                  <div class="grid faq-section-wrapper">
+                    {%- if block.settings.heading -%}
+                      <h2 class="section_heading">{{ block.settings.heading }}</h2>
+                    {%- endif -%}
+                    {%- for i in (1..7) -%}
+                      {%- capture faq_title -%}title{{i}}{%- endcapture -%}
+                      {%- capture faq_text -%}text{{i}}{%- endcapture -%}
+                      {% if block.settings[faq_title] != blank and block.settings[faq_text] != blank %}
+                        <div class="faq_section">
+                          <button type="button" class="collapsible-trigger collapsible-trigger--inline collapsible--auto-height text-left" aria-controls="FAQ-content-{{ block.id }}-{{ i }}">
+                            <span>{{ block.settings[faq_title] }}</span>
+                            {%- render 'collapsible-icons-alt', no_circle: true -%}
+                          </button>
+                          <div id="FAQ-content-{{ block.id }}-{{ i }}" class="collapsible-content collapsible-content--all">
+                            <div class="collapsible-content__inner collapsible-content__inner--faq rte">
+                              {{ block.settings[faq_text] }}
+                            </div>
+                          </div>
+                        </div>                    
+                      {% endif %}
+                    {%- endfor -%}
+                  </div>
+                {%- when 'how-to-use' -%}
+                  <div class="custom-content how-to-use-block-wrapper">
+                    {% if block.settings.heading %}
+                      <h2>{{ block.settings.heading }}</h2>                  
+                    {% endif %}
+                    {%- if block.settings.section_content -%}
+                      <div class="section_content">{{ block.settings.section_content }}</div>
+                    {%- endif -%}
+                    <div class="how-to-use-block custom__item one-whole align--center">
+                      <div class="custom__item-inner custom__item-inner--image">
+                        <div class="aos-animate">
+                          {%- if block.settings.link != blank -%}
+                            <a href="{{ block.settings.link }}">
+                          {%- endif -%}                              
+                          {% if block.settings.image != blank or block.settings.mobile_image != blank %}
+                            <picture>
+                              <source media="(max-width: 600px)" srcset="{{ block.settings.mobile_image | image_url }}">
+                              <img src="{{ block.settings.image | image_url }}" alt="block.settings.heading" class="how-to-use-image">
+                            </picture>
+                          {% endif %}
+                          {%- if block.settings.link != blank -%}
+                            </a>
+                          {%- endif -%}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                {% when 'video' %}
+                  {% if block.settings.heading %}
+                      <h2>{{ block.settings.heading }}</h2>                  
+                  {% endif %}                  
+                  {% if block.settings.video_url != blank %}
+                    {% assign youtube_id = block.settings.video_url | split: 'v=' | last | split: '&' | first %}
+                    <div class="responsive-video-wrapper">
+                      <iframe
+                        src="https://www.youtube.com/embed/{{ youtube_id }}"
+                        frameborder="0"
+                        allowfullscreen
+                        class="responsive-video-iframe"
+                      ></iframe>
+                    </div>
+                  {% endif %}
+                {%- when 'closer-look' -%}
+                  <div class="closer-look-wrapper">
+                    {%- if block.settings.heading -%}
+                      <h2 class="section_heading">{{ block.settings.heading }}</h2>
+                    {%- endif -%}
+    
+                    <div class="grid closer-look-block-grid"> 
+                      {%- for i in (1..10) -%}
+    
+                        {%- capture look_image -%}look_image{{i}}{%- endcapture -%}
+                        {%- capture block_heading -%}block_heading{{i}}{%- endcapture -%}
+                        {%- capture block_content -%}block_content{{i}}{%- endcapture -%}
+    
+                          
+                        {%- if block.settings[look_image] != blank or block.settings[block_heading] != blank or block.settings[block_content] != blank -%}      
+                          <div class="grid__item medium-up--one-third one-whole">
+                            <div class="image-box" onclick="toggleOverlay({{ forloop.index0 }})">
+                              <img class="closer_look_image" src="{{  block.settings[look_image] |  image_url }}" alt="Step {{i}} Image" width="250" height="350">
+                              <div class="default-text">{{ block.settings[block_heading] }}</div>
+                              <div class="overlay">
+                                <h4 class="overlay_heading">{{ block.settings[block_heading] }}</h4>
+                                <div class="overlay_text">
+                                  {{ block.settings[block_content] }}
+                                </div>
+                                <!-- <button class="close-btn" onclick="hideOverlay(event, {{ forloop.index0 }})">×</button> -->
+                              </div>
+                              <div class="plus-icon" onclick="toggleOverlay({{ forloop.index0 }})">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
+                                  <circle cx="19.1157" cy="18.8843" r="17.644" stroke="white" stroke-width="1.37486"/>
+                                  <path d="M11.7831 18.5172L27.1815 18.5172" stroke="white" stroke-width="1.37486" stroke-linecap="round"/>
+                                  <path d="M19.4815 10.8185L19.4815 26.2169" stroke="white" stroke-width="1.37486" stroke-linecap="round"/>
+                                </svg>
+                              </div>
+                            </div>            
+                          </div>
+                        {%- endif -%}
+    
+                      {%- endfor -%}
+                    </div>
+                  </div>
+                {%- when 'benefits' -%}
+                  <div class="benefits_wrapper" style="background-color: {{ block.settings.bg_color }}; border-color: {{ block.settings.border_color}};">
+                    {%- if block.settings.heading -%}
+                      <h2 class="section_heading">{{ block.settings.heading }}</h2>
+                    {%- endif -%}
+                    <div class="grid">
+    
+                      {%- for i in (1..6) -%}
+    
+                        {%- capture benefits_image -%}benefits_image{{i}}{%- endcapture -%}
+                        {%- capture benefits_heading -%}benefits_heading{{i}}{%- endcapture -%}
+                        {%- capture benefits_content -%}benefits_content{{i}}{%- endcapture -%}
+    
+                        {%- if block.settings[benefits_image] != blank or block.settings[benefits_heading] != blank or block.settings[benefits_content] != blank -%}  
+                          <div class="grid__item medium-up--one-half one-whole benefits_block">
+                            <img class="benefit-icon" src="{{  block.settings[benefits_image] |  image_url }}" alt="Benefits {{i}} Image" width="42" height="42">
+                            <div class="benefit-text">
+                                <h3 class="benefit-heading">{{ block.settings[benefits_heading] }}</h3>
+                                <div class="benefit-contet">{{ block.settings[benefits_content] }}</div>
+                            </div>
+                          </div>
+                        {%- endif -%}
+                      {%- endfor -%}
+    
+                    </div>
+                  </div>
+                {%- when 'technology' -%}
+                  {%- if block.settings.heading -%}
+                      <h2 class="section_heading">{{ block.settings.heading }}</h2>
+                  {%- endif -%}
+                                  
+                  <div class="technology_wrapper grid">                
+                    <div class="image-container">
+                      {% if block.settings.technology_image != blank %}
+                        <img src="{{ block.settings.technology_image |  image_url }}" alt="Technology Image">
+                      {% endif %}
+                      
+                      {%- for i in (1..5) -%}
+                        {%- capture step_title -%}step_title{{i}}{%- endcapture -%}
+    
+                        {%- if block.settings[step_title] != blank -%}
+                          <div class="marker {% if i == 1 %}active {% endif %}" data-id="{{i}}" onclick="showFeature({{i}})">{{i}}</div>
+                        {%- endif -%}
+                      {%- endfor -%}
+                    </div>
+    
+                    <div class="text-content">
+                                        
+                      {%- for i in (1..5) -%}
+                        {%- capture step_title -%}step_title{{i}}{%- endcapture -%}
+                        {%- capture step_content -%}step_content{{i}}{%- endcapture -%}
+    
+                        {%- if block.settings[step_title] != blank and block.settings[step_content] != blank -%}
+    
+                          <div class="techno_description {% if i == 1 %}active {% endif %}" id="desc-{{i}}">
+                              <h4 class="techno_step_title">{{ block.settings[step_title] }}</h4>
+                              <p>{{ block.settings[step_content] }}</p>
+                          </div>
+                          
+                        {%- endif -%}
+                      {%- endfor -%}
+    
+                        <div class="sidebar-markers">
+                        
+                        {%- for i in (1..5) -%}
+                          {%- capture step_title -%}step_title{{i}}{%- endcapture -%}
+    
+                          {%- if block.settings[step_title] != blank -%}
+                            <div class="sidebar-marker {% if i == 1 %}active {% endif %}" data-id="{{i}}" onclick="showFeature({{i}})">{{i}}</div>
+                          {%- endif -%}
+                        {%- endfor -%}
+                      </div>
+                    </div>
+                                  
+                  </div>
+                {%- when 'image-banner' -%}
+                  <div class="serum-image-banner" style="background: url({{ block.settings.image_banner | image_url }}) no-repeat 0 0;">
+                    <div class="serum-image-wrapper">
+                      {% if block.settings.image_banner != blank and block.settings.mobile_image_banner != blank %}
+                        <picture>
+                          <source media="(max-width: 600px)" srcset="{{ block.settings.mobile_image_banner | image_url }}">
+                          <img src="{{ block.settings.image_banner | image_url }}" alt="block.settings.heading" class="serum-image">
+                        </picture>
+                      {% endif %}
+                      <div class="serum-text-overlay">
+                        {%- if block.settings.heading -%}
+                          <h2 class="section_heading">{{ block.settings.heading }}</h2>
+                        {%- endif -%}
+                        {% if block.settings.image_content != blank %}
+                          <div>{{ block.settings.image_content }}</div>
+                        {%- endif -%}
+                      </div>
+                    </div>
+                  </div>
+                {%- when 'ingredients' -%}
+                  <div class="ingredients-section">
+                    <div class="ingredients-wrapper">
+                      {%- if block.settings.heading -%}
+                        <h2 class="section_heading">{{ block.settings.heading }}</h2>
+                      {%- endif -%}
+                      <div class="grid ingredients-grid">
+                        {%- for i in (1..5) -%}
+                          {%- capture ingredient_img -%}ingredient_img{{i}}{%- endcapture -%}
+                          {%- capture ingredients_text -%}ingredients_text{{i}}{%- endcapture -%}
+                          {%- if block.settings[ingredient_img] != blank and block.settings[ingredients_text] != blank  -%}
+                            <div class="grid__item medium-up--one-quarter one-half">
+                              <img src="{{ block.settings[ingredient_img] |  image_url }}" alt="{{ block.settings[ingredients_text] }}">
+                              <p>{{ block.settings[ingredients_text] }}</p>
+                            </div>
+                          {%- endif -%}
+                        {%- endfor -%}
+                      </div>
+                    </div>
+                  </div>
+
+              {% endcase %}
+
+            </div>
+          {% endfor %}
+        </div>
+
+        <div class="medium-up--one-third top-sticky-block small--hide">
+          <div class="card">
+            {% capture form_id %}AddToCartForm-{{ product.id }}{% endcapture %}
+            <img src="{{ product.featured_image | image_url }}" alt="{{ product.title }}" width="390" height="300">
+            <div class="card-body">
+              <div class="title">{{ product.title }}</div>
+              <div class="rating">
+                {% render 'okendo-reviews-product-rating-summary', product: product %}
+              </div>
+              <div class="price">
+                <div class="product-single__prices">
+                  {%- if product.compare_at_price_max > product.price -%}
+                    {%- liquid
+                      assign hide_sale_price = true
+                      if current_variant.compare_at_price > current_variant.price
+                        assign hide_sale_price = false
+                      endif
+                    -%}
+                    <span
+                      class="visually-hidden"
+                      aria-hidden="{{ hide_sale_price }}"
+                      data-price-a11y>
+                        {{ 'products.general.regular_price' | t }}
+                    </span>
+                    <span class="{% if hide_sale_price %} hide{% endif %}" data-price-wrapper>
+                      <span class="product__price product__price--compare" data-product-price-compare>
+                        {%- if current_variant.compare_at_price > current_variant.price -%}
+                          {{ current_variant.compare_at_price | money }}
+                        {%- endif -%}
+                      </span>
+                    </span>
+                    <span class="visually-hidden" data-compare-a11y>{{ 'products.general.sale_price' | t }}</span>
+                  {%- else -%}
+                    <span class="visually-hidden" data-price-a11y>{{ 'products.general.regular_price' | t }}</span>
+                  {%- endif -%}
+
+                  <span
+                    class="product__price{% if current_variant.compare_at_price > current_variant.price %} sale-price{% endif %}"
+                    data-product-price>
+                    {%- unless product.empty? -%}
+                      {{ current_variant.price | money }}
+                    {%- else -%}
+                      {{ 1999 | money }}
+                    {%- endunless -%}
+                  </span>
+                </div>
+              </div>
+              <div class="button">
+                {%- unless product.empty? -%}
+                  <div class="product-block">
+                    {%- render 'product-specification-form',
+                      form_id: form_id,
+                      section_id: product.id,
+                      product: product,
+                      show_dynamic_checkout: block.settings.show_dynamic_checkout,
+                      current_variant: current_variant,
+                      block: block,
+                    -%}
+                  </div>
+                {%- endunless -%}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+      <div class="page-width review-section">
+        <div id="tab-review" class="review-section">
+          {% comment %} {% render 'okendo-reviews-widget', product: product %} {% endcomment %}
+          <h2 id="oke-reviews-widget-header">What our Customers are saying...</h2>
+          {% render 'okendo-reviews-widget', product: product %}
+        </div>
+      </div>                                        
+ </div>
+
+{% schema %}
+  {
+    "name": "Product Specifications",
+    "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Tab Title"
+        }
+    ],
+    "blocks": [
+      {
+        "type": "@app"
+      },
+      {
+        "type": "result",
+        "name": "Result",
+        "settings": [
+          {
+            "type": "text",
+            "id": "tab_heading",
+            "label": "Tab Title",
+            "default": "Result"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Section Heading"
+          },
+          {
+            "type": "header",
+            "content": "Compare Image"
+          },
+          {
+            "type": "image_picker",
+            "id": "result_image1",
+            "label": "First Image"
+          },
+          {
+            "type": "image_picker",
+            "id": "mobile_result_image1",
+            "label": "Mobile First Image"
+          },
+          {
+            "type": "image_picker",
+            "id": "result_image2",
+            "label": "Second Image"
+          },
+          {
+            "type": "image_picker",
+            "id": "mobile_result_image2",
+            "label": "Mobile Second Image"
+          },
+          {
+            "type": "image_picker",
+            "id": "result_image3",
+            "label": "Third Image"
+          },
+          {
+            "type": "image_picker",
+            "id": "mobile_result_image3",
+            "label": "Mobile Third Image"
+          },
+          {
+            "type": "image_picker",
+            "id": "result_image4",
+            "label": "Fourth Image"
+          },
+          {
+            "type": "image_picker",
+            "id": "mobile_result_image4",
+            "label": "Mobile Fourth Image"
+          },
+          {
+            "type": "image_picker",
+            "id": "result_image5",
+            "label": "Fifth Image"
+          },
+          {
+            "type": "image_picker",
+            "id": "mobile_result_image5",
+            "label": "Mobile Fifth Image"
+          },
+          {
+            "type": "image_picker",
+            "id": "result_image6",
+            "label": "Sixth Image"
+          },
+          {
+            "type": "image_picker",
+            "id": "mobile_result_image6",
+            "label": "Mobile Sixth Image"
+          },
+          {
+            "type": "image_picker",
+            "id": "result_image7",
+            "label": "Seventh Image"
+          },
+          {
+            "type": "image_picker",
+            "id": "mobile_result_image7",
+            "label": "Mobile Seventh Image"
+          },
+          {
+            "type": "image_picker",
+            "id": "result_image8",
+            "label": "Eighth Image"
+          },
+          {
+            "type": "image_picker",
+            "id": "mobile_result_image8",
+            "label": "Mobile Eighth Image"
+          },
+          {
+            "type": "header",
+            "content": "Per Row Block"
+          },
+          {
+            "type": "range",
+            "id": "per_row_desktop",
+            "label": "Select row per block",
+            "default": 3,
+            "min": 1,
+            "max": 4,
+            "step": 1
+          },
+          {
+            "type": "select",
+            "id": "per_row_mobile",
+            "label": "Select row per block for Mobile",
+            "default": "1",
+            "options": [
+              {
+                "value": "1",
+                "label": "1"
+              },
+              {
+                "value": "2",
+                "label": "2"
+              }
+            ]
+          },
+          {
+            "type": "header",
+            "content": "Percentange heading"
+          },
+          {
+            "type": "text",
+            "id": "text1",
+            "label": "Block Heading"
+          },
+          {
+            "type": "richtext",
+            "id": "content1",
+            "label": "Block Content"
+          },
+          {
+            "type": "text",
+            "id": "text2",
+            "label": "Block Heading"
+          },
+          {
+            "type": "richtext",
+            "id": "content2",
+            "label": "Block Content"
+          },
+          {
+            "type": "text",
+            "id": "text3",
+            "label": "Block Heading"
+          },
+          {
+            "type": "richtext",
+            "id": "content3",
+            "label": "Block Content"
+          },
+          {
+            "type": "text",
+            "id": "text4",
+            "label": "Block Heading"
+          },
+          {
+            "type": "richtext",
+            "id": "content4",
+            "label": "Block Content"
+          }
+        ]
+      },
+      {
+        "type": "mobile-application",
+        "name": "Mobile Application",
+        "settings": [
+          {
+            "type": "text",
+            "id": "tab_heading",
+            "label": "Tab Title",
+            "default": "Mobile Application"
+          },
+          {
+            "type": "color",
+            "id": "bg_color",
+            "label": "Background Color"
+          },
+          {
+            "type": "color",
+            "id": "border_color",
+            "label": "Border Color"
+          },
+          {
+            "type": "text",
+            "id": "custom_class",
+            "label": "Custom Class",
+            "default": "QT-mobile-app-image-banner"
+          },
+          {
+            "type": "header",
+            "content": "t:sections.text-and-image.settings.image.label"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:sections.text-and-image.settings.image.label"
+          },
+          {
+            "type": "video_url",
+            "id": "video_url",
+            "label": "t:sections.featured-video.settings.video_url.label",
+            "accept": [
+              "youtube",
+              "vimeo"
+            ]
+          },
+          {
+            "type": "header",
+            "content": "Content"
+          },
+          {
+            "type": "text",
+            "id": "subtitle",
+            "label": "t:sections.text-and-image.settings.subtitle.label"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "t:sections.text-and-image.settings.title.label",
+            "default": "Image with text"
+          },
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "t:sections.text-and-image.settings.text.label",
+            "default": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.</p>"
+          },
+          {
+            "type": "text",
+            "id": "button_label",
+            "label": "t:sections.text-and-image.settings.button_label.label"
+          },
+          {
+            "type": "url",
+            "id": "button_link",
+            "label": "t:sections.text-and-image.settings.button_link.label"
+          },
+          {
+            "type": "select",
+            "id": "button_style",
+            "label": "t:sections.text-and-image.settings.button_style.label",
+            "default": "primary",
+            "options": [
+              {
+                "value": "primary",
+                "label": "t:sections.text-and-image.settings.button_style.options.primary.label"
+              },
+              {
+                "value": "secondary",
+                "label": "t:sections.text-and-image.settings.button_style.options.secondary.label"
+              }
+            ]
+          },
+          {
+            "type": "select",
+            "id": "align_text",
+            "label": "t:sections.text-and-image.settings.align_text.label",
+            "default": "center",
+            "options": [
+              {
+                "value": "left",
+                "label": "t:sections.text-and-image.settings.align_text.options.left.label"
+              },
+              {
+                "value": "center",
+                "label": "t:sections.text-and-image.settings.align_text.options.center.label"
+              },
+              {
+                "value": "right",
+                "label": "t:sections.text-and-image.settings.align_text.options.right.label"
+              }
+            ]
+          },
+          {
+            "type": "select",
+            "id": "image_width",
+            "label": "t:common.image_size.label",
+            "default": "50",
+            "options": [
+              {
+                "value": "33",
+                "label": "t:common.image_size.options.small.label"
+              },
+              {
+                "value": "50",
+                "label": "t:common.image_size.options.medium.label"
+              },
+              {
+                "value": "66",
+                "label": "t:common.image_size.options.large.label"
+              }
+            ]
+          },
+          {
+            "type": "select",
+            "id": "layout",
+            "label": "t:sections.text-and-image.settings.layout.label",
+            "default": "right",
+            "options": [
+              {
+                "value": "left",
+                "label": "t:sections.text-and-image.settings.layout.options.left.label"
+              },
+              {
+                "value": "right",
+                "label": "t:sections.text-and-image.settings.layout.options.right.label"
+              }
+            ]
+          },
+          {
+            "type": "checkbox",
+            "id": "lazyload_images",
+            "label": "t:common.lazyload_images.label",
+            "info": "t:common.lazyload_images.info",
+            "default": true
+          }
+        ]
+      },
+      {
+        "type": "treatment",
+        "name": "Treatment",
+        "settings": [
+          {
+            "type": "text",
+            "id": "tab_heading",
+            "label": "Tab Title",
+            "default": "Treatment"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Heading"
+          },
+          {
+            "type": "header",
+            "content": "Step 1"
+          },
+          {
+            "type": "text",
+            "id": "step_title1",
+            "label": "Step Heading"
+          },
+          {
+            "type": "image_picker",
+            "id": "step_image1",
+            "label": "Step Image"
+          },
+          {
+            "type": "richtext",
+            "id": "step_content1",
+            "label": "Step Content"
+          },
+          {
+            "type": "header",
+            "content": "Step 2"
+          },
+          {
+            "type": "text",
+            "id": "step_title2",
+            "label": "Step Heading"
+          },
+          {
+            "type": "image_picker",
+            "id": "step_image2",
+            "label": "Step Image"
+          },
+          {
+            "type": "richtext",
+            "id": "step_content2",
+            "label": "Step Content"
+          },
+          {
+            "type": "header",
+            "content": "Step 3"
+          },
+          {
+            "type": "text",
+            "id": "step_title3",
+            "label": "Step Heading"
+          },
+          {
+            "type": "image_picker",
+            "id": "step_image3",
+            "label": "Step Image"
+          },
+          {
+            "type": "richtext",
+            "id": "step_content3",
+            "label": "Step Content"
+          },
+          {
+            "type": "header",
+            "content": "Step 4"
+          },
+          {
+            "type": "text",
+            "id": "step_title4",
+            "label": "Step Heading"
+          },
+          {
+            "type": "image_picker",
+            "id": "step_image4",
+            "label": "Step Image"
+          },
+          {
+            "type": "richtext",
+            "id": "step_content4",
+            "label": "Step Content"
+          },
+          {
+            "type": "header",
+            "content": "Step 5"
+          },
+          {
+            "type": "text",
+            "id": "step_title5",
+            "label": "Step Heading"
+          },
+          {
+            "type": "image_picker",
+            "id": "step_image5",
+            "label": "Step Image"
+          },
+          {
+            "type": "richtext",
+            "id": "step_content5",
+            "label": "Step Content"
+          }
+        ]
+      },
+      {
+        "type": "faq",
+        "name": "FAQ",
+        "settings": [
+          {
+            "type": "text",
+            "id": "tab_heading",
+            "label": "Tab Title",
+            "default": "FAQs"
+          },
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "Frequently Asked Questions"
+          },
+          {
+            "type": "header",
+            "content": "FAQ 1"
+          },
+          {
+            "type": "text",
+            "id": "title1",
+            "label": "Question",
+            "default": "Frequently asked question"
+          },
+          {
+            "type": "richtext",
+            "id": "text1",
+            "label": "Answer",
+            "default": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>"
+          },
+          {
+            "type": "header",
+            "content": "FAQ 2"
+          },
+          {
+            "type": "text",
+            "id": "title2",
+            "label": "Question",
+            "default": "Frequently asked question"
+          },
+          {
+            "type": "richtext",
+            "id": "text2",
+            "label": "Answer",
+            "default": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>"
+          },
+          {
+            "type": "header",
+            "content": "FAQ 3"
+          },
+          {
+            "type": "text",
+            "id": "title3",
+            "label": "Question",
+            "default": "Frequently asked question"
+          },
+          {
+            "type": "richtext",
+            "id": "text3",
+            "label": "Answer",
+            "default": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>"
+          },
+          {
+            "type": "header",
+            "content": "FAQ 4"
+          },
+          {
+            "type": "text",
+            "id": "title4",
+            "label": "Question",
+            "default": "Frequently asked question"
+          },
+          {
+            "type": "richtext",
+            "id": "text4",
+            "label": "Answer",
+            "default": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>"
+          },
+          {
+            "type": "header",
+            "content": "FAQ 5"
+          },
+          {
+            "type": "text",
+            "id": "title5",
+            "label": "Question",
+            "default": "Frequently asked question"
+          },
+          {
+            "type": "richtext",
+            "id": "text5",
+            "label": "Answer",
+            "default": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>"
+          },
+          {
+            "type": "header",
+            "content": "FAQ 6"
+          },
+          {
+            "type": "text",
+            "id": "title6",
+            "label": "Question",
+            "default": "Frequently asked question"
+          },
+          {
+            "type": "richtext",
+            "id": "text6",
+            "label": "Answer",
+            "default": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>"
+          },
+          {
+            "type": "header",
+            "content": "FAQ 7"
+          },
+          {
+            "type": "text",
+            "id": "title7",
+            "label": "Question"
+          },
+          {
+            "type": "richtext",
+            "id": "text7",
+            "label": "Answer"
+          }
+        ]
+      },
+      {
+        "type": "how-to-use",
+        "name": "How to USe",
+        "settings": [
+          {
+            "type": "text",
+            "id": "tab_heading",
+            "label": "Tab Title",
+            "default": "How To Use"
+          },
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading"
+          },
+          {
+            "type": "richtext",
+            "id": "section_content",
+            "label": "Content"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "t:sections.advanced-content.blocks.image.settings.image.label"
+          },
+          {
+            "type": "image_picker",
+            "id": "mobile_image",
+            "label": "Mobile Image"
+          },
+          {
+            "type": "url",
+            "id": "link",
+            "label": "t:sections.advanced-content.blocks.image.settings.link.label"
+          },
+          {
+            "type": "select",
+            "id": "width",
+            "label": "t:sections.advanced-content.blocks.image.settings.width.label",
+            "default": "100%",
+            "options": [
+              {
+                "value": "25%",
+                "label": "25%"
+              },
+              {
+                "value": "33%",
+                "label": "33%"
+              },
+              {
+                "value": "50%",
+                "label": "50%"
+              },
+              {
+                "value": "66%",
+                "label": "66%"
+              },
+              {
+                "value": "75%",
+                "label": "75%"
+              },
+              {
+                "value": "100%",
+                "label": "100%"
+              }
+            ]
+          },
+          {
+            "type": "select",
+            "id": "alignment",
+            "label": "t:sections.advanced-content.blocks.image.settings.alignment.label",
+            "default": "center",
+            "info": "t:sections.advanced-content.blocks.image.settings.alignment.info",
+            "options": [
+              {
+                "value": "top-middle",
+                "label": "t:sections.advanced-content.blocks.image.settings.alignment.options.top-middle.label"
+              },
+              {
+                "value": "center",
+                "label": "t:sections.advanced-content.blocks.image.settings.alignment.options.center.label"
+              },
+              {
+                "value": "bottom-middle",
+                "label": "t:sections.advanced-content.blocks.image.settings.alignment.options.bottom-middle.label"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "video",
+        "name": "Video Tab",
+        "settings": [
+          {
+            "type": "text",
+            "id": "tab_heading",
+            "label": "Tab Title",
+            "default": "Demo Video"
+          },
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading"
+          },
+          {
+            "type": "url",
+            "id": "video_url",
+            "label": "YouTube Video URL",
+            
+          }
+        ]
+      },
+      {
+        "type": "reviews",
+        "name": "Reviews",
+        "settings": [
+          {
+            "type": "text",
+            "id": "tab_heading",
+            "label": "Tab Title",
+            "default": "Reviews"
+          },
+          {
+            "type": "checkbox",
+            "id": "enable_review",
+            "label": "Enable Review",
+            "default": true
+          }
+        ]
+      },
+      {
+        "type": "closer-look",
+        "name": "Closer Look",
+        "settings": [
+          {
+            "type": "text",
+            "id": "tab_heading",
+            "label": "Tab Title",
+            "default": "Look"
+          },
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading"
+          },
+          {
+            "type": "header",
+            "content": "Look 1"
+          },
+          {
+            "type": "image_picker",
+            "id": "look_image1",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "block_heading1",
+            "label": "Heading"
+          },
+          {
+            "type": "richtext",
+            "id": "block_content1",
+            "label": "Content"
+          },
+          {
+            "type": "header",
+            "content": "Look 2"
+          },
+          {
+            "type": "image_picker",
+            "id": "look_image2",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "block_heading2",
+            "label": "Heading"
+          },
+          {
+            "type": "richtext",
+            "id": "block_content2",
+            "label": "Content"
+          },
+          {
+            "type": "header",
+            "content": "Look 3"
+          },
+          {
+            "type": "image_picker",
+            "id": "look_image3",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "block_heading3",
+            "label": "Heading"
+          },
+          {
+            "type": "richtext",
+            "id": "block_content3",
+            "label": "Content"
+          },
+          {
+            "type": "header",
+            "content": "Look 4"
+          },
+          {
+            "type": "image_picker",
+            "id": "look_image4",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "block_heading4",
+            "label": "Heading"
+          },
+          {
+            "type": "richtext",
+            "id": "block_content4",
+            "label": "Content"
+          },
+          {
+            "type": "header",
+            "content": "Look 5"
+          },
+          {
+            "type": "image_picker",
+            "id": "look_image5",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "block_heading5",
+            "label": "Heading"
+          },
+          {
+            "type": "richtext",
+            "id": "block_content5",
+            "label": "Content"
+          },
+          {
+            "type": "header",
+            "content": "Look 6"
+          },
+          {
+            "type": "image_picker",
+            "id": "look_image6",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "block_heading6",
+            "label": "Heading"
+          },
+          {
+            "type": "richtext",
+            "id": "block_content6",
+            "label": "Content"
+          },
+          {
+            "type": "header",
+            "content": "Look 7"
+          },
+          {
+            "type": "image_picker",
+            "id": "look_image7",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "block_heading7",
+            "label": "Heading"
+          },
+          {
+            "type": "richtext",
+            "id": "block_content7",
+            "label": "Content"
+          },
+          {
+            "type": "header",
+            "content": "Look 8"
+          },
+          {
+            "type": "image_picker",
+            "id": "look_image8",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "block_heading8",
+            "label": "Heading"
+          },
+          {
+            "type": "richtext",
+            "id": "block_content8",
+            "label": "Content"
+          },
+          {
+            "type": "header",
+            "content": "Look 9"
+          },
+          {
+            "type": "image_picker",
+            "id": "look_image9",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "block_heading9",
+            "label": "Heading"
+          },
+          {
+            "type": "richtext",
+            "id": "block_content9",
+            "label": "Content"
+          },
+          {
+            "type": "header",
+            "content": "Look 10"
+          },
+          {
+            "type": "image_picker",
+            "id": "look_image10",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "block_heading10",
+            "label": "Heading"
+          },
+          {
+            "type": "richtext",
+            "id": "block_content10",
+            "label": "Content"
+          }
+        ]
+      },
+      {
+        "type": "benefits",
+        "name": "Benefits",
+        "settings": [
+          {
+            "type": "text",
+            "id": "tab_heading",
+            "label": "Tab Title",
+            "default": "Benefits"
+          },
+          {
+            "type": "color",
+            "id": "bg_color",
+            "label": "Background Color"
+          },
+          {
+            "type": "color",
+            "id": "border_color",
+            "label": "Border Color"
+          },
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading"
+          },
+          {
+            "type": "header",
+            "content": "Benefits 1"
+          },
+          {
+            "type": "image_picker",
+            "id": "benefits_image1",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "benefits_heading1",
+            "label": "Heading"
+          },
+          {
+            "type": "richtext",
+            "id": "benefits_content1",
+            "label": "Content"
+          },
+          {
+            "type": "header",
+            "content": "Benefits 2"
+          },
+          {
+            "type": "image_picker",
+            "id": "benefits_image2",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "benefits_heading2",
+            "label": "Heading"
+          },
+          {
+            "type": "richtext",
+            "id": "benefits_content2",
+            "label": "Content"
+          },
+          {
+            "type": "header",
+            "content": "Benefits 3"
+          },
+          {
+            "type": "image_picker",
+            "id": "benefits_image3",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "benefits_heading3",
+            "label": "Heading"
+          },
+          {
+            "type": "richtext",
+            "id": "benefits_content3",
+            "label": "Content"
+          },
+          {
+            "type": "header",
+            "content": "Benefits 4"
+          },
+          {
+            "type": "image_picker",
+            "id": "benefits_image4",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "benefits_heading4",
+            "label": "Heading"
+          },
+          {
+            "type": "richtext",
+            "id": "benefits_content4",
+            "label": "Content"
+          },
+          {
+            "type": "header",
+            "content": "Benefits 5"
+          },
+          {
+            "type": "image_picker",
+            "id": "benefits_image5",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "benefits_heading5",
+            "label": "Heading"
+          },
+          {
+            "type": "richtext",
+            "id": "benefits_content5",
+            "label": "Content"
+          },
+          {
+            "type": "header",
+            "content": "Benefits 6"
+          },
+          {
+            "type": "image_picker",
+            "id": "benefits_image6",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "benefits_heading6",
+            "label": "Heading"
+          },
+          {
+            "type": "richtext",
+            "id": "benefits_content6",
+            "label": "Content"
+          }
+        ]
+      },
+      {
+        "type": "technology",
+        "name": "Technology",
+        "settings": [
+          {
+            "type": "text",
+            "id": "tab_heading",
+            "label": "Tab Title",
+            "default": "Technology"
+          },
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading"
+          },
+          {
+            "type": "image_picker",
+            "id": "technology_image",
+            "label": "Image"
+          },
+          {
+            "type": "header",
+            "content": "Step 1"
+          },
+          {
+            "type": "text",
+            "id": "step_title1",
+            "label": "Step Heading"
+          },
+          {
+            "type": "richtext",
+            "id": "step_content1",
+            "label": "Step Content"
+          },
+          {
+            "type": "header",
+            "content": "Step 2"
+          },
+          {
+            "type": "text",
+            "id": "step_title2",
+            "label": "Step Heading"
+          },
+          {
+            "type": "richtext",
+            "id": "step_content2",
+            "label": "Step Content"
+          },
+          {
+            "type": "header",
+            "content": "Step 3"
+          },
+          {
+            "type": "text",
+            "id": "step_title3",
+            "label": "Step Heading"
+          },
+          {
+            "type": "richtext",
+            "id": "step_content3",
+            "label": "Step Content"
+          },
+          {
+            "type": "header",
+            "content": "Step 4"
+          },
+          {
+            "type": "text",
+            "id": "step_title4",
+            "label": "Step Heading"
+          },
+          {
+            "type": "richtext",
+            "id": "step_content4",
+            "label": "Step Content"
+          },
+          {
+            "type": "header",
+            "content": "Step 5"
+          },
+          {
+            "type": "text",
+            "id": "step_title5",
+            "label": "Step Heading"
+          },
+          {
+            "type": "richtext",
+            "id": "step_content5",
+            "label": "Step Content"
+          }
+        ]
+      },
+      {
+        "type": "image-banner",
+        "name": "Image Banner",
+        "settings": [
+          {
+            "type": "text",
+            "id": "tab_heading",
+            "label": "Tab Title",
+            "default": "Benefits"
+          },
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading"
+          },
+          {
+            "type": "image_picker",
+            "id": "image_banner",
+            "label": "Image"
+          },
+          {
+            "type": "image_picker",
+            "id": "mobile_image_banner",
+            "label": "Mobile Image"
+          },
+          {
+            "type": "richtext",
+            "id": "image_content",
+            "label": "Content"
+          }
+        ]
+      },
+      {
+        "type": "ingredients",
+        "name": "Ingredients Section",
+        "settings": [
+          {
+            "type": "text",
+            "id": "tab_heading",
+            "label": "Tab Title",
+            "default": "Ingredients"
+          },
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading"
+          },
+          {
+            "type": "image_picker",
+            "id": "ingredient_img1",
+            "label": "Image 1"
+          },
+          {
+            "type": "text",
+            "id": "ingredients_text1",
+            "label": "Ingredients Name 1"
+          },
+          {
+            "type": "image_picker",
+            "id": "ingredient_img2",
+            "label": "Image 2"
+          },
+          {
+            "type": "text",
+            "id": "ingredients_text2",
+            "label": "Ingredients Name 2"
+          },
+          {
+            "type": "image_picker",
+            "id": "ingredient_img3",
+            "label": "Image 3"
+          },
+          {
+            "type": "text",
+            "id": "ingredients_text3",
+            "label": "Ingredients Name 3"
+          },
+          {
+            "type": "image_picker",
+            "id": "ingredient_img4",
+            "label": "Image 4"
+          },
+          {
+            "type": "text",
+            "id": "ingredients_text4",
+            "label": "Ingredients Name 4"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Product Specifications"
+      }
+    ]
+  }
+{% endschema %}
+
+
+<!-- <script>
+  $(function() {
+    $("#tabs").tabs();
+  });
+</script> -->
+
+<script>
+$(document).ready(function () {
+    const menuLinks = $(".product-info-top-tab-block ul li a");
+    const sections = $(".section");
+
+    menuLinks.on("click", function (event) {
+        event.preventDefault();
+        
+        // Remove active class from all links
+        menuLinks.removeClass("active");
+
+        // Add active class to clicked link
+        $(this).addClass("active");
+
+        // Scroll smoothly to the section
+        const section = $($(this).attr("href"));
+        $('html, body').animate({
+            scrollTop: section.offset().top - 50 // Adjust for fixed menu
+        }, 500);
+    });
+
+    // Detect scroll and update active menu item & content block
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const id = entry.target.getAttribute("id");
+                
+                // Remove active class from all links and sections
+                menuLinks.removeClass("active");
+                sections.removeClass("active");
+                
+                // Add active class to the visible section and its corresponding menu link
+                $(entry.target).addClass("active");
+                $(".product-info-top-tab-block ul li a[href='#" + id + "']").addClass("active");
+            }
+        });
+    }, { rootMargin: "-50% 0px -50% 0px", threshold: 0.1 });
+
+    sections.each(function () {
+        observer.observe(this);
+    });
+
+    
+    $('.gird_image_wrapper').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: false,
+      centerPadding: '20px',
+      arrows: true,
+      infinite: true,
+      swipeToSlide: true,
+      centerMode: true,
+      focusOnSelect: true,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      prevArrow: '<button class="slick-prev"><img src="https://cdn.shopify.com/s/files/1/2745/9950/files/slider_arrow.svg?v=1744048040" alt="Previous" /></button>',
+      nextArrow: '<button class="slick-next"><img src="https://cdn.shopify.com/s/files/1/2745/9950/files/slider_arrow.svg?v=1744048040" alt="Next" /></button>',
+    });
+
+    $('.closer-look-block-grid').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      dots: false,
+      centerPadding: '20px',
+      arrows: true,
+      infinite: true,
+      swipeToSlide: true,
+      centerMode: true,
+      focusOnSelect: true,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      prevArrow: '<button class="slick-prev"><img src="https://cdn.shopify.com/s/files/1/2745/9950/files/slider_arrow.svg?v=1744048040" alt="Previous" /></button>',
+      nextArrow: '<button class="slick-next"><img src="https://cdn.shopify.com/s/files/1/2745/9950/files/slider_arrow.svg?v=1744048040" alt="Next" /></button>',
+      responsive: [{
+      breakpoint: 1399,
+        settings: {
+          slidesToShow: 3
+        }
+        }, {
+        breakpoint: 520,
+        settings: {
+          slidesToShow: 1
+        }
+      }]
+    });
+
+});
+
+</script>

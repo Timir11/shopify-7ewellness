@@ -1,0 +1,660 @@
+{
+  "sections": {
+    "main": {
+      "type": "blog-template",
+      "disabled": true,
+      "settings": {
+        "layout": "grid",
+        "post_limit": 9,
+        "blog_show_tag_filter": false,
+        "blog_show_rss": false,
+        "blog_show_tags": false,
+        "blog_show_date": true,
+        "blog_show_comments": true,
+        "blog_show_author": false,
+        "blog_show_excerpt": false,
+        "blog_image_size": "wide"
+      }
+    },
+    "164623363803bb8aa8": {
+      "type": "advanced-content",
+      "blocks": {
+        "1646233638ae9762c1-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<center><h1> Microcurrent Face Lift Before and After  <br>Reviews and Results!<\/h1>\n<p>Does a non-surgical facelift work? This is the question most people who are curious about devices for face lifting may come across. The answer is yes and the best part is that it requires zero downtime.<\/p>\n<p>Due to their non-invasive nature, microcurrent face-lifting devices have a remarkable ability to show results without the need for any downtime.<\/p>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "88bd44c4-c5b2-403e-9297-a4b2238ce10f": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Myolift-60-day-update.jpg",
+            "link": "https:\/\/www.youtube.com\/watch?v=Hd5GNCvOdQc",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "996ff86e-eaa9-4662-826a-b9ab113a6429": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/aging-gracefully.jpg",
+            "link": "https:\/\/www.youtube.com\/watch?v=ZxlfAx9dFKU",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "1646233638ae9762c1-1",
+        "88bd44c4-c5b2-403e-9297-a4b2238ce10f",
+        "996ff86e-eaa9-4662-826a-b9ab113a6429"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "alt": true,
+        "lazyload_images": true
+      }
+    },
+    "1646235129de096024": {
+      "type": "slideshow",
+      "blocks": {
+        "164623512981d413e1-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Black_to_purple_desktop_2x_84de13f8-53e3-4d63-a4dd-032e95054580.png"
+          }
+        }
+      },
+      "block_order": [
+        "164623512981d413e1-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "164623378733f62ad2": {
+      "type": "testimonials",
+      "blocks": {
+        "1646233787ad0e346e-0": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p><em>\"Your Customer Service is astounding! I am shocked at how 7E Wellness is so amazing in all you do. From the MyoLift™, to skin care, to Customer Service. I sincerely haven't experienced this height of Customer Service and excellence overall before. Thank you. I am very grateful.\"<\/em><\/p>",
+            "author": "Valarie at Wellness and Beauty for All"
+          }
+        }
+      },
+      "block_order": [
+        "1646233787ad0e346e-0"
+      ],
+      "custom_css": [
+        ".index-section {margin: 0;}"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "round_images": true,
+        "alt": false
+      }
+    },
+    "16463508608a6d1341": {
+      "type": "blog-posts",
+      "disabled": true,
+      "settings": {
+        "title": "The lifted...",
+        "blog": "myolift-reviews",
+        "post_limit": 3,
+        "blog_show_tags": false,
+        "blog_show_date": false,
+        "blog_show_comments": false,
+        "blog_show_author": false,
+        "blog_show_excerpt": false,
+        "blog_image_size": "natural",
+        "view_all": false,
+        "alt": false
+      }
+    },
+    "text_columns_CRmtdN": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_E37Bpk": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/1_9f4f6098-da2b-42ff-8a55-1b5068aaf0ae.png",
+            "image_mask": "none",
+            "image_width": 150,
+            "title": "Firmer skin",
+            "text": "<p>Face lifts inevitably increase the skin’s firmness and resilience. The gentle electrical currents uplift the muscles and decrease sagging. You can see your cheeks will be toned as well as the area around your jawline, neck, and eyebrow area.  <\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_FMxaT3": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/2_ac9ab84e-56ef-4c38-aa27-a4b1cb1ea4f3.png",
+            "image_mask": "none",
+            "image_width": 150,
+            "title": "Fading of fine lines and wrinkles",
+            "text": "<p>Your smile will now look smooth due to using microcurrent<br\/>devices by 7E Wellness. Non-surgical facial lifting equipment can soften the fine lines and wrinkles by increasing collagen production in your skin. It also helps to relax muscles that get tight from overuse. Much like a botox effect. <\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_t7B7RY": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/3_b427f6ab-e1a0-4676-86a7-09abb2b3a79a.png",
+            "image_mask": "none",
+            "image_width": 150,
+            "title": "Improve in skin texture",
+            "text": "<p>Microcurrent'smain<br\/>target is not just for fine lines and wrinkles but skin in its entirety. Various facial modalities can assist non-surgical face lifting devices that exclusively work towards improving skin texture. Microcurrent also helps in the enhanced absorption of skincare products. This enables the skin to improve overall along with the texture and firmness of the skin.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_E37Bpk",
+        "text_block_FMxaT3",
+        "text_block_t7B7RY"
+      ],
+      "custom_css": [
+        ".index-section {margin: 0;}",
+        ".section-header {margin: 0;}"
+      ],
+      "settings": {
+        "title": "Face lift",
+        "align_text": "center",
+        "alt": false
+      }
+    },
+    "advanced_content_Yt3XtW": {
+      "type": "advanced-content",
+      "blocks": {
+        "image_Mk36LF": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_9f4f6098-da2b-42ff-8a55-1b5068aaf0ae.png",
+            "link": "",
+            "width": "25%",
+            "alignment": "center"
+          }
+        },
+        "liquid_8DpfzN": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h3>Firmer skin<\/h3><p>Face lifts inevitably increase the skin’s firmness and resilience. The gentle electrical currents uplift the muscles and decrease sagging. You can see your cheeks will be toned as well as the area around your jawline, neck, and eyebrow area. <\/p>",
+            "width": "75%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "image_Mk36LF",
+        "liquid_8DpfzN"
+      ],
+      "custom_css": [
+        ".image-wrap {background: none; padding-bottom: 0 !important; height: auto !important;}",
+        "img {max-width: 50%; margin: 0 auto;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "advanced_content_LXtN9F": {
+      "type": "advanced-content",
+      "blocks": {
+        "image_FRQayT": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_ac9ab84e-56ef-4c38-aa27-a4b1cb1ea4f3.png",
+            "link": "",
+            "width": "25%",
+            "alignment": "center"
+          }
+        },
+        "liquid_MyqATa": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h3>Fading of fine lines and wrinkles<\/h3><p>Your smile will now look smooth due to using microcurrent devices by 7E Wellness. Non-surgical facial lifting equipment can soften the fine lines and wrinkles by increasing collagen production in your skin. It also helps to relax muscles that get tight from overuse. Much like a botox effect. <\/p>",
+            "width": "75%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "image_FRQayT",
+        "liquid_MyqATa"
+      ],
+      "custom_css": [
+        ".image-wrap {background: none;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "advanced_content_KgJkcV": {
+      "type": "advanced-content",
+      "blocks": {
+        "image_YNCihd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3_b427f6ab-e1a0-4676-86a7-09abb2b3a79a.png",
+            "link": "",
+            "width": "25%",
+            "alignment": "center"
+          }
+        },
+        "liquid_tMYrCe": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h3>Improve In Skin Texture<\/h3><p>Microcurrent's maintarget is not just for fine lines and wrinkles but skin in its entirety. Various facial modalities can assist non-surgical face lifting devices that exclusively work towards improving skin texture. Microcurrent also helps in the enhanced absorption of skincare products. This enables the skin to improve overall along with the texture and firmness of the skin.<\/p>",
+            "width": "75%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "image_YNCihd",
+        "liquid_tMYrCe"
+      ],
+      "custom_css": [
+        ".image-wrap {background: none;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "1650580787d623f7bd": {
+      "type": "text-columns",
+      "blocks": {
+        "793f21ab-3107-4908-af70-b1eb85127559": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/annas-results-600712_1600x_copy.jpg",
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "<b>Anna's Results<\/b>",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "93e1addc-aa3f-4806-9a2c-b3c745892002": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/joni-results-600712_1600x_57477a73-deb6-43b9-9487-b0463ea670b9.jpg",
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "<b>Joni Results<\/b>",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "165058078768b1e6eb-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/katrian-results-586506_540x_copy.jpg",
+            "image_mask": "none",
+            "image_width": 330,
+            "title": "<b>Katrian Results<\/b>",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "165058078768b1e6eb-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/7e-Jane-results.jpg",
+            "image_mask": "none",
+            "image_width": 330,
+            "title": "<b>Jane Results<\/b>",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "d13271df-8cda-4640-a111-fe20a8dad769": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/stisnoi-results-788868_1600x_copy.jpg",
+            "image_mask": "none",
+            "image_width": 330,
+            "title": "<b>Stisnoi Results<\/b>",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "793f21ab-3107-4908-af70-b1eb85127559",
+        "93e1addc-aa3f-4806-9a2c-b3c745892002",
+        "165058078768b1e6eb-0",
+        "165058078768b1e6eb-1",
+        "d13271df-8cda-4640-a111-fe20a8dad769"
+      ],
+      "custom_css": [
+        ".index-section {margin: 40px 0 0;}"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "alt": false
+      }
+    },
+    "16481827890c30a730": {
+      "type": "advanced-content",
+      "blocks": {
+        "1648182789c9360d7a-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<center>\n<h2><b>Recommended devices for face-lifting<\/b><\/h2>\n<p>You should look for a face-lifting device that can help track the development of your facial aesthetics. These face tools can help you track your microcurrent skincare journey effectively and analytically. Always remember, that the best results can be achieved through consistent efforts towards your ideal skincare goals as well as  provide comprehensive treatments and track your before and after images.\n<\/p>\n<p>There is an array of devices for face lifting that offer various treatments depending on the type and duration of therapy you want. From stimulating muscle tone to enhancing collagen production, facial devices provided by 7E Wellness are as follows:<\/p>\n<\/center>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "1648182789c9360d7a-1"
+      ],
+      "custom_css": [
+        ".index-section {margin: 0; padding: 40px 0px; background: #fff;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "text_columns_g8fNhX": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_TP4tF6": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/1_64a13bff-6bbb-42ce-8ba2-6c2f7836cc39.png",
+            "image_mask": "none",
+            "image_width": 250,
+            "title": "MyoLift™ Mini",
+            "text": "<p>This device for face lifting is compact and portable. It is a home device that closely resembles the type of treatment a professional would do. It uses two probes and can help you to achieve great results. This device can assist in maintaining consistency in your face-lifting journey.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_Tdidwc": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/2_b73623f4-1ed2-4e58-a69f-6f9a594fcd77.png",
+            "image_mask": "none",
+            "image_width": 250,
+            "title": "MyoLift™ QT",
+            "text": "<p>This is the most customizable device for face lifting, it provides treatment tailored to individual needs. This device uses a smart current technology that is app based, it’s a handheld device making it easy to use and it effectively addresses sagging skin, wrinkles, and other signs of aging for comprehensive<br\/>rejuvenation.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_RgGecG": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/3_4bb73155-a180-4c3f-a335-9e01924e849e.png",
+            "image_mask": "none",
+            "image_width": 250,
+            "title": "MyoLift™ MD",
+            "text": "<p>It is designed for professional use only,  the MyoLift™ MD delivers precise microcurrent treatment with preset treatment options and various options to curate customizable microcurrent therapy options in consideration of specific needs such as face lifting, lymphatic drainage, diminishing fine lines and wrinkles and tightening<br\/>of the skin. <\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_f8R4hc": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/4_816c93a6-2063-4578-9fce-873666ab896f.png",
+            "image_mask": "none",
+            "image_width": 250,
+            "title": "MyoLift™ 600+",
+            "text": "<p>Is a professional-only device that is compact and portable. It has multiple waveforms that focus on lymphatic drainage, lifting of the muscles, and also<br\/>relaxing those tight muscles in the face.  <\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_d78qMF": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/6_598595ab-d785-40f4-903e-17626a3362fa.png",
+            "image_mask": "none",
+            "image_width": 250,
+            "title": "Hands-Free Conductive Masks",
+            "text": "<p>Combining microcurrent technology with self-adhesive conductive masks will increase ATP  and help to soften fine lines and wrinkles on the surface of the skin.  These are a great hands-free option to use. <\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_AeaR7U": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/5_bdd183d4-e6a7-4088-8ca6-2ac63755a40a.png",
+            "image_mask": "none",
+            "image_width": 250,
+            "title": "Sheet Mask",
+            "text": "<p>Combining microcurrent technology with a hydrogel mask provides dual benefits of a non-surgical face lift and hydration to the skin. When conducting current while using a sheet mask it offers a luxurious spa-like experience while promoting more hydration to the skin. <\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_TP4tF6",
+        "text_block_Tdidwc",
+        "text_block_RgGecG",
+        "text_block_f8R4hc",
+        "text_block_d78qMF",
+        "text_block_AeaR7U"
+      ],
+      "custom_css": [
+        ".index-section {margin: 0; padding: 40px 0px;}",
+        ".image-wrap {background: none;}",
+        ".h2 {font-size: 18px; font-weight: 700;}",
+        "p {font-size: 14px;}"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "alt": false
+      }
+    },
+    "faq_AAMXrw": {
+      "type": "faq",
+      "blocks": {
+        "question_GQTaRT": {
+          "type": "question",
+          "settings": {
+            "title": "How long will the results of a face lift last?",
+            "text": "<p>Most of you are skeptical about the effectiveness of the microcurrent face lift, and it is truly beneficial for the amount of time it takes to show the results is very minimal but on the other<br\/>hand,  the duration for lasting results is cumulative. Regular and consistent facelift treatments can truly transform your skin while increasing collagen production. It is recommended to do a series to get the optimal results. <\/p><p>The frequency of therapy will decide how long the face lift will last. It is very important to follow a comprehensive skincare routine, using correct face tools, avoiding harsh sun exposure, and optimum water intake to maximize the quality of results after doing a series of microcurrent treatments. <\/p>"
+          }
+        },
+        "question_gcd4kg": {
+          "type": "question",
+          "settings": {
+            "title": "What face tools can help you enhance your transformation toward the non-surgical face lift?",
+            "text": "<p>Face tools are designed to complement your microcurrent therapy, they are that diligent assistant that can make a massive impact on your skincare routine if incorporated. These face tools come in various different sizes, shapes, and materials, each servicing a specific purpose.<\/p><p><strong>Facial Rollers:<\/strong> Facial rollers made from jade and quartz, can significantly remove puffiness and promote lymphatic drainage. This is an essential face tool that can heavily assist microcurrent devices for face lifting. As the core of microcurrent therapy lies in its non-surgical face-lifting concept such face tools should be compulsorily added to your skincare routine.<\/p><p><strong>Gua Sha tool: <\/strong> By gently scraping the skin, the gua sha face tool can reduce the tension between facial muscles and skin tone and enhance the results of a non-surgical facelift.<strong> <\/strong><\/p><p><strong>Derma Rollers: <\/strong>Derma rollers a.k.a micro-needling face tool, create micro-injuries in the skin, stimulating collagen protection. Using this face tool in conjunction with a non-surgical facelift can enhance skin firmness and promote a more youthful appearance as well as assist in the healing of the skin.<\/p><p><strong>LED light: <\/strong>By using a red LED light before using microcurrent you are warming up the muscles before you do a lift on the muscles.  Much like the gym, warm muscles respond better to lifting. <\/p><p>By incorporating these face tools into your skincare routine alongside a non-surgical facelift, you can enhance the transformation process and achieve more noticeable and long-lasting results. However, it's essential to consult with a skincare professional before using any face tools to ensure they are suitable for your skin type and condition.<\/p>"
+          }
+        },
+        "question_7PBFJW": {
+          "type": "question",
+          "settings": {
+            "title": "Why is it the perfect substitute for a surgical face lift?",
+            "text": "<p>Face lift devices such as MyoLift™ have worked wonders in terms of effectively scaling microcurrent spas for estheticians and delivering exceptional results for customers. <\/p><p>There are no incisions, injections, or penetration of the skin. The skin's surface remains intact, minimizing the risk of infection and other complications associated with invasive procedures. You can see the pictures of microcurrent before and after images to get clarity over its effectiveness. <\/p><p><strong>No pain, only gain!<\/strong> <\/p><p>This is the key attribute that sets apart a face lift from any other cosmetic procedure. This feature gives early adopters the confidence to try out microcurrent skincare. Nowadays, face lifting equipment is offering customized treatments for varied skin concerns of the products. It is the most comfortable and natural way to improve their facial aesthetics and there is no such thing as permanency of damage involved.<strong> <\/strong><\/p><p><strong>Safety and comfort by using devices for face lifting <\/strong><\/p><p>Some of the devices for face lifting are FDA-approved for example - 7E Wellness. To eliminate risk,  certified devices for face lifting enhance customer experience by providing them a sense of relief and assurance of utmost safety.<\/p>"
+          }
+        },
+        "question_M9tTgp": {
+          "type": "question",
+          "settings": {
+            "title": "Changes observed in microcurrent facial before and after vs surgical treatment",
+            "text": "<p><strong>When we compare other treatments with microcurrent you can observe the following changes<\/strong><\/p><p><strong>Surgical face lift <\/strong><\/p><p><strong>Invasiveness:<\/strong> It involves incisions, removal of excess skin, and suturing leading to significant recovery time and complications  <\/p><p><strong>Downtime:<br\/><\/strong>Require weeks and months to recover and a noticeable<br\/>downtime <\/p><p><strong>Derma fillers and Botox<\/strong><\/p><p><strong>Less invasive: <\/strong>Involves injections and the skin is prone to bruising swelling and infections <\/p><p><strong>Downtime:<br\/><\/strong>Unlike non-surgical face lift requires a day or two to recover  <\/p><p><strong>Laser treatment<\/strong><\/p><p><strong>Invasiveness:<br\/><\/strong>While non-surgical laser treatment can cause temporary illness, the surgical treatment may lead to hyperpigmentation or burning of the skin.<\/p><p><strong>Downtime:<br\/><\/strong>Varies according to the intensity of the treatment from a few days to several weeks <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_GQTaRT",
+        "question_gcd4kg",
+        "question_7PBFJW",
+        "question_M9tTgp"
+      ],
+      "custom_css": [
+        ".index-section {margin: 0; padding: 60px 0px; background: #fff;}"
+      ],
+      "settings": {
+        "title": "FAQ's"
+      }
+    },
+    "1687149466826ea72f": {
+      "type": "apps",
+      "blocks": {
+        "4eee09af-d943-4ac3-953d-f4455d8b107d": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "show_heading": true,
+            "heading": "",
+            "badge_link": "",
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "4eee09af-d943-4ac3-953d-f4455d8b107d"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "164968868433dc68f0": {
+      "type": "advanced-content",
+      "blocks": {
+        "1649688684fa7e6e45-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<center><h2>Influencer Reviews on Non-surgical facelift<\/h2>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "1649688684fa7e6e45-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/maxresdefault_fc89cbdd-acc5-48a5-b58b-15942585b068.jpg",
+            "link": "https:\/\/www.youtube.com\/watch?v=tWcLVVOifxU",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "f1cb4fec-03bf-428f-864c-8cdf59457154": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/maxresdefault_a82c1fbe-f74f-43a8-8c47-5a03cf3e3a78.jpg",
+            "link": "https:\/\/www.youtube.com\/watch?v=_SV53_oZ0rY",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "1649688684fa7e6e45-1",
+        "1649688684fa7e6e45-0",
+        "f1cb4fec-03bf-428f-864c-8cdf59457154"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "1648405334862fa579": {
+      "type": "apps",
+      "blocks": {
+        "30873239-7022-403c-b036-e6dcf4e79ff8": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "alignment": "center",
+            "background_color": "",
+            "feed_id": "",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "30873239-7022-403c-b036-e6dcf4e79ff8"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "164623363803bb8aa8",
+    "1646235129de096024",
+    "164623378733f62ad2",
+    "16463508608a6d1341",
+    "text_columns_CRmtdN",
+    "advanced_content_Yt3XtW",
+    "advanced_content_LXtN9F",
+    "advanced_content_KgJkcV",
+    "1650580787d623f7bd",
+    "16481827890c30a730",
+    "text_columns_g8fNhX",
+    "faq_AAMXrw",
+    "1687149466826ea72f",
+    "164968868433dc68f0",
+    "1648405334862fa579"
+  ]
+}

@@ -1,0 +1,728 @@
+{% doc %}
+  @prompt
+    hero slider which support image+ video media and upload or both desktop and mobile , just to upload media no text button etc, just upload media for mobile and desktop and add nav link, change the ratio to upload for desktop to 1920by 640 and mobile 480by640
+    
+    the desktop image video show on desktop and mobile video and image showonly on mobile, add the link for nav, and arrow, and dots option to enable and disable, add video duration to 1 sec to 10 sec and can control it, also add option to play video on loop, automatically 
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-hero-slider-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .ai-hero-slider-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+  }
+
+  .ai-hero-slider-track-{{ ai_gen_id }} {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .ai-hero-slide-{{ ai_gen_id }} {
+    min-width: 100%;
+    position: relative;
+  }
+
+  .ai-hero-slide-link-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .ai-hero-slide-desktop-{{ ai_gen_id }} {
+    display: block;
+    aspect-ratio: 1920 / 640;
+    width: 100%;
+  }
+
+  .ai-hero-slide-mobile-{{ ai_gen_id }} {
+    display: none;
+    aspect-ratio: 480 / 640;
+    width: 100%;
+  }
+
+  .ai-hero-slide-{{ ai_gen_id }} img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .ai-hero-slide-{{ ai_gen_id }} video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .ai-hero-slide-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .ai-hero-slide-placeholder-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    max-height: 500px;
+  }
+
+  .ai-hero-empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 20px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    pointer-events: none;
+  }
+
+  .ai-hero-nav-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+  }
+
+  .ai-hero-nav-{{ ai_gen_id }}.hidden {
+    display: none;
+  }
+
+  .ai-hero-nav-dot-{{ ai_gen_id }} {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: {{ block.settings.dots_color }};
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    padding: 0;
+    opacity: 0.5;
+  }
+
+  .ai-hero-nav-dot-{{ ai_gen_id }}:hover {
+    opacity: 0.8;
+    transform: scale(1.2);
+  }
+
+  .ai-hero-nav-dot-{{ ai_gen_id }}.active {
+    opacity: 1;
+  }
+
+  .ai-hero-arrow-{{ ai_gen_id }} {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: {{ block.settings.arrows_color }};
+    color: {{ block.settings.arrows_icon_color }};
+    border: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0.8;
+  }
+
+  .ai-hero-arrow-{{ ai_gen_id }}:hover {
+    opacity: 1;
+    transform: translateY(-50%) scale(1.1);
+  }
+
+  .ai-hero-arrow-{{ ai_gen_id }}.hidden {
+    display: none;
+  }
+
+  .ai-hero-arrow-prev-{{ ai_gen_id }} {
+    left: 20px;
+  }
+
+  .ai-hero-arrow-next-{{ ai_gen_id }} {
+    right: 20px;
+  }
+
+  .ai-hero-arrow-{{ ai_gen_id }} svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-hero-slide-desktop-{{ ai_gen_id }} {
+      display: none;
+    }
+
+    .ai-hero-slide-mobile-{{ ai_gen_id }} {
+      display: block;
+    }
+
+    .ai-hero-arrow-{{ ai_gen_id }} {
+      width: 40px;
+      height: 40px;
+    }
+
+    .ai-hero-arrow-prev-{{ ai_gen_id }} {
+      left: 10px;
+    }
+
+    .ai-hero-arrow-next-{{ ai_gen_id }} {
+      right: 10px;
+    }
+
+    .ai-hero-arrow-{{ ai_gen_id }} svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+{% endstyle %}
+
+<hero-slider-{{ ai_gen_id }}
+  class="ai-hero-slider-{{ ai_gen_id }}"
+  data-autoplay-duration="{{ block.settings.autoplay_duration }}"
+  data-video-loop="{{ block.settings.video_loop }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-hero-slider-wrapper-{{ ai_gen_id }}">
+    <div class="ai-hero-slider-track-{{ ai_gen_id }}">
+      {% for i in (1..5) %}
+        {% liquid
+          assign slide_enabled_key = 'slide_' | append: i | append: '_enabled'
+          assign desktop_image_key = 'slide_' | append: i | append: '_desktop_image'
+          assign desktop_video_key = 'slide_' | append: i | append: '_desktop_video'
+          assign mobile_image_key = 'slide_' | append: i | append: '_mobile_image'
+          assign mobile_video_key = 'slide_' | append: i | append: '_mobile_video'
+          assign slide_link_key = 'slide_' | append: i | append: '_link'
+
+          assign slide_enabled = block.settings[slide_enabled_key]
+          assign desktop_image = block.settings[desktop_image_key]
+          assign desktop_video = block.settings[desktop_video_key]
+          assign mobile_image = block.settings[mobile_image_key]
+          assign mobile_video = block.settings[mobile_video_key]
+          assign slide_link = block.settings[slide_link_key]
+        %}
+
+        {% if slide_enabled %}
+          <div class="ai-hero-slide-{{ ai_gen_id }}" data-slide-index="{{ forloop.index0 }}">
+            {% if slide_link != blank %}
+              <a href="{{ slide_link }}" class="ai-hero-slide-link-{{ ai_gen_id }}">
+            {% endif %}
+
+            <div class="ai-hero-slide-desktop-{{ ai_gen_id }}">
+              {% if desktop_video != blank %}
+                {% if block.settings.video_loop %}
+                  {{
+                    desktop_video
+                    | video_tag:
+                      autoplay: true,
+                      loop: true,
+                      muted: true,
+                      playsinline: true,
+                      controls: false
+                  }}
+                {% else %}
+                  {{
+                    desktop_video
+                    | video_tag:
+                      autoplay: true,
+                      muted: true,
+                      playsinline: true,
+                      controls: false
+                  }}
+                {% endif %}
+              {% elsif desktop_image != blank %}
+                <img
+                  src="{{ desktop_image | image_url: width: 1920 }}"
+                  alt="{{ desktop_image.alt | escape }}"
+                  loading="lazy"
+                  width="1920"
+                  height="640"
+                >
+              {% else %}
+                <div class="ai-hero-slide-placeholder-{{ ai_gen_id }}">
+                  {{ 'hero-apparel-1' | placeholder_svg_tag }}
+                  <div class="ai-hero-empty-state-{{ ai_gen_id }}">
+                    Add desktop media (1920x640)
+                  </div>
+                </div>
+              {% endif %}
+            </div>
+
+            <div class="ai-hero-slide-mobile-{{ ai_gen_id }}">
+              {% if mobile_video != blank %}
+                {% if block.settings.video_loop %}
+                  {{
+                    mobile_video
+                    | video_tag:
+                      autoplay: true,
+                      loop: true,
+                      muted: true,
+                      playsinline: true,
+                      controls: false
+                  }}
+                {% else %}
+                  {{
+                    mobile_video
+                    | video_tag:
+                      autoplay: true,
+                      muted: true,
+                      playsinline: true,
+                      controls: false
+                  }}
+                {% endif %}
+              {% elsif mobile_image != blank %}
+                <img
+                  src="{{ mobile_image | image_url: width: 480 }}"
+                  alt="{{ mobile_image.alt | escape }}"
+                  loading="lazy"
+                  width="480"
+                  height="640"
+                >
+              {% else %}
+                <div class="ai-hero-slide-placeholder-{{ ai_gen_id }}">
+                  {{ 'hero-apparel-1' | placeholder_svg_tag }}
+                  <div class="ai-hero-empty-state-{{ ai_gen_id }}">
+                    Add mobile media (480x640)
+                  </div>
+                </div>
+              {% endif %}
+            </div>
+
+            {% if slide_link != blank %}
+              </a>
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <button
+      class="ai-hero-arrow-{{ ai_gen_id }} ai-hero-arrow-prev-{{ ai_gen_id }} {% unless block.settings.show_arrows %}hidden{% endunless %}"
+      aria-label="Previous slide"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+    </button>
+
+    <button
+      class="ai-hero-arrow-{{ ai_gen_id }} ai-hero-arrow-next-{{ ai_gen_id }} {% unless block.settings.show_arrows %}hidden{% endunless %}"
+      aria-label="Next slide"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="9 18 15 12 9 6"></polyline>
+      </svg>
+    </button>
+
+    <div class="ai-hero-nav-{{ ai_gen_id }} {% unless block.settings.show_dots %}hidden{% endunless %}">
+      {% for i in (1..5) %}
+        {% liquid
+          assign slide_enabled_key = 'slide_' | append: i | append: '_enabled'
+          assign slide_enabled = block.settings[slide_enabled_key]
+        %}
+        {% if slide_enabled %}
+          <button
+            class="ai-hero-nav-dot-{{ ai_gen_id }} {% if forloop.first %}active{% endif %}"
+            data-slide="{{ forloop.index0 }}"
+            aria-label="Go to slide {{ forloop.index }}"
+          ></button>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</hero-slider-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class HeroSlider{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.currentSlide = 0;
+        this.autoplayInterval = null;
+        this.autoplayDuration = parseInt(this.dataset.autoplayDuration) * 1000 || 5000;
+        this.videoLoop = this.dataset.videoLoop === 'true';
+      }
+
+      connectedCallback() {
+        this.track = this.querySelector('.ai-hero-slider-track-{{ ai_gen_id }}');
+        this.slides = this.querySelectorAll('.ai-hero-slide-{{ ai_gen_id }}');
+        this.dots = this.querySelectorAll('.ai-hero-nav-dot-{{ ai_gen_id }}');
+        this.prevButton = this.querySelector('.ai-hero-arrow-prev-{{ ai_gen_id }}');
+        this.nextButton = this.querySelector('.ai-hero-arrow-next-{{ ai_gen_id }}');
+        this.videos = this.querySelectorAll('video');
+
+        if (this.slides.length === 0) return;
+
+        this.setupEventListeners();
+        this.setupVideoListeners();
+        this.startAutoplay();
+      }
+
+      disconnectedCallback() {
+        this.stopAutoplay();
+      }
+
+      setupEventListeners() {
+        this.dots.forEach((dot) => {
+          dot.addEventListener('click', (e) => {
+            const slideIndex = parseInt(e.target.dataset.slide);
+            this.goToSlide(slideIndex);
+            this.stopAutoplay();
+            this.startAutoplay();
+          });
+        });
+
+        if (this.prevButton) {
+          this.prevButton.addEventListener('click', () => {
+            this.prevSlide();
+            this.stopAutoplay();
+            this.startAutoplay();
+          });
+        }
+
+        if (this.nextButton) {
+          this.nextButton.addEventListener('click', () => {
+            this.nextSlide();
+            this.stopAutoplay();
+            this.startAutoplay();
+          });
+        }
+
+        this.addEventListener('mouseenter', () => {
+          this.stopAutoplay();
+        });
+
+        this.addEventListener('mouseleave', () => {
+          this.startAutoplay();
+        });
+      }
+
+      setupVideoListeners() {
+        if (!this.videoLoop) {
+          this.videos.forEach((video) => {
+            video.addEventListener('ended', () => {
+              const videoSlideIndex = parseInt(video.closest('.ai-hero-slide-{{ ai_gen_id }}').dataset.slideIndex);
+              if (videoSlideIndex === this.currentSlide) {
+                this.nextSlide();
+              }
+            });
+          });
+        }
+      }
+
+      goToSlide(index) {
+        this.currentSlide = index;
+        const offset = -100 * index;
+        this.track.style.transform = `translateX(${offset}%)`;
+
+        this.dots.forEach((dot, i) => {
+          if (i === index) {
+            dot.classList.add('active');
+          } else {
+            dot.classList.remove('active');
+          }
+        });
+
+        this.videos.forEach((video) => {
+          const videoSlideIndex = parseInt(video.closest('.ai-hero-slide-{{ ai_gen_id }}').dataset.slideIndex);
+          if (videoSlideIndex === index) {
+            video.currentTime = 0;
+            video.play().catch(() => {});
+          } else {
+            video.pause();
+          }
+        });
+      }
+
+      nextSlide() {
+        const nextIndex = (this.currentSlide + 1) % this.slides.length;
+        this.goToSlide(nextIndex);
+      }
+
+      prevSlide() {
+        const prevIndex = (this.currentSlide - 1 + this.slides.length) % this.slides.length;
+        this.goToSlide(prevIndex);
+      }
+
+      startAutoplay() {
+        if (this.slides.length <= 1) return;
+        
+        this.stopAutoplay();
+        
+        this.autoplayInterval = setInterval(() => {
+          this.nextSlide();
+        }, this.autoplayDuration);
+      }
+
+      stopAutoplay() {
+        if (this.autoplayInterval) {
+          clearInterval(this.autoplayInterval);
+          this.autoplayInterval = null;
+        }
+      }
+    }
+
+    customElements.define('hero-slider-{{ ai_gen_id }}', HeroSlider{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Hero slider",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Autoplay settings"
+    },
+    {
+      "type": "range",
+      "id": "autoplay_duration",
+      "min": 1,
+      "max": 10,
+      "step": 1,
+      "unit": "s",
+      "label": "Slide duration",
+      "default": 5
+    },
+    {
+      "type": "checkbox",
+      "id": "video_loop",
+      "label": "Loop videos",
+      "default": true,
+      "info": "When disabled, slider will advance to next slide when video ends"
+    },
+    {
+      "type": "header",
+      "content": "Navigation"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_arrows",
+      "label": "Show arrows",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_dots",
+      "label": "Show dots",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "arrows_color",
+      "label": "Arrows background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "arrows_icon_color",
+      "label": "Arrows icon color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "dots_color",
+      "label": "Dots color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Slide 1"
+    },
+    {
+      "type": "checkbox",
+      "id": "slide_1_enabled",
+      "label": "Enable slide 1",
+      "default": true
+    },
+    {
+      "type": "url",
+      "id": "slide_1_link",
+      "label": "Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_1_desktop_image",
+      "label": "Desktop image (1920x640)"
+    },
+    {
+      "type": "video",
+      "id": "slide_1_desktop_video",
+      "label": "Desktop video (1920x640)"
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_1_mobile_image",
+      "label": "Mobile image (480x640)"
+    },
+    {
+      "type": "video",
+      "id": "slide_1_mobile_video",
+      "label": "Mobile video (480x640)"
+    },
+    {
+      "type": "header",
+      "content": "Slide 2"
+    },
+    {
+      "type": "checkbox",
+      "id": "slide_2_enabled",
+      "label": "Enable slide 2",
+      "default": true
+    },
+    {
+      "type": "url",
+      "id": "slide_2_link",
+      "label": "Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_2_desktop_image",
+      "label": "Desktop image (1920x640)"
+    },
+    {
+      "type": "video",
+      "id": "slide_2_desktop_video",
+      "label": "Desktop video (1920x640)"
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_2_mobile_image",
+      "label": "Mobile image (480x640)"
+    },
+    {
+      "type": "video",
+      "id": "slide_2_mobile_video",
+      "label": "Mobile video (480x640)"
+    },
+    {
+      "type": "header",
+      "content": "Slide 3"
+    },
+    {
+      "type": "checkbox",
+      "id": "slide_3_enabled",
+      "label": "Enable slide 3",
+      "default": true
+    },
+    {
+      "type": "url",
+      "id": "slide_3_link",
+      "label": "Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_3_desktop_image",
+      "label": "Desktop image (1920x640)"
+    },
+    {
+      "type": "video",
+      "id": "slide_3_desktop_video",
+      "label": "Desktop video (1920x640)"
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_3_mobile_image",
+      "label": "Mobile image (480x640)"
+    },
+    {
+      "type": "video",
+      "id": "slide_3_mobile_video",
+      "label": "Mobile video (480x640)"
+    },
+    {
+      "type": "header",
+      "content": "Slide 4"
+    },
+    {
+      "type": "checkbox",
+      "id": "slide_4_enabled",
+      "label": "Enable slide 4",
+      "default": false
+    },
+    {
+      "type": "url",
+      "id": "slide_4_link",
+      "label": "Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_4_desktop_image",
+      "label": "Desktop image (1920x640)"
+    },
+    {
+      "type": "video",
+      "id": "slide_4_desktop_video",
+      "label": "Desktop video (1920x640)"
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_4_mobile_image",
+      "label": "Mobile image (480x640)"
+    },
+    {
+      "type": "video",
+      "id": "slide_4_mobile_video",
+      "label": "Mobile video (480x640)"
+    },
+    {
+      "type": "header",
+      "content": "Slide 5"
+    },
+    {
+      "type": "checkbox",
+      "id": "slide_5_enabled",
+      "label": "Enable slide 5",
+      "default": false
+    },
+    {
+      "type": "url",
+      "id": "slide_5_link",
+      "label": "Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_5_desktop_image",
+      "label": "Desktop image (1920x640)"
+    },
+    {
+      "type": "video",
+      "id": "slide_5_desktop_video",
+      "label": "Desktop video (1920x640)"
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_5_mobile_image",
+      "label": "Mobile image (480x640)"
+    },
+    {
+      "type": "video",
+      "id": "slide_5_mobile_video",
+      "label": "Mobile video (480x640)"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero slider"
+    }
+  ]
+}
+{% endschema %}

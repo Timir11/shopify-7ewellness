@@ -1,0 +1,196 @@
+{% comment %} <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> {% endcomment %}
+<script>
+  // The CID is unique to the module. When business is confirmed, you will receive your unique CID.
+  const cid = "c47038";
+  // The API key is unique to the module and account. When business is confirmed, you will receive your unique API key.
+  const apiKey = "u9Yzqi5tVVlVaR460ytdg";
+  // The source domain will either be plugins-media.makeupar.com or plugins-media.perfectcorp.com depending on the account.
+  const sourceDomain = "https://plugins-media.makeupar.com/";
+
+  // IMPORTANT: The module should only be loaded ONCE for the entire user experience.
+  // You may encounter errors and hangs if the module is duplicated in memory.
+  // Please use YMK.init() and other methods [below] to open the module.
+
+  // Module script START
+  (function (d, k) {
+    var s = d.createElement("script");
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = sourceDomain + cid + "/sdk.js?apiKey=" + k;
+    var x = d.getElementsByTagName("script")[0];
+    x.parentNode.insertBefore(s, x);
+  })(document, apiKey);
+  // Module script END
+</script>
+<div class="index-section">
+  <div class="page-width">
+    <div id="YMK-module"></div>
+    <div
+      id="skinAnalysisProgress"
+      style="
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+          'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 24dp; text-align: center;
+      "
+    ></div>
+
+    <div id="image"></div>
+
+    <!--
+      <button onclick="YMK.openSkincare()">Open Skincare</button>
+      <button onclick="YMK.close()">Close the module</button>
+      <br>
+      <br>
+    -->
+
+    <!--
+      It is possible to control which skin concern is featured from outside the module via the API, like the following
+    -->
+    <!--
+      <button onclick="YMK.setSkincareResultType('all')">Show default combined overlay</button>
+      <button onclick="YMK.setSkincareResultType('ageSpots')">Show Spots overlay</button>
+      <button onclick="YMK.setSkincareResultType('wrinkles')">Show Wrinkles overlay</button>
+      <button onclick="YMK.setSkincareResultType('texture')">Show Texture overlay</button>
+      <button onclick="YMK.setSkincareResultType('darkCirclesV2')">Show Dark Circles overlay</button>
+      <button onclick="YMK.setSkincareResultType('oiliness')">Show Oiliness overlay</button>
+      <button onclick="YMK.setSkincareResultType('redness')">Show Redness overlay</button>
+      <button onclick="YMK.setSkincareResultType('moisture')">Show Moisture overlay</button>
+      <br>
+      <br>
+    -->
+
+    <div class="recommended_products" style="text-align:center;margin-top: 60px;">
+      <div id="productID_wrinkles" style="display: none;">
+        <a href="/pages/product-recommendation?id=wrinkles&number=1" class="btn">Explore Recommended Products</a>
+      </div>
+      <div id="productID_firmness" style="display: none;">
+        <a href="/pages/product-recommendation?id=firmness&number=2" class="btn">Explore Recommended Products</a>
+      </div>
+      <div id="productID_moisture" style="display: none;">
+        <a href="/pages/product-recommendation?id=moisture&number=3" class="btn">Explore Recommended Products</a>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  // Please see the API documentation at the link below for details on how these methods work
+  // https://drive.google.com/file/d/1iQs4qgNNpyfLQKgNvi84vSoykAeR26YF/view?usp=sharing
+  // The window.ymkAsyncInit global function is required, as is also the YMK.init() method.
+  //
+  window.ymkAsyncInit = function () {
+    YMK.openSkincare();
+    YMK.init({
+      // YMK.init initializes the module
+
+      autoOpen: false, // if set to true, the module will open as soon as the script is loaded and initialized
+
+      // language: "enu", // other languages may be set upon loading - customization of the strings is possible; please contact Perfect
+
+      // width: 405, // changes the module size; range is 300 to 600 px
+      // height: 540, // changes the module size; range is 300 to 800 px
+
+      // privacyPolicyURL: "https://yourprivacypolicyURL/",
+      // the words 'Privacy Policy' in the consent sceen can be set to link to the URL set here
+      // IMPORTANT: The consent screen is geofenced by default.
+      // The screen will show only for users accessing from the U.S. or China.
+      // If you need the consent screen to show for users accessing from outisde U.S. or China, please contact your PERFECT project manager for details.
+
+      // disableSkinAge: true, //default is false; if set to true, the module will not show the "Skin Age" results after the assessment
+      // disableSkinHealth: true, //default is false; if set to true, the module will not show the "Skin Health" results after the assessment
+
+      // hideSkinAnalysisResult: true,
+      // Note: the default for 'hideSkinAnalysisResult' is false;
+      //   if set to true, the module will not show the skin analysis results after the assessment
+
+      skincareFeatures: [
+        //"acne",
+        "ageSpots",
+        "wrinkles",
+        "texture",
+        "darkCirclesV2",
+        "oiliness",
+        "redness",
+        "moisture",
+        "droopyLowerEyelid",
+        "droopyUpperEyelid",
+        "eyeBags",
+        "pore",
+        "firmness",
+        "radiance",
+      ],
+      // Note: the 'skincareFeatures' parameter can control the order and selection of the skincare concerns
+    });
+
+    YMK.addEventListener("opened", function () {
+      // document.body.appendChild(
+      //   document.createTextNode("opened event triggered")
+      // );
+      // document.body.appendChild(document.createElement("br"));
+    });
+
+    YMK.addEventListener("loaded", function () {
+      // document.body.appendChild(
+      //   document.createTextNode("loaded event triggered")
+      // );
+      // document.body.appendChild(document.createElement("br"));
+    });
+
+    YMK.addEventListener("skinAnalysisProgressUpdated", function (progress) {
+      console.log("Skin Analysis Progess " + progress);
+
+      // In this test script, the progress will be shown on the webpage under the 'skinAnalysisProgress' div
+      document
+        .getElementById("skinAnalysisProgress")
+        .replaceChildren("Skin Analysis is " + progress + " % complete");
+    });
+
+    YMK.addEventListener("skinAnalysisUpdated", function (report) {
+      console.log("report", report); // This is the JS object that is returned by the 'skinAnalysisUpdated' event.
+      // to turn the JS object to a JSON, JSON.stringify() may be used
+      // Print the value of the "name" property
+      const result = JSON.stringify(report);
+      const jsonObject = JSON.parse(result);
+      console.log("skinage", jsonObject.skinHealth); // This is the JSON version of the report.
+      const skinHealthScore = jsonObject.skinHealth;
+      localStorage.setItem("Wrinkles", jsonObject.wrinkles);
+      localStorage.setItem("Moisture", jsonObject.moisture);
+      localStorage.setItem("Firmness", jsonObject.firmness);
+      productRecommended(jsonObject.wrinkles, jsonObject.firmness, jsonObject.moisture);
+    });
+
+  };
+
+  function productRecommended(w_score,f_score,m_score){
+    debugger
+    var minscore = Math.min(w_score,f_score,m_score);
+    if(w_score == minscore){
+      setTimeout(function(){
+      document.getElementById("productID_wrinkles").style.display = 'block';
+      },4000);
+    }
+    if(f_score == minscore){
+      setTimeout(function(){
+      document.getElementById("productID_firmness").style.display = 'block';
+      },4000);
+    }
+    if(m_score == minscore){
+      setTimeout(function(){
+      document.getElementById("productID_moisture").style.display = 'block';
+      },4000);
+    }
+  }
+</script>
+<style>
+  #YMK-module{
+    margin-bottom: 30px;
+  }
+  #YMK-module > div > div{
+    margin: 0 auto;
+  }
+</style>
+{% schema %}
+{
+  "name": "AI-demo",
+  "settings": []
+}
+{% endschema %}

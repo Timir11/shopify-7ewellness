@@ -1,0 +1,4 @@
+{%- if customer and customer.email -%}
+  {%- assign skio_hash_key = 'fcd553894359a7a2fb3e55c561d44b47' -%}
+  <script defer>const lastPartOfUrlWithoutQueryString=window.location.pathname.substring(window.location.pathname.lastIndexOf("/")+1);window.addEventListener("load",(function(){if("account"===lastPartOfUrlWithoutQueryString&&(887===Shopify.theme.theme_store_id||796===Shopify.theme.theme_store_id)){const e=document.querySelector("[href='/account/logout']");e&&(window.localStorage.setItem("skio-hash","{{customer.id | append: skio_hash_key | md5 }}"),e.insertAdjacentHTML("afterend",'<p><a href="/a/account/shopify-login?email={{customer.email | url_encode}}&hash={{customer.id | append: skio_hash_key | md5 }}&id={{customer.id | url_encode}}&totalSpent={{customer.total_spent | url_encode}}&addressId={{customer.default_address.id | url_encode}}&lastOrderName={{customer.last_order.name | url_encode}}">Manage Subscriptions</a></p>'))}}));</script>
+{%- endif -%}

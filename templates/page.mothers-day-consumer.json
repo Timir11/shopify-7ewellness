@@ -1,0 +1,89 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "92ef60f2-401d-4a92-b6c4-3b6c3f20e987": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14919899316278__92ef60f2-401d-4a92-b6c4-3b6c3f20e987-16808667122d2c9e14-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/banner-revised.png",
+            "image_mobile": "shopify:\/\/shop_images\/mobile_banner-consumer-revised.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--14919899316278__92ef60f2-401d-4a92-b6c4-3b6c3f20e987-16808667122d2c9e14-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "advanced_content_cgMgGG": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_EwPUmt": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>Give The Gift Of Nourishment With Our <br> Special Edition MyoLift™ Bundles<\/h2>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_EwPUmt"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "e39ceb19-1684-4adc-b3db-629cb472ce90": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14919899316278__e39ceb19-1684-4adc-b3db-629cb472ce90-1681816354981abda1-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"checkout_btn_phl\">\n<a data-toggle=\"modal\" data-target=\"#checkoutModal\" class=\"btn\">Continue To Checkout<\/a>\n<\/div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14919899316278__e39ceb19-1684-4adc-b3db-629cb472ce90-1681816354981abda1-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "alt": false,
+        "lazyload_images": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "92ef60f2-401d-4a92-b6c4-3b6c3f20e987",
+    "advanced_content_cgMgGG",
+    "e39ceb19-1684-4adc-b3db-629cb472ce90"
+  ]
+}

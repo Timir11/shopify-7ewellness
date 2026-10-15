@@ -1,0 +1,43 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "slideshow_YPG9eW": {
+      "type": "slideshow",
+      "blocks": {
+        "image_DGNHnk": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Mangosteen_eye_lift_serum_-_banner_-_7E.png",
+            "image_mobile": "shopify:\/\/shop_images\/mobile_banner-_7e-_Mangosteen_and_eyelift_serum_new_launch.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_DGNHnk"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_YPG9eW"
+  ]
+}

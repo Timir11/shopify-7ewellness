@@ -1,0 +1,637 @@
+{
+  "sections": {
+    "f82b056d-7473-47e9-8078-140ff5ceb8d2": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14815908528182__f82b056d-7473-47e9-8078-140ff5ceb8d2-1666805528cf363b75-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div id=\"shopnow\"><\/div>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14815908528182__f82b056d-7473-47e9-8078-140ff5ceb8d2-1666805528cf363b75-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "293e18a8-8ae1-4024-953a-98b772f9ef40": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "custom_UyTkbG": {
+          "type": "custom",
+          "settings": {
+            "code": "<a style=\"background: yellow;\npadding: 4px 8px; border-radius: 30px;\" href=\"https:\/\/www.7ewellness.com\/pages\/7e-events\">REGISTER FOR PRODUCT DEMO WEBINAR<\/a>"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": true
+          }
+        },
+        "5c7d527f-df37-4f1b-9cd4-1776efdeb363": {
+          "type": "text",
+          "settings": {
+            "text": "Facial Toning Device + Hands-Free Attachments"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "f0b07749-e4bc-415d-8ff1-95fbf1c01dd3": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "checkmark",
+            "text": "Start your skin treatment today, pay for the results later."
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "title": "Who is this for?",
+            "content": "<p>Anyone looking to<\/p><p>• Maintain a youthful appearance<\/p><p>• Prevent fine lines and wrinkles<\/p><p>• Reduce fine lines and wrinkles<\/p><p>• Plump skinSculpt facial features<\/p><p><\/p>",
+            "page": ""
+          }
+        },
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed": {
+          "type": "tab",
+          "settings": {
+            "title": "How does it compare to other devices?",
+            "content": "<p><a href=\"#watchnow\" title=\"#watchnow\">watch our video below ↓<\/a><\/p>",
+            "page": ""
+          }
+        },
+        "951d62a3-d4c7-4864-9c84-04d5894a1fc3": {
+          "type": "tab",
+          "settings": {
+            "title": "Shipping & Handling",
+            "content": "<p>Free USA Ground shipment, Orders are processed within 2 business day.<\/p><p>International Orders Ships within 3 business day. <\/p><p>International customers are required to pay Duty with their local custom agency. <\/p>",
+            "page": ""
+          }
+        },
+        "2b0f39f4-e565-4a29-bd60-2f4079a086e2": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-carousel\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "disabled": true,
+          "settings": {
+            "show_heading": true,
+            "heading": "",
+            "badge_link": "",
+            "product": "{{product}}"
+          }
+        },
+        "0c972a1e-34ff-48ed-8185-ecc170ce8912": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "disabled": true,
+          "settings": {
+            "product": "{{product}}",
+            "widget_type": "reviews_widget"
+          }
+        },
+        "60c57547-1293-4fd1-bf34-3d5e4f2fdfa9": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-badge\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "disabled": true,
+          "settings": {
+            "horizontal_alignment": "center"
+          }
+        },
+        "273e5aff-725e-44ff-8b54-6762d359134f": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/questions-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "disabled": true,
+          "settings": {
+            "product": "{{product}}"
+          }
+        }
+      },
+      "block_order": [
+        "price",
+        "293e18a8-8ae1-4024-953a-98b772f9ef40",
+        "custom_UyTkbG",
+        "buy_buttons",
+        "5c7d527f-df37-4f1b-9cd4-1776efdeb363",
+        "variant_picker",
+        "description",
+        "f0b07749-e4bc-415d-8ff1-95fbf1c01dd3",
+        "tab",
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed",
+        "951d62a3-d4c7-4864-9c84-04d5894a1fc3",
+        "2b0f39f4-e565-4a29-bd60-2f4079a086e2",
+        "0c972a1e-34ff-48ed-8185-ecc170ce8912",
+        "60c57547-1293-4fd1-bf34-3d5e4f2fdfa9",
+        "273e5aff-725e-44ff-8b54-6762d359134f"
+      ],
+      "settings": {
+        "product_image_size": "medium",
+        "product_image_type": "stacked",
+        "thumbnail_height": "flexible",
+        "product_zoom_enable": true,
+        "enable_video_looping": true,
+        "product_video_style": "muted",
+        "sku_enable": false
+      }
+    },
+    "8430c9a3-c52b-4bb1-a6f5-18d9a420b3ec": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Untitled_700_x_500_px.png",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "This Summer",
+        "title": "RENEW & REPLENISH",
+        "text": "<p>Don't neglect your skin during these hotter months before it's too late! Replenish your skin's barrier with our hydrating EGF Sheet Mask and Anti-Aging Peptide Serum!<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "50",
+        "layout": "right",
+        "alt": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "42fe3f27-9489-4f4c-9a76-9120f6a083d2": {
+      "type": "featured-video",
+      "settings": {
+        "title": "",
+        "video_url": "https:\/\/vimeo.com\/833880792?share=copy",
+        "alt": false
+      }
+    },
+    "09b16254-77c7-40a0-bc19-0e87f3ad464a": {
+      "type": "hero-animated",
+      "blocks": {
+        "template--14815908528182__09b16254-77c7-40a0-bc19-0e87f3ad464a-1666195718f8bc5d32-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/7E-BENEFIT-ICONS_DESKTOP_eba70c67-c145-48c1-b63f-fdb4032dd716.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/7E-BENEFIT-ICONS_MOBILE.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--14815908528182__09b16254-77c7-40a0-bc19-0e87f3ad464a-1666195718f8bc5d32-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "style": "gif",
+        "title": "",
+        "title_size": 80,
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "desktop_size": 0,
+        "mobile_size": 0
+      }
+    },
+    "f13d9689-9e77-400f-8503-b9f1bf8e7bb2": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Myolift-mini-microcurrent.jpg",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "What is microcurrent technology?",
+        "text": "<p>True-Microcurrent(™) technology is a<strong> low level of electrical current <\/strong>that mirrors the <strong>body's own natural current.<\/strong><\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "50",
+        "layout": "right",
+        "alt": true,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "d4b2f4e5-6513-4f7a-8c7b-6e905818a866": {
+      "type": "hero-animated",
+      "blocks": {
+        "template--14815908528182__d4b2f4e5-6513-4f7a-8c7b-6e905818a866-16655898406a39a3db-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Black_to_purple_desktop_2x_83b9e005-ad44-41c8-ac88-8a0a763dcbec.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--14815908528182__d4b2f4e5-6513-4f7a-8c7b-6e905818a866-16655898406a39a3db-0"
+      ],
+      "settings": {
+        "style": "gif",
+        "title": "",
+        "title_size": 80,
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "desktop_size": 0,
+        "mobile_size": 0
+      }
+    },
+    "2740f9b8-2e95-4cc1-a20e-a1c3b5de4812": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/JAN-28-SALE-mobile-banner-without-copy_fa8da6ac-b193-41e7-ab61-397babbef17d.jpg",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "How does it work?",
+        "text": "<p>1. Using our pinch and hold technique, you apply gentle current to targeted areas of the face using the probes attached to the Mini device (The area depends on where you’d like to see results)<\/p><p>2. This gentle current mimics the body’s natural current and stimulates the facial muscles, cell growth and collagen production in the Dermal layer of your skin.<\/p><p>3. Regular stimulation, improved cell growth and higher collagen production leads to evened out facial muscles and connective tissue, ultimately minimizing fine lines and wrinkles, lifting sagging areas and giving you a more youthful appearance. <\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "50",
+        "layout": "right",
+        "alt": true,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "070fa915-b273-46eb-b34d-fa2eb3c67e68": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14815908528182__070fa915-b273-46eb-b34d-fa2eb3c67e68-1665669163a78599d8-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/layers_infographic-1_91dd9a7c-5ad5-4c4d-b3b9-7d8808899bc5.jpg",
+            "link": "",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "template--14815908528182__070fa915-b273-46eb-b34d-fa2eb3c67e68-1665669163a78599d8-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<style>\n.accordion {\n  background-color: #312c2d;\n  color: #E8DFEE;\n  cursor: pointer;\n  padding: 20px;\n  width: 100%;\n  border: 0;\n  text-align: left;\n  outline: none;\n  font-size: 25px;\n  transition: 0.4s;\n}\n\n.accordion:after {\n  content: '\\02795'; \/* Unicode character for \"plus\" sign (+) *\/\n  font-size: 25px;\n  color: #E8DFEE;\n  float: right;\n  margin-left: 5px;\n}\n\n.active:after {\n  content: \"\\2796\"; \/* Unicode character for \"minus\" sign (-) *\/\n}\n\n.panel {\n  padding: 18px;\n  display: none;\n  background-color: #231F20;\n  overflow: hidden;\n  color:#E8DFEE;\n}\n<\/style>\n\n<h2><b>How does mini microcurrent work<\/b><\/h2>\n\n<button class=\"accordion\">1. Choose problem area<\/button>\n<div class=\"panel\">\n  <p>Using our pinch and hold technique, you apply gentle microcurrent to targeted areas of the face using the probes attached to the Mini device (The area depends on where you’d like to see results)<\/p>\n<\/div>\n\n<button class=\"accordion\">2. Stimulate collagen production<\/button>\n<div class=\"panel\">\n  <p>This gentle microcurrent mimics the body’s natural current and stimulates the facial muscles, cell growth and collagen production in the Dermal layer of your skin.<\/p>\n<\/div>\n\n<button class=\"accordion\">3. Maintain a youthful appearance<\/button>\n<div class=\"panel\">\n  <p>Regular stimulation, improved cell growth and higher collagen production leads to evened out facial muscles and connective tissue, ultimately minimizing fine lines and wrinkles, lifting sagging areas and giving you a more youthful appearance. \n<\/p>\n<\/div>\n\n<script>\nvar acc = document.getElementsByClassName(\"accordion\");\nvar i;\n\nfor (i = 0; i < acc.length; i++) {\n  acc[i].addEventListener(\"click\", function() {\n    this.classList.toggle(\"active\");\n    var panel = this.nextElementSibling;\n    if (panel.style.display === \"block\") {\n      panel.style.display = \"none\";\n    } else {\n      panel.style.display = \"block\";\n    }\n  });\n}\n<\/script>",
+            "width": "50%",
+            "alignment": "top-middle"
+          }
+        }
+      },
+      "block_order": [
+        "template--14815908528182__070fa915-b273-46eb-b34d-fa2eb3c67e68-1665669163a78599d8-0",
+        "template--14815908528182__070fa915-b273-46eb-b34d-fa2eb3c67e68-1665669163a78599d8-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "2179a095-b8eb-40b1-965d-c1231e5f4a92": {
+      "type": "advanced-content",
+      "blocks": {
+        "38552211-02f9-405c-bb2f-b50f3e77ea49": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div id=\"watchnow\"><\/div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "45432d19-b0f6-4d01-9125-75f44636c606": {
+          "type": "liquid",
+          "settings": {
+            "code": "<center><h2><b>See what our community has to say about microcurrent:<\/b><\/h2><p>Skip to 1:30 to hear about the Mini<p>\n<\/centre>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "template--14815908528182__2179a095-b8eb-40b1-965d-c1231e5f4a92-1665589840be0d19a2-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/7E-Mini-Home-ugcvideo.jpg",
+            "link": "https:\/\/www.youtube.com\/watch?v=6OsqkjSUU-U",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "38552211-02f9-405c-bb2f-b50f3e77ea49",
+        "45432d19-b0f6-4d01-9125-75f44636c606",
+        "template--14815908528182__2179a095-b8eb-40b1-965d-c1231e5f4a92-1665589840be0d19a2-0"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "5e33d8e0-1d06-4df2-a22e-111e2b552b9c": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/7eWellness_homepage_Which-MINI_icon_54814456-457f-4c12-9004-7db8fc55800d.jpg",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "MyoLift Mini Device + Access to 100’s of free Mini facial treatments",
+        "text": "<p>• 5min - 20+ minute treatments to match your schedule<\/p><p>• New to microcurrent? Real esthetician tutorials on how to use the device for beginners.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "50",
+        "layout": "right",
+        "alt": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "6719cb3d-9249-46ef-9479-f177a66dc4fa": {
+      "type": "hero-animated",
+      "blocks": {
+        "template--14815908528182__6719cb3d-9249-46ef-9479-f177a66dc4fa-16667998483b85e510-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/7e-home-care-mini__desktop.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/7e-home-care-mini__mobile.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--14815908528182__6719cb3d-9249-46ef-9479-f177a66dc4fa-16667998483b85e510-0"
+      ],
+      "settings": {
+        "style": "gif",
+        "title": "MyoLift Mini Device + <br>Access to 100’s of free <br>Mini facial treatments\n<p style=\"font-family: var(--typeBasePrimary); font-size: 40%; line-height: 1.5; width: 500px; margin: auto\">\n• 5min - 20+ minute treatments to match your schedule\n<br>\n• New to microcurrent? Real esthetician tutorials on how to use the device for beginners.\n<br><\/p>",
+        "title_size": 43,
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-top horizontal-left",
+        "desktop_size": 0,
+        "mobile_size": 0
+      }
+    },
+    "d36895ec-cf9b-4860-8f0b-18b33e9cf2f6": {
+      "type": "hero-animated",
+      "blocks": {
+        "template--14815908528182__d36895ec-cf9b-4860-8f0b-18b33e9cf2f6-166670835682d3d739-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/7e-home-care-accessories_desktop_7f77a905-346f-4a3a-96ce-890477c231e8.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/7e-home-care-accessories__mobile_555c6123-da7a-441a-87c2-f09592e054fb.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--14815908528182__d36895ec-cf9b-4860-8f0b-18b33e9cf2f6-166670835682d3d739-0"
+      ],
+      "settings": {
+        "style": "gif",
+        "title": "",
+        "title_size": 80,
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "desktop_size": 0,
+        "mobile_size": 0
+      }
+    },
+    "8ec72160-d4ec-4881-81fd-b1e185f28d76": {
+      "type": "text-columns",
+      "blocks": {
+        "template--14815908528182__8ec72160-d4ec-4881-81fd-b1e185f28d76-16655888632fe2cff5-0": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Device_collection_image_2x_c025cd00-0d98-4280-9a9d-9424538b5044.png",
+            "image_mask": "none",
+            "image_width": 300,
+            "title": "MyoLift Mini Device + Access to 100’s of free Mini facial treatments",
+            "text": "<p>• 5min - 20+ minute treatments to match your schedule<\/p><p>• New to microcurrent? Real esthetician tutorials on how to use the device for beginners.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--14815908528182__8ec72160-d4ec-4881-81fd-b1e185f28d76-16655888632fe2cff5-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/7eWellness-mini-home-63_7196da57-53df-4cc4-b831-9db16b8f077a.jpg",
+            "image_mask": "none",
+            "image_width": 300,
+            "title": "Conductive Eye Mask",
+            "text": "<p>• For you to eye contour and eat popcorn at the same time. It’s a hands-free treatment!<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "fbbe89af-2249-42ee-9535-7b12ab556a10": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/7eWellness-mini-home-64.jpg",
+            "image_mask": "none",
+            "image_width": 300,
+            "title": "Conductive Lip Mask",
+            "text": "<p>• For you to plump your lips while you knit. It’s a hands-free treatment!<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "5aa4c023-2709-4594-be56-06a38db02540": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/7eWellness-67.jpg",
+            "image_mask": "none",
+            "image_width": 300,
+            "title": "Conductive Forehead Mask",
+            "text": "<p>• For you to diminish frown lines while you Netflix and Chill. It’s a hands-free treatment!<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "7d3a1c18-f25a-40bc-b643-cc2cc4c3cb63": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/7eWellness-mini-home-62.jpg",
+            "image_mask": "none",
+            "image_width": 300,
+            "title": "ReStore Conductive Gel",
+            "text": "<p>• Anti-aging conductive gel with Bio-Active complex to improve your facial treaments<\/p><p>• Conductive Gel: helps deliver microcurrent more effectively to your Dermal skin layer<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14815908528182__8ec72160-d4ec-4881-81fd-b1e185f28d76-16655888632fe2cff5-0",
+        "template--14815908528182__8ec72160-d4ec-4881-81fd-b1e185f28d76-16655888632fe2cff5-1",
+        "fbbe89af-2249-42ee-9535-7b12ab556a10",
+        "5aa4c023-2709-4594-be56-06a38db02540",
+        "7d3a1c18-f25a-40bc-b643-cc2cc4c3cb63"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "alt": false
+      }
+    },
+    "91a04e59-569f-49a2-bfdb-78fa2a8c1082": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14815908528182__91a04e59-569f-49a2-bfdb-78fa2a8c1082-1665588673f678ad2e-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<center><h2><b>Are you ready to bring the spa home?<\/b><\/h2><a href=#shopnow><button type=\"button\" class=\"btn\">Yes<\/button><\/a><\/center>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14815908528182__91a04e59-569f-49a2-bfdb-78fa2a8c1082-1665588673f678ad2e-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "164556780200309513": {
+      "type": "apps",
+      "blocks": {
+        "2a3dd040-0528-4160-a336-9edeec07fd6f": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}",
+            "widget_type": "combined_widget"
+          }
+        }
+      },
+      "block_order": [
+        "2a3dd040-0528-4160-a336-9edeec07fd6f"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "product_recommendations_heading": "You may also like",
+        "related_count": 14
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "settings": {
+        "max_width": true
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {}
+    },
+    "9b4ebfad-b85d-40e7-a3cb-6b8a551a26bd": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14845948264502__9b4ebfad-b85d-40e7-a3cb-6b8a551a26bd-16744643045139d794-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/7eWellness_homepage.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/7eWellness_homepage_mobile.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--14845948264502__9b4ebfad-b85d-40e7-a3cb-6b8a551a26bd-16744643045139d794-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    }
+  },
+  "order": [
+    "f82b056d-7473-47e9-8078-140ff5ceb8d2",
+    "main",
+    "8430c9a3-c52b-4bb1-a6f5-18d9a420b3ec",
+    "42fe3f27-9489-4f4c-9a76-9120f6a083d2",
+    "09b16254-77c7-40a0-bc19-0e87f3ad464a",
+    "f13d9689-9e77-400f-8503-b9f1bf8e7bb2",
+    "d4b2f4e5-6513-4f7a-8c7b-6e905818a866",
+    "2740f9b8-2e95-4cc1-a20e-a1c3b5de4812",
+    "070fa915-b273-46eb-b34d-fa2eb3c67e68",
+    "2179a095-b8eb-40b1-965d-c1231e5f4a92",
+    "5e33d8e0-1d06-4df2-a22e-111e2b552b9c",
+    "6719cb3d-9249-46ef-9479-f177a66dc4fa",
+    "d36895ec-cf9b-4860-8f0b-18b33e9cf2f6",
+    "8ec72160-d4ec-4881-81fd-b1e185f28d76",
+    "91a04e59-569f-49a2-bfdb-78fa2a8c1082",
+    "164556780200309513",
+    "product-recommendations",
+    "sub",
+    "collection-return",
+    "9b4ebfad-b85d-40e7-a3cb-6b8a551a26bd"
+  ]
+}

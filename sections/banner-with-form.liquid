@@ -1,0 +1,54 @@
+<div class="banner-with-form" style="background-color:{{ section.settings.bgcolor }}">
+  <div class="page-full">
+    <div class="row">
+      <div class="col-xl-7">
+        <div class="banner-img">
+          {% if section.settings.banner_img != blank %}
+            <img src="{{ section.settings.banner_img | img_url: 'original' }}" class="d-none d-lg-block">
+          {% endif %}
+          {% if section.settings.mob_banner_img != blank %}
+            <img src="{{ section.settings.mob_banner_img | img_url: 'original' }}" class="d-block d-lg-none">
+          {% endif %}
+        </div>
+      </div>
+      <div class="col-xl-5">
+        <div class="banner-form">
+          {{ section.settings.form_html }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Banner With Form",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "banner_img",
+      "label": "Banner Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mob_banner_img",
+      "label": "Mobile Banner Image"
+    },
+    {
+      "type": "color",
+      "id": "bgcolor",
+      "label": "Background Color"
+    },
+    {
+      "type": "html",
+      "id": "form_html",
+      "label": "Form HTML"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Banner With Form"
+    }
+  ]
+}
+{% endschema %}

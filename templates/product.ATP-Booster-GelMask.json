@@ -1,0 +1,244 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "okendo_star_rating_TADRAg": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "metafiled_description_thCG4N": {
+          "type": "metafiled_description",
+          "settings": {
+            "is_meta_description": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "trust_badge_ka3aKe": {
+          "type": "trust_badge",
+          "settings": {
+            "trust_image": "shopify:\/\/shop_images\/Background_2x_9930748b-1cc8-4d33-b97d-a8c4c9db56ff.png"
+          }
+        },
+        "pop_up_rJzQ4w": {
+          "type": "pop_up",
+          "settings": {
+            "title": "Shipping & Handling",
+            "content": "<p>Free USA Ground shipment, Orders are processed within 2 business day. <\/p><p>International Orders Ships within 3 business day.  <\/p><p>International customers are required to pay Duty with their local custom agency. <\/p>"
+          }
+        },
+        "tab_TPkht9": {
+          "type": "tab",
+          "settings": {
+            "title": "Who is this for?",
+            "content": "{{ product.metafields.custom.who_is_this_for.value.who_is_this_for | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "tab_ddakF6": {
+          "type": "tab",
+          "settings": {
+            "title": "What is included?",
+            "content": "{{ product.metafields.custom.what_is_included.value.what_is_included | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "66232a31-cb5f-4a67-97cf-d0377bb2fac6": {
+          "type": "tab",
+          "settings": {
+            "title": "How To Use",
+            "content": "{{ product.metafields.custom.how_to_use_it.value.how_to_use_it | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "title": "Benefits",
+            "content": "{{ product.metafields.custom.benefits.value.benefits | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed": {
+          "type": "tab",
+          "settings": {
+            "title": "Ingredients",
+            "content": "{{ product.metafields.custom.ingredients.value.ingredients | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "tab_QLEFEc": {
+          "type": "tab",
+          "settings": {
+            "title": "Product Features",
+            "content": "<p>{{ product.metafields.custom.product_features.value.product_features | metafield_tag }}<\/p>",
+            "page": ""
+          }
+        },
+        "tab_gFP7Fx": {
+          "type": "tab",
+          "settings": {
+            "title": "Device Support",
+            "content": "{{ product.metafields.custom.device_support.value.device_support | metafield_tag }}",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "okendo_star_rating_TADRAg",
+        "price",
+        "description",
+        "metafiled_description_thCG4N",
+        "buy_buttons",
+        "trust_badge_ka3aKe",
+        "pop_up_rJzQ4w",
+        "tab_TPkht9",
+        "tab_ddakF6",
+        "66232a31-cb5f-4a67-97cf-d0377bb2fac6",
+        "tab",
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed",
+        "tab_QLEFEc",
+        "tab_gFP7Fx"
+      ],
+      "settings": {
+        "product_image_size": "medium",
+        "product_image_type": "slider",
+        "thumbnail_height": "fixed",
+        "product_zoom_enable": true,
+        "enable_video_looping": true,
+        "product_video_style": "unmuted",
+        "product_label": "",
+        "btn_url": "",
+        "btn_txt": "",
+        "sku_enable": false
+      }
+    },
+    "product_specification_k6pJXf": {
+      "type": "product-specification",
+      "blocks": {
+        "how_to_use_EiTaFb": {
+          "type": "how-to-use",
+          "settings": {
+            "tab_heading": "How To Use",
+            "heading": "Energize & Rejuvenate - Power Up Your Skin",
+            "section_content": "<p>The ATP Booster Gel Mask energizes your skin at the cellular level stimulating ATP production to rejuvenate, repair, and restore. Designed to enhance <a href=\"https:\/\/www.7ewellness.com\/\" target=\"_blank\" title=\"https:\/\/www.7ewellness.com\/\"><strong>microcurrent treatments<\/strong><\/a>, it boosts elasticity, reduces fine lines, and defends against environmental stress—all while deeply hydrating your skin.<\/p>",
+            "image": "shopify:\/\/shop_images\/desktop_ATP_Booster_Gel_Mask.png",
+            "mobile_image": "shopify:\/\/shop_images\/mobile_ATP_Booster_Gel_Mask.png",
+            "link": "",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "image_banner_WyiiwD": {
+          "type": "image-banner",
+          "settings": {
+            "tab_heading": "Benefits",
+            "heading": "Enhance Microcurrent Results",
+            "image_banner": "shopify:\/\/shop_images\/1_96_2.png",
+            "mobile_image_banner": "shopify:\/\/shop_images\/1_96_3.png",
+            "image_content": "<p>Use it before MyoLift™ sessions for visibly firmer, smoother, and more radiant skin. With powerhouse ingredients like CoQ10, Ergothioneine, Hyaluronic Acid, and Green Tea, this mask elevates your results and gives tired skin the fuel it needs to glow.<\/p>"
+          }
+        },
+        "faq_AHBBwq": {
+          "type": "faq",
+          "settings": {
+            "tab_heading": "FAQs",
+            "heading": "Frequently Asked Questions",
+            "title1": "What does the ATP Booster Gel Mask do for the skin?",
+            "text1": "<p>The ATP Booster Gel Mask is designed to stimulate ATP synthesis in the skin, essentially providing a boost of energy to the cells. This helps with the rejuvenation process, reducing free radical damage, and enhancing skin resilience against environmental stressors. The mask also targets wrinkle formation, improves elasticity, increases hydration, and helps balance skin tone, leaving you with a smoother, more radiant complexion.<\/p>",
+            "title2": "Is the ATP Booster Gel Mask safe for all skin types?",
+            "text2": "<p>Yes, the ATP Booster Gel Mask is safe for all skin types, including sensitive skin. It has been formulated with gentle yet effective ingredients like Ergothioneine and Coenzyme Q10, which are known for their antioxidant and hydrating properties. The mask is designed to nourish, protect, and enhance your skin without irritation, making it suitable for a wide range of skin concerns.<\/p>",
+            "title3": "How does the ATP Booster Gel Mask work with MyoLift microcurrent treatments?",
+            "text3": "<p>When used before or during a MyoLift microcurrent session, the ATP Booster Gel Mask enhances the effectiveness of the treatment. The gel provides essential hydration and energy to the skin cells, allowing the microcurrent to work more efficiently by improving skin conductivity. This means that the microcurrent can penetrate deeper, stimulating collagen production, boosting elasticity, and delivering more noticeable, longer-lasting results.<\/p>",
+            "title4": " Will the ATP Booster Gel Mask help reduce signs of aging?",
+            "text4": "<p>Yes! The mask is especially beneficial for anti-aging treatments. By promoting ATP synthesis and improving skin elasticity, it helps to reduce the appearance of fine lines and wrinkles. Additionally, the antioxidant-rich formula helps protect against oxidative damage, which contributes to premature aging, leaving the skin looking firmer, smoother, and more youthful.<\/p>",
+            "title5": "Can I use the ATP Booster Gel Mask if I don’t have a MyoLift device?",
+            "text5": "<p>Absolutely! While the ATP Booster Gel Mask works wonderfully with MyoLift microcurrent treatments, it is also effective on its own. The mask provides deep hydration, increases skin energy, and promotes overall rejuvenation, so it can still enhance the appearance of your skin without the device.<\/p>",
+            "title6": "How does the ATP Booster Gel Mask benefit my skin?",
+            "text6": "<p>Increases hydration to keep your skin smooth and plump.<\/p><p>Reduces fine lines by stimulating collagen production and improving skin elasticity.<\/p><p>Enhances skin resilience to protect against environmental stressors.<\/p><p>Balances skin tone for a brighter, more even complexion.<\/p><p>Boosts cellular energy to help your skin repair and regenerate faster.<\/p>",
+            "title7": "How often should I use the ATP Booster Gel Mask for best results?",
+            "text7": "<p>For best results, use the ATP Booster Gel Mask once a week, especially before a microcurrent treatment. You can use it more frequently depending on your skin’s needs—whether you’re targeting dryness, fine lines, or dullness. Regular use will help maintain a hydrated, youthful complexion.<\/p>"
+          }
+        },
+        "reviews_8NYwWW": {
+          "type": "reviews",
+          "settings": {
+            "tab_heading": "Reviews",
+            "enable_review": true
+          }
+        }
+      },
+      "block_order": [
+        "how_to_use_EiTaFb",
+        "image_banner_WyiiwD",
+        "faq_AHBBwq",
+        "reviews_8NYwWW"
+      ],
+      "name": "Product Specifications",
+      "settings": {
+        "heading": ""
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "settings": {
+        "max_width": true
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {}
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "product_recommendations_heading": "Related products",
+        "related_count": 4
+      }
+    },
+    "featured_collection_pht7X9": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.featured_collection_grid.name",
+      "settings": {
+        "custom_class": "",
+        "title": "Featured collection grid",
+        "description": "",
+        "home_featured_products": "shop-all-microcurrent-accessories-tools",
+        "rows": 1,
+        "per_row_desktop": 4,
+        "per_row_mobile": "1",
+        "view_all": false,
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product_specification_k6pJXf",
+    "sub",
+    "collection-return",
+    "product-recommendations",
+    "featured_collection_pht7X9"
+  ]
+}

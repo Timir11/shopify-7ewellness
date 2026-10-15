@@ -1,0 +1,725 @@
+{
+  "sections": {
+    "f82b056d-7473-47e9-8078-140ff5ceb8d2": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14815908528182__f82b056d-7473-47e9-8078-140ff5ceb8d2-1666805528cf363b75-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div id=\"shopnow\"><\/div>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14815908528182__f82b056d-7473-47e9-8078-140ff5ceb8d2-1666805528cf363b75-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "custom_bkn7PC": {
+          "type": "custom",
+          "settings": {
+            "code": "<P style=\"font-size: 20px;line-height: 1; margin-top: -20px;\"><em>Bundle Items Valued at $978<\/em><\/P>"
+          }
+        },
+        "okendo_star_rating_APrCLH": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "d333423b-5222-44c1-92e2-34ee278ece35": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "We are sold out."
+          }
+        },
+        "a6a39ed7-01ca-4dfc-bb69-2ff290005b36": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Your love for Triwave has been overwhelming! Thank you. We are working hard to get the Triwave restocked and resume shipping. Sign up to get notified when we are back in stock."
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": true
+          }
+        },
+        "1a71204d-c65c-415c-96c7-40100a9cab73": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Please do not be disappointed. Take a deep breath, stay present and trust us it will be worth the wait!"
+          }
+        },
+        "5c7d527f-df37-4f1b-9cd4-1776efdeb363": {
+          "type": "text",
+          "settings": {
+            "text": "Facial Toning Device + Hands-Free Attachments"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "f0b07749-e4bc-415d-8ff1-95fbf1c01dd3": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "checkmark",
+            "text": "Start your skin treatment today, pay for the results later."
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "title": "What's Included",
+            "content": "<ul><li>MyoLift™ Triwave Device <\/li><li>Forehead Mask<\/li><li>Lip Mask<\/li><li>Eye Mask<\/li><li>2oz Replenish Spritzer<\/li><li>4oz Renu Conductive Gel<\/li><li>Lead Wire<\/li><li>Charger<\/li><li>Applicator Probes<\/li><li>Mangosteen Cleanser<\/li><li>Revital C Serum<\/li><li>Eye Lift Serum <\/li><li>Anti-Aging Serum<\/li><li>MyoLift™ Bag <\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "cfc81da9-3fa6-4351-99ab-185a73614e19": {
+          "type": "tab",
+          "settings": {
+            "title": "Who is this for?",
+            "content": "<p>Anyone looking to<\/p><p>• Maintain a youthful appearance<\/p><p>• Minimize breakouts<\/p><p>• Reduce fine lines and wrinkles<\/p><p>• Detoxify their skin <\/p><p>• Build healthy skin cells<\/p><p>• Increase production of collagen and elastin<\/p><p>• Increase skin elasticity, fullness and bounciness<\/p><p><\/p>",
+            "page": ""
+          }
+        },
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed": {
+          "type": "tab",
+          "settings": {
+            "title": "How does it compare to other devices?",
+            "content": "<p>The Triwave goes up to 400 microamps and has 3 modalities including Educate, Erase and Rejuv. Rejuv stimulates the movement of lymph to cleanse and nourish skin health, supporting calm, clear skin. The Triwave is the only at home device to offer Rejuv!<\/p>",
+            "page": ""
+          }
+        },
+        "951d62a3-d4c7-4864-9c84-04d5894a1fc3": {
+          "type": "tab",
+          "settings": {
+            "title": "Shipping & Handling",
+            "content": "<p>Free USA Ground shipment, Orders are processed within 2 business day.<\/p><p>International Orders Ships within 3 business day. <\/p><p>International customers are required to pay Duty with their local custom agency. <\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "price",
+        "custom_bkn7PC",
+        "okendo_star_rating_APrCLH",
+        "d333423b-5222-44c1-92e2-34ee278ece35",
+        "a6a39ed7-01ca-4dfc-bb69-2ff290005b36",
+        "buy_buttons",
+        "1a71204d-c65c-415c-96c7-40100a9cab73",
+        "5c7d527f-df37-4f1b-9cd4-1776efdeb363",
+        "description",
+        "f0b07749-e4bc-415d-8ff1-95fbf1c01dd3",
+        "tab",
+        "cfc81da9-3fa6-4351-99ab-185a73614e19",
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed",
+        "951d62a3-d4c7-4864-9c84-04d5894a1fc3"
+      ],
+      "settings": {
+        "product_image_size": "medium",
+        "product_image_type": "stacked",
+        "thumbnail_height": "flexible",
+        "product_zoom_enable": true,
+        "enable_video_looping": true,
+        "product_video_style": "muted",
+        "sku_enable": false
+      }
+    },
+    "09b16254-77c7-40a0-bc19-0e87f3ad464a": {
+      "type": "hero-animated",
+      "blocks": {
+        "template--14815908528182__09b16254-77c7-40a0-bc19-0e87f3ad464a-1666195718f8bc5d32-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/7E-BENEFIT-ICONS_DESKTOP_eba70c67-c145-48c1-b63f-fdb4032dd716.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/7E-BENEFIT-ICONS_MOBILE.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--14815908528182__09b16254-77c7-40a0-bc19-0e87f3ad464a-1666195718f8bc5d32-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "style": "gif",
+        "title": "",
+        "title_size": 80,
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "desktop_size": 0,
+        "mobile_size": 0
+      }
+    },
+    "f13d9689-9e77-400f-8503-b9f1bf8e7bb2": {
+      "type": "text-and-image",
+      "custom_css": [
+        ".image-wrap {background: none !important;}",
+        ".feature-row__item {color: #312c2d;}",
+        ".index-section--alt {background: #f1f1f1;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Triwave--Image.png",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "What is microcurrent technology?",
+        "text": "<p>True-Microcurrent(™) technology is a<strong> low level of electrical current <\/strong>that mirrors the <strong>body's own natural current.<\/strong><\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "50",
+        "layout": "right",
+        "alt": true,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "d4b2f4e5-6513-4f7a-8c7b-6e905818a866": {
+      "type": "hero-animated",
+      "blocks": {
+        "template--14815908528182__d4b2f4e5-6513-4f7a-8c7b-6e905818a866-16655898406a39a3db-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Black_to_purple_desktop_2x_83b9e005-ad44-41c8-ac88-8a0a763dcbec.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--14815908528182__d4b2f4e5-6513-4f7a-8c7b-6e905818a866-16655898406a39a3db-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "style": "gif",
+        "title": "",
+        "title_size": 80,
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "desktop_size": 0,
+        "mobile_size": 0
+      }
+    },
+    "2740f9b8-2e95-4cc1-a20e-a1c3b5de4812": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/JAN-28-SALE-mobile-banner-without-copy_fa8da6ac-b193-41e7-ab61-397babbef17d.jpg",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "How does it work?",
+        "text": "<p>1. Using our pinch and hold technique, you apply gentle current to targeted areas of the face using the probes attached to the Mini device (The area depends on where you’d like to see results)<\/p><p>2. This gentle current mimics the body’s natural current and stimulates the facial muscles, cell growth and collagen production in the Dermal layer of your skin.<\/p><p>3. Regular stimulation, improved cell growth and higher collagen production leads to evened out facial muscles and connective tissue, ultimately minimizing fine lines and wrinkles, lifting sagging areas and giving you a more youthful appearance. <\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "50",
+        "layout": "right",
+        "alt": true,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "070fa915-b273-46eb-b34d-fa2eb3c67e68": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14815908528182__070fa915-b273-46eb-b34d-fa2eb3c67e68-1665669163a78599d8-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/what_is_microcurrent_image_f5ecc0a4-59a7-403e-8680-1d037aad64de.png",
+            "link": "",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "template--14815908528182__070fa915-b273-46eb-b34d-fa2eb3c67e68-1665669163a78599d8-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<style>\n.accordion {\n  background-color: #312c2d;\n  color: #E8DFEE;\n  cursor: pointer;\n  padding: 20px;\n  width: 100%;\n  border: 0;\n  text-align: left;\n  outline: none;\n  font-size: 25px;\n  transition: 0.4s;\n}\n\n.accordion:after {\n  content: '\\02795'; \/* Unicode character for \"plus\" sign (+) *\/\n  font-size: 25px;\n  color: #E8DFEE;\n  float: right;\n  margin-left: 5px;\n}\n\n.active:after {\n  content: \"\\2796\"; \/* Unicode character for \"minus\" sign (-) *\/\n}\n\n.panel {\n  padding: 18px;\n  display: none;\n  background-color: #231F20;\n  overflow: hidden;\n  color:#E8DFEE;\n}\n<\/style>\n\n<h1>How does it work?<\/h1>\n\n<button class=\"accordion\">1. Choose problem area<\/button>\n<div class=\"panel\">\n  <p>Using our pinch and hold technique, you apply gentle microcurrent to targeted areas of the face using the probes attached to the Triwave device (The area depends on where you’d like to see results)<\/p>\n<\/div>\n\n<button class=\"accordion\">2. Stimulate collagen production<\/button>\n<div class=\"panel\">\n  <p>This gentle microcurrent mimics the body’s natural current and stimulates the facial muscles, cell growth and collagen production in the Dermal layer of your skin.<\/p>\n<\/div>\n\n<button class=\"accordion\">3. Maintain a youthful appearance<\/button>\n<div class=\"panel\">\n  <p>Regular stimulation, improved cell growth and higher collagen production leads to evened out facial muscles and connective tissue, ultimately minimizing fine lines and wrinkles, lifting sagging areas and giving you a more youthful appearance. \n<\/p>\n<\/div>\n\n<script>\nvar acc = document.getElementsByClassName(\"accordion\");\nvar i;\n\nfor (i = 0; i < acc.length; i++) {\n  acc[i].addEventListener(\"click\", function() {\n    this.classList.toggle(\"active\");\n    var panel = this.nextElementSibling;\n    if (panel.style.display === \"block\") {\n      panel.style.display = \"none\";\n    } else {\n      panel.style.display = \"block\";\n    }\n  });\n}\n<\/script>",
+            "width": "50%",
+            "alignment": "top-middle"
+          }
+        }
+      },
+      "block_order": [
+        "template--14815908528182__070fa915-b273-46eb-b34d-fa2eb3c67e68-1665669163a78599d8-0",
+        "template--14815908528182__070fa915-b273-46eb-b34d-fa2eb3c67e68-1665669163a78599d8-1"
+      ],
+      "custom_css": [
+        "@media only screen and (max-width: 768px) {.rte h1 {margin-top: 0.5rem; }}"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "8bfe970b-abf9-4303-b7b3-9a1d078ed8b6": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14867741769782__8bfe970b-abf9-4303-b7b3-9a1d078ed8b6-1673470994cd202137-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<center><h1>Three Waveforms<\/h1><p>The MyoLift Triwave comes with three frequency specific waveforms that target different skin concerns.<p><\/p>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "template--14867741769782__8bfe970b-abf9-4303-b7b3-9a1d078ed8b6-1673470994cd202137-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/revised-de-puff-restore-kit---image-change-for-website.png",
+            "link": "",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14867741769782__8bfe970b-abf9-4303-b7b3-9a1d078ed8b6-1673470994cd202137-1",
+        "template--14867741769782__8bfe970b-abf9-4303-b7b3-9a1d078ed8b6-1673470994cd202137-0"
+      ],
+      "custom_css": [
+        ".index-section--alt {background-color: #f1f1f1 !important; padding: 40px 0;}",
+        ".image-wrap {background: none !important;}",
+        ".rte {color: #312c2d;}",
+        ".custom__item {margin-bottom: 0;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "alt": true,
+        "lazyload_images": true
+      }
+    },
+    "2179a095-b8eb-40b1-965d-c1231e5f4a92": {
+      "type": "advanced-content",
+      "blocks": {
+        "38552211-02f9-405c-bb2f-b50f3e77ea49": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "code": "<div id=\"watchnow\"><\/div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "45432d19-b0f6-4d01-9125-75f44636c606": {
+          "type": "liquid",
+          "settings": {
+            "code": "<center><h1>See what Jeana from the Art of Skin Care has to say! <\/h1><pMini<p>\n<\/centre>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "template--14815908528182__2179a095-b8eb-40b1-965d-c1231e5f4a92-1665589840be0d19a2-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-01-11_at_1.23.02_PM-min.png",
+            "link": "https:\/\/www.youtube.com\/watch?v=te27kJjRWgo&t=2s",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "38552211-02f9-405c-bb2f-b50f3e77ea49",
+        "45432d19-b0f6-4d01-9125-75f44636c606",
+        "template--14815908528182__2179a095-b8eb-40b1-965d-c1231e5f4a92-1665589840be0d19a2-0"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "5e33d8e0-1d06-4df2-a22e-111e2b552b9c": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/7eWellness_homepage_Which-MINI_icon_54814456-457f-4c12-9004-7db8fc55800d.jpg",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "MyoLift Mini Device + Access to 100’s of free Mini facial treatments",
+        "text": "<p>• 5min - 20+ minute treatments to match your schedule<\/p><p>• New to microcurrent? Real esthetician tutorials on how to use the device for beginners.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "50",
+        "layout": "right",
+        "alt": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "6719cb3d-9249-46ef-9479-f177a66dc4fa": {
+      "type": "hero-animated",
+      "blocks": {
+        "template--14815908528182__6719cb3d-9249-46ef-9479-f177a66dc4fa-16667998483b85e510-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/7e-home-care-mini__desktop.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/7e-home-care-mini__mobile.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--14815908528182__6719cb3d-9249-46ef-9479-f177a66dc4fa-16667998483b85e510-0"
+      ],
+      "settings": {
+        "style": "gif",
+        "title": "MyoLift Triwave Device + <br>Access to free <br> facial treatments\n<p style=\"font-family: var(--typeBasePrimary); font-size: 40%; line-height: 1.5; width: 500px; margin: auto\">\n• 5min - 20+ minute treatments to match your schedule\n<br>\n• New to microcurrent? Real esthetician tutorials on how to use the device for beginners.\n<br><\/p>",
+        "title_size": 43,
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-top horizontal-left",
+        "desktop_size": 0,
+        "mobile_size": 0
+      }
+    },
+    "d36895ec-cf9b-4860-8f0b-18b33e9cf2f6": {
+      "type": "hero-animated",
+      "blocks": {
+        "template--14815908528182__d36895ec-cf9b-4860-8f0b-18b33e9cf2f6-166670835682d3d739-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/TRIWAVE_WHATS_INCLUDED.png",
+            "image_mobile": "shopify:\/\/shop_images\/TRIWAVE_WHATS_INCLUDED_MOBILE.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--14815908528182__d36895ec-cf9b-4860-8f0b-18b33e9cf2f6-166670835682d3d739-0"
+      ],
+      "settings": {
+        "style": "gif",
+        "title": "",
+        "title_size": 80,
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "desktop_size": 0,
+        "mobile_size": 0
+      }
+    },
+    "16288a53-ab85-41db-898e-00acca97a75f": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14867741769782__16288a53-ab85-41db-898e-00acca97a75f-167346889916dbb021-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<center><h1>Get Started Using The Probes!<\/h1><p>Jeana from the Art of Skin Care walks through a Triwave treatment using Educate, Erase, and Rejuv mode!<p><\/p>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "template--14867741769782__16288a53-ab85-41db-898e-00acca97a75f-167346889916dbb021-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-01-11_at_1-compressed.jpg",
+            "link": "https:\/\/www.youtube.com\/watch?v=pz7TGY1OlO4&t=2s",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14867741769782__16288a53-ab85-41db-898e-00acca97a75f-167346889916dbb021-1",
+        "template--14867741769782__16288a53-ab85-41db-898e-00acca97a75f-167346889916dbb021-0"
+      ],
+      "custom_css": [
+        ".index-section--alt {background-color: #f1f1f1;}",
+        ".rte {color: #312c2d;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "alt": true,
+        "lazyload_images": true
+      }
+    },
+    "85fedcb1-5ddb-4491-8eea-3194d82b4551": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14867741769782__85fedcb1-5ddb-4491-8eea-3194d82b4551-167346889916dbb021-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-01-11_at_1.52.08_PM-min.png",
+            "link": "https:\/\/www.youtube.com\/watch?v=q1WfBH7jR_U&t=265s",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "template--14867741769782__85fedcb1-5ddb-4491-8eea-3194d82b4551-167346889916dbb021-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<center><h1>Using The Triwave With Masks!<\/h1><p>Jeana from the Art of Skin Care walks through how to use the MyoLift Triwave using our conductive masks!<\/p>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "2b8276da-6696-4648-84cf-d61b322fee25": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "link": "",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14867741769782__85fedcb1-5ddb-4491-8eea-3194d82b4551-167346889916dbb021-0",
+        "template--14867741769782__85fedcb1-5ddb-4491-8eea-3194d82b4551-167346889916dbb021-1",
+        "2b8276da-6696-4648-84cf-d61b322fee25"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "8ec72160-d4ec-4881-81fd-b1e185f28d76": {
+      "type": "text-columns",
+      "blocks": {
+        "template--14815908528182__8ec72160-d4ec-4881-81fd-b1e185f28d76-16655888632fe2cff5-0": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Device_collection_image_2x_c025cd00-0d98-4280-9a9d-9424538b5044.png",
+            "image_mask": "none",
+            "image_width": 300,
+            "title": "MyoLift Mini Device + Access to 100’s of free Mini facial treatments",
+            "text": "<p>• 5min - 20+ minute treatments to match your schedule<\/p><p>• New to microcurrent? Real esthetician tutorials on how to use the device for beginners.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--14815908528182__8ec72160-d4ec-4881-81fd-b1e185f28d76-16655888632fe2cff5-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/7eWellness-mini-home-63_7196da57-53df-4cc4-b831-9db16b8f077a.jpg",
+            "image_mask": "none",
+            "image_width": 300,
+            "title": "Conductive Eye Mask",
+            "text": "<p>• For you to eye contour and eat popcorn at the same time. It’s a hands-free treatment!<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "fbbe89af-2249-42ee-9535-7b12ab556a10": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/7eWellness-mini-home-64.jpg",
+            "image_mask": "none",
+            "image_width": 300,
+            "title": "Conductive Lip Mask",
+            "text": "<p>• For you to plump your lips while you knit. It’s a hands-free treatment!<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "5aa4c023-2709-4594-be56-06a38db02540": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/7eWellness-67.jpg",
+            "image_mask": "none",
+            "image_width": 300,
+            "title": "Conductive Forehead Mask",
+            "text": "<p>• For you to diminish frown lines while you Netflix and Chill. It’s a hands-free treatment!<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "7d3a1c18-f25a-40bc-b643-cc2cc4c3cb63": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/7eWellness-mini-home-62.jpg",
+            "image_mask": "none",
+            "image_width": 300,
+            "title": "ReStore Conductive Gel",
+            "text": "<p>• Anti-aging conductive gel with Bio-Active complex to improve your facial treaments<\/p><p>• Conductive Gel: helps deliver microcurrent more effectively to your Dermal skin layer<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14815908528182__8ec72160-d4ec-4881-81fd-b1e185f28d76-16655888632fe2cff5-0",
+        "template--14815908528182__8ec72160-d4ec-4881-81fd-b1e185f28d76-16655888632fe2cff5-1",
+        "fbbe89af-2249-42ee-9535-7b12ab556a10",
+        "5aa4c023-2709-4594-be56-06a38db02540",
+        "7d3a1c18-f25a-40bc-b643-cc2cc4c3cb63"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "alt": false
+      }
+    },
+    "91a04e59-569f-49a2-bfdb-78fa2a8c1082": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14815908528182__91a04e59-569f-49a2-bfdb-78fa2a8c1082-1665588673f678ad2e-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<center><h2><b>Are you ready to bring the spa home?<\/b><\/h2><a href=#shopnow><button type=\"button\" class=\"btn\">Add To Cart<\/button><\/a><\/center>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14815908528182__91a04e59-569f-49a2-bfdb-78fa2a8c1082-1665588673f678ad2e-1"
+      ],
+      "custom_css": [
+        ".index-section {padding: 40px 0px; margin: 0; background: #f1f1f1;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "164556780200309513": {
+      "type": "apps",
+      "blocks": {
+        "2a3dd040-0528-4160-a336-9edeec07fd6f": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "at-home-microcurrent-devices-myolift-triwave",
+            "widget_type": "combined_widget"
+          }
+        }
+      },
+      "block_order": [
+        "2a3dd040-0528-4160-a336-9edeec07fd6f"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "product_recommendations_heading": "You may also like",
+        "related_count": 14
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "settings": {
+        "max_width": true
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {}
+    },
+    "af3153a4-f9c1-40da-a5bb-3013a3d781ca": {
+      "type": "featured-video",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "alt": false
+      }
+    },
+    "6a5dd5cb-6bcd-4c3f-8c47-5c031a39ab96": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Image with text",
+        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "50",
+        "layout": "right",
+        "alt": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    }
+  },
+  "order": [
+    "f82b056d-7473-47e9-8078-140ff5ceb8d2",
+    "main",
+    "09b16254-77c7-40a0-bc19-0e87f3ad464a",
+    "f13d9689-9e77-400f-8503-b9f1bf8e7bb2",
+    "d4b2f4e5-6513-4f7a-8c7b-6e905818a866",
+    "2740f9b8-2e95-4cc1-a20e-a1c3b5de4812",
+    "070fa915-b273-46eb-b34d-fa2eb3c67e68",
+    "8bfe970b-abf9-4303-b7b3-9a1d078ed8b6",
+    "2179a095-b8eb-40b1-965d-c1231e5f4a92",
+    "5e33d8e0-1d06-4df2-a22e-111e2b552b9c",
+    "6719cb3d-9249-46ef-9479-f177a66dc4fa",
+    "d36895ec-cf9b-4860-8f0b-18b33e9cf2f6",
+    "16288a53-ab85-41db-898e-00acca97a75f",
+    "85fedcb1-5ddb-4491-8eea-3194d82b4551",
+    "8ec72160-d4ec-4881-81fd-b1e185f28d76",
+    "91a04e59-569f-49a2-bfdb-78fa2a8c1082",
+    "164556780200309513",
+    "product-recommendations",
+    "sub",
+    "collection-return",
+    "af3153a4-f9c1-40da-a5bb-3013a3d781ca",
+    "6a5dd5cb-6bcd-4c3f-8c47-5c031a39ab96"
+  ]
+}

@@ -1,0 +1,178 @@
+<div class="slider-with-tabs">
+  <div class="index-section {% if section.settings.alt_bg %}index-section--alt{% endif %}">
+    {%- unless section.settings.full_width -%}
+      <div class="page-width">
+    {%- endunless -%}
+    {% if section.settings.title != blank %}
+      <header class="section-header">
+        <h2 class="section-header__title appear-delay">{{ section.settings.title }}</h2>
+      </header>
+    {% endif %}
+    <div class="slider_tabs_wraper">
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          {% for block in section.blocks %}
+            {% if block.type == 'tab_name' %}
+              <a
+                class="nav-item nav-link-{{ section.id }} {% if forloop.first %}active{% endif %}"
+                data-toggle="tab"
+                role="tab"
+                aria-controls="nav-{{ forloop.index }}-{{ section.id }}"
+                aria-selected="true"
+              >
+                {{- block.settings.tab_name -}}
+              </a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </nav>
+      <div class="tab-content">
+        {% for block in section.blocks %}
+          {% if block.type == 'tab_name' %}
+            <div
+              class="tab-pane tab-pane-{{ section.id }} {% if forloop.first %}active{% endif %}"
+              id="nav-{{ forloop.index }}-{{ section.id }}"
+            >
+              {% if block.settings.imgdrop != blank %}
+                <div class="before-after-slider-{{ section.id }} before-after-result-slider">
+                  {% assign slide_items = block.settings.imgdrop %}
+                  {%- for entry in slide_items %}
+                    {% for item in entry.before_after_images.value %}
+                      <div class="before-after-slider-item">
+                        <img
+                          src="{{ item | img_url: '300x' }}"
+                          alt="{{ item.alt | escape }}"
+                        >
+                      </div>
+                    {% endfor %}
+                  {% endfor %}
+                </div>
+              {% endif %}
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    {%- unless section.settings.full_width -%}
+      </div>
+    {%- endunless -%}
+  </div>
+</div>
+<script>
+$(document).ready(function() {
+  const tabs = document.querySelectorAll('.nav-link-{{ section.id }}');
+  const tabContents = document.querySelectorAll('.tab-pane-{{ section.id }}');
+
+  function initializeSlickSlider() {
+    // Destroy existing sliders first
+    if ($('.before-after-result-slider').hasClass('slick-initialized')) {
+        $('.before-after-result-slider').slick('unslick');
+    }
+
+    // Initialize sliders
+    $('.before-after-result-slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: true,
+        centerMode: false,
+        arrows: false,
+        focusOnSelect: false,
+        responsive:[
+          {
+            breakpoint: '768',
+            settings:{
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            }
+          }
+        ]
+    });
+  }
+
+  tabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+          // Remove active class from all tabs
+          tabs.forEach(t => t.classList.remove('active'));
+
+          // Add active class to clicked tab
+          tab.classList.add('active');
+
+          // Hide all tab contents
+          tabContents.forEach(content => content.classList.remove('active'));
+
+          // Show the corresponding tab content
+          const targetTab = tab.getAttribute('aria-controls');
+          let targetContent;
+          targetContent = document.querySelector(`#${targetTab}`);
+          console.log(targetContent);
+        
+          if (targetContent) {
+              targetContent.classList.add('active');
+              // Reinitialize sliders after tab content is displayed
+              setTimeout(() => {
+                  initializeSlickSlider();
+              }, 1000);
+          }
+      });
+  });
+
+  // Initialize: Show the first tab's content and initialize sliders by default
+  if (tabs.length > 0) {
+      tabs[0].classList.add('active');
+      const firstTab = document.querySelector('#nav-1-{{ section.id }}');
+      if (firstTab) {
+          firstTab.classList.add('active');
+          // Initialize sliders on first load
+          setTimeout(() => {
+              initializeSlickSlider();
+          }, 1000);
+      }
+  } 
+});
+</script>
+{% schema %}
+{
+  "name": "Slider With Tabs",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "alt_bg",
+      "label": "Use alternate background"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full Width"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    }
+  ],
+  "blocks": [
+    {
+      "name":"Tab",
+      "type": "tab_name",
+      "settings":[
+        {
+          "type": "text",
+          "id": "tab_name",
+          "label": "Tab Name"
+        },
+        {
+          "type": "metaobject_list",
+          "metaobject_type": "before_after_images",
+          "id": "imgdrop",
+          "label": "Before After Images"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Slider With Tabs"
+    }
+  ]
+}
+{% endschema %}

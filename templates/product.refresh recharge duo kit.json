@@ -1,0 +1,797 @@
+{
+  "sections": {
+    "f82b056d-7473-47e9-8078-140ff5ceb8d2": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14815908528182__f82b056d-7473-47e9-8078-140ff5ceb8d2-1666805528cf363b75-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div id=\"shopnow\"><\/div>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14815908528182__f82b056d-7473-47e9-8078-140ff5ceb8d2-1666805528cf363b75-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "okendo_star_rating_CgPpdy": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": true
+          }
+        },
+        "5c7d527f-df37-4f1b-9cd4-1776efdeb363": {
+          "type": "text",
+          "settings": {
+            "text": "Facial Toning Device + Hands-Free Attachments"
+          }
+        },
+        "1fb5261d-d27c-4d78-8112-5c151eb49ed9": {
+          "type": "custom",
+          "settings": {
+            "code": "<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2745\/9950\/files\/2-icons.png?v=1698940115\" \/>"
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed": {
+          "type": "tab",
+          "settings": {
+            "title": "What's Included",
+            "content": "<h5>QT Full Package <\/h5><ul><li>QT device<\/li><li>Leadwire<\/li><li>Applicator probes<\/li><li>Charger<\/li><li>2oz Restore gel<\/li><li>2oz Replenish<\/li><li>Jowl Mask<\/li><li>Mask batch (eye, lip, forehead mask)<\/li><li>Neck mask (4 electrodes)<\/li><\/ul><h5>MyoLift Mini Full Package <\/h5><ul><li>MyoLift Mini Device<\/li><li>Leadwire<\/li><li>Applicator probes<\/li><li>Charger<\/li><li>4oz restore<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "title": "Who is this for?",
+            "content": "<p>• Those looking to reduce fine lines & wrinkles<\/p><p>• Those looking to maintain a youthful appearance<\/p><p>• Those who want the spa treatment and results at home and on the go<\/p><p><\/p><p><\/p>",
+            "page": ""
+          }
+        },
+        "951d62a3-d4c7-4864-9c84-04d5894a1fc3": {
+          "type": "tab",
+          "settings": {
+            "title": "Shipping & Handling",
+            "content": "<p>Free USA Ground shipment, Orders are processed within 2 business day.<\/p><p>International Orders Ships within 3 business day. <\/p><p>International customers are required to pay Duty with their local custom agency. <\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "price",
+        "okendo_star_rating_CgPpdy",
+        "variant_picker",
+        "buy_buttons",
+        "5c7d527f-df37-4f1b-9cd4-1776efdeb363",
+        "1fb5261d-d27c-4d78-8112-5c151eb49ed9",
+        "description",
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed",
+        "tab",
+        "951d62a3-d4c7-4864-9c84-04d5894a1fc3"
+      ],
+      "settings": {
+        "product_image_size": "medium",
+        "product_image_type": "stacked",
+        "thumbnail_height": "flexible",
+        "product_zoom_enable": true,
+        "enable_video_looping": true,
+        "product_video_style": "muted",
+        "sku_enable": false
+      }
+    },
+    "631e490c-9e0a-4633-8a61-b562d59e610a": {
+      "type": "featured-video",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=z2wjNUrzvt4",
+        "alt": false
+      }
+    },
+    "97a60902-e51f-4d88-8e08-3c5ed31ee260": {
+      "type": "featured-video",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=wvWbiX9QfKQ",
+        "alt": false
+      }
+    },
+    "7649e298-55c1-4a82-8968-f0a69b8198c6": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14841744883766__7649e298-55c1-4a82-8968-f0a69b8198c6-1674447882f8047a7a-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>Our Facial Toning Clinical Results<\/h2>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14841744883766__7649e298-55c1-4a82-8968-f0a69b8198c6-1674447882f8047a7a-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "d7469a12-86d1-4693-95ef-924de0c64442": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14841744883766__d7469a12-86d1-4693-95ef-924de0c64442-1674446829c1b54cb9-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/desktop-banner-1-1.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/banner_2_1.png"
+          }
+        },
+        "c6229401-f68f-4685-9de2-d5aa771789f9": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/desktop-banner-3-2.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/banner_3_6eed2ca5-3c41-4420-a46c-a20f425c0c3f.jpg"
+          }
+        },
+        "af6e37c3-69cd-4fe5-bff4-ef29e520f47d": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/desktop-banner-1-1_09a39354-a853-406a-bc57-a75eb7942e2d.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/banner_1_1.png"
+          }
+        },
+        "7a0362d2-21d8-4d39-ba24-989bf999482b": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/desktop-banner-4-1.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/banner_4_1.png"
+          }
+        },
+        "50c0d02e-470a-4df1-bf20-d20e025e5638": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/desktop-banner-5-2.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/banner_5.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--14841744883766__d7469a12-86d1-4693-95ef-924de0c64442-1674446829c1b54cb9-0",
+        "c6229401-f68f-4685-9de2-d5aa771789f9",
+        "af6e37c3-69cd-4fe5-bff4-ef29e520f47d",
+        "7a0362d2-21d8-4d39-ba24-989bf999482b",
+        "50c0d02e-470a-4df1-bf20-d20e025e5638"
+      ],
+      "settings": {
+        "style": "dots",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "lazyload_images": true
+      }
+    },
+    "f13d9689-9e77-400f-8503-b9f1bf8e7bb2": {
+      "type": "text-and-image",
+      "custom_css": [
+        ".index-section--alt {padding: 50px 0px 0px;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/myolift_QT_infographic-02.jpg",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "What is microcurrent technology?",
+        "text": "<p>True-Microcurrent(™) technology is a<strong> low level of electrical current <\/strong>that mirrors the <strong>body's own natural current.<\/strong><\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "50",
+        "layout": "right",
+        "alt": true,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "1a93ace9-7946-4257-80f5-78e402d94cd2": {
+      "type": "text-columns",
+      "blocks": {
+        "template--14945660993590__1a93ace9-7946-4257-80f5-78e402d94cd2-text_block-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Tightened_Skin.png",
+            "image_mask": "rounded",
+            "image_width": 150,
+            "title": "Tightened Skin",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--14945660993590__1a93ace9-7946-4257-80f5-78e402d94cd2-text_block-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Reduced_fine_Lines_Wrinkles_d1b6dd81-c80b-4b85-b62c-bea9298c7d09.png",
+            "image_mask": "none",
+            "image_width": 150,
+            "title": "Reduced fine lines & wrinkles",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "45d60f1d-cbec-4882-931f-ff5da5a1a05f": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/lifted_skin.png",
+            "image_mask": "none",
+            "image_width": 150,
+            "title": "Lifted Skin",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "af2c2079-c4b4-4834-99d8-33acbde9690c": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/improved_skin.png",
+            "image_mask": "none",
+            "image_width": 150,
+            "title": "IMPROVED SKIN TONE",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14945660993590__1a93ace9-7946-4257-80f5-78e402d94cd2-text_block-1",
+        "template--14945660993590__1a93ace9-7946-4257-80f5-78e402d94cd2-text_block-2",
+        "45d60f1d-cbec-4882-931f-ff5da5a1a05f",
+        "af2c2079-c4b4-4834-99d8-33acbde9690c"
+      ],
+      "custom_css": [
+        ".image-wrap {background-image: none;}"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "alt": true
+      }
+    },
+    "a01bf07d-3919-440d-b753-1590c7c6129c": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14841744883766__a01bf07d-3919-440d-b753-1590c7c6129c-1674458563cb1e0e7e-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<center><a href=https:\/\/www.7ewellness.com\/pages\/microcurrent-facial-clinical-study><button type=\"button\" class=\"btn\">Learn More<\/button><\/a><\/center>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14841744883766__a01bf07d-3919-440d-b753-1590c7c6129c-1674458563cb1e0e7e-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "6e896436-a933-4ac7-a824-a70ac01a83b5": {
+      "type": "text-columns",
+      "blocks": {
+        "template--14841744883766__6e896436-a933-4ac7-a824-a70ac01a83b5-166984421371f9c8ae-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "<h1>100% users<\/h1>",
+            "text": "<p><strong>\"My skin feels good after doing the treatment\"<\/strong><\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--14841744883766__6e896436-a933-4ac7-a824-a70ac01a83b5-166984421371f9c8ae-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "<h1>91% users<\/h1>",
+            "text": "<p><strong>\"I notice an immediate lift after doing the treatment\"<\/strong><\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "9f6311a4-29be-4fb1-a2ca-d47d2aa0beb5": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "<h1>85% users<\/h1>",
+            "text": "<p><strong>\"I notice my forhead lines reduced\"<\/strong><\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "9b2d4072-fa24-4e72-a1de-4d70d40d571d": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "<h1>91% users<\/h1>",
+            "text": "<p><strong>\"I notice crows feet appeared reduced\"<\/strong><\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14841744883766__6e896436-a933-4ac7-a824-a70ac01a83b5-166984421371f9c8ae-0",
+        "template--14841744883766__6e896436-a933-4ac7-a824-a70ac01a83b5-166984421371f9c8ae-1",
+        "9f6311a4-29be-4fb1-a2ca-d47d2aa0beb5",
+        "9b2d4072-fa24-4e72-a1de-4d70d40d571d"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Our Clinical Results",
+        "align_text": "center",
+        "alt": false
+      }
+    },
+    "09b16254-77c7-40a0-bc19-0e87f3ad464a": {
+      "type": "hero-animated",
+      "blocks": {
+        "template--14815908528182__09b16254-77c7-40a0-bc19-0e87f3ad464a-1666195718f8bc5d32-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/7E-BENEFIT-ICONS_DESKTOP_eba70c67-c145-48c1-b63f-fdb4032dd716.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/7E-BENEFIT-ICONS_MOBILE.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--14815908528182__09b16254-77c7-40a0-bc19-0e87f3ad464a-1666195718f8bc5d32-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "style": "gif",
+        "title": "",
+        "title_size": 80,
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "desktop_size": 0,
+        "mobile_size": 0
+      }
+    },
+    "d4b2f4e5-6513-4f7a-8c7b-6e905818a866": {
+      "type": "hero-animated",
+      "blocks": {
+        "template--14815908528182__d4b2f4e5-6513-4f7a-8c7b-6e905818a866-16655898406a39a3db-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Black_to_purple_desktop_2x_83b9e005-ad44-41c8-ac88-8a0a763dcbec.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--14815908528182__d4b2f4e5-6513-4f7a-8c7b-6e905818a866-16655898406a39a3db-0"
+      ],
+      "settings": {
+        "style": "gif",
+        "title": "",
+        "title_size": 30,
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "desktop_size": 0,
+        "mobile_size": 0
+      }
+    },
+    "2179a095-b8eb-40b1-965d-c1231e5f4a92": {
+      "type": "advanced-content",
+      "blocks": {
+        "38552211-02f9-405c-bb2f-b50f3e77ea49": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div id=\"watchnow\"><\/div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "template--14815908528182__2179a095-b8eb-40b1-965d-c1231e5f4a92-1665589840be0d19a2-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/video_thumbnail_0b361b91-267f-45c5-bf35-896722d24511.png",
+            "link": "https:\/\/www.youtube.com\/watch?v=0jafphzXGjs",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "38552211-02f9-405c-bb2f-b50f3e77ea49",
+        "template--14815908528182__2179a095-b8eb-40b1-965d-c1231e5f4a92-1665589840be0d19a2-0"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "070fa915-b273-46eb-b34d-fa2eb3c67e68": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14815908528182__070fa915-b273-46eb-b34d-fa2eb3c67e68-1665669163a78599d8-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/layers_infographic-1_91dd9a7c-5ad5-4c4d-b3b9-7d8808899bc5.jpg",
+            "link": "",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "template--14815908528182__070fa915-b273-46eb-b34d-fa2eb3c67e68-1665669163a78599d8-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<style>\n.accordion {\n  background-color: #312c2d;\n  color: #E8DFEE;\n  cursor: pointer;\n  padding: 20px;\n  width: 100%;\n  border: 0;\n  text-align: left;\n  outline: none;\n  font-size: 25px;\n  transition: 0.4s;\n}\n\n.accordion:after {\n  content: '\\02795'; \/* Unicode character for \"plus\" sign (+) *\/\n  font-size: 25px;\n  color: #E8DFEE;\n  float: right;\n  margin-left: 5px;\n}\n\n.active:after {\n  content: \"\\2796\"; \/* Unicode character for \"minus\" sign (-) *\/\n}\n\n.panel {\n  padding: 18px;\n  display: none;\n  background-color: #231F20;\n  overflow: hidden;\n  color:#E8DFEE;\n}\n<\/style>\n\n<h2><b>How Facial Toning Device is easy to use.<\/b><\/h2>\n\n<button class=\"accordion\">1. Choose problem area<\/button>\n<div class=\"panel\">\n  <p>Using the device and recommended treatment within our Smart App you begin by applying gentle current to targeted areas of the face (The area depends on where you’d like to see results).<\/p>\n<\/div>\n\n<button class=\"accordion\">2. Stimulate collagen production<\/button>\n<div class=\"panel\">\n  <p>This gentle current mimics the body’s natural current and stimulates the facial muscles, cell growth and collagen production in the Dermal layer of your skin.<\/p>\n<\/div>\n\n<button class=\"accordion\">3. Maintain a youthful appearance<\/button>\n<div class=\"panel\">\n  <p>Regular stimulation, improves cell growth and higher collagen production leads to evened out facial muscles and connective tissue, ultimately minimizing fine lines and wrinkles, lifting sagging areas and giving you a more youthful appearance. \n<\/p>\n<\/div>\n\n<script>\nvar acc = document.getElementsByClassName(\"accordion\");\nvar i;\n\nfor (i = 0; i < acc.length; i++) {\n  acc[i].addEventListener(\"click\", function() {\n    this.classList.toggle(\"active\");\n    var panel = this.nextElementSibling;\n    if (panel.style.display === \"block\") {\n      panel.style.display = \"none\";\n    } else {\n      panel.style.display = \"block\";\n    }\n  });\n}\n<\/script>",
+            "width": "50%",
+            "alignment": "top-middle"
+          }
+        }
+      },
+      "block_order": [
+        "template--14815908528182__070fa915-b273-46eb-b34d-fa2eb3c67e68-1665669163a78599d8-0",
+        "template--14815908528182__070fa915-b273-46eb-b34d-fa2eb3c67e68-1665669163a78599d8-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "5e33d8e0-1d06-4df2-a22e-111e2b552b9c": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/7eWellness_homepage_Which-MINI_icon_54814456-457f-4c12-9004-7db8fc55800d.jpg",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "MyoLift Mini Device + Access to 100’s of free Mini facial treatments",
+        "text": "<p>• 5min - 20+ minute treatments to match your schedule<\/p><p>• New to microcurrent? Real esthetician tutorials on how to use the device for beginners.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "50",
+        "layout": "right",
+        "alt": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "6719cb3d-9249-46ef-9479-f177a66dc4fa": {
+      "type": "hero-animated",
+      "blocks": {
+        "template--14815908528182__6719cb3d-9249-46ef-9479-f177a66dc4fa-16667998483b85e510-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/7e-What_s-Included-03_4b96c918-babb-44af-89b3-8994d1b0e30c.png",
+            "image_mobile": "shopify:\/\/shop_images\/7e-What_s-Included-04_37601327-08c5-49c8-9811-e05bb273a8f9.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--14815908528182__6719cb3d-9249-46ef-9479-f177a66dc4fa-16667998483b85e510-0"
+      ],
+      "settings": {
+        "style": "gif",
+        "title": "MyoLift QT + <br>Access to 100’s of free <br>Mini facial treatments\n<p style=\"font-family: var(--typeBasePrimary); font-size: 40%; line-height: 1.5; width: 500px; margin: auto\">\n• 5min - 20+ minute treatments to match your schedule\n<br>\n• New to microcurrent? Real esthetician tutorials on how to use the device for beginners.\n<br><\/p>",
+        "title_size": 43,
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-top horizontal-left",
+        "desktop_size": 0,
+        "mobile_size": 0
+      }
+    },
+    "d36895ec-cf9b-4860-8f0b-18b33e9cf2f6": {
+      "type": "hero-animated",
+      "blocks": {
+        "template--14815908528182__d36895ec-cf9b-4860-8f0b-18b33e9cf2f6-166670835682d3d739-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/7e-home-care-accessories_desktop_7f77a905-346f-4a3a-96ce-890477c231e8.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/7e-home-care-accessories__mobile_555c6123-da7a-441a-87c2-f09592e054fb.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--14815908528182__d36895ec-cf9b-4860-8f0b-18b33e9cf2f6-166670835682d3d739-0"
+      ],
+      "settings": {
+        "style": "gif",
+        "title": "",
+        "title_size": 80,
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "desktop_size": 0,
+        "mobile_size": 0
+      }
+    },
+    "8ec72160-d4ec-4881-81fd-b1e185f28d76": {
+      "type": "text-columns",
+      "blocks": {
+        "template--14815908528182__8ec72160-d4ec-4881-81fd-b1e185f28d76-16655888632fe2cff5-0": {
+          "type": "text_block",
+          "disabled": true,
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Device_collection_image_2x_c025cd00-0d98-4280-9a9d-9424538b5044.png",
+            "image_mask": "none",
+            "image_width": 300,
+            "title": "MyoLift Mini Device + Access to 100’s of free Mini facial treatments",
+            "text": "<p>• 5min - 20+ minute treatments to match your schedule<\/p><p>• New to microcurrent? Real esthetician tutorials on how to use the device for beginners.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--14815908528182__8ec72160-d4ec-4881-81fd-b1e185f28d76-16655888632fe2cff5-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/7eWellness-mini-home-63_7196da57-53df-4cc4-b831-9db16b8f077a.jpg",
+            "image_mask": "none",
+            "image_width": 300,
+            "title": "Conductive Eye Mask",
+            "text": "<p>• For you to eye contour and eat popcorn at the same time. It’s a hands-free treatment!<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "fbbe89af-2249-42ee-9535-7b12ab556a10": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/7eWellness-mini-home-64.jpg",
+            "image_mask": "none",
+            "image_width": 300,
+            "title": "Conductive Lip Mask",
+            "text": "<p>• For you to plump your lips while you knit. It’s a hands-free treatment!<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "5aa4c023-2709-4594-be56-06a38db02540": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/7eWellness-67.jpg",
+            "image_mask": "none",
+            "image_width": 300,
+            "title": "Conductive Forehead Mask",
+            "text": "<p>• For you to diminish frown lines while you Netflix and Chill. It’s a hands-free treatment!<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "7d3a1c18-f25a-40bc-b643-cc2cc4c3cb63": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/7eWellness-mini-home-62.jpg",
+            "image_mask": "none",
+            "image_width": 300,
+            "title": "ReStore Conductive Gel",
+            "text": "<p>• Anti-aging conductive gel with Bio-Active complex to improve your facial treaments<\/p><p>• Conductive Gel: helps deliver microcurrent more effectively to your Dermal skin layer<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14815908528182__8ec72160-d4ec-4881-81fd-b1e185f28d76-16655888632fe2cff5-0",
+        "template--14815908528182__8ec72160-d4ec-4881-81fd-b1e185f28d76-16655888632fe2cff5-1",
+        "fbbe89af-2249-42ee-9535-7b12ab556a10",
+        "5aa4c023-2709-4594-be56-06a38db02540",
+        "7d3a1c18-f25a-40bc-b643-cc2cc4c3cb63"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "alt": false
+      }
+    },
+    "91a04e59-569f-49a2-bfdb-78fa2a8c1082": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14815908528182__91a04e59-569f-49a2-bfdb-78fa2a8c1082-1665588673f678ad2e-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<center><h2><b>Are you ready to bring the spa home?<\/b><\/h2><a href=#shopnow><button type=\"button\" class=\"btn\">Add To Cart<\/button><\/a><\/center>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14815908528182__91a04e59-569f-49a2-bfdb-78fa2a8c1082-1665588673f678ad2e-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "164556780200309513": {
+      "type": "apps",
+      "blocks": {
+        "2a3dd040-0528-4160-a336-9edeec07fd6f": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "at-home-microcurrent-devices-myolift-mini-for-face",
+            "widget_type": "combined_widget"
+          }
+        }
+      },
+      "block_order": [
+        "2a3dd040-0528-4160-a336-9edeec07fd6f"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "product_recommendations_heading": "You may also like",
+        "related_count": 14
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "settings": {
+        "max_width": true
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {}
+    }
+  },
+  "order": [
+    "f82b056d-7473-47e9-8078-140ff5ceb8d2",
+    "main",
+    "631e490c-9e0a-4633-8a61-b562d59e610a",
+    "97a60902-e51f-4d88-8e08-3c5ed31ee260",
+    "7649e298-55c1-4a82-8968-f0a69b8198c6",
+    "d7469a12-86d1-4693-95ef-924de0c64442",
+    "f13d9689-9e77-400f-8503-b9f1bf8e7bb2",
+    "1a93ace9-7946-4257-80f5-78e402d94cd2",
+    "a01bf07d-3919-440d-b753-1590c7c6129c",
+    "6e896436-a933-4ac7-a824-a70ac01a83b5",
+    "09b16254-77c7-40a0-bc19-0e87f3ad464a",
+    "d4b2f4e5-6513-4f7a-8c7b-6e905818a866",
+    "2179a095-b8eb-40b1-965d-c1231e5f4a92",
+    "070fa915-b273-46eb-b34d-fa2eb3c67e68",
+    "5e33d8e0-1d06-4df2-a22e-111e2b552b9c",
+    "6719cb3d-9249-46ef-9479-f177a66dc4fa",
+    "d36895ec-cf9b-4860-8f0b-18b33e9cf2f6",
+    "8ec72160-d4ec-4881-81fd-b1e185f28d76",
+    "91a04e59-569f-49a2-bfdb-78fa2a8c1082",
+    "164556780200309513",
+    "product-recommendations",
+    "sub",
+    "collection-return"
+  ]
+}

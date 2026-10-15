@@ -1,0 +1,226 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "okendo_star_rating_TrHakd": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "metafiled_description_tBJgMp": {
+          "type": "metafiled_description",
+          "settings": {
+            "is_meta_description": false
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "trust_badge_63ENhF": {
+          "type": "trust_badge",
+          "settings": {
+            "trust_image": "shopify:\/\/shop_images\/Background_2x_9930748b-1cc8-4d33-b97d-a8c4c9db56ff.png"
+          }
+        },
+        "pop_up_E66dEp": {
+          "type": "pop_up",
+          "settings": {
+            "title": "Shipping and Handling",
+            "content": "<p>Free USA Ground shipment, Orders are processed within 2 business day. <\/p><p>International Orders Ships within 3 business day.  <\/p><p>International customers are required to pay Duty with their local custom agency. <\/p>"
+          }
+        },
+        "tab_Pi397q": {
+          "type": "tab",
+          "settings": {
+            "title": "Who is this for?",
+            "content": "<p>This cleanser is ideal for individuals seeking:<\/p><ul><li>A gentle yet effective daily cleanser<\/li><li>Improved skin clarity and radiance<\/li><li>Reduction in inflammation and redness<\/li><li>A natural formula suitable for all skin types​<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "tab_E44Dhc": {
+          "type": "tab",
+          "settings": {
+            "title": "How to use it?",
+            "content": "<ul><li>Prepare: Wash hands and wet face with lukewarm water. <\/li><li>Apply: Dispense a nickel-sized amount into your palm.<\/li><li>Cleanse: Massage onto the face in circular motions, avoiding the eye area.<\/li><li>Rinse: Thoroughly rinse with lukewarm water.<\/li><li>Dry: Gently pat the face dry with a clean, soft towel.​<\/li><li>Use once daily; increase to twice daily if tolerated.<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "tab_JYDpUV": {
+          "type": "tab",
+          "settings": {
+            "title": "Benefits",
+            "content": "<ul><li>Antioxidant Protection: Mangosteen extract provides potent antioxidants that help protect the skin from environmental stressors.<\/li><li>Gentle Exfoliation: Lactic acid aids in removing dead skin cells, promoting a smoother complexion.<\/li><li>Hydration: Ingredients like glycerin help maintain the skin's moisture balance.<\/li><li>Soothing Properties: Yucca root extract and witch hazel water help calm and soothe the skin.​<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "tab_BHJLFC": {
+          "type": "tab",
+          "settings": {
+            "title": "Ingredients",
+            "content": "<ul><li>Aqua (Water)<\/li><li>Sodium C14-16 Olefin Sulfonate<\/li><li>Sodium Cocoamphoacetate<\/li><li>Propanediol<\/li><li>Glycerine<\/li><li>Cocamidopropyl Hydroxysultaine<\/li><li>Leuconostoc\/Radish Root Ferment Filtrate<\/li><li>Sodium Chloride<\/li><li>Lactic Acid (L)<\/li><li>Yucca Schidigera Root Extract<\/li><li>Fragrance\/Parfum<\/li><li>Citric Acid​<\/li><\/ul>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "okendo_star_rating_TrHakd",
+        "price",
+        "description",
+        "metafiled_description_tBJgMp",
+        "variant_picker",
+        "buy_buttons",
+        "trust_badge_63ENhF",
+        "pop_up_E66dEp",
+        "tab_Pi397q",
+        "tab_E44Dhc",
+        "tab_JYDpUV",
+        "tab_BHJLFC"
+      ],
+      "settings": {
+        "product_image_size": "medium",
+        "product_image_type": "slider",
+        "thumbnail_height": "fixed",
+        "product_zoom_enable": true,
+        "enable_video_looping": true,
+        "product_video_style": "muted",
+        "product_label": "",
+        "btn_url": "",
+        "btn_txt": "",
+        "sku_enable": false
+      }
+    },
+    "product_specification_xXXmFU": {
+      "type": "product-specification",
+      "blocks": {
+        "how_to_use_hdapWK": {
+          "type": "how-to-use",
+          "settings": {
+            "tab_heading": "How To Use",
+            "heading": "Here How Mangosteen Cleanser Works",
+            "section_content": "<p>This gentle cleanser is designed to refresh and purify your skin every time you wash your face. With the natural power of mangosteen extract and soothing ingredients, it removes dirt, oil, and impurities without stripping away moisture.<\/p><p>It’s lightweight and smooth, creating a soft lather that cleans deeply but stays kind to your skin. Using it daily helps keep your skin feeling fresh, balanced, and naturally radiant.<\/p>",
+            "image": "shopify:\/\/shop_images\/desktop_Mangosteen.png",
+            "mobile_image": "shopify:\/\/shop_images\/mobile_Mangosteen.png",
+            "link": "",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "image_banner_DpkwAP": {
+          "type": "image-banner",
+          "settings": {
+            "tab_heading": "Benefits",
+            "heading": "Why You’ll Love Using It",
+            "image_banner": "shopify:\/\/shop_images\/1-96.png",
+            "mobile_image_banner": "shopify:\/\/shop_images\/serum_mobile.png",
+            "image_content": "<p>The Mangosteen Cleanser is easy to use and perfect for all skin types. It calms and nourishes as it cleans, so your skin feels comfortable and hydrated, never tight or dry.<\/p><p>Starting and ending your day with this cleanser is a simple way to give your skin the care it deserves — clean, calm, and ready for whatever comes next.<\/p>"
+          }
+        },
+        "ingredients_8MezDi": {
+          "type": "ingredients",
+          "settings": {
+            "tab_heading": "Ingredients",
+            "heading": "Our Key Ingredients",
+            "ingredient_img1": "shopify:\/\/shop_images\/image_5_43f79cc5-34d5-4554-ae84-47f0b106c2f9.png",
+            "ingredients_text1": "Mangosteen",
+            "ingredient_img2": "shopify:\/\/shop_images\/image_6_80446f23-aea0-4ba5-8fdf-feaeaefd10b7.png",
+            "ingredients_text2": "Lactic Acid",
+            "ingredient_img3": "shopify:\/\/shop_images\/image_7.png",
+            "ingredients_text3": "Yogurt Extract Prebiotic",
+            "ingredient_img4": "shopify:\/\/shop_images\/image_8.png",
+            "ingredients_text4": "Moringa Oleifera Seed Extract"
+          }
+        },
+        "faq_Ext4Vz": {
+          "type": "faq",
+          "settings": {
+            "tab_heading": "FAQs",
+            "heading": "Frequently Asked Questions",
+            "title1": "Can I use the Mangosteen Cleanser every day?",
+            "text1": "<p>Yes, the cleanser is gentle enough for daily use. For best results, use it once daily, and you can increase to twice a day if your skin tolerates it well.<\/p>",
+            "title2": "Will this help with redness and inflammation?",
+            "text2": "<p>Yes, the cleanser contains mangosteen extract and witch hazel, which are known for their anti-inflammatory properties, helping to reduce redness and soothe irritated skin.<\/p>",
+            "title3": "Can I use this cleanser with other skincare products?",
+            "text3": "<p>Absolutely! The cleanser can be used as part of your daily skincare routine. After cleansing, follow up with moisturizers, serums, and other skincare treatments for enhanced results.<\/p>",
+            "title4": "Is this cleanser suitable for sensitive skin?",
+            "text4": "<p>Yes, the 7E Wellness Mangosteen Cleanser is formulated to be gentle and is suitable for sensitive skin, offering a mild exfoliation without causing irritation.<\/p>",
+            "title5": "How long does it take to see results?",
+            "text5": "<p>Many users notice smoother, more radiant skin within a few weeks of regular use. However, results may vary depending on skin type and individual conditions.<\/p>",
+            "title6": "Can I use this cleanser with other facial treatments?",
+            "text6": "<p>Yes, the cleanser works well with other facial treatments such as masks or serums, as it prepares your skin by gently removing impurities and dead skin cells, allowing better absorption of subsequent products.<\/p>",
+            "title7": "",
+            "text7": ""
+          }
+        },
+        "reviews_q4BQaA": {
+          "type": "reviews",
+          "settings": {
+            "tab_heading": "Reviews",
+            "enable_review": true
+          }
+        }
+      },
+      "block_order": [
+        "how_to_use_hdapWK",
+        "image_banner_DpkwAP",
+        "ingredients_8MezDi",
+        "faq_Ext4Vz",
+        "reviews_q4BQaA"
+      ],
+      "settings": {
+        "heading": ""
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "settings": {
+        "max_width": true
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {}
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "product_recommendations_heading": "You may also like",
+        "related_count": 14
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product_specification_xXXmFU",
+    "sub",
+    "collection-return",
+    "product-recommendations"
+  ]
+}

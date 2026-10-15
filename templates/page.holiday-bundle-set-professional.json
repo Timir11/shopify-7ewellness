@@ -1,0 +1,134 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "62c0bd1c-4acb-4bd1-a021-b278baa4e172": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14992152297526__62c0bd1c-4acb-4bd1-a021-b278baa4e172-image-1": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "https:\/\/www.7ewellness.com\/collections\/2024-fall-holiday-kits",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Holiday-Kits---Banner-desktop.png",
+            "image_mobile": "shopify:\/\/shop_images\/Holiday-Kits---Banner-mobile.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--14992152297526__62c0bd1c-4acb-4bd1-a021-b278baa4e172-image-1"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "164750184654268337": {
+      "type": "advanced-content",
+      "blocks": {
+        "164750184632c2dd43-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<p>Glow all season long with our exclusive<\/p><h2><em>MyoLift™ Gift Sets<\/em><\/h2>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "164750184632c2dd43-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "advanced_content_3mVKmb": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_4yWptf": {
+          "type": "liquid",
+          "settings": {
+            "code": "<center><h2>Results<\/h2><p>that keep your clients coming back for more<\/p><\/center>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "image_7NfbWP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_24.png",
+            "link": "",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_4yWptf",
+        "image_7NfbWP"
+      ],
+      "custom_css": [
+        ".autumLeaves {margin: 0; padding: 40px 0px; background: rgba(218, 200, 177, 0.85);}",
+        ".image-wrap {padding: 0 !important; background: none; height: auto !important;}",
+        "img {max-width: 900px; margin: 0 auto;}",
+        "h2 {font-size: 120px; margin-bottom: 0px; font-weight: 700; font-family: \"Open Sans\"; line-height: 1.3; text-transform: uppercase; color: #231f20;}",
+        "p {font-size: 20px; font-weight: 600; max-width: 700px;}",
+        "@media screen and (max-width: 480px) {h2 {font-size: 50px; } p {font-size: 12px; }}"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "advanced_content_89G4mk": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_nywr7U": {
+          "type": "liquid",
+          "settings": {
+            "code": "<center><a href=\"\/checkout\" class=\"btn\">COntinue to Checkout<\/a><\/center>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_nywr7U"
+      ],
+      "custom_css": [
+        ".index-section {margin: 0; padding: 0px 0px 80px; background: #fef5e6;}",
+        ".btn {border-radius: 0; text-transform: uppercase; font-size: 18px; padding: 15px 25px;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "alt": false,
+        "lazyload_images": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "62c0bd1c-4acb-4bd1-a021-b278baa4e172",
+    "164750184654268337",
+    "advanced_content_3mVKmb",
+    "advanced_content_89G4mk"
+  ]
+}

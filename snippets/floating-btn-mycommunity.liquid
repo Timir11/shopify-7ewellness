@@ -1,0 +1,132 @@
+<!-- Floating Button -->
+<div id="floating-btn" class="floating-btn-mycommunity">
+  <button onclick="togglePopup()">See Device Comparision</button>
+</div>
+
+<!-- Popup -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span class="close-btn" onclick="togglePopup()">&times;</span>
+    <h2>How Does It Compare?</h2>
+    {% assign page_description = pages['compare-table'].content %}
+    {{ page_description }}
+  </div>
+</div>
+
+<style>
+    /* Floating Button */
+    .floating-btn-mycommunity {
+      position: absolute;
+      right: 0;
+      top: 50%;
+  }
+
+  .floating-btn-mycommunity button {
+      background-color: #000;
+      color: var(--colorBtnPrimaryText);
+      border: none;
+      padding: 15px;
+      border-radius: 0px 6px 6px 0px;
+      font-size: 12px;
+      text-align: center;
+      writing-mode: vertical-rl; /* Vertically align the text */
+      white-space: nowrap;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+      transform: rotate(180deg);
+  }
+
+  @media only screen and (max-width: 768px) {
+    .floating-btn-mycommunity{
+      position:relative;
+      text-align:center;
+    }
+    .floating-btn-mycommunity button{
+      border-radius:22px;
+      transform: rotate(0deg);
+      writing-mode: horizontal-tb;
+    }
+  }
+
+  /* .floating-btn button:hover {
+      background-color: #0056b3;
+  } */
+
+  /* Popup Styles */
+  .popup {
+      display: none;  /* Hidden by default */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 999;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .popup-content {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      width: 900px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      overflow: scroll;
+      height: 500px;
+  }
+
+  .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 30px;
+      font-weight: bold;
+      cursor: pointer;
+    color:white;
+  }
+     .table thead th{
+       border-bottom:1px solid black;
+       text-align: center;
+     }
+  .table td, .table th{
+    border: 1px solid #000;
+    display: table-cell !important;
+  }
+  /* .close-btn:hover {
+      color: red;
+  } */
+    @media only screen and (min-width: 769px) {
+      .close-btn { {
+         color:black;
+        z-index:999;s
+      }
+  }
+  #shopify-section-template--17080791072822__floating_button_PBAkRX .table-responsive img{
+    width: 50%;
+  }
+    #shopify-section-template--17080791072822__floating_button_PBAkRX .table thead th{
+      font-size: 15px;
+      padding-bottom: 0;
+    }
+     .actions {
+      display: flex !important;
+      justify-content: end !important;
+  }
+</style>
+<script>
+    function togglePopup() {
+      const popup = document.getElementById("popup");
+      popup.style.display = (popup.style.display === "flex") ? "none" : "flex";
+  }
+
+  // Optional: Close the popup when clicking outside of it
+  window.onclick = function(event) {
+      const popup = document.getElementById("popup");
+      if (event.target === popup) {
+          popup.style.display = "none";
+      }
+  }
+</script>

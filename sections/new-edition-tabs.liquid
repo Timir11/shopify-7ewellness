@@ -1,0 +1,270 @@
+
+
+<div class="collection-tabs-section edition-tab-carousel">
+    <div class="edition-column-left">
+        {% comment %} <img src="https://cdn.shopify.com/s/files/1/2745/9950/files/Product_Page_Banner_-_Kit-Consumer.jpg?v=1764321632"> {% endcomment %}
+    </div>
+    <div class="edition-column-right">
+        <h2>{{ section.settings.section_heading }}</h2>
+        <div style="position:relative;">
+            <div class="tabs collection_list_tab">
+            {% for block in section.blocks %}
+                {% if block.type == 'collection_tab' %}
+                {% assign collection = collections[block.settings.collection] %}
+                <button class="tab-button tab-button-{{ section.id }}" data-tab="tab-{{ forloop.index }}">{{ collection.title }}</button>
+                {% endif %}
+            {% endfor %}
+            <!-- <a class="tab-link shop-all" href="collections/all" data-tab="shop-all">SHOP ALL PRODUCTS</a> -->
+            </div>
+            <div class="tab-content">
+            {% for block in section.blocks %}
+            {% if block.type == 'collection_tab' %}
+                {% assign collection = collections[block.settings.collection] %}
+                <div class=" slider-thumbb_col tab-products tab-products-{{ section.id }} tab-{{ forloop.index }}" style="display: none;">
+                {%- for product in collection.products limit: 6 -%} <!-- Limit products to 4 -->
+                    {%- render 'product-grid-item'
+                    product: product,
+                    grid_item_width: grid_item_width,
+                    sizeVariable: grid_large_width,
+                    fallback: fallback,
+                    -%}
+                {%- else -%}
+                    <div class="grid__item#">
+                    <p>{{ 'collections.general.no_matches' | t }}</p>
+                    </div>
+                {%- endfor -%}
+                </div>
+                    {%- if block.settings.button_text != blank -%}
+                        <a class="tabShopAll" href="{{ block.settings.button_url | default: collection.url }}">{{ block.settings.button_text }}</a>
+                    {%- endif -%}
+            {% endif %}
+            {% endfor %}
+        </div>
+        </div>
+    </div>
+</div>
+
+<script>
+{% comment %} Set product 4 for mobile {% endcomment %}
+document.addEventListener('DOMContentLoaded', function() {
+  if (window.innerWidth <= 600) {
+    var items = document.querySelectorAll('.edition-tab-carousel .product_grid_item');
+    items.forEach(function(item, index) {
+      if (index > 3) { // 0-based index: show 0,1,2,3 = 4 items
+        {% comment %} item.style.display = 'none'; {% endcomment %}
+      }
+    });
+  }
+});
+{% comment %} document.querySelectorAll('.edition-tab-carousel .tabs.collection_list_tab .tab-button').forEach(button => {
+  button.addEventListener('DOMContentLoaded', function() {
+    // Remove active class from all tab buttons
+    document.querySelectorAll('.edition-tab-carousel .tabs.collection_list_tab .tab-button').forEach(btn => btn.classList.remove('active'));
+    // Add active class to clicked one
+    this.classList.add('active');
+
+    // Change background based on data-tab attribute
+    var leftCol = document.querySelector('.edition-tab-carousel .edition-column-left');
+    if (!leftCol) return;
+    var buttons = document.querySelectorAll('.edition-tab-carousel .tabShopAll');
+    var tab = this.getAttribute('data-tab');
+    if (tab === 'tab-1') {
+      leftCol.style.backgroundImage = "url('https://cdn.shopify.com/s/files/1/2745/9950/files/at_home_0caeb1cc-8bc8-4d9c-aeec-654fa77b0d7a.png?v=1768476567')";
+      buttons[0].style.display = 'inline-block';  // Show first button for tab 1
+      buttons[1].style.display = 'none';          // Hide second button
+    } else if (tab === 'tab-2') {
+      leftCol.style.backgroundImage = "url('https://cdn.shopify.com/s/files/1/2745/9950/files/pro.png?v=1768476567')";
+      buttons[0].style.display = 'none';          // Hide first button
+      buttons[1].style.display = 'inline-block';  // Show second button for tab 2
+    }
+  });
+}); {% endcomment %}
+
+document.addEventListener('DOMContentLoaded', function() {
+  function updateUI(tab) {
+    var leftCol = document.querySelector('.edition-tab-carousel .edition-column-left');
+    var buttons = document.querySelectorAll('.edition-tab-carousel .tabShopAll');
+    if (!leftCol || buttons.length < 2) return;
+
+    if (tab === 'tab-1') {
+      leftCol.style.backgroundImage = "url('https://cdn.shopify.com/s/files/1/2745/9950/files/at_home_0caeb1cc-8bc8-4d9c-aeec-654fa77b0d7a.png?v=1768476567')";
+      buttons[0].style.display = window.innerWidth <= 768 ? 'inline-block' : 'none';
+      buttons[1].style.display = 'none';
+    } else if (tab === 'tab-2') {
+      leftCol.style.backgroundImage = "url('https://cdn.shopify.com/s/files/1/2745/9950/files/pro.png?v=1768476567')";
+      buttons[0].style.display = 'none';
+      buttons[1].style.display = window.innerWidth <= 768 ? 'inline-block' : 'none';
+    }
+  }
+
+  // Initialize on page load for active tab
+  var activeBtn = document.querySelector('.edition-tab-carousel .tabs.collection_list_tab .tab-button.active');
+  if (activeBtn) {
+    var tab = activeBtn.getAttribute('data-tab');
+    updateUI(tab);
+  }
+
+  // Add click listeners
+  document.querySelectorAll('.edition-tab-carousel .tabs.collection_list_tab .tab-button').forEach(button => {
+    button.addEventListener('click', function() {
+      document.querySelectorAll('.edition-tab-carousel .tabs.collection_list_tab .tab-button').forEach(btn => btn.classList.remove('active'));
+      this.classList.add('active');
+      var tab = this.getAttribute('data-tab');
+      updateUI(tab);
+    });
+  });
+
+  // Handle window resize to update display accordingly
+  window.addEventListener('resize', function() {
+    var active = document.querySelector('.edition-tab-carousel .tabs.collection_list_tab .tab-button.active');
+    if (active) {
+      updateUI(active.getAttribute('data-tab'));
+    }
+  });
+});
+
+
+// Optionally, initialize background on page load depending on active tab button
+document.addEventListener('DOMContentLoaded', function() {
+  var activeBtn = document.querySelector('.edition-tab-carousel .tabs.collection_list_tab .tab-button.active');
+  if (activeBtn) activeBtn.click();
+});
+
+{% comment %} Tab functions {% endcomment %}
+document.addEventListener('DOMContentLoaded', function () {
+    const tabs = document.querySelectorAll('.edition-tab-carousel .tab-button-{{ section.id }}, .tab-link-{{ section.id }}');
+    const tabContents = document.querySelectorAll('.edition-tab-carousel .tab-products-{{ section.id }}');
+
+    function initializeSlickSlider() {
+        if ($(window).width() > 991) {
+            // Destroy existing sliders first
+            if ($('.edition-tab-carousel .slider-thumbb_col').hasClass('slick-initialized')) {
+                $('.edition-tab-carousel .slider-thumbb_col').slick('unslick');
+            }
+            if ($('.edition-tab-carousel .collection_list_tab').hasClass('slick-initialized')) {
+                $('.edition-tab-carousel .collection_list_tab').slick('unslick');
+            }
+
+            // Initialize sliders
+            $('.edition-tab-carousel .slider-thumbb_col').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                dots: false,
+                centerMode: false,
+                arrows: true,
+                focusOnSelect: false,
+            });
+        }
+        if ($(window).width() < 767) {
+            // Destroy existing sliders first
+            if ($('.edition-tab-carousel .slider-thumbb_col').hasClass('slick-initialized')) {
+                $('.edition-tab-carousel .slider-thumbb_col').slick('unslick');
+            }
+            if ($('.edition-tab-carousel .collection_list_tab').hasClass('slick-initialized')) {
+                $('.edition-tab-carousel .collection_list_tab').slick('unslick');
+            }
+        }
+    }
+
+    tabs.forEach((tab) => {
+        tab.addEventListener('click', () => {
+            // Remove active class from all tabs
+            tabs.forEach(t => t.classList.remove('active'));
+
+            // Add active class to clicked tab
+            tab.classList.add('active');
+
+            // Hide all tab contents
+            tabContents.forEach(content => content.style.display = 'none');
+
+            // Show the corresponding tab content
+            const targetTab = tab.getAttribute('data-tab');
+            let targetContent;
+            
+            if (targetTab === 'shop-all') {
+                targetContent = document.querySelector('.edition-tab-carousel .tab-products-{{ section.id }}.shop-all');
+            } else {
+                targetContent = document.querySelector(`.edition-tab-carousel .tab-products-{{ section.id }}.${targetTab}`);
+            }
+
+            if (targetContent) {
+                targetContent.style.display = 'grid';
+                // Reinitialize sliders after tab content is displayed
+                setTimeout(() => {
+                    initializeSlickSlider();
+                }, 100);
+            }
+        });
+    });
+
+    // Initialize: Show the first tab's content and initialize sliders by default
+    if (tabs.length > 0) {
+        tabs[0].classList.add('active');
+        const firstTab = document.querySelector('.edition-tab-carousel .tab-products.tab-1');
+        if (firstTab) {
+            firstTab.style.display = 'grid';
+            // Initialize sliders on first load
+            setTimeout(() => {
+                initializeSlickSlider();
+            }, 100);
+        }
+    }
+
+    // Handle window resize
+    let resizeTimer;
+    window.addEventListener('resize', function() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function() {
+            initializeSlickSlider();
+        }, 250);
+    });
+});
+
+</script>
+{% schema %}
+{
+  "name": "New Editon Tabs Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_heading",
+      "label": "Section Heading",
+      "default": "I’m looking for..."
+    },
+    {
+      "type": "collection",
+      "id": "shop_all_collection",
+      "label": "Shop All Devices Collection"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection_tab",
+      "name": "Collection Tab",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Select Collection"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button text"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Button link",
+          "info": "If empty, the collection URL is used."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "New Editon Tabs Section"
+    }
+  ]
+}
+{% endschema %}

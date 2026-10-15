@@ -1,0 +1,93 @@
+<div
+  class="mission-vision"
+  style="background-color:{{ section.settings.bgcolor }}; {% if section.settings.border %}border-top: 1px solid {{ section.settings.bordercolor }};border-bottom: 1px solid {{ section.settings.bordercolor }};{% endif %}"
+>
+  <div class="page-width">
+    <div class="mission-vision-content">
+      {% if section.settings.btn_txt != blank %}
+        <div class="vision-btn">
+          <div class="vision-btn-txt">{{ section.settings.btn_txt }}</div>
+        </div>
+      {% endif %}
+      {% if section.settings.description != blank %}
+        <div class="mision-description">
+          {{ section.settings.description }}
+        </div>
+      {% endif %}
+      {% if section.settings.show_experience %}
+        <div class="about-experience">
+          {% for block in section.blocks %}
+            <div class="about-experience-block">
+              <div class="experience-year-number">{{ block.settings.number }}</div>
+              <h5>{{ block.settings.txt }}</h5>
+            </div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Mission Vision",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bgcolor",
+      "label": "Background Color"
+    },
+    {
+      "type": "checkbox",
+      "id": "border",
+      "label": "Show Border",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "bordercolor",
+      "label": "Border Color"
+    },
+    {
+      "type": "text",
+      "id": "btn_txt",
+      "label": "Button Text"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_experience",
+      "label": "Show Experience",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "name":"Experience",
+      "type": "block",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "text",
+          "id": "number",
+          "label": "No. of Experience"
+        },
+        {
+          "type": "text",
+          "id": "txt",
+          "label": "Details"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Mission Vision"
+    }
+  ]
+}
+{% endschema %}

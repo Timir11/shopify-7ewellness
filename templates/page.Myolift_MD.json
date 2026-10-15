@@ -1,0 +1,527 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "16454847531de42ec2": {
+      "type": "featured-product",
+      "blocks": {
+        "1645484753de54eb34-0": {
+          "type": "price",
+          "settings": {}
+        },
+        "1645484753de54eb34-1": {
+          "type": "description",
+          "settings": {
+            "is_tab": true
+          }
+        },
+        "1645484753de54eb34-2": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "color_swatches": false
+          }
+        },
+        "1645484753de54eb34-3": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        }
+      },
+      "block_order": [
+        "1645484753de54eb34-0",
+        "1645484753de54eb34-1",
+        "1645484753de54eb34-2",
+        "1645484753de54eb34-3"
+      ],
+      "settings": {
+        "featured_product": "myolift-professional-microcurrent-devices-md-spa-machine",
+        "product_image_size": "medium",
+        "product_image_type": "slider",
+        "product_zoom_enable": false,
+        "enable_video_looping": true,
+        "product_video_style": "muted",
+        "sku_enable": false
+      }
+    },
+    "16458072050a2748ee": {
+      "type": "slideshow",
+      "blocks": {
+        "1645807205209a0137-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Untitled_design_30_2ac5112e-ea3c-41e5-85c7-3259eb1cf550.png",
+            "image_mobile": "shopify:\/\/shop_images\/Untitled_design_31.png"
+          }
+        }
+      },
+      "block_order": [
+        "1645807205209a0137-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "1645671950da00da51": {
+      "type": "slideshow",
+      "blocks": {
+        "164567195037882755-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Transition_desktop_2x_f005d4d7-814f-4055-a146-d0fd0f732ad4.png"
+          }
+        },
+        "0945597f-a871-4649-971a-4425e649c70e": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "title": "Two line\nslide title.",
+            "title_size": 80,
+            "subheading": "And an optional subheading",
+            "link": "",
+            "link_text": "Optional button",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center"
+          }
+        }
+      },
+      "block_order": [
+        "164567195037882755-0",
+        "0945597f-a871-4649-971a-4425e649c70e"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "1645671933566ab0d2": {
+      "type": "rich-text",
+      "blocks": {
+        "16456719339c49cdf5-0": {
+          "type": "heading",
+          "settings": {
+            "title": "The Affordable Master Device"
+          }
+        },
+        "16456719339c49cdf5-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>We acknowledged the need for a professional microcurrent machine to fit the business models of high-end spas, salons, aesthetics, clinics and the medical practice. We decided to fill the gap between the sub-standard microcurrent devices available on the market and the over-priced, outdated technology. We re-engineered, re-designed, and modified our professional device to revolutionize the microcurrent industry. This sophisticated, straightforward and FDA cleared machine provides owners with an array of treatment protocol options for the clients' skin.<\/p><p>⟡ <\/p><p>Add Credibility and Value to Your Spa or Practice<\/p><p><\/p><p>Offer a Healthy Variety of Mind, Body and Skin Fitness Treatments<\/p><p><\/p><p>Customize Treatments for Specific Skin Conditions and Concerns<\/p><p><\/p><p>Deliver Consistent, High Quality Results <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16456719339c49cdf5-0",
+        "16456719339c49cdf5-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": true
+      }
+    },
+    "1645730432b138b286": {
+      "type": "text-columns",
+      "blocks": {
+        "16457304329c57cabb-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/affordable_icon_2x_445c42a5-0d06-4989-8660-d63f17477553.png",
+            "image_width": 150,
+            "title": "Affordable",
+            "text": "<p>The only professional microcurrent device that can be purchased with an in-house, zero percent financing option that lets you own the machine for less than $2,500 of downpayment.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "16457304329c57cabb-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/non-invasive_2x_cd8f2ae7-1089-4ba3-8608-b8ca7f596806.png",
+            "image_width": 150,
+            "title": "Non-Invasive",
+            "text": "<p>A professional and non-surgical way to reduce wrinkles and tighten skin in a consistent manner.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "a7980d74-dc28-4c70-b2b0-b76c8ced278b": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/waveforms_2x_71323a7c-8348-47c7-a38d-6f908efb7c08.png",
+            "image_width": 160,
+            "title": "Choose Your Waveforms",
+            "text": "<p>Offers precise waveforms including square, rectangular, symmetric, and bi-phasic to target different parts of the skin in a more in-depth way.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "5988cc89-0f2f-4077-992a-7bb53e8cb924": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/protocols_2x_0803afb0-d190-4818-bd01-31e232a93689.png",
+            "image_width": 150,
+            "title": "Easy Pre-set Protocols",
+            "text": "<p>Seven different pre-set protocols that allow you to easily provide customized treatment based on your client’s specific skin condition or concerns.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "5b5c57ab-6a34-4cd3-aada-cd80acc7bb13": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/quick_2x_624f7163-3ea3-4ef2-ba81-321b015d7d8b.png",
+            "image_width": 150,
+            "title": "Quick & Effortless",
+            "text": "<p>Easy to learn, simple to operate, and fast in delivering results.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "21502b0a-63bb-488a-a4f2-395dac60e4ca": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/truemicrocurrent_2x_69e720dd-1fd3-4a6b-b907-23f2bdaaa2c1.png",
+            "image_width": 150,
+            "title": "True Microcurrent",
+            "text": "<p>Receive the desired results with no visible muscle contractions or skin stinging via medically designed True Microcurrent.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "8474e78d-bf69-4528-94dd-f01bcd521257": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/intensity_2x_a3ece049-5e4e-4fe2-9376-f6a2aa607c25.png",
+            "image_width": 150,
+            "title": "Max Intensity",
+            "text": "<p>Offers the maximum intensity of 800 uA (Micro Amps).<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "de3eaaba-eba2-4ac6-b355-cb2dd0988fb2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/treatments_2x_cebc64e5-d594-4de5-8a9f-1af301f16a39.png",
+            "image_width": 150,
+            "title": "Pre-designed Treatments",
+            "text": "<p>Protocols for three of our most popular beauty treatments. <\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "4f01b7a9-674a-4031-bade-4c5507f0bed0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/fdcleares_2x_bec76e4d-5295-4080-9bab-238c4f58ffc0.png",
+            "image_width": 150,
+            "title": "Safe & Effective",
+            "text": "<p>Our microcurrent devices are FDA cleared and safe to use on all skin types.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16457304329c57cabb-0",
+        "16457304329c57cabb-1",
+        "a7980d74-dc28-4c70-b2b0-b76c8ced278b",
+        "5988cc89-0f2f-4077-992a-7bb53e8cb924",
+        "5b5c57ab-6a34-4cd3-aada-cd80acc7bb13",
+        "21502b0a-63bb-488a-a4f2-395dac60e4ca",
+        "8474e78d-bf69-4528-94dd-f01bcd521257",
+        "de3eaaba-eba2-4ac6-b355-cb2dd0988fb2",
+        "4f01b7a9-674a-4031-bade-4c5507f0bed0"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "alt": true
+      }
+    },
+    "16456733388d63d835": {
+      "type": "slideshow",
+      "blocks": {
+        "16456733380b24c42d-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 68,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Screen_Shot_2022-02-23_at_8.52.27_PM.png"
+          }
+        }
+      },
+      "block_order": [
+        "16456733380b24c42d-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "164567249057f63739": {
+      "type": "faq",
+      "blocks": {
+        "1645672490822f8bbf-0": {
+          "type": "question",
+          "settings": {
+            "title": "Offer Non-Surgical Treatment with Consistent Results",
+            "text": ""
+          }
+        },
+        "1645672490822f8bbf-1": {
+          "type": "question",
+          "settings": {
+            "title": "Choose Your Waveform",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "b83e0162-ebb9-49ce-b0d2-573041670ae0": {
+          "type": "rich-text",
+          "disabled": true,
+          "settings": {
+            "title": "Rich text",
+            "text": "<p>Use this section for any descriptive text you need to fill out your pages or to add introductory headings between other blocks.<\/p>",
+            "align_text": "left"
+          }
+        },
+        "129a140c-fe2e-4b20-8279-9ca5a2084534": {
+          "type": "question",
+          "settings": {
+            "title": "Pre-Designed 7E MyoLift™ Beauty Treatments",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "a6844f26-c50c-4394-bc4e-e3d71bf4b6bf": {
+          "type": "question",
+          "settings": {
+            "title": "Easy Pre-Set Protocols",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "9e144091-e701-4d8a-9a99-9008446f2e93": {
+          "type": "question",
+          "settings": {
+            "title": "Add Credibility and Value to Your Spa or Practice",
+            "text": ""
+          }
+        },
+        "04f0a50e-5d8d-4a7e-88aa-064391fcda61": {
+          "type": "question",
+          "settings": {
+            "title": "Offer a Healthy Variety of Mind, Body and Skin Fitness Treatments",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "9e0f472d-155d-4f5e-8d46-2f1d24627d35": {
+          "type": "question",
+          "settings": {
+            "title": "Customize Treatments for Specific Skin Conditions and Concerns",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "1a6c36be-875f-4d65-bf15-3bca833afa83": {
+          "type": "question",
+          "disabled": true,
+          "settings": {
+            "title": "Deliver Consistent, High Quality Results",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1645672490822f8bbf-0",
+        "1645672490822f8bbf-1",
+        "b83e0162-ebb9-49ce-b0d2-573041670ae0",
+        "129a140c-fe2e-4b20-8279-9ca5a2084534",
+        "a6844f26-c50c-4394-bc4e-e3d71bf4b6bf",
+        "9e144091-e701-4d8a-9a99-9008446f2e93",
+        "04f0a50e-5d8d-4a7e-88aa-064391fcda61",
+        "9e0f472d-155d-4f5e-8d46-2f1d24627d35",
+        "1a6c36be-875f-4d65-bf15-3bca833afa83"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Why MD?"
+      }
+    },
+    "164567289168eab8c5": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Screen_Shot_2022-02-23_at_9.03.44_PM_47071554-c5ad-4d2a-9e61-96b8999d58ce.png",
+        "subtitle": "",
+        "title": "Advanced Education and Training",
+        "text": "<p>When you invest in 7E MyoLift™ MD, you are automatically granted access to unlimited resources to elevate your aesthetics business. 7E Wellness is said to be one of the leaders in professional microcurrent education and provides each 7E MyoLift™ MD owner a custom digital support portal, access to our exclusive Facebook community providing additional business support, in-depth one-on-one training and education on how to achieve and maximize the results. With 7E on your side, you will always be up-to-date on the best practices of skin therapy, body contouring and mind relaxations from experts.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "layout": "left",
+        "alt": false
+      }
+    },
+    "16454847964af942df": {
+      "type": "rich-text",
+      "blocks": {
+        "1645484796a4d12c4c-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Not sure if this is the right device for you? Take our 2 minute quiz and find your match."
+          }
+        },
+        "a45c4af8-9b1c-4823-9106-eb3d5a2e1cb0": {
+          "type": "button",
+          "settings": {
+            "link": "",
+            "link_text": "GET STARTED"
+          }
+        }
+      },
+      "block_order": [
+        "1645484796a4d12c4c-0",
+        "a45c4af8-9b1c-4823-9106-eb3d5a2e1cb0"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": false
+      }
+    },
+    "16455698565505990f": {
+      "type": "slideshow",
+      "blocks": {
+        "16455698559ee157c5-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/before_after_desktop_qt_2x_4121a005-13aa-419d-8cf0-836995532e12.png",
+            "image_mobile": "shopify:\/\/shop_images\/before_after_mobile_qt_2x_77c40402-fdca-4b6d-ac4d-c4ff365561c2.png"
+          }
+        }
+      },
+      "block_order": [
+        "16455698559ee157c5-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "1645484806fc2923c8": {
+      "type": "faq",
+      "blocks": {
+        "1645484806cb02e790-0": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "1645484806cb02e790-1": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1645484806cb02e790-0",
+        "1645484806cb02e790-1"
+      ],
+      "settings": {
+        "title": "FAQs"
+      }
+    },
+    "1645484811d60aebd6": {
+      "type": "apps",
+      "blocks": {
+        "b88cf8be-a323-46ca-b3ab-03cd341ccc63": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "",
+            "widget_type": "reviews_widget"
+          }
+        }
+      },
+      "block_order": [
+        "b88cf8be-a323-46ca-b3ab-03cd341ccc63"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16454847531de42ec2",
+    "16458072050a2748ee",
+    "1645671950da00da51",
+    "1645671933566ab0d2",
+    "1645730432b138b286",
+    "16456733388d63d835",
+    "164567249057f63739",
+    "164567289168eab8c5",
+    "16454847964af942df",
+    "16455698565505990f",
+    "1645484806fc2923c8",
+    "1645484811d60aebd6"
+  ]
+}

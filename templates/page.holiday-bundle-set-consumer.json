@@ -1,0 +1,88 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "c8ef00fb-d1c2-47aa-a1ae-2aa75a031491": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14992120053814__c8ef00fb-d1c2-47aa-a1ae-2aa75a031491-image-1": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "shopify:\/\/pages\/holiday-bundle-set",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/desktop-holiday_kit_banner-category_banner_9d22ebdf-60e8-4684-9aa8-f7aac9aecbb4.png",
+            "image_mobile": "shopify:\/\/shop_images\/mobile_-_holiday_kit_banner-category_banner_84b5eac5-cbb6-4db0-86a0-a36e5d661bb4.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--14992120053814__c8ef00fb-d1c2-47aa-a1ae-2aa75a031491-image-1"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "164750184654268337": {
+      "type": "advanced-content",
+      "blocks": {
+        "164750184632c2dd43-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>Tis the season<\/h2><p>to uplift your at home routine<\/p>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "164750184632c2dd43-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "1df1b968-5138-418f-8533-822a25b62cce": {
+      "type": "featured-collection",
+      "disabled": true,
+      "custom_css": [
+        ".index-section {margin: 0; padding: 60px 0px; background: #fff;}",
+        ".grid-product__title {font-size: 24px;}",
+        ".grid-product__price {font-size: 20px;}",
+        ".grid {justify-content: center; display: flex; flex-wrap: wrap;}"
+      ],
+      "settings": {
+        "title": "",
+        "description": "",
+        "home_featured_products": "holiday-bundle-set-consumer",
+        "rows": 2,
+        "per_row_desktop": 3,
+        "per_row_mobile": "1",
+        "view_all": false,
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "c8ef00fb-d1c2-47aa-a1ae-2aa75a031491",
+    "164750184654268337",
+    "1df1b968-5138-418f-8533-822a25b62cce"
+  ]
+}

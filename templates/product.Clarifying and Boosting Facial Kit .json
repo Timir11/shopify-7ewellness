@@ -1,0 +1,392 @@
+{
+  "sections": {
+    "eb05a8b9-fbf6-411a-a967-9b29846b72d4": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14817358413878__eb05a8b9-fbf6-411a-a967-9b29846b72d4-1666805619ae2e4712-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div id=\"shopnow\"><\/div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14817358413878__eb05a8b9-fbf6-411a-a967-9b29846b72d4-1666805619ae2e4712-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "custom_B6Miam": {
+          "type": "custom",
+          "settings": {
+            "code": "<P style=\"font-size: 20px;line-height: 1; margin-top: -20px;\"><em>Bundle Items Valued at $218<\/em><\/P>"
+          }
+        },
+        "okendo_star_rating_XWcQy3": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "custom_E6kLBK": {
+          "type": "custom",
+          "disabled": true,
+          "settings": {
+            "code": "<a style=\"background: yellow;\npadding: 4px 8px; border-radius: 30px;\" href=\"https:\/\/www.7ewellness.com\/pages\/7e-events\">REGISTER FOR PRODUCT DEMO WEBINAR<\/a>"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": true
+          }
+        },
+        "5c7d527f-df37-4f1b-9cd4-1776efdeb363": {
+          "type": "text",
+          "settings": {
+            "text": "<b>Bio-Active Complex<\/b>"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "a2662d82-d959-4ce5-8323-633cb4067d77": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "checkmark",
+            "text": "Start your skin treatment today, pay for the results later."
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "title": "What's Included",
+            "content": "<ul><li>4 OZ ATP Booster Mask<\/li><li>Mangosteen Cleanser<\/li><li>16oz Restore Gel <\/li><li>8oz replenish Gel <\/li><\/ul><p><\/p>",
+            "page": ""
+          }
+        },
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed": {
+          "type": "tab",
+          "settings": {
+            "title": "How does it compare to other devices?",
+            "content": "<p><a href=\"#watchnow\" title=\"#watchnow\">Watch our video below ↓<\/a><\/p><p><\/p>",
+            "page": ""
+          }
+        },
+        "951d62a3-d4c7-4864-9c84-04d5894a1fc3": {
+          "type": "tab",
+          "settings": {
+            "title": "Shipping & Handling",
+            "content": "<p>Free USA Ground shipment, Orders are processed within 2 business day.<\/p><p>International Orders Ships within 3 business day. <\/p><p>International customers are required to pay Duty with their local custom agency. <\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "price",
+        "custom_B6Miam",
+        "okendo_star_rating_XWcQy3",
+        "custom_E6kLBK",
+        "buy_buttons",
+        "5c7d527f-df37-4f1b-9cd4-1776efdeb363",
+        "variant_picker",
+        "description",
+        "a2662d82-d959-4ce5-8323-633cb4067d77",
+        "tab",
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed",
+        "951d62a3-d4c7-4864-9c84-04d5894a1fc3"
+      ],
+      "settings": {
+        "product_image_size": "medium",
+        "product_image_type": "stacked",
+        "thumbnail_height": "flexible",
+        "product_zoom_enable": true,
+        "enable_video_looping": true,
+        "product_video_style": "muted",
+        "sku_enable": false
+      }
+    },
+    "1f2fbb29-27a1-4c43-8d9d-446942cf531e": {
+      "type": "hero-animated",
+      "blocks": {
+        "template--14817358413878__1f2fbb29-27a1-4c43-8d9d-446942cf531e-166619551938d629bb-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/7E-BENEFIT-ICONS_DESKTOP.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/7E-BENEFIT-ICONS_MOBILE.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--14817358413878__1f2fbb29-27a1-4c43-8d9d-446942cf531e-166619551938d629bb-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "style": "gif",
+        "title": "",
+        "title_size": 80,
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "desktop_size": 0,
+        "mobile_size": 0
+      }
+    },
+    "f3d1ecf3-4373-4154-bb3b-1fcf6e5c79b7": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14815908528182__f3d1ecf3-4373-4154-bb3b-1fcf6e5c79b7-1665590983b2286d3a-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div style=\"color:#231F20; vertical-align: middle; padding:20px;border-radius:20px;\">\n<center><h1>What is a conductive gel?<\/h1><p>A good quality conductive gel reduces the resistance between the outer skin layer and deeper skin layers. By reducing resistance, the gel improves the delivery of microcurrent to the Dermal layer of skin. \n<br><br>Better microcurrent delivery means better results.<\/p><\/center>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14815908528182__f3d1ecf3-4373-4154-bb3b-1fcf6e5c79b7-1665590983b2286d3a-1"
+      ],
+      "custom_css": [
+        ".index-section {padding: 50px 0px; background-color: #f1f1f1;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "d4b2f4e5-6513-4f7a-8c7b-6e905818a866": {
+      "type": "hero-animated",
+      "blocks": {
+        "template--14815908528182__d4b2f4e5-6513-4f7a-8c7b-6e905818a866-16655898406a39a3db-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Black_to_purple_desktop_2x_83b9e005-ad44-41c8-ac88-8a0a763dcbec.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--14815908528182__d4b2f4e5-6513-4f7a-8c7b-6e905818a866-16655898406a39a3db-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "style": "gif",
+        "title": "",
+        "title_size": 80,
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "desktop_size": 0,
+        "mobile_size": 0
+      }
+    },
+    "2740f9b8-2e95-4cc1-a20e-a1c3b5de4812": {
+      "type": "text-and-image",
+      "custom_css": [
+        ".index-section {margin: 50px 0px; background-color: #fff;}",
+        ".image-wrap {background-image: none;}",
+        "@media screen and (max-width: 480px) {.index-section {margin-top: 0px; }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/7e-Bio-Active-Complex-07.jpg",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "What makes our conductive gel so special? Bio-Active Complex.",
+        "text": "<p>✓ Unique 7E blend of ingredients to improve skin health, hydration and elasticity. We wanted to create more than just a gel. <\/p><p>✓ Get all the skin rejuvenating benefits at the same time as conductivity<\/p><p>✓ Bio-Active Complect is a combination of active minerals: Zinc, Copper Peptides and Collagen Peptides.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "50",
+        "layout": "left",
+        "alt": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "a18419a8-aed8-44c2-92ec-1c781caa2a6b": {
+      "type": "text-and-image",
+      "custom_css": [
+        ".index-section {margin: 50px 0px; background-color: #fff;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/7e-Conductive-Gel-06_eb17a7bf-9f9d-4b92-bb41-15cd957e5cb0.jpg",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Our Collagen Peptides:",
+        "text": "<p>• Collagen peptides contain above 90% protein.<\/p><p>• Marine collagen<\/p><p>• Collagen peptides contain 8-9 essential amino acids. <\/p><p>• Collagen is a lower molecular weight (100-10,000 da), this lower weight allows collagen peptides to be easily absorbed in the skin<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "50",
+        "layout": "right",
+        "alt": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "2179a095-b8eb-40b1-965d-c1231e5f4a92": {
+      "type": "advanced-content",
+      "blocks": {
+        "35323f5c-c434-4d24-8a76-c1dfc7629613": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "code": "<div id=\"watchnow\"><\/div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "template--14815908528182__2179a095-b8eb-40b1-965d-c1231e5f4a92-1665589840be0d19a2-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/7E-Mini-Home-ugcvideo_1080x_acdf51dd-01ef-44fd-a497-fc295b29e055.jpg",
+            "link": "https:\/\/youtu.be\/p62CwA2dDkM?t=240",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "45432d19-b0f6-4d01-9125-75f44636c606": {
+          "type": "liquid",
+          "settings": {
+            "code": "<center><h1>See what our community has to say about conductive gel:<\/h1>\n<\/centre>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "35323f5c-c434-4d24-8a76-c1dfc7629613",
+        "template--14815908528182__2179a095-b8eb-40b1-965d-c1231e5f4a92-1665589840be0d19a2-0",
+        "45432d19-b0f6-4d01-9125-75f44636c606"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "91a04e59-569f-49a2-bfdb-78fa2a8c1082": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14815908528182__91a04e59-569f-49a2-bfdb-78fa2a8c1082-1665588673f678ad2e-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<center><h1>Are you ready to level up your facial treatments? <\/h1><a href=#shopnow><button type=\"button\" class=\"btn\">Yes<\/button><\/a><\/center>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14815908528182__91a04e59-569f-49a2-bfdb-78fa2a8c1082-1665588673f678ad2e-1"
+      ],
+      "custom_css": [
+        ".bg-white {background: #fff; margin-top: 30px;}",
+        ".bg-white .index-section {margin: 0; padding: 30px 0px;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "164556780200309513": {
+      "type": "apps",
+      "blocks": {
+        "2a3dd040-0528-4160-a336-9edeec07fd6f": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}",
+            "widget_type": "combined_widget"
+          }
+        }
+      },
+      "block_order": [
+        "2a3dd040-0528-4160-a336-9edeec07fd6f"
+      ],
+      "custom_css": [
+        ".index-section {margin: 50px 0px; background-color: #fff;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "product_recommendations_heading": "You may also like",
+        "related_count": 14
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "settings": {
+        "max_width": true
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {}
+    }
+  },
+  "order": [
+    "eb05a8b9-fbf6-411a-a967-9b29846b72d4",
+    "main",
+    "1f2fbb29-27a1-4c43-8d9d-446942cf531e",
+    "f3d1ecf3-4373-4154-bb3b-1fcf6e5c79b7",
+    "d4b2f4e5-6513-4f7a-8c7b-6e905818a866",
+    "2740f9b8-2e95-4cc1-a20e-a1c3b5de4812",
+    "a18419a8-aed8-44c2-92ec-1c781caa2a6b",
+    "2179a095-b8eb-40b1-965d-c1231e5f4a92",
+    "91a04e59-569f-49a2-bfdb-78fa2a8c1082",
+    "164556780200309513",
+    "product-recommendations",
+    "sub",
+    "collection-return"
+  ]
+}

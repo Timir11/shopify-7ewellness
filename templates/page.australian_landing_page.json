@@ -1,0 +1,424 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "c215e377-5dbf-420c-8b24-825cfc02e641": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14925759873078__c215e377-5dbf-420c-8b24-825cfc02e641-1682333139327e616d-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "#shopify-section-template--14945658667062__6df49ad9-bf38-46ea-a34e-b37fc3e5ab84",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/consumer_desktop-1.png",
+            "image_mobile": "shopify:\/\/shop_images\/consumer_mobile-1.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--14925759873078__c215e377-5dbf-420c-8b24-825cfc02e641-1682333139327e616d-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "d59f14c6-715d-467a-9773-55065c3decfc": {
+      "type": "rich-text",
+      "blocks": {
+        "template--14925759873078__d59f14c6-715d-467a-9773-55065c3decfc-168233347683d9ee3f-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Your natural facelift"
+          }
+        },
+        "template--14925759873078__d59f14c6-715d-467a-9773-55065c3decfc-168233347683d9ee3f-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>with microcurrent therapy<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14925759873078__d59f14c6-715d-467a-9773-55065c3decfc-168233347683d9ee3f-0",
+        "template--14925759873078__d59f14c6-715d-467a-9773-55065c3decfc-168233347683d9ee3f-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": false
+      }
+    },
+    "a2ee6cd0-014a-44b4-a18f-f9abc34c5d30": {
+      "type": "text-columns",
+      "blocks": {
+        "template--14925759873078__a2ee6cd0-014a-44b4-a18f-f9abc34c5d30-1682333461bdc7ae15-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/FDA-cleared.png",
+            "image_mask": "none",
+            "image_width": 150,
+            "title": "FDA Cleared",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--14925759873078__a2ee6cd0-014a-44b4-a18f-f9abc34c5d30-1682333461bdc7ae15-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/estheticians-endoresed_b9bddd0b-96c4-4cd9-b1dc-334dd6b7c773.png",
+            "image_mask": "none",
+            "image_width": 150,
+            "title": "Estheticians Endorsed",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "7519d9c2-c42c-4e03-b6ae-1a773babae1b": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/result-oriented_3491c8ba-079d-448c-99b3-50ac3ca0a517.png",
+            "image_mask": "none",
+            "image_width": 150,
+            "title": "Results Oriented",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "2221b1e7-d6f4-46a5-b825-1bf28ced1118": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/30days-return.png",
+            "image_mask": "none",
+            "image_width": 150,
+            "title": "30days Easy Return",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14925759873078__a2ee6cd0-014a-44b4-a18f-f9abc34c5d30-1682333461bdc7ae15-0",
+        "template--14925759873078__a2ee6cd0-014a-44b4-a18f-f9abc34c5d30-1682333461bdc7ae15-1",
+        "7519d9c2-c42c-4e03-b6ae-1a773babae1b",
+        "2221b1e7-d6f4-46a5-b825-1bf28ced1118"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "alt": false
+      }
+    },
+    "e82a41c4-c1b4-4c22-a1e8-244d5259fca9": {
+      "type": "text-columns",
+      "blocks": {
+        "template--14925759873078__e82a41c4-c1b4-4c22-a1e8-244d5259fca9-1682335999240475f9-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/tightened-skin.png",
+            "image_mask": "none",
+            "image_width": 150,
+            "title": "Tightened Skin",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--14925759873078__e82a41c4-c1b4-4c22-a1e8-244d5259fca9-1682335999240475f9-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/REDUCED_FINE_LINES_WRINKLES.png",
+            "image_mask": "none",
+            "image_width": 150,
+            "title": "Reduced fine lines & wrinkles",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "7e47935e-f12d-4138-bb81-2769fc2289fd": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/IMPROVED_MUSCLE_TONE.png",
+            "image_mask": "none",
+            "image_width": 150,
+            "title": "Lifted Skin",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "d3d7f427-fbf7-47ed-9614-5d59c27e04ed": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/improved-skin-tone.png",
+            "image_mask": "none",
+            "image_width": 150,
+            "title": "Improved Skin Tone",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14925759873078__e82a41c4-c1b4-4c22-a1e8-244d5259fca9-1682335999240475f9-0",
+        "template--14925759873078__e82a41c4-c1b4-4c22-a1e8-244d5259fca9-1682335999240475f9-1",
+        "7e47935e-f12d-4138-bb81-2769fc2289fd",
+        "d3d7f427-fbf7-47ed-9614-5d59c27e04ed"
+      ],
+      "custom_css": [
+        ".image-wrap {background-image: none;}"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "alt": true
+      }
+    },
+    "6dc0d4eb-59fe-4d15-bc2a-f7a1bcfad2f2": {
+      "type": "faq",
+      "blocks": {
+        "template--14925759873078__6dc0d4eb-59fe-4d15-bc2a-f7a1bcfad2f2-16824010184d29adbe-0": {
+          "type": "question",
+          "settings": {
+            "title": "Can I use microcurrent before and after plastic surgery?",
+            "text": "<p>Before your surgery you can. After the surgery, please consult with your doctor on when you can use microcurrent again. Once you're given the go ahead by your doctor, these facials can actually support the healing process and improve your results.<\/p>"
+          }
+        },
+        "template--14925759873078__6dc0d4eb-59fe-4d15-bc2a-f7a1bcfad2f2-16824010184d29adbe-1": {
+          "type": "question",
+          "settings": {
+            "title": "Can I use microcurrent if I've had Anti-Wrinkle Injections or Juvederm?",
+            "text": "<p>Microcurrent stimulates the muscles and activates them, while Botox freezes the muscles. If you’ve just had Botox done in a certain area, then you might need to avoid using microcurrent in that area, as it will start to undo the effect of Botox. However, if you are in the phase where the effect of Botox is running out, then microcurrent might be a better technology to use in that area to avoid usage of Botox altogether. It will take some time but your muscles will reactivate and help build tone and firmness, instead of getting more laxed due to Botox. There is no effect of microcurrent on Juvederm and it’s safe to use it. However, you should still consult your doctor.<\/p>"
+          }
+        },
+        "e296f56c-ed77-4de5-b97b-c0aacab49bbe": {
+          "type": "question",
+          "settings": {
+            "title": "Can I do a microcurrent treatment if I have metal plates, dental work or piercings on the face?",
+            "text": "<p>We receive a lot of questions about the safety of using microcurrent facial technology on someone who has facial piercings, dental work or metal plates. Under these circumstances, microcurrent is still safe to use. In the case of facial piercings you may remove them for a more smooth facial or for peace of mind, but it is not necessary to do so.<\/p>"
+          }
+        },
+        "a7673873-de67-428b-8667-f905c33dd2ef": {
+          "type": "question",
+          "settings": {
+            "title": "Who is NOT a candidate for microcurrent?",
+            "text": "<p>- If you are pregnant<\/p><p>- Have had heart surgery in the past year<\/p><p>- Have a pacemaker, metal implants or screws<\/p><p>- Recent facial operation or procedure<\/p><p>- All forms of “active” cancer (ok with note from doctor - No if on chemo or radiation) <\/p><p>- Epilepsy, Diabetes, Heart Condition <\/p><p>- Use of Retin-A (discontinue use three weeks prior to treatment)<\/p><p>- Under the age of 18<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14925759873078__6dc0d4eb-59fe-4d15-bc2a-f7a1bcfad2f2-16824010184d29adbe-0",
+        "template--14925759873078__6dc0d4eb-59fe-4d15-bc2a-f7a1bcfad2f2-16824010184d29adbe-1",
+        "e296f56c-ed77-4de5-b97b-c0aacab49bbe",
+        "a7673873-de67-428b-8667-f905c33dd2ef"
+      ],
+      "settings": {
+        "title": "Is Microcurrent"
+      }
+    },
+    "631f851b-b991-4747-a4f1-2321c8fc647d": {
+      "type": "hero-animated",
+      "blocks": {
+        "template--14925759873078__631f851b-b991-4747-a4f1-2321c8fc647d-16824033234a2c0c1c-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/7eWellness_homepage_BeforeAfter-47.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/7eWellness_homepage_BeforeAfter_Mobile_720x_1dca417e-0637-4451-97bb-99d26c880f74.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--14925759873078__631f851b-b991-4747-a4f1-2321c8fc647d-16824033234a2c0c1c-0"
+      ],
+      "settings": {
+        "style": "gif",
+        "title": "",
+        "title_size": 80,
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "desktop_size": 0,
+        "mobile_size": 0
+      }
+    },
+    "0e060501-0e88-4c33-a0cb-fe19a191cc07": {
+      "type": "text-columns",
+      "blocks": {
+        "template--14925759873078__0e060501-0e88-4c33-a0cb-fe19a191cc07-1682335999240475f9-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "",
+            "text": "<p>\"We get rave reviews from our clients, and many have stopped using their at-home Nuface devices because they get much better results from the Myolift machines. If you own a spa I highly recommend investing in Myolift MD, it has helped my business tremendously\"<br\/><strong>★★★★★<\/strong><\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--14925759873078__0e060501-0e88-4c33-a0cb-fe19a191cc07-1682335999240475f9-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "",
+            "text": "<p>\"I upgraded my MyoLift Mini to the Myolift 600 and am so happy with my decision. The higher microamps make a huge difference and my clients love the instant results.\"<br\/><strong>★★★★★<\/strong><\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "7670bbd6-94cd-4b3c-acbf-1937b199e93d": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": false,
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "",
+            "text": "<p>\"I signed up for the annual membership and I’m so happy I did! As a professional it’s important for me to stay stocked up on supplies without breaking my bank.  I love having a way of interacting with this company that is exclusive for licensed professionals.\"<br\/><strong>★★★★★<\/strong><\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14925759873078__0e060501-0e88-4c33-a0cb-fe19a191cc07-1682335999240475f9-0",
+        "template--14925759873078__0e060501-0e88-4c33-a0cb-fe19a191cc07-1682335999240475f9-1",
+        "7670bbd6-94cd-4b3c-acbf-1937b199e93d"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "alt": false
+      }
+    },
+    "18c362d0-10ad-4459-9cdc-be7385216c8e": {
+      "type": "testimonials",
+      "blocks": {
+        "template--14925759873078__18c362d0-10ad-4459-9cdc-be7385216c8e-16825962812beb65e1-0": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>\"We get rave reviews from our clients, and many have stopped using their at-home Nuface devices because they get much better results from the Myolift machines. If you own a spa I highly recommend investing in Myolift MD, it has helped my business tremendously\"<br\/><strong>★★★★★<\/strong><\/p>",
+            "author": ""
+          }
+        },
+        "template--14925759873078__18c362d0-10ad-4459-9cdc-be7385216c8e-16825962812beb65e1-1": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>\"I upgraded my MyoLift Mini to the Myolift 600 and am so happy with my decision. The higher microamps make a huge difference and my clients love the instant results.\"<br\/><strong>★★★★★<\/strong><\/p>",
+            "author": ""
+          }
+        },
+        "9c4691fa-7325-4155-81da-c18eaf7dc522": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>\"I signed up for the annual membership and I’m so happy I did! As a professional it’s important for me to stay stocked up on supplies without breaking my bank.  I love having a way of interacting with this company that is exclusive for licensed professionals.\"<br\/><strong>★★★★★<\/strong><\/p>",
+            "author": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14925759873078__18c362d0-10ad-4459-9cdc-be7385216c8e-16825962812beb65e1-0",
+        "template--14925759873078__18c362d0-10ad-4459-9cdc-be7385216c8e-16825962812beb65e1-1",
+        "9c4691fa-7325-4155-81da-c18eaf7dc522"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "round_images": false,
+        "alt": false
+      }
+    },
+    "b0dd50c3-dabe-4007-b715-b575f20b6cd2": {
+      "type": "hero-animated",
+      "blocks": {
+        "template--14925759873078__b0dd50c3-dabe-4007-b715-b575f20b6cd2-168233549719dac01b-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-on-home-page_revised.png",
+            "image_mobile": "shopify:\/\/shop_images\/mobile_logo-on-home-page_revised.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--14925759873078__b0dd50c3-dabe-4007-b715-b575f20b6cd2-168233549719dac01b-0"
+      ],
+      "settings": {
+        "style": "gif",
+        "title": "",
+        "title_size": 80,
+        "subheading": "",
+        "link": "shopify:\/\/blogs\/news-and-press-release",
+        "link_text": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "desktop_size": 0,
+        "mobile_size": 0
+      }
+    },
+    "d8524a69-6302-444b-8c88-5ffa08b2dfc4": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/founder_msg.png",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Message from our founder",
+        "text": "<p>I created 7E Wellness to empower beauty professionals by focusing on  a non-invasive and natural approach to skincare. My unique, holistic approach to wellness is centered around Seven elements. When combined, these elements assist in the natural enhancement of beauty both internally and externally...<\/p>",
+        "button_label": "Learn More",
+        "button_link": "shopify:\/\/pages\/pooja-johari",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "50",
+        "layout": "right",
+        "alt": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "c215e377-5dbf-420c-8b24-825cfc02e641",
+    "d59f14c6-715d-467a-9773-55065c3decfc",
+    "a2ee6cd0-014a-44b4-a18f-f9abc34c5d30",
+    "e82a41c4-c1b4-4c22-a1e8-244d5259fca9",
+    "6dc0d4eb-59fe-4d15-bc2a-f7a1bcfad2f2",
+    "631f851b-b991-4747-a4f1-2321c8fc647d",
+    "0e060501-0e88-4c33-a0cb-fe19a191cc07",
+    "18c362d0-10ad-4459-9cdc-be7385216c8e",
+    "b0dd50c3-dabe-4007-b715-b575f20b6cd2",
+    "d8524a69-6302-444b-8c88-5ffa08b2dfc4"
+  ]
+}

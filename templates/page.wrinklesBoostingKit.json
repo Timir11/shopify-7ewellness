@@ -1,0 +1,192 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "rich_text_GFpRhj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_khkTKt": {
+          "type": "heading",
+          "settings": {
+            "title": "WRINKLE ERASE  BOOTCAMP KIT"
+          }
+        },
+        "text_qPP6pz": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>Welcome to the 7E Wellness Family!<\/p><p>Congratulations on purchasing the 7E Bootcamp Kit! We're excited to join you on your journey to enhance your skin's firmness and brightness. Our Bootcamp Kit is meticulously designed to boost your skin's firmness and radiance by addressing deficits in tone, density, and elasticity.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_khkTKt",
+        "text_qPP6pz"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": false
+      }
+    },
+    "rich_text_GKy4VW": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_fTBrXy": {
+          "type": "heading",
+          "settings": {
+            "title": "ACCESSORY INSTRUCTIONS"
+          }
+        },
+        "text_MG9cqh": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p><span style=\"text-decoration:underline\"><strong>Sheet Mask<\/strong><\/span><strong>-<\/strong> Retrieve two circular sticky pads from your EGF Sheet Mask or the alligator clips from your Vitalizing Sheet Mask and attach them to your device via the Lead Wire. Smooth the Sheet Mask over your face. Dispense any excess serum from the packet and massage it into your neck and decollete. Apply one sticky pad on top of the  Sheet Mask in the center of your forehead. Apply the second sticky pad near the base of the neck directly on the skin, avoiding the center of the throat - place it 1-2 inches over to the left or right. OR Clip the alligator clips on opposite sides along the edges of the mask. You may use the EGF Sheet Mask Session or Custom Session in your QT App, or you may use app free mode. Myolift Mini users should refer to the instructions on the sheet mask packaging.After your treatment is done, remove the mask and massage in the remaining serum. <\/p><p><span style=\"text-decoration:underline\"><strong>Handsfree Masks + Splitter Wire<\/strong><\/span><strong>- <\/strong>Retrieve your set of two Splitter Wires and attach them to your device via the Lead Wire. Retrieve a Handsfree Mask and attach one prong from each side of your Lead Wire to the sides of the mask. Retrieve another Handsfree Mask and attach one prong from each side of your Lead Wire to the sides of the mask. Run your device and perform the treatment. In the QT App, choose any of the Handsfree Mask Sessions from your Sessions Menu, or you may use App Free Mode or create a Custom Session. Myolift Mini Users Should refer to the instructions on the package.<\/p><p><span style=\"text-decoration:underline\"><strong>Conductive Gloves -<\/strong><\/span> You may use the Conductive Gloves Session or Custom Session in your QT App, or you may use app free mode. Myolift Mini Users should refer to the Help Desk at 7ewellnes.com for tutorials<\/p><p><\/p><p><strong>Please use the drop downs below as a day by day guide on how to complete your 14 day routine.<\/strong><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_fTBrXy",
+        "text_MG9cqh"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": false
+      }
+    },
+    "faq_TnrXBW": {
+      "type": "faq",
+      "blocks": {
+        "question_apfzMB": {
+          "type": "question",
+          "settings": {
+            "title": "Day 1",
+            "text": "<p><strong>Step 1: <\/strong>Clarify with the Mangosteen Cleanser <\/p><p>Put on your 7e Wellness Spa Headband, then apply a thin layer of Mangosteen Cleanser to dry skin. <\/p><p><span style=\"text-decoration:underline\">Protip<\/span>: For an added boost of exfoliation, allow the cleanser to sit on the skin for 2-5 minutes before adding water and washing it off. This can be done up to 3 times per week. <\/p><p><strong>Step 2: <\/strong>Boost your results with the ATP Booster Gel<\/p><p>Apply a quarter-sized amount of ATP Booster Gel to the face and neck, misting with Infused Conductive Solution or distilled water if the gel dries.<\/p><p><strong>Step 3: <\/strong>Treat with Myolift QT and Sheet Mask<\/p><p><strong>Step 4:<\/strong> Target with Eye Lift Serum<\/p><p>Apply 1-2 rice grain sized drops of serum to the ring fingers and gently tap it into the under eye area,<\/p><p><strong>Step 5:<\/strong> Nourish with Anti Aging Peptide Serum<\/p><p>Press 2 pumps into the face and neck area. Protip: apply 1 pump directly to the lips and eye area to soothe dryness.<\/p>"
+          }
+        },
+        "question_pWAixK": {
+          "type": "question",
+          "settings": {
+            "title": "Day 2",
+            "text": "<p><strong>Step 1: <\/strong>Clarify with the Mangosteen Cleanser <\/p><p>Put on your 7e Wellness Spa Headband, then apply a thin layer of Mangosteen Cleanser to dry skin. <\/p><p><span style=\"text-decoration:underline\">Protip<\/span>: For an added boost of exfoliation, allow the cleanser to sit on the skin for 2-5 minutes before adding water and washing it off. This can be done up to 3 times per week. <\/p><p><strong>Step 2: <\/strong>Boost your results with the ATP Booster Gel<\/p><p>Apply a quarter-sized amount of ATP Booster Gel to the face and neck, misting with Infused Conductive Solution or distilled water if the gel dries.<\/p><p><strong>Step 3: <\/strong>Treat with Myolift QT using conductive gloves <\/p><p><strong>Step 4:<\/strong> Target with Eye Lift Serum<\/p><p>Apply 1-2 rice grain sized drops of serum to the ring fingers and gently tap it into the under eye area,<\/p><p><strong>Step 5:<\/strong> Nourish with Anti Aging Peptide Serum<\/p><p>Press 2 pumps into the face and neck area. Protip: apply 1 pump directly to the lips and eye area to soothe dryness.<\/p>"
+          }
+        },
+        "question_gkdA3A": {
+          "type": "question",
+          "settings": {
+            "title": "Day 3",
+            "text": "<p><strong>Step 1: <\/strong>Clarify with the Mangosteen Cleanser <\/p><p>Put on your 7e Wellness Spa Headband, then apply a thin layer of Mangosteen Cleanser to dry skin. <\/p><p><span style=\"text-decoration:underline\">Protip<\/span>: For an added boost of exfoliation, allow the cleanser to sit on the skin for 2-5 minutes before adding water and washing it off. This can be done up to 3 times per week. <\/p><p><strong>Step 2: <\/strong>Boost your results with the ATP Booster Gel<\/p><p>Apply a quarter-sized amount of ATP Booster Gel to the face and neck, misting with Infused Conductive Solution or distilled water if the gel dries.<\/p><p><strong>Step 3: <\/strong>Treat with Myolift QT using eye and lip mask.<\/p><p><strong>Step 4:<\/strong> Target with Eye Lift Serum<\/p><p>Apply 1-2 rice grain sized drops of serum to the ring fingers and gently tap it into the under eye area,<\/p><p><strong>Step 5:<\/strong> Nourish with Anti Aging Peptide Serum<\/p><p>Press 2 pumps into the face and neck area. Protip: apply 1 pump directly to the lips and eye area to soothe dryness.<\/p>"
+          }
+        },
+        "question_Dighaz": {
+          "type": "question",
+          "settings": {
+            "title": "Day 4",
+            "text": "<p><strong>Step 1: <\/strong>Clarify with the Mangosteen Cleanser <\/p><p>Put on your 7e Wellness Spa Headband, then apply a thin layer of Mangosteen Cleanser to dry skin. <\/p><p><span style=\"text-decoration:underline\">Protip<\/span>: For an added boost of exfoliation, allow the cleanser to sit on the skin for 2-5 minutes before adding water and washing it off. This can be done up to 3 times per week. <\/p><p><strong>Step 2: <\/strong>Boost your results with the ATP Booster Gel<\/p><p>Apply a quarter-sized amount of ATP Booster Gel to the face and neck, misting with Infused Conductive Solution or distilled water if the gel dries.<\/p><p><strong>Step 3: <\/strong>Treat with Myolift QT using conductive gloves <\/p><p><strong>Step 4:<\/strong> Target with Eye Lift Serum<\/p><p>Apply 1-2 rice grain sized drops of serum to the ring fingers and gently tap it into the under eye area,<\/p><p><strong>Step 5:<\/strong> Nourish with Anti Aging Peptide Serum<\/p><p>Press 2 pumps into the face and neck area. Protip: apply 1 pump directly to the lips and eye area to soothe dryness.<\/p>"
+          }
+        },
+        "question_gCGEJh": {
+          "type": "question",
+          "settings": {
+            "title": "Day 5",
+            "text": "<p><strong>Step 1: <\/strong>Clarify with the Mangosteen Cleanser <\/p><p>Put on your 7e Wellness Spa Headband, then apply a thin layer of Mangosteen Cleanser to dry skin. <\/p><p><span style=\"text-decoration:underline\">Protip<\/span>: For an added boost of exfoliation, allow the cleanser to sit on the skin for 2-5 minutes before adding water and washing it off. This can be done up to 3 times per week. <\/p><p><strong>Step 2: <\/strong>Boost your results with the ATP Booster Gel<\/p><p>Apply a quarter-sized amount of ATP Booster Gel to the face and neck, misting with Infused Conductive Solution or distilled water if the gel dries.<\/p><p><strong>Step 3: <\/strong>Treat with Myolift QT using eye and lip mask.<\/p><p><strong>Step 4:<\/strong> Target with Eye Lift Serum<\/p><p>Apply 1-2 rice grain sized drops of serum to the ring fingers and gently tap it into the under eye area,<\/p><p><strong>Step 5:<\/strong> Nourish with Anti Aging Peptide Serum<\/p><p>Press 2 pumps into the face and neck area. Protip: apply 1 pump directly to the lips and eye area to soothe dryness.<\/p>"
+          }
+        },
+        "question_epe4Am": {
+          "type": "question",
+          "settings": {
+            "title": "Day 6",
+            "text": "<p><strong>Step 1: <\/strong>Clarify with the Mangosteen Cleanser <\/p><p>Put on your 7e Wellness Spa Headband, then apply a thin layer of Mangosteen Cleanser to dry skin. <\/p><p><span style=\"text-decoration:underline\">Protip<\/span>: For an added boost of exfoliation, allow the cleanser to sit on the skin for 2-5 minutes before adding water and washing it off. This can be done up to 3 times per week. <\/p><p><strong>Step 2: <\/strong>Boost your results with the ATP Booster Gel<\/p><p>Apply a quarter-sized amount of ATP Booster Gel to the face and neck, misting with Infused Conductive Solution or distilled water if the gel dries.<\/p><p><strong>Step 3: <\/strong>Treat with Myolift QT using conductive gloves <\/p><p><strong>Step 4:<\/strong> Target with Eye Lift Serum<\/p><p>Apply 1-2 rice grain sized drops of serum to the ring fingers and gently tap it into the under eye area,<\/p><p><strong>Step 5:<\/strong> Nourish with Anti Aging Peptide Serum<\/p><p>Press 2 pumps into the face and neck area. Protip: apply 1 pump directly to the lips and eye area to soothe dryness.<\/p>"
+          }
+        },
+        "question_AymyFz": {
+          "type": "question",
+          "settings": {
+            "title": "Day 7",
+            "text": "<p><strong>Step 1: <\/strong>Clarify with the Mangosteen Cleanser <\/p><p>Put on your 7e Wellness Spa Headband, then apply a thin layer of Mangosteen Cleanser to dry skin. <\/p><p><span style=\"text-decoration:underline\">Protip<\/span>: For an added boost of exfoliation, allow the cleanser to sit on the skin for 2-5 minutes before adding water and washing it off. This can be done up to 3 times per week. <\/p><p><strong>Step 2: <\/strong>Boost your results with the ATP Booster Gel<\/p><p>Apply a quarter-sized amount of ATP Booster Gel to the face and neck, misting with Infused Conductive Solution or distilled water if the gel dries.<\/p><p><strong>Step 3: <\/strong>Treat with Myolift QT using eye and lip mask.<\/p><p><strong>Step 4:<\/strong> Target with Eye Lift Serum<\/p><p>Apply 1-2 rice grain sized drops of serum to the ring fingers and gently tap it into the under eye area,<\/p><p><strong>Step 5:<\/strong> Nourish with Anti Aging Peptide Serum<\/p><p>Press 2 pumps into the face and neck area. Protip: apply 1 pump directly to the lips and eye area to soothe dryness.<\/p>"
+          }
+        },
+        "question_RRaEKD": {
+          "type": "question",
+          "settings": {
+            "title": "Day 8",
+            "text": "<p><strong>Step 1: <\/strong>Clarify with the Mangosteen Cleanser <\/p><p>Put on your 7e Wellness Spa Headband, then apply a thin layer of Mangosteen Cleanser to dry skin. <\/p><p><span style=\"text-decoration:underline\">Protip<\/span>: For an added boost of exfoliation, allow the cleanser to sit on the skin for 2-5 minutes before adding water and washing it off. This can be done up to 3 times per week. <\/p><p><strong>Step 2: <\/strong>Boost your results with the ATP Booster Gel<\/p><p>Apply a quarter-sized amount of ATP Booster Gel to the face and neck, misting with Infused Conductive Solution or distilled water if the gel dries.<\/p><p><strong>Step 3: <\/strong>Treat with Myolift QT and Sheet Mask<\/p><p><strong>Step 4:<\/strong> Target with Eye Lift Serum<\/p><p>Apply 1-2 rice grain sized drops of serum to the ring fingers and gently tap it into the under eye area,<\/p><p><strong>Step 5:<\/strong> Nourish with Anti Aging Peptide Serum<\/p><p>Press 2 pumps into the face and neck area. Protip: apply 1 pump directly to the lips and eye area to soothe dryness.<\/p>"
+          }
+        },
+        "question_nxX9dh": {
+          "type": "question",
+          "settings": {
+            "title": "Day 9",
+            "text": "<p><strong>Step 1: <\/strong>Clarify with the Mangosteen Cleanser <\/p><p>Put on your 7e Wellness Spa Headband, then apply a thin layer of Mangosteen Cleanser to dry skin. <\/p><p><span style=\"text-decoration:underline\">Protip<\/span>: For an added boost of exfoliation, allow the cleanser to sit on the skin for 2-5 minutes before adding water and washing it off. This can be done up to 3 times per week. <\/p><p><strong>Step 2: <\/strong>Boost your results with the ATP Booster Gel<\/p><p>Apply a quarter-sized amount of ATP Booster Gel to the face and neck, misting with Infused Conductive Solution or distilled water if the gel dries.<\/p><p><strong>Step 3: <\/strong>Treat with Myolift QT using conductive gloves <\/p><p><strong>Step 4:<\/strong> Target with Eye Lift Serum<\/p><p>Apply 1-2 rice grain sized drops of serum to the ring fingers and gently tap it into the under eye area,<\/p><p><strong>Step 5:<\/strong> Nourish with Anti Aging Peptide Serum<\/p><p>Press 2 pumps into the face and neck area. Protip: apply 1 pump directly to the lips and eye area to soothe dryness.<\/p>"
+          }
+        },
+        "question_dGcF4H": {
+          "type": "question",
+          "settings": {
+            "title": "Day 10",
+            "text": "<p><strong>Step 1: <\/strong>Clarify with the Mangosteen Cleanser <\/p><p>Put on your 7e Wellness Spa Headband, then apply a thin layer of Mangosteen Cleanser to dry skin. <\/p><p><span style=\"text-decoration:underline\">Protip<\/span>: For an added boost of exfoliation, allow the cleanser to sit on the skin for 2-5 minutes before adding water and washing it off. This can be done up to 3 times per week. <\/p><p><strong>Step 2: <\/strong>Boost your results with the ATP Booster Gel<\/p><p>Apply a quarter-sized amount of ATP Booster Gel to the face and neck, misting with Infused Conductive Solution or distilled water if the gel dries.<\/p><p><strong>Step 3: <\/strong>Treat with Myolift QT using eye and lip mask.<\/p><p><strong>Step 4:<\/strong> Target with Eye Lift Serum<\/p><p>Apply 1-2 rice grain sized drops of serum to the ring fingers and gently tap it into the under eye area,<\/p><p><strong>Step 5:<\/strong> Nourish with Anti Aging Peptide Serum<\/p><p>Press 2 pumps into the face and neck area. Protip: apply 1 pump directly to the lips and eye area to soothe dryness.<\/p>"
+          }
+        },
+        "question_7tQTTA": {
+          "type": "question",
+          "settings": {
+            "title": "Day 11",
+            "text": "<p><strong>Step 1: <\/strong>Clarify with the Mangosteen Cleanser <\/p><p>Put on your 7e Wellness Spa Headband, then apply a thin layer of Mangosteen Cleanser to dry skin. <\/p><p><span style=\"text-decoration:underline\">Protip<\/span>: For an added boost of exfoliation, allow the cleanser to sit on the skin for 2-5 minutes before adding water and washing it off. This can be done up to 3 times per week. <\/p><p><strong>Step 2: <\/strong>Boost your results with the ATP Booster Gel<\/p><p>Apply a quarter-sized amount of ATP Booster Gel to the face and neck, misting with Infused Conductive Solution or distilled water if the gel dries.<\/p><p><strong>Step 3: <\/strong>Treat with Myolift QT using conductive gloves <\/p><p><strong>Step 4:<\/strong> Target with Eye Lift Serum<\/p><p>Apply 1-2 rice grain sized drops of serum to the ring fingers and gently tap it into the under eye area,<\/p><p><strong>Step 5:<\/strong> Nourish with Anti Aging Peptide Serum<\/p><p>Press 2 pumps into the face and neck area. Protip: apply 1 pump directly to the lips and eye area to soothe dryness.<\/p>"
+          }
+        },
+        "question_ym3bx3": {
+          "type": "question",
+          "settings": {
+            "title": "Day 13",
+            "text": "<p><strong>Step 1: <\/strong>Clarify with the Mangosteen Cleanser <\/p><p>Put on your 7e Wellness Spa Headband, then apply a thin layer of Mangosteen Cleanser to dry skin. <\/p><p><span style=\"text-decoration:underline\">Protip<\/span>: For an added boost of exfoliation, allow the cleanser to sit on the skin for 2-5 minutes before adding water and washing it off. This can be done up to 3 times per week. <\/p><p><strong>Step 2: <\/strong>Boost your results with the ATP Booster Gel<\/p><p>Apply a quarter-sized amount of ATP Booster Gel to the face and neck, misting with Infused Conductive Solution or distilled water if the gel dries.<\/p><p><strong>Step 3: <\/strong>Treat with Myolift QT using conductive gloves <\/p><p><strong>Step 4:<\/strong> Target with Eye Lift Serum<\/p><p>Apply 1-2 rice grain sized drops of serum to the ring fingers and gently tap it into the under eye area,<\/p><p><strong>Step 5:<\/strong> Nourish with Anti Aging Peptide Serum<\/p><p>Press 2 pumps into the face and neck area. Protip: apply 1 pump directly to the lips and eye area to soothe dryness.<\/p>"
+          }
+        },
+        "question_jd7DCW": {
+          "type": "question",
+          "settings": {
+            "title": "Day 14",
+            "text": "<p><strong>Step 1: <\/strong>Clarify with the Mangosteen Cleanser <\/p><p>Put on your 7e Wellness Spa Headband, then apply a thin layer of Mangosteen Cleanser to dry skin. <\/p><p><span style=\"text-decoration:underline\">Protip<\/span>: For an added boost of exfoliation, allow the cleanser to sit on the skin for 2-5 minutes before adding water and washing it off. This can be done up to 3 times per week. <\/p><p><strong>Step 2: <\/strong>Boost your results with the ATP Booster Gel<\/p><p>Apply a quarter-sized amount of ATP Booster Gel to the face and neck, misting with Infused Conductive Solution or distilled water if the gel dries.<\/p><p><strong>Step 3: <\/strong>Treat with Myolift QT and Sheet Mask<\/p><p><strong>Step 4:<\/strong> Target with Eye Lift Serum<\/p><p>Apply 1-2 rice grain sized drops of serum to the ring fingers and gently tap it into the under eye area,<\/p><p><strong>Step 5:<\/strong> Nourish with Anti Aging Peptide Serum<\/p><p>Press 2 pumps into the face and neck area. Protip: apply 1 pump directly to the lips and eye area to soothe dryness.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_apfzMB",
+        "question_pWAixK",
+        "question_gkdA3A",
+        "question_Dighaz",
+        "question_gCGEJh",
+        "question_epe4Am",
+        "question_AymyFz",
+        "question_RRaEKD",
+        "question_nxX9dh",
+        "question_dGcF4H",
+        "question_7tQTTA",
+        "question_ym3bx3",
+        "question_jd7DCW"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
+    "featured_video_zHKHNq": {
+      "type": "featured-video",
+      "settings": {
+        "title": "",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_GFpRhj",
+    "rich_text_GKy4VW",
+    "faq_TnrXBW",
+    "featured_video_zHKHNq"
+  ]
+}

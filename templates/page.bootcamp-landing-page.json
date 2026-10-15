@@ -1,0 +1,270 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "slideshow_tj9p38": {
+      "type": "slideshow",
+      "blocks": {
+        "image_ia9UEy": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Gif-_bootcamp_banner_for_new_landing_page-2024_d79ff4ce-d9f1-4a63-b18a-c609c117534f.gif",
+            "image_mobile": "shopify:\/\/shop_images\/Gif-_MOBILE_bootcamp_banner_for_new_landing_page-2024_cd9cbf7f-854d-4a77-ad5d-a4a7d650567e.gif"
+          }
+        }
+      },
+      "block_order": [
+        "image_ia9UEy"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "featured_collection_slider_nK4EEh": {
+      "type": "featured-collection-slider",
+      "custom_css": [
+        ".index-section {background: #fff; margin: 0; padding: 40px 0px;}",
+        ".overflow-scroller::-webkit-scrollbar {width: 1px; height: 1px;}",
+        ".grid-product__price {margin-bottom: 10px;}",
+        ".grid-product__title {min-height: 100px;}",
+        "@media screen and (max-width: 480px) {.section-header__title {font-size: 24px; }}"
+      ],
+      "settings": {
+        "title": "",
+        "description": "",
+        "home_featured_products": "qt-bootcamp-kit",
+        "per_row": "small",
+        "alt": false
+      }
+    },
+    "164750184654268337": {
+      "type": "advanced-content",
+      "blocks": {
+        "164750184632c2dd43-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>Can't Decide? Let Our Free AI Scan Analyse Your Skin <\/h2><p>Get your score for wrinkles, hydration and firmness and we'll recommend which kit is perfect for you!<\/p>\n<div class=\"rte\">\n<a class=\"btn\" href=\"javascript:void(0);\" data-toggle=\"modal\" data-target=\"#ai-scan\">Try AI Scan Now!<\/a><\/div>\n\n<!-- Modal -->\n<div class=\"modal fade\" id=\"ai-scan\" tabindex=\"-1\">\n  <div class=\"modal-dialog modal-dialog-centered\">\n    <div class=\"modal-content\">\n      <div class=\"modal-body\">\n        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\">\n          <span aria-hidden=\"true\">&times;<\/span>\n        <\/button>\n        <script charset=\"utf-8\" type=\"text\/javascript\" src=\"\/\/js.hsforms.net\/forms\/embed\/v2.js\"><\/script>\n<script>\n  hbspt.forms.create({\n    region: \"na1\",\n    portalId: \"3362171\",\n    formId: \"1ff1eb1e-2c46-43c4-b5b2-b6035e697415\"\n  });\n<\/script>\n        \n      <\/div>\n    <\/div>\n  <\/div>\n<\/div>\n\n<style>\n.modal{\nz-index:999;\n}\n.modal-backdrop.show {\n  opacity: 0;\n  z-index: 0;\n}\n.modal-open .modal:before {\n  background-color: rgba(0, 0, 0, 0.7);\n}<\/style>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "164750184632c2dd43-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ai-gif.gif",
+            "link": "",
+            "width": "33%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "164750184632c2dd43-1",
+        "164750184632c2dd43-0"
+      ],
+      "custom_css": [
+        ".custom-content {justify-content: space-around;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "text_columns_rpUccE": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_WwMBMn": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/1-black.png",
+            "image_mask": "none",
+            "image_width": 100,
+            "title": "",
+            "text": "<p>Conveniently choose between 3 Main Skin Concerns<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_R9j8ka": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/2-black.png",
+            "image_mask": "none",
+            "image_width": 100,
+            "title": "",
+            "text": "<p>We’re introducing 2 new products never carried before, the <strong>Mangosteen Facial Cleanser <\/strong>and very first <strong>Eye Lift Serum <\/strong>to combat under eye aging.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_V9zxy9": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/3-black.png",
+            "image_mask": "none",
+            "image_width": 100,
+            "title": "",
+            "text": "<p>Get up to $200 savings when purchasing a bundle<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_WwMBMn",
+        "text_block_R9j8ka",
+        "text_block_V9zxy9"
+      ],
+      "custom_css": [
+        ".index-section {background: #fff; margin: 0; padding: 60px 0px;}",
+        "@media screen and (max-width: 480px) {.section-header__title {font-size: 24px; }}"
+      ],
+      "settings": {
+        "title": "WHY YOU'LL LOVE IT",
+        "align_text": "center",
+        "alt": false
+      }
+    },
+    "text_columns_47YDWp": {
+      "type": "text-columns",
+      "custom_css": [
+        ".index-section {background: #fff;}",
+        "@media screen and (max-width: 480px) {.section-header__title {font-size: 24px; }}"
+      ],
+      "settings": {
+        "title": "WHY WE MADE IT",
+        "align_text": "center",
+        "alt": false
+      }
+    },
+    "text_and_image_gDgyBw": {
+      "type": "text-and-image",
+      "custom_css": [
+        ".index-section {background: #fff; padding-bottom: 30px;}",
+        ".feature-row__item {flex: 0 1 40%;}",
+        ".feature-row__text {min-width: 55%; flex: 0 1 55%;}",
+        "@media screen and (max-width: 480px) {.h1 {font-size: 24px; } .feature-row__text {text-align: center !important; }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Moisture_Boosting_Kit_for_landing_page_371d064c-2c48-45c5-83e8-57ad09ed5daf.gif",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Hydrate & Soften",
+        "text": "<p>Fight signs of aging while fortifying your skin's natural defenses against environmental stressors with the Moisture Boost Kit. This carefully crafted set is engineered to visibly enhance skin texture and resilience, ensuring a nourished and radiant complexion all day long.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "33",
+        "layout": "left",
+        "alt": false,
+        "top_padding": false,
+        "bottom_padding": false,
+        "lazyload_images": true
+      }
+    },
+    "text_and_image_a6EG9V": {
+      "type": "text-and-image",
+      "custom_css": [
+        ".index-section {background: #fff; padding-bottom: 30px;}",
+        ".feature-row__item {flex: 0 1 40%;}",
+        ".feature-row__text {min-width: 55%; flex: 0 1 55%;}",
+        "@media screen and (max-width: 480px) {.h1 {font-size: 24px; } .feature-row__text {text-align: center !important; }}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Firm_Bright_Kit_-_for_landing_page_d0b799f8-39e3-4727-96ac-1d8ec1691f68.gif",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Firm & Brighten",
+        "text": "<p>Enhance skin elasticity and diminish hyperpigmentation with the Firm & Bright Kit, expertly crafted to boost collagen production, improve skin density and enhance overall skin tone.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "right",
+        "image_width": "33",
+        "layout": "right",
+        "alt": false,
+        "top_padding": false,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "text_and_image_6nYjPh": {
+      "type": "text-and-image",
+      "custom_css": [
+        ".index-section {background: #fff; padding-bottom: 30px;}",
+        ".feature-row__item {flex: 0 1 40%;}",
+        ".feature-row__text {min-width: 55%; flex: 0 1 55%;}",
+        "@media screen and (max-width: 480px) {.h1 {font-size: 24px; } .feature-row__text {text-align: center !important; }}"
+      ],
+      "settings": {
+        "image_mask": "none",
+        "image2": "shopify:\/\/shop_images\/Wrinkle_Reduction_Kit_for_landing_page_497f0cfe-3132-49a9-85fd-4e0f7791b450.gif",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Reduce Wrinkles & Fine Lines",
+        "text": "<p>Reduce fine lines, enhance firmness, and smooth uneven skin texture with the Wrinkle Reduction Kit, formulated to effectively rejuvenate your skin's vitality and resilience.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "33",
+        "layout": "left",
+        "alt": false,
+        "top_padding": false,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "featured_collection_slider_EAxhLm": {
+      "type": "featured-collection-slider",
+      "custom_css": [
+        ".index-section {background: #fff; margin: 0; padding: 40px 0px;}",
+        ".overflow-scroller::-webkit-scrollbar {width: 1px; height: 1px;}",
+        ".grid-product__price {margin-bottom: 10px;}",
+        "@media screen and (max-width: 480px) {.section-header__title {font-size: 24px; }}"
+      ],
+      "settings": {
+        "title": "Choose Your Specific Skin Concern Today:",
+        "description": "",
+        "home_featured_products": "microcurrent-kit-and-bundles",
+        "per_row": "small",
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_tj9p38",
+    "featured_collection_slider_nK4EEh",
+    "164750184654268337",
+    "text_columns_rpUccE",
+    "text_columns_47YDWp",
+    "text_and_image_gDgyBw",
+    "text_and_image_a6EG9V",
+    "text_and_image_6nYjPh",
+    "featured_collection_slider_EAxhLm"
+  ]
+}

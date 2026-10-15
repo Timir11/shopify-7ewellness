@@ -1,0 +1,97 @@
+<div class="consumer_study_result">
+  <div class="wrapper">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-lg-4">
+        <div class="consumer_study_result_desc">
+          <!--
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/WrwxQrPiDuE?si=c6GqUcthTZOlQJop" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          -->
+          <h2>{{ section.settings.title }}</h2>
+          <p>{{ section.settings.subtitle }}</p>
+          {% if section.settings.btn_url != blank %}
+            <a href="{{ section.settings.btn_url }}">{{ section.settings.btn_txt }}</a>
+          {% endif %}
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="consumer_study_result_Slider">
+          {% for block in section.blocks %}
+            <div class="study_result_slide_item">
+              <img
+                loading="lazy"
+                data-src="{{ block.settings.image | img_url: 'original' }}"
+                src="{{ block.settings.image | img_url: 'original' }}"
+                alt="{{ forloop.index }}"
+              >
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ {% comment %}<link rel="stylesheet" href="{{ 'slick.css' | asset_url }}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="{{ 'slick.min.js' | asset_url }}"></script> {% endcomment %}
+<script>
+  $('.consumer_study_result_Slider').slick({
+    arrows: false,
+    dots: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Consumer Study Result",
+  "settings": [
+    {
+      "type":"text",
+      "id":"title",
+      "label":"Title"
+    },
+    {
+      "type":"text",
+      "id":"subtitle",
+      "label":"Sub Title"
+    },
+    {
+      "type":"url",
+      "id":"btn_url",
+      "label":"Button URL"
+    },
+    {
+      "type":"text",
+      "id":"btn_txt",
+      "label":"Button Text"
+    }
+  ],
+  "blocks":[
+    {
+      "name":"Image",
+      "type":"image",
+      "settings":[
+        {
+          "type":"image_picker",
+          "id":"image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets":[
+    {
+      "name": "Consumer Study Result"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

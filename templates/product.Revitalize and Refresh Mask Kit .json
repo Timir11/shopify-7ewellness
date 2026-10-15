@@ -1,0 +1,309 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "custom_DKQTRw": {
+          "type": "custom",
+          "settings": {
+            "code": "<P style=\"font-size: 20px;line-height: 1; margin-top: -20px;\"><em>Bundle Items Valued at $88.99<\/em><\/P>"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "sales_point": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "globe",
+            "text": "Free US Domestic Ground Shipping"
+          }
+        },
+        "30703011-9513-4ebc-8f63-6ddf41dabf98": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "checkmark",
+            "text": "Happiness Guarantee"
+          }
+        },
+        "custom_3grgRz": {
+          "type": "custom",
+          "disabled": true,
+          "settings": {
+            "code": "<a style=\"background: yellow;\npadding: 4px 8px; border-radius: 30px;\" href=\"https:\/\/www.7ewellness.com\/pages\/7e-events\">REGISTER FOR PRODUCT DEMO WEBINAR<\/a>"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "88dfc6e1-c9b8-4d5d-9a6d-26c03b23785b": {
+          "type": "custom",
+          "disabled": true,
+          "settings": {
+            "code": "<h3>Conductive Gloves<\/h3><p>(can be used with all MyoLift™  Devices)<\/p>\n<p>Microcurrent gloves are an accessory designed to be used as an alternative to traditional ball tip probes for a microcurrent facial treatment. They are an ideal way to provide a more detail oriented microcurrent treatment to fit you or your client's unique needs for facial lifting and toning.<\/p>\n<h4>What makes conductive gloves unique?<\/h4>\n<ul>\n<li>It is an effective way to erase and eliminate wrinkles and fine lines.<\/li>\n<li>It is a comfortable alternative to traditional ball tip probes or cotton tip probes.<\/li>\n<li>A more detail-oriented way to achieve a toned facelift or even just a cheek lift.<\/li>\n<li>Made from 100% threaded silver.<\/li>\n<li>Antimicrobial, these gloves are more targeted toward reducing wrinkles and fine lines.<\/br>\nThese conductive gloves allow the microcurrent intensity to be controlled by individual pressure. <\/li>\n<\/ul>"
+          }
+        },
+        "9efbafa8-1dad-46da-939d-60841bfe885c": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Ingredients",
+            "content": "<p>Allantoin, Algae Extract, Aqua-water, Glycerin-a humectant, Ginkgo Biloba Leaf Extract, Butylene Glycol, Oligopeptide-1-EGF, Morus Alba Bark Extract, Xanthan Gum, Sodium Hyaluronate, Betaine, PEG-60-Hydrogenated Castor Oil, Dipotassium Glycyrrhizate, Phenoxyethanol, 1,2-Hexanediol, Chlorphenesin-Sodium Citrate, Disodium EDTA, Fragrance<\/p>",
+            "page": ""
+          }
+        },
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed": {
+          "type": "tab",
+          "settings": {
+            "title": "What's Included",
+            "content": "<ul><li>2 Restorative Sheet Masks<\/li><li>4 Sticky pads with connecting lead wires<\/li><li>Vitalizing Sheet Mask <\/li><li>Eye Mask<\/li><li>Forehead Mask<\/li><li>Lip Mask<\/li><\/ul><p><\/p>",
+            "page": ""
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "title": "Shipping information",
+            "content": "<p>Free USA Ground shipment, Orders are processed within 2 business day. <\/p><p>International Orders Ships within 3 business day.  <\/p><p>International customers are required to pay Duty with their local custom agency. <\/p>",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {}
+        },
+        "e51e9259-1487-4458-8555-3cf18377ca6a": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Text block"
+          }
+        }
+      },
+      "block_order": [
+        "price",
+        "custom_DKQTRw",
+        "variant_picker",
+        "sales_point",
+        "30703011-9513-4ebc-8f63-6ddf41dabf98",
+        "custom_3grgRz",
+        "buy_buttons",
+        "description",
+        "88dfc6e1-c9b8-4d5d-9a6d-26c03b23785b",
+        "9efbafa8-1dad-46da-939d-60841bfe885c",
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed",
+        "tab",
+        "share",
+        "e51e9259-1487-4458-8555-3cf18377ca6a"
+      ],
+      "settings": {
+        "product_image_size": "small",
+        "product_image_type": "stacked",
+        "thumbnail_height": "flexible",
+        "product_zoom_enable": true,
+        "enable_video_looping": true,
+        "product_video_style": "muted",
+        "sku_enable": false
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "settings": {
+        "max_width": true
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {}
+    },
+    "416c3d84-e634-4e21-8839-c08e6c114085": {
+      "type": "text-columns",
+      "blocks": {
+        "template--14970983252022__416c3d84-e634-4e21-8839-c08e6c114085-text_block-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/1-image_d70a656d-4bd1-4743-8878-97571aedd92f.png",
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "",
+            "text": "<p>Get softer, smoother, and<br\/>younger-looking skin with our innovative Restorative Facial Therapy Masks.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--14970983252022__416c3d84-e634-4e21-8839-c08e6c114085-text_block-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/2_-image.png",
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "",
+            "text": "<p>Each Korean sheet mask can be connected to any of our microcurrent machines to deliver glowing results after every facial.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "eba39b54-972a-484a-8cee-f7d225de46de": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/3-image.png",
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "",
+            "text": "<p>You can also use it at home to get professional-quality results.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14970983252022__416c3d84-e634-4e21-8839-c08e6c114085-text_block-1",
+        "template--14970983252022__416c3d84-e634-4e21-8839-c08e6c114085-text_block-2",
+        "eba39b54-972a-484a-8cee-f7d225de46de"
+      ],
+      "custom_css": [
+        ".index-section {background: #fff; padding: 60px 0; margin: 0;}"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "alt": false
+      }
+    },
+    "737b91db-0276-493f-a614-1c5a252a967c": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14970983252022__737b91db-0276-493f-a614-1c5a252a967c-liquid-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2><b>How to Use<\/b><\/h2>\n<div class=\"how_to_use\">\n<div class=\"d-flex\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2745\/9950\/files\/1_3b1fd07b-5c0e-4e82-b58f-6bcd580218b1.png?v=1693306083\" \/>\n<p>Thoroughly cleanse face and apply sheet mask so that it completely covers face from forehead to chin. Insert lead wire into the two sticky pads, then connect lead wire into your Myolift device.<\/p>\n<\/div>\n<div class=\"d-flex\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2745\/9950\/files\/2_b6055116-e331-41bd-abdb-d47bdcdda5c4.png?v=1693306084\" \/>\n<p>Apply electrodes over the sheet mask- one between eyebrows and one on the decollate.<\/p>\n<\/div>\n<div class=\"d-flex\">\n<img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2745\/9950\/files\/3_094a75ea-6d7f-4c8b-a069-3b15af88e9ad.png?v=1693306084\" \/>\n<p>Leave on for 15-20 minutes until the serum has completely absorbed. Remove to reveal glow.<\/p>\n<\/div>\n<table>\n<tr>\n<td><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2745\/9950\/files\/Arrow_6_1_copy_2.png?v=1693307083\" \/> MyoLift QT Setting: <\/td>\n<td>Lowest Level<\/td>\n<\/tr>\n<tr>\n<td><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2745\/9950\/files\/Arrow_6_1_copy_2.png?v=1693307083\" \/>  MyoLift Mini & MyoLift 600 Setting: <\/td>\n<td>Level 1 on Educate<\/td>\n<\/tr>\n<tr>\n<td><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2745\/9950\/files\/Arrow_6_1_copy_2.png?v=1693307083\" \/>  MyoLift MD Setting:<\/td>\n<td>Lowest level on Educate or Iontophoresis<\/td>\n<\/tr>\n<\/table>\n<\/div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14970983252022__737b91db-0276-493f-a614-1c5a252a967c-liquid-1"
+      ],
+      "custom_css": [
+        ".sheet_mask_howtouse {background-image: none; background-color: #f1f1f1; color: #231f20; padding: 40px 0;}",
+        "table {background-color: #f1f1f1;}",
+        "img {mix-blend-mode: exclusion;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "7f4032a2-50d1-4384-bbe7-7cf82c50392a": {
+      "type": "rich-text",
+      "blocks": {
+        "template--14970983252022__7f4032a2-50d1-4384-bbe7-7cf82c50392a-text-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<h2>Reveal Your<strong> Natural Glow<\/strong><\/h2><p>With our Restorative Sheet Mask infused with powerful anti-aging ingredients from South Korea to help restore, rejuvenate, and refresh your skin.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14970983252022__7f4032a2-50d1-4384-bbe7-7cf82c50392a-text-1"
+      ],
+      "custom_css": [
+        ".index-section {background: #ffffff; padding: 60px 0; margin: 0;}"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": false
+      }
+    },
+    "164556780200309513": {
+      "type": "apps",
+      "blocks": {
+        "2a3dd040-0528-4160-a336-9edeec07fd6f": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "disabled": true,
+          "settings": {
+            "product": "conductive-mask-bundle-with-lead-wire-splitter",
+            "widget_type": "combined_widget"
+          }
+        }
+      },
+      "block_order": [
+        "2a3dd040-0528-4160-a336-9edeec07fd6f"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "product_recommendations_heading": "You may also like",
+        "related_count": 14
+      }
+    },
+    "16819433829012c034": {
+      "type": "apps",
+      "blocks": {
+        "6ef03fbe-a3ba-4cec-aa52-ff8d71da290a": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}",
+            "widget_type": "reviews_widget"
+          }
+        }
+      },
+      "block_order": [
+        "6ef03fbe-a3ba-4cec-aa52-ff8d71da290a"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "sub",
+    "collection-return",
+    "416c3d84-e634-4e21-8839-c08e6c114085",
+    "737b91db-0276-493f-a614-1c5a252a967c",
+    "7f4032a2-50d1-4384-bbe7-7cf82c50392a",
+    "164556780200309513",
+    "product-recommendations",
+    "16819433829012c034"
+  ]
+}

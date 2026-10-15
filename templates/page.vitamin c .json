@@ -1,0 +1,44 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "164750184654268337": {
+      "type": "advanced-content",
+      "blocks": {
+        "164750184632c2dd43-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/download_5f2a2c42-1886-4051-baa9-e0f2b04c1d7c.png",
+            "link": "",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "164750184632c2dd43-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>7E Portal | Access Denied<\/h2><p>At this time you do not have access to this Customer Support Portal. Please keep in mind, 7E only provides access to Customer Support Portals for which you have purchased a corresponding device (example: if you have purchased MyoLift™ 600 you will be granted access to our MyoLift™ 600 Customer Support Portal).\n\nIf you believe there has been an error and you apply for access to this Customer Support Portal, please call our office during regular business hours at +1 (888) 412-3160 for assistance. We thank you for understanding!<\/p>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "164750184632c2dd43-0",
+        "164750184632c2dd43-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "164750184654268337"
+  ]
+}

@@ -1,0 +1,433 @@
+<div class="product-recomendation">
+  <div class="AI-score">
+    <div class="page-width">
+      <div class="row justify-content-center">
+        <div class="">
+          <div class="score">
+            <div id="wrinkle_score">0</div>
+          </div>
+        </div>
+        <div class="">
+          <div class="score">
+            <div id="firmness_score">0</div>
+          </div>
+        </div>
+        <div class="">
+          <div class="score">
+            <div id="moisture_score">0</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="AI-prod-recom-tabs">
+    <div class="page-full">
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="wrinkles" data-toggle="tab" href="#tabs-1" role="tab">Wrinkles</a>
+          <p class="Recommended"></p>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="firmness" data-toggle="tab" href="#tabs-2" role="tab">Firmness</a>
+          <p class="Recommended"></p>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="moisture" data-toggle="tab" href="#tabs-3" role="tab">Moisture</a>
+          <p class="Recommended"></p>
+        </li>
+      </ul>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="tab-pane active" id="tabs-1" role="tabpanel">
+          <!-- <center>
+            <h2 class="section-header__title">This is our recommended kit to reduce fine lines and wrinkles</h2>
+          </center> -->
+          <!-- <div class="score_txt">
+            <div class="row align-items-center">
+              <div class="col-lg-4">
+                <div class="image_hover">
+                  <img
+                    src="https://www.7ewellness.com/cdn/shop/files/wrinkle-erase-2-week-bootcamp-kit-752190.jpg?v=1719334837"
+                    class="main_img"
+                  >
+                  <img
+                    src="https://www.7ewellness.com/cdn/shop/files/wrinkle-erase-2-week-bootcamp-kit-279202_1024x1024.jpg?v=1719551332"
+                    class="hover_img"
+                  >
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <p>
+                  This <b>WRINKLE REDUCTION KIT</b> is designed to precisely treat wrinkles that form from repetitive
+                  motion in areas like the forehead, eyes, and mouth. It is especially beneficial for skin that is
+                  mature, dry, or lacking vibrancy. Clinically proven actives like Mangosteen, Evening Primrose,
+                  Ergothioneine, and Peptides target the root causes of wrinkle formation and increase the effectiveness
+                  of our True-Microcurrent technology to:
+                </p>
+                <ul>
+                  <li><b>* Target and smooth out specific wrinkles and areas of concern</b></li>
+                  <li><b>* Tone and stimulate facial muscles, leading to smoother, tighter skin</b></li>
+                  <li><b>* Improve firmness in lax areas of the face</b></li>
+                  <li><b>* Boost collagen production and cellular energy</b></li>
+                  <li><b>* Soften and plump uneven skin texture</b></li>
+                </ul>
+                <p>
+                  Enjoy the effectiveness of a spa treatment in the comfort of your home. This kit is intended to be
+                  used in combination with a MyoLift Microcurrent Device, but can also be used on its own to elevate
+                  your at-home skincare routine.
+                </p>
+                <a href="javascript:void(0)" data-toggle="modal" data-target="#wrinkle-vdo"
+                  ><img
+                    src="https://cdn.shopify.com/s/files/1/2745/9950/files/play.png?v=1719902936"
+                    width="24"
+                    alt="play-btn"
+                  >
+                  How to Use</a
+                >
+              </div>
+            </div>
+            <!-- Modal --
+            <div class="modal fade" id="wrinkle-vdo" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <iframe
+                      src="https://player.vimeo.com/video/974831573?h=4a85fb16a6"
+                      width="100%"
+                      height="400"
+                      frameborder="0"
+                      allow="autoplay; fullscreen; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <style>
+              .modal{
+              z-index:999;
+              }
+              .modal-backdrop.show {
+                opacity: 0;
+                z-index: 0;
+              }
+              .modal-open .modal:before {
+                background-color: rgba(0, 0, 0, 0.7);
+              }
+            </style>
+          </div> -->
+          <div>
+            <!-- <h2 class="section-header__title mb-3">Recommended for you</h2> -->
+            <!-- <p>
+              This kit is designed to be <b>used along with a MyoLift Microcurrent Device</b>, for effective outcome.<br>
+              You can also use the kit on its own to elevate your at-home skincare routine.
+            </p>
+            <p>
+              Limited Time Offer. Get <b>50% Off</b> on Wrinkle boot 2-Week Bootcamp Kit when you purchase MyoLift QT
+              Plus
+            </p> -->
+          </div>
+          <div class="page-width page-width--flush explore_more_products">
+            <h2 class="section-header__title">Recommended for you</h2>
+          <div class="grid grid--uniform grid--scattered-large-4 grid--scattered-small-2" data-collection-container>
+            {% paginate collections.all.products by 99 %}
+              {% assign products = collections.all.products %}
+              {% for product in products %}
+                {% assign displayProduct = false %}
+                {% for tag in product.tags %}
+                  {% if tag contains 'product_recommend_wrinkles' %}
+                    {% assign displayProduct = true %}
+                  {% endif %}
+                {% endfor %}
+                {% if displayProduct == true %}
+                  {%- render 'product-grid-item', product: product, grid_item_width: 'medium-up--one-third' -%}
+                {% endif %}
+              {% endfor %}
+            {% endpaginate %}
+          </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="tabs-2" role="tabpanel">
+          <!-- <center>
+            <h2 class="section-header__title">This is our recommended kit to boost skin firmness and elasticity</h2>
+          </center>
+          <div class="score_txt">
+            <div class="row align-items-center">
+              <div class="col-lg-4">
+                <div class="image_hover">
+                  <img
+                    src="https://www.7ewellness.com/cdn/shop/files/firm-and-bright-2-week-bootcamp-kit-326025.jpg?v=1719334890"
+                    class="main_img"
+                  >
+                  <img
+                    src="https://www.7ewellness.com/cdn/shop/files/revised-Firm_and_Bright-option-1_copy_2_83ca080a-3d45-43d4-ba7a-084958d8a9bb_1024x1024.png?v=1718793600"
+                    class="hover_img"
+                  >
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <p>
+                  This <b>FIRM & BRIGHT KIT</b> is designed to boost skin firmness and radiance by addressing deficits
+                  in your skin's tone, density, and elasticity. It is most beneficial for skin that is mature, thin, sun
+                  damaged, or showing laxity. Clinically proven antioxidants and nutrients improve firmness and
+                  elasticity of the skin like Mangosteen, encapsulated Vitamin C, CoQ10, Adenosine, Peptides work
+                  synergistically with microcurrent to:
+                </p>
+                <ul>
+                  <li><b>* Trigger and support collagen production to increase firmness</b></li>
+                  <li><b>* Reduce and prevent hyper-pigmentation</b></li>
+                  <li><b>* Boost micro-circulation for increased vitality and radiance</b></li>
+                  <li><b>* Protect existing collagen from environmental stressors</b></li>
+                  <li><b>* Improve skin's plumpness and texture</b></li>
+                </ul>
+                <p>
+                  Enjoy the effectiveness of a spa treatment in the comfort of your home. This kit is intended to be
+                  used in combination with a MyoLift Microcurrent Device, but can also be used on its own to elevate
+                  your at-home skincare routine.
+                </p>
+                <a href="javascript:void(0)" data-toggle="modal" data-target="#firmness-vdo"
+                  ><img
+                    src="https://cdn.shopify.com/s/files/1/2745/9950/files/play.png?v=1719902936"
+                    width="24"
+                    alt="play-btn"
+                  >
+                  How to Use</a
+                >
+              </div>
+            </div>
+            <!-- Modal --
+            <div class="modal fade" id="firmness-vdo" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <iframe
+                      src="https://player.vimeo.com/video/974510662?h=41dd1dabd5"
+                      width="100%"
+                      height="400"
+                      frameborder="0"
+                      allow="autoplay; fullscreen; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <style>
+              .modal{
+              z-index:999;
+              }
+              .modal-backdrop.show {
+                opacity: 0;
+                z-index: 0;
+              }
+              .modal-open .modal:before {
+                background-color: rgba(0, 0, 0, 0.7);
+              }
+            </style>
+          </div> -->
+          <div>
+            <!-- <h2 class="section-header__title mb-3">Recommended for you</h2> -->
+            <!-- <p>
+              This kit is designed to be <b>used along with a MyoLift Microcurrent Device</b>, for effective outcome.<br>
+              You can also use the kit on its own to elevate your at-home skincare routine.
+            </p>
+            <p>
+              Limited Time Offer. Get <b>50% Off</b> on Firm and Brightening boot 2-Week Bootcamp Kit when you purchase
+              MyoLift QT Plus
+            </p> -->
+          </div>
+          <div class="page-width page-width--flush explore_more_products">
+            <h2 class="section-header__title">Recommended for you</h2>
+          <div class="grid grid--uniform grid--scattered-large-3 grid--scattered-small-2" data-collection-container>
+            {% paginate collections.all.products by 99 %}
+              {% assign products = collections.all.products | reverse %}
+              {% for product in products %}
+                {% assign displayProduct = false %}
+                {% for tag in product.tags %}
+                  {% if tag contains 'product_recommend_firmness' %}
+                    {% assign displayProduct = true %}
+                  {% endif %}
+                {% endfor %}
+                {% if displayProduct == true %}
+                  {%- render 'product-grid-item', product: product, grid_item_width: 'medium-up--one-third' -%}
+                {% endif %}
+              {% endfor %}
+            {% endpaginate %}
+          </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="tabs-3" role="tabpanel">
+          <!-- <center>
+            <h2 class="section-header__title">
+              This is our recommended kit to improve moisture and increase your skin's hydration
+            </h2>
+          </center>
+          <div class="score_txt">
+            <div class="row align-items-center">
+              <div class="col-lg-4">
+                <div class="image_hover">
+                  <img
+                    src="https://www.7ewellness.com/cdn/shop/files/moisture-boost-2-week-bootcamp-kit-388087.jpg?v=1719334861"
+                    class="main_img"
+                  >
+                  <img
+                    src="https://www.7ewellness.com/cdn/shop/files/moisture-boost-2-week-bootcamp-kit-467768_1024x1024.jpg?v=1719334861"
+                    class="hover_img"
+                  >
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <p>
+                  This <b>MOISTURE BOOSTING KIT</b> is designed to hydrate and restore healthy barrier function while
+                  treating and preventing the onset of skin aging. It is especially beneficial for dehydrated, dry, and
+                  sensitive skin.
+                </p>
+                <p>
+                  Clinically proven hydrators + actives like Hyaluronic acid, Lactic acid, Chamomile, Epidermal Growth
+                  Factor, and Glycerin work synergistically with True Microcurrent to:
+                </p>
+                <ul>
+                  <li><b>* Boost ceramide production in the skin, improving moisture retention</b></li>
+                  <li><b>* Improve plumpness and softness</b></li>
+                  <li><b>* Reduce sensitivity and redness</b></li>
+                  <li><b>* Trigger skin healing and regeneration</b></li>
+                </ul>
+                <p>
+                  Enjoy the effectiveness of a spa treatment in the comfort of your home. This kit is intended to be
+                  used in combination with a MyoLift Microcurrent Device, but can also be used on its own to elevate
+                  your at-home skincare routine.
+                </p>
+                <a href="javascript:void(0)" data-toggle="modal" data-target="#moisture-vdo"
+                  ><img
+                    src="https://cdn.shopify.com/s/files/1/2745/9950/files/play.png?v=1719902936"
+                    width="24"
+                    alt="play-btn"
+                  >
+                  How to Use</a
+                >
+              </div>
+            </div>
+
+            <!-- Modal --
+            <div class="modal fade" id="moisture-vdo" tabindex="-1">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                    <iframe
+                      src="https://player.vimeo.com/video/974644792?h=300d1fa4ac"
+                      width="100%"
+                      height="400"
+                      frameborder="0"
+                      allow="autoplay; fullscreen; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <style>
+              .modal{
+              z-index:999;
+              }
+              .modal-backdrop.show {
+                opacity: 0;
+                z-index: 0;
+              }
+              .modal-open .modal:before {
+                background-color: rgba(0, 0, 0, 0.7);
+              }
+            </style>
+          </div> -->
+          <div>
+            <!-- <h2 class="section-header__title mb-3">Get your kit today</h2> -->
+            <!-- <p>
+              This kit is designed to be <b>used along with a MyoLift Microcurrent Device</b>, for effective outcome.<br>
+              You can also use the kit on its own to elevate your at-home skincare routine.
+            </p>
+            <p>
+              Limited Time Offer. Get <b>50% Off</b> on Moisture boot 2-Week Bootcamp Kit when you purchase MyoLift QT
+              Plus
+            </p> -->
+          </div>
+          <div class="page-width page-width--flush explore_more_products"><h2 class="section-header__title">Recommended for you</h2>
+          <div class="grid grid--uniform grid--scattered-large-4 grid--scattered-small-2" data-collection-container>
+            {% paginate collections.all.products by 99 %}
+              {% assign products = collections.all.products | reverse %}
+              {% for product in products %}
+                {% assign displayProduct = false %}
+                {% for tag in product.tags %}
+                  {% if tag contains 'product_recommend_moisture' %}
+                    {% assign displayProduct = true %}
+                  {% endif %}
+                {% endfor %}
+                {% if displayProduct == true %}
+                  {%- render 'product-grid-item', product: product, grid_item_width: 'medium-up--one-third' -%}
+                {% endif %}
+              {% endfor %}
+            {% endpaginate %}
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+    var getUrlParameter = function getUrlParameter(sParam) {
+      //debugger;
+      var sPageURL = window.location.search.substring(1),
+          sURLVariables = sPageURL.split('&'),
+          sParameterName,
+          i;
+      for (i = 0; i < sURLVariables.length; i++) {
+          sParameterName = sURLVariables[i].split('=');
+
+          if (sParameterName[0] === sParam) {
+              return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+          }
+      }
+  };
+
+  var id = getUrlParameter('id');
+  var number = getUrlParameter('number');
+  if (id === undefined) {
+      id = "tabs-1"
+      number = 1;
+  }
+  var wrinkle_score = localStorage.getItem('Wrinkles');
+  console.log('wrinkles', wrinkle_score);
+  var firmness_score = localStorage.getItem('Firmness');
+  console.log('Firmness', firmness_score);
+  var moisure_score = localStorage.getItem('Moisture');
+  console.log('Moisture', moisure_score);
+  $(document).ready(function () {
+    $('.AI-prod-recom-tabs .nav-tabs li .nav-link').removeClass('active');
+    $('#' + id).addClass('active');
+    // $('#' + id).next('.Recommended').addClass('show');
+    $('.AI-prod-recom-tabs .tab-pane').removeClass('active');
+    $('#tabs-' + number).addClass('active');
+    $('#wrinkle_score').text(wrinkle_score);
+    $('#firmness_score').text(firmness_score);
+    $('#moisture_score').text(moisure_score);
+  });
+</script>
+
+{% schema %}
+{
+  "name": "AI product recommendation",
+  "settings": []
+}
+{% endschema %}

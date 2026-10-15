@@ -1,0 +1,94 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "9889f910-8245-422e-828b-8c05811a1e33": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14887206551606__9889f910-8245-422e-828b-8c05811a1e33-1675138289b65739cb-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "shopify:\/\/collections\/all",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/desktop-banner_b1aa48a1-7946-4df6-beb4-fc3b0432470c.png",
+            "image_mobile": "shopify:\/\/shop_images\/mobile-banner_7ab09078-fd0f-4a93-bb70-59d3d29df8c8.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--14887206551606__9889f910-8245-422e-828b-8c05811a1e33-1675138289b65739cb-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "cc05bafd-fc7f-4bd6-a326-05015ba69d68": {
+      "type": "testimonials",
+      "blocks": {
+        "template--14887206551606__cc05bafd-fc7f-4bd6-a326-05015ba69d68-167541662542472c53-0": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>I absolutely love the MyoLift 600.  I'm grateful to have access to the professional portal so I can receive education for the device. This is a great addition to add to your service line! <\/p><p><strong>★★★★★<\/strong><\/p>",
+            "author": "SOPHIA "
+          }
+        },
+        "template--14887206551606__cc05bafd-fc7f-4bd6-a326-05015ba69d68-167541662542472c53-1": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>I love that the MyoLift MD has so many pre-set programs and the ability to adjust the energy with each pre-set. I would definitely recommend this machine to other practitioners that love doing some serious sculpting work!<\/p><p><strong>★★★★★<\/strong><\/p>",
+            "author": "VAL"
+          }
+        }
+      },
+      "block_order": [
+        "template--14887206551606__cc05bafd-fc7f-4bd6-a326-05015ba69d68-167541662542472c53-0",
+        "template--14887206551606__cc05bafd-fc7f-4bd6-a326-05015ba69d68-167541662542472c53-1"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "round_images": true,
+        "alt": false
+      }
+    },
+    "1fa8f288-5225-4cb6-92dd-b2ac74079d4a": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14887206551606__1fa8f288-5225-4cb6-92dd-b2ac74079d4a-167513899744356110-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"checkout_btn_phl\">\n<a href=\"javascript:void(0);\" data-toggle=\"modal\" data-target=\"#checkoutModal\" class=\"btn\">Continue To Checkout<\/a>\n<\/div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14887206551606__1fa8f288-5225-4cb6-92dd-b2ac74079d4a-167513899744356110-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "9889f910-8245-422e-828b-8c05811a1e33",
+    "cc05bafd-fc7f-4bd6-a326-05015ba69d68",
+    "1fa8f288-5225-4cb6-92dd-b2ac74079d4a"
+  ]
+}

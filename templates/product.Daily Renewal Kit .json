@@ -1,0 +1,620 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "custom_iDmxcj": {
+          "type": "custom",
+          "settings": {
+            "code": "<P style=\"font-size: 20px;line-height: 1; margin-top: -20px;\"><em>Bundle Items Valued at $178.99<\/em><\/P>"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "disabled": true,
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "okendo_star_rating_86PEbK": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "sales_point": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "globe",
+            "text": "Free US Domestic Ground Shipping"
+          }
+        },
+        "30703011-9513-4ebc-8f63-6ddf41dabf98": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "checkmark",
+            "text": "Happiness Guarantee"
+          }
+        },
+        "custom_qffCX6": {
+          "type": "custom",
+          "disabled": true,
+          "settings": {
+            "code": "<a style=\"background: yellow;\npadding: 4px 8px; border-radius: 30px;\" href=\"https:\/\/www.7ewellness.com\/pages\/7e-events\">REGISTER FOR PRODUCT DEMO WEBINAR<\/a>"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "4c825a95-e472-4f78-bae1-bd326a4d94a2": {
+          "type": "tab",
+          "settings": {
+            "title": "What's Included",
+            "content": "<ul><li>Mangosteen Cleanser<\/li><li>Revital C Serum<\/li><li>Anti-Aging Serum<\/li><li>Eye Lift Serum<\/li><li>MyoLift™ Bag <\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "title": "Shipping information",
+            "content": "<p>Free USA Ground shipment, Orders are processed within 2 business day. <\/p><p>International Orders Ships within 3 business day.  <\/p><p>International customers are required to pay Duty with their local custom agency. <\/p>",
+            "page": ""
+          }
+        },
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "What's Included",
+            "content": "<p>• Eye Mask,<br\/>• Lip Mask,<br\/>• Forehead Mask,<br\/>• 16oz Renu Conductive Tx Gel,<br\/>• 16oz ReStore Conductive Tx Gel,<br\/>• 8oz RePlenish Hydrating Spritzer,<br\/>• 4oz ATP Booster Mask,<br\/>• Splitter Wire<br\/>• One pair of our Conductive Gloves<\/p>",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {}
+        },
+        "e51e9259-1487-4458-8555-3cf18377ca6a": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Text block"
+          }
+        }
+      },
+      "block_order": [
+        "price",
+        "custom_iDmxcj",
+        "variant_picker",
+        "okendo_star_rating_86PEbK",
+        "sales_point",
+        "30703011-9513-4ebc-8f63-6ddf41dabf98",
+        "custom_qffCX6",
+        "buy_buttons",
+        "description",
+        "4c825a95-e472-4f78-bae1-bd326a4d94a2",
+        "tab",
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed",
+        "share",
+        "e51e9259-1487-4458-8555-3cf18377ca6a"
+      ],
+      "settings": {
+        "product_image_size": "small",
+        "product_image_type": "stacked",
+        "thumbnail_height": "flexible",
+        "product_zoom_enable": true,
+        "enable_video_looping": true,
+        "product_video_style": "muted",
+        "sku_enable": false
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "settings": {
+        "max_width": true
+      }
+    },
+    "88ea977d-d9e4-461c-97c7-6c819742f0d0": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14960779526198__88ea977d-d9e4-461c-97c7-6c819742f0d0-liquid-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<p>The Anti-Aging Peptide Serum by 7e Wellness, is designed to target and enhance the biological collapse in the skin's matrix. A major component of this matrix is the development of the skin's proteins categorized as peptides.<\/p>\n<p>The skin utilizes signal peptides to trigger collagen formation and carrier peptides which act as drivers of the peptides to where they are needed.<\/p>\n<p>By replacing the loss peptides of copper, collagen, elastin, polypeptides, and hyaluronic acid, we can revive the strength, integrity, and longevity of our skin.<\/p>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14960779526198__88ea977d-d9e4-461c-97c7-6c819742f0d0-liquid-1"
+      ],
+      "custom_css": [
+        ".what_microcurrent {background-color: #f1f1f1; margin-bottom: 20px;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "edcd531b-bef7-47b2-90c7-2b1473f0ea5a": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14960779526198__edcd531b-bef7-47b2-90c7-2b1473f0ea5a-image-1": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/desktop__black_wave_lines_5a6bae95-c947-412e-8ad9-0059dda811b8.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--14960779526198__edcd531b-bef7-47b2-90c7-2b1473f0ea5a-image-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "00d0723d-ea80-435f-81ee-26bff5082c9d": {
+      "type": "text-columns",
+      "blocks": {
+        "template--14960779526198__00d0723d-ea80-435f-81ee-26bff5082c9d-text_block-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/reduce_wrinkle_depth.png",
+            "image_mask": "none",
+            "image_width": 200,
+            "title": "",
+            "text": "<h3>Reduce wrinkle depth.<\/h3>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--14960779526198__00d0723d-ea80-435f-81ee-26bff5082c9d-text_block-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/image_copy.png",
+            "image_mask": "none",
+            "image_width": 200,
+            "title": "",
+            "text": "<h3>Restore skin firmness & elasticity.<\/h3>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "325634a1-c1f7-480e-82c0-f3c5f1dfc58f": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/image_Smoothen_fine_lines..png",
+            "image_mask": "none",
+            "image_width": 200,
+            "title": "",
+            "text": "<h3>Smoothen fine lines.<\/h3>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14960779526198__00d0723d-ea80-435f-81ee-26bff5082c9d-text_block-1",
+        "template--14960779526198__00d0723d-ea80-435f-81ee-26bff5082c9d-text_block-2",
+        "325634a1-c1f7-480e-82c0-f3c5f1dfc58f"
+      ],
+      "custom_css": [
+        "@media only screen and (min-width: 769px) {.index-section {margin: 60px 0 !important; }}",
+        ".section-header__title {margin-bottom: 20px;}"
+      ],
+      "settings": {
+        "title": "What are Copper Peptides?",
+        "align_text": "center",
+        "alt": false
+      }
+    },
+    "1add0a72-dd4c-4eca-b1ad-c34ab3976ec8": {
+      "type": "text-columns",
+      "blocks": {
+        "template--14960779526198__1add0a72-dd4c-4eca-b1ad-c34ab3976ec8-text_block-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Tick.png",
+            "image_mask": "none",
+            "image_width": 60,
+            "title": "",
+            "text": "<h3><strong>Affects the epidermis and dermal layers of the skin.<\/strong><\/h3>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--14960779526198__1add0a72-dd4c-4eca-b1ad-c34ab3976ec8-text_block-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Tick.png",
+            "image_mask": "none",
+            "image_width": 60,
+            "title": "",
+            "text": "<h3><strong>Assists in the formation of<br\/>elastin in collagen, deep within the skin tissue.<\/strong><\/h3>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "579953ed-eecc-4715-b3f0-215895d1756e": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/Tick.png",
+            "image_mask": "none",
+            "image_width": 60,
+            "title": "",
+            "text": "<h3>Gives firmer skin and reduces the appearance of wrinkles<\/h3>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14960779526198__1add0a72-dd4c-4eca-b1ad-c34ab3976ec8-text_block-1",
+        "template--14960779526198__1add0a72-dd4c-4eca-b1ad-c34ab3976ec8-text_block-2",
+        "579953ed-eecc-4715-b3f0-215895d1756e"
+      ],
+      "custom_css": [
+        ".what_microcurrent {padding: 0 0 40px 0;}"
+      ],
+      "settings": {
+        "title": "Benefits of Copper Peptides",
+        "align_text": "center",
+        "alt": false
+      }
+    },
+    "7a4e56a9-b736-4176-8231-c44a09aaa930": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14960779526198__7a4e56a9-b736-4176-8231-c44a09aaa930-image-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/banner_image_peptides_for_yonger_looking_skin.png",
+            "link": "",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "template--14960779526198__7a4e56a9-b736-4176-8231-c44a09aaa930-liquid-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"text-left\"><h1><b>Peptides for Younger-Looking Skin<\/b><\/h1><p>Skin stays soft and smooth because of specific proteins called peptides.<\/p><p>That is why we formulated this serum to support peptide replenishment, so it can look and feel softer, smoother, and more supple.<\/p><\/div>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14960779526198__7a4e56a9-b736-4176-8231-c44a09aaa930-image-1",
+        "template--14960779526198__7a4e56a9-b736-4176-8231-c44a09aaa930-liquid-1"
+      ],
+      "custom_css": [
+        ".custom-content {background: #f1f1f1; padding: 40px 10px 0 0;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {}
+    },
+    "bc10f931-1f0d-48e0-a2c5-0f785996b934": {
+      "type": "featured-video",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=nGku66n9v_w&t=34s",
+        "alt": true
+      }
+    },
+    "b15c6a34-e04c-4b20-bc8a-9f8e09bde8bf": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14960779526198__b15c6a34-e04c-4b20-bc8a-9f8e09bde8bf-image-1": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/what_is_peptide_serum.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--14960779526198__b15c6a34-e04c-4b20-bc8a-9f8e09bde8bf-image-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "164556780200309513": {
+      "type": "apps",
+      "blocks": {
+        "2a3dd040-0528-4160-a336-9edeec07fd6f": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "disabled": true,
+          "settings": {
+            "product": "conductive-mask-bundle-with-lead-wire-splitter",
+            "widget_type": "combined_widget"
+          }
+        }
+      },
+      "block_order": [
+        "2a3dd040-0528-4160-a336-9edeec07fd6f"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "product_recommendations_heading": "You may also like",
+        "related_count": 14
+      }
+    },
+    "e78b38c7-932e-4516-bd3d-041ee2258ce0": {
+      "type": "hero-video",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "title_size": 40,
+        "subheading": "",
+        "link_text": "",
+        "link": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "video_url": "https:\/\/vimeo.com\/818565352",
+        "section_height": "100vh",
+        "mobile_height": "400px"
+      }
+    },
+    "e6376905-8979-4a3c-817a-e048be143d33": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Untitled_design_49.png",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Why It's Unique",
+        "text": "<p>This first of its kind, this conductive Gua Sha is perfectly designed to sculpt big and small facial muscles that are otherwise hard to target during a microcurrent treatment. This tool can be used with any MyoLift™ device. <\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "50",
+        "layout": "left",
+        "alt": true,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "64298d6b-3af5-4761-92d4-2149ee8c551e": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/3_287b61b6-ee16-4bba-a562-0d0627cc1fd9.png",
+        "image_mask": "none",
+        "image2": "shopify:\/\/shop_images\/Untitled_design_48.png",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Kansa Metal",
+        "text": "<p>Kansa, also known as bronze, is believed to be a healing metal in India’s ancient tradition of Ayurveda. <br\/><br\/>The healing metal works on the skin to reach and activate connective tissues. When used as a massager on the face, Kansa boosts the immunity for its natural antimicrobial and healing properties supporting  prana flow.<br\/><\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "50",
+        "layout": "right",
+        "alt": true,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "de420bc3-a630-41c7-9399-69dc6fd88819": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Untitled_design_47.png",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Benefits",
+        "text": "<p>✓Lymphatic drainage to clear toxins <\/p><p>✓Blood circulation <\/p><p>✓Activate collagen production<\/p><p>✓Fascia release - ease muscle tension <\/p><p>✓Edema reduction around eyes & jaw<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "50",
+        "layout": "left",
+        "alt": true,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "82661063-6b2d-42c2-99a6-3f564c944933": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Gua Sha + Microcurrent",
+        "text": "<p>Better together.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "50",
+        "layout": "right",
+        "alt": true,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "d2f24ea0-b960-43e1-8ce7-2e5e8d8fda80": {
+      "type": "featured-video",
+      "disabled": true,
+      "settings": {
+        "title": "Gua Sha Full Face Treatment",
+        "video_url": "",
+        "alt": false
+      }
+    },
+    "69598366-9e78-488c-a9c6-2384392c2702": {
+      "type": "hero-video",
+      "disabled": true,
+      "settings": {
+        "title": "Gua Sha",
+        "title_size": 60,
+        "subheading": "Under Eye Treatment",
+        "link_text": "",
+        "link": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-left",
+        "video_url": "https:\/\/vimeo.com\/818574291",
+        "section_height": "650px",
+        "mobile_height": "auto"
+      }
+    },
+    "fd73d280-8a44-41b2-a4ac-def334f77604": {
+      "type": "hero-video",
+      "disabled": true,
+      "settings": {
+        "title": "Gua Sha",
+        "title_size": 60,
+        "subheading": "Cheek Treatment",
+        "link_text": "",
+        "link": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-right",
+        "video_url": "https:\/\/vimeo.com\/818576895",
+        "section_height": "650px",
+        "mobile_height": "auto"
+      }
+    },
+    "9fe24557-9d2b-4eab-9dc0-52469f707e26": {
+      "type": "hero-video",
+      "disabled": true,
+      "settings": {
+        "title": "Gua Sha",
+        "title_size": 80,
+        "subheading": "Jawline Treatment",
+        "link_text": "",
+        "link": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-left",
+        "video_url": "https:\/\/vimeo.com\/818579086?share=copy",
+        "section_height": "650px",
+        "mobile_height": "auto"
+      }
+    },
+    "16819433829012c034": {
+      "type": "apps",
+      "blocks": {
+        "6ef03fbe-a3ba-4cec-aa52-ff8d71da290a": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}",
+            "widget_type": "reviews_widget"
+          }
+        }
+      },
+      "block_order": [
+        "6ef03fbe-a3ba-4cec-aa52-ff8d71da290a"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "sub",
+    "88ea977d-d9e4-461c-97c7-6c819742f0d0",
+    "edcd531b-bef7-47b2-90c7-2b1473f0ea5a",
+    "00d0723d-ea80-435f-81ee-26bff5082c9d",
+    "1add0a72-dd4c-4eca-b1ad-c34ab3976ec8",
+    "7a4e56a9-b736-4176-8231-c44a09aaa930",
+    "collection-return",
+    "bc10f931-1f0d-48e0-a2c5-0f785996b934",
+    "b15c6a34-e04c-4b20-bc8a-9f8e09bde8bf",
+    "164556780200309513",
+    "product-recommendations",
+    "e78b38c7-932e-4516-bd3d-041ee2258ce0",
+    "e6376905-8979-4a3c-817a-e048be143d33",
+    "64298d6b-3af5-4761-92d4-2149ee8c551e",
+    "de420bc3-a630-41c7-9399-69dc6fd88819",
+    "82661063-6b2d-42c2-99a6-3f564c944933",
+    "d2f24ea0-b960-43e1-8ce7-2e5e8d8fda80",
+    "69598366-9e78-488c-a9c6-2384392c2702",
+    "fd73d280-8a44-41b2-a4ac-def334f77604",
+    "9fe24557-9d2b-4eab-9dc0-52469f707e26",
+    "16819433829012c034"
+  ]
+}

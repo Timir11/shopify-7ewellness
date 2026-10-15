@@ -1,0 +1,219 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "okendo_star_rating_TADRAg": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "metafiled_description_thCG4N": {
+          "type": "metafiled_description",
+          "settings": {
+            "is_meta_description": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "trust_badge_ka3aKe": {
+          "type": "trust_badge",
+          "settings": {
+            "trust_image": "shopify:\/\/shop_images\/Background_2x_9930748b-1cc8-4d33-b97d-a8c4c9db56ff.png"
+          }
+        },
+        "pop_up_rJzQ4w": {
+          "type": "pop_up",
+          "settings": {
+            "title": "Shipping & Handling",
+            "content": "<p>Free USA Ground shipment, Orders are processed within 2 business day. <\/p><p>International Orders Ships within 3 business day.  <\/p><p>International customers are required to pay Duty with their local custom agency. <\/p>"
+          }
+        },
+        "tab_TPkht9": {
+          "type": "tab",
+          "settings": {
+            "title": "What is this for?",
+            "content": "<ul><li>Licensed estheticians and skincare professionals<\/li><li>Advanced home users familiar with microcurrent facial techniques<\/li><li>Individuals focusing on precise facial areas such as:<\/li><\/ul><ol><li>Around the eyes<\/li><li>Nasolabial folds<\/li><li>Lip contours<\/li><li>Forehead lines<\/li><li>Eyebrows and upper eyelids<\/li><\/ol>",
+            "page": ""
+          }
+        },
+        "tab_ddakF6": {
+          "type": "tab",
+          "settings": {
+            "title": "What is included?",
+            "content": "{{ product.metafields.custom.what_is_included.value.what_is_included | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "66232a31-cb5f-4a67-97cf-d0377bb2fac6": {
+          "type": "tab",
+          "settings": {
+            "title": "How to use it?",
+            "content": "<ol><li><strong>Prepare the Tips<\/strong>:<br\/>Use paper-stemmed cotton swabs and trim them to 1\/4–1\/2 inch length.<\/li><li><strong>Saturate<\/strong>:<br\/>Soak the trimmed tips in 7E's Infused Conductive Solution<\/li><li><strong>Insert<\/strong>:<br\/>Place the damp cotton tips into each side of the handle.<\/li><li><strong>Attach to Device<\/strong>:<br\/>Plug the handle into your MyoLift™ device as instructed in your model’s manual.<\/li><li><strong>Perform Treatment<\/strong>:<br\/>Use light pressure and \"pinch-and-hold\" movements for targeted muscle lifting and contouring.<\/li><\/ol><p>⚠️ Pro Tip: Avoid using wooden or plastic-stem cotton swabs as they can interfere with conductivity.<\/p>",
+            "page": ""
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "title": "Benefits",
+            "content": "<ul><li><strong>Enhanced Precision<\/strong>: Enables more detailed work than standard probes.<\/li><li> <strong>Improved Muscle Re-education<\/strong>: Pinch-and-hold technique helps tone and lift <a href=\"https:\/\/www.7ewellness.com\/products\/microcurrent-facial-muscle-chart\" target=\"_blank\" title=\"https:\/\/www.7ewellness.com\/products\/microcurrent-facial-muscle-chart\">facial muscles<\/a>.<\/li><li> <strong>Hygienic<\/strong>: Use disposable tips for each client or session to maintain cleanliness.<\/li><li> <strong>Efficient Conductivity<\/strong>: Delivers microcurrent exactly where needed with less gel mess.<\/li><li><strong>Spa-Quality Results at Home<\/strong>: Unlocks pro-level techniques with your existing MyoLift™ device.<br\/><br\/><\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed": {
+          "type": "tab",
+          "settings": {
+            "title": "Ingredients",
+            "content": "{{ product.metafields.custom.ingredients.value.ingredients | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "tab_QLEFEc": {
+          "type": "tab",
+          "settings": {
+            "title": "Product Features",
+            "content": "<p><strong>Universal Compatibility<\/strong>: Works with MyoLift™ Mini, 600, QT+, MD, and Triwave devices.<\/p><p> <strong>Pinpoint Precision<\/strong>: Perfect for \"pinch-and-hold\" techniques on eyes, lips, forehead, and brows.<\/p><p> <strong>Disposable Tip Design<\/strong>: Requires use of paper (not wood or plastic) cotton tips for optimal conductivity.<\/p><p> <strong>Ergonomic Handle<\/strong>: Long, slim handle offers comfort and better control during treatments.<\/p><p> <strong>Professional Grade<\/strong>: Developed for estheticians, spas, and advanced home users.<\/p>",
+            "page": ""
+          }
+        },
+        "tab_gFP7Fx": {
+          "type": "tab",
+          "settings": {
+            "title": "Device Support",
+            "content": "{{ product.metafields.custom.device_support.value.device_support | metafield_tag }}",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "okendo_star_rating_TADRAg",
+        "price",
+        "description",
+        "metafiled_description_thCG4N",
+        "buy_buttons",
+        "trust_badge_ka3aKe",
+        "pop_up_rJzQ4w",
+        "tab_TPkht9",
+        "tab_ddakF6",
+        "66232a31-cb5f-4a67-97cf-d0377bb2fac6",
+        "tab",
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed",
+        "tab_QLEFEc",
+        "tab_gFP7Fx"
+      ],
+      "settings": {
+        "product_image_size": "medium",
+        "product_image_type": "slider",
+        "thumbnail_height": "fixed",
+        "product_zoom_enable": true,
+        "enable_video_looping": true,
+        "product_video_style": "unmuted",
+        "product_label": "",
+        "btn_url": "",
+        "btn_txt": "",
+        "sku_enable": false
+      }
+    },
+    "product_specification_k6pJXf": {
+      "type": "product-specification",
+      "blocks": {
+        "faq_AHBBwq": {
+          "type": "faq",
+          "settings": {
+            "tab_heading": "FAQs",
+            "heading": "Frequently Asked Questions",
+            "title1": "Which MyoLift™ devices are compatible with the Cotton Tip Handle?",
+            "text1": "<p>The Cotton Tip Handle is compatible with all MyoLift™ devices, including the Mini, 600, QT+, MD, and Triwave models.<\/p>",
+            "title2": "What type of cotton tips should I use with this handle?",
+            "text2": "<p>Only <strong>paper-stemmed cotton swabs<\/strong> should be used. Avoid wooden or plastic stems, as they interfere with conductivity and can affect treatment performance.<\/p>",
+            "title3": " Do I need a conductive gel with this accessory?",
+            "text3": "<p>Yes, for best results, saturate the cotton tips with <strong>7E’s Infused Conductive Solution<\/strong> before inserting them into the handle.<\/p>",
+            "title4": "Can beginners use this, or is it just for professionals?",
+            "text4": "<p>This tool is designed for <strong>licensed estheticians and advanced home users<\/strong> who are comfortable with microcurrent techniques, especially the \"pinch-and-hold\" method.<\/p>",
+            "title5": "What areas can I treat with the Cotton Tip Handle?",
+            "text5": "<p>It's ideal for <strong>delicate and targeted areas<\/strong> including the under-eyes, nasolabial folds, lips, forehead lines, brows, and upper eyelids.<\/p>",
+            "title6": "How do I clean the handle between uses?",
+            "text6": "<p>Since the cotton tips are disposable, simply remove and discard them after each session. Wipe the handle down with a soft cloth and alcohol-free cleanser to maintain hygiene.<\/p>",
+            "title7": "",
+            "text7": ""
+          }
+        },
+        "reviews_8NYwWW": {
+          "type": "reviews",
+          "settings": {
+            "tab_heading": "Reviews",
+            "enable_review": true
+          }
+        }
+      },
+      "block_order": [
+        "faq_AHBBwq",
+        "reviews_8NYwWW"
+      ],
+      "name": "Product Specifications",
+      "settings": {
+        "heading": ""
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "settings": {
+        "max_width": true
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {}
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "product_recommendations_heading": "Related products",
+        "related_count": 4
+      }
+    },
+    "featured_collection_pht7X9": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.featured_collection_grid.name",
+      "settings": {
+        "custom_class": "",
+        "title": "Featured collection grid",
+        "description": "",
+        "home_featured_products": "shop-all-microcurrent-accessories-tools",
+        "rows": 1,
+        "per_row_desktop": 4,
+        "per_row_mobile": "1",
+        "view_all": false,
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product_specification_k6pJXf",
+    "sub",
+    "collection-return",
+    "product-recommendations",
+    "featured_collection_pht7X9"
+  ]
+}

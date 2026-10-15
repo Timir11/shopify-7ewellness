@@ -1,0 +1,242 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "okendo_star_rating_TADRAg": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "metafiled_description_thCG4N": {
+          "type": "metafiled_description",
+          "settings": {
+            "is_meta_description": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "trust_badge_ka3aKe": {
+          "type": "trust_badge",
+          "settings": {
+            "trust_image": "shopify:\/\/shop_images\/Background_2x_9930748b-1cc8-4d33-b97d-a8c4c9db56ff.png"
+          }
+        },
+        "pop_up_rJzQ4w": {
+          "type": "pop_up",
+          "settings": {
+            "title": "Shipping & Handling",
+            "content": "<p>Free USA Ground shipment, Orders are processed within 2 business day. <\/p><p>International Orders Ships within 3 business day.  <\/p><p>International customers are required to pay Duty with their local custom agency. <\/p>"
+          }
+        },
+        "tab_TPkht9": {
+          "type": "tab",
+          "settings": {
+            "title": "Who is this for?",
+            "content": "<ul><li><strong>ReStore:<\/strong> Designed for mature, aging, or dry skin<\/li><li><strong>ReNu:<\/strong> Ideal for sensitive, stressed, or acne-prone skin<\/li><li><strong>Replenish Spritzer:<\/strong> Perfect for all skin types needing lightweight, hydrating support<\/li><\/ul><p><strong>Best For:<br\/><\/strong>Skincare professionals, microcurrent users, or anyone wanting flexible, skin-specific care during treatments.<\/p>",
+            "page": ""
+          }
+        },
+        "tab_ddakF6": {
+          "type": "tab",
+          "settings": {
+            "title": "What is included?",
+            "content": "<p>1 x Conductive Forehead Mask<br\/><br\/><\/p>",
+            "page": ""
+          }
+        },
+        "66232a31-cb5f-4a67-97cf-d0377bb2fac6": {
+          "type": "tab",
+          "settings": {
+            "title": "How to use it?",
+            "content": "<ol><li><strong>Cleanse<\/strong> your skin thoroughly using the Mangosteen cleanser before treatment.<\/li><li>Select the appropriate gel or spritzer based on the skin's needs:<\/li><\/ol><ul><li>   Use <strong>ReStore<\/strong> to lift and support            aging skin.<\/li><li>        Use <strong>ReNu<\/strong> to soothe and calm stressed skin.<\/li><li>Use <strong>Replenish Spritzer<\/strong> to hydrate and refresh dry or dehydrated skin.<\/li><\/ul><p>3. Apply a generous amount (or spritz evenly) onto the treatment area.<\/p><p>4. Perform your microcurrent session using a MyoLift device.<\/p><p>5. After treatment, <strong>massage in or rinse off<\/strong> any remaining product.<\/p><p>6. Follow with the Anti Aging Peptide Serum or Revital C.<\/p>",
+            "page": ""
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "title": "Benefits",
+            "content": "<ul><li><strong>ReStore:<\/strong> Lifts, firms, and rejuvenates aging skin<\/li><li><strong>ReNu:<\/strong> Calms redness, irritation, and inflammation<\/li><li><strong>Replenish Spritzer:<\/strong> Hydrates and balances skin before or during treatments<\/li><li>Enhances microcurrent conductivity for better results<\/li><li>Made with clean, plant-powered, and bioactive-rich formulas<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed": {
+          "type": "tab",
+          "settings": {
+            "title": "Ingredients",
+            "content": "<h2><strong>Key Ingredients by Product<\/strong><\/h2><h3><strong>ReStore Anti-aging Conductive Gel For Mature Skin with Bio-Active Complex<\/strong><\/h3><h4><strong>Active Ingredients:<\/strong><\/h4><ul><li><strong>Green Tea:<\/strong> Fights free radical damage, antioxidant-rich<\/li><li><strong>Neroli Oil:<\/strong> Promotes cellular renewal and deep moisture<\/li><li><strong>Collagen Peptides:<\/strong> Restores elasticity and skin structure<\/li><li><strong>Copper:<\/strong> Boosts collagen production and circulation<\/li><li><strong>Sea Kelp:<\/strong> Hydrating, nutrient-dense, and anti-inflammatory<\/li><li><strong>Zinc:<\/strong> Supports healing and enhances conductivity<\/li><\/ul><h4><strong>Full Ingredient List:<\/strong><\/h4><p>Filtered Water (Aqua), Vegetable Glycerin, Carbomer, Xanthan Gum, Hyaluronic Acid, Citrus Aurantium (Neroli) Oil, Copper, Ascophyllum Nodosum (Sea Kelp) Extract, Collagen Peptide Complex, Zinc, Camellia Sinensis (Green Tea) Leaf Extract, Sodium Hydroxide.<\/p><p><\/p><h3><strong>ReNu Conductive Tx Gel For Stressed Skin with Bio-Active Complex<\/strong><\/h3><h4><strong>Active Ingredients:<\/strong><\/h4><ul><li><strong>Chamomile:<\/strong> Reduces inflammation and calms irritation<\/li><li><strong>Lavender Oil:<\/strong> Soothes and cools reactive skin<\/li><li><strong>Geranium Oil:<\/strong> Balances oil production and improves tone<\/li><li><strong>Zinc:<\/strong> Repairs and protects stressed skin<\/li><\/ul><h4><strong>Full Ingredient List:<\/strong><\/h4><p>Filtered Water (Aqua), Vegetable Glycerin, Carbomer, Xanthan Gum, Hyaluronic Acid, Chamomilla Recutita (Chamomile) Flower Extract, Lavandula Angustifolia (Lavender) Oil, Pelargonium Graveolens (Geranium) Oil, Zinc, Sodium Hydroxide, Food Color Yellow #6, Food Color Blue #1.<\/p><p><\/p><h3><strong>Replenish Spritzer<\/strong><\/h3><h4><strong>Active Ingredients:<\/strong><\/h4><ul><li><strong>Chamomile:<\/strong> Calms and reduces sensitivity<\/li><li><strong>Lavender Oil:<\/strong> Hydrates and refreshes skin<\/li><li><strong>Geranium Oil:<\/strong> Restores skin balance and comfort<\/li><li><strong>Zinc:<\/strong> Supports moisture retention and soothes irritation<\/li><li><strong>Hyaluronic Acid:<\/strong> Delivers deep hydration and plumping<\/li><\/ul><h4><strong>Full Ingredient List:<\/strong><\/h4><p>Filtered Water (Aqua), Vegetable Glycerin, Hyaluronic Acid, Chamomilla Recutita (Chamomile) Flower Extract, Lavandula Angustifolia (Lavender) Oil, Pelargonium Graveolens (Geranium) Oil, Zinc.<\/p>",
+            "page": ""
+          }
+        },
+        "tab_QLEFEc": {
+          "type": "tab",
+          "settings": {
+            "title": "Product Features",
+            "content": "<ul><li><strong>Hands-Free Design<\/strong>: Allows for multitasking during treatment sessions.<\/li><li><strong>Reusable<\/strong>: Each mask can be used for 10–12 treatments or until the conductivity bar no longer stays solid.<\/li><li><strong>No Conductive Gel Required<\/strong>: Simplifies the treatment process.<\/li><li><strong>Compatible with MyoLift™ Devices<\/strong>: Designed to work seamlessly with <a href=\"https:\/\/www.7ewellness.com\/products\/at-home-microcurrent-devices-myolift-qt-plus-facial-toning\" target=\"_blank\" title=\"https:\/\/www.7ewellness.com\/products\/at-home-microcurrent-devices-myolift-qt-plus-facial-toning\">MyoLift™ QT Plus<\/a> and <a href=\"https:\/\/www.7ewellness.com\/products\/at-home-microcurrent-devices-myolift-mini-for-face\" target=\"_blank\" title=\"https:\/\/www.7ewellness.com\/products\/at-home-microcurrent-devices-myolift-mini-for-face\">MyoLift™ Mini<\/a>.<\/li><li><strong>FDA Approved<\/strong>: Ensures safety and efficacy.<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "tab_gFP7Fx": {
+          "type": "tab",
+          "settings": {
+            "title": "Device Support",
+            "content": "{{ product.metafields.custom.device_support.value.device_support | metafield_tag }}",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "okendo_star_rating_TADRAg",
+        "price",
+        "description",
+        "metafiled_description_thCG4N",
+        "buy_buttons",
+        "trust_badge_ka3aKe",
+        "pop_up_rJzQ4w",
+        "tab_TPkht9",
+        "tab_ddakF6",
+        "66232a31-cb5f-4a67-97cf-d0377bb2fac6",
+        "tab",
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed",
+        "tab_QLEFEc",
+        "tab_gFP7Fx"
+      ],
+      "settings": {
+        "product_image_size": "medium",
+        "product_image_type": "slider",
+        "thumbnail_height": "fixed",
+        "product_zoom_enable": true,
+        "enable_video_looping": true,
+        "product_video_style": "unmuted",
+        "product_label": "",
+        "btn_url": "",
+        "btn_txt": "",
+        "sku_enable": false
+      }
+    },
+    "product_specification_dt6YP4": {
+      "type": "product-specification",
+      "blocks": {
+        "how_to_use_8KitLb": {
+          "type": "how-to-use",
+          "settings": {
+            "tab_heading": "How To Use",
+            "heading": "How this bundle works",
+            "section_content": "<p>This 3-in-1 gel bundle lets you personalize every microcurrent session. Use <strong>ReStore<\/strong> to lift and firm aging skin, <strong>ReNu<\/strong> to calm and rebalance stressed or breakout-prone skin, and <strong>Replenish Spritzer<\/strong> to hydrate before or during treatment. Each product enhances conductivity while delivering targeted skin benefits.<\/p>",
+            "image": "shopify:\/\/shop_images\/desktop_16oz_ReStore_Anti-aging_Conductive_Gel.png",
+            "mobile_image": "shopify:\/\/shop_images\/mobile_16oz_ReStore_Anti-aging_Conductive_Gel_744c06b2-3cf7-4c87-9ff4-21b101751d9c.png",
+            "link": "",
+            "width": "100%",
+            "alignment": "center"
+          }
+        },
+        "image_banner_aek49N": {
+          "type": "image-banner",
+          "settings": {
+            "tab_heading": "Benefits",
+            "heading": "Better Together",
+            "image_banner": "shopify:\/\/shop_images\/1_96_2.png",
+            "mobile_image_banner": "shopify:\/\/shop_images\/1_96_3.png",
+            "image_content": "<p>When used together, these formulas support every step of your treatment—hydrating, calming, and tightening as needed. Whether you're a pro or treating yourself at home, this bundle gives you flexible, pro-grade results without the guesswork.<\/p>"
+          }
+        },
+        "faq_Vzg4Mz": {
+          "type": "faq",
+          "settings": {
+            "tab_heading": "FAQs",
+            "heading": "Frequently Asked Questions",
+            "title1": "Is this safe for sensitive skin?",
+            "text1": "<p>Yes, ReNu and Replenish are especially gentle and calming.<\/p>",
+            "title2": "Can I use these every day?",
+            "text2": "<p><br\/>Yes! They’re made for regular microcurrent use.<\/p>",
+            "title3": "Do they work with any device?",
+            "text3": "<p><br\/>Yes, they’re compatible with all microcurrent tools.<\/p>",
+            "title4": "Do I have to rinse them off?",
+            "text4": "<p><br\/>No—just massage the leftover gel in, or rinse if you prefer.<\/p>",
+            "title5": "Can I mix and match the products?",
+            "text5": "<p><br\/>Absolutely! Use each one based on your skin’s current needs.<\/p>",
+            "title6": "Is this bundle okay for oily or acne-prone skin?",
+            "text6": "<p><br\/>Yes, especially ReNu and Replenish—they help calm and balance oily skin.<\/p>",
+            "title7": "",
+            "text7": ""
+          }
+        },
+        "reviews_hQ6RAN": {
+          "type": "reviews",
+          "settings": {
+            "tab_heading": "Reviews",
+            "enable_review": true
+          }
+        }
+      },
+      "block_order": [
+        "how_to_use_8KitLb",
+        "image_banner_aek49N",
+        "faq_Vzg4Mz",
+        "reviews_hQ6RAN"
+      ],
+      "settings": {
+        "heading": ""
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "settings": {
+        "max_width": true
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {}
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "product_recommendations_heading": "Related products",
+        "related_count": 4
+      }
+    },
+    "featured_collection_pht7X9": {
+      "type": "featured-collection",
+      "settings": {
+        "custom_class": "",
+        "title": "Featured collection grid",
+        "description": "",
+        "home_featured_products": "shop-all-microcurrent-accessories-tools",
+        "rows": 1,
+        "per_row_desktop": 4,
+        "per_row_mobile": "1",
+        "view_all": false,
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product_specification_dt6YP4",
+    "sub",
+    "collection-return",
+    "product-recommendations",
+    "featured_collection_pht7X9"
+  ]
+}

@@ -1,0 +1,473 @@
+{
+  "sections": {
+    "1643605049ba44478c": {
+      "type": "featured-product",
+      "blocks": {
+        "164360504963fce107-0": {
+          "type": "price",
+          "settings": {}
+        },
+        "2bb6ce99-ac62-4d6e-aa02-90d2b58d8162": {
+          "type": "text",
+          "settings": {
+            "text": "Our Myolift QT™ microcurrent device uses Advanced Smart Current™ Technology for customized, professional grade at-home treatments that give long-lasting results."
+          }
+        },
+        "3c6a74d1-dc2e-4d5d-b8cd-a2dc9fbb5bf5": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "globe",
+            "text": "Free US Domestic Ground Shipping"
+          }
+        },
+        "aa300f0b-1041-490f-8717-b408b673f668": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "checkmark",
+            "text": "Happiness Guarantee"
+          }
+        },
+        "164360504963fce107-3": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        },
+        "164360504963fce107-2": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "color_swatches": false
+          }
+        },
+        "164360504963fce107-1": {
+          "type": "description",
+          "settings": {
+            "is_tab": true
+          }
+        },
+        "bfa8d818-ee80-483f-8af7-dbcc9eb5c5b1": {
+          "type": "tab",
+          "settings": {
+            "title": "Shipping information",
+            "content": "<p>Free USA Ground shipment, Orders are processed within 2 business day.<\/p><p>International Orders Ships within 3 business day. <\/p><p>International customers are required to pay Duty with their local custom agency. <\/p>",
+            "page": ""
+          }
+        },
+        "58afbffe-b2cb-4367-ac76-ea46ce988c64": {
+          "type": "tab",
+          "settings": {
+            "title": "What's Included:",
+            "content": "<p>•QT Plus machine<\/p><p>• Charger<\/p><p>• Lead Wire<\/p><p>• 2 oz Restore Gel<\/p><p>• Forehead Mask<\/p><p>• Lip Mask<\/p><p>• Eye Mask<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "164360504963fce107-0",
+        "2bb6ce99-ac62-4d6e-aa02-90d2b58d8162",
+        "3c6a74d1-dc2e-4d5d-b8cd-a2dc9fbb5bf5",
+        "aa300f0b-1041-490f-8717-b408b673f668",
+        "164360504963fce107-3",
+        "164360504963fce107-2",
+        "164360504963fce107-1",
+        "bfa8d818-ee80-483f-8af7-dbcc9eb5c5b1",
+        "58afbffe-b2cb-4367-ac76-ea46ce988c64"
+      ],
+      "settings": {
+        "featured_product": "at-home-microcurrent-devices-myolift-qt-plus-facial-toning",
+        "product_image_size": "medium",
+        "product_image_type": "slider",
+        "product_zoom_enable": false,
+        "enable_video_looping": true,
+        "product_video_style": "muted",
+        "sku_enable": false
+      }
+    },
+    "1645806305b328ae60": {
+      "type": "slideshow",
+      "blocks": {
+        "164580630564bb7fd3-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Product_Icons_Desktop_2x_393cb468-3d10-4116-8da3-3eb01454fb40.png",
+            "image_mobile": "shopify:\/\/shop_images\/Untitled_design_31.png"
+          }
+        }
+      },
+      "block_order": [
+        "164580630564bb7fd3-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 10,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "1649945960f7f2a811": {
+      "type": "rich-text",
+      "blocks": {
+        "1649945960c7c4f884-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>Our Myolift QT™ Plus microcurrent machine uses Smart Current™ Technology for customized, professional grade treatments with long-lasting results.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1649945960c7c4f884-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": false
+      }
+    },
+    "16637672953ca9dd7d": {
+      "type": "faq",
+      "blocks": {
+        "16637672956f651c93-0": {
+          "type": "question",
+          "settings": {
+            "title": "Can I use microcurrent before and after plastic surgery?",
+            "text": "<p>Before your surgery you can. After the surgery, please consult with your doctor on when you can use microcurrent again. Once you're given the go ahead by your doctor, these facials can actually support the healing process and improve your results.<\/p>"
+          }
+        },
+        "16637672956f651c93-1": {
+          "type": "question",
+          "settings": {
+            "title": "Can I use microcurrent if I've had Botox or Juvederm?",
+            "text": "<p>Microcurrent stimulates the muscles and activates them, while Botox freezes the muscles. If you’ve just had Botox done in a certain area, then you might need to avoid using microcurrent in that area, as it will start to undo the effect of Botox. However, if you are in the phase where the effect of Botox is running out, then microcurrent might be a better technology to use in that area to avoid usage of Botox altogether. It will take some time but your muscles will reactivate and help build tone and firmness, instead of getting more laxed due to Botox. There is no effect of microcurrent on Juvederm and it’s safe to use it. However, you should still consult your doctor.<\/p>"
+          }
+        },
+        "785c1692-9f0f-47a2-a383-1305571d8d7f": {
+          "type": "question",
+          "settings": {
+            "title": "Can I do a microcurrent treatment if I have metal plates, dental work or piercings on the face?",
+            "text": "<p>We receive a lot of questions about the safety of using microcurrent facial technology on someone who has facial piercings, dental work or metal plates. Under these circumstances, microcurrent is still safe to use. In the case of facial piercings you may remove them for a more smooth facial or for peace of mind, but it is not necessary to do so.<\/p>"
+          }
+        },
+        "ff5b266a-ac85-425c-8d46-7f5c8652d0d0": {
+          "type": "question",
+          "settings": {
+            "title": "Who is NOT a candidate for microcurrent?",
+            "text": "<p>- If you are pregnant<\/p><p>- Have had heart surgery in the past year<\/p><p>- Have a pacemaker, metal implants or screws<\/p><p>- Recent facial operation or procedure<\/p><p>- All forms of “active” cancer (ok with note from doctor - No if on chemo or radiation) <\/p><p>- Epilepsy, Diabetes, Heart Condition <\/p><p>- Use of Retin-A (discontinue use three weeks prior to treatment)<\/p><p>- Under the age of 18<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16637672956f651c93-0",
+        "16637672956f651c93-1",
+        "785c1692-9f0f-47a2-a383-1305571d8d7f",
+        "ff5b266a-ac85-425c-8d46-7f5c8652d0d0"
+      ],
+      "settings": {
+        "title": "Is Microcurrent Right for You?"
+      }
+    },
+    "1644342608b694f8ae": {
+      "type": "slideshow",
+      "blocks": {
+        "1644342608c2e47a58-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Transition_desktop_2x_f005d4d7-814f-4055-a146-d0fd0f732ad4.png",
+            "image_mobile": "shopify:\/\/shop_images\/mobile_transition_mainlavendar_2x_62a127a4-e4a6-4697-967e-3fd038ae8ad6.png"
+          }
+        }
+      },
+      "block_order": [
+        "1644342608c2e47a58-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "16436051554840e03a": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Screen_Shot_2022-01-31_at_12.05.48_AM.png",
+        "image2": "shopify:\/\/shop_images\/mask.png",
+        "subtitle": "",
+        "title": "MyoLift QT Smart App Included",
+        "text": "<p>The Myolift QT smart app is easily downloadable and comes with a guided 6-step facial treatment.<\/p><p>Other guided treatments included:<\/p><p>⟡ <\/p><p><strong>Face Lift: <\/strong>15 minute treatment with QT device alone using dual-tip probes.<\/p><p><\/p><p><strong>Eye Lift:  <\/strong>10 minute hands-free treatment with our Conductive Eye Mask.<\/p><p><\/p><p><strong>Lip Lift:  <\/strong>10 minute hands-free treatment with our Conductive Lip Mask.<\/p><p>⟡ <\/p><p>Easy to follow. Professional results.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "layout": "right",
+        "alt": true
+      }
+    },
+    "1643605778b0bea575": {
+      "type": "text-columns",
+      "blocks": {
+        "1643605778ace7dec5-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/offline_icon_16936634-7970-4c4c-8082-69e2786639e4.png",
+            "image_width": 150,
+            "title": "Offline Mode for Portability & Convenience",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "1643605778ace7dec5-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/language_icon_c7d9aa2a-c9ae-4c1d-9376-4de441ff07a4.png",
+            "image_width": 150,
+            "title": "Multiple Languages Available",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1643605778ace7dec5-0",
+        "1643605778ace7dec5-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "alt": true
+      }
+    },
+    "1643605842e51523a7": {
+      "type": "slideshow",
+      "blocks": {
+        "1643605842a812369d-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "shopify:\/\/blogs\/myolift-reviews",
+            "link_text": "See More",
+            "color_accent": "#e8dfee",
+            "text_align": "vertical-bottom horizontal-center",
+            "image": "shopify:\/\/shop_images\/7E_Professionals-Before_Afters.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/7E_Professionals-Before_Afters_Mobile.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "1643605842a812369d-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "1649945997fd6fcc59": {
+      "type": "text-columns",
+      "blocks": {
+        "16499459971c8a9f6d-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/7eWellness_home_icon_5c9e1a26-4ed0-49a8-80c1-af34e765978c.jpg",
+            "image_width": 230,
+            "title": "At Home Use",
+            "text": "<p>Delivers up to 400 microamps of microcurrent intensity in a portable, handheld machine, so you can treat yourself to an at home professional spa experience.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "16499459971c8a9f6d-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/VisibleResults.png",
+            "image_width": 230,
+            "title": "Fast Visible Results",
+            "text": "<p>Experience visible results that are immediate and<br\/>cumulative. Notice changes in your skin in only 1 day.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "2b8b7aac-0cdb-48a9-b970-9713ebac7ae9": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/7ewellness_click_icon_f9a4b9f2-13b1-4182-ba1a-83e29c75bad1.jpg",
+            "image_width": 230,
+            "title": "Intuitive One Click Usage",
+            "text": "<p>Pre-set facial treatments, follow along tutorials and<br\/>tips are all available conveniently at the click of a<br\/>button on the Myolift QT Plus app.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "3f073bbb-e5f4-4a57-b306-11e91e2ffd26": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/7eWellness_handsfree_icon_6e087931-2158-4f37-b2d1-5af77898c30b.jpg",
+            "image_width": 230,
+            "title": "Hands Free Treatment",
+            "text": "<p>Give yourself a treatment while you're working or on<br\/>the go. Our proprietary mask accessories and<br\/>applicators allow a hands free, targeted treatment<br\/>for your lip, eye and forehead.oducts. Add images for emphasis.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16499459971c8a9f6d-0",
+        "16499459971c8a9f6d-1",
+        "2b8b7aac-0cdb-48a9-b970-9713ebac7ae9",
+        "3f073bbb-e5f4-4a57-b306-11e91e2ffd26"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "alt": false
+      }
+    },
+    "1643605883e76d96f8": {
+      "type": "apps",
+      "blocks": {
+        "37b19005-f979-4f81-80e4-877a3f6d1775": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "at-home-microcurrent-devices-myolift-qt-plus-facial-toning",
+            "widget_type": "combined_widget"
+          }
+        }
+      },
+      "block_order": [
+        "37b19005-f979-4f81-80e4-877a3f6d1775"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "settings": {}
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {}
+    },
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "settings": {}
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {}
+        },
+        "inventory_status": {
+          "type": "inventory_status",
+          "settings": {}
+        },
+        "share": {
+          "type": "share",
+          "settings": {}
+        },
+        "sales_point": {
+          "type": "sales_point",
+          "settings": {}
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {}
+        },
+        "text": {
+          "type": "text",
+          "settings": {}
+        },
+        "separator": {
+          "type": "separator",
+          "settings": {}
+        },
+        "contact": {
+          "type": "contact",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "price",
+        "variant_picker",
+        "sales_point",
+        "inventory_status",
+        "buy_buttons",
+        "description",
+        "tab",
+        "contact",
+        "share"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "1643605049ba44478c",
+    "sub",
+    "1645806305b328ae60",
+    "1649945960f7f2a811",
+    "16637672953ca9dd7d",
+    "1644342608b694f8ae",
+    "16436051554840e03a",
+    "product-recommendations",
+    "1643605778b0bea575",
+    "collection-return",
+    "1643605842e51523a7",
+    "1649945997fd6fcc59",
+    "1643605883e76d96f8"
+  ]
+}

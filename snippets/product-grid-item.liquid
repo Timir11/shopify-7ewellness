@@ -1,0 +1,588 @@
+{%- comment -%}
+  It's best to load images as JPG instead of PNG for faster
+  loading, so that is our default. If you upload
+  PNG files and want to keep them that way, set the line
+  below to false.
+{%- endcomment -%}
+{%- liquid
+  assign force_jpg = true
+  unless grid_item_width
+    assign grid_item_width = 'medium-up--one-quarter small--one-half'
+  endunless
+-%}
+{%- comment -%}
+  Do not output the quick shop modal if we're loading related products
+  through another quick shop modal. Determined by checking the product.ajax template suffix.
+  These are loaded for product.sections templates but quickly removed
+  in JS before appending the related section.
+{%- endcomment -%}
+{%- liquid
+  assign enable_quick_shop = settings.quick_shop_enable
+  if no_modal
+    assign enable_quick_shop = false
+  endif
+  if template == 'product.ajax'
+    assign enable_quick_shop = false
+  endif
+  assign on_sale = false
+  if product.compare_at_price > product.price
+    assign on_sale = true
+  endif
+  assign sold_out = true
+  if product.available
+    assign sold_out = false
+  endif
+  assign product_tags = product.tags | join: ','
+  assign has_custom_label = false
+   assign has_custom_label_pro = false
+  assign custom_label_pro_tag = ''
+  if product.metafields.theme.label and product.metafields.theme.label != blank
+    assign has_custom_label = true
+    assign custom_label = product.metafields.theme.label.value
+  elsif product_tags contains '_label_'
+    for tag in product.tags
+      if tag contains '_label_'
+        assign tag_starts_with = tag | slice: 0
+        if tag_starts_with == '_'
+          assign has_custom_label = true
+          assign custom_label = tag | replace: '_label_', ''
+        endif
+      endif
+      if tag contains 'on_'
+        assign has_custom_label_pro = true
+        assign custom_label_pro_tag = tag | replace: 'on_', ''
+       endif
+    endfor
+  endif
+-%}
+{% for tag in product.tags %} 
+{% if tag contains 'on_'-%}
+   {% assign has_custom_label_pro = true %}
+   {% assign custom_label_pro_tag = tag | replace: 'on_', '' %}
+   {% endif %}
+{% endfor %}
+{% assign custom_compareAtPrice = product.compare_at_price %}
+<div
+  class="grid__item grid-product product_grid_item {{ grid_item_width }}{% if settings.product_hover_details %} grid-product__hover-details{% endif %}"
+  data-aos
+  data-product-grid
+  data-id="{{ product.id }}"
+>
+  <div class="grid-product__content">
+     {% if product.handle == 'myolift-600-atp-kit-microcurrent-certification' or product.handle == 'at-home-microcurrent-devices-myolift-mini-for-face'
+    or product.handle == 'myolift-mini-home-care-starter-kit' or product.handle == 'at-home-microcurrent-devices-myolift-qt-plus-facial-toning' 
+    or product.handle == '7e-myolift-bundle-of-joy' or product.handle == 'at-home-microcurrent-devices-myolift-triwave'
+      or product.handle == 'myolift™-mini-spa-starter-kit' or product.handle == 'qt-base-firm-and-brightening-kit'
+        or product.handle == 'qt-base-moisture-erase-kit' or product.handle == 'qt-base-wrinkle-erase-kit'
+     or product.handle == 'myolift™-600-plus-show-special'or product.handle == 'myolift-600-microcurrent-certification' or collection.handle == 'microcurrent-accessories-masks' 
+       or collection.handle == 'conductive-gels' or collection.handle == 'shop-all-microcurrent-accessories-tools' or collection.handle == 'shop-skincare' %}
+      <div class="pp grid-product__tag--sale {{ custom_label_pro_tag }}_{{ product.handle | handle }}"style="display:none">
+        Sale
+      </div>
+      {% endif %}
+    {% comment %}
+    {% if template == 'index' %}
+    {%- if has_custom_label -%}
+      <div class="grid-product__tag pp grid-product__tag--sale {{ custom_label_pro_tag }}_{{ product.handle | handle }}">{{ custom_label }}</div>
+      <!-- grid-product__tag--custom -->
+    {%- endif -%}
+    {% endif %}   
+    {% endcomment %}
+    {%- if sold_out -%}
+      {%- unless collection.handle == 'rezenerate-x-myolift' -%}
+        <div class="grid-product__tag grid-product__tag--sold-out">
+          {{ 'products.product.sold_out' | t }}
+        </div>
+      {%- endunless -%}
+    {%- endif -%}
+    {% unless collection.handle == 'all-devices-collections'
+      or page.handle == 'holiday-bundle-set'
+      or page.handle == 'holiday-bundle-professional'
+      or page.handle == 'holiday-bundle-consumer'
+      or collection.handle == '2023-consumer-holiday-kits'
+      or collection.handle == '2023-professional-holiday-kits'
+    %}
+      {%- if on_sale and sold_out == false -%}
+        <div class="grid-product__tag grid-product__tag--sale pppooopp" style="display:none">
+          {% unless product.handle == 'full-360-facial-kit' or product.handle == 'myolift-professional-microcurrent-devices-md-spa-machine' %}    
+          {%- if settings.product_save_amount -%}
+            {%- if settings.product_save_type == 'dollar' -%}
+              {%- capture saved_amount -%}{{ product.compare_at_price | minus: product.price | money }}{%- endcapture -%}
+            {%- else -%}
+              {%- capture saved_amount -%}{{ product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price | round }}%{%- endcapture -%}
+            {%- endif -%}
+            {{ 'products.general.save_html' | t: saved_amount: saved_amount }}
+          {%- else -%}
+            {{ 'products.general.sale' | t }}
+          {%- endif -%}
+          {% endunless %}
+        </div>
+      {%- endif -%}  
+      
+    {% endunless %}    
+     {%- if has_custom_label_pro and custom_label_pro_tag -%}
+      <div class="grid-product__tag pp profesional_tag {{ custom_label_pro_tag }}_{{ product.handle | handle }}">          
+          {{ custom_label_pro_tag }}          
+      </div>
+    {%- endif -%}       
+    {%- comment -%}
+      {% unless collection.handle == 'all-devices-collections' or page.handle == 'holiday-bundle-set' or page.handle == 'holiday-bundle-professional' or  page.handle == 'holiday-bundle-consumer' or collection.handle == '2023-consumer-holiday-kits' or collection.handle == '2023-professional-holiday-kits' %}
+      {% endunless %}
+    {%- endcomment -%}
+    {%- liquid
+      assign fixed_aspect_ratio = false
+      unless settings.product_grid_image_size == 'natural'
+        assign fixed_aspect_ratio = true
+      endunless
+      assign preview_image = product.featured_media.preview_image
+      assign image_limit = 1
+      assign image_count = 0
+      if settings.product_hover_image
+        assign image_limit = 10
+      endif
+      assign slider_image_padding = '100%'
+      if image_style == 'circle'
+        assign fixed_aspect_ratio = true
+        assign imageRatio = 'square'
+      endif
+    -%}
+    <div
+      href="{% if page.handle == 'holiday-bundle-set'or  page.handle == 'holiday-bundle-professional' or  page.handle == 'holiday-bundle-consumer' or collection.handle == '2023-professional-holiday-kits' or collection.handle == '2023-consumer-holiday-kits' %}javascript:void(0);{% else %}{{ product.url }}{% endif %}"
+      class="grid-product__link{% if sold_out %} grid-product__link--disabled{% endif %}"
+      {% comment %} {% if enable_quick_shop %} quick-product__btn js-screen-open-product-{{ product.id }} js-no-transition{% endif %} {% endcomment %}
+      data-product-id="{{ product.id }}"
+      data-url="{{ product.url }}"
+    >
+      <div
+        id="ProductGridSlider-{{ product.id }}"
+        class="slideshow-wrapper product-slider"
+        data-image-count="{{ product.media.size }}"
+        data-id="{{ product.id }}"
+      >
+        {%- for media in product.media limit: image_limit -%}
+          {%- assign image_count = image_count | plus: 1 -%}
+          <div class="product-slide">
+            <a href="{{ product.url }}">
+              <div class="image-wrap {% if image_style == 'circle' %}image-wrap--circular-image{% endif %}">
+                {% capture img_class %}{%- if fixed_aspect_ratio -%}grid-product__image{% endif %} image-style--{{ image_style }}{% endcapture %}
+                {%- if forloop.first -%}
+                  {%- if fixed_aspect_ratio -%}
+                    <div class="grid__image-ratio grid__image-ratio--{% if image_style == 'circle' %}square{% else %}{{ settings.product_grid_image_size }}{% endif %}">
+                      {%- render 'image-element',
+                        img: preview_image,
+                        classes: img_class,
+                        sizes: sizes,
+                        sizeVariable: sizeVariable,
+                        fallback: fallback
+                      -%}
+                    </div>
+                  {%- else -%}
+                    {%- assign slider_image_padding = 100 | divided_by: preview_image.aspect_ratio | append: '%' -%}
+                    <div
+                      class="image-wrap"
+                      style="height: 0; padding-bottom: {{ slider_image_padding }};"
+                    >
+                      {%- if force_jpg -%}
+                        {% assign format = 'jpg' %}
+                      {%- endif -%}
+                      {%- render 'image-element',
+                        img: preview_image,
+                        classes: img_class,
+                        sizes: sizes,
+                        sizeVariable: sizeVariable,
+                        fallback: fallback,
+                        widths: '750, 900, 1080',
+                        format: format
+                      -%}
+                    </div>
+                  {%- endif -%}
+                {%- else -%}
+                  <div
+                    class="grid__image-ratio grid__image-ratio--{{ settings.product_grid_image_size }}"
+                    {%- if settings.product_grid_image_size == 'natural' -%}
+                      style="padding-bottom: {{ slider_image_padding }}"
+                    {%- endif -%}
+                  >
+                    {%- render 'image-element',
+                      img: media.preview_image,
+                      classes: img_class,
+                      sizes: sizes,
+                      sizeVariable: sizeVariable,
+                      fallback: fallback
+                    -%}
+                  </div>
+                {%- endif -%}
+              </div>
+              {% if product.media.size > 1 %}
+                <img
+                  src="{{  product.media[1] | img_url: 'original' }}"
+                  class="second_img"
+                  width=""
+                  height=""
+                  alt="second image"
+                >
+              {% else %}
+                <img
+                  src="{{  product.media[0] | img_url: 'original' }}"
+                  class="second_img"
+                  width=""
+                  height=""
+                  alt="second image"
+                >
+              {% endif %}
+            </a>
+            <div class="quick-view">
+              <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.20057 7.78442C0.933139 7.2954 0.933144 6.70445 1.20058 6.21544C2.9 3.10803 6.20336 1 9.99997 1C13.7966 1 17.1 3.10809 18.7994 6.21558C19.0669 6.7046 19.0669 7.29555 18.7994 7.78456C17.1 10.892 13.7966 13 10 13C6.20336 13 2.89997 10.8919 1.20057 7.78442Z" stroke="white" stroke-width="1.5"/>
+              <circle cx="10" cy="7" r="3" stroke="white" stroke-width="1.5"/>
+              </svg>
+            </div>
+          </div>
+        {%- endfor -%}
+        {%- if product.media == blank -%}
+          <div
+            class="grid__image-ratio grid__image-ratio--{{ settings.product_grid_image_size }}"
+            {%- if settings.product_grid_image_size == 'natural' -%}
+              style="padding-bottom: {{ slider_image_padding }}"
+            {%- endif -%}
+          >
+            {%- capture placeholder -%}product-{% cycle 1, 2, 3, 4, 5, 6 %}{%- endcapture -%}
+            <div class="product-image--placeholder">{{ placeholder | placeholder_svg_tag: 'placeholder-svg' }}</div>
+          </div>
+        {%- endif -%}
+      </div>
+      {%- if image_count > 1 -%}
+        {%- assign loader_duration = 1350 | times: image_count -%}
+        <style>
+          .product-slider.flickity-enabled[data-id="{{ product.id }}"]:after {
+            animation-duration: {{ loader_duration }}ms;
+          }
+        </style>
+      {%- endif -%}
+      <div class="grid-product__meta">
+        <div class="grid-product__title">{{ product.title | link_to: product.url }}</div>
+        {%- if page.handle == 'holiday-bundle-set'
+          or page.handle == 'holiday-bundle-professional'
+          or page.handle == 'holiday-bundle-consumer'
+          or collection.handle == '2023-professional-holiday-kits'
+          or collection.handle == '2023-consumer-holiday-kits'
+        -%}
+          <h5 class="whats_included" data-target="#product-{{ product.id }}" data-toggle="modal">What's Included</h5>
+        {%- endif -%}
+        {%- if settings.vendor_enable -%}
+          <div class="grid-product__vendor">{{ product.vendor }}</div>
+        {%- endif -%}
+<div class="grid-product__price">
+  {% comment %} Grid: Use FIRST AVAILABLE VARIANT (not product.price) {% endcomment %}
+  {%- assign first_variant = product.selected_or_first_available_variant -%}
+  {%- assign variant_discount = first_variant.metafields.custom.discount_percentage | default: 0 | plus: 0 -%}
+  {%- assign product_discount = product.metafields.custom.discount_percentage | default: 0 | plus: 0 -%}
+  
+  {%- comment -%} Variant > Product fallback {%- endcomment -%}
+  {%- if variant_discount > 0 -%}
+    {%- assign custom_discount_percentage = variant_discount -%}
+  {%- elsif product_discount > 0 -%}
+    {%- assign custom_discount_percentage = product_discount -%}
+  {%- else -%}
+    {%- assign custom_discount_percentage = 0 -%}
+  {%- endif -%}
+  
+  {%- assign regular_price_cents = first_variant.price -%}
+  
+  {%- if custom_discount_percentage > 0 -%}
+    {%- assign discount_fraction = custom_discount_percentage | divided_by: 100.0 -%}
+    {%- assign discount_multiplier = 1.0 | minus: discount_fraction -%}
+    {%- assign discounted_price_cents = regular_price_cents | times: discount_multiplier | round -%}
+    
+    <span class="grid-product__price--original" style="text-decoration: line-through; color: #888;">
+      {{ regular_price_cents | money }}
+    </span>
+    <span class="grid-product__price--discounted" style="color: #231F20; font-weight: bold;">
+      {{ discounted_price_cents | money }}
+    </span>
+  {%- else -%}
+    <span class="grid-product__price--regular">
+      {{ regular_price_cents | money }}
+    </span>
+  {%- endif -%}
+</div>
+
+{% comment %} Grid Discount Label - First Variant > Product fallback {% endcomment %}
+{%- unless collection.handle == 'wholesale-shop-all' -%}
+  {%- if custom_discount_percentage > 0 -%}
+    <div class="dynamic-discount-label grid-discount-label" data-product-discount="{{ product_discount }}" data-variant-discount="{{ variant_discount }}">
+      {{ custom_discount_percentage }}% OFF
+    </div>
+  {%- endif -%}
+{%- endunless -%}
+{% comment %} Grid Offer Label - Variant > Product fallback {% endcomment %}
+{%- unless collection.handle == 'wholesale-shop-all' -%}
+
+  {%- assign variant_offer = first_variant.metafields.custom.offer_label -%}
+  {%- assign product_offer = product.metafields.custom.offer_label -%}
+
+  {%- if variant_offer != blank -%}
+    <div class="grid-offer-label">
+      {{ variant_offer }}
+    </div>
+  {%- elsif product_offer != blank -%}
+    <div class="grid-offer-label">
+      {{ product_offer }}
+    </div>
+  {%- endif -%}
+
+{%- endunless -%}
+
+
+          {%- comment -%} Dynamic Discount Label End {%- endcomment -%}        
+        {%- assign product_variant = product.selected_or_first_available_variant -%}
+        {%- if product_variant.unit_price_measurement -%}
+          <div class="product__unit-price">
+            {%- capture unit_price_base_unit -%}
+              {%- if product_variant.unit_price_measurement -%}
+                {%- if product_variant.unit_price_measurement.reference_value != 1 -%}
+                  {{ product_variant.unit_price_measurement.reference_value }}
+                {%- endif -%}
+                {{ product_variant.unit_price_measurement.reference_unit }}
+              {%- endif -%}
+            {%- endcapture -%}
+            {{ product_variant.unit_price | money }}/{{ unit_price_base_unit }}
+          </div>
+        {%- endif -%}
+        {%- if settings.enable_swatches and type == 'horizontal' -%}
+          {%- assign swatch_trigger = 'products.general.color_swatch_trigger' | t | downcase -%}
+          {%- assign swatch_file_extension = 'png' -%}
+          {%- for option in product.options_with_values -%}
+            {%- liquid
+              assign option_name = option.name | downcase
+              assign is_color = false
+              if option_name contains swatch_trigger
+                assign is_color = true
+              elsif swatch_trigger == 'color' and option_name contains 'colour'
+                assign is_color = true
+              endif
+            -%}
+            {%- if is_color -%}
+              {%- assign option_index = forloop.index0 -%}
+              {%- assign values = '' -%}
+              <div class="grid-product__colors">
+                {%- for variant in product.variants -%}
+                  {%- assign value = variant.options[option_index] %}
+                  {%- unless values contains value -%}
+                    {%- liquid
+                      assign values = values | join: ',' | append: ',' | append: value | split: ','
+                      assign color_file_name = value | handle | append: '.' | append: swatch_file_extension
+                      assign color_image = color_file_name | file_img_url: '50x50' | prepend: 'https:' | split: '?' | first
+                      assign color_swatch_fallback = value | split: ' ' | last | handle
+                      assign color_count = color_count | plus: 1
+                    -%}
+                    <span
+                      class="color-swatch color-swatch--small"
+                      style="background-color: {{ color_swatch_fallback }};{% if images[color_file_name] != blank %}  background-image: url({{ color_image }});{% endif %}"
+                    ></span>
+                  {%- endunless -%}
+                {%- endfor -%}
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endif -%}
+        {%- if settings.enable_product_reviews and type == 'horizontal' -%}
+          <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
+        {%- endif -%}
+      </div>
+      {%- if settings.enable_swatches and type == blank -%}
+        {%- assign swatch_trigger = 'products.general.color_swatch_trigger' | t | downcase- %}
+        {%- assign swatch_file_extension = 'png' -%}
+        {%- for option in product.options_with_values -%}
+          {%- liquid
+            assign option_name = option.name | downcase
+            assign is_color = false
+            if option_name contains swatch_trigger
+              assign is_color = true
+            elsif swatch_trigger == 'color' and option_name contains 'colour'
+              assign is_color = true
+            endif
+          -%}
+          {%- if is_color -%}
+            {%- assign option_index = forloop.index0 -%}
+            {%- assign values = '' -%}
+            <div class="grid-product__colors">
+              {%- for variant in product.variants -%}
+                {%- assign value = variant.options[option_index] %}
+                {%- unless values contains value -%}
+                  {%- liquid
+                    assign values = values | join: ',' | append: ',' | append: value | split: ','
+                    assign color_file_name = value | handle | append: '.' | append: swatch_file_extension
+                    assign color_image = color_file_name | file_img_url: '50x50' | prepend: 'https:' | split: '?' | first
+                    assign color_swatch_fallback = value | split: ' ' | last | handle
+                    assign color_count = color_count | plus: 1
+                  -%}
+                  <span
+                    class="color-swatch color-swatch--small"
+                    style="background-color: {{ color_swatch_fallback }};{% if images[color_file_name] != blank %}  background-image: url({{ color_image }});{% endif %}"
+                  ></span>
+                {%- endunless -%}
+              {%- endfor -%}
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+      {%- if settings.enable_product_reviews and type == blank -%}
+        <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
+      {%- endif -%}
+    </div>
+    {% render 'okendo-reviews-product-rating-summary', product: product %}
+    <div
+      id="ProductSection-{{ section.id }}"
+      class="product-section"
+      data-section-id="{{ section.id }}"
+      data-product-id="{{ product.id }}"
+      data-section-type="product-template"
+      {%- if isModal -%}
+        data-subsection
+      {%- endif -%}
+      {%- if product_image_type == 'stacked' -%}
+        data-images-stacked="true"
+      {%- endif -%}
+      data-video-style="{{ video_style }}"
+      data-history="{{ enableHistory }}"
+      data-modal="{{ isModal }}"
+    >
+      {%- assign current_variant = product.selected_or_first_available_variant -%}
+      {%- render 'product-template-variables', product: product, current_variant: current_variant -%}
+      {%- assign productID = product.id -%}
+      {%- assign productID = 'AddToCartForm-' | append: productID -%}
+      {%- form 'product', product, id: productID, class: 'product-single__form small--text-center' -%}
+        <input type="hidden" name="data-product-id" value="{{ product.id }}">
+        <!-- <button class="btn">ADD TO CART</button> -->
+        {%- liquid
+          assign enable_dynamic_buttons = false
+          if show_dynamic_checkout and template != 'product.preorder'
+            assign enable_dynamic_buttons = true
+          endif
+        -%}
+        {%- if enable_dynamic_buttons -%}
+          <div class="payment-buttons">
+        {%- endif -%}
+        {%- liquid
+          assign default_text = 'products.product.add_to_cart' | t
+          assign button_text = 'products.product.add_to_cart' | t
+          if template == 'product.preorder'
+            assign default_text = 'products.product.preorder' | t
+            assign button_text = 'products.product.preorder' | t
+          endif
+          unless current_variant.available
+            assign button_text = 'products.product.add_to_cart' | t
+          endunless
+        -%}
+        {% comment %}
+        {% if product.template_suffix == 'certification_class' %}
+          <a
+            href="https://7e-wellness-education-school.teachable.com/p/microcurrent-certification-101"
+            target="blank"
+            class="btn"
+            >Sign Up</a
+          >
+        {% else %}
+        {% endcomment %}
+          <button
+            {% if product.empty? %}
+              type="button"
+            {% else %}
+              type="submit"
+            {% endif %}
+            name="add"
+            data-add-to-cart
+            class="btn add-to-cart 123{% if enable_dynamic_buttons and product.selling_plan_groups == empty %} btn--tertiary{% endif %} {% if product.url contains 'myolift-md-professional-microcurrent-device' %} freeProduct {% endif %}{% if product.url contains 'myolift%E2%84%A2-600-atp-booster-kit' %}freeProduct1 {% endif %}"
+            {% unless current_variant.available %}
+              disabled="disabled"
+            {% endunless %}
+          >
+            <span data-add-to-cart-text data-default-text="{{ default_text }}">
+              {{ button_text }}
+            </span>
+          </button>
+        {% comment %}{% endif %}{% endcomment %}
+        {%- if enable_dynamic_buttons -%}{{ form | payment_button }}{%- endif -%}
+        {%- if enable_dynamic_buttons -%}</div>{%- endif -%}
+        <select name="id" id="ProductSelect-{{ product.id }}" class="product-single__variants no-js" data-product-select>
+          {%- for variant in product.variants -%}
+            {%- assign variant_discount = variant.metafields.custom.discount_percentage | default: 0 | plus: 0 -%}
+            <option 
+              value="{{ variant.id }}"
+              data-discount-percentage="{{ variant_discount }}"
+              data-price="{{ variant.price }}"
+              {%- if variant == product.selected_or_first_available_variant -%}selected="selected"{%- endif -%}
+            >
+              {{ variant.title }} - {{ variant.price | money_with_currency }}
+            </option>
+          {%- endfor -%}
+        </select>
+        {%- unless product.empty? -%}
+          <textarea
+            class="hide"
+            aria-hidden="true"
+            aria-label="Product JSON"
+            data-variant-json
+          >{{ product.variants | json }}</textarea>
+          {%- if product.options.size > 1 -%}
+            <textarea
+              class="hide"
+              aria-hidden="true"
+              aria-label="Variant JSON"
+              data-current-variant-json
+            >{{ current_variant | json }}</textarea>
+          {%- endif -%}
+        {%- endunless -%}
+      {%- endform -%}
+    </div>
+  </div>
+  {%- if enable_quick_shop and type == blank -%}
+    {%- render 'quick-shop-modal', product: product -%}
+  {%- endif -%}
+</div>
+{%- if page.handle == 'holiday-bundle-set'
+  or page.handle == 'holiday-bundle-professional'
+  or page.handle == 'holiday-bundle-consumer'
+  or collection.handle == '2023-professional-holiday-kits'
+  or collection.handle == '2023-consumer-holiday-kits'
+-%}
+  <!-- Modal -->
+  <div
+    class="modal fade"
+    id="product-{{ product.id }}"
+    data-backdrop="static"
+    data-keyboard="false"
+    tabindex="-1"
+    aria-labelledby="staticBackdropLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">What's Included:</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          {{ product.description | split: '<!-- split -->' | last }}
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    .modal-backdrop.show {
+      opacity: 0;
+      z-index: 0;
+    }
+    .modal-open .modal:before{
+      background-color: rgba(0,0,0,0.7);
+    }
+  </style>
+{%- endif -%}
+
+

@@ -1,0 +1,462 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "okendo_star_rating_TrHakd": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "sales_point": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "globe",
+            "text": "Free US Domestic Ground Shipping"
+          }
+        },
+        "30703011-9513-4ebc-8f63-6ddf41dabf98": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "checkmark",
+            "text": "Happiness Guarantee"
+          }
+        },
+        "custom_6Njxy9": {
+          "type": "custom",
+          "disabled": true,
+          "settings": {
+            "code": "<P style=\"background: yellow;padding: 10px 15px; border-radius: 30px; display: inline-block;margin: 0; font-size: 20px;line-height: 1;\">WOMEN'S DAY SALE <b>15% OFF<\/b><\/P>"
+          }
+        },
+        "custom_mpJw8N": {
+          "type": "custom",
+          "disabled": true,
+          "settings": {
+            "code": "<a style=\"background: yellow;\npadding: 4px 8px; border-radius: 30px;\" href=\"https:\/\/www.7ewellness.com\/pages\/7e-events\">REGISTER FOR PRODUCT DEMO WEBINAR<\/a>"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed": {
+          "type": "tab",
+          "settings": {
+            "title": "What's Included",
+            "content": "<ul><li>Myolift QT Base<\/li><li>4oz Mangosteen Cleanser<\/li><li>1 packet EGF Restorative Sheet Masks<\/li><li>1 Vitalizing Sheet Mask<\/li><li>2oz RePlenish Spritzer<\/li><li>4oz ReNu<\/li><li>7e Brush and Headband<\/li><\/ul><p> <\/p>",
+            "page": ""
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "title": "3 Step Protocol",
+            "content": "<p>Step 1: <strong>Clarify<\/strong> with the Mangosteen Cleanser <\/p><p>Step 2: <strong>Hydrate<\/strong> with the RePlenish Spritzer (included w\/ purchase of device)<\/p><p><span style=\"text-decoration:underline\">Step 3<\/span>: <strong>Treat <\/strong>using the MyoLift QT <\/p><p>Please note:<\/p><p>Step 1 & 2 never change. <\/p><p>Step 3 will vary each day as follows:<\/p><p><span style=\"text-decoration:underline\">Sheet Mask<\/span>: Days 1, 8, 14<\/p><p><span style=\"text-decoration:underline\">QT Probes:<\/span> Days 2, 4, 6, 9, 11, 13 <\/p><p><span style=\"text-decoration:underline\">Handsfree Masks<\/span>: Days 3, 5,10,12<\/p>",
+            "page": ""
+          }
+        },
+        "tab_cAT3eq": {
+          "type": "tab",
+          "settings": {
+            "title": "Shipping information",
+            "content": "<p>Free USA Ground shipment, Orders are processed within 2 business day. <\/p><p>International Orders Ships within 3 business day.  <\/p><p>International customers are required to pay Duty with their local custom agency. <\/p>",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {}
+        },
+        "e51e9259-1487-4458-8555-3cf18377ca6a": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Text block"
+          }
+        }
+      },
+      "block_order": [
+        "price",
+        "okendo_star_rating_TrHakd",
+        "variant_picker",
+        "sales_point",
+        "30703011-9513-4ebc-8f63-6ddf41dabf98",
+        "custom_6Njxy9",
+        "custom_mpJw8N",
+        "buy_buttons",
+        "description",
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed",
+        "tab",
+        "tab_cAT3eq",
+        "share",
+        "e51e9259-1487-4458-8555-3cf18377ca6a"
+      ],
+      "settings": {
+        "product_image_size": "medium",
+        "product_image_type": "stacked",
+        "thumbnail_height": "flexible",
+        "product_zoom_enable": true,
+        "enable_video_looping": true,
+        "product_video_style": "muted",
+        "sku_enable": false
+      }
+    },
+    "hero_animated_cmaUhx": {
+      "type": "hero-animated",
+      "blocks": {
+        "image_XB87XL": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-06-27_at_11.24.28_PM.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_XB87XL"
+      ],
+      "settings": {
+        "style": "gif",
+        "title": "",
+        "title_size": 80,
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "desktop_size": 0,
+        "mobile_size": 0
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "settings": {
+        "max_width": true
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {}
+    },
+    "bc10f931-1f0d-48e0-a2c5-0f785996b934": {
+      "type": "featured-video",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=nGku66n9v_w&t=34s",
+        "alt": true
+      }
+    },
+    "164556780200309513": {
+      "type": "apps",
+      "blocks": {
+        "2a3dd040-0528-4160-a336-9edeec07fd6f": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "disabled": true,
+          "settings": {
+            "product": "conductive-mask-bundle-with-lead-wire-splitter",
+            "widget_type": "combined_widget"
+          }
+        }
+      },
+      "block_order": [
+        "2a3dd040-0528-4160-a336-9edeec07fd6f"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "product_recommendations_heading": "You may also like",
+        "related_count": 14
+      }
+    },
+    "fe61abff-264d-4437-ab02-6865dd969edd": {
+      "type": "rich-text",
+      "blocks": {
+        "template--14622986076214__fe61abff-264d-4437-ab02-6865dd969edd-1681779828fad2dee5-0": {
+          "type": "heading",
+          "settings": {
+            "title": ""
+          }
+        },
+        "template--14622986076214__fe61abff-264d-4437-ab02-6865dd969edd-1681779828fad2dee5-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p><strong>Utilize True Microcurrent™ alongside clinically proven hydrators and actives to boost water reserves in the skin and improve moisture retention. <\/strong><\/p><p><strong>Ingredients like Lactic acid, Hyaluronic acid, Chamomile, and Epidermal Growth Factor work synergistically with microcurrent.<\/strong><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14622986076214__fe61abff-264d-4437-ab02-6865dd969edd-1681779828fad2dee5-0",
+        "template--14622986076214__fe61abff-264d-4437-ab02-6865dd969edd-1681779828fad2dee5-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": false
+      }
+    },
+    "e78b38c7-932e-4516-bd3d-041ee2258ce0": {
+      "type": "hero-video",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "title_size": 40,
+        "subheading": "",
+        "link_text": "",
+        "link": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "video_url": "https:\/\/vimeo.com\/818565352?share=copy",
+        "section_height": "450px",
+        "mobile_height": "400px"
+      }
+    },
+    "e6376905-8979-4a3c-817a-e048be143d33": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Untitled_design_82.png",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Kit Benefits",
+        "text": "<p>✓Boost ceramide production in the skin, improving moisture retention<\/p><p>✓Improve plumpness <\/p><p>✓Reduce sensitivity and redness<\/p><p>✓Depuff <\/p><p>✓Trigger skin healing and regeneration<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "50",
+        "layout": "left",
+        "alt": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "hero_animated_JLxVm3": {
+      "type": "hero-animated",
+      "blocks": {
+        "image_aWrymV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/kit_6.gif"
+          }
+        }
+      },
+      "block_order": [
+        "image_aWrymV"
+      ],
+      "settings": {
+        "style": "gif",
+        "title": "",
+        "title_size": 80,
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "desktop_size": 0,
+        "mobile_size": 0
+      }
+    },
+    "hero_animated_MkhVzW": {
+      "type": "hero-animated",
+      "blocks": {
+        "image_Tq84L4": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-06-27_at_11.20.10_PM.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_Tq84L4"
+      ],
+      "settings": {
+        "style": "gif",
+        "title": "",
+        "title_size": 80,
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "desktop_size": 0,
+        "mobile_size": 0
+      }
+    },
+    "hero_animated_EfH9Gi": {
+      "type": "hero-animated",
+      "blocks": {
+        "image_z8gn3p": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-06-27_at_11.20.19_PM.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_z8gn3p"
+      ],
+      "settings": {
+        "style": "gif",
+        "title": "",
+        "title_size": 80,
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "desktop_size": 0,
+        "mobile_size": 0
+      }
+    },
+    "1a3fcdc4-d72b-493f-808b-8c1fe9c08002": {
+      "type": "featured-video",
+      "settings": {
+        "title": "",
+        "video_url": "https:\/\/vimeo.com\/974644792",
+        "alt": false
+      }
+    },
+    "64298d6b-3af5-4761-92d4-2149ee8c551e": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/2_e01ccc98-63ec-455d-bad6-215e2136c523.png",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Lactic Acid",
+        "text": "<p>Is an alpha hydroxy acid (AHA) that is produced by the fermentation of carbohydrates such as glucose, sucrose, or lactose. <\/p><p>✓Removes dead skin cells<\/p><p>✓Lightens dark spots<\/p><p>✓Improves the look of fine lines and wrinkles <\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "33",
+        "layout": "right",
+        "alt": true,
+        "top_padding": false,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "de420bc3-a630-41c7-9399-69dc6fd88819": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/3_df64dcde-d767-47f1-a56e-4f619d12d174.png",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Chamomile",
+        "text": "<p>Is a daisy-like herb that has been used for centuries as a natural remedy for many health conditions.<\/p><p>✓Contains antioxidant polyphenols that protect skin from UV damage and maintain a youthful appearance.<\/p><p>✓Reduces redness and inflammation caused by acne. <\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "33",
+        "layout": "left",
+        "alt": true,
+        "top_padding": false,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "82661063-6b2d-42c2-99a6-3f564c944933": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/4_69369d4f-e64d-4901-8dd2-b39336e82cd9.png",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "EGF",
+        "text": "<p>Epidermal Growth Factor is a single polypeptide made of 53 different amino acids. It aids in wound healing by regulating cell survival, proliferation, migration, and differentiation.<\/p><p>✓Helps with cellular repair and renewal<\/p><p>✓Strengthens skin barrier<\/p><p>✓Brightens dark spots <\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "33",
+        "layout": "right",
+        "alt": true,
+        "top_padding": false,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "16819433829012c034": {
+      "type": "apps",
+      "blocks": {
+        "6ef03fbe-a3ba-4cec-aa52-ff8d71da290a": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}",
+            "widget_type": "reviews_widget"
+          }
+        }
+      },
+      "block_order": [
+        "6ef03fbe-a3ba-4cec-aa52-ff8d71da290a"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "hero_animated_cmaUhx",
+    "sub",
+    "collection-return",
+    "bc10f931-1f0d-48e0-a2c5-0f785996b934",
+    "164556780200309513",
+    "product-recommendations",
+    "fe61abff-264d-4437-ab02-6865dd969edd",
+    "e78b38c7-932e-4516-bd3d-041ee2258ce0",
+    "e6376905-8979-4a3c-817a-e048be143d33",
+    "hero_animated_JLxVm3",
+    "hero_animated_MkhVzW",
+    "hero_animated_EfH9Gi",
+    "1a3fcdc4-d72b-493f-808b-8c1fe9c08002",
+    "64298d6b-3af5-4761-92d4-2149ee8c551e",
+    "de420bc3-a630-41c7-9399-69dc6fd88819",
+    "82661063-6b2d-42c2-99a6-3f564c944933",
+    "16819433829012c034"
+  ]
+}

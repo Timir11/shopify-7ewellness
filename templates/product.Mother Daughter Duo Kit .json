@@ -1,0 +1,480 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "custom_6Njxy9": {
+          "type": "custom",
+          "settings": {
+            "code": "<P style=\"font-size: 20px;line-height: 1; margin-top: -20px;\"><em>Bundle Items Valued at $279<\/em><\/P>"
+          }
+        },
+        "okendo_star_rating_TrHakd": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "sales_point": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "globe",
+            "text": "Free US Domestic Ground Shipping"
+          }
+        },
+        "30703011-9513-4ebc-8f63-6ddf41dabf98": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "checkmark",
+            "text": "Happiness Guarantee"
+          }
+        },
+        "custom_mpJw8N": {
+          "type": "custom",
+          "disabled": true,
+          "settings": {
+            "code": "<a style=\"background: yellow;\npadding: 4px 8px; border-radius: 30px;\" href=\"https:\/\/www.7ewellness.com\/pages\/7e-events\">REGISTER FOR PRODUCT DEMO WEBINAR<\/a>"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed": {
+          "type": "tab",
+          "settings": {
+            "title": "What's Included",
+            "content": "<p>Wrinkle Erase Kit<\/p><ul><li>4oz Mangosteen Cleanser <\/li><li>1oz Anti Aging Peptide Serum<\/li><li>2 EGF Restorative Sheet Masks<\/li><li>1 Vitalizing Sheet Mask<\/li><li>4oz ATP Booster Gel<\/li><li>.5oz Eye Lift Serum<\/li><li>2oz Infused Conductive Solution<\/li><li>1 pair Conductive Gloves<\/li><li>1 set Splitter Wires<\/li><li>1 Eye Mask<\/li><li>1 Lip Mask<\/li><li>Brush <\/li><li>Headband<\/li><li>MyoLift Bag <\/li><\/ul><p>Moisture Boost Kit<\/p><ul><li>4oz Mangosteen Cleanser<\/li><li>EGF Restorative Sheet (2 Masks)<\/li><li>1 Vitalizing Sheet Mask<\/li><li>4oz ReNu<\/li><li>2oz RePlenish Spritzer<\/li><li>7e Brush and Headband<\/li><li>MyoLift Bag <\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "tab_E44Dhc": {
+          "type": "tab",
+          "settings": {
+            "title": "5 Step Protocol",
+            "content": "<p>Step 1: <strong>Clarify<\/strong> with the Mangosteen Cleanser <\/p><p>Step 2: <strong>Boost<\/strong> your results with the ATP Booster Gel<\/p><p>Step 3: <strong>Treat <\/strong>with the MyoLift QT (Sheet Mask, or 2 Handsfree Masks w\/ Splitter Wire, or Conductive Gloves)<\/p><p>Step 4: <strong>Target<\/strong> with Eye Lift Serum<\/p><p>Step 5: <strong>Nourish <\/strong>with Anti Aging Peptide Serum<\/p><p>Please note:<\/p><p>Step 1, 2, 4, & 5 never change.<\/p><p>Step 3 will vary as follows:<\/p><p><span style=\"text-decoration:underline\">Sheet Mask<\/span>: Days 1, 8, 14<\/p><p><span style=\"text-decoration:underline\">Conductive Gloves:<\/span> Days 2, 4, 6, 9, 11, 13 <\/p><p><span style=\"text-decoration:underline\">2 Handsfree Masks with Splitter Wire<\/span>: Days 3, 5,10,12<\/p>",
+            "page": ""
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "title": "Shipping information",
+            "content": "<p>Free USA Ground shipment, Orders are processed within 2 business day. <\/p><p>International Orders Ships within 3 business day.  <\/p><p>International customers are required to pay Duty with their local custom agency. <\/p>",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {}
+        },
+        "e51e9259-1487-4458-8555-3cf18377ca6a": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Text block"
+          }
+        }
+      },
+      "block_order": [
+        "price",
+        "custom_6Njxy9",
+        "okendo_star_rating_TrHakd",
+        "variant_picker",
+        "sales_point",
+        "30703011-9513-4ebc-8f63-6ddf41dabf98",
+        "custom_mpJw8N",
+        "buy_buttons",
+        "description",
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed",
+        "tab_E44Dhc",
+        "tab",
+        "share",
+        "e51e9259-1487-4458-8555-3cf18377ca6a"
+      ],
+      "settings": {
+        "product_image_size": "medium",
+        "product_image_type": "stacked",
+        "thumbnail_height": "flexible",
+        "product_zoom_enable": true,
+        "enable_video_looping": true,
+        "product_video_style": "muted",
+        "sku_enable": false
+      }
+    },
+    "hero_animated_VYEfxw": {
+      "type": "hero-animated",
+      "blocks": {
+        "image_Qwedf3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/WRINKLES.jpg"
+          }
+        },
+        "image_3dzHpH": {
+          "type": "image",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "image_Qwedf3",
+        "image_3dzHpH"
+      ],
+      "settings": {
+        "style": "gif",
+        "title": "",
+        "title_size": 80,
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "desktop_size": 0,
+        "mobile_size": 0
+      }
+    },
+    "hero_animated_pQGpfM": {
+      "type": "hero-animated",
+      "blocks": {
+        "image_E4QqeN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5_steps.gif"
+          }
+        }
+      },
+      "block_order": [
+        "image_E4QqeN"
+      ],
+      "settings": {
+        "style": "gif",
+        "title": "",
+        "title_size": 80,
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "desktop_size": 0,
+        "mobile_size": 0
+      }
+    },
+    "hero_animated_MJhwR7": {
+      "type": "hero-animated",
+      "blocks": {
+        "image_pzeq33": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/steps-1-full-1.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_pzeq33"
+      ],
+      "settings": {
+        "style": "gif",
+        "title": "",
+        "title_size": 80,
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "desktop_size": 0,
+        "mobile_size": 0
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "settings": {
+        "max_width": true
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {}
+    },
+    "hero_animated_JnUbKp": {
+      "type": "hero-animated",
+      "blocks": {
+        "image_pHwDhz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-06-27_at_11.08.27_PM.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_pHwDhz"
+      ],
+      "disabled": true,
+      "settings": {
+        "style": "gif",
+        "title": "",
+        "title_size": 80,
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "desktop_size": 0,
+        "mobile_size": 0
+      }
+    },
+    "bc10f931-1f0d-48e0-a2c5-0f785996b934": {
+      "type": "featured-video",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=nGku66n9v_w&t=34s",
+        "alt": true
+      }
+    },
+    "hero_animated_nPNPnE": {
+      "type": "hero-animated",
+      "blocks": {
+        "image_z9jxLk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-06-27_at_11.08.37_PM.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_z9jxLk"
+      ],
+      "disabled": true,
+      "settings": {
+        "style": "gif",
+        "title": "",
+        "title_size": 80,
+        "subheading": "",
+        "link": "",
+        "link_text": "",
+        "color_accent": "rgba(0,0,0,0)",
+        "text_align": "vertical-center horizontal-center",
+        "desktop_size": 0,
+        "mobile_size": 0
+      }
+    },
+    "164556780200309513": {
+      "type": "apps",
+      "blocks": {
+        "2a3dd040-0528-4160-a336-9edeec07fd6f": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "disabled": true,
+          "settings": {
+            "product": "conductive-mask-bundle-with-lead-wire-splitter",
+            "widget_type": "combined_widget"
+          }
+        }
+      },
+      "block_order": [
+        "2a3dd040-0528-4160-a336-9edeec07fd6f"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "product_recommendations_heading": "You may also like",
+        "related_count": 14
+      }
+    },
+    "de420bc3-a630-41c7-9399-69dc6fd88819": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Untitled_design_77.png",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Kit Benefits",
+        "text": "<p>✓Target and smooth out specific wrinkles and areas of concern<\/p><p>✓Tone and stimulate facial muscles, leading to smoother, tighter skin<\/p><p>✓Improve firmness in lax areas of the face<\/p><p>✓Boost Collagen production and cellular energy<\/p><p>✓Soften and plump uneven skin texture<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "50",
+        "layout": "left",
+        "alt": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "1a3fcdc4-d72b-493f-808b-8c1fe9c08002": {
+      "type": "featured-video",
+      "settings": {
+        "title": "",
+        "video_url": "https:\/\/vimeo.com\/974831573",
+        "alt": false
+      }
+    },
+    "rich_text_kGKBkH": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_AVzKYk": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "Rich Ingredients"
+          }
+        },
+        "text_4cpUxa": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "enlarge_text": true,
+            "text": "<h1><strong>For Glowing Skin <\/strong><\/h1>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_AVzKYk",
+        "text_4cpUxa"
+      ],
+      "disabled": true,
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": true
+      }
+    },
+    "e6376905-8979-4a3c-817a-e048be143d33": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/2_70a55394-67a1-459e-9531-1a02e5d87515.png",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Mangosteen",
+        "text": "<p>Mangosteen is a tropical fruit that is native to Southeast Asia that is referred to as the \"Queen of Fruit\".<\/p><p>✓Full of antioxidants that help protect skin from damage caused by UV rays and environmental factors.<\/p><p>✓Has a unique class of antioxidant compounds called xanthones, which can reduce inflammation throughout the body.<\/p><p>✓Mangosteen's lactic acid complex can gently resurface skin, minimize pores, and refine skin tone.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "33",
+        "layout": "left",
+        "alt": true,
+        "top_padding": false,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "64298d6b-3af5-4761-92d4-2149ee8c551e": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Untitled_design_4_7b88d406-7f6f-4936-8192-5ce632c317a4.png",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Evening Primrose",
+        "text": "<p>Evening Primrose is a species of the flowering plant in the family Onagraceae. Is is native to South and North America.<\/p><p>✓Can help the skin heal and reduce the appearance of scars.<\/p><p>✓Helps reduce the appearance of wrinkles and tightens the skin.<\/p><p>✓Reduce redness and irritation, which can be caused by skin conditions like acne, rosacea, or eczema.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "33",
+        "layout": "right",
+        "alt": true,
+        "top_padding": false,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "82661063-6b2d-42c2-99a6-3f564c944933": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/4_5a5cf9ce-1d09-4af1-b00a-ddfff26a0b23.png",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Ergothioneine",
+        "text": "<p>Ergothioneine is an amino acid that is found <strong>mainly in mushrooms, <\/strong>as well  as red and black beans.<\/p><p>✓Natural amino acid that protects other active antioxidants from degrading.<\/p><p>✓Provides defense against environmental concerns.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "33",
+        "layout": "left",
+        "alt": true,
+        "top_padding": false,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "16819433829012c034": {
+      "type": "apps",
+      "blocks": {
+        "6ef03fbe-a3ba-4cec-aa52-ff8d71da290a": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}",
+            "widget_type": "reviews_widget"
+          }
+        }
+      },
+      "block_order": [
+        "6ef03fbe-a3ba-4cec-aa52-ff8d71da290a"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "hero_animated_VYEfxw",
+    "hero_animated_pQGpfM",
+    "hero_animated_MJhwR7",
+    "sub",
+    "collection-return",
+    "hero_animated_JnUbKp",
+    "bc10f931-1f0d-48e0-a2c5-0f785996b934",
+    "hero_animated_nPNPnE",
+    "164556780200309513",
+    "product-recommendations",
+    "de420bc3-a630-41c7-9399-69dc6fd88819",
+    "1a3fcdc4-d72b-493f-808b-8c1fe9c08002",
+    "rich_text_kGKBkH",
+    "e6376905-8979-4a3c-817a-e048be143d33",
+    "64298d6b-3af5-4761-92d4-2149ee8c551e",
+    "82661063-6b2d-42c2-99a6-3f564c944933",
+    "16819433829012c034"
+  ]
+}

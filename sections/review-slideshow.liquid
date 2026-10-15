@@ -1,0 +1,129 @@
+<div class="expert-review-section {{section.settings.custom_class}}" data-section-id="{{ section.id }}">
+  <div class="page-width">
+    {% if section.settings.title %}
+      <h2>{{ section.settings.title }}</h2>
+    {% endif %}
+    <div class="slider-container">
+      <!-- Main Testimonial Slider -->
+      <div class="testimonial-slider">
+        {% for block in section.blocks %}
+          <div class="testimonial-slide">
+            <img src="{{ block.settings.image | img_url:'master' }}" alt="Expert-{{forloop.index}}">
+          </div>
+        {% endfor %}
+      </div>
+
+      <!-- Thumbnail Navigation -->
+      <div class="testimonial-slider-nav">
+        {% for block in section.blocks %}
+          <div class="testimonial-content">
+            <div class="stars"><img src="https://cdn.shopify.com/s/files/1/2745/9950/files/5-star.svg?v=1743082500" alt="Star" /></div>
+            {% if block.settings.text %}
+              <div class="review_content">{{ block.settings.text }}</div>
+            {% endif %}
+            {% if block.settings.customer_name %}
+              <h6 class="customer_name"><b>{{ block.settings.customer_name }}</b></h6>
+            {% endif %}
+            {% if block.settings.sub_text %}
+              <p class="review_subtext">{{ block.settings.sub_text }}</p>              
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Customer Reviews",
+  "settings": [
+    {
+      "type": "text",
+      "id": "custom_class",
+      "label": "Add Custom Class for section"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Custmoer Image"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Content"
+        },
+        {
+          "type": "text",
+          "id": "customer_name",
+          "label": "Name"
+        },
+        {
+          "type": "text",
+          "id": "sub_text",
+          "label": "Sub Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Slider Reviews",
+      "blocks": [
+        {
+          "type": "image"
+        },
+        {
+          "type": "image"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+<script>
+  $(document).ready(function(){
+    $('.testimonial-slider').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      centerMode: true,
+      focusOnSelect: true,
+      dots: true,
+      arrows: true,
+      asNavFor: '.testimonial-slider-nav',
+      responsive: [
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+        }
+      } ]
+    })
+
+    $('.testimonial-slider-nav').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: false,
+      arrows: false,
+      asNavFor: '.testimonial-slider',
+    });
+  });
+</script>

@@ -1,0 +1,115 @@
+/* Reviews Widget > General Text */
+.okeReviews.okeReviews--theme,
+.okeReviews.okeReviews--theme .okeReviews-review-main-content p {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Reviews Widget > Font Color */
+.okeReviews.okeReviews--theme .okeReviews-reviewsSummary-ratingCount,
+.okeReviews.okeReviews--theme .okeReviews-reviewsAggregate,
+.okeReviews.okeReviews--theme .okeReviews-review,
+.okeReviews.okeReviews--theme .okeReviews-reviewsAggregate-summary-total,
+.okeReviews.okeReviews--theme .okeReviews-review-attribute-value,
+.okeReviews.okeReviews--theme .okeReviews-sectionedList-list-item,
+.okeReviews.okeReviews--theme .okeReviews-review-date,
+.okeReviews.okeReviews--theme .okeReviews-review-helpful,
+.okeReviews.okeReviews--theme .okeReviews-review-helpful-vote-button,
+.okeReviews.okeReviews--theme .okeReviews-reviews-controls-reviewCount,
+.okeReviews.okeReviews--theme .okeReviews-select-input,
+.okeReviews.okeReviews--theme .okeReviews-reviews-showMore,
+.okeReviews.okeReviews--theme .okeReviews-questions,
+.okeReviews.okeReviews--theme .okeReviews-helpful-question,
+.okeReviews.okeReviews--theme .okeReviews-helpful-vote-button,
+.okeReviews.okeReviews--theme .okeReviews-question-date,
+.okeReviews.okeReviews--theme .okeReviews-answer-date,
+.okeReviews.okeReviews--theme .okeReviews-qandaWidget-emptyMessage p {
+    color: #333;
+}
+
+/* Reviews Widget > Navbar > Item */
+.okeReviews.okeReviews--theme .okeReviews-widgetNavBar-item {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* Reviews Widget > Reviews > Header */
+.okeReviews.okeReviews--theme .okeReviews-review-main-heading {
+    font-family: "Roboto", sans-serif;
+}
+
+/* Reviews Widget > Navbar > Item */
+.okeReviews.okeReviews--theme .okeReviews-widgetNavBar-item[aria-selected='true']:focus {
+    outline: 0;
+}
+
+/* Reviews Widget > Navbar > Item > Active */
+.okeReviews.okeReviews--theme .okeReviews-widgetNavBar-item[aria-selected='true'] {
+    border-bottom: 3px solid #bda7da;
+}
+
+/* Reviews Widget > Reviews > Media Strip */
+.okeReviews.okeReviews--theme .okeReviews-mediaStrip-item-media,
+.okeReviews.okeReviews--theme .okeReviews-review--largeMedia .okeReviews-mediaStrip-item-more {
+    border: 0;
+}
+
+/* Reviews Widget > Individual Reviews > Review Helpful */
+.okeReviews.okeReviews--theme .okeReviews-review-helpful,
+.okeReviews.okeReviews--theme .okeReviews-review-helpful-vote-button,
+.okeReviews.okeReviews--theme .okeReviews-helpful-question,
+.okeReviews.okeReviews--theme .okeReviews-helpful-vote-button {
+    height: initial;
+    min-height: initial;
+}
+
+/* Attributes Bar Styling */
+.okeReviews.okeReviews--theme .okeReviews-reviewsWidget:not(.is-okeReviews-reviewsWidget-large):not(.is-okeReviews-reviewsWidget-medium) .or-rg, 
+.okeReviews.okeReviews--theme .okeReviews-reviewsWidget:not(.is-okeReviews-reviewsWidget-large):not(.is-okeReviews-reviewsWidget-medium) .or-crg {
+    font-size: 14px;
+}
+
+/* Button */
+.okeReviews.okeReviews--theme .okeReviews-button {
+    background-color: #bda7da;
+    border: 1px solid #bda7da;
+    color: #fff;
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 8px 14px;
+    text-transform: uppercase;
+    transition: all .2s linear;
+}
+
+.okeReviews.okeReviews--theme .okeReviews-button:hover {
+    background-color: #7f8c8d;
+    border: 1px solid #7f8c8d;
+}
+
+/* Q&A Widget > Main Content */
+.okeReviews.okeReviews--theme .okeReviews-tag--accepted {
+    background-color: #bda7da;
+    color: #fff;
+}
+
+.okeReviews.okeReviews--theme .okeReviews-tag--store {
+    color: #333;
+    border-color: #333;
+    background: transparent;
+}
+
+/* Media Queries */
+@media all and (max-width: 780px) {
+    /* Reviews Widget > Navbar > Item */
+    .okeReviews.okeReviews--theme .okeReviews-widgetNavBar-item {
+        font-size: 16px;
+        margin: 0 0.5em;
+    }
+}
+.okeReviews-reviewsSummary-ratingCount{
+text-decoration: none;
+}

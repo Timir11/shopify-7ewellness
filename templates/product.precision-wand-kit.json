@@ -1,0 +1,219 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "okendo_star_rating_TADRAg": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "metafiled_description_thCG4N": {
+          "type": "metafiled_description",
+          "settings": {
+            "is_meta_description": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "trust_badge_ka3aKe": {
+          "type": "trust_badge",
+          "settings": {
+            "trust_image": "shopify:\/\/shop_images\/Background_2x_9930748b-1cc8-4d33-b97d-a8c4c9db56ff.png"
+          }
+        },
+        "pop_up_rJzQ4w": {
+          "type": "pop_up",
+          "settings": {
+            "title": "Shipping & Handling",
+            "content": "<p>Free USA Ground shipment, Orders are processed within 2 business day. <\/p><p>International Orders Ships within 3 business day.  <\/p><p>International customers are required to pay Duty with their local custom agency. <\/p>"
+          }
+        },
+        "tab_TPkht9": {
+          "type": "tab",
+          "settings": {
+            "title": "What is this for?",
+            "content": "<p>The MyoLift™ Precision Wand Kit is designed for users seeking to:<\/p><ul><li>Achieve targeted microcurrent therapy on specific facial muscles.<br\/><\/li><li>Address delicate areas such as around the eyes, mouth, and nasolabial folds.<br\/><\/li><li>Perform treatments like lymphatic drainage and deep muscle stimulation with enhanced control.<br\/><\/li><li>Customize their facial toning routines with interchangeable applicator tips.<a href=\"https:\/\/www.7ewellness.com\/\" target=\"_blank\" title=\"https:\/\/www.7ewellness.com\/\">7E Wellness<\/a><span style=\"text-decoration:underline\"><br\/><\/span><\/li><\/ul><p>Suitable for both professional estheticians and at-home users aiming for salon-quality results.<\/p>",
+            "page": ""
+          }
+        },
+        "tab_ddakF6": {
+          "type": "tab",
+          "settings": {
+            "title": "What is included?",
+            "content": "<ul><li>One (1) pair of Applicator Wand<\/li><li>One (1) pair of Cotton Tips<\/li><li>One (1) pair of T-Bar Tips<\/li><li>One (1) pair of Small Ball Tips<\/li><li>One (1) 2 oz bottle of Infused Conductive Solution<\/li><li>One (1) Compact Carrying Case<a href=\"https:\/\/www.7ewellness.com\/products\/microcurrent-applicator-wand-and-tips-spa-kit?utm_source=chatgpt.com\"><span style=\"text-decoration:underline\"><br\/><\/span><\/a><\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "66232a31-cb5f-4a67-97cf-d0377bb2fac6": {
+          "type": "tab",
+          "settings": {
+            "title": "How to use it?",
+            "content": "<p><strong>Preparation<\/strong>:<\/p><ul><li>Begin with a cleansed and dry face.<br\/><br\/><\/li><li>Apply the provided Infused Conductive Solution to the treatment area to ensure optimal conductivity.7E Wellness<span style=\"text-decoration:underline\"><br\/><\/span><\/li><\/ul><p><strong>Assembly<\/strong>:<\/p><ul><li>Attach the desired applicator tips (Cotton, T-Bar, or Small Ball) to the Applicator Wands based on the treatment focus.7E Wellness<span style=\"text-decoration:underline\"><br\/><\/span><\/li><\/ul><p><strong>Application<\/strong>:<\/p><ul><li>Connect the Applicator Wands to your MyoLift™ device.<br\/><\/li><li>Select the appropriate mode on your device (e.g., Educate, Erase, or Rejuv).<br\/><\/li><li>Gently glide or hold the applicator over the targeted areas, following the device's instructions for each mode.<br\/><\/li><\/ul><p><strong>Post-Treatment<\/strong>:<\/p><ul><li>Remove any residual conductive solution from your face.<br\/><\/li><li>Clean the applicator tips and wands with a disinfectant wipe.<br\/><\/li><li>Store all components in the provided carrying case for safekeeping.7E Wellness+1Reddit+1<span style=\"text-decoration:underline\"><br\/><\/span><\/li><\/ul><p>For optimal results, treatments can be performed 2–3 times per week, depending on individual skin needs.<\/p>",
+            "page": ""
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "title": "Benefits",
+            "content": "<ul><li><strong>Precision Targeting<\/strong>: Interchangeable tips allow for customized treatments on various facial areas.<br\/><\/li><li><strong>Enhanced Treatment Versatility<\/strong>: Facilitates a range of techniques, including fine line smoothing, lymphatic drainage, and deep muscle engagement.<br\/><\/li><li><strong>Professional-Grade Design<\/strong>: Ergonomically designed wands ensure superior control and adaptability during treatments.<br\/><\/li><li><strong>Portable Convenience<\/strong>: Compact carrying case makes it ideal for storage and travel.<br\/><\/li><li><strong>Seamless Compatibility<\/strong>: Fully compatible with all MyoLift™ devices, integrating effortlessly into your skincare routine.<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed": {
+          "type": "tab",
+          "settings": {
+            "title": "Ingredients",
+            "content": "{{ product.metafields.custom.ingredients.value.ingredients | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "tab_QLEFEc": {
+          "type": "tab",
+          "settings": {
+            "title": "Product Features",
+            "content": "<ul><li><strong>Applicator Wands<\/strong>: Versatile tools designed for precise and effortless microcurrent treatments.<br\/><\/li><li><strong>Cotton Tip Probes<\/strong>: Ideal for targeting muscles in hard-to-reach areas, enhancing treatment precision.<br\/><\/li><li><strong>T-Bar Applicator<\/strong>: Covers larger surface areas, amplifying control and precision during treatments.<br\/><\/li><li><strong>Small Ball Attachment<\/strong>: Perfect for delicate zones like around the eyes and mouth, ensuring exceptional, customizable results.<br\/><\/li><li><strong>Infused Conductive Solution<\/strong>: Enhances microcurrent conductivity while supporting skin hydration and balance.<br\/><\/li><li><strong>Compact Carry Case<\/strong>: Elegantly designed for professionals on the go, keeping accessories safe and organized.<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "tab_gFP7Fx": {
+          "type": "tab",
+          "settings": {
+            "title": "Device Support",
+            "content": "{{ product.metafields.custom.device_support.value.device_support | metafield_tag }}",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "okendo_star_rating_TADRAg",
+        "price",
+        "description",
+        "metafiled_description_thCG4N",
+        "buy_buttons",
+        "trust_badge_ka3aKe",
+        "pop_up_rJzQ4w",
+        "tab_TPkht9",
+        "tab_ddakF6",
+        "66232a31-cb5f-4a67-97cf-d0377bb2fac6",
+        "tab",
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed",
+        "tab_QLEFEc",
+        "tab_gFP7Fx"
+      ],
+      "settings": {
+        "product_image_size": "medium",
+        "product_image_type": "slider",
+        "thumbnail_height": "fixed",
+        "product_zoom_enable": true,
+        "enable_video_looping": true,
+        "product_video_style": "unmuted",
+        "product_label": "",
+        "btn_url": "",
+        "btn_txt": "",
+        "sku_enable": false
+      }
+    },
+    "product_specification_k6pJXf": {
+      "type": "product-specification",
+      "blocks": {
+        "faq_AHBBwq": {
+          "type": "faq",
+          "settings": {
+            "tab_heading": "FAQs",
+            "heading": "Frequently Asked Questions",
+            "title1": "Is this accessory compatible with all MyoLift™ devices?",
+            "text1": "<p>Yes, all accessories are designed to be compatible with MyoLift™ Mini, QT, 600, MD, and TriWave devices unless otherwise specified.<\/p>",
+            "title2": "How often should I use microcurrent treatments with these accessories?",
+            "text2": "<p>For best results, we recommend using microcurrent treatments 2–3 times per week. However, usage may vary based on individual skin needs and professional guidance.<\/p>",
+            "title3": "Do I need to use a conductive gel or solution with these accessories?",
+            "text3": "<p>Yes, a conductive gel or solution is necessary to ensure proper microcurrent transmission. For cotton tip accessories, use a water-based solution like our RePlenish Spritzer or Infused Conductive Solution.<\/p>",
+            "title4": "Are the applicator tips reusable?",
+            "text4": "<p>Metal applicator tips like the T-Bar and Small Ball tips are reusable and should be disinfected after each use. Cotton tips are disposable and should be replaced after each session for hygiene.<\/p>",
+            "title5": "Can these accessories be used on sensitive skin?",
+            "text5": "<p>Yes, our applicators are designed to be gentle and suitable for all skin types, including sensitive skin. Always start with lower intensities and patch test conductive products if unsure.<\/p>",
+            "title6": "How should I clean and store the accessories?",
+            "text6": "<p>Wipe down metal tips and handles with a disinfectant or alcohol wipe after each use. Store all components in a clean, dry place or the included case to maintain hygiene and extend longevity.<\/p>",
+            "title7": "",
+            "text7": ""
+          }
+        },
+        "reviews_8NYwWW": {
+          "type": "reviews",
+          "settings": {
+            "tab_heading": "Reviews",
+            "enable_review": true
+          }
+        }
+      },
+      "block_order": [
+        "faq_AHBBwq",
+        "reviews_8NYwWW"
+      ],
+      "name": "Product Specifications",
+      "settings": {
+        "heading": ""
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "settings": {
+        "max_width": true
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {}
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "product_recommendations_heading": "Related products",
+        "related_count": 4
+      }
+    },
+    "featured_collection_pht7X9": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.featured_collection_grid.name",
+      "settings": {
+        "custom_class": "",
+        "title": "Featured collection grid",
+        "description": "",
+        "home_featured_products": "shop-all-microcurrent-accessories-tools",
+        "rows": 1,
+        "per_row_desktop": 4,
+        "per_row_mobile": "1",
+        "view_all": false,
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "product_specification_k6pJXf",
+    "sub",
+    "collection-return",
+    "product-recommendations",
+    "featured_collection_pht7X9"
+  ]
+}

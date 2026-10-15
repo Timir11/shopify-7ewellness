@@ -1,0 +1,87 @@
+{
+  "sections": {
+    "2d75ff95-cd69-42df-9429-d63558812cfe": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14886595657782__2d75ff95-cd69-42df-9429-d63558812cfe-167627816048d40b7a-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/revised_banner_consumer_desktop.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/mobile_revised_banner_consumer_desktop.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--14886595657782__2d75ff95-cd69-42df-9429-d63558812cfe-167627816048d40b7a-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "3d3b9730-8969-43b6-baa4-c1eef2d3a6c9": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14886595657782__3d3b9730-8969-43b6-baa4-c1eef2d3a6c9-1675156515990c5e6f-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>This Valentines Day<\/h2>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14886595657782__3d3b9730-8969-43b6-baa4-c1eef2d3a6c9-1675156515990c5e6f-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "alt": false
+      }
+    },
+    "de944ff6-77ef-42d2-8798-2b0c37edfaf0": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14886595657782__de944ff6-77ef-42d2-8798-2b0c37edfaf0-16750758037b4ec220-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"checkout_btn_phl\">\n<a href=\"javascript:void(0);\" data-toggle=\"modal\" data-target=\"#checkoutModal\" class=\"btn\">Continue To Checkout<\/a>\n<\/div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14886595657782__de944ff6-77ef-42d2-8798-2b0c37edfaf0-16750758037b4ec220-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "2d75ff95-cd69-42df-9429-d63558812cfe",
+    "main",
+    "3d3b9730-8969-43b6-baa4-c1eef2d3a6c9",
+    "de944ff6-77ef-42d2-8798-2b0c37edfaf0"
+  ]
+}

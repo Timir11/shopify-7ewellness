@@ -1,0 +1,505 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "okendo_star_rating_EYzxJ3": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "30703011-9513-4ebc-8f63-6ddf41dabf98": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "checkmark",
+            "text": "Happiness Guarantee"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        },
+        "sales_point": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "globe",
+            "text": "Free US Domestic Ground Shipping"
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "88dfc6e1-c9b8-4d5d-9a6d-26c03b23785b": {
+          "type": "custom",
+          "disabled": true,
+          "settings": {
+            "code": "<h3>Conductive Gloves<\/h3><p>(can be used with all MyoLift™  Devices)<\/p>\n<p>Microcurrent gloves are an accessory designed to be used as an alternative to traditional ball tip probes for a microcurrent facial treatment. They are an ideal way to provide a more detail oriented microcurrent treatment to fit you or your client's unique needs for facial lifting and toning.<\/p>\n<h4>What makes conductive gloves unique?<\/h4>\n<ul>\n<li>It is an effective way to erase and eliminate wrinkles and fine lines.<\/li>\n<li>It is a comfortable alternative to traditional ball tip probes or cotton tip probes.<\/li>\n<li>A more detail-oriented way to achieve a toned facelift or even just a cheek lift.<\/li>\n<li>Made from 100% threaded silver.<\/li>\n<li>Antimicrobial, these gloves are more targeted toward reducing wrinkles and fine lines.<\/br>\nThese conductive gloves allow the microcurrent intensity to be controlled by individual pressure. <\/li>\n<\/ul>"
+          }
+        },
+        "66232a31-cb5f-4a67-97cf-d0377bb2fac6": {
+          "type": "tab",
+          "settings": {
+            "title": "What's Included",
+            "content": "<ul><li>Revital C Serum <\/li><li>Anti Aging Serum<\/li><li>Gua Sha <\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed": {
+          "type": "tab",
+          "settings": {
+            "title": "Ingredients",
+            "content": "<p><strong>REVITAL C<\/strong> <\/p><p>Ingredients: Aqua (Filtered) Water, Organic Vegetable Glycerin, Hyaluronic Acid, L-Ascorbic Acid (Vitamin C), Organic Aloe Barbadensis (Aloe Vera) Leaf Extract, Organic Camella Sinensis (White Tea) Leaf Extract, Ubiquinone, CoQ10, Tocopherol Acetate (Vitamin E) Citrus Aurantium Dulcis (Citrus) Peel Oil, Xanthan Gum, Sodium Benzoate.<\/p><p><strong>ANTI AGING <\/strong><\/p><p>Ingredients: Aqua Filtered Water, Copper Peptides, Polypeptides, Hyaluronic Acid, Zinc, Tocopheryl, Acetate (Vitamin E), Vegetable Glycerin, Carbomer, Citrus, Aurantium Amara (Neroli), Salix Alba (Willow Bark Extract), Phenoxyethanol.<\/p><p><\/p>",
+            "page": ""
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "title": "Shipping information",
+            "content": "<p>Free USA Ground shipment, Orders are processed within 2 business day. <\/p><p>International Orders Ships within 3 business day.  <\/p><p>International customers are required to pay Duty with their local custom agency. <\/p>",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {}
+        },
+        "e51e9259-1487-4458-8555-3cf18377ca6a": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Ingredients"
+          }
+        },
+        "885d28f0-4833-4f2c-ba1c-e51e514d50b1": {
+          "type": "sales_point",
+          "disabled": true,
+          "settings": {
+            "icon": "globe",
+            "text": "Free worldwide shipping"
+          }
+        }
+      },
+      "block_order": [
+        "price",
+        "variant_picker",
+        "okendo_star_rating_EYzxJ3",
+        "30703011-9513-4ebc-8f63-6ddf41dabf98",
+        "buy_buttons",
+        "sales_point",
+        "description",
+        "88dfc6e1-c9b8-4d5d-9a6d-26c03b23785b",
+        "66232a31-cb5f-4a67-97cf-d0377bb2fac6",
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed",
+        "tab",
+        "share",
+        "e51e9259-1487-4458-8555-3cf18377ca6a",
+        "885d28f0-4833-4f2c-ba1c-e51e514d50b1"
+      ],
+      "settings": {
+        "product_image_size": "small",
+        "product_image_type": "stacked",
+        "thumbnail_height": "flexible",
+        "product_zoom_enable": true,
+        "enable_video_looping": true,
+        "product_video_style": "muted",
+        "sku_enable": false
+      }
+    },
+    "1a18139b-ce4f-4734-8c5d-5a149591b335": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14979728834614__1a18139b-ce4f-4734-8c5d-5a149591b335-image-1": {
+          "type": "image",
+          "settings": {
+            "title": "nourish.\nprotect.\nreplenish.",
+            "title_size": 52,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Lolagreen-64.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--14979728834614__1a18139b-ce4f-4734-8c5d-5a149591b335-image-1"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": -50,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "0e9480db-2b65-4cc0-b202-8efee389e68a": {
+      "type": "rich-text",
+      "blocks": {
+        "template--14945660534838__0e9480db-2b65-4cc0-b202-8efee389e68a-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": ""
+          }
+        },
+        "template--14945660534838__0e9480db-2b65-4cc0-b202-8efee389e68a-text-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p><strong>Revital C Serum:<\/strong> is a boosting complex containing protective and supporting components for the skin.  The combination of antioxidants work synergistically to nourish, protect, and neutralize free radical activity resulting from sun exposure and pollution.<\/p><p><strong>Anti-Aging Peptide Serum:<\/strong>  is designed to target and enhance the biological collapse in the skin's matrix. A major component of this matrix is the development of the skin's proteins categorized as peptides. By replacing the loss peptides of copper, collagen, elastin, polypeptides, and hyaluronic acid, we can revive the strength, integrity, and longevity of our skin.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14945660534838__0e9480db-2b65-4cc0-b202-8efee389e68a-heading-1",
+        "template--14945660534838__0e9480db-2b65-4cc0-b202-8efee389e68a-text-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": false
+      }
+    },
+    "cef73ac3-1b1f-4f7f-8e08-18b08402df9d": {
+      "type": "text-columns",
+      "blocks": {
+        "template--14979966533686__cef73ac3-1b1f-4f7f-8e08-18b08402df9d-text_block-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/day_and_night_1.png",
+            "image_mask": "none",
+            "image_width": 60,
+            "title": "",
+            "text": "<h3><strong>Affects the epidermis and dermal layers of the skin.<\/strong><\/h3>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--14979966533686__cef73ac3-1b1f-4f7f-8e08-18b08402df9d-text_block-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/day_and_night_1.png",
+            "image_mask": "none",
+            "image_width": 60,
+            "title": "",
+            "text": "<h3><strong>Assists in the formation of<br\/>elastin in collagen, deep within the skin tissue.<\/strong><\/h3>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "e00eb12c-b540-4081-8d05-d1e0e279dcec": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/day_and_night_1.png",
+            "image_mask": "none",
+            "image_width": 60,
+            "title": "",
+            "text": "<h3>Gives firmer skin and reduces the appearance of wrinkles.<\/h3>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14979966533686__cef73ac3-1b1f-4f7f-8e08-18b08402df9d-text_block-1",
+        "template--14979966533686__cef73ac3-1b1f-4f7f-8e08-18b08402df9d-text_block-2",
+        "e00eb12c-b540-4081-8d05-d1e0e279dcec"
+      ],
+      "settings": {
+        "title": "Benefits Of Copper Peptides",
+        "align_text": "center",
+        "alt": false
+      }
+    },
+    "b9cffa1f-880e-4cca-a638-5a8cd6e1a355": {
+      "type": "text-with-icons",
+      "blocks": {
+        "template--14945660534838__b9cffa1f-880e-4cca-a638-5a8cd6e1a355-text_block-1": {
+          "type": "text_block",
+          "settings": {
+            "icon": "plant",
+            "title": "L-Ascorbic Acid",
+            "text": "<p>L-Ascorbic Acid (Vitamin C) is a potent and refined version of vitamin C that neutralizes free radicals, protecting cells from oxidative damage from sun damage, air pollution and helps brighten the skin and reduce hyperpigmentation <\/p>"
+          }
+        },
+        "template--14945660534838__b9cffa1f-880e-4cca-a638-5a8cd6e1a355-text_block-2": {
+          "type": "text_block",
+          "settings": {
+            "icon": "plant",
+            "title": "Aloe Vera",
+            "text": "<p>Organic Aloe Barbadensis Leaf Extract (Aloe Vera) is rich in nutrients and antioxidants, and offers anti-inflammatory, antimicrobial, humectant properties and soothes the skin. <em> <\/em><\/p>"
+          }
+        },
+        "template--14945660534838__b9cffa1f-880e-4cca-a638-5a8cd6e1a355-text_block-3": {
+          "type": "text_block",
+          "settings": {
+            "icon": "plant",
+            "title": "Hyaluronic Acid",
+            "text": "<p>Hyaluronic Acid is a natural mucopolysaccharide that supports moisture content in the skin preventing water loss. It also supports supple stretch and flex and reduces fine lines and wrinkles.   <\/p>"
+          }
+        },
+        "b3b88da6-4284-4b56-9df7-13aeda51d053": {
+          "type": "text_block",
+          "settings": {
+            "icon": "plant",
+            "title": "White Tea Leaf",
+            "text": "<p>White Tea Leaf Extract (Camella Sinensis) is high in antioxidants, polyphenols, tannins, and flavonoids.  It is rich in natural anti-inflammatory and protective components. <\/p>"
+          }
+        },
+        "dedecfd6-6acc-49e9-a448-0a9ed91b5811": {
+          "type": "text_block",
+          "settings": {
+            "icon": "plant",
+            "title": "CoQ10",
+            "text": "<p>CoQ10 (Ubiquinone) is full of antioxidant properties that protect the skin from environmental stressors. It energizes the skin, supports skin tone, and supports water retention.  <\/p>"
+          }
+        },
+        "0c4695fe-eeb3-41d6-affe-cfbbd59e7585": {
+          "type": "text_block",
+          "settings": {
+            "icon": "plant",
+            "title": "Vitamin E",
+            "text": "<p>Tocopherol Acetate (Vitamin E) is a potent oil-soluble antioxidant. It assists in the absorption of vitamin C.  <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14945660534838__b9cffa1f-880e-4cca-a638-5a8cd6e1a355-text_block-1",
+        "template--14945660534838__b9cffa1f-880e-4cca-a638-5a8cd6e1a355-text_block-2",
+        "template--14945660534838__b9cffa1f-880e-4cca-a638-5a8cd6e1a355-text_block-3",
+        "b3b88da6-4284-4b56-9df7-13aeda51d053",
+        "dedecfd6-6acc-49e9-a448-0a9ed91b5811",
+        "0c4695fe-eeb3-41d6-affe-cfbbd59e7585"
+      ],
+      "settings": {
+        "title": "Benefits of Revital C",
+        "align_text": "center",
+        "desktop_columns_per_row": 2,
+        "icon_color": "#fff200",
+        "button_label": "",
+        "button_link": "",
+        "alt": true
+      }
+    },
+    "799b3bdc-dc5d-47bf-b67a-8f6679033819": {
+      "type": "featured-video",
+      "settings": {
+        "title": "Day & Night Protocol",
+        "video_url": "https:\/\/vimeo.com\/867350692?share=copy",
+        "alt": false
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "blocks": {
+        "319dc4c1-106d-4fb0-bac5-e8a40adc3f7f": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Text block"
+          }
+        }
+      },
+      "block_order": [
+        "319dc4c1-106d-4fb0-bac5-e8a40adc3f7f"
+      ],
+      "disabled": true,
+      "settings": {
+        "max_width": true
+      }
+    },
+    "de54ecdc-4504-4d58-a0d0-cbfc6ac9ef71": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14945660534838__de54ecdc-4504-4d58-a0d0-cbfc6ac9ef71-liquid-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>These conductive gloves allow the microcurrent intensity to be controlled by individual pressure.<\/h2>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14945660534838__de54ecdc-4504-4d58-a0d0-cbfc6ac9ef71-liquid-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "dc970281-107c-4dd9-9aae-72c8e7b6f99a": {
+      "type": "text-columns",
+      "blocks": {
+        "2bb8e3e0-c0de-462a-9ef2-6f158f50156f": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/step_1_image.png",
+            "image_mask": "none",
+            "image_width": 120,
+            "title": "",
+            "text": "<p>To clean, use antibacterial soap.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--14945660534838__dc970281-107c-4dd9-9aae-72c8e7b6f99a-text_block-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/step_2_image.png",
+            "image_mask": "none",
+            "image_width": 120,
+            "title": "",
+            "text": "<p>Do not twist the gloves after washing to wring out excess water.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--14945660534838__dc970281-107c-4dd9-9aae-72c8e7b6f99a-text_block-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/step_3_image.png",
+            "image_mask": "none",
+            "image_width": 120,
+            "title": "",
+            "text": "<p>The conductive microcurrent gloves should air dry.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "2bb8e3e0-c0de-462a-9ef2-6f158f50156f",
+        "template--14945660534838__dc970281-107c-4dd9-9aae-72c8e7b6f99a-text_block-1",
+        "template--14945660534838__dc970281-107c-4dd9-9aae-72c8e7b6f99a-text_block-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Requires Minimum Maintenance",
+        "align_text": "center",
+        "alt": false
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {}
+    },
+    "164556780200309513": {
+      "type": "apps",
+      "blocks": {
+        "2a3dd040-0528-4160-a336-9edeec07fd6f": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "disabled": true,
+          "settings": {
+            "product": "conductive-mask-bundle-with-lead-wire-splitter",
+            "widget_type": "combined_widget"
+          }
+        }
+      },
+      "block_order": [
+        "2a3dd040-0528-4160-a336-9edeec07fd6f"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "product_recommendations_heading": "You may also like",
+        "related_count": 14
+      }
+    },
+    "16819433829012c034": {
+      "type": "apps",
+      "blocks": {
+        "6ef03fbe-a3ba-4cec-aa52-ff8d71da290a": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "anti-aging-peptide-serum-1-oz",
+            "widget_type": "reviews_widget"
+          }
+        }
+      },
+      "block_order": [
+        "6ef03fbe-a3ba-4cec-aa52-ff8d71da290a"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "0f0ec1fb-ab8f-4c67-8a32-d3a8ace56db7": {
+      "type": "text-and-image",
+      "disabled": true,
+      "settings": {
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "Image with text",
+        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "center",
+        "image_width": "50",
+        "layout": "right",
+        "alt": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1a18139b-ce4f-4734-8c5d-5a149591b335",
+    "0e9480db-2b65-4cc0-b202-8efee389e68a",
+    "cef73ac3-1b1f-4f7f-8e08-18b08402df9d",
+    "b9cffa1f-880e-4cca-a638-5a8cd6e1a355",
+    "799b3bdc-dc5d-47bf-b67a-8f6679033819",
+    "sub",
+    "de54ecdc-4504-4d58-a0d0-cbfc6ac9ef71",
+    "dc970281-107c-4dd9-9aae-72c8e7b6f99a",
+    "collection-return",
+    "164556780200309513",
+    "product-recommendations",
+    "16819433829012c034",
+    "0f0ec1fb-ab8f-4c67-8a32-d3a8ace56db7"
+  ]
+}

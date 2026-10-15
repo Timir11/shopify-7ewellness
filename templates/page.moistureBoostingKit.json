@@ -1,0 +1,168 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "rich_text_p7cn89": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_jt7bpH": {
+          "type": "heading",
+          "settings": {
+            "title": "MOISTURE BOOST BOOTCAMP KIT"
+          }
+        },
+        "text_friWMC": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>Welcome to the 7E Wellness Family!<\/p><p>Congratulations on purchasing the 7E Bootcamp Kit! We're excited to join you on your journey to enhance your skin's firmness and brightness. Our Bootcamp Kit is meticulously designed to boost your skin's firmness and radiance by addressing deficits in tone, density, and elasticity.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_jt7bpH",
+        "text_friWMC"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": false
+      }
+    },
+    "rich_text_3aMMUA": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_HHjfAp": {
+          "type": "heading",
+          "settings": {
+            "title": "ACCESSORY INSTRUCTIONS"
+          }
+        },
+        "text_hYXYWF": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p><span style=\"text-decoration:underline\"><strong>Sheet Mask<\/strong><\/span><strong> <\/strong>- Retrieve two circular sticky pads from your EGF Sheet Mask or the alligator clips from your Vitalizing Sheet Mask and attach them to your device via the Lead Wire. Smooth the Sheet Mask over your face. Dispense any excess serum from the packet and massage it into your neck and decollete. Apply one sticky pad on top of the  Sheet Mask in the center of your forehead. Apply the second sticky pad near the base of the neck directly on the skin, avoiding the center of the throat - place it 1-2 inches over to the left or right. OR Clip the alligator clips on opposite sides along the edges of the mask. You may use the EGF Sheet Mask Session or Custom Session in your QT App, or you may use app free mode. Myolift Mini users should refer to the instructions on the sheet mask packaging.After your treatment is done, remove the mask and massage in the remaining serum. <\/p><p><span style=\"text-decoration:underline\"><strong>Handsfree Mask<\/strong><\/span><strong>- <\/strong>Retrieve a Handsfree Mask of your choice and attach the prongs of your Lead Wire to the sides of the mask. Run your device and perform the treatment. In the QT App, choose any of the Handsfree Mask Sessions from your Sessions Menu, or you may use App Free Mode or create a Custom Session. Myolift Mini Users Should refer to the instructions on the package.<\/p><p><span style=\"text-decoration:underline\"><strong>QT Probes<\/strong><\/span><strong> -<\/strong> Apply 1-2 quarter-sized amounts of Conductive Gel to the face and neck. You may select and follow any of the premade treatments in the Sessions menu in your QT App. We recommend “Full Face.” You may also create a Custom Session or use App Free Mode. Myolift Mini users should refer to the Help Desk at 7ewellness.com for tutorials.<\/p><p><strong>Please use the drop downs below as a day by day guide on how to complete your 14 day routine.<\/strong><\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_HHjfAp",
+        "text_hYXYWF"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": false
+      }
+    },
+    "faq_zJEdqY": {
+      "type": "faq",
+      "blocks": {
+        "question_acFFVi": {
+          "type": "question",
+          "settings": {
+            "title": "Day 1",
+            "text": "<p><strong>Step 1: <\/strong>Clarify with the Mangosteen Cleanser <\/p><p>Put on your 7e Wellness Spa Headband, then apply a thin layer of Mangosteen Cleanser to dry skin. <\/p><p><span style=\"text-decoration:underline\">Protip<\/span>: For an added boost of exfoliation, allow the cleanser to sit on the skin for 2-5 minutes before adding water and washing it off. This can be done up to 3 times per week. <\/p><p><strong>Step 2 <\/strong>: Hydrate with the RePlenish Spritzer<\/p><p>Mist your face and neck with the RePlenish Spritzer. Protip: You can also use the spritzer to rehydrate conductive gel that has dried on your skin, or as a daily hydrating essence.<\/p><p><strong>Step 3: <\/strong>Treat with Myolift QT and sheet mask.<\/p>"
+          }
+        },
+        "question_QKKdcc": {
+          "type": "question",
+          "settings": {
+            "title": "Day 2",
+            "text": "<p><strong>Step 1: <\/strong>Clarify with the Mangosteen Cleanser <\/p><p>Put on your 7e Wellness Spa Headband, then apply a thin layer of Mangosteen Cleanser to dry skin. <\/p><p><span style=\"text-decoration:underline\">Protip<\/span>: For an added boost of exfoliation, allow the cleanser to sit on the skin for 2-5 minutes before adding water and washing it off. This can be done up to 3 times per week. <\/p><p><strong>Step 2 <\/strong>: Hydrate with the RePlenish Spritzer<\/p><p>Mist your face and neck with the RePlenish Spritzer. Protip: You can also use the spritzer to rehydrate conductive gel that has dried on your skin, or as a daily hydrating essence.<\/p><p><strong>Step 3: <\/strong>Treat with Myolift QT using probes. <\/p>"
+          }
+        },
+        "question_E4XfUQ": {
+          "type": "question",
+          "settings": {
+            "title": "Day 4",
+            "text": "<p><strong>Step 1: <\/strong>Clarify with the Mangosteen Cleanser <\/p><p>Put on your 7e Wellness Spa Headband, then apply a thin layer of Mangosteen Cleanser to dry skin. <\/p><p><span style=\"text-decoration:underline\">Protip<\/span>: For an added boost of exfoliation, allow the cleanser to sit on the skin for 2-5 minutes before adding water and washing it off. This can be done up to 3 times per week. <\/p><p><strong>Step 2 <\/strong>: Hydrate with the RePlenish Spritzer<\/p><p>Mist your face and neck with the RePlenish Spritzer. Protip: You can also use the spritzer to rehydrate conductive gel that has dried on your skin, or as a daily hydrating essence.<\/p><p><strong>Step 3: <\/strong>Treat with Myolift QT using probes. <\/p>"
+          }
+        },
+        "question_9dDYqg": {
+          "type": "question",
+          "settings": {
+            "title": "Day 6",
+            "text": "<p><strong>Step 1: <\/strong>Clarify with the Mangosteen Cleanser <\/p><p>Put on your 7e Wellness Spa Headband, then apply a thin layer of Mangosteen Cleanser to dry skin. <\/p><p><span style=\"text-decoration:underline\">Protip<\/span>: For an added boost of exfoliation, allow the cleanser to sit on the skin for 2-5 minutes before adding water and washing it off. This can be done up to 3 times per week. <\/p><p><strong>Step 2 <\/strong>: Hydrate with the RePlenish Spritzer<\/p><p>Mist your face and neck with the RePlenish Spritzer. Protip: You can also use the spritzer to rehydrate conductive gel that has dried on your skin, or as a daily hydrating essence.<\/p><p><strong>Step 3: <\/strong>Treat with Myolift QT using probes. <\/p>"
+          }
+        },
+        "question_wBmMxx": {
+          "type": "question",
+          "settings": {
+            "title": "Day 8",
+            "text": "<p><strong>Step 1: <\/strong>Clarify with the Mangosteen Cleanser <\/p><p>Put on your 7e Wellness Spa Headband, then apply a thin layer of Mangosteen Cleanser to dry skin. <\/p><p><span style=\"text-decoration:underline\">Protip<\/span>: For an added boost of exfoliation, allow the cleanser to sit on the skin for 2-5 minutes before adding water and washing it off. This can be done up to 3 times per week. <\/p><p><strong>Step 2 <\/strong>: Hydrate with the RePlenish Spritzer<\/p><p>Mist your face and neck with the RePlenish Spritzer. Protip: You can also use the spritzer to rehydrate conductive gel that has dried on your skin, or as a daily hydrating essence.<\/p><p><strong>Step 3: <\/strong>Treat with Myolift QT and sheet mask.<\/p>"
+          }
+        },
+        "question_xjrHWd": {
+          "type": "question",
+          "settings": {
+            "title": "Day 9",
+            "text": "<p><strong>Step 1: <\/strong>Clarify with the Mangosteen Cleanser <\/p><p>Put on your 7e Wellness Spa Headband, then apply a thin layer of Mangosteen Cleanser to dry skin. <\/p><p><span style=\"text-decoration:underline\">Protip<\/span>: For an added boost of exfoliation, allow the cleanser to sit on the skin for 2-5 minutes before adding water and washing it off. This can be done up to 3 times per week. <\/p><p><strong>Step 2 <\/strong>: Hydrate with the RePlenish Spritzer<\/p><p>Mist your face and neck with the RePlenish Spritzer. Protip: You can also use the spritzer to rehydrate conductive gel that has dried on your skin, or as a daily hydrating essence.<\/p><p><strong>Step 3: <\/strong>Treat with Myolift QT using probes. <\/p>"
+          }
+        },
+        "question_j9AWVn": {
+          "type": "question",
+          "settings": {
+            "title": "Day 11",
+            "text": "<p><strong>Step 1: <\/strong>Clarify with the Mangosteen Cleanser <\/p><p>Put on your 7e Wellness Spa Headband, then apply a thin layer of Mangosteen Cleanser to dry skin. <\/p><p><span style=\"text-decoration:underline\">Protip<\/span>: For an added boost of exfoliation, allow the cleanser to sit on the skin for 2-5 minutes before adding water and washing it off. This can be done up to 3 times per week. <\/p><p><strong>Step 2 <\/strong>: Hydrate with the RePlenish Spritzer<\/p><p>Mist your face and neck with the RePlenish Spritzer. Protip: You can also use the spritzer to rehydrate conductive gel that has dried on your skin, or as a daily hydrating essence.<\/p><p><strong>Step 3: <\/strong>Treat with Myolift QT using probes. <\/p>"
+          }
+        },
+        "question_Lai7AD": {
+          "type": "question",
+          "settings": {
+            "title": "Day 14",
+            "text": "<p><strong>Step 1: <\/strong>Clarify with the Mangosteen Cleanser <\/p><p>Put on your 7e Wellness Spa Headband, then apply a thin layer of Mangosteen Cleanser to dry skin. <\/p><p><span style=\"text-decoration:underline\">Protip<\/span>: For an added boost of exfoliation, allow the cleanser to sit on the skin for 2-5 minutes before adding water and washing it off. This can be done up to 3 times per week. <\/p><p><strong>Step 2 <\/strong>: Hydrate with the RePlenish Spritzer<\/p><p>Mist your face and neck with the RePlenish Spritzer. Protip: You can also use the spritzer to rehydrate conductive gel that has dried on your skin, or as a daily hydrating essence.<\/p><p><strong>Step 3: <\/strong>Treat with Myolift QT and sheet mask.<\/p>"
+          }
+        },
+        "question_beem8Y": {
+          "type": "question",
+          "settings": {
+            "title": "Day 13",
+            "text": "<p><strong>Step 1: <\/strong>Clarify with the Mangosteen Cleanser <\/p><p>Put on your 7e Wellness Spa Headband, then apply a thin layer of Mangosteen Cleanser to dry skin. <\/p><p><span style=\"text-decoration:underline\">Protip<\/span>: For an added boost of exfoliation, allow the cleanser to sit on the skin for 2-5 minutes before adding water and washing it off. This can be done up to 3 times per week. <\/p><p><strong>Step 2 <\/strong>: Hydrate with the RePlenish Spritzer<\/p><p>Mist your face and neck with the RePlenish Spritzer. Protip: You can also use the spritzer to rehydrate conductive gel that has dried on your skin, or as a daily hydrating essence.<\/p><p><strong>Step 3: <\/strong>Treat with Myolift QT using probes. <\/p>"
+          }
+        },
+        "question_LMNqgP": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_acFFVi",
+        "question_QKKdcc",
+        "question_E4XfUQ",
+        "question_9dDYqg",
+        "question_wBmMxx",
+        "question_xjrHWd",
+        "question_j9AWVn",
+        "question_Lai7AD",
+        "question_beem8Y",
+        "question_LMNqgP"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
+    "featured_video_iRpbEa": {
+      "type": "featured-video",
+      "settings": {
+        "title": "",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_p7cn89",
+    "rich_text_3aMMUA",
+    "faq_zJEdqY",
+    "featured_video_iRpbEa"
+  ]
+}

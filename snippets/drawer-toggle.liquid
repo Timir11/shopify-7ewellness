@@ -1,0 +1,94 @@
+{% if template contains 'wholesale-resources' %}
+  {% assign isWholesSale = true %}
+{% endif %}
+
+<style>
+            @media only screen and (min-width: 769px) {
+            .header-layout--left-center .header-item--icons {
+                -webkit-box-flex: 0 0 180px;
+                -ms-flex: 0 0 180px;
+                flex: 0 0 350px !important;
+            }
+        }
+          .pill-toggle {
+            display: inline-block;
+            margin: 20px auto;
+          }
+
+          .pill-button {
+            display: inline-flex;
+            position: relative;
+            font-family: Arial, sans-serif;
+            font-size: 13px;
+            background: #000;
+            border-radius: 9999px;
+            overflow: hidden;
+            padding: 4px;
+          }
+
+          .pill-button-selection {
+            position: relative;
+            padding: 8px 20px;
+            color: #fff;
+            text-align: center;
+            z-index: 2;
+            cursor: pointer;
+            font-weight: 500;
+            text-decoration: none;
+          }
+
+          .pill-button-selection_active {
+            color: #000;
+          }
+
+          .pill-button-highlight {
+            position: absolute;
+            top: 8px;
+            left: 5%;
+            height: calc(100% - 16px);
+            width: calc(50% - 10%);
+            background: #fff;
+            border-radius: 9999px;
+            z-index: 1;
+            transition: left 0.3s ease;
+          }
+    .pill-button-selection:hover {
+        color: #fff !important;
+        background: transparent !important;
+      }
+
+    .pill-button-selection_active:hover {
+      color: #000 !important;
+    }
+    .pill-toggle-wrapper-mobile {
+      margin:0 auto;
+    }
+    @media only screen and (min-width: 768px) {
+    .pill-toggle-wrapper-mobile {
+      display: none !important;
+    }
+  }
+          {% if isWholesSale %}
+          .pill-button-highlight {
+            left: 45%;
+            width: calc(50% - 2%);
+          }
+          {% endif %}
+</style>
+<div class="pill-toggle-wrapper-mobile">
+  <div class="pill-toggle">
+    <div class="pill-button">
+      <span class="pill-button-highlight"></span>
+
+      <a href="/" class="pill-button-selection {% unless isWholesSale %}pill-button-selection_active{% endunless %}">
+        Retail
+      </a>
+      <a
+        href="/pages/resources"
+        class="pill-button-selection {% if isWholesSale %}pill-button-selection_active{% endif %}"
+      >
+        Wholesale
+      </a>
+    </div>
+  </div>
+</div>

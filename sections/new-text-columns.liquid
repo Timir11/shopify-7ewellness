@@ -1,0 +1,359 @@
+<div
+  {% if page.handle == 'microcurrent-skincare-bootcamp-kits' %}
+    id="bootcamp-land-page"
+  {% endif %}
+  class="bgimg {{ section.settings.class }} new-text-columns"
+  {% if section.settings.bgimg != blank %}
+    style="background-image:url({{ section.settings.bgimg | img_url: 'original' }});"
+  {% endif %}
+>
+  <div class="index-section{% if section.settings.alt %} index-section--alt{% endif %}">
+    <div class="page-width" data-aos>
+      <header class="section-header" data-aos>
+        {%- if section.settings.title != blank -%}
+          <h2 class="section-header__title appear-delay">{{ section.settings.title }}</h2>
+        {%- endif -%}
+        {%- if section.settings.subheading != blank -%}
+          <div class="text-{{ section.settings.align_text }} pt-2">{{ section.settings.subheading }}</div>
+        {% endif %}
+      </header>
+      <div class="grid {% unless section.blocks.size == 5 %}grid--uniform{% endunless %} text-{{ section.settings.align_text }}">
+        {%- liquid
+          assign grid_item_width = 'medium-up--one-third'
+          case section.blocks.size
+            when 1
+              assign grid_item_width = 'medium-up--one-half'
+            when 2
+              assign grid_item_width = 'medium-up--one-half'
+            when 4
+              assign grid_item_width = 'medium-up--one-half'
+          endcase
+        -%}
+        {%- for block in section.blocks -%}
+          {%- if section.blocks.size == 5 and forloop.index < 3 -%}
+            {%- assign column_width = 'medium-up--one-half' -%}
+          {%- else -%}
+            {%- assign column_width = grid_item_width -%}
+          {%- endif -%}
+          <div
+            {{ block.shopify_attributes }}
+            data-aos
+            class="grid__item grid-column {{ column_width }} appear-delay-{{ forloop.index }}"
+          >
+            {%- if block.settings.enable_image -%}
+              {%- if block.settings.button_link != blank -%}
+                <a href="{{ block.settings.button_link }}">
+              {%- endif -%}
+              {%- if block.settings.image != blank -%}
+                <div style="max-width: {{ block.settings.image_width }}px;{% if section.settings.align_text == 'center' %} margin: 0 auto;{% endif %};overflow:hidden;border-top-left-radius:19px;border-top-right-radius:19px;">
+                  <div
+                    class="image-wrap text-spacing {% if block.settings.image_mask != 'none' %}svg-mask svg-mask--{{ block.settings.image_mask }}{% endif %}"
+                    style="height: 0; padding-bottom: {{ 100 | divided_by: block.settings.image.aspect_ratio }}%;"
+                  >
+                    {%- render 'image-element',
+                      img: block.settings.image,
+                      sizeVariable: column_width,
+                      widths: '180, 360, 540, 750, 900, 1080'
+                    -%}
+                  </div>
+                </div>
+              {%- else -%}
+                <div class="image-wrap text-spacing {% if block.settings.image_mask != 'none' %}svg-mask svg-mask--{{ block.settings.image_mask }}{% endif %}">
+                  {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                </div>
+              {%- endif -%}
+              {%- if block.settings.button_link != blank -%}
+                </a>
+              {%- endif -%}
+            {%- endif -%}
+            <div class="wrp_content">
+              {%- if block.settings.title != blank -%}
+                <div class="h2">{{ block.settings.title }}</div>
+              {%- endif -%}
+              {%- if block.settings.text != blank -%}
+                <div class="rte-setting text-spacing">{{ block.settings.text }}</div>
+              {%- endif -%}
+              {%- if block.settings.button_label != blank -%}
+                <a href="{{ block.settings.button_link }}" class="btn btn--tertiary btn--small {% if template.suffix == 'professional2' %}popup-link{% endif %}" {% if template.suffix == 'professional2' %}data-target="popup-{{ forloop.index }}-{{ section.id }}"{% endif %}>
+                  <span class="link">{{ block.settings.button_label }}</span>
+                  {% if template.suffix == 'free-myocommunity' %}
+                    <img
+                      src="https://cdn.shopify.com/s/files/1/2745/9950/files/Group_302.png?v=1732032039"
+                      alt="image-icon"
+                      style="width:auto"
+                    >
+                  {% endif %}
+                </a>
+              {%- endif -%}
+
+              {% if template.suffix == 'professional2' %}
+              <div id="popup-{{ forloop.index }}-{{ section.id }}" class="popup">
+                <div class="popup-content">
+                  <span class="close">
+                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64"><title>icon-X</title><path d="m19 17.61 27.12 27.13m0-27.12L19 44.74"></path></svg>
+                  </span>
+                  {{ block.settings.popupContent }}
+                </div>
+              </div>
+              {% endif %}
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+      {% if section.settings.btn_txt != blank %}
+        <div class="text-center ">
+          <a class="btn" href="{{ section.settings.btn_url }}">{{ section.settings.btn_txt }}</a>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{%- schema -%}
+{
+  "name": "New Text Columns",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "bgimg",
+      "label": "Background Image"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:sections.text-columns.settings.title.label"
+    },
+    {
+      "type": "richtext",
+      "id": "subheading",
+      "label": "subheading"
+    },
+    {
+      "type": "select",
+      "id": "align_text",
+      "label": "t:sections.text-columns.settings.align_text.label",
+      "default": "center",
+      "options": [
+        {
+          "value": "left",
+          "label": "t:sections.text-columns.settings.align_text.options.left.label"
+        },
+        {
+          "value": "center",
+          "label": "t:sections.text-columns.settings.align_text.options.center.label"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "id": "alt",
+      "label": "t:sections.text-columns.settings.alt.label"
+    },
+    {
+      "type": "text",
+      "id": "class",
+      "label": "Add Custom Class"
+    },
+    {
+      "type":"url",
+      "id":"btn_url",
+      "label":"Button URL"
+    },
+    {
+      "type":"text",
+      "id":"btn_txt",
+      "label":"Button Text"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text_block",
+      "name": "t:sections.text-columns.blocks.column.name",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "enable_image",
+          "label": "t:sections.text-columns.blocks.column.settings.enable_image.label",
+          "default": true
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.text-columns.blocks.column.settings.image.label"
+        },
+        {
+          "type": "select",
+          "id": "image_mask",
+          "label": "t:common.image_mask.label",
+          "default": "none",
+          "options": [
+            {
+              "value": "none",
+              "label": "t:common.image_mask.options.none.label"
+            },
+            {
+              "value": "portrait",
+              "label": "t:common.image_mask.options.portrait.label"
+            },
+            {
+              "value": "landscape",
+              "label": "t:common.image_mask.options.landscape.label"
+            },
+            {
+              "value": "square",
+              "label": "t:common.image_mask.options.square.label"
+            },
+            {
+              "value": "rounded",
+              "label": "t:common.image_mask.options.rounded.label"
+            },
+            {
+              "value": "rounded-wave",
+              "label": "t:common.image_mask.options.rounded-wave.label"
+            },
+            {
+              "value": "rounded-top",
+              "label": "t:common.image_mask.options.rounded-top.label"
+            },
+            {
+              "value": "star",
+              "label": "t:common.image_mask.options.star.label"
+            },
+            {
+              "value": "splat-1",
+              "label": "t:common.image_mask.options.splat-1.label"
+            },
+            {
+              "value": "splat-2",
+              "label": "t:common.image_mask.options.splat-2.label"
+            },
+            {
+              "value": "splat-3",
+              "label": "t:common.image_mask.options.splat-3.label"
+            },
+            {
+              "value": "splat-4",
+              "label": "t:common.image_mask.options.splat-4.label"
+            }
+          ]
+        },
+        {
+          "type": "range",
+          "id": "image_width",
+          "label": "t:sections.text-columns.blocks.column.settings.image_width.label",
+          "default": 650,
+          "min": 60,
+          "max": 650,
+          "step": 10,
+          "unit": "px"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "t:sections.text-columns.blocks.column.settings.title.label",
+          "default": "Example title"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "t:sections.text-columns.blocks.column.settings.text.label",
+          "default": "<p>Use this section to explain a set of product features, to link to a series of pages, or to answer common questions about your products. Add images for emphasis.</p>"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "t:sections.text-columns.blocks.column.settings.button_label.label"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "t:sections.text-columns.blocks.column.settings.button_link.label"
+        },
+        {
+          "type": "html",
+          "id": "popupContent",
+          "label": "Popup Content",
+          "default": "<p>This is popup</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "New Text Columns",
+      "blocks": [
+        {
+          "type": "text_block"
+        },
+        {
+          "type": "text_block"
+        }
+      ]
+    }
+  ],
+  "disabled_on": {
+    "groups": ["custom.popups"]
+  }
+}
+{%- endschema -%}
+<script>
+  var abc = window.location.href;
+  console.log(abc);
+  if(abc.includes('#bootcamp-land-page')){
+  $('html, body').animate({ scrollTop: $('#bootcamp-land-page').offset().top - 200 }, 500);
+  }
+</script>
+
+<style>
+    h2.section-header__title.appear-delay:not(.our-clients-section h2) {
+      display: flex;
+      justify-content: center;
+      font-size: 41px !important;
+      font-weight: bolder;
+  }
+    .text-spacing {
+      margin-bottom: 0px !important;
+  }
+  .wrp_content {
+      background: #dac8b1;
+      padding: 23px;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+  }
+    /* .wrp_content .btn .add-to-cart, .btn {
+       border-radius: 53px;
+      background: transparent;
+       box-shadow: none;
+      padding: 19px 43px 18px;
+      align-items: center;
+      gap: 12px;
+      color: black;
+      text-align: center;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 125%;
+      display: inline-flex;
+      justify-content: center;
+      width: auto;
+      border: none;
+      text-decoration: none;
+      text-decoration: underline;
+  } */
+    .btn--tertiary:hover, .rte .btn--tertiary:hover {
+      background-color: transparent;
+      color: black;
+  }
+    .text-spacing p{
+      font-weight:700;
+    }
+    .grid.grid--uniform.text-center {
+      display: flex;
+      gap: 40px;
+      padding-left: 80px;
+      max-width:100%;
+  }
+    header.section-header.aos-init.aos-animate:not(.our-clients-section header.section-header.aos-init.aos-animate) {
+      margin-bottom: 68px !important;
+      margin-top: 70px !important;
+  }
+</style>

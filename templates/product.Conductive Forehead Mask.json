@@ -1,0 +1,197 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "okendo_star_rating_TADRAg": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "metafiled_description_thCG4N": {
+          "type": "metafiled_description",
+          "settings": {
+            "is_meta_description": false
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "surface_pickup_enable": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "trust_badge_ka3aKe": {
+          "type": "trust_badge",
+          "settings": {
+            "trust_image": "shopify:\/\/shop_images\/Background_2x_9930748b-1cc8-4d33-b97d-a8c4c9db56ff.png"
+          }
+        },
+        "pop_up_rJzQ4w": {
+          "type": "pop_up",
+          "settings": {
+            "title": "Shipping & Handling",
+            "content": "<p>Free USA Ground shipment, Orders are processed within 2 business day. <\/p><p>International Orders Ships within 3 business day.  <\/p><p>International customers are required to pay Duty with their local custom agency. <\/p>"
+          }
+        },
+        "tab_TPkht9": {
+          "type": "tab",
+          "settings": {
+            "title": "What is this for?",
+            "content": "<p>Ideal for individuals seeking to address signs of aging, such as fine lines and wrinkles on the forehead. Suitable for both beginners and those experienced with microcurrent therapy. Not recommended for individuals who have a history of skin reactions to adhesives.<\/p>",
+            "page": ""
+          }
+        },
+        "tab_ddakF6": {
+          "type": "tab",
+          "settings": {
+            "title": "What is included?",
+            "content": "<p>1 x Conductive Forehead Mask<\/p>",
+            "page": ""
+          }
+        },
+        "66232a31-cb5f-4a67-97cf-d0377bb2fac6": {
+          "type": "tab",
+          "settings": {
+            "title": "How To Use",
+            "content": "<ol><li><strong>Cleanse Skin<\/strong>: Ensure the forehead area is clean and free from oils or makeup.<\/li><li><strong>Apply Conductive Serum<\/strong>: Lightly spritz the area with 7E Wellness Replenish Spritzer or apply a water-based serum. Avoid oil-based products.<\/li><li><strong>Prepare the Mask<\/strong>: Peel the plastic backing from the mask.<\/li><li><strong>Connect to Device<\/strong>: Plug the mask into the lead wire and connect it to your MyoLift™ device.<\/li><li><strong>Position the Mask<\/strong>: Place the mask on your forehead, ensuring proper contact with the skin.<\/li><li><strong>Select Settings<\/strong>: Use the Educate or Erase setting on your device, adjusting the frequency as needed.<\/li><li><strong>Treatment Duration<\/strong>: Apply for 10–30 minutes, dividing the time between the Educate and Erase settings.<\/li><li><strong>Post-Treatment Care<\/strong>: Remove the mask, clean any residue, and store it in a sealed bag for future use<\/li><\/ol>",
+            "page": ""
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "title": "Benefits",
+            "content": "<ul><li><strong>Reduces Fine Lines and Wrinkles<\/strong>: Targets aging signs on the forehead.<\/li><li><strong>Stimulates Collagen and Elastin Production<\/strong>: Enhances skin elasticity and <a href=\"https:\/\/www.7ewellness.com\/collections\/shop-by-concern-firmness\" target=\"_blank\" title=\"https:\/\/www.7ewellness.com\/collections\/shop-by-concern-firmness\">firmness<\/a>.<\/li><li><strong>Improves Skin Tone and Texture<\/strong>: Promotes a smoother and more youthful complexion.<\/li><li><strong>Convenient and Easy to Use<\/strong>: Ideal for at-home treatments.<\/li><\/ul><p><strong>Cost-Effective<\/strong>: Reusable design offers multiple treatments per mask<br\/><br\/><\/p>",
+            "page": ""
+          }
+        },
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed": {
+          "type": "tab",
+          "settings": {
+            "title": "Ingredients",
+            "content": "{{ product.metafields.custom.ingredients.value.ingredients | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "tab_QLEFEc": {
+          "type": "tab",
+          "settings": {
+            "title": "Product Features",
+            "content": "<ul><li><strong>Hands-Free Design<\/strong>: Allows for multitasking during treatment sessions.<\/li><li><strong>Reusable<\/strong>: Each mask can be used for 10–12 treatments or until the conductivity bar no longer stays solid.<\/li><li><strong>No Conductive Gel Required<\/strong>: Simplifies the treatment process.<\/li><li><strong>Compatible with MyoLift™ Devices<\/strong>: Designed to work seamlessly with MyoLift™ QT Plus and MyoLift™ Mini.<\/li><li><strong>FDA Approved<\/strong>: Ensures safety and efficacy.<\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "tab_gFP7Fx": {
+          "type": "tab",
+          "settings": {
+            "title": "Device Support",
+            "content": "{{ product.metafields.custom.device_support.value.device_support | metafield_tag }}",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "okendo_star_rating_TADRAg",
+        "price",
+        "description",
+        "metafiled_description_thCG4N",
+        "buy_buttons",
+        "trust_badge_ka3aKe",
+        "pop_up_rJzQ4w",
+        "tab_TPkht9",
+        "tab_ddakF6",
+        "66232a31-cb5f-4a67-97cf-d0377bb2fac6",
+        "tab",
+        "c470f05f-1b5f-4fc2-8e60-fc45d6f483ed",
+        "tab_QLEFEc",
+        "tab_gFP7Fx"
+      ],
+      "settings": {
+        "product_image_size": "medium",
+        "product_image_type": "slider",
+        "thumbnail_height": "fixed",
+        "product_zoom_enable": true,
+        "enable_video_looping": true,
+        "product_video_style": "unmuted",
+        "product_label": "",
+        "btn_url": "",
+        "btn_txt": "",
+        "sku_enable": false
+      }
+    },
+    "1747992895951619c7": {
+      "type": "apps",
+      "blocks": {
+        "okendo_reviews_widget_ErqUyJ": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "{{product}}",
+            "widget_type": "reviews_widget"
+          }
+        }
+      },
+      "block_order": [
+        "okendo_reviews_widget_ErqUyJ"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "settings": {
+        "max_width": true
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "disabled": true,
+      "settings": {}
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "product_recommendations_heading": "Related products",
+        "related_count": 4
+      }
+    },
+    "featured_collection_pht7X9": {
+      "type": "featured-collection",
+      "name": "t:sections.featured-collection.presets.featured_collection_grid.name",
+      "settings": {
+        "custom_class": "",
+        "title": "Featured collection grid",
+        "description": "",
+        "home_featured_products": "shop-all-microcurrent-accessories-tools",
+        "rows": 1,
+        "per_row_desktop": 4,
+        "per_row_mobile": "1",
+        "view_all": false,
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1747992895951619c7",
+    "sub",
+    "collection-return",
+    "product-recommendations",
+    "featured_collection_pht7X9"
+  ]
+}

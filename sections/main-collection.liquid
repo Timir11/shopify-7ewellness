@@ -1,0 +1,450 @@
+{% comment %}
+  This sections requires the same `paginate_by` variable value as
+  the other sections for the ajax loading to work.
+  If you change the number below, it must also be changed in:
+  - sections/collection-template
+  - sections/featured-collection-slider
+  - snippets/page-block-featured-collection-slider
+{% endcomment %}
+{%- liquid
+  assign paginate_by = 24
+  assign per_row_desktop = 3
+  assign per_row_mobile = 1
+  assign mobile_flush = false
+
+  for block in section.blocks
+    case block.type
+    when 'product_grid'
+      assign per_row_desktop = block.settings.per_row_desktop
+      assign per_row_mobile = block.settings.per_row_mobile
+      if per_row_mobile == '2-flush'
+        assign mobile_flush = true
+      endif
+    endcase
+  endfor
+
+  case per_row_desktop
+    when 2
+      assign grid_large_width = 'medium-up--one-half'
+    when 3
+      assign grid_large_width = 'medium-up--one-third'
+    when 4
+      assign grid_large_width = 'medium-up--one-quarter'
+  endcase
+
+  assign grid_small_width = 'grid-product--padded'
+
+  if per_row_mobile contains '2'
+    assign per_row_mobile = 2
+    assign grid_small_width = 'small--one-half'
+    assign fallback = '50vw'
+  endif
+-%}
+
+{%- capture grid_item_width -%}{{ grid_small_width }} {{ grid_large_width }}{%- endcapture -%}
+
+{% paginate collection.products by paginate_by %}
+
+  
+  <div class="collection-header__content">
+    <div class="text-center">
+      <div class="page-width collection_header_wrapper small--hide">
+        <div class="collection_header" data-aos>
+          {% comment %}
+            Desktop title. When disabled it stays in the HTML (visually hidden)
+            so the page keeps its H1 for SEO and screen readers.
+          {% endcomment %}
+          <h1 class="section-header__title appear-delay{% unless section.settings.show_title_desktop %} visually-hidden{% endunless %}">
+            {{ collection.title }}
+          </h1>
+          {%- if collection.description != blank and section.settings.description_enable -%}
+            {%- assign desc_length = collection.description | size -%}
+            <div class="rte section-header__description{% if desc_length < 200 %} section-header__description--large{% endif %} appear-delay-1">
+              {{ collection.description }}
+            </div>
+          {%- endif -%}
+        </div>
+        
+        {%- if section.settings.collection_sort_enable -%}
+          <div id="CollectionSortby" class="collection-dropdowns">
+            <div class="collection-dropdowns__item">
+              {%- assign sort_by = collection.sort_by | default: "popularity" -%}
+              <label for="SortBy" class="hidden-label">{{ 'collections.sorting.title' | t }}</label>
+              <select name="SortBy" id="SortByDesktop" class="sortby_options" data-default-sortby="popularity">
+                <option value="popularity" selected="selected">{{ 'collections.sorting.title' | t }}</option>
+
+                {% comment %} <option value="title-ascending"{% if sort_by == collection.default_sort_by %} selected="selected"{% endif %}>{{ 'collections.sorting.title' | t }}</option> {% endcomment %}
+                {%- for option in collection.sort_options -%}
+                  <option value="{{ option.value }}" {% if option.value == sort_by %}selected="selected"{% endif %}>{{ option.name }}</option>
+                {%- endfor -%}
+              </select>
+            </div>
+          </div>
+        {%- endif -%}
+      </div>
+
+      <div class="collection_header medium-up--hide" data-aos>
+        {% comment %} Mobile title {% endcomment %}
+        {%- if section.settings.show_title_mobile -%}
+          <h2 class="section-header__title appear-delay">
+            {{ collection.title }}
+          </h2>
+        {%- endif -%}
+        {%- if collection.description != blank and section.settings.description_enable -%}
+          {%- assign desc_length = collection.description | size -%}
+          <div class="rte section-header__description{% if desc_length < 200 %} section-header__description--large{% endif %} appear-delay-1">
+            {{ collection.description }}
+          </div>
+        {%- endif -%}
+      </div>
+      
+      {% comment %} Filter and Sort functionality for mobile devices {% endcomment %}
+      {% unless collection.metafields.custom.hide_filter == true %}
+      <div class="mobile-controls medium-up--hide">
+        <!-- Filter Button -->
+        <button id="filterButton" class="filter-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="13" viewBox="0 0 16 13" fill="none">
+            <path d="M15.4004 2.6001L7.40039 2.6001" stroke="#231F20" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="1.6" cy="1.6" r="1.6" transform="matrix(-1 0 0 1 4.20117 1)" stroke="#231F20" stroke-width="1.2"/>
+            <path d="M1 10.6001L9 10.6001" stroke="#231F20" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="13.8012" cy="10.6" r="1.6" stroke="#231F20" stroke-width="1.2"/>
+          </svg>
+          <span>Filter</span>
+        </button>
+        
+        <!-- Sort Modal -->
+        {%- if section.settings.collection_sort_enable -%}
+          <div id="MobileCollectionSortby" class="collection-dropdowns">
+            <div class="collection-dropdowns__item">
+              {%- assign sort_by = collection.sort_by | default: "popularity" -%}
+              <label for="SortBy" class="hidden-label">{{ 'collections.sorting.title' | t }}</label>
+              <select name="SortBy" id="SortByMobile" data-default-sortby="popularity">
+                {% comment %} <option value="title-ascending"{% if sort_by == collection.default_sort_by %} selected="selected"{% endif %}>{{ 'collections.sorting.title' | t }}</option> {% endcomment %}
+                  <option value="popularity" selected="selected">{{ 'collections.sorting.title' | t }}</option>
+                {%- for option in collection.sort_options -%}
+                  <option value="{{ option.value }}" {% if option.value == sort_by %}selected="selected"{% endif %}>{{ option.name }}</option>
+                {%- endfor -%}
+              </select>
+            </div>
+          </div>
+        {%- endif -%}
+      </div>
+      {% endunless %}
+
+    </div>
+  </div>
+
+  <!-- Filter Drawer -->
+<div id="filterDrawer" class="filter-drawer hidden">
+  <div class="filter-drawer__header">
+    <button id="closeFilterDrawer" class="filter-drawer__close">×</button>
+    <h3>Filters</h3>
+  </div>
+  <div class="filter-drawer__content">
+    <div
+      id="MobileCollectionFiltersSection"
+      class="collection-filter__wrapper"
+      data-section-id="{{ section.id }}"
+      data-section-type="collection-filter">
+      {%- render 'collection-filters', section: section, collection: collection -%}
+    </div>
+  </div>
+</div>
+
+
+<div
+  id="CollectionGrid"
+  data-section-id="{{ section.id }}"
+  data-section-type="collection-grid"
+  data-product-sliders-mobile="{% if per_row_mobile == '1' %}true{% else %}false{% endif %}">
+  
+  <div class="page-width">
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+      {%- when 'collection_description' -%}
+        {%- if collection.description != blank -%}
+          <div class="rte text-center" {{ block.shopify_attributes }}>
+            {{ collection.description }}
+          </div>
+        {%- endif -%}
+      {%- when 'product_grid' -%}
+        <div id="CollectionAjaxContent">
+          <div class="grid collection_page_grid">
+            {% unless collection.metafields.custom.hide_filter == true %}
+              <div class="grid__item medium-up--one-quarter small--whole coll_filter filter_grid small--hide">
+                <div
+                  id="CollectionFiltersSection"
+                  class="collection-filter__wrapper"
+                  data-section-id="{{ section.id }}"
+                  data-section-type="collection-filter">
+                  {%- render 'collection-filters', section: section, collection: collection -%}
+                </div>
+              </div>              
+          {% endunless %}
+            
+            <div class="grid__item {% if collection.metafields.custom.hide_filter == true %} medium-up--one-whole {% else %}  medium-up--three-quarters {% endif %} small--whole collection_grid">
+              <div class="grid collection_page_grid grid--uniform grid--scattered-large-{{ per_row_desktop }} grid--scattered-small-{{ per_row_mobile }}{% if mobile_flush %} small--grid--flush{% endif %}"
+                data-collection-container>
+    
+                {%- for product in collection.products -%}
+                  {%- if section.settings.promotional_image != blank and section.settings.promotional_url != blank -%}
+                    {% unless collection.handle == '7ewellness-x-rezenerate' %}
+                    {% if forloop.index == 6 %}
+                      <!-- Promotional Grid - Insert Here -->
+                      <div class="grid__item grid-product product_grid_item {{ grid_item_width }} promotional-banner">
+                        <a href="{{ section.settings.promotional_url }}">
+                          {% if collection.metafields.custom.promotional_banner != blank %}
+                            <img src="{{ collection.metafields.custom.promotional_banner | image_url }}" alt="Special Offer">
+                          {% else %}
+                            <img src="{{ section.settings.promotional_image | image_url }}" alt="Special Offer">                              
+                          {% endif %}
+                        </a>
+                      </div>
+                    {% endif %}
+                    {% endunless %}
+                  {%- endif -%}
+
+                  {%- render 'product-grid-item'
+                    product: product,
+                    grid_item_width: grid_item_width,
+                    sizeVariable: grid_large_width,
+                    fallback: fallback,
+                  -%}
+                  {% if collection.handle == '7ewellness-x-rezenerate' %}
+                    {% if forloop.index == 1 %}
+                      <!-- Promotional Grid - Insert Here -->
+                      <div class="grid__item grid-product product_grid_item {{ grid_item_width }} promotional-banner">
+                        <a target="_blank" href="https://rezenerate.com/shop/?_gl=1*1nc9iap*_up*MQ..*_gs*MQ..&gclid=CjwKCAjw1dLDBhBoEiwAQNRiQdurDLROuGQBBDUaLY4yAIu_Pyg2xMmR35FCPJfcpvORNe6wYMhNuhoCIVkQAvD_BwE&gbraid=0AAAAADm_LA18ZbcKLQVjAZOjG9kVQ6QcP">
+                          {% if collection.metafields.custom.promotional_banner != blank %}
+                            <img src="{{ collection.metafields.custom.promotional_banner | image_url }}" alt="Special Offer">
+                          {% else %}
+                            <img src="{{ section.settings.promotional_image | image_url }}" alt="Special Offer">                              
+                          {% endif %}
+                        </a>
+                      </div>
+                    {% endif %}
+                    {% endif %}
+                {%- else -%}
+                  <div class="grid__item product_grid_item">
+                    <p>{{ 'collections.general.no_matches' | t }}</p>
+                  </div>
+                {%- endfor -%}
+              </div>
+    
+              {%- if paginate.pages > 1 -%}
+                {%- render 'pagination', paginate: paginate -%}
+              {%- endif -%}
+              
+            </div>
+          </div>
+          
+        </div>
+      {%- endcase -%}
+    {%- endfor -%}
+  </div>
+</div>
+
+{% endpaginate %}
+
+{% comment %}
+  Header banner toggles. The banner lives in sections/collection-header.liquid
+  (.collection-hero). Breakpoints match the theme: small = up to 768px, medium-up = 769px+.
+{% endcomment %}
+{%- unless section.settings.show_banner_desktop -%}
+  <style>
+    @media only screen and (min-width: 769px) {
+      .collection-hero,
+      .shopify-section:has(> .collection-hero) {
+        display: none !important;
+      }
+    }
+  </style>
+{%- endunless -%}
+{%- unless section.settings.show_banner_mobile -%}
+  <style>
+    @media only screen and (max-width: 768px) {
+      .collection-hero,
+      .shopify-section:has(> .collection-hero) {
+        display: none !important;
+      }
+    }
+  </style>
+{%- endunless -%}
+
+{%- unless section.settings.show_title_desktop -%}
+  <style>
+    .collection_header .section-header__title.visually-hidden {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0 0 0 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important;
+    }
+  </style>
+{%- endunless -%}
+
+{% if collection.handle == '7ewellness-x-rezenerate' %}
+  <style>
+    .collection_grid .grid{
+  justify-content: center;
+}  
+.collection_header_wrapper {
+  display: block;
+}
+.collection_header {
+  text-align: center;
+}
+    .template-collection .grid-product__content .slideshow-wrapper .product-slide,
+   .grid-product__content .slideshow-wrapper .product-slide, 
+    .grid-product .grid-product__content img,
+        .grid__item.promotional-banner {
+        height: auto !important;
+    }
+  </style>
+
+{% endif %}
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "CollectionPage",
+    {% if collection.description != blank %}
+      "description": {{ collection.description | strip_html | json }},
+    {% endif %}
+    {% if page_image %}
+      {% assign image_size = page_image.width | append: 'x' %}
+      "image": {
+        "@type": "ImageObject",
+        "height": {{ page_image.height | json }},
+        "url": {{ page_image | img_url: image_size | prepend: "https:" | json }},
+        "width": {{ page_image.width | json }}
+      },
+    {% endif %}
+    "name": {{ collection.title | json }}
+  }
+</script>
+
+{% schema %}
+{
+  "name": "t:sections.main-collection.name",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Collection title"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_title_desktop",
+      "label": "Show collection title on desktop",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_title_mobile",
+      "label": "Show collection title on mobile",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Header banner image"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_banner_desktop",
+      "label": "Show header banner on desktop",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_banner_mobile",
+      "label": "Show header banner on mobile",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Filters & sorting"
+    },
+    {
+      "type": "paragraph",
+      "content": "t:sections.collection-filters.settings.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_color_swatches",
+      "label": "t:sections.collection-filters.settings.enable_color_swatches.label",
+      "info": "t:sections.collection-filters.settings.enable_color_swatches.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_swatch_labels",
+      "label": "t:common.enable_swatch_labels.label",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "collection_sort_enable",
+      "label": "t:sections.collection-filters.settings.collection_sort_enable.label"
+    },
+    {
+      "type": "header",
+      "content": "Promotion"
+    },
+    {
+      "type": "image_picker",
+      "id": "promotional_image",
+      "label": "Promotional Image"
+    },
+    {
+      "type": "url",
+      "id": "promotional_url",
+      "label": "Add Link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection_description",
+      "name": "t:sections.main-collection.blocks.collection_description.name",
+      "limit": 1
+    },
+    {
+      "type": "product_grid",
+      "name": "t:sections.main-collection.blocks.products.name",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "range",
+          "id": "per_row_desktop",
+          "label": "t:sections.main-collection.blocks.products.settings.per_row_desktop.label",
+          "default": 3,
+          "min": 2,
+          "max": 4,
+          "step": 1
+        },
+        {
+          "type": "select",
+          "id": "per_row_mobile",
+          "label": "t:sections.main-collection.blocks.products.settings.per_row_mobile.label",
+          "default": "1",
+          "options": [
+            {
+              "value": "1",
+              "label": "1"
+            },
+            {
+              "value": "2",
+              "label": "t:sections.main-collection.blocks.products.settings.per_row_mobile.options.2.label"
+            },
+            {
+              "value": "2-flush",
+              "label": "t:sections.main-collection.blocks.products.settings.per_row_mobile.options.2-flush.label"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

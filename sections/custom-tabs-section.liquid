@@ -1,0 +1,179 @@
+
+
+<div class="collection-tabs-section">
+  <h2>{{ section.settings.section_heading }}</h2>
+  <div style="position:relative;">
+    <div class="tabs collection_list_tab">
+      {% for block in section.blocks %}
+        {% if block.type == 'collection_tab' %}
+          {% assign collection = collections[block.settings.collection] %}
+          <button class="tab-button tab-button-{{ section.id }}" data-tab="tab-{{ forloop.index }}">{{ collection.title }}</button>
+        {% endif %}
+      {% endfor %}
+      <!-- <a class="tab-link shop-all" href="collections/all" data-tab="shop-all">SHOP ALL PRODUCTS</a> -->
+    </div>
+    <div class="tab-content">
+    {% for block in section.blocks %}
+      {% if block.type == 'collection_tab' %}
+        {% assign collection = collections[block.settings.collection] %}
+        <div class=" slider-thumbb_col tab-products tab-products-{{ section.id }} tab-{{ forloop.index }}" style="display: none;">
+          {%- for product in collection.products limit: 4 -%} <!-- Limit products to 4 -->
+            {%- render 'product-grid-item'
+              product: product,
+              grid_item_width: grid_item_width,
+              sizeVariable: grid_large_width,
+              fallback: fallback,
+            -%}
+          {%- else -%}
+            <div class="grid__item#">
+              <p>{{ 'collections.general.no_matches' | t }}</p>
+            </div>
+          {%- endfor -%}
+      {%- if block.settings.button_text != blank -%}
+                <a class="tabShopAll" href="{{ block.settings.button_url | default: collection.url }}">{{ block.settings.button_text }}</a>
+            {%- endif -%}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const tabs = document.querySelectorAll('.tab-button-{{ section.id }}, .tab-link-{{ section.id }}');
+    const tabContents = document.querySelectorAll('.tab-products-{{ section.id }}');
+
+    function initializeSlickSlider() {
+        if ($(window).width() < 991) {
+            // Destroy existing sliders first
+            if ($('.slider-thumbb_col').hasClass('slick-initialized')) {
+                $('.slider-thumbb_col').slick('unslick');
+            }
+            if ($('.collection_list_tab').hasClass('slick-initialized')) {
+                $('.collection_list_tab').slick('unslick');
+            }
+
+            // Initialize sliders
+            $('.slider-thumbb_col').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: false,
+                centerMode: true,
+                arrows: false,
+                focusOnSelect: false,
+            });
+
+            // $('.collection_list_tab').slick({
+            //     slidesToShow: 1,
+            //     slidesToScroll: 1,
+            //     dots: false,
+            //     centerMode: false,
+            //     arrows: false,
+            //     focusOnSelect: true,
+            //     swipeToSlide: false,
+            // });
+        }
+    }
+
+    tabs.forEach((tab) => {
+        tab.addEventListener('click', () => {
+            // Remove active class from all tabs
+            tabs.forEach(t => t.classList.remove('active'));
+
+            // Add active class to clicked tab
+            tab.classList.add('active');
+
+            // Hide all tab contents
+            tabContents.forEach(content => content.style.display = 'none');
+
+            // Show the corresponding tab content
+            const targetTab = tab.getAttribute('data-tab');
+            let targetContent;
+            
+            if (targetTab === 'shop-all') {
+                targetContent = document.querySelector('.tab-products-{{ section.id }}.shop-all');
+            } else {
+                targetContent = document.querySelector(`.tab-products-{{ section.id }}.${targetTab}`);
+            }
+
+            if (targetContent) {
+                targetContent.style.display = 'grid';
+                // Reinitialize sliders after tab content is displayed
+                setTimeout(() => {
+                    initializeSlickSlider();
+                }, 100);
+            }
+        });
+    });
+
+    // Initialize: Show the first tab's content and initialize sliders by default
+    if (tabs.length > 0) {
+        tabs[0].classList.add('active');
+        const firstTab = document.querySelector('.tab-products.tab-1');
+        if (firstTab) {
+            firstTab.style.display = 'grid';
+            // Initialize sliders on first load
+            setTimeout(() => {
+                initializeSlickSlider();
+            }, 100);
+        }
+    }
+
+    // Handle window resize
+    let resizeTimer;
+    window.addEventListener('resize', function() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function() {
+            initializeSlickSlider();
+        }, 250);
+    });
+});
+</script>
+{% schema %}
+{
+  "name": "Collection Tabs Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_heading",
+      "label": "Section Heading",
+      "default": "I’m looking for..."
+    },
+    {
+      "type": "collection",
+      "id": "shop_all_collection",
+      "label": "Shop All Devices Collection"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection_tab",
+      "name": "Collection Tab",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Select Collection"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button text"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Button link",
+          "info": "If empty, the collection URL is used."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collection Tabs Section"
+    }
+  ]
+}
+{% endschema %}

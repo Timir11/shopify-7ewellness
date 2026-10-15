@@ -1,0 +1,147 @@
+{% schema %}
+{
+  "name": "Custom Slider Section",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Heading",
+      "id": "section_heading",
+      "default": "Section Heading"
+    },
+    {
+      "type": "image_picker",
+      "label": "Slide 1 Image",
+      "id": "slide_1_image"
+    },
+    {
+      "type": "image_picker",
+      "label": "Slide 2 Image",
+      "id": "slide_2_image"
+    },
+    {
+      "type": "image_picker",
+      "label": "Slide 3 Image",
+      "id": "slide_3_image"
+    },
+    {
+      "type": "text",
+      "label": "Text for Part 2 Heading",
+      "id": "part2_heading",
+      "default": "Part 2 Heading"
+    },
+    {
+      "type": "textarea",
+      "label": "Random Text for Part 2",
+      "id": "part2_text",
+      "default": "This is some random text.\nLine 2 of the text.\nLine 3.\nLine 4.\nLine 5."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Default",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="custom-slider-text-section">
+  <!-- Section Heading -->
+  <h1>{{ settings.section_heading }}</h1>
+
+  <div class="custom-content">
+    <!-- Slider Section -->
+    <div class="slider-container">
+      <div class="slider">
+        {% assign slides = settings | json %}
+        {% for i in (1..3) %}
+          {% assign slide_image = slides["slide_#{i}_image"] %}
+          {% if slide_image %}
+            <div class="slide">
+              <img src="{{ slide_image | img_url: '1024x1024' }}" alt="Slide {{ i }}" />
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- Text Section -->
+    <div class="text-container">
+      <h2>{{ settings.part2_heading }}</h2>
+      <p>{{ settings.part2_text | newline_to_br }}</p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .custom-slider-text-section {
+    padding: 20px;
+  }
+
+  .custom-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .slider-container {
+    width: 50%;
+    overflow: hidden;
+  }
+
+  .text-container {
+    width: 50%;
+    padding-left: 20px;
+  }
+
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+  }
+
+  .slide {
+    min-width: 100%;
+  }
+
+  .slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .text-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .text-container p {
+    font-size: 16px;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const slides = document.querySelectorAll('.slider .slide');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+      if (index >= slides.length) {
+        currentSlide = 0;
+      } else if (index < 0) {
+        currentSlide = slides.length - 1;
+      } else {
+        currentSlide = index;
+      }
+      const offset = -currentSlide * 100;
+      document.querySelector('.slider').style.transform = `translateX(${offset}%)`;
+    }
+
+    if (slides.length > 0) {
+      setInterval(() => {
+        showSlide(currentSlide + 1);
+      }, 3000); // Change slide every 3 seconds
+    } else {
+      console.warn('No slides available.');
+    }
+  });
+</script>

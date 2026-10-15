@@ -1,0 +1,63 @@
+.custom__item.small--one-whole.one-half.align--center img {
+    width: 100% !important;
+}
+ .custom-content :nth(2) child{
+  width:40% !important;
+}
+
+ /* .aos-animate {
+    width: 74%;
+} */
+ .rte h1:first-child, .rte h2:first-child, .rte h3:first-child, .rte h4:first-child, .rte h5:first-child, .rte h6:first-child {
+    margin-top: 31px;
+}
+.custom-content {
+        flex-direction: column-reverse;
+  }
+.rte h1:first-child{
+         font-size: 24px;
+   }
+.wrp_text {
+    display: flex !important;
+    width: 200px !important;
+    gap: 10px !important;
+    align-items: center !important;
+    /* margin: 20px 0px; */
+}
+.wrp_icon {
+    display: flex !important;
+}
+
+
+/* css for professional page */
+
+.contact-form.contact-formBlock.small--one-whole.one-half {
+    border: 2px solid #80808040;
+    padding: 50px;
+    margin: 0px;
+    margin-right: 50px;
+}
+
+.custom-content {
+    display: flex !important;
+    flex-direction: row !important;
+    border-bottom: 1px solid black;
+    /* width: 120%; */
+    margin: 0px;
+}
+
+ .actions {
+    display: flex !important;
+    justify-content: end !important;
+}
+.hs_submit.hs-submit {
+    display: flex !important;
+    justify-content: end !important;
+}
+
+@media only screen and (max-width: 768px) {
+    .custom-content {
+        margin-bottom: -30px;
+        margin-left: -30px;
+    }
+}

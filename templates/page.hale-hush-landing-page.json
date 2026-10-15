@@ -1,0 +1,129 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1653365616d642ee8d": {
+      "type": "slideshow",
+      "blocks": {
+        "1653365616613d47a0-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 40,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/banner_3.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/mobile-banner_91cac39e-55a2-4ccc-9566-7091c58a1447.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "1653365616613d47a0-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "165647607879de1422": {
+      "type": "text-columns",
+      "blocks": {
+        "165647607899addad3-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/1_fdfbef77-6774-4e16-8355-82a5759bd3e6.png",
+            "image_width": 150,
+            "title": "Hale & Hush focuses exclusively on sensitive skin",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "165647607899addad3-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/2_498974c8-3e18-4b78-b747-d73efb0c5516.png",
+            "image_width": 150,
+            "title": "Ingredients made from natural and sustainable plants, flowers and algae",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "e356b716-280d-4c25-8b1e-efb77bb87380": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/3_342a1830-07ed-4254-b685-27e79aa51c88.png",
+            "image_width": 150,
+            "title": "Bridges the gap between anti-aging and sensitive skincare",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "3e2253c9-9bbb-4f3d-bcd7-7b71a74c170e": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/4_bd055313-d806-4af3-a245-8d6dbcf79758.png",
+            "image_width": 150,
+            "title": "Products address wide range of conditions",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "165647607899addad3-0",
+        "165647607899addad3-1",
+        "e356b716-280d-4c25-8b1e-efb77bb87380",
+        "3e2253c9-9bbb-4f3d-bcd7-7b71a74c170e"
+      ],
+      "settings": {
+        "title": "We have teamed up with the experts of sensitive skin, <b>Hale & Hush<\/b>, to bring you the best of both worlds!",
+        "align_text": "center",
+        "alt": false
+      }
+    },
+    "16571818363d4eb958": {
+      "type": "advanced-content",
+      "blocks": {
+        "16571818368c11ffbb-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"mothersday-blog\">\n<div class=\"desktop-image\">\n<a href=\"\/blogs\/infuse-your-spa\/sensitive-skin-meets-microcurrent\"><img class=\"lazyload\" data-sizes=\"auto\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2745\/9950\/files\/desktop-blog-image_1024x1024.jpg?v=1657181907\"><\/a><\/div>\n<div class=\"mobile-image\">\n<a href=\"\/blogs\/infuse-your-spa\/sensitive-skin-meets-microcurrent\"><img class=\"lazyload\" data-sizes=\"auto\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/2745\/9950\/files\/blog_mobile_1024x1024.jpg?v=1657181907\"><\/a><\/div>\n<\/div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "16571818368c11ffbb-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1653365616d642ee8d",
+    "165647607879de1422",
+    "16571818363d4eb958"
+  ]
+}

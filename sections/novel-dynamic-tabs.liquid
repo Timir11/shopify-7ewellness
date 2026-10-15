@@ -1,0 +1,110 @@
+{% schema %}
+{
+  "name": "Novel Dynamic Tabs",
+  "max_blocks": 10,
+  "blocks": [
+    {
+      "type": "novel_tab",
+      "name": "Novel Tab",
+      "settings": [
+        {
+          "type": "text",
+          "id": "tab_name",
+          "label": "Tab Name",
+          "default": "New Tab"
+        },
+        {
+          "type": "text",
+          "id": "journey_id",
+          "label": "Novel Journey ID",
+          "default": "default"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Novel Dynamic Tabs",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+
+<style>
+  .custom-tab-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .custom-tab-button {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background: white;
+    color: black;
+    padding: 10px 20px;
+    margin: 0 5px 5px 5px;
+    user-select: none;
+    font-weight: 600;
+    border-radius: 3px;
+  }
+  .custom-tab-button.active {
+    background: black;
+    color: white;
+  }
+  .custom-tab-content {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+</style>
+
+<div class="custom-tab-buttons">
+  {% for block in section.blocks %}
+    <div data-tab="tab-{{ block.id }}" class="custom-tab-button{% if forloop.first %} active{% endif %}" onclick="showTab('tab-{{ block.id }}')">
+      {{ block.settings.tab_name }}
+    </div>
+  {% endfor %}
+</div>
+
+{% for block in section.blocks %}
+  <div id="tab-{{ block.id }}" class="custom-tab-content" style="{% if forloop.first %}display: block;{% else %}display: none;{% endif %}">
+    <div id="novel-embed-container-{{ block.id }}"></div>
+    <script>
+      (async () => {
+        const journeyId = "{{ block.settings.journey_id }}";
+        if (!journeyId) return;
+        const containerId = "novel-embed-container-{{ block.id }}";
+        const embedContainer = document.getElementById(containerId);
+        if (!embedContainer) return;
+        embedContainer.innerHTML = "";
+
+        const response = await fetch(`https://eg2o7r7cs9.execute-api.us-west-2.amazonaws.com/prod/api/v2/journeys/${journeyId}/releases?type=PUBLISH&sort=createdAt&order=DESC&size=1`);
+        const releases = await response.json();
+
+        function loadEmbed(release) {
+          window[`prefetchedJourneyRelease_${journeyId}`] = release;
+          const script = document.createElement('script');
+          script.src = 'https://embed-js.benovel.com/embed/index.js';
+          script.setAttribute('journey-id', journeyId);
+          script.async = true;
+          embedContainer.appendChild(script);
+        }
+
+        if (releases.length && releases[0].isPublished) {
+          loadEmbed(releases[0]);
+        }
+      })();
+    </script>
+  </div>
+{% endfor %}
+
+<script>
+  function showTab(tabId) {
+    document.querySelectorAll('.custom-tab-content').forEach(el => el.style.display = 'none');
+    document.querySelectorAll('.custom-tab-button').forEach(btn => btn.classList.remove('active'));
+
+    document.getElementById(tabId).style.display = 'block';
+    document.querySelector(`.custom-tab-button[data-tab="${tabId}"]`).classList.add('active');
+  }
+</script>

@@ -1,0 +1,154 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "0bff3a60-2d69-46ba-9d61-5b282c09cbb2": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14796886114358__0bff3a60-2d69-46ba-9d61-5b282c09cbb2-16650514866a08221b-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/desktop_professional_landing_page_banner_5-1-2023_revised.png",
+            "image_mobile": "shopify:\/\/shop_images\/7e_professional_landing_page_mobile_banner_65427cc0-c4f9-48a5-b83b-8f893baa361a.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--14796886114358__0bff3a60-2d69-46ba-9d61-5b282c09cbb2-16650514866a08221b-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "164750184654268337": {
+      "type": "advanced-content",
+      "blocks": {
+        "164750184632c2dd43-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>Tis THE SEASON<\/h2>\n<h6>To Uplift Your Clients With MyoLift Treatments<\/h6>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "164750184632c2dd43-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "alt": false
+      }
+    },
+    "475fa447-6538-4fb2-b1e2-0a09d22a2093": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14796886114358__475fa447-6538-4fb2-b1e2-0a09d22a2093-16687734570d91f826-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/gift-card.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/mobile_gift-card.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "template--14796886114358__475fa447-6538-4fb2-b1e2-0a09d22a2093-16687734570d91f826-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "3dd2d19a-c220-4133-9a5a-554672ef3b83": {
+      "type": "testimonials",
+      "blocks": {
+        "template--14796886114358__3dd2d19a-c220-4133-9a5a-554672ef3b83-16650530332ba76b7c-0": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>\"I love how the microcurrent is enhanced by the hyaluronic acid and the copper peptides.<br\/>The 16 oz. size can last through about 6 months of regular use.<br\/>Highly Recommend!\"<\/p><p><strong>★★★★★<\/strong><\/p>",
+            "author": "Allison"
+          }
+        },
+        "template--14796886114358__3dd2d19a-c220-4133-9a5a-554672ef3b83-16650530332ba76b7c-1": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>\"I bought the MyoLift 600 almost two years ago . My clients are very happy with the results as well as myself! I highly recommend it!<\/p><p>Microcurrent is my favorite service and the results are wow!\"<\/p><p><strong>★★★★★<\/strong><\/p>",
+            "author": "Rocio"
+          }
+        },
+        "fa8be9e7-c02b-40bb-8f6c-11c0e15cb162": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>\"Fantastic pro device, this was a great purchase and especially with the bundled items! Impressive device with outstanding results! My clients and I are in love with this treatment!\"<\/p><p><strong>★★★★★<\/strong><\/p>",
+            "author": "Diana"
+          }
+        }
+      },
+      "block_order": [
+        "template--14796886114358__3dd2d19a-c220-4133-9a5a-554672ef3b83-16650530332ba76b7c-0",
+        "template--14796886114358__3dd2d19a-c220-4133-9a5a-554672ef3b83-16650530332ba76b7c-1",
+        "fa8be9e7-c02b-40bb-8f6c-11c0e15cb162"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "round_images": true,
+        "alt": true
+      }
+    },
+    "0eee83e1-387d-4811-94f9-d48ba9baba9e": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14796886114358__0eee83e1-387d-4811-94f9-d48ba9baba9e-16650566428b123efe-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"checkout_btn_phl\">\n<a data-toggle=\"modal\" data-target=\"#checkoutModal\" class=\"btn\">Continue To Checkout<\/a>\n<\/div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14796886114358__0eee83e1-387d-4811-94f9-d48ba9baba9e-16650566428b123efe-1"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": false,
+        "alt": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "0bff3a60-2d69-46ba-9d61-5b282c09cbb2",
+    "164750184654268337",
+    "475fa447-6538-4fb2-b1e2-0a09d22a2093",
+    "3dd2d19a-c220-4133-9a5a-554672ef3b83",
+    "0eee83e1-387d-4811-94f9-d48ba9baba9e"
+  ]
+}

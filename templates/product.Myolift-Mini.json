@@ -1,0 +1,355 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {}
+        },
+        "inventory_status": {
+          "type": "inventory_status",
+          "settings": {}
+        },
+        "share": {
+          "type": "share",
+          "settings": {}
+        },
+        "sales_point": {
+          "type": "sales_point",
+          "settings": {}
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {}
+        },
+        "text": {
+          "type": "text",
+          "settings": {}
+        },
+        "separator": {
+          "type": "separator",
+          "settings": {}
+        },
+        "contact": {
+          "type": "contact",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "price",
+        "variant_picker",
+        "sales_point",
+        "inventory_status",
+        "buy_buttons",
+        "description",
+        "tab",
+        "contact",
+        "share"
+      ],
+      "settings": {}
+    },
+    "1645484861fe46f575": {
+      "type": "featured-product",
+      "blocks": {
+        "1645484861f1f889f8-0": {
+          "type": "price",
+          "settings": {}
+        },
+        "51af925f-a3dc-414c-9ef7-c89196d36715": {
+          "type": "text",
+          "settings": {
+            "text": "Detailed, non-invasive face-lifting microcurrent machine. Target every wrinkle and fine line at the deepest level."
+          }
+        },
+        "d23f91a9-0742-4606-93bb-81becd159cee": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "globe",
+            "text": "Free US Domestic Ground Shipping"
+          }
+        },
+        "716c1730-86a5-435f-9b1a-11e72e74a851": {
+          "type": "inventory_status",
+          "settings": {
+            "inventory_threshold": 10,
+            "inventory_transfers_enable": true
+          }
+        },
+        "1645484861f1f889f8-2": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "color_swatches": false
+          }
+        },
+        "1645484861f1f889f8-3": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        },
+        "1645484861f1f889f8-1": {
+          "type": "description",
+          "settings": {
+            "is_tab": true
+          }
+        },
+        "fa876897-e015-409e-854d-405311fd20a3": {
+          "type": "tab",
+          "settings": {
+            "title": "Shipping information",
+            "content": "<p>Free USA Ground shipment, Orders are processed within 2 business day.<\/p><p>International Orders Ships within 3 business day. <\/p><p>International customers are required to pay Duty with their local custom agency. <\/p>",
+            "page": ""
+          }
+        },
+        "1e299c6c-3eea-4582-b473-721387ad2736": {
+          "type": "tab",
+          "settings": {
+            "title": "What's Included",
+            "content": "<p>• 7E Myolift™ Mini True Microcurrent Machine<\/p><p>• Classic Ball Tip Applicator Probes<\/p><p>• Lead Wire<\/p><p>• Charger<\/p><p>• 4oz ReStore Conductive Gel<\/p><p>• Access to Online Portal<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "1645484861f1f889f8-0",
+        "51af925f-a3dc-414c-9ef7-c89196d36715",
+        "d23f91a9-0742-4606-93bb-81becd159cee",
+        "716c1730-86a5-435f-9b1a-11e72e74a851",
+        "1645484861f1f889f8-2",
+        "1645484861f1f889f8-3",
+        "1645484861f1f889f8-1",
+        "fa876897-e015-409e-854d-405311fd20a3",
+        "1e299c6c-3eea-4582-b473-721387ad2736"
+      ],
+      "settings": {
+        "featured_product": "at-home-microcurrent-devices-myolift-mini-for-face",
+        "product_image_size": "medium",
+        "product_image_type": "slider",
+        "product_zoom_enable": false,
+        "enable_video_looping": true,
+        "product_video_style": "muted",
+        "sku_enable": false
+      }
+    },
+    "16458069061833c6cc": {
+      "type": "slideshow",
+      "blocks": {
+        "1645806906787e69a5-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Product_Icons_Desktop_2x_393cb468-3d10-4116-8da3-3eb01454fb40.png",
+            "image_mobile": "shopify:\/\/shop_images\/Untitled_design_31.png"
+          }
+        }
+      },
+      "block_order": [
+        "1645806906787e69a5-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "164566924518fb45d3": {
+      "type": "slideshow",
+      "blocks": {
+        "1645669245a1195586-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Transition_desktop_2x_f005d4d7-814f-4055-a146-d0fd0f732ad4.png"
+          }
+        }
+      },
+      "block_order": [
+        "1645669245a1195586-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "164566916944e4c352": {
+      "type": "rich-text",
+      "blocks": {
+        "16456691698154c8c4-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Portable & Affordable with Professional Results"
+          }
+        },
+        "16456691698154c8c4-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>⟡  FDA-cleared and clinically proven for beauty professionals.  ⟡<\/p><p>⟡  True microcurrent technology exercises and re-educates the facial muscles. ⟡<\/p><p>⟡ Best microcurrent machine for estheticians looking to expand their menu of services. ⟡<\/p><p>⟡ Treatments are easy to learn and use while still delivering outstanding results. ⟡<\/p><p>⟡ Thanks to its small size, Mini can be used at home or while traveling. ⟡<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "16456691698154c8c4-0",
+        "16456691698154c8c4-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": true
+      }
+    },
+    "16473856163548a56c": {
+      "type": "advanced-content",
+      "blocks": {
+        "f6a6d49c-820d-4d27-b8ff-f9905fb176bd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Myolift-Review-Tina.jpg",
+            "link": "https:\/\/www.youtube.com\/watch?v=n4k6eeG3jio&feature=emb_imp_woyt",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "4c43dab2-66f3-4f88-91e3-917a24780c2d": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "code": "<iframe width=\"550\" height=\"310\" src=\"https:\/\/www.youtube.com\/embed\/-viNlZMa4Mc\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "532f95d2-838e-4ecb-a509-c96bb75afdbf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/7E-Myolift-Review.jpg",
+            "link": "https:\/\/www.youtube.com\/watch?v=-viNlZMa4Mc",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "f6a6d49c-820d-4d27-b8ff-f9905fb176bd",
+        "4c43dab2-66f3-4f88-91e3-917a24780c2d",
+        "532f95d2-838e-4ecb-a509-c96bb75afdbf"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "alt": false
+      }
+    },
+    "1645569511e5cda5e6": {
+      "type": "slideshow",
+      "blocks": {
+        "1645569511ae7b4c38-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "shopify:\/\/blogs\/myolift-reviews",
+            "link_text": "See More",
+            "color_accent": "#231f20",
+            "text_align": "vertical-bottom horizontal-center",
+            "image": "shopify:\/\/shop_images\/ProductPagesB_A_desktop_2x_8a09c785-d6f5-4827-862e-74027956e81b.png",
+            "image_mobile": "shopify:\/\/shop_images\/Productpage_Before_After_mobile.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "1645569511ae7b4c38-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "1645484885b0cba9cd": {
+      "type": "apps",
+      "blocks": {
+        "bb171400-c28e-46a1-b547-838a40b009a4": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "at-home-microcurrent-devices-myolift-mini-for-face",
+            "widget_type": "combined_widget"
+          }
+        }
+      },
+      "block_order": [
+        "bb171400-c28e-46a1-b547-838a40b009a4"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "settings": {}
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {}
+    },
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "sub",
+    "1645484861fe46f575",
+    "16458069061833c6cc",
+    "164566924518fb45d3",
+    "164566916944e4c352",
+    "16473856163548a56c",
+    "product-recommendations",
+    "1645569511e5cda5e6",
+    "collection-return",
+    "1645484885b0cba9cd"
+  ]
+}

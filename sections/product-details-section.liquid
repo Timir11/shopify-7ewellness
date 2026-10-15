@@ -1,0 +1,455 @@
+<!-- Flickity CSS -->
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+<!-- Flickity JS -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
+
+{% schema %}
+{
+  "name": "Product Details Section",
+  "settings": [
+    {
+      "type": "product",
+      "id": "featured_product_1",
+      "label": "Featured Product 1"
+    },
+    {
+      "type": "product",
+      "id": "featured_product_2",
+      "label": "Featured Product 2"
+    },
+    {
+      "type": "product",
+      "id": "featured_product_3",
+      "label": "Featured Product 3"
+    },
+    {
+      "type": "product",
+      "id": "featured_product_4",
+      "label": "Featured Product 4"
+    },
+    {
+      "type": "product",
+      "id": "featured_product_5",
+      "label": "Featured Product 5"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "content_block",
+      "name": "Content Block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading Text",
+          "default": "Heading"
+        },
+        {
+          "type": "image_picker",
+          "id": "circular_image",
+          "label": "Circular Image"
+        },
+        {
+          "type": "range",
+          "id": "percentage",
+          "label": "Percentage",
+          "default": 50,
+          "min": 0,
+          "max": 100,
+          "step": 1
+        },
+        {
+          "type": "textarea",
+          "id": "content_text",
+          "label": "Text Content",
+          "default": "Description or additional text."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Details Section",
+      "category": "Custom Sections"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="product-details-section">
+  <div class="container">
+    <!-- Content Block -->
+    <div class="container_wrp">
+      <div class="container_flex">
+    <div class="part content">
+      {% for block in section.blocks %}
+        {% if block.type == 'content_block' %}
+          <div class="part_one">
+          <h2>{{ block.settings.heading }}</h2>
+          {% if block.settings.circular_image %}
+            <img src="{{ block.settings.circular_image | img_url: '150x150' }}" alt="Circular Image" class="circular-image">
+          {% endif %}
+          </div>
+          <div class="part_two">
+          <p>
+            <span class="percentage-number">{{ block.settings.percentage }}</span>
+            <span class="percentage-symbol">%</span>
+          </p>
+          <p>{{ block.settings.content_text }}</p>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <!-- Featured Product Carousel -->
+     <div class="featured-product">
+      <div class="carousel-container">
+        <div class="carousel-wrapper">
+          <!-- Product Slides -->
+          <div class="wrp_slide">
+          <div class="carousel-slide" data-index="0">
+            <img src="{{ all_products[section.settings.featured_product_1].featured_image | img_url: '400x400' }}" alt="Product 1">
+          </div>
+          <div class="carousel-slide" data-index="1">
+            <img src="{{ all_products[section.settings.featured_product_2].featured_image | img_url: '400x400' }}" alt="Product 2">
+          </div>
+          <div class="carousel-slide" data-index="2">
+            <img src="{{ all_products[section.settings.featured_product_3].featured_image | img_url: '400x400' }}" alt="Product 3">
+          </div>
+          <div class="carousel-slide" data-index="3">
+            <img src="{{ all_products[section.settings.featured_product_4].featured_image | img_url: '400x400' }}" alt="Product 4">
+          </div>
+          <div class="carousel-slide" data-index="4">
+            <img src="{{ all_products[section.settings.featured_product_5].featured_image | img_url: '400x400' }}" alt="Product 5">
+          </div>
+            </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <div class="carousel-controls">
+          <button class="prev-slide">Prev</button>
+          <button class="next-slide">Next</button>
+        </div>
+      </div>
+
+      <!-- Product Details Section (Dynamic Content) -->
+      <div class="product-details">
+        <h3 class="product-title" id="product-title">{{ all_products[section.settings.featured_product_1].title }}</h3>
+        <p class="product-description" id="product-description">{{ all_products[section.settings.featured_product_1].description | strip_html | truncate: 150 }}</p>
+        <p class="product-price" id="product-price">{{ all_products[section.settings.featured_product_1].price | money }}</p>
+        {% assign product = all_products[section.settings.featured_product_1] %}
+        {% assign current_variant = product.selected_or_first_available_variant %}
+        {%- assign productID = product.id -%}
+      {%- assign productID = 'AddToCartForm-' | append: productID -%}
+      {%- form 'product', product, id: productID, class: 'product-single__form small--text-center' -%}
+        <input type="hidden" name="data-product-id" value="{{ product.id }}">        
+          <button
+             {% if product.empty? %}
+              type="button"
+            {% else %}
+              type="submit"
+            {% endif %}
+            name="add"
+            data-add-to-cart
+            class="coll_product_cart btn add-to-cart 123"
+            {% unless current_variant.available %}
+              disabled="disabled"
+            {% endunless %}
+            >
+            <span data-add-to-cart-text="" data-default-text="Add to cart">
+              Add to cart
+            </span>
+          </button>   
+          <!-- <input type="hidden" value="{{ product.selected_or_first_available_variant.id }}" name="id">  -->
+        <select
+          name="id"
+          id="ProductSelect-{{ product.id }}"
+          class="product-single__variants no-js"
+          data-product-select
+        >
+          {%- for variant in product.variants -%}
+            {%- if variant.available -%}
+              <option
+                value="{{ variant.id }}"
+                {%- if variant == product.selected_or_first_available_variant -%}
+                  selected="selected"
+                {%- endif -%}
+              >
+                {{ variant.title }} - {{ variant.price | money_with_currency }}
+              </option>
+            {%- else -%}
+              <option disabled="disabled">{{ variant.title }} - {{ 'products.product.sold_out' | t }}</option>
+            {%- endif -%}
+          {%- endfor -%}
+        </select>
+          <input type="hidden" value="1" name="quantity"> 
+          {%- unless product.empty? -%}
+          <textarea
+            class="hide"
+            aria-hidden="true"
+            aria-label="Product JSON"
+            data-variant-json
+          >{{ product.variants | json }}</textarea>
+          {%- if product.options.size > 1 -%}
+            <textarea
+              class="hide"
+              aria-hidden="true"
+              aria-label="Variant JSON"
+              data-current-variant-json
+            >{{ current_variant | json }}</textarea>
+          {%- endif -%}
+        {%- endunless -%}
+        {% endform %}
+      </div>
+    </div> 
+
+
+
+        
+      </div>
+      </div>
+  </div>
+</div>
+
+<style>
+  .container_wrp{
+    width:100%;
+  }
+.product-details-section {
+  background: rgba(254, 251, 255, 1);
+  padding: 60px 20px;
+}
+.container_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.container {
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  width:100%;
+  /* max-width:1500px; */
+}
+
+.part.content {
+  flex: 0 0 30%;
+  text-align: center;
+}
+
+.circular-image {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.part.content .percentage-number {
+  font-size: 120px;
+  font-weight: bold;
+}
+
+.part.content .percentage-symbol {
+  font-size: 47px;
+  vertical-align: top;
+}
+
+.featured-product {
+  flex: 0 0 70%;
+  display: flex;
+  gap: 20px;
+}
+
+.carousel-container {
+ width: 100%;
+   /* overflow: hidden;
+  position: relative; */
+  flex: 0 0 50%;
+} 
+
+.carousel-wrapper {
+   /* display: flex; */
+  /* transition: transform 0.5s ease-in-out; */
+  width:100%;
+}
+
+.carousel-slide {
+  /* min-width: 100%; */
+  max-width: 100%;
+  width:100%;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.prev-slide, .next-slide {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.product-details {
+  flex: 0 0 50%;
+  text-align: left;
+}
+
+.product-details .product-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.product-details .product-description {
+  font-size: 16px;
+}
+
+.product-details .product-price {
+  font-size: 20px;
+  color: green;
+}
+
+.add-to-cart {
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.wrp_slide{
+  width:100%;
+  /* max-width:50%; */
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+}
+  .wrp_slide {
+    display: flex;
+}
+  .carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 69%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+  .part_one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  .customer_images .flickity-button {    
+    background: transparent;
+  } 
+  .container_flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+ 
+
+</style>
+<script>
+// document.addEventListener('DOMContentLoaded', function() {
+//   const prevButton = document.querySelector('.prev-slide');
+//   const nextButton = document.querySelector('.next-slide');
+//   const carouselWrapper = document.querySelector('.carousel-wrapper');
+//   const slides = document.querySelectorAll('.carousel-slide');
+//   const productTitle = document.getElementById('product-title');
+//   const productDescription = document.getElementById('product-description');
+//   const productPrice = document.getElementById('product-price');
+//   const addToCartButton = document.getElementById('add-to-cart');
+  
+//   let currentIndex = 0;
+
+//   // Function to update carousel and product details dynamically
+//   function updateCarousel() {
+//     const offset = -currentIndex * 100; // Move the carousel
+//     carouselWrapper.style.transform = `translateX(${offset}%)`;
+
+//     // Dynamically update product details based on the carousel index
+//     const currentProduct = all_products[section.settings['featured_product_' + (currentIndex + 1)]];
+//     productTitle.textContent = currentProduct.title;
+//     productDescription.textContent = currentProduct.description | strip_html | truncate: 150;
+//     productPrice.textContent = currentProduct.price | money;
+
+//     addToCartButton.setAttribute('onclick', `Shopify.addItem(${currentProduct.id}, 1);`);
+//   }
+
+//   // Navigate to the previous slide
+//   prevButton.addEventListener('click', function() {
+//     currentIndex = (currentIndex === 0) ? slides.length - 1 : currentIndex - 1;
+//     updateCarousel();
+//   });
+
+//   // Navigate to the next slide
+//   nextButton.addEventListener('click', function() {
+//     currentIndex = (currentIndex === slides.length - 1) ? 0 : currentIndex + 1;
+//     updateCarousel();
+//   });
+
+//   // Initialize carousel and product details
+//   updateCarousel();
+// });
+// $(document).ready(function() {
+//   // Example: Initialize the slick slider after window load
+//     console.log("Window has fully loaded!");
+//  var flkty = new Flickity('.wrp_slide', {
+//       cellAlign: 'center',   // Center the slides
+//       contain: true,         // Ensure the carousel does not overflow at the edges
+//       wrapAround: true,      // Enable continuous looping
+//       // groupCells: 1,     // Show only one slide at a time
+//       fullscreen: true,
+//       prevNextButtons: false, // Show next/prev buttons
+//       pageDots: true,        // Show navigation dots
+//       autoPlay: false        // Optional: Enable auto-play if desired
+//     });
+// });
+
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var elem = document.querySelector('#product-carousel');
+    var flkty = new Flickity(elem, {
+      cellAlign: 'left',
+      contain: true,
+      wrapAround: true,
+      prevNextButtons: false,
+      pageDots: false
+    });
+
+    document.querySelector('.prev-slide').addEventListener('click', function() {
+      flkty.previous();
+    });
+
+    document.querySelector('.next-slide').addEventListener('click', function() {
+      flkty.next();
+    });
+  });
+</script>
+
+
+</script>

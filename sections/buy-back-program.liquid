@@ -1,0 +1,1059 @@
+{% comment %}
+  7E Wellness — Buy Back Program
+  Full Shopify 2.0 Section with Theme Editor settings
+  File: sections/buy-back-program.liquid
+{% endcomment %}
+
+{{ 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap' | stylesheet_tag }}
+
+<style>
+.bb { --black:#111111; --bg:#F5F5F5; --border:#231F20; --border-light:#E0DDDA; --text:#1C1C1C; --text-2:#5A5652; --muted:#9A9490; --green:#4A7C5C; --red:#C0504A; --grad:linear-gradient(90deg,#E7DCA7 0%,#7B6830 100%); --pill:999px; --r-sm:6px; --r-md:10px; }
+.bb * { box-sizing:border-box; margin:0; padding:0; }
+.bb { font-family:'Inter',sans-serif; color:var(--text); font-size:14px; line-height:1.65; -webkit-font-smoothing:antialiased; overflow-x:hidden; }
+.bb h1,.bb h2,.bb h3 { font-family:'Open Sans',sans-serif; font-weight:600; line-height:1.18; color:var(--text); }
+.bb a { text-decoration:none; }
+
+/* Reveal */
+.bb .rv { opacity:0; transform:translateY(28px); transition:opacity .55s cubic-bezier(.22,1,.36,1),transform .55s cubic-bezier(.22,1,.36,1); }
+.bb .rv.on { opacity:1; transform:translateY(0); }
+.bb .d1{transition-delay:.08s} .bb .d2{transition-delay:.16s} .bb .d3{transition-delay:.24s} .bb .d4{transition-delay:.32s}
+
+/* Buttons */
+.bb .btn-b { display:inline-flex;align-items:center;gap:7px;background:var(--black);color:#fff;font-family:'Open Sans',sans-serif;font-size:13px;font-weight:600;padding:13px 28px;border-radius:var(--pill);border:none;cursor:pointer;text-decoration:none;transition:background .2s,transform .15s,box-shadow .2s;position:relative;overflow:hidden; }
+.bb .btn-b:hover { background:#2e2e2e;transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.18); }
+.bb .btn-o { display:inline-flex;align-items:center;gap:7px;background:transparent;color:var(--text);font-family:'Open Sans',sans-serif;font-size:13px;font-weight:600;padding:12px 26px;border-radius:var(--pill);border:1.5px solid var(--border);cursor:pointer;text-decoration:none;transition:background .2s,color .2s,transform .15s; }
+.bb .btn-o:hover { background:var(--black);color:#fff;transform:translateY(-2px); }
+.bb .eyebrow { display:inline-block;font-family:'Inter',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--text-2);margin-bottom:10px; }
+.bb .sec-hdr { text-align:center;max-width:560px;margin:0 auto 48px; }
+.bb .sec-hdr h2 { font-size:32px;font-weight:600;letter-spacing:-.018em;margin-bottom:10px; }
+.bb .sec-hdr p { font-size:15px;color:var(--text-2); }
+
+/* S1 Announce */
+.bb-announce { text-align:center;padding:11px 20px;font-family:'Inter',sans-serif;font-size:12px;font-weight:500;letter-spacing:.05em; }
+.bb-announce strong { font-weight:700; }
+
+/* S2 Hero */
+.bb-hero { padding:76px 40px 84px;border-bottom:1px solid var(--border-light); }
+.bb-hero-in { max-width:1120px;margin:0 auto;display:grid;grid-template-columns:1fr 440px;gap:64px;align-items:center; }
+.bb-prog-tag { display:inline-flex;align-items:center;background:#fff;border:1px solid var(--border);border-radius:var(--pill);padding:5px 14px;margin-bottom:22px;font-family:'Inter',sans-serif;font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--text-2); }
+.bb-hero h1 { font-size:50px;font-weight:600;letter-spacing:-.025em;margin-bottom:18px; }
+.bb-hero-sub { font-size:15px;color:var(--text-2);line-height:1.72;max-width:440px;margin-bottom:30px; }
+.bb-price-row { display:flex;align-items:baseline;gap:14px;margin-bottom:34px;flex-wrap:wrap; }
+.bb-p-was { font-size:18px;color:var(--muted);text-decoration:line-through; }
+.bb-p-now { font-family:'Open Sans',sans-serif;font-size:52px;font-weight:700;color:var(--text);letter-spacing:-.03em;line-height:1; }
+.bb-p-save { background:var(--red);color:#fff;font-family:'Inter',sans-serif;font-size:11px;font-weight:700;padding:4px 11px;border-radius:var(--pill);align-self:center; }
+.bb-hero-ctas { display:flex;gap:12px;flex-wrap:wrap;align-items:center; }
+.bb-hcard { background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:28px;box-shadow:0 6px 20px rgba(0,0,0,.1);transition:transform .3s,box-shadow .3s; }
+.bb-hcard:hover { transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,0,.12); }
+.bb-hcard-tag { font-family:'Inter',sans-serif;font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:14px; }
+.bb-hcard-img { border-radius:var(--r-sm);overflow:hidden;margin-bottom:20px; }
+.bb-hcard-img img { width:100%;height:230px;object-fit:contain;display:block; }
+.bb-hcard-img-placeholder { background:var(--bg);border:1.5px dashed var(--border-light);border-radius:var(--r-sm);height:230px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--muted);font-size:12px;text-align:center;gap:8px;margin-bottom:20px; }
+.bb-pills { display:flex;gap:8px;flex-wrap:wrap; }
+.bb-pill { background:var(--bg);border:1px solid var(--border-light);border-radius:var(--pill);padding:6px 13px;font-family:'Inter',sans-serif;font-size:12px;font-weight:600;color:var(--text); }
+
+/* S3 Trust — Marquee Slider */
+.bb-trust { border-bottom:1px solid var(--border-light);border-top:1px solid var(--border-light);background:#fff;padding:0;overflow:hidden; }
+.bb-trust-track-wrap { overflow:hidden;position:relative; }
+.bb-trust-track-wrap::before,.bb-trust-track-wrap::after { content:'';position:absolute;top:0;bottom:0;width:60px;z-index:2;pointer-events:none; }
+.bb-trust-track-wrap::before { left:0;background:linear-gradient(to right,#fff,transparent); }
+.bb-trust-track-wrap::after { right:0;background:linear-gradient(to left,#fff,transparent); }
+.bb-trust-track { display:flex;width:max-content;animation:bb-marquee 28s linear infinite; }
+.bb-trust-track:hover { animation-play-state:paused; }
+.bb-trust-set { display:flex;align-items:stretch; }
+.bb-ti { display:flex;align-items:center;gap:12px;padding:14px 32px;border-right:1px solid var(--border-light);white-space:nowrap;flex-shrink:0; }
+.bb-ti-icon { font-size:20px;flex-shrink:0; }
+.bb-ti strong { display:block;font-family:'Open Sans',sans-serif;font-size:12px;font-weight:600;color:var(--text); }
+.bb-ti span { font-size:11px;color:var(--muted); }
+@keyframes bb-marquee { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
+
+/* S4 Eligibility */
+.bb-elig { padding:76px 40px;background:#fff; }
+.bb-elig-in { max-width:1120px;margin:0 auto; }
+.bb-elig-grid { display:grid;grid-template-columns:1fr auto 1fr;gap:24px;align-items:center; }
+.bb-trade-pair { display:grid;grid-template-columns:1fr 1fr;gap:16px; }
+.bb-trade-card { background:var(--bg);border:1px solid var(--border);border-radius:var(--r-md);padding:26px 22px;position:relative;transition:box-shadow .25s,transform .25s; }
+.bb-trade-card:hover { box-shadow:0 6px 20px rgba(0,0,0,.1);transform:translateY(-3px); }
+.bb-trade-badge { position:absolute;top:-11px;left:50%;transform:translateX(-50%);background:var(--red);color:#fff;font-family:'Inter',sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 11px;border-radius:var(--pill);white-space:nowrap;z-index:2; }
+.bb-trade-card { padding-top:32px; }
+.bb-trade-img { background:#fff;border:1px solid var(--border-light);border-radius:var(--r-sm);height:120px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;overflow:hidden; }
+.bb-trade-img img { width:100%;height:100%;object-fit:contain; }
+.bb-trade-img-placeholder { background:#fff;border:1px solid var(--border-light);border-radius:var(--r-sm);height:120px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:16px; }
+.bb-trade-name { font-family:'Open Sans',sans-serif;font-size:16px;font-weight:600;margin-bottom:6px; }
+.bb-trade-desc { font-size:12px;color:var(--text-2);line-height:1.55; }
+.bb-trade-list { list-style:none;margin-top:14px;display:flex;flex-direction:column;gap:7px; }
+.bb-trade-list li { font-size:12px;color:var(--text-2);display:flex;gap:8px;align-items:flex-start; }
+.bb-trade-list li::before { content:'✓';color:var(--green);font-weight:700;flex-shrink:0; }
+.bb-arrow { display:flex;flex-direction:column;align-items:center;gap:8px;padding:0 8px; }
+.bb-arrow-c { width:44px;height:44px;background:var(--black);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:18px; }
+.bb-arrow-lbl { font-family:'Inter',sans-serif;font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);text-align:center; }
+.bb-dest-card { background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:28px 24px;position:relative;transition:box-shadow .25s,transform .25s; }
+.bb-dest-card:hover { box-shadow:0 6px 20px rgba(0,0,0,.1);transform:translateY(-3px); }
+.bb-dest-badge { position:absolute;top:-11px;left:50%;transform:translateX(-50%);background:linear-gradient(90deg,#E7DCA7,#7B6830);color:var(--black);font-family:'Inter',sans-serif;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:3px 11px;border-radius:var(--pill);white-space:nowrap; }
+.bb-dest-img { border-radius:var(--r-sm);height:160px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;overflow:hidden;background:var(--bg);border:1px solid var(--border-light); }
+.bb-dest-img img { width:100%;height:100%;object-fit:contain; }
+
+/* S5 Steps */
+.bb-how { padding:76px 40px;background:var(--bg);border-top:1px solid var(--border-light);border-bottom:1px solid var(--border-light); }
+.bb-how-in { max-width:1120px;margin:0 auto; }
+.bb-steps { display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative;margin-top:48px; }
+.bb-steps::before { content:'';position:absolute;top:22px;left:10%;right:10%;height:2px;background:var(--border-light);z-index:0; }
+.bb-step { display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 16px;position:relative;z-index:1; }
+.bb-step-num { width:44px;height:44px;background:var(--black);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Open Sans',sans-serif;font-size:15px;font-weight:700;color:#fff;margin-bottom:18px;flex-shrink:0;transition:transform .25s; }
+.bb-step:hover .bb-step-num { transform:scale(1.12); }
+.bb-step-icon { font-size:26px;margin-bottom:12px; }
+.bb-step-title { font-family:'Open Sans',sans-serif;font-size:15px;font-weight:600;margin-bottom:8px; }
+.bb-step-desc { font-size:13px;color:var(--text-2);line-height:1.6; }
+
+/* S6 Table */
+.bb-compare { padding:76px 40px;background:#fff; }
+.bb-compare-in { max-width:1120px;margin:0 auto; }
+.bb-tbl-wrap { overflow-x:auto;-webkit-overflow-scrolling:touch; }
+.bb-tbl { width:100%;border-collapse:collapse;margin-top:40px;border:1px solid var(--border);border-radius:var(--r-md);overflow:hidden; }
+.bb-tbl thead tr { background:var(--bg); }
+.bb-tbl th { padding:16px 20px;text-align:left;font-family:'Open Sans',sans-serif;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--text-2);border-bottom:1px solid var(--border); }
+.bb-tbl th.tw { background:#f0ede8;color:var(--text); }
+.bb-tbl td { padding:14px 20px;font-size:13px;border-bottom:1px solid var(--border-light);vertical-align:middle; }
+.bb-tbl td.tw { background:#faf9f7;font-weight:500; }
+.bb-tbl tbody tr:last-child td { border-bottom:none; }
+.bb-tbl tbody tr:hover td { background:#fafafa; }
+.bb-tbl tbody tr:hover td.tw { background:#f5f3f0; }
+.bb-chk { color:#4A7C5C;font-weight:700; } .bb-x { color:#9A9490; }
+.bb-up-pill { background:linear-gradient(90deg,#E7DCA7,#7B6830);color:#111;font-family:'Inter',sans-serif;font-size:9px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:2px 8px;border-radius:999px;margin-left:6px; }
+
+/* S7 Feature Cards */
+.bb-features { padding:76px 40px;background:var(--bg); }
+.bb-feat-in { max-width:1120px;margin:0 auto; }
+.bb-feat-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:48px; }
+/* Mobile slider */
+.bb-feat-slider-wrap { display:none;position:relative;margin-top:48px; }
+.bb-feat-slider { display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:4px; }
+.bb-feat-slider::-webkit-scrollbar { display:none; }
+.bb-feat-slider .bb-fc { flex:0 0 82vw;max-width:320px;scroll-snap-align:start; }
+.bb-feat-arrow { position:absolute;top:50%;transform:translateY(-50%);width:36px;height:36px;background:#fff;border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;cursor:pointer;z-index:4;box-shadow:0 2px 8px rgba(0,0,0,.12);transition:background .2s; }
+.bb-feat-arrow:hover { background:var(--black);color:#fff; }
+.bb-feat-arrow.prev { left:-10px; }
+.bb-feat-arrow.next { right:-10px; }
+.bb-feat-dots { display:flex;justify-content:center;gap:6px;margin-top:14px; }
+.bb-feat-dot { width:6px;height:6px;border-radius:50%;background:var(--border-light);transition:background .2s,transform .2s; }
+.bb-feat-dot.active { background:var(--black);transform:scale(1.3); }
+.bb-fc { position:relative;border-radius:var(--r-md);overflow:hidden;height:280px;border:1px solid var(--border);cursor:pointer; }
+.bb-fc-bg { position:absolute;inset:0;background:var(--bg);display:flex;align-items:center;justify-content:center;transition:transform .45s cubic-bezier(.22,1,.36,1); }
+.bb-fc-bg img { width:100%;height:100%;object-fit:cover; }
+.bb-fc:hover .bb-fc-bg { transform:scale(1.04); }
+.bb-fc-scrim { position:absolute;inset:0;background:linear-gradient(to top,rgba(35,31,32,.85) 0%,rgba(35,31,32,.15) 60%,rgba(35,31,32,0) 100%);transition:background .35s; }
+.bb-fc:hover .bb-fc-scrim { background:rgba(35,31,32,.82); }
+.bb-fc-def { position:absolute;bottom:0;left:0;right:0;padding:20px 22px 22px;z-index:2;transition:opacity .28s,transform .35s cubic-bezier(.22,1,.36,1); }
+.bb-fc:hover .bb-fc-def { opacity:0;transform:translateY(10px);pointer-events:none; }
+.bb-fc-def-icon { width:40px;height:40px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);border-radius:var(--r-sm);display:flex;align-items:center;justify-content:center;font-size:18px;margin-bottom:10px; }
+.bb-fc-def-title { font-family:'Open Sans',sans-serif;font-size:17px;font-weight:600;color:#fff; }
+.bb-fc-hov { position:absolute;inset:0;padding:26px 22px;z-index:3;display:flex;flex-direction:column;justify-content:center;opacity:0;transform:translateY(16px);transition:opacity .32s ease .05s,transform .38s cubic-bezier(.22,1,.36,1) .05s;pointer-events:none; }
+.bb-fc:hover .bb-fc-hov { opacity:1;transform:translateY(0);pointer-events:auto; }
+.bb-fc-hov-icon { width:40px;height:40px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:var(--r-sm);display:flex;align-items:center;justify-content:center;font-size:18px;margin-bottom:14px; }
+.bb-fc-hov-title { font-family:'Open Sans',sans-serif;font-size:16px;font-weight:600;color:#fff;margin-bottom:10px; }
+.bb-fc-hov-desc { font-size:13px;color:rgba(255,255,255,.72);line-height:1.65;margin-bottom:14px; }
+.bb-fc-tags { display:flex;flex-wrap:wrap;gap:6px; }
+.bb-tag { background:rgba(255,255,255,.12);color:rgba(255,255,255,.8);font-family:'Inter',sans-serif;font-size:10px;font-weight:600;letter-spacing:.06em;padding:3px 9px;border-radius:var(--pill);border:1px solid rgba(255,255,255,.2); }
+
+/* S8 Offer Box */
+.bb-offer-sec { padding:76px 40px;background:#fff; }
+.bb-offer-box { max-width:1060px;margin:0 auto;background:#231F20;border-radius:var(--r-md);padding:60px 64px;position:relative;overflow:hidden;box-shadow:0 8px 40px rgba(0,0,0,.32);transition:box-shadow .3s; }
+.bb-offer-box::before { content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#E7DCA7,#7B6830); }
+.bb-offer-inner { display:grid;grid-template-columns:1fr 380px;gap:56px;align-items:center; }
+.bb-offer-ey { font-family:'Inter',sans-serif;font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:16px; }
+.bb-offer-h { font-family:'Open Sans',sans-serif;font-size:40px;font-weight:600;color:#ffffff !important;letter-spacing:-.02em;line-height:1.18;margin-bottom:12px; }
+.bb .bb-offer-h, .bb-offer-box h2 { color:#ffffff !important; }
+.bb-offer-body { font-size:15px;color:rgba(255,255,255,.55);margin-bottom:36px; }
+.bb-offer-strip { background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--r-md);padding:24px 32px;display:flex;align-items:center;gap:28px;margin-bottom:32px;flex-wrap:wrap; }
+.bb-op-lbl { font-family:'Inter',sans-serif;font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px;color:rgba(255,255,255,.38); }
+.bb-op-was { font-family:'Open Sans',sans-serif;font-size:26px;font-weight:600;color:rgba(255,255,255,.22);text-decoration:line-through; }
+.bb-op-now { font-family:'Open Sans',sans-serif;font-size:52px;font-weight:700;color:#fff;letter-spacing:-.03em;line-height:1; }
+.bb-op-div { color:rgba(255,255,255,.18);font-size:22px; }
+.bb-op-save { background:linear-gradient(90deg,#E7DCA7,#7B6830);color:#111;font-family:'Inter',sans-serif;font-size:12px;font-weight:700;padding:8px 16px;border-radius:var(--pill);white-space:nowrap; }
+.bb-offer-ctas { display:flex;gap:12px;flex-wrap:wrap; }
+.bb-offer-fine { margin-top:18px;font-family:'Inter',sans-serif;font-size:11px;color:rgba(255,255,255,.22); }
+.bb-offer-box .btn-b { background:#fff;color:#111; } .bb-offer-box .btn-b:hover { background:#e8e8e8; }
+.bb-offer-box .btn-o { border-color:rgba(255,255,255,.28);color:rgba(255,255,255,.75); } .bb-offer-box .btn-o:hover { background:rgba(255,255,255,.12);color:#fff; }
+.bb-offer-img-col { display:flex;align-items:center;justify-content:center; }
+.bb-offer-img-placeholder { background:rgba(255,255,255,.05);border:1.5px dashed rgba(255,255,255,.2);border-radius:var(--r-md);height:280px;width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;color:rgba(255,255,255,.3);font-size:12px;gap:8px;text-align:center; }
+
+/* S9 Form */
+.bb-form-sec { background:var(--bg);padding:76px 40px;overflow:visible; }
+.bb-form-in { max-width:1120px;margin:0 auto;display:grid;grid-template-columns:1fr 480px;gap:60px;align-items:start;overflow:visible; }
+.bb-form-left { position:-webkit-sticky;position:sticky;top:32px;align-self:start;max-height:calc(100vh - 64px);overflow:visible; }
+.bb-form-left h2 { font-size:32px;font-weight:600;letter-spacing:-.018em;margin-bottom:14px; }
+.bb-form-left>p { font-size:14px;color:var(--text-2);margin-bottom:28px;line-height:1.7; }
+.bb-form-right { min-height:0; }
+.bb-req-list { list-style:none;display:flex;flex-direction:column;gap:11px;margin-bottom:28px; }
+.bb-req-list li { display:flex;gap:11px;align-items:flex-start;font-size:13px; }
+.bb-chk-icon { width:20px;height:20px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:11px;font-weight:700;flex-shrink:0;margin-top:1px; }
+.bb-cond-note { background:#fff;border:1px solid var(--border-light);border-left:3px solid var(--border);border-radius:0 var(--r-sm) var(--r-sm) 0;padding:16px 18px; }
+.bb-cond-note strong { display:block;font-family:'Open Sans',sans-serif;font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-bottom:5px; }
+.bb-cond-note p { font-size:12px;color:var(--text-2);margin:0;line-height:1.6; }
+.bb-form-card { background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:36px 32px;box-shadow:0 1px 4px rgba(0,0,0,.08); }
+.bb-form-title { font-family:'Open Sans',sans-serif;font-size:20px;font-weight:600;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid var(--border-light); }
+.bb-fg { margin-bottom:16px; }
+.bb-lbl { display:block;font-family:'Inter',sans-serif;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--text-2);margin-bottom:6px; }
+.bb-req-star { color:var(--red);margin-left:2px; }
+.bb-input { width:100%;background:var(--bg);border:1px solid var(--border-light);border-radius:var(--r-sm);padding:11px 14px;font-family:'Inter',sans-serif;font-size:13px;color:var(--text);transition:border-color .2s,background .2s,box-shadow .2s;appearance:none;outline:none; }
+.bb-input:focus { border-color:var(--border);background:#fff;box-shadow:0 0 0 3px rgba(35,31,32,.07); }
+.bb-sel-wrap { position:relative; } .bb-sel-wrap::after { content:'▾';position:absolute;right:13px;top:50%;transform:translateY(-50%);color:var(--muted);font-size:12px;pointer-events:none; }
+.bb-upload { background:var(--bg);border:2px dashed var(--border-light);border-radius:var(--r-sm);padding:22px;text-align:center;cursor:pointer;transition:border-color .2s,background .2s; }
+.bb-upload:hover { border-color:var(--border);background:#ececec; }
+.bb-submit { width:100%;margin-top:20px;padding:15px;font-size:14px;justify-content:center; }
+.bb-form-fine { font-family:'Inter',sans-serif;font-size:11px;color:var(--muted);text-align:center;margin-top:10px; }
+
+/* S10 Reviews */
+.bb-reviews { padding:76px 40px;background:#fff; }
+.bb-reviews-in { max-width:1120px;margin:0 auto; }
+.bb-rev-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px; }
+.bb-rev-card { background:var(--bg);border:1px solid var(--border-light);border-radius:var(--r-md);padding:26px 22px;transition:box-shadow .25s,transform .25s; }
+.bb-rev-card:hover { box-shadow:0 6px 20px rgba(0,0,0,.1);transform:translateY(-3px); }
+.bb-stars { color:#B8945A;font-size:13px;letter-spacing:3px;margin-bottom:12px; }
+.bb-rev-text { font-size:13px;font-style:italic;color:var(--text);line-height:1.72;margin-bottom:16px; }
+.bb-rev-row { display:flex;align-items:center;gap:10px; }
+.bb-av { width:32px;height:32px;background:var(--border-light);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Open Sans',sans-serif;font-size:12px;font-weight:600;color:var(--text-2);flex-shrink:0; }
+.bb-rev-name { font-family:'Open Sans',sans-serif;font-size:12px;font-weight:600;color:var(--text); }
+.bb-rev-tag { font-size:11px;color:var(--muted); }
+
+/* S10b Stats */
+.bb-stats { padding:44px 40px; }
+.bb-stats-in { max-width:1120px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr); }
+.bb-stat { text-align:center;padding:0 20px;border-right:1px solid rgba(255,255,255,.1); }
+.bb-stat:last-child { border-right:none; }
+.bb-stat-num { font-family:'Open Sans',sans-serif;font-size:38px;font-weight:700;color:#fff;letter-spacing:-.02em;display:block;line-height:1;margin-bottom:6px; }
+.bb-stat-lbl { font-family:'Inter',sans-serif;font-size:11px;font-weight:500;color:rgba(255,255,255,.45);letter-spacing:.06em;text-transform:uppercase; }
+
+/* S11 FAQ */
+.bb-faq { padding:76px 40px;background:var(--bg); }
+.bb-faq-in { max-width:720px;margin:0 auto; }
+.bb-faq-item { background:#fff;border:1px solid var(--border-light);border-radius:var(--r-sm);margin-bottom:8px;overflow:hidden;transition:box-shadow .2s; }
+.bb-faq-item:hover { box-shadow:0 1px 4px rgba(0,0,0,.08); }
+.bb-faq-item.open { border-color:var(--border); }
+.bb-faq-q { width:100%;display:flex;justify-content:space-between;align-items:center;padding:18px 20px;font-family:'Open Sans',sans-serif;font-size:14px;font-weight:600;color:var(--text);cursor:pointer;background:none;border:none;text-align:left;transition:background .15s; }
+.bb-faq-q:hover { background:var(--bg); }
+.bb-faq-tog { width:26px;height:26px;background:var(--bg);border:1px solid var(--border-light);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:15px;color:var(--text-2);flex-shrink:0;transition:background .2s,color .2s,transform .2s; }
+.bb-faq-item.open .bb-faq-tog { background:var(--black);color:#fff;border-color:var(--black);transform:rotate(45deg); }
+.bb-faq-a { font-family:'Inter',sans-serif;font-size:13px;color:var(--text-2);line-height:1.72;padding:0 20px;max-height:0;overflow:hidden;transition:max-height .32s cubic-bezier(.22,1,.36,1),padding .22s; }
+.bb-faq-item.open .bb-faq-a { max-height:300px;padding:0 20px 18px; }
+
+/* S12 Final CTA */
+.bb-final { padding:96px 40px;background:#fff;text-align:center;border-top:1px solid var(--border-light); }
+.bb-final h2 { font-size:42px;font-weight:600;letter-spacing:-.022em;margin-bottom:14px; }
+.bb-final>p { font-size:15px;color:var(--text-2);max-width:460px;margin:0 auto 36px; }
+.bb-final-ctas { display:flex;gap:12px;justify-content:center;flex-wrap:wrap; }
+.bb-final-note { margin-top:20px;font-size:11px;color:var(--muted); }
+
+@media(max-width:960px){
+  .bb-hero,.bb-elig,.bb-how,.bb-compare,.bb-features,.bb-offer-sec,.bb-form-sec,.bb-reviews,.bb-stats,.bb-faq,.bb-final,.bb-trust{padding-left:28px;padding-right:28px}
+  .bb-trust{padding-left:0;padding-right:0}
+  .bb-hero{padding-top:56px;padding-bottom:60px} .bb-hero-in{grid-template-columns:1fr} .bb-hcard{display:none} .bb-hero h1{font-size:38px} .bb-p-now{font-size:44px}
+  .bb-elig-grid{grid-template-columns:1fr;gap:20px} .bb-arrow{flex-direction:row;justify-content:center} .bb-arrow-lbl{display:none}
+  .bb-steps{grid-template-columns:1fr 1fr;gap:32px} .bb-steps::before{display:none}
+  .bb-feat-grid{grid-template-columns:1fr 1fr}
+  .bb-form-in{grid-template-columns:1fr;gap:40px} .bb-form-left{position:static;}
+  .bb-rev-grid{grid-template-columns:1fr 1fr}
+  .bb-stats-in{grid-template-columns:1fr 1fr} .bb-stat{border-right:none;border-bottom:1px solid rgba(255,255,255,.1);padding:16px 0} .bb-stat:nth-child(1),.bb-stat:nth-child(2){border-right:1px solid rgba(255,255,255,.1)} .bb-stat:nth-child(3),.bb-stat:nth-child(4){border-bottom:none} .bb-stat-num{font-size:32px}
+  .bb-offer-box{padding:44px 32px} .bb-offer-h{font-size:32px}
+  .bb-final h2{font-size:32px} .bb-sec-hdr h2{font-size:28px}
+}
+@media(max-width:600px){
+  .bb-hero,.bb-elig,.bb-how,.bb-compare,.bb-features,.bb-offer-sec,.bb-form-sec,.bb-reviews,.bb-stats,.bb-faq,.bb-final{padding-left:20px;padding-right:20px}
+  .bb-trust{padding-left:0;padding-right:0}
+  .bb-hero{padding-top:44px;padding-bottom:48px} .bb-hero h1{font-size:30px} .bb-p-now{font-size:40px} .bb-hero-ctas{flex-direction:column} .bb-hero-ctas .btn-b,.bb-hero-ctas .btn-o{width:100%;justify-content:center}
+  .bb-trade-pair{grid-template-columns:1fr}
+  .bb-trade-card{padding-top:36px;margin-top:14px}
+  .bb-steps{grid-template-columns:1fr;gap:28px} .bb-step{flex-direction:row;text-align:left;align-items:flex-start;gap:16px;padding:0} .bb-step-num{margin-bottom:0;flex-shrink:0} .bb-step-icon{display:none}
+  .bb-tbl{min-width:520px}
+  .bb-feat-grid{display:none}
+  .bb-feat-slider-wrap{display:block}
+  .bb-fc{height:280px}
+  .bb-offer-box{padding:36px 22px} .bb-offer-h{font-size:26px} .bb-offer-strip{flex-direction:column;align-items:center;gap:16px} .bb-op-div{display:none} .bb-offer-ctas{flex-direction:column;align-items:stretch} .bb-offer-ctas .btn-b,.bb-offer-ctas .btn-o{width:100%;justify-content:center} .bb-offer-inner{grid-template-columns:1fr}
+  .bb-form-card{padding:24px 18px}
+  .bb-rev-grid{grid-template-columns:1fr}
+  .bb-final h2{font-size:26px} .bb-final-ctas{flex-direction:column;align-items:stretch} .bb-final-ctas .btn-b,.bb-final-ctas .btn-o{width:100%;justify-content:center}
+  .bb-sec-hdr h2{font-size:24px}
+}
+@media(max-width:390px){
+  .bb-hero h1{font-size:26px} .bb-p-now{font-size:36px} .bb-offer-h{font-size:22px} .bb-final h2{font-size:22px} .bb-sec-hdr h2{font-size:22px} .bb-stat-num{font-size:26px}
+}
+@media(hover:none){
+  .bb-fc-scrim{background:rgba(35,31,32,.75)!important} .bb-fc-def{opacity:0!important} .bb-fc-hov{opacity:1!important;transform:translateY(0)!important}
+}
+@keyframes bb-ripple{to{transform:scale(2.5);opacity:0}}
+</style>
+
+<div class="bb">
+
+{% comment %} S1 — ANNOUNCEMENT BAR {% endcomment %}
+{% if section.settings.show_announce %}
+<div class="bb-announce" style="background:{{ section.settings.announce_bg }};color:{{ section.settings.announce_text_color }};">
+  {{ section.settings.announce_text }}
+</div>
+{% endif %}
+
+{% comment %} S2 — HERO {% endcomment %}
+{% if section.settings.show_hero %}
+<section class="bb-hero" style="background:{{ section.settings.hero_bg }};" id="bb-top">
+  <div class="bb-hero-in">
+    <div>
+      <div class="bb-prog-tag rv">{{ section.settings.hero_tag }}</div>
+      <h1 class="rv d1">{{ section.settings.hero_headline }}</h1>
+      <p class="bb-hero-sub rv d2">{{ section.settings.hero_subtext }}</p>
+      <div class="bb-price-row rv d3">
+        <span class="bb-p-was">{{ section.settings.hero_price_was }}</span>
+        <span class="bb-p-now">{{ section.settings.hero_price_now }}</span>
+        <span class="bb-p-save">{{ section.settings.hero_save_badge }}</span>
+      </div>
+      <div class="bb-hero-ctas rv d4">
+        <a href="{{ section.settings.hero_cta1_url }}" class="btn-b">{{ section.settings.hero_cta1_text }}</a>
+        <a href="{{ section.settings.hero_cta2_url }}" class="btn-o">{{ section.settings.hero_cta2_text }}</a>
+      </div>
+    </div>
+    <div class="bb-hcard rv d2">
+      <div class="bb-hcard-tag">{{ section.settings.hero_card_tag }}</div>
+      {% if section.settings.hero_product_image %}
+        <div class="bb-hcard-img"><img src="{{ section.settings.hero_product_image | image_url: width: 600 }}" alt="{{ section.settings.hero_card_tag }}"></div>
+      {% else %}
+        <div class="bb-hcard-img-placeholder">📷 Add Triwave product image in Theme Editor</div>
+      {% endif %}
+      <div class="bb-pills">
+        <div class="bb-pill">{{ section.settings.hero_pill1 }}</div>
+        <div class="bb-pill">{{ section.settings.hero_pill2 }}</div>
+        <div class="bb-pill">{{ section.settings.hero_pill3 }}</div>
+        <div class="bb-pill">{{ section.settings.hero_pill4 }}</div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% comment %} S3 — TRUST BAR MARQUEE {% endcomment %}
+{% if section.settings.show_trust %}
+<div class="bb-trust">
+  <div class="bb-trust-track-wrap">
+    <div class="bb-trust-track" id="bb-trust-track">
+      <div class="bb-trust-set">
+        {% for block in section.blocks %}
+          {% if block.type == 'trust_item' %}
+            <div class="bb-ti" {{ block.shopify_attributes }}>
+              <div class="bb-ti-icon">{{ block.settings.icon }}</div>
+              <div><strong>{{ block.settings.title }}</strong><span>{{ block.settings.subtitle }}</span></div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <div class="bb-trust-set" aria-hidden="true">
+        {% for block in section.blocks %}
+          {% if block.type == 'trust_item' %}
+            <div class="bb-ti">
+              <div class="bb-ti-icon">{{ block.settings.icon }}</div>
+              <div><strong>{{ block.settings.title }}</strong><span>{{ block.settings.subtitle }}</span></div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% comment %} S4 — ELIGIBILITY {% endcomment %}
+{% if section.settings.show_eligibility %}
+<section class="bb-elig" id="bb-eligibility">
+  <div class="bb-elig-in">
+    <div class="bb-sec-hdr rv">
+      <span class="eyebrow">{{ section.settings.elig_eyebrow }}</span>
+      <h2>{{ section.settings.elig_headline }}</h2>
+      <p>{{ section.settings.elig_subtext }}</p>
+    </div>
+    <div class="bb-elig-grid">
+      <div class="bb-trade-pair">
+        <div class="bb-trade-card rv">
+          <div class="bb-trade-badge">Trade-In Eligible</div>
+          {% if section.settings.qt_plus_image %}
+            <div class="bb-trade-img"><img src="{{ section.settings.qt_plus_image | image_url: width: 400 }}" alt="QT Plus"></div>
+          {% else %}
+            <div class="bb-trade-img-placeholder">QT Plus Image</div>
+          {% endif %}
+          <div class="bb-trade-name">{{ section.settings.qt_plus_name }}</div>
+          <div class="bb-trade-desc">{{ section.settings.qt_plus_desc }}</div>
+          <ul class="bb-trade-list">
+            <li>{{ section.settings.qt_plus_point1 }}</li>
+            <li>{{ section.settings.qt_plus_point2 }}</li>
+            <li>{{ section.settings.qt_plus_point3 }}</li>
+          </ul>
+        </div>
+        <div class="bb-trade-card rv d1">
+          <div class="bb-trade-badge">Trade-In Eligible</div>
+          {% if section.settings.mini_image %}
+            <div class="bb-trade-img"><img src="{{ section.settings.mini_image | image_url: width: 400 }}" alt="Mini"></div>
+          {% else %}
+            <div class="bb-trade-img-placeholder">Mini Image</div>
+          {% endif %}
+          <div class="bb-trade-name">{{ section.settings.mini_name }}</div>
+          <div class="bb-trade-desc">{{ section.settings.mini_desc }}</div>
+          <ul class="bb-trade-list">
+            <li>{{ section.settings.mini_point1 }}</li>
+            <li>{{ section.settings.mini_point2 }}</li>
+            <li>{{ section.settings.mini_point3 }}</li>
+          </ul>
+        </div>
+      </div>
+      <div class="bb-arrow rv">
+        <div class="bb-arrow-c">→</div>
+        <div class="bb-arrow-lbl">Upgrade<br>To</div>
+      </div>
+      <div class="bb-dest-card rv d2">
+        <div class="bb-dest-badge">✨ Your Upgrade</div>
+        {% if section.settings.triwave_image %}
+          <div class="bb-dest-img"><img src="{{ section.settings.triwave_image | image_url: width: 600 }}" alt="Triwave"></div>
+        {% else %}
+          <div class="bb-dest-img">📷 Add Triwave image</div>
+        {% endif %}
+        <div class="bb-trade-name" style="font-size:20px;">{{ section.settings.triwave_name }}</div>
+        <div class="bb-trade-desc" style="margin-bottom:14px;">{{ section.settings.triwave_desc }}</div>
+        <div style="font-family:'Open Sans',sans-serif;font-size:28px;font-weight:700;margin-bottom:16px;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;">
+          {{ section.settings.triwave_price_now }}
+          <span style="font-size:15px;color:#9A9490;text-decoration:line-through;font-family:'Inter',sans-serif;font-weight:400;">{{ section.settings.triwave_price_was }}</span>
+          <span style="background:#C0504A;color:#fff;font-size:11px;font-weight:700;padding:4px 11px;border-radius:999px;">Save $300</span>
+        </div>
+        <a href="{{ section.settings.elig_cta_url }}" class="btn-b" style="width:100%;justify-content:center;">{{ section.settings.elig_cta_text }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% comment %} S5 — HOW IT WORKS {% endcomment %}
+{% if section.settings.show_how %}
+<section class="bb-how" id="bb-how">
+  <div class="bb-how-in">
+    <div class="bb-sec-hdr rv">
+      <span class="eyebrow">{{ section.settings.how_eyebrow }}</span>
+      <h2>{{ section.settings.how_headline }}</h2>
+      <p>{{ section.settings.how_subtext }}</p>
+    </div>
+    <div class="bb-steps">
+      {% for block in section.blocks %}
+        {% if block.type == 'step' %}
+          <div class="bb-step rv" {{ block.shopify_attributes }}>
+            <div class="bb-step-num">{% assign stepnum = forloop.index %}{% for block2 in section.blocks %}{% if block2.type == 'step' %}{% assign stepnum = forloop.index %}{% break %}{% endif %}{% endfor %}{{ forloop.index }}</div>
+            <div class="bb-step-icon">{{ block.settings.icon }}</div>
+            <div><div class="bb-step-title">{{ block.settings.title }}</div><div class="bb-step-desc">{{ block.settings.desc }}</div></div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% comment %} S6 — COMPARISON TABLE {% endcomment %}
+{% if section.settings.show_compare %}
+<section class="bb-compare">
+  <div class="bb-compare-in">
+    <div class="bb-sec-hdr rv">
+      <span class="eyebrow">{{ section.settings.compare_eyebrow }}</span>
+      <h2>{{ section.settings.compare_headline }}</h2>
+      <p>{{ section.settings.compare_subtext }}</p>
+    </div>
+    <div class="bb-tbl-wrap rv">
+      <table class="bb-tbl">
+        <thead><tr>
+          <th style="width:24%"></th>
+          <th>QT Plus</th><th>Mini</th>
+          <th class="tw">Triwave <span class="bb-up-pill">Upgrade</span></th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td style="font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600;">Device</td>
+            <td>{% if section.settings.compare_qt_image %}<img src="{{ section.settings.compare_qt_image | image_url: width: 120 }}" style="height:80px;object-fit:contain;display:block;margin:0 auto;">{% else %}<div style="height:80px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:11px;">Add image</div>{% endif %}</td>
+            <td>{% if section.settings.compare_mini_image %}<img src="{{ section.settings.compare_mini_image | image_url: width: 120 }}" style="height:80px;object-fit:contain;display:block;margin:0 auto;">{% else %}<div style="height:80px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:11px;">Add image</div>{% endif %}</td>
+            <td class="tw">{% if section.settings.compare_triwave_image %}<img src="{{ section.settings.compare_triwave_image | image_url: width: 120 }}" style="height:80px;object-fit:contain;display:block;margin:0 auto;">{% else %}<div style="height:80px;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:11px;">Add image</div>{% endif %}</td>
+          </tr>
+          <tr><td>Waveforms</td><td>2 (Stretch + Lift)</td><td>1</td><td class="tw">3 — Erase · Educate · Rejuv</td></tr>
+          <tr><td>Lymphatic Drainage</td><td><span class="bb-x">—</span></td><td><span class="bb-x">—</span></td><td class="tw"><span class="bb-chk">✓</span> Dedicated Rejuv waveform</td></tr>
+          <tr><td>FDA-Cleared</td><td><span class="bb-chk">✓</span></td><td><span class="bb-chk">✓</span></td><td class="tw"><span class="bb-chk">✓</span></td></tr>
+          <tr><td>Hands-Free Masks</td><td><span class="bb-chk">✓</span> QT Plus only</td><td><span class="bb-x">—</span></td><td class="tw"><span class="bb-chk">✓</span> Eye, Lip, Forehead incl.</td></tr>
+          <tr><td>Applicator Probes</td><td><span class="bb-x">—</span></td><td><span class="bb-x">—</span></td><td class="tw"><span class="bb-chk">✓</span> Included</td></tr>
+          <tr><td>Digital Display</td><td>App-controlled</td><td>Single button</td><td class="tw">On-device digital display</td></tr>
+          <tr><td>Treatment Areas</td><td>Face + Neck</td><td>Face only</td><td class="tw">Full face, neck &amp; lymph nodes</td></tr>
+          <tr><td>Retail Price</td><td>$229–$329</td><td>$329</td><td class="tw">$795 → <strong>$495 with trade-in</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% comment %} S7 — FEATURE CARDS {% endcomment %}
+{% if section.settings.show_features %}
+<section class="bb-features">
+  <div class="bb-feat-in">
+    <div class="bb-sec-hdr rv">
+      <span class="eyebrow">{{ section.settings.feat_eyebrow }}</span>
+      <h2>{{ section.settings.feat_headline }}</h2>
+    </div>
+    {% comment %} Desktop grid {% endcomment %}
+    <div class="bb-feat-grid">
+      {% for block in section.blocks %}
+        {% if block.type == 'feature_card' %}
+          <div class="bb-fc rv" {{ block.shopify_attributes }}>
+            <div class="bb-fc-bg">
+              {% if block.settings.image %}
+                <img src="{{ block.settings.image | image_url: width: 800 }}" alt="{{ block.settings.title }}">
+              {% else %}
+                <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;color:#9A9490;font-size:12px;text-align:center;">
+                  <span style="font-size:38px;opacity:.35">+</span>
+                  <span style="font-family:'Inter',sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:.1em;opacity:.6">Add image in Theme Editor</span>
+                </div>
+              {% endif %}
+            </div>
+            <div class="bb-fc-scrim"></div>
+            <div class="bb-fc-def">
+              <div class="bb-fc-def-icon">{{ block.settings.icon }}</div>
+              <div class="bb-fc-def-title">{{ block.settings.title }}</div>
+            </div>
+            <div class="bb-fc-hov">
+              <div class="bb-fc-hov-icon">{{ block.settings.icon }}</div>
+              <div class="bb-fc-hov-title">{{ block.settings.title }}</div>
+              <div class="bb-fc-hov-desc">{{ block.settings.description }}</div>
+              <div class="bb-fc-tags">
+                {% if block.settings.tag1 != blank %}<span class="bb-tag">{{ block.settings.tag1 }}</span>{% endif %}
+                {% if block.settings.tag2 != blank %}<span class="bb-tag">{{ block.settings.tag2 }}</span>{% endif %}
+                {% if block.settings.tag3 != blank %}<span class="bb-tag">{{ block.settings.tag3 }}</span>{% endif %}
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    {% comment %} Mobile slider {% endcomment %}
+    <div class="bb-feat-slider-wrap" id="bb-feat-slider-wrap">
+      <button class="bb-feat-arrow prev" id="bb-feat-prev">&#8592;</button>
+      <div class="bb-feat-slider" id="bb-feat-slider">
+        {% for block in section.blocks %}
+          {% if block.type == 'feature_card' %}
+            <div class="bb-fc" {{ block.shopify_attributes }}>
+              <div class="bb-fc-bg">
+                {% if block.settings.image %}
+                  <img src="{{ block.settings.image | image_url: width: 800 }}" alt="{{ block.settings.title }}">
+                {% else %}
+                  <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:10px;color:#9A9490;font-size:12px;text-align:center;">
+                    <span style="font-size:38px;opacity:.35">+</span>
+                    <span style="font-family:'Inter',sans-serif;font-size:11px;text-transform:uppercase;letter-spacing:.1em;opacity:.6">Add image</span>
+                  </div>
+                {% endif %}
+              </div>
+              <div class="bb-fc-scrim"></div>
+              <div class="bb-fc-hov" style="opacity:1;transform:none;">
+                <div class="bb-fc-hov-title">{{ block.settings.title }}</div>
+                <div class="bb-fc-hov-desc">{{ block.settings.description }}</div>
+                <div class="bb-fc-tags">
+                  {% if block.settings.tag1 != blank %}<span class="bb-tag">{{ block.settings.tag1 }}</span>{% endif %}
+                  {% if block.settings.tag2 != blank %}<span class="bb-tag">{{ block.settings.tag2 }}</span>{% endif %}
+                  {% if block.settings.tag3 != blank %}<span class="bb-tag">{{ block.settings.tag3 }}</span>{% endif %}
+                </div>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+      <button class="bb-feat-arrow next" id="bb-feat-next">&#8594;</button>
+      <div class="bb-feat-dots" id="bb-feat-dots"></div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% comment %} S8 — OFFER BOX {% endcomment %}
+{% if section.settings.show_offer %}
+<section class="bb-offer-sec" id="bb-claim">
+  <div class="bb-offer-box rv">
+    <div class="bb-offer-inner">
+      <div class="bb-offer-left">
+        <div class="bb-offer-ey">{{ section.settings.offer_eyebrow }}</div>
+        <h2 class="bb-offer-h">{{ section.settings.offer_headline }}</h2>
+        <p class="bb-offer-body">{{ section.settings.offer_subtext }}</p>
+        <div class="bb-offer-strip">
+          <div><div class="bb-op-lbl">Regular Price</div><div class="bb-op-was">{{ section.settings.offer_price_was }}</div></div>
+          <div class="bb-op-div">→</div>
+          <div><div class="bb-op-lbl">Your Trade-In Price</div><div class="bb-op-now">{{ section.settings.offer_price_now }}</div></div>
+          <div class="bb-op-save">{{ section.settings.offer_save_badge }}</div>
+        </div>
+        <div class="bb-offer-ctas">
+          <a href="{{ section.settings.offer_cta1_url }}" class="btn-b">{{ section.settings.offer_cta1_text }}</a>
+          <a href="{{ section.settings.offer_cta2_url }}" class="btn-o" target="_blank">{{ section.settings.offer_cta2_text }}</a>
+        </div>
+        <p class="bb-offer-fine">{{ section.settings.offer_fine_print }}</p>
+      </div>
+      <div class="bb-offer-img-col">
+        {% if section.settings.offer_triwave_image %}
+          <img src="{{ section.settings.offer_triwave_image | image_url: width: 500 }}" alt="MyoLift Triwave" style="width:100%;max-height:320px;object-fit:contain;display:block;filter:brightness(1.1);">
+        {% else %}
+          <div class="bb-offer-img-placeholder">
+            <span style="font-size:32px;opacity:.3">+</span>
+            <span>Add Triwave image<br>in Theme Editor</span>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% comment %} S9 — FORM {% endcomment %}
+{% if section.settings.show_form %}
+<section class="bb-form-sec" id="bb-form">
+  <div class="bb-form-in">
+    <div class="bb-form-left">
+      <span class="eyebrow">{{ section.settings.form_eyebrow }}</span>
+      <h2 class="rv">{{ section.settings.form_headline }}</h2>
+      <p class="rv d1">{{ section.settings.form_subtext }}</p>
+      <ul class="bb-req-list rv d2">
+        {% for block in section.blocks %}
+          {% if block.type == 'form_requirement' %}
+            <li {{ block.shopify_attributes }}><span class="bb-chk-icon">✓</span>{{ block.settings.text }}</li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+      <div class="bb-cond-note rv d3">
+        <strong>{{ section.settings.condition_title }}</strong>
+        <p>{{ section.settings.condition_text }}</p>
+      </div>
+    </div>
+    <div class="bb-form-right">
+      <div class="bb-form-card rv d1">
+        <div class="bb-form-title">{{ section.settings.form_card_title }}</div>
+        <div class="bb-fg"><label class="bb-lbl">Full Name <span class="bb-req-star">*</span></label><input type="text" class="bb-input" placeholder="Jane Smith"></div>
+        <div class="bb-fg"><label class="bb-lbl">Email Address <span class="bb-req-star">*</span></label><input type="email" class="bb-input" placeholder="jane@email.com"></div>
+        <div class="bb-fg"><label class="bb-lbl">Phone Number</label><input type="tel" class="bb-input" placeholder="+1 (555) 000-0000"></div>
+        <div class="bb-fg"><label class="bb-lbl">Device You're Trading In <span class="bb-req-star">*</span></label>
+          <div class="bb-sel-wrap"><select class="bb-input">
+            <option value="">Select your current device</option>
+            <option>MyoLift™ QT Plus (Premium)</option>
+            <option>MyoLift™ QT Plus (Base)</option>
+            <option>MyoLift™ Mini</option>
+          </select></div>
+        </div>
+        <div class="bb-fg"><label class="bb-lbl">Order Number <span class="bb-req-star">*</span></label><input type="text" class="bb-input" placeholder="e.g. #7E-10492"></div>
+        <div class="bb-fg"><label class="bb-lbl">Upload Photo <span class="bb-req-star">*</span></label>
+          <div class="bb-upload"><span style="font-size:22px;display:block;margin-bottom:6px">📷</span><div style="font-size:13px;color:#5A5652">Click to upload or drag &amp; drop</div><div style="font-size:11px;color:#9A9490;margin-top:3px">JPG, PNG or HEIC · Max 10MB</div></div>
+        </div>
+        <div class="bb-fg"><label class="bb-lbl">Device Condition</label>
+          <div class="bb-sel-wrap"><select class="bb-input">
+            <option>Like New</option><option>Good — normal wear</option>
+            <option>Fair — visible wear, fully functional</option><option>Has damage</option>
+          </select></div>
+        </div>
+        <div class="bb-fg"><label class="bb-lbl">Additional Notes</label><textarea class="bb-input" rows="3" placeholder="Any damage, missing accessories, etc." style="resize:vertical;font-family:'Inter',sans-serif;"></textarea></div>
+        <button class="btn-b bb-submit">{{ section.settings.form_submit_text }}</button>
+        <p class="bb-form-fine">{{ section.settings.form_fine_print }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% comment %} S10 — REVIEWS {% endcomment %}
+{% if section.settings.show_reviews %}
+<section class="bb-reviews">
+  <div class="bb-reviews-in">
+    <div class="bb-sec-hdr rv">
+      <span class="eyebrow">{{ section.settings.reviews_eyebrow }}</span>
+      <h2>{{ section.settings.reviews_headline }}</h2>
+    </div>
+    <div class="bb-rev-grid">
+      {% for block in section.blocks %}
+        {% if block.type == 'review' %}
+          <div class="bb-rev-card rv" {{ block.shopify_attributes }}>
+            <div class="bb-stars">★★★★★</div>
+            <p class="bb-rev-text">"{{ block.settings.text }}"</p>
+            <div class="bb-rev-row">
+              <div class="bb-av">{{ block.settings.initials }}</div>
+              <div><div class="bb-rev-name">{{ block.settings.name }}</div><div class="bb-rev-tag">{{ block.settings.tag }}</div></div>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% comment %} S10b — STATS STRIP {% endcomment %}
+{% if section.settings.show_stats %}
+<div class="bb-stats" style="background:{{ section.settings.stats_bg }};">
+  <div class="bb-stats-in">
+    {% for block in section.blocks %}
+      {% if block.type == 'stat' %}
+        <div class="bb-stat rv" {{ block.shopify_attributes }}>
+          <span class="bb-stat-num">{{ block.settings.number }}</span>
+          <span class="bb-stat-lbl">{{ block.settings.label }}</span>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+{% comment %} S11 — FAQ {% endcomment %}
+{% if section.settings.show_faq %}
+<section class="bb-faq">
+  <div class="bb-faq-in">
+    <div class="bb-sec-hdr rv">
+      <span class="eyebrow">{{ section.settings.faq_eyebrow }}</span>
+      <h2>{{ section.settings.faq_headline }}</h2>
+    </div>
+    <div class="rv">
+      {% for block in section.blocks %}
+        {% if block.type == 'faq_item' %}
+          <div class="bb-faq-item{% if forloop.first %} open{% endif %}" {{ block.shopify_attributes }}>
+            <button class="bb-faq-q">{{ block.settings.question }}<span class="bb-faq-tog">+</span></button>
+            <div class="bb-faq-a">{{ block.settings.answer }}</div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{% comment %} S12 — FINAL CTA {% endcomment %}
+{% if section.settings.show_final %}
+<section class="bb-final">
+  <span class="eyebrow rv">{{ section.settings.final_eyebrow }}</span>
+  <h2 class="rv d1">{{ section.settings.final_headline }}</h2>
+  <p class="rv d2">{{ section.settings.final_subtext }}</p>
+  <div class="bb-final-ctas rv d3">
+    <a href="{{ section.settings.final_cta1_url }}" class="btn-b">{{ section.settings.final_cta1_text }}</a>
+    <a href="{{ section.settings.final_cta2_url }}" class="btn-o" target="_blank">{{ section.settings.final_cta2_text }}</a>
+  </div>
+  <p class="bb-final-note rv d4">{{ section.settings.final_fine_print }}</p>
+</section>
+{% endif %}
+
+</div>
+
+<script>
+(function(){
+  /* Scroll reveal */
+  var obs=new IntersectionObserver(function(e){e.forEach(function(i){if(i.isIntersecting){i.target.classList.add('on');obs.unobserve(i.target);}});},{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.bb .rv').forEach(function(el){obs.observe(el);});
+
+  /* FAQ accordion */
+  document.querySelectorAll('.bb-faq-q').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var item=btn.parentElement,wasOpen=item.classList.contains('open');
+      document.querySelectorAll('.bb-faq-item').forEach(function(i){i.classList.remove('open');i.querySelector('.bb-faq-tog').textContent='+';});
+      if(!wasOpen){item.classList.add('open');}
+    });
+  });
+
+  /* Smooth scroll */
+  document.querySelectorAll('a[href^="#bb-"]').forEach(function(a){
+    a.addEventListener('click',function(e){var t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'});}});
+  });
+
+  /* Fix step numbers — only count step blocks */
+  (function(){
+    var stepEls = document.querySelectorAll('.bb-steps .bb-step');
+    stepEls.forEach(function(s, i){
+      var numEl = s.querySelector('.bb-step-num');
+      if(numEl) numEl.textContent = i + 1;
+    });
+  })();
+
+  /* Feature card mobile slider */
+  (function(){
+    var wrap = document.getElementById('bb-feat-slider-wrap');
+    var slider = document.getElementById('bb-feat-slider');
+    var dotsWrap = document.getElementById('bb-feat-dots');
+    var prevBtn = document.getElementById('bb-feat-prev');
+    var nextBtn = document.getElementById('bb-feat-next');
+    if(!wrap || !slider) return;
+
+    var cards = slider.querySelectorAll('.bb-fc');
+    var count = cards.length;
+    var current = 0;
+
+    /* Build dots */
+    for(var d=0;d<count;d++){
+      var dot = document.createElement('div');
+      dot.className = 'bb-feat-dot' + (d===0?' active':'');
+      dotsWrap.appendChild(dot);
+    }
+    var dots = dotsWrap.querySelectorAll('.bb-feat-dot');
+
+    function updateDots(idx){
+      dots.forEach(function(d,i){ d.classList.toggle('active', i===idx); });
+      current = idx;
+    }
+
+    function scrollTo(idx){
+      if(idx < 0) idx = 0;
+      if(idx >= count) idx = count-1;
+      var card = cards[idx];
+      slider.scrollTo({left: card.offsetLeft - 20, behavior:'smooth'});
+      updateDots(idx);
+    }
+
+    prevBtn.addEventListener('click', function(){ scrollTo(current - 1); });
+    nextBtn.addEventListener('click', function(){ scrollTo(current + 1); });
+
+    /* Update dot on scroll */
+    var scrollTimer;
+    slider.addEventListener('scroll', function(){
+      clearTimeout(scrollTimer);
+      scrollTimer = setTimeout(function(){
+        var closest = 0, minDist = Infinity;
+        cards.forEach(function(c, i){
+          var dist = Math.abs(c.offsetLeft - slider.scrollLeft - 20);
+          if(dist < minDist){ minDist = dist; closest = i; }
+        });
+        updateDots(closest);
+      }, 80);
+    });
+  })();
+
+})();
+</script>
+
+{% schema %}
+{
+  "name": "Buy Back Program",
+  "tag": "section",
+  "settings": [
+    { "type": "header", "content": " S1 Announcement Bar " },
+    { "type": "checkbox", "id": "show_announce", "label": "Show Announcement Bar", "default": true },
+    { "type": "text", "id": "announce_text", "label": "Announcement Text", "default": " Limited-Time Offer - <strong>QT Plus & Mini owners</strong> trade in and upgrade to Triwave for just <strong>$495</strong> . Free Shipping Included" },
+    { "type": "color", "id": "announce_bg", "label": "Background Color", "default": "#111111" },
+    { "type": "color", "id": "announce_text_color", "label": "Text Color", "default": "#ffffff" },
+
+    { "type": "header", "content": " S2 Hero " },
+    { "type": "checkbox", "id": "show_hero", "label": "Show Hero", "default": true },
+    { "type": "color", "id": "hero_bg", "label": "Hero Background", "default": "#F5F5F5" },
+    { "type": "text", "id": "hero_tag", "label": "Program Tag", "default": "Buy Back Program 7E . Exclusive Upgrade" },
+    { "type": "textarea", "id": "hero_headline", "label": "Headline", "default": "Trade In Your Device.<br>Upgrade to Triwave." },
+    { "type": "textarea", "id": "hero_subtext", "label": "Subtext", "default": "QT Plus and Mini owners - your loyalty is rewarded. Trade in your current device and step up to three-wavelength microcurrent with lymphatic drainage, hands-free masks, and professional-grade results. All at home." },
+    { "type": "text", "id": "hero_price_was", "label": "Was Price", "default": "$795" },
+    { "type": "text", "id": "hero_price_now", "label": "Now Price", "default": "$495" },
+    { "type": "text", "id": "hero_save_badge", "label": "Save Badge", "default": "Save $300" },
+    { "type": "text", "id": "hero_cta1_text", "label": "Button 1 Text", "default": "Claim My Upgrade ->" },
+    { "type": "url", "id": "hero_cta1_url", "label": "Button 1 URL" },
+    { "type": "text", "id": "hero_cta2_text", "label": "Button 2 Text", "default": "See How It Works" },
+    { "type": "url", "id": "hero_cta2_url", "label": "Button 2 URL" },
+    { "type": "text", "id": "hero_card_tag", "label": "Card Tag", "default": "MyoLift Triwave - Your Upgrade" },
+    { "type": "image_picker", "id": "hero_product_image", "label": "Triwave Product Image" },
+    { "type": "text", "id": "hero_pill1", "label": "Pill 1", "default": "3 Waveforms" },
+    { "type": "text", "id": "hero_pill2", "label": "Pill 2", "default": "4.8 Rating" },
+    { "type": "text", "id": "hero_pill3", "label": "Pill 3", "default": " FDA Cleared" },
+    { "type": "text", "id": "hero_pill4", "label": "Pill 4", "default": " Lymphatic Drainage" },
+
+    { "type": "header", "content": " S3 Trust Bar " },
+    { "type": "checkbox", "id": "show_trust", "label": "Show Trust Bar", "default": true },
+
+    { "type": "header", "content": " S4 Eligibility " },
+    { "type": "checkbox", "id": "show_eligibility", "label": "Show Eligibility", "default": true },
+    { "type": "text", "id": "elig_eyebrow", "label": "Eyebrow", "default": "Who Qualifies" },
+    { "type": "textarea", "id": "elig_headline", "label": "Headline", "default": "Own one of these?<br>You're eligible." },
+    { "type": "textarea", "id": "elig_subtext", "label": "Subtext", "default": "Trade in your QT Plus or Mini in any condition. Receive $300 off your Triwave." },
+    { "type": "image_picker", "id": "qt_plus_image", "label": "QT Plus Image" },
+    { "type": "text", "id": "qt_plus_name", "label": "QT Plus Name", "default": "MyoLift QT Plus" },
+    { "type": "text", "id": "qt_plus_desc", "label": "QT Plus Description", "default": "Smart app-enabled . Dual wavelength . Hands-free masks" },
+    { "type": "text", "id": "qt_plus_point1", "label": "QT Plus Point 1", "default": "Base & Premium versions included" },
+    { "type": "text", "id": "qt_plus_point2", "label": "QT Plus Point 2", "default": "Any working condition accepted" },
+    { "type": "text", "id": "qt_plus_point3", "label": "QT Plus Point 3", "default": "Original purchase required" },
+    { "type": "image_picker", "id": "mini_image", "label": "Mini Image" },
+    { "type": "text", "id": "mini_name", "label": "Mini Name", "default": "MyoLift Mini" },
+    { "type": "text", "id": "mini_desc", "label": "Mini Description", "default": "Entry-level microcurrent . Compact . Single waveform" },
+    { "type": "text", "id": "mini_point1", "label": "Mini Point 1", "default": "All Mini versions included" },
+    { "type": "text", "id": "mini_point2", "label": "Mini Point 2", "default": "Any working condition accepted" },
+    { "type": "text", "id": "mini_point3", "label": "Mini Point 3", "default": "Original purchase required" },
+    { "type": "image_picker", "id": "triwave_image", "label": "Triwave Image" },
+    { "type": "text", "id": "triwave_name", "label": "Triwave Name", "default": "MyoLift Triwave" },
+    { "type": "textarea", "id": "triwave_desc", "label": "Triwave Description", "default": "Triple-wavelength . Lymphatic drainage . FDA-Cleared . Hands-free masks + applicator probes" },
+    { "type": "text", "id": "triwave_price_now", "label": "Triwave Price", "default": "$495" },
+    { "type": "text", "id": "triwave_price_was", "label": "Triwave Was Price", "default": "$795" },
+    { "type": "text", "id": "elig_cta_text", "label": "CTA Button Text", "default": "Start My Trade-In ->" },
+    { "type": "url", "id": "elig_cta_url", "label": "CTA Button URL" },
+
+    { "type": "header", "content": " S5 How It Works " },
+    { "type": "checkbox", "id": "show_how", "label": "Show How It Works", "default": true },
+    { "type": "text", "id": "how_eyebrow", "label": "Eyebrow", "default": "The Process" },
+    { "type": "text", "id": "how_headline", "label": "Headline", "default": "Four simple steps. Zero hassle." },
+    { "type": "textarea", "id": "how_subtext", "label": "Subtext", "default": "From submitting your request to your first Triwave session - the whole process takes under 5 minutes online." },
+
+    { "type": "header", "content": " S6 Comparison Table " },
+    { "type": "checkbox", "id": "show_compare", "label": "Show Comparison Table", "default": true },
+    { "type": "text", "id": "compare_eyebrow", "label": "Eyebrow", "default": "Why Upgrade" },
+    { "type": "text", "id": "compare_headline", "label": "Headline", "default": "See what you're stepping into." },
+    { "type": "textarea", "id": "compare_subtext", "label": "Subtext", "default": "Triwave is the only at-home device with three dedicated waveforms and built-in lymphatic drainage." },
+    { "type": "image_picker", "id": "compare_qt_image", "label": "QT Plus Column Image" },
+    { "type": "image_picker", "id": "compare_mini_image", "label": "Mini Column Image" },
+    { "type": "image_picker", "id": "compare_triwave_image", "label": "Triwave Column Image" },
+
+    { "type": "header", "content": " S7 Feature Cards " },
+    { "type": "checkbox", "id": "show_features", "label": "Show Feature Cards", "default": true },
+    { "type": "text", "id": "feat_eyebrow", "label": "Eyebrow", "default": "What You're Getting" },
+    { "type": "textarea", "id": "feat_headline", "label": "Headline", "default": "Three wavelengths. One device.<br>Unlimited results." },
+
+    { "type": "header", "content": " S8 Offer Box " },
+    { "type": "checkbox", "id": "show_offer", "label": "Show Offer Box", "default": true },
+    { "type": "image_picker", "id": "offer_triwave_image", "label": "Triwave Image (shown above headline)" },
+    { "type": "text", "id": "offer_eyebrow", "label": "Eyebrow", "default": "7E Wellness . Buy Back Program" },
+    { "type": "text", "id": "offer_headline", "label": "Headline", "default": "Trade In. Upgrade. Save $300." },
+    { "type": "textarea", "id": "offer_subtext", "label": "Subtext", "default": "Exclusive to existing QT Plus and Mini owners only. Limited availability - this program may end without notice." },
+    { "type": "text", "id": "offer_price_was", "label": "Was Price", "default": "$795" },
+    { "type": "text", "id": "offer_price_now", "label": "Now Price", "default": "$495" },
+    { "type": "text", "id": "offer_save_badge", "label": "Save Badge", "default": "You Save $300" },
+    { "type": "text", "id": "offer_cta1_text", "label": "Button 1 Text", "default": "Start My Trade-In ->" },
+    { "type": "url", "id": "offer_cta1_url", "label": "Button 1 URL" },
+    { "type": "text", "id": "offer_cta2_text", "label": "Button 2 Text", "default": "View Triwave Details" },
+    { "type": "url", "id": "offer_cta2_url", "label": "Button 2 URL" },
+    { "type": "textarea", "id": "offer_fine_print", "label": "Fine Print", "default": "Free USA shipping . 30-day return window . QT Plus or Mini required . Any device condition accepted" },
+
+    { "type": "header", "content": " S9 Form " },
+    { "type": "checkbox", "id": "show_form", "label": "Show Form", "default": true },
+    { "type": "text", "id": "form_eyebrow", "label": "Eyebrow", "default": "Submit Your Trade-In" },
+    { "type": "textarea", "id": "form_headline", "label": "Headline", "default": "Ready to upgrade?<br>Here's what you need." },
+    { "type": "textarea", "id": "form_subtext", "label": "Subtext", "default": "The process takes under 3 minutes. Once submitted, your Triwave ships within 2 business days." },
+    { "type": "text", "id": "condition_title", "label": "Condition Note Title", "default": "Device Condition Policy" },
+    { "type": "textarea", "id": "condition_text", "label": "Condition Note Text", "default": "We accept devices in any working condition. Cosmetic wear or minor damage is fine." },
+    { "type": "text", "id": "form_card_title", "label": "Form Card Title", "default": "Trade-In Request Form" },
+    { "type": "text", "id": "form_submit_text", "label": "Submit Button Text", "default": "Submit Trade-In Request ->" },
+    { "type": "textarea", "id": "form_fine_print", "label": "Fine Print", "default": "By submitting you agree to the Trade-In Terms & Conditions." },
+
+    { "type": "header", "content": " S10 Reviews " },
+    { "type": "checkbox", "id": "show_reviews", "label": "Show Reviews", "default": true },
+    { "type": "text", "id": "reviews_eyebrow", "label": "Eyebrow", "default": "Real Results" },
+    { "type": "text", "id": "reviews_headline", "label": "Headline", "default": "What Triwave owners are saying." },
+
+    { "type": "header", "content": " S10b Stats Strip " },
+    { "type": "checkbox", "id": "show_stats", "label": "Show Stats Strip", "default": true },
+    { "type": "color", "id": "stats_bg", "label": "Stats Background", "default": "#231F20" },
+
+    { "type": "header", "content": " S11 FAQ " },
+    { "type": "checkbox", "id": "show_faq", "label": "Show FAQ", "default": true },
+    { "type": "text", "id": "faq_eyebrow", "label": "Eyebrow", "default": "Got Questions?" },
+    { "type": "text", "id": "faq_headline", "label": "Headline", "default": "Common questions answered." },
+
+    { "type": "header", "content": " S12 Final CTA " },
+    { "type": "checkbox", "id": "show_final", "label": "Show Final CTA", "default": true },
+    { "type": "text", "id": "final_eyebrow", "label": "Eyebrow", "default": "Limited Time Offer" },
+    { "type": "textarea", "id": "final_headline", "label": "Headline", "default": "You've already invested in your skin.<br>Now invest in the best." },
+    { "type": "textarea", "id": "final_subtext", "label": "Subtext", "default": "This exclusive offer is for existing QT Plus and Mini owners only. Trade in. Upgrade. Experience three wavelengths for $495." },
+    { "type": "text", "id": "final_cta1_text", "label": "Button 1 Text", "default": "Start My Trade-In ->" },
+    { "type": "url", "id": "final_cta1_url", "label": "Button 1 URL" },
+    { "type": "text", "id": "final_cta2_text", "label": "Button 2 Text", "default": "Learn About Triwave" },
+    { "type": "url", "id": "final_cta2_url", "label": "Button 2 URL" },
+    { "type": "textarea", "id": "final_fine_print", "label": "Fine Print", "default": "Free shipping . 30-day return policy . Limited availability . Any device condition accepted" }
+  ],
+  "blocks": [
+    {
+      "type": "trust_item",
+      "name": "Trust Badge",
+      "settings": [
+        { "type": "text", "id": "icon", "label": "Icon (emoji)", "default": "star" },
+        { "type": "text", "id": "title", "label": "Title", "default": "FDA-Cleared Device" },
+        { "type": "text", "id": "subtitle", "label": "Subtitle", "default": "Clinically tested & proven" }
+      ]
+    },
+    {
+      "type": "step",
+      "name": "How It Works Step",
+      "settings": [
+        { "type": "text", "id": "icon", "label": "Icon (emoji)", "default": "star" },
+        { "type": "text", "id": "title", "label": "Step Title", "default": "Submit Your Request" },
+        { "type": "textarea", "id": "desc", "label": "Step Description", "default": "Fill out the trade-in form and confirm your details." }
+      ]
+    },
+    {
+      "type": "feature_card",
+      "name": "Feature Card",
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Card Background Image" },
+        { "type": "text", "id": "icon", "label": "Icon (emoji)", "default": "star" },
+        { "type": "text", "id": "title", "label": "Title", "default": "Erase Waveform" },
+        { "type": "textarea", "id": "description", "label": "Description", "default": "Gently relaxes overworked facial muscles to smooth fine lines." },
+        { "type": "text", "id": "tag1", "label": "Tag 1", "default": "Fine Lines" },
+        { "type": "text", "id": "tag2", "label": "Tag 2", "default": "Wrinkle Smoothing" },
+        { "type": "text", "id": "tag3", "label": "Tag 3", "default": "Relaxation" }
+      ]
+    },
+    {
+      "type": "review",
+      "name": "Review",
+      "settings": [
+        { "type": "textarea", "id": "text", "label": "Review Text", "default": "After 2 weeks I can already see a visible difference in my complexion." },
+        { "type": "text", "id": "name", "label": "Reviewer Name", "default": "Karen E." },
+        { "type": "text", "id": "initials", "label": "Initials", "default": "KE" },
+        { "type": "text", "id": "tag", "label": "Reviewer Tag", "default": "Verified Triwave Owner" }
+      ]
+    },
+    {
+      "type": "stat",
+      "name": "Stat",
+      "settings": [
+        { "type": "text", "id": "number", "label": "Number", "default": "100K+" },
+        { "type": "text", "id": "label", "label": "Label", "default": "Happy Customers" }
+      ]
+    },
+    {
+      "type": "faq_item",
+      "name": "FAQ Item",
+      "settings": [
+        { "type": "text", "id": "question", "label": "Question", "default": "What devices qualify?" },
+        { "type": "textarea", "id": "answer", "label": "Answer", "default": "Only the MyoLift QT Plus and MyoLift Mini qualify." }
+      ]
+    },
+    {
+      "type": "form_requirement",
+      "name": "Form Requirement",
+      "settings": [
+        { "type": "text", "id": "text", "label": "Requirement Text", "default": "Proof of purchase or order number" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Buy Back Program",
+      "blocks": [
+        { "type": "trust_item", "settings": { "icon": "star", "title": "FDA-Cleared Device", "subtitle": "Clinically tested & proven" } },
+        { "type": "trust_item", "settings": { "icon": "star", "title": "30-Day Return Window", "subtitle": "Send back your old device" } },
+        { "type": "trust_item", "settings": { "icon": "star", "title": "Free US Shipping", "subtitle": "Prepaid return label included" } },
+        { "type": "trust_item", "settings": { "icon": "star", "title": "100,000+ Happy Customers", "subtitle": "Trusted by beauty professionals" } },
+        { "type": "step", "settings": { "icon": "star", "title": "Submit Your Request", "desc": "Fill out the trade-in form. Select your device and confirm your details." } },
+        { "type": "step", "settings": { "icon": "star", "title": "Receive Your Triwave", "desc": "We ship your new Triwave first. No waiting - start using it immediately." } },
+        { "type": "step", "settings": { "icon": "star", "title": "Return Your Old Device", "desc": "Use the prepaid label to send back your old device within 30 days." } },
+        { "type": "step", "settings": { "icon": "star", "title": "Enjoy the Upgrade", "desc": "Experience three wavelengths, lymphatic drainage, and professional results at home." } },
+        { "type": "feature_card", "settings": { "icon": "star", "title": "Erase Waveform", "description": "Gently relaxes overworked facial muscles to smooth fine lines and expression wrinkles.", "tag1": "Fine Lines", "tag2": "Wrinkle Smoothing", "tag3": "Relaxation" } },
+        { "type": "feature_card", "settings": { "icon": "star", "title": "Educate Waveform", "description": "Re-educates and strengthens facial muscles. Delivers visible lift, contour, and definition.", "tag1": "Lift", "tag2": "Sculpt", "tag3": "Facial Contour" } },
+        { "type": "feature_card", "settings": { "icon": "star", "title": "Rejuv Waveform", "description": "Exclusive pumping waveform for lymphatic drainage - reduces puffiness, unique to Triwave.", "tag1": "Lymphatic Drainage", "tag2": "De-Puff", "tag3": "Unique to Triwave" } },
+        { "type": "feature_card", "settings": { "icon": "star", "title": "Hands-Free Masks", "description": "Conductive Eye, Lip, and Forehead masks included. Treat while you multitask.", "tag1": "Eye Mask", "tag2": "Lip Mask", "tag3": "Forehead Mask" } },
+        { "type": "feature_card", "settings": { "icon": "star", "title": "Clinically Proven", "description": "91% noticed immediate lift. 85% saw fewer forehead lines. 73% firmer neck.", "tag1": "FDA Cleared", "tag2": "91% Saw Lift", "tag3": "Clinical Results" } },
+        { "type": "feature_card", "settings": { "icon": "star", "title": "Travel-Ready", "description": "Rechargeable, lightweight, and compact with a digital display.", "tag1": "Portable", "tag2": "Rechargeable", "tag3": "Digital Display" } },
+        { "type": "review", "settings": { "text": "After 2 weeks I can already see a visible difference in my complexion and some lift.", "name": "Karen E.", "initials": "KE", "tag": "Verified Triwave Owner" } },
+        { "type": "review", "settings": { "text": "After the Educate waveform, it felt like my facial muscles had been to the gym.", "name": "Elizabeth S.", "initials": "ES", "tag": "Verified Triwave Owner" } },
+        { "type": "review", "settings": { "text": "People don't believe I haven't done anything - no Botox, no lifting. The results are incredible.", "name": "Su C.O.", "initials": "SC", "tag": "Verified Triwave Owner" } },
+        { "type": "stat", "settings": { "number": "100K+", "label": "Happy Customers" } },
+        { "type": "stat", "settings": { "number": "91%", "label": "Noticed Immediate Lift" } },
+        { "type": "stat", "settings": { "number": "4.8", "label": "Average Rating" } },
+        { "type": "stat", "settings": { "number": "FDA", "label": "Cleared Device" } },
+        { "type": "faq_item", "settings": { "question": "What devices qualify for the Buy Back Program?", "answer": "Only the MyoLift QT Plus and MyoLift Mini qualify. Both Base and Premium versions of the QT Plus are included." } },
+        { "type": "faq_item", "settings": { "question": "Does my device need to be in perfect condition?", "answer": "No - we accept devices in any working condition. Cosmetic wear or minor damage is fine." } },
+        { "type": "faq_item", "settings": { "question": "When do I receive my Triwave?", "answer": "Your Triwave ships within 2 business days - before you even send back your old device." } },
+        { "type": "faq_item", "settings": { "question": "How long do I have to return my old device?", "answer": "You have 30 days from receiving your Triwave to return your old device using the included prepaid label." } },
+        { "type": "faq_item", "settings": { "question": "Is this program available internationally?", "answer": "Currently available for US customers only." } },
+        { "type": "faq_item", "settings": { "question": "Can I use my old device while waiting for my Triwave?", "answer": "Yes! You only need to return your old device after receiving your Triwave." } },
+        { "type": "form_requirement", "settings": { "text": "Proof of purchase or order number for your QT Plus or Mini" } },
+        { "type": "form_requirement", "settings": { "text": "A photo of your current device (any condition accepted)" } },
+        { "type": "form_requirement", "settings": { "text": "Your shipping address for the new Triwave" } },
+        { "type": "form_requirement", "settings": { "text": "Payment of $495 (charged after form review)" } },
+        { "type": "form_requirement", "settings": { "text": "Agreement to return your old device within 30 days" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

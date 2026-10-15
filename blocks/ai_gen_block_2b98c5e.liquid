@@ -1,0 +1,131 @@
+{% doc %}
+  @prompt
+    i want to add html
+
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-html-block-{{ ai_gen_id }} {
+    padding: {{ block.settings.padding }}px;
+    background-color: {{ block.settings.background_color }};
+    border-radius: {{ block.settings.border_radius }}px;
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+
+  .ai-html-block-{{ ai_gen_id }} * {
+    max-width: 100%;
+  }
+
+  .ai-html-block-{{ ai_gen_id }} img {
+    height: auto;
+    display: block;
+  }
+
+  .ai-html-block-{{ ai_gen_id }} table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .ai-html-block-{{ ai_gen_id }} table td,
+  .ai-html-block-{{ ai_gen_id }} table th {
+    padding: 8px;
+    border: 1px solid #ddd;
+  }
+
+  .ai-html-block-placeholder-{{ ai_gen_id }} {
+    padding: 40px;
+    text-align: center;
+    background-color: #f8f8f8;
+    border: 2px dashed #ddd;
+    border-radius: {{ block.settings.border_radius }}px;
+    color: #666;
+  }
+
+  .ai-html-block-placeholder-{{ ai_gen_id }} svg {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 16px;
+    opacity: 0.5;
+  }
+
+  .ai-html-block-placeholder-title-{{ ai_gen_id }} {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .ai-html-block-placeholder-text-{{ ai_gen_id }} {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+{% endstyle %}
+
+<div {{ block.shopify_attributes }}>
+  {% if block.settings.custom_html != blank %}
+    <div class="ai-html-block-{{ ai_gen_id }}">
+      {{ block.settings.custom_html }}
+    </div>
+  {% else %}
+    <div class="ai-html-block-placeholder-{{ ai_gen_id }}">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="16,18 22,12 16,6"></polyline>
+        <polyline points="8,6 2,12 8,18"></polyline>
+      </svg>
+      <div class="ai-html-block-placeholder-title-{{ ai_gen_id }}">Custom HTML Block</div>
+      <div class="ai-html-block-placeholder-text-{{ ai_gen_id }}">
+        Add your custom HTML code in the block settings to display it here.
+      </div>
+    </div>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Custom HTML",
+  "settings": [
+    {
+      "type": "html",
+      "id": "custom_html",
+      "label": "HTML code"
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "padding",
+      "min": 0,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "label": "Padding",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Border radius",
+      "default": 0
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom HTML"
+    }
+  ],
+  "tag": null
+}
+{% endschema %}

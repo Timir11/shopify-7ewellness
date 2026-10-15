@@ -1,0 +1,168 @@
+{%- assign static_cart = false -%}
+{%- if cart.items.size < 3 -%}
+  {%- assign static_cart = true -%}
+{%- endif -%}
+{%- if additional_checkout_buttons and settings.cart_additional_buttons -%}
+  {%- assign static_cart = false -%}
+{%- endif -%}
+<div id="CartDrawer" class="drawer drawer--cart{% if static_cart %} drawer--cart--static{% endif %}" data-drawer="true">
+  <form
+    id="CartDrawerForm"
+    action="{{ routes.cart_url }}"
+    method="post"
+    novalidate
+    class="drawer__contents{% if cart.items.size == 0 %} cart--empty{% endif %}"
+    data-location="cart-drawer"
+  >
+    <div class="drawer__header">
+      <h4 class="cart_heading">
+        Your Cart
+        <span class="cart_count">
+          {{- cart.item_count }}
+          {{ cart.item_count | pluralize: 'item', 'items' -}}
+        </span>
+      </h4>
+      <div class="drawer__close text-right">
+        <button type="button" class="drawer__close-button js-drawer-close">
+          <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-close" viewBox="0 0 64 64">
+            <title>icon-X</title><path d="m19 17.61 27.12 27.13m0-27.12L19 44.74"/>
+          </svg>
+          <span class="icon__fallback-text">{{ 'cart.general.close_cart' | t }}</span>
+        </button>
+      </div>
+    </div>
+    <div class="drawer__inner">
+      <div class="drawer__scrollable">
+        <div data-products></div>
+
+        {%- if settings.cart_notes_enable -%}
+          <div class="cart__note" data-cart-note-container>
+            <label for="CartDrawerSpecialInstructions">{{ 'cart.general.note' | t }}</label>
+            <textarea
+              name="note"
+              class="input-full"
+              id="CartDrawerSpecialInstructions"
+              data-cart-note
+            >{{ cart.note }}</textarea>
+          </div>
+        {%- endif -%}
+      </div>
+      {% comment %}
+        <div class="you_may_like">
+          {% render 'recommend' %}
+        </div>
+      {% endcomment %}
+      {% comment %} comment the cart shop best sealler for now {% endcomment %}
+      {% comment %} <div data-rebuy-id="159930"></div> {% endcomment %}
+      <div class="money-back-guarantee">30 - Day Money-Back Guarantee</div>
+      <div class="drawer__footer cart__footer">
+        <div data-discounts>
+          {% if cart.cart_level_discount_applications != blank %}
+            <div class="cart__item-sub cart__item-row">
+              <div>{{ 'cart.general.discounts' | t }}</div>
+              <div class="text-right">
+                {% for cart_discount in cart.cart_level_discount_applications %}
+                  <div>{{ cart_discount.title }} (-{{ cart_discount.total_allocated_amount | money }})</div>
+                {% endfor %}
+              </div>
+            </div>
+          {% endif %}
+        </div>
+
+        
+          {% comment %} {% assign total_savings = 0 %}
+          {% for item in cart.items %}
+            {% if item.variant.compare_at_price > item.variant.price %}
+              {% assign item_saving = item.variant.compare_at_price | minus: item.variant.price %}
+              {% assign line_saving = item_saving | times: item.quantity %}
+              {% assign total_savings = total_savings | plus: line_saving %}
+            {% endif %}
+          {% endfor %} {% endcomment %}
+
+        {% if cart.original_total_price > cart.total_price %}
+          <div class="cart__item-sub cart__item-row cart-savings">
+            <div class="cart__subtotal">Savings</div>
+            <div data-savings> - {{ cart.total_discount | money }}</div>
+          </div>
+        {% endif %}
+       
+
+        <div class="cart__item-sub cart__item-row">
+          <div class="cart__subtotal">{{ 'cart.general.subtotal' | t }}</div>
+          <div data-subtotal>{{ cart.total_price | money }}</div>
+        </div>
+
+        <div class="cart__item-row cart__note text-center">
+          {{ 'cart.general.shipping_at_checkout' | t }}
+        </div>
+
+        {%- if settings.cart_terms_conditions_enable -%}
+          <p class="cart__note cart__terms">
+            <input type="checkbox" id="CartTermsDrawer" class="cart__terms-checkbox">
+            <label for="CartTermsDrawer">
+              {%- if settings.cart_terms_conditions_page != blank -%}
+                {{ 'cart.general.terms_html' | t: url: settings.cart_terms_conditions_page.url }}
+              {%- else -%}
+                {{ 'cart.general.terms' | t }}
+              {%- endif -%}
+            </label>
+          </p>
+        {%- endif -%}
+        <button
+          type="submit"
+          class="btn btn--full cart__checkout cart__checkout--drawer"
+          name="checkout"
+          data-terms-required="{{ settings.cart_terms_conditions_enable }}"
+        >
+          <svg width="12" height="17" viewBox="0 0 12 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_5793_1294)"><g clip-path="url(#clip1_5793_1294)">
+              <g clip-path="url(#clip2_5793_1294)"><path d="M9.52266 7.22034V5.4387C9.52266 3.3525 7.82652 1.65381 5.73774 1.65381C3.65154 1.65381 1.95284 3.3525 1.95284 5.4387V7.22034C1.07959 7.29332 0.392578 8.03066 0.392578 8.92148V11.0455C0.392578 13.7759 2.61214 15.9981 5.34257 15.9981H6.13276C8.86318 15.9981 11.0827 13.7759 11.0827 11.0455V8.92148C11.0827 8.0306 10.3959 7.2933 9.52266 7.22034ZM3.59114 5.4387C3.70878 2.59439 7.76677 2.59504 7.88433 5.4387V7.21293H3.59114V5.4387ZM5.13882 11.8031C4.25551 11.2268 4.68647 9.81821 5.73776 9.82753C6.78905 9.81878 7.22062 11.2262 6.33672 11.8031C6.26877 11.8484 6.22599 11.929 6.22599 12.012V12.8953C6.20963 13.5383 5.26656 13.5395 5.24956 12.8953V12.012C5.24956 11.929 5.20677 11.8484 5.13882 11.8031Z" fill="#E8DFEE"/></g>
+            </g>
+            </g>
+            <defs>
+            <clipPath id="clip0_5793_1294">
+            <rect width="11.4754" height="16.3934" fill="white" transform="translate(0 0.439941)"/>
+            </clipPath>
+            <clipPath id="clip1_5793_1294">
+            <rect width="11.4754" height="16.3934" fill="white" transform="translate(0 0.439941)"/>
+            </clipPath>
+            <clipPath id="clip2_5793_1294">
+            <rect width="11.4754" height="15.0615" fill="white" transform="translate(0 1.10596)"/>
+            </clipPath>
+            </defs>
+          </svg>
+          <span>
+            Secure checkout - &nbsp;
+            <div data-checkout-subtotal>{{ cart.total_price | money }}</div>
+          </span>
+        </button>
+
+        {%- if additional_checkout_buttons and settings.cart_additional_buttons -%}
+          <div class="additional-checkout-buttons additional-checkout-buttons--vertical">
+            {{ content_for_additional_checkout_buttons }}
+          </div>
+        {%- endif -%}
+
+        <div class="cart-customer-review">
+          <img src="https://cdn.shopify.com/s/files/1/2745/9950/files/Users.svg?v=1747934883" alt="Star"> 100,000+
+          HAPPY CUSTOMERS
+        </div>
+
+        {% comment %}
+          Uncomment to show continue shopping button
+        {% endcomment %}
+        {% comment %}
+          <a href="{{ routes.all_products_collection_url }}" class="btn btn--secondary btn--full">
+            {{ 'cart.general.continue_shopping' | t }}
+          </a>
+        {% endcomment %}
+      </div>
+    </div>
+    <div class="drawer__cart-empty text-center">
+      <p>{{ 'cart.general.empty' | t }}</p>
+      <p class="rte">{{ 'cart.general.continue_browsing_html' | t: url: routes.all_products_collection_url }}</p>
+    </div>
+  </form>
+</div>
+
+<style></style>

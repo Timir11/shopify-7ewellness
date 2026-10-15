@@ -1,0 +1,405 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "sales_point": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "globe",
+            "text": "Free worldwide shipping"
+          }
+        },
+        "inventory_status": {
+          "type": "inventory_status",
+          "settings": {
+            "inventory_threshold": 10,
+            "inventory_transfers_enable": true
+          }
+        },
+        "custom_JeLE9j": {
+          "type": "custom",
+          "disabled": true,
+          "settings": {
+            "code": "<P style=\"background: yellow;padding: 10px 15px; border-radius: 30px; display: inline-block;margin: 0; font-size: 20px;line-height: 1;\">WOMEN'S DAY SALE <b>15% OFF<\/b><\/P>"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "is_tab": false
+          }
+        },
+        "tab": {
+          "type": "tab",
+          "settings": {
+            "title": "Shipping information",
+            "content": "<p>Use collapsible tabs for more detailed information that will help customers make a purchasing decision.<\/p><p>Ex: Shipping and return policies, size guides, and other common questions.<\/p>",
+            "page": ""
+          }
+        },
+        "contact": {
+          "type": "contact",
+          "settings": {
+            "title": "Ask a question",
+            "phone": false
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "price",
+        "variant_picker",
+        "sales_point",
+        "inventory_status",
+        "custom_JeLE9j",
+        "buy_buttons",
+        "description",
+        "tab",
+        "contact",
+        "share"
+      ],
+      "settings": {
+        "product_image_size": "large",
+        "product_image_type": "stacked",
+        "thumbnail_height": "flexible",
+        "product_zoom_enable": true,
+        "enable_video_looping": true,
+        "product_video_style": "muted",
+        "sku_enable": false
+      }
+    },
+    "sub": {
+      "type": "product-full-width",
+      "disabled": true,
+      "settings": {
+        "max_width": true
+      }
+    },
+    "1645383603ceda0d05": {
+      "type": "featured-product",
+      "blocks": {
+        "164538360347ac0c2d-0": {
+          "type": "price",
+          "settings": {}
+        },
+        "c69bc352-5fae-4086-827b-5b4bb9d62d38": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "globe",
+            "text": "Free US Domestic Ground Shipping"
+          }
+        },
+        "53ba5f61-f650-4ef9-87e2-d20f6400bc6e": {
+          "type": "sales_point",
+          "settings": {
+            "icon": "checkmark",
+            "text": "HappinessGuarantee"
+          }
+        },
+        "164538360347ac0c2d-2": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
+        "164538360347ac0c2d-3": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "surface_pickup_enable": true
+          }
+        },
+        "164538360347ac0c2d-1": {
+          "type": "description",
+          "settings": {
+            "is_tab": true
+          }
+        },
+        "6620656c-2bc5-44fc-ab05-e2678e38117d": {
+          "type": "tab",
+          "settings": {
+            "title": "Shipping information",
+            "content": "<p>Free USA Ground shipment, Orders are processed within 2 business day.<\/p><p>International Orders Ships within 3 business day. <\/p><p>International customers are required to pay Duty with their local custom agency. <\/p>",
+            "page": ""
+          }
+        },
+        "44449f7f-c966-4081-8add-94fed1a5f259": {
+          "type": "tab",
+          "settings": {
+            "title": "What's Included",
+            "content": "<p>• 1 Myolift 600 Device<\/p><p>• 1 Carrying Case<\/p><p>• 1 (4oz) Renu Gel<\/p><p>• 1 (4oz) Restore Gel<\/p><p>• 1 (4oz) ATP Booster Gel <\/p><p>• 1 (8oz) Replenish Spritzer<\/p><p>• 4 Forehead Masks<\/p><p>• 4 Eye Masks<\/p><p>• 4 Lip Masks<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "164538360347ac0c2d-0",
+        "c69bc352-5fae-4086-827b-5b4bb9d62d38",
+        "53ba5f61-f650-4ef9-87e2-d20f6400bc6e",
+        "164538360347ac0c2d-2",
+        "164538360347ac0c2d-3",
+        "164538360347ac0c2d-1",
+        "6620656c-2bc5-44fc-ab05-e2678e38117d",
+        "44449f7f-c966-4081-8add-94fed1a5f259"
+      ],
+      "settings": {
+        "featured_product": "myolift™-600-atp-booster-kit-draft",
+        "product_image_size": "medium",
+        "product_image_type": "slider",
+        "product_zoom_enable": false,
+        "enable_video_looping": true,
+        "product_video_style": "muted",
+        "sku_enable": false
+      }
+    },
+    "1645807103dbf5b004": {
+      "type": "slideshow",
+      "blocks": {
+        "164580710302d78b67-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Untitled_design_30_2ac5112e-ea3c-41e5-85c7-3259eb1cf550.png",
+            "image_mobile": "shopify:\/\/shop_images\/Untitled_design_31.png"
+          }
+        }
+      },
+      "block_order": [
+        "164580710302d78b67-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "164580728253a9f73c": {
+      "type": "slideshow",
+      "blocks": {
+        "16458072825721b193-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/Iconography_transition_da240375-4204-4110-a240-041607167701.png",
+            "image_mobile": "shopify:\/\/shop_images\/Untitled_design_31.png"
+          }
+        }
+      },
+      "block_order": [
+        "16458072825721b193-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "1646167880e423f22d": {
+      "type": "advanced-content",
+      "blocks": {
+        "1646167879bc96d6e6-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<iframe width=\"550\" height=\"310\" src=\"https:\/\/www.youtube.com\/embed\/n4k6eeG3jio\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "035959f9-3a56-4b3a-a69a-a5ba7782a841": {
+          "type": "liquid",
+          "settings": {
+            "code": "<iframe width=\"550\" height=\"310\" src=\"https:\/\/www.youtube.com\/embed\/-viNlZMa4Mc\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "1646167879bc96d6e6-1",
+        "035959f9-3a56-4b3a-a69a-a5ba7782a841"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "alt": true,
+        "lazyload_images": true
+      }
+    },
+    "16453836352009c0bb": {
+      "type": "rich-text",
+      "blocks": {
+        "16453836357496a3cc-0": {
+          "type": "heading",
+          "settings": {
+            "title": "Not sure if this is the right device for you? Take our 2 minute quiz and find your match."
+          }
+        },
+        "49fcbdb0-1726-43c4-bb79-4f15792b275d": {
+          "type": "button",
+          "settings": {
+            "link": "",
+            "link_text": "GET STARTED"
+          }
+        }
+      },
+      "block_order": [
+        "16453836357496a3cc-0",
+        "49fcbdb0-1726-43c4-bb79-4f15792b275d"
+      ],
+      "disabled": true,
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "alt": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "product_recommendations_heading": "You may also like",
+        "related_count": 14
+      }
+    },
+    "1645383795c6f01540": {
+      "type": "slideshow",
+      "blocks": {
+        "1645383795c8093e43-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "shopify:\/\/blogs\/myolift-reviews",
+            "link_text": "See More",
+            "color_accent": "#e8dfee",
+            "text_align": "vertical-bottom horizontal-center",
+            "image": "shopify:\/\/shop_images\/7E_Professionals-Before_Afters.jpg",
+            "image_mobile": "shopify:\/\/shop_images\/7E_Professionals-Before_Afters_Mobile.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "1645383795c8093e43-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "collection-return": {
+      "type": "collection-return",
+      "settings": {}
+    },
+    "164538364139618239": {
+      "type": "faq",
+      "blocks": {
+        "164538364199350ffc-0": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        },
+        "164538364199350ffc-1": {
+          "type": "question",
+          "settings": {
+            "title": "Frequently asked question",
+            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "164538364199350ffc-0",
+        "164538364199350ffc-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "FAQs"
+      }
+    },
+    "164538372373b09e9b": {
+      "type": "apps",
+      "blocks": {
+        "f9cbb1a8-0de2-42e6-843d-4f415c3264e6": {
+          "type": "shopify:\/\/apps\/okendo\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "settings": {
+            "product": "myolift™-600-atp-booster-kit-draft",
+            "widget_type": "combined_widget"
+          }
+        }
+      },
+      "block_order": [
+        "f9cbb1a8-0de2-42e6-843d-4f415c3264e6"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "sub",
+    "1645383603ceda0d05",
+    "1645807103dbf5b004",
+    "164580728253a9f73c",
+    "1646167880e423f22d",
+    "16453836352009c0bb",
+    "product-recommendations",
+    "1645383795c6f01540",
+    "collection-return",
+    "164538364139618239",
+    "164538372373b09e9b"
+  ]
+}

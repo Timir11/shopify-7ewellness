@@ -1,0 +1,8 @@
+
+{%- if content_for_header contains "tmenu\/async.js" -%}
+{%- render 'qikify-tmenu' -%}
+
+{%- endif -%}
+{%- if content_for_header contains "tmenu\/async.js" or content_for_header contains "mobilemenu\/async.js" -%}
+{%- render 'qikify-navigator' -%}
+{%- endif -%}

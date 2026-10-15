@@ -1,0 +1,204 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "164750184654268337": {
+      "type": "advanced-content",
+      "blocks": {
+        "164750184632c2dd43-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h4>Inaugural<\/h4>\n<h2>MyoCommunity<\/h2>\n<h4>Virtual Conference<\/h4>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "164750184632c2dd43-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "757d79b7-de98-41f3-bc8a-b2caa5cb28be": {
+      "type": "slideshow",
+      "blocks": {
+        "template--14941821108278__757d79b7-de98-41f3-bc8a-b2caa5cb28be-168613332027f093fb-0": {
+          "type": "image",
+          "settings": {
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/desktop_revised_banner.png",
+            "image_mobile": "shopify:\/\/shop_images\/mobile_banner_revised.png"
+          }
+        }
+      },
+      "block_order": [
+        "template--14941821108278__757d79b7-de98-41f3-bc8a-b2caa5cb28be-168613332027f093fb-0"
+      ],
+      "settings": {
+        "style": "arrows",
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "autoplay": false,
+        "autoplay_speed": 7,
+        "lazyload_images": true
+      }
+    },
+    "f3752347-ab3a-4bed-bbf8-62e3d63743c2": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14941821108278__f3752347-ab3a-4bed-bbf8-62e3d63743c2-1686136755b1a17f49-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>What is MyoCommunity Conference?<\/h2>\n<p>Virtual seminar showcasing best practices around microcurrent treatment for  skincare explorers, enthusiasts & experts with live virtual video sessions delivered by industry experts, practitioners, influencers, MyoLift<sup>TM<\/sup> partners and more.<\/p>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14941821108278__f3752347-ab3a-4bed-bbf8-62e3d63743c2-1686136755b1a17f49-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "d19d8dd0-3163-408c-9a18-94b96e7ebcbc": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14941821108278__d19d8dd0-3163-408c-9a18-94b96e7ebcbc-1686218438831784c5-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>Ready to join?<\/h2>\n<p><a href=\"https:\/\/events.zoom.us\/ev\/Amx8vHf3UKBdYaG6rr-MTbRaw_3avQnU9IlrT10ShysLLWcWXdF7~AggLXsr32QYFjq8BlYLZ5I06Dg\">Register for MyoCommunity Virtual Meet!<\/a><em>Gain insight into the growing use of microcurrent in skincare treatments. Learn, ask questions and interact with the EXPERTS!<\/em><\/p>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14941821108278__d19d8dd0-3163-408c-9a18-94b96e7ebcbc-1686218438831784c5-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "alt": false,
+        "lazyload_images": true
+      }
+    },
+    "290eccd8-e775-45bd-ab79-4d94f9db7fa9": {
+      "type": "text-columns",
+      "blocks": {
+        "template--14941821108278__290eccd8-e775-45bd-ab79-4d94f9db7fa9-1686219865ce174723-0": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/icon-access.png",
+            "image_mask": "none",
+            "image_width": 150,
+            "title": "Access to MyoCommunity",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--14941821108278__290eccd8-e775-45bd-ab79-4d94f9db7fa9-1686219865ce174723-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/icon-demo.png",
+            "image_mask": "none",
+            "image_width": 150,
+            "title": "Demo on microcurrent modalities",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "0795154c-7069-4e6d-8d2d-afb3c873e558": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/icon-expert.png",
+            "image_mask": "none",
+            "image_width": 150,
+            "title": "Hear from experts & practitioners",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "6a1cc505-086d-4f68-928b-7c632d258f16": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/icon-discount.png",
+            "image_mask": "none",
+            "image_width": 150,
+            "title": "Special deals on devices & accessories",
+            "text": "",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14941821108278__290eccd8-e775-45bd-ab79-4d94f9db7fa9-1686219865ce174723-0",
+        "template--14941821108278__290eccd8-e775-45bd-ab79-4d94f9db7fa9-1686219865ce174723-1",
+        "0795154c-7069-4e6d-8d2d-afb3c873e558",
+        "6a1cc505-086d-4f68-928b-7c632d258f16"
+      ],
+      "settings": {
+        "title": "What you get?",
+        "align_text": "center",
+        "alt": false
+      }
+    },
+    "18a4b0fe-e9bf-4673-a48b-b433cd94639f": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--14941821108278__18a4b0fe-e9bf-4673-a48b-b433cd94639f-1686218438831784c5-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>Don't Miss Out!<\/h2><a href=\"https:\/\/events.zoom.us\/ev\/Amx8vHf3UKBdYaG6rr-MTbRaw_3avQnU9IlrT10ShysLLWcWXdF7~AggLXsr32QYFjq8BlYLZ5I06Dg\">Register Now<\/a>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--14941821108278__18a4b0fe-e9bf-4673-a48b-b433cd94639f-1686218438831784c5-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": false,
+        "alt": false,
+        "lazyload_images": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "164750184654268337",
+    "757d79b7-de98-41f3-bc8a-b2caa5cb28be",
+    "f3752347-ab3a-4bed-bbf8-62e3d63743c2",
+    "d19d8dd0-3163-408c-9a18-94b96e7ebcbc",
+    "290eccd8-e775-45bd-ab79-4d94f9db7fa9",
+    "18a4b0fe-e9bf-4673-a48b-b433cd94639f"
+  ]
+}
