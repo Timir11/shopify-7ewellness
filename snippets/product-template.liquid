@@ -727,7 +727,7 @@ Changes:
 <script>
 (function () {
   const productSection = document.getElementById(
-    'ProductSection-{{ section_id }}'
+    'AddToCartForm-{{ section_id }}'
   );
 
   if (!productSection) return;
@@ -754,7 +754,7 @@ Changes:
   function updateVariantPrice() {
     debugger;
     const variantIdInput = productSection.querySelector(
-      'form input[name="Size"], input[name="Size"]'
+      'form input[name="id"], input[name="id"]'
     );
 
     if (!variantIdInput) return;
@@ -823,7 +823,7 @@ Changes:
     //debugger
     if (
       event.target.matches(
-        'select, input[type="radio"], input[name="Size"]'
+        'select, input[type="radio"], input[name="id"]'
       )
     ) {
       setTimeout(updateVariantPrice, 100);
