@@ -924,8 +924,8 @@ Changes:
       btn.disabled = !variant.available;
 
       const text = variant.available
-        ? 'Add to Cart  -  ' + formatPrice(discountedPrice)
-        : 'Sold Out  -  ' + formatPrice(discountedPrice);
+        ? theme.Currency.formatMoney(discountedPrice)
+        : theme.Currency.formatMoney(discountedPrice);
 
       // Prefer a dedicated text element so icons/spinners inside the button survive
       const textEl =
