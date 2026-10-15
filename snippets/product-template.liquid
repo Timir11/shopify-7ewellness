@@ -255,7 +255,7 @@
 
                                   {%- if product.handle == 'restore-gel' -%}
                                     <!-- SPECIAL 'restore-gel': Show regular price as discounted-price (no slashed) -->
-                                    <span class="discounted-price atc_variant_price">
+                                    <span class="discounted-price atc_variant_price abc">
                                       {{ regular_price_cents | money }}
                                     </span>
                                   {%- else -%}
@@ -271,7 +271,7 @@
                                 {%- else -%}
                                   <!-- NO DISCOUNT: Regular price only -->
                                   <!-- Added class for JS targeting -->
-                                  <span class="discounted-price atc_variant_price">
+                                  <span class="discounted-price atc_variant_price 123">
                                     {{ regular_price_cents | money }}
                                   </span>
                                   <span class="slashed-price" style="display:none;"></span> <!-- Hidden when no discount -->
