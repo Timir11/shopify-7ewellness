@@ -899,12 +899,12 @@ Changes:
     if (!priceContainer) return;
 
     priceContainer.querySelectorAll('.discounted-price.atc_variant_price').forEach(function (el) {
-      el.textContent = discountedPrice | money_format;
+      el.textContent = theme.Currency.formatMoney(discountedPrice);
     });
 
     priceContainer.querySelectorAll('.slashed-price.atc_variant_price').forEach(function (el) {
       if (hasDiscount) {
-        el.textContent = formatPrice(variant.price);
+        el.textContent = theme.Currency.formatMoney(variant.price);
         el.style.display = '';
       } else {
         el.style.display = 'none';
