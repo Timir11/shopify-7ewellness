@@ -929,9 +929,7 @@ Changes:
 
       // Prefer a dedicated text element so icons/spinners inside the button survive
       const textEl =
-        btn.querySelector('[data-add-to-cart-text]') ||
-        btn.querySelector('[data-atc-text]') ||
-        btn.querySelector('span:not([class*="icon"]):not([class*="loader"])');
+        btn.querySelector('.discounted-price.atc_variant_price');
 
       if (textEl) {
         textEl.textContent = text;
