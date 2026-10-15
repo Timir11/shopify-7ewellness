@@ -899,7 +899,7 @@ Changes:
     if (!priceContainer) return;
 
     priceContainer.querySelectorAll('.discounted-price.atc_variant_price').forEach(function (el) {
-      el.textContent = formatPrice(discountedPrice);
+      el.textContent = discountedPrice | money_format;
     });
 
     priceContainer.querySelectorAll('.slashed-price.atc_variant_price').forEach(function (el) {
