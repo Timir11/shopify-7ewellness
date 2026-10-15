@@ -724,3 +724,208 @@ Changes:
 {% endcomment %}
 
 
+{% comment %} <script>
+(function () {
+  const productSection = document.getElementById(
+    'ProductSection-{{ section_id }}'
+  );
+
+  if (!productSection) return;
+
+  const variants = {{ product.variants | json }};
+  const productDiscount = {{ product.metafields.custom.discount_percentage | default: 0 | plus: 0 }};
+  const productUrl = {{ product.handle | json }};
+  const isRestoreGel = productUrl == 'restore-gel';
+
+  const variantDiscounts = {
+    {% for variant in product.variants %}
+      "{{ variant.id }}": {{ variant.metafields.custom.discount_percentage | default: 0 | plus: 0 }}{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  };
+
+  function formatPrice(cents) {
+    if (window.Shopify && typeof Shopify.formatMoney === 'function') {
+      return Shopify.formatMoney(cents, Shopify.money_format);
+    }
+
+    return (cents / 100).toFixed(2);
+  }
+
+  function updateVariantPrice() {
+    debugger;
+    const variantIdInput = productSection.querySelector(
+      'input[name="Size"]'
+    );
+
+    if (!variantIdInput) return;
+
+    const variant = variants.find(
+      item => String(item.id) === String(variantIdInput.value)
+    );
+
+    if (!variant) return;
+
+    const variantDiscount = Number(
+      variantDiscounts[String(variant.id)] || 0
+    );
+
+    const discount = variantDiscount > 0
+      ? variantDiscount
+      : productDiscount;
+
+    const discountedPrice = discount > 0
+      ? Math.round(variant.price * (1 - discount / 100))
+      : variant.price;
+
+    const priceContainer = productSection.querySelector(
+      '.product-single__prices'
+    );
+
+    if (!priceContainer) return;
+
+    const discountedElements = priceContainer.querySelectorAll(
+      '.discounted-price.atc_variant_price'
+    );
+
+    const slashedElements = priceContainer.querySelectorAll(
+      '.slashed-price.atc_variant_price'
+    );
+
+    discountedElements.forEach(function (element) {
+      element.textContent = formatPrice(
+        discount > 0 && !isRestoreGel
+          ? discountedPrice
+          : variant.price
+      );
+    });
+
+    slashedElements.forEach(function (element) {
+      if (discount > 0 && !isRestoreGel) {
+        element.textContent = formatPrice(variant.price);
+        element.style.display = '';
+      } else {
+        element.style.display = 'none';
+      }
+    });
+
+    const discountLabel = productSection.querySelector(
+      '.dynamic-discount-label'
+    );
+
+    if (discountLabel) {
+      discountLabel.textContent = discount + '% OFF';
+      discountLabel.style.display = discount > 0 ? 'inline-block' : 'none';
+    }
+  }
+
+  // Run after the theme updates the selected variant ID.
+  productSection.addEventListener('change', function (event) {
+    //debugger
+    if (
+      event.target.matches(
+        'select, input[type="radio"], input[name="id"]'
+      )
+    ) {
+      setTimeout(updateVariantPrice, 100);
+    }
+  });
+
+  // Handle initial page load and browser back/forward navigation.
+  updateVariantPrice();
+  window.addEventListener('popstate', function () {
+    setTimeout(updateVariantPrice, 100);
+  });
+})();
+</script> {% endcomment %}
+
+<script>
+(function () {
+  const section = document.getElementById('ProductSection-{{ section_id }}');
+  if (!section) return;
+
+  const variants = {{ product.variants | json }};
+  const optionNames = {{ product.options | json }};
+  const productDiscount = {{ product.metafields.custom.discount_percentage | default: 0 | plus: 0 }};
+  const isRestoreGel = {{ product.handle | json }} === 'restore-gel';
+
+  const variantDiscounts = {
+    {% for variant in product.variants %}
+      "{{ variant.id }}": {{ variant.metafields.custom.discount_percentage | default: 0 | plus: 0 }}{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  };
+
+  function formatPrice(cents) {
+    if (window.Shopify && typeof Shopify.formatMoney === 'function') {
+      return Shopify.formatMoney(cents, Shopify.money_format);
+    }
+    return (cents / 100).toFixed(2);
+  }
+
+  function getSelectedVariant() {
+    // Collect checked radios / selects for each option (search the whole section, not just the form)
+    const selected = optionNames.map(function (name) {
+      const radio = section.querySelector('input[type="radio"][name="' + name + '"]:checked');
+      if (radio) return radio.value;
+      const select = section.querySelector('select[name="' + name + '"]');
+      return select ? select.value : null;
+    });
+
+    if (selected.every(Boolean)) {
+      const match = variants.find(function (v) {
+        return v.options.every(function (opt, i) { return opt === selected[i]; });
+      });
+      if (match) return match;
+    }
+
+    // Fallback: variant ID from URL or the form's id field
+    const urlId = new URLSearchParams(window.location.search).get('variant');
+    const idInput = section.querySelector('[name="id"]');
+    const id = urlId || (idInput && idInput.value);
+    return variants.find(function (v) { return String(v.id) === String(id); });
+  }
+
+  function updateVariantPrice() {
+    const variant = getSelectedVariant();
+    if (!variant) return;
+
+    const variantDiscount = Number(variantDiscounts[String(variant.id)] || 0);
+    const discount = variantDiscount > 0 ? variantDiscount : productDiscount;
+    const hasDiscount = discount > 0 && !isRestoreGel;
+    const discountedPrice = hasDiscount
+      ? Math.round(variant.price * (1 - discount / 100))
+      : variant.price;
+
+    const priceContainer = section.querySelector('.product-single__prices');
+    if (!priceContainer) return;
+
+    priceContainer.querySelectorAll('.discounted-price.atc_variant_price').forEach(function (el) {
+      el.textContent = formatPrice(discountedPrice);
+    });
+
+    priceContainer.querySelectorAll('.slashed-price.atc_variant_price').forEach(function (el) {
+      if (hasDiscount) {
+        el.textContent = formatPrice(variant.price);
+        el.style.display = '';
+      } else {
+        el.style.display = 'none';
+      }
+    });
+
+    const label = section.querySelector('.dynamic-discount-label');
+    if (label) {
+      label.textContent = discount + '% OFF';
+      label.style.display = discount > 0 ? 'inline-block' : 'none';
+    }
+  }
+
+  // Listen on the whole section so events from inputs outside the <form> are caught
+  section.addEventListener('change', function (e) {
+    if (e.target.matches('select, input[type="radio"], input[name="id"]')) {
+      setTimeout(updateVariantPrice, 100);
+    }
+  });
+
+  window.addEventListener('popstate', function () { setTimeout(updateVariantPrice, 100); });
+  updateVariantPrice();
+})();
+</script>
