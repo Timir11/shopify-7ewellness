@@ -918,8 +918,7 @@ Changes:
     }
 
     const btn =
-      section.querySelector('button[name="add"]') ||
-      (form && form.querySelector('button[type="submit"]'));
+      section.querySelector('button[name="add"]');
 
     if (btn) {
       btn.disabled = !variant.available;
