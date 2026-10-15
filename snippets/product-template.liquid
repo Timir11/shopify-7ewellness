@@ -895,7 +895,7 @@ Changes:
       ? Math.round(variant.price * (1 - discount / 100))
       : variant.price;
 
-    const priceContainer = section.querySelector('.product-single__prices');
+    const priceContainer = section.querySelector('.product-single__prices', '.add-to-cart');
     if (!priceContainer) return;
 
     priceContainer.querySelectorAll('.discounted-price.atc_variant_price').forEach(function (el) {
