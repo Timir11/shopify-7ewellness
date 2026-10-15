@@ -923,9 +923,7 @@ Changes:
     if (btn) {
       btn.disabled = !variant.available;
 
-      const text = variant.available
-        ? theme.Currency.formatMoney(discountedPrice)
-        : theme.Currency.formatMoney(discountedPrice);
+      const text = theme.Currency.formatMoney(discountedPrice);
 
       // Prefer a dedicated text element so icons/spinners inside the button survive
       const textEl =
