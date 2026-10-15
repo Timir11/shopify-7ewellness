@@ -273,6 +273,7 @@
                                   <!-- Added class for JS targeting -->
                                   <span class="discounted-price atc_variant_price 123">
                                     {{ regular_price_cents | money }}
+                                    {{ current_variant.price | money }}
                                   </span>
                                   <span class="slashed-price" style="display:none;"></span> <!-- Hidden when no discount -->
                                 {%- endif -%}
