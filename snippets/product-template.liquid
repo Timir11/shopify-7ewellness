@@ -752,6 +752,7 @@ Changes:
   }
 
   function updateVariantPrice() {
+    debugger;
     const variantIdInput = productSection.querySelector(
       'form input[name="id"], input[name="id"]'
     );
@@ -819,7 +820,7 @@ Changes:
 
   // Run after the theme updates the selected variant ID.
   productSection.addEventListener('change', function (event) {
-    debugger
+    //debugger
     if (
       event.target.matches(
         'select, input[type="radio"], input[name="id"]'
