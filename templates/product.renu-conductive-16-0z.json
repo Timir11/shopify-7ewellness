@@ -1,10 +1,19 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "main-product",
       "blocks": {
         "okendo_star_rating_TADRAg": {
-          "type": "shopify:\/\/apps\/okendo\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "type": "shopify://apps/okendo/blocks/star-rating/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
           "settings": {
             "product": "{{product}}"
           }
@@ -25,6 +34,15 @@
             "is_meta_description": false
           }
         },
+        "variant_picker_QAC3Dr": {
+          "type": "variant_picker",
+          "settings": {
+            "variant_labels": true,
+            "picker_type": "button",
+            "product_dynamic_variants_enable": true,
+            "color_swatches": false
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -36,21 +54,21 @@
         "trust_badge_ka3aKe": {
           "type": "trust_badge",
           "settings": {
-            "trust_image": "shopify:\/\/shop_images\/Background_2x_9930748b-1cc8-4d33-b97d-a8c4c9db56ff.png"
+            "trust_image": "shopify://shop_images/Background_2x_9930748b-1cc8-4d33-b97d-a8c4c9db56ff.png"
           }
         },
         "pop_up_rJzQ4w": {
           "type": "pop_up",
           "settings": {
             "title": "Shipping & Handling",
-            "content": "<p>Free USA Ground shipment, Orders are processed within 2 business day. <\/p><p>International Orders Ships within 3 business day.  <\/p><p>International customers are required to pay Duty with their local custom agency. <\/p>"
+            "content": "<p>Free USA Ground shipment, Orders are processed within 2 business day. </p><p>International Orders Ships within 3 business day.  </p><p>International customers are required to pay Duty with their local custom agency. </p>"
           }
         },
         "tab_TPkht9": {
           "type": "tab",
           "settings": {
             "title": "Who is this for?",
-            "content": "<p>Suitable for all skin types; Formulated specifically for <a href=\"https:\/\/www.7ewellness.com\/collections\/shop-by-concern-sensitivity-inflammation\" target=\"_blank\" title=\"https:\/\/www.7ewellness.com\/collections\/shop-by-concern-sensitivity-inflammation\">sensitive skin<\/a>. <\/p>",
+            "content": "<p>Suitable for all skin types; Formulated specifically for <a href=\"https://www.7ewellness.com/collections/shop-by-concern-sensitivity-inflammation\" target=\"_blank\" title=\"https://www.7ewellness.com/collections/shop-by-concern-sensitivity-inflammation\">sensitive skin</a>. </p>",
             "page": ""
           }
         },
@@ -108,6 +126,7 @@
         "price",
         "description",
         "metafiled_description_thCG4N",
+        "variant_picker_QAC3Dr",
         "buy_buttons",
         "trust_badge_ka3aKe",
         "pop_up_rJzQ4w",
@@ -140,9 +159,9 @@
           "settings": {
             "tab_heading": "How it works",
             "heading": "Bio-Active Complex;The Secret to Youthful, Hydrated Skin",
-            "section_content": "<p>The <strong>Bio-Active Complex<\/strong> in our <strong>ReNu Conductive Tx Gel<\/strong> is the powerhouse ingredient that sets it apart. This advanced blend of skin-loving ingredients helps to deeply hydrate, nourish, and protect dry skin, all while boosting the effectiveness of <strong>microcurrent treatments<\/strong>. With its ability to replenish moisture, enhance skin elasticity, and improve overall skin texture, the <strong>Bio-Active Complex<\/strong> is your secret weapon for maintaining a youthful and glowing complexion.<\/p>",
-            "image": "shopify:\/\/shop_images\/desktop_16._4oz_ReNu_Conductive_Tx_Gel_For_Stressed_35ff185b-3aa9-4da5-8be1-cf394b51aa06.png",
-            "mobile_image": "shopify:\/\/shop_images\/mobile_16._4oz_ReNu_Conductive_Tx_Gel_For_Stressed.png",
+            "section_content": "<p>The <strong>Bio-Active Complex</strong> in our <strong>ReNu Conductive Tx Gel</strong> is the powerhouse ingredient that sets it apart. This advanced blend of skin-loving ingredients helps to deeply hydrate, nourish, and protect dry skin, all while boosting the effectiveness of <strong>microcurrent treatments</strong>. With its ability to replenish moisture, enhance skin elasticity, and improve overall skin texture, the <strong>Bio-Active Complex</strong> is your secret weapon for maintaining a youthful and glowing complexion.</p>",
+            "image": "shopify://shop_images/desktop_16._4oz_ReNu_Conductive_Tx_Gel_For_Stressed_35ff185b-3aa9-4da5-8be1-cf394b51aa06.png",
+            "mobile_image": "shopify://shop_images/mobile_16._4oz_ReNu_Conductive_Tx_Gel_For_Stressed.png",
             "link": "",
             "width": "100%",
             "alignment": "center"
@@ -153,9 +172,9 @@
           "settings": {
             "tab_heading": "Benefits",
             "heading": "What Makes Our Gel So Special?",
-            "image_banner": "shopify:\/\/shop_images\/1_96_2.png",
-            "mobile_image_banner": "shopify:\/\/shop_images\/1_96_3.png",
-            "image_content": "<p><strong>Our gel deeply hydrates and boosts microcurrent treatments to improve skin elasticity and glow. It’s gentle on all skin types, smooths texture, firms skin, and strengthens the skin’s natural barrier against environmental damage.<\/strong><\/p>"
+            "image_banner": "shopify://shop_images/1_96_2.png",
+            "mobile_image_banner": "shopify://shop_images/1_96_3.png",
+            "image_content": "<p><strong>Our gel deeply hydrates and boosts microcurrent treatments to improve skin elasticity and glow. It’s gentle on all skin types, smooths texture, firms skin, and strengthens the skin’s natural barrier against environmental damage.</strong></p>"
           }
         },
         "ingredients_KdBXPk": {
@@ -163,13 +182,13 @@
           "settings": {
             "tab_heading": "Ingredients",
             "heading": "Our Active Ingredients",
-            "ingredient_img1": "shopify:\/\/shop_images\/Group_1000007767.png",
+            "ingredient_img1": "shopify://shop_images/Group_1000007767.png",
             "ingredients_text1": "Chamomile",
-            "ingredient_img2": "shopify:\/\/shop_images\/image_050b75c3-f24b-48af-9f61-44d65a5b25b2.png",
+            "ingredient_img2": "shopify://shop_images/image_050b75c3-f24b-48af-9f61-44d65a5b25b2.png",
             "ingredients_text2": "Lavender",
-            "ingredient_img3": "shopify:\/\/shop_images\/Group_1000007769.png",
+            "ingredient_img3": "shopify://shop_images/Group_1000007769.png",
             "ingredients_text3": "Geranium",
-            "ingredient_img4": "shopify:\/\/shop_images\/Group_1000007770.png",
+            "ingredient_img4": "shopify://shop_images/Group_1000007770.png",
             "ingredients_text4": "Zinc Minerals"
           }
         },
@@ -179,15 +198,15 @@
             "tab_heading": "FAQs",
             "heading": "Frequently Asked Questions",
             "title1": "How does the ReNu Conductive Tx Gel work with microcurrent treatments?",
-            "text1": "<p>The gel acts as a <strong>conductive agent<\/strong>, allowing <strong>microcurrent energy<\/strong> to penetrate the skin more effectively during treatment. It improves the current's ability to stimulate collagen production, increase skin elasticity, and hydrate the skin deeply.<\/p>",
+            "text1": "<p>The gel acts as a <strong>conductive agent</strong>, allowing <strong>microcurrent energy</strong> to penetrate the skin more effectively during treatment. It improves the current's ability to stimulate collagen production, increase skin elasticity, and hydrate the skin deeply.</p>",
             "title2": "Can I use the ReNu Conductive Tx Gel without a microcurrent device?",
-            "text2": "<p>Yes, while the gel is specifically designed for use with <strong>microcurrent devices<\/strong>, you can also use it on its own as a <strong>hydrating treatment<\/strong> for dry skin. It provides deep moisture and improves skin texture without needing a device.<\/p>",
+            "text2": "<p>Yes, while the gel is specifically designed for use with <strong>microcurrent devices</strong>, you can also use it on its own as a <strong>hydrating treatment</strong> for dry skin. It provides deep moisture and improves skin texture without needing a device.</p>",
             "title3": "Is the ReNu Conductive Tx Gel suitable for all skin types?",
-            "text3": "<p>The gel is formulated for <strong>dry skin<\/strong> but can be used on <strong>all skin types<\/strong>, especially for those needing extra hydration. It is gentle enough for sensitive skin and helps restore moisture without causing irritation.<\/p>",
+            "text3": "<p>The gel is formulated for <strong>dry skin</strong> but can be used on <strong>all skin types</strong>, especially for those needing extra hydration. It is gentle enough for sensitive skin and helps restore moisture without causing irritation.</p>",
             "title4": "How often should I use the ReNu Conductive Tx Gel?",
-            "text4": "<p>For <strong>microcurrent treatments<\/strong>, apply the gel each time you use the device. For daily use, you can apply it once or twice a day as part of your regular skincare routine to keep your skin hydrated and smooth.<\/p>",
+            "text4": "<p>For <strong>microcurrent treatments</strong>, apply the gel each time you use the device. For daily use, you can apply it once or twice a day as part of your regular skincare routine to keep your skin hydrated and smooth.</p>",
             "title5": "What are the key benefits of using the ReNu Conductive Tx Gel?",
-            "text5": "<ul><li><strong>Enhances microcurrent conductivity<\/strong> for more effective treatments.<\/li><li><strong>Deeply hydrates<\/strong> and replenishes moisture in dry skin.<\/li><li><strong>Improves skin texture<\/strong> and elasticity over time.<\/li><li>Supports overall <strong>skin health<\/strong> with a nourishing <strong>Bio-Active Complex<\/strong>.<\/li><\/ul>",
+            "text5": "<ul><li><strong>Enhances microcurrent conductivity</strong> for more effective treatments.</li><li><strong>Deeply hydrates</strong> and replenishes moisture in dry skin.</li><li><strong>Improves skin texture</strong> and elasticity over time.</li><li>Supports overall <strong>skin health</strong> with a nourishing <strong>Bio-Active Complex</strong>.</li></ul>",
             "title6": "",
             "text6": "",
             "title7": "",
