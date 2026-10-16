@@ -837,7 +837,7 @@ Changes:
   });
 })();
 </script> {% endcomment %}
-
+{% comment %} 
 <script>
 (function () {
   const section = document.getElementById('ProductSection-{{ section_id }}');
@@ -947,5 +947,207 @@ Changes:
 
   window.addEventListener('popstate', function () { setTimeout(updateVariantPrice, 100); });
   setTimeout(updateVariantPrice, 400);
+})();
+</script> {% endcomment %}
+
+
+
+<script>
+(function () {
+  const section = document.getElementById('ProductSection-{{ section_id }}');
+  if (!section) return;
+
+  const variants = {{ product.variants | json }};
+  const optionNames = {{ product.options | json }};
+  const moneyFormat = {{ shop.money_format | json }};
+  const productDiscount = {{ product.metafields.custom.discount_percentage | default: 0 | plus: 0 }};
+  const isRestoreGel = {{ product.handle | json }} === 'restore-gel';
+
+  const variantDiscounts = {
+    {% for variant in product.variants %}
+      "{{ variant.id }}": {{ variant.metafields.custom.discount_percentage | default: 0 | plus: 0 }}{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  };
+
+  // ---------- Price formatting (uses the store's own money format) ----------
+  function formatPrice(cents) {
+    function withDelimiters(number, precision, thousands, decimal) {
+      precision = precision == null ? 2 : precision;
+      thousands = thousands || ',';
+      decimal = decimal || '.';
+      const parts = (number / 100).toFixed(precision).split('.');
+      const whole = parts[0].replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1' + thousands);
+      return whole + (parts[1] ? decimal + parts[1] : '');
+    }
+
+    const format = moneyFormat.replace(/<[^>]*>/g, '');
+    const match = format.match(/\{\{\s*(\w+)\s*\}\}/);
+    if (!match) return (cents / 100).toFixed(2);
+
+    let value;
+    switch (match[1]) {
+      case 'amount_no_decimals': value = withDelimiters(cents, 0); break;
+      case 'amount_with_comma_separator': value = withDelimiters(cents, 2, '.', ','); break;
+      case 'amount_no_decimals_with_comma_separator': value = withDelimiters(cents, 0, '.', ','); break;
+      case 'amount_with_apostrophe_separator': value = withDelimiters(cents, 2, "'", '.'); break;
+      case 'amount_no_decimals_with_space_separator': value = withDelimiters(cents, 0, ' ', '.'); break;
+      case 'amount_with_space_separator': value = withDelimiters(cents, 2, ' ', ','); break;
+      default: value = withDelimiters(cents, 2);
+    }
+    return format.replace(match[0], value);
+  }
+
+  // ---------- URL helpers ----------
+  function getVariantFromUrl() {
+    const id = new URLSearchParams(window.location.search).get('variant');
+    if (!id) return null;
+    return variants.find(function (v) { return String(v.id) === String(id); }) || null;
+  }
+
+  function selectRadiosFor(variant) {
+    optionNames.forEach(function (name, i) {
+      const radios = section.querySelectorAll('input[type="radio"][name="' + name + '"]');
+      const target = Array.prototype.find.call(radios, function (r) {
+        return r.value === variant.options[i];
+      });
+      if (target && !target.checked) target.checked = true;
+    });
+  }
+
+  // ---------- Variant lookup ----------
+  function getSelectedVariant() {
+    const selected = optionNames.map(function (name) {
+      const radio = section.querySelector('input[type="radio"][name="' + name + '"]:checked');
+      if (radio) return radio.value;
+      const select = section.querySelector('select[name="' + name + '"]');
+      return select ? select.value : null;
+    });
+
+    if (selected.every(Boolean)) {
+      const match = variants.find(function (v) {
+        return v.options.every(function (opt, i) { return opt === selected[i]; });
+      });
+      if (match) return match;
+    }
+
+    // Fallbacks: URL variant, form id field, first available, first variant
+    const urlVariant = getVariantFromUrl();
+    if (urlVariant) return urlVariant;
+
+    const idInput = section.querySelector('[name="id"]');
+    const found = idInput && variants.find(function (v) { return String(v.id) === String(idInput.value); });
+    return found || variants.find(function (v) { return v.available; }) || variants[0];
+  }
+
+  // ---------- Sticky card (optional, uses data attributes) ----------
+  function updateStickyCards(variant, discountedPrice, hasDiscount) {
+    document.querySelectorAll('[data-sticky-product][data-product-id="{{ product.id }}"]').forEach(function (card) {
+      card.querySelectorAll('[data-sticky-price]').forEach(function (el) {
+        el.textContent = formatPrice(discountedPrice);
+      });
+
+      card.querySelectorAll('[data-sticky-compare-price]').forEach(function (el) {
+        if (hasDiscount) {
+          el.textContent = formatPrice(variant.price);
+          el.style.display = '';
+        } else {
+          el.style.display = 'none';
+        }
+      });
+
+      card.querySelectorAll('input[name="id"]').forEach(function (input) {
+        input.value = variant.id;
+      });
+
+      const btn = card.querySelector('[data-sticky-atc]');
+      if (btn) {
+        btn.disabled = !variant.available;
+        const textEl = btn.querySelector('[data-sticky-atc-text]');
+        if (textEl) {
+          textEl.textContent = variant.available ? 'Add to cart  -  ' + formatPrice(discountedPrice) : 'Sold Out';
+        }
+      }
+    });
+  }
+
+  // ---------- Main update ----------
+  function updateVariantPrice() {
+    const variant = getSelectedVariant();
+    if (!variant) return;
+
+    const variantDiscount = Number(variantDiscounts[String(variant.id)] || 0);
+    const discount = variantDiscount > 0 ? variantDiscount : productDiscount;
+    const hasDiscount = discount > 0 && !isRestoreGel;
+    const discountedPrice = hasDiscount
+      ? Math.round(variant.price * (1 - discount / 100))
+      : variant.price;
+
+    // 1) Price block
+    const priceContainer = section.querySelector('.product-single__prices');
+    if (priceContainer) {
+      priceContainer.querySelectorAll('.discounted-price.atc_variant_price').forEach(function (el) {
+        el.textContent = formatPrice(discountedPrice);
+      });
+
+      priceContainer.querySelectorAll('.slashed-price.atc_variant_price').forEach(function (el) {
+        if (hasDiscount) {
+          el.textContent = formatPrice(variant.price);
+          el.style.display = '';
+        } else {
+          el.style.display = 'none';
+        }
+      });
+    }
+
+    // 2) Discount label
+    const label = section.querySelector('.dynamic-discount-label');
+    if (label) {
+      label.textContent = discount + '% OFF';
+      label.style.display = discount > 0 ? 'inline-block' : 'none';
+    }
+
+    // 3) Price inside the add to cart button (only the price span, label text is left alone)
+    const btn = section.querySelector('button[name="add"]');
+    if (btn) {
+      btn.disabled = !variant.available;
+      const btnPrice = btn.querySelector('.discounted-price.atc_variant_price');
+      if (btnPrice) btnPrice.textContent = formatPrice(discountedPrice);
+    }
+
+    // 4) Sticky card on the right
+    updateStickyCards(variant, discountedPrice, hasDiscount);
+  }
+
+  function runUpdates() {
+    updateVariantPrice();
+    setTimeout(updateVariantPrice, 200);
+    setTimeout(updateVariantPrice, 500); // after the theme's own variant JS
+  }
+
+  // ---------- Events ----------
+  section.addEventListener('change', function (e) {
+    if (e.target.matches('select, input[type="radio"], input[name="id"]')) {
+      runUpdates();
+    }
+  });
+
+  window.addEventListener('popstate', function () {
+    const urlVariant = getVariantFromUrl();
+    if (urlVariant) selectRadiosFor(urlVariant);
+    runUpdates();
+  });
+
+  // ---------- Init ----------
+  function init() {
+    const urlVariant = getVariantFromUrl();
+    if (urlVariant) selectRadiosFor(urlVariant); // radios must match the URL before we read them
+    runUpdates();
+  }
+
+  if (document.readyState === 'complete') {
+    setTimeout(init, 300);
+  } else {
+    window.addEventListener('load', function () { setTimeout(init, 300); });
+  }
 })();
 </script>
