@@ -945,7 +945,7 @@ Changes:
     }
   });
 
-  window.addEventListener('popstate', function () { setTimeout(updateVariantPrice, 1000); });
-  updateVariantPrice();
+  window.addEventListener('popstate', function () { setTimeout(updateVariantPrice, 100); });
+  setTimeout(updateVariantPrice, 300);
 })();
 </script>
