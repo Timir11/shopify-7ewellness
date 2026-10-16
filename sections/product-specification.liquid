@@ -2012,12 +2012,19 @@ $(document).ready(function () {
       btn.disabled = !variant.available;
 
       const addtocartText = btn.querySelector("span['data-add-to-cart-text']");
-      {% comment %} const text = theme.Currency.formatMoney(discountedPrice); {% endcomment %}
+      const text = theme.Currency.formatMoney(discountedPrice);
 
-      const text = variant.available
-        ? 'Add to Cart  -  ' + theme.Currency.formatMoney(discountedPrice)
-        : 'Sold Out  -  ' + theme.Currency.formatMoney(discountedPrice);
+      const atcText = variant.available
+        ? 'Add to Cart'
+        : 'Sold Out';
       // Prefer a dedicated text element so icons/spinners inside the button survive
+
+      if (addtocartText) {
+        addtocartText.textContent = atcText;
+      } else {
+        addtocartText.textContent = atcText;
+      }
+
       const textEl =
         btn.querySelector('.atc_variant_price');
 
