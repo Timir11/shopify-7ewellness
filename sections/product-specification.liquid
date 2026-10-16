@@ -1923,7 +1923,6 @@ $(document).ready(function () {
 
 <script>
 (function () {
-  debugger;
   const section = document.getElementsByClassName('top-sticky-block');
   if (!section) return;
 
@@ -2023,6 +2022,7 @@ $(document).ready(function () {
 
   // Listen on the whole section so events from inputs outside the <form> are caught
   section.addEventListener('change', function (e) {
+    debugger
     if (e.target.matches('select, input[type="radio"], input[name="id"]')) {
       setTimeout(updateVariantPrice, 100);
     }
