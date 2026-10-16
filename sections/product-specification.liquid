@@ -1927,7 +1927,7 @@ $(document).ready(function () {
   const section = document.getElementById('ProductSection-{{ product.id }}');
   if (!section) return;
 
-  const productSection = document.getElementsByClassName('top-sticky-block');
+  const productSection = document.querySelector('.top-sticky-block');
   if (!productSection) return;
 
   const variants = {{ product.variants | json }};
