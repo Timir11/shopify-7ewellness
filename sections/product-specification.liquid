@@ -2011,7 +2011,7 @@ $(document).ready(function () {
     if (btn) {
       btn.disabled = !variant.available;
 
-      const addtocartText = btn.querySelector("span['data-add-to-cart-text']");
+      const addtocartText = btn.find("span['data-add-to-cart-text']");
       const text = theme.Currency.formatMoney(discountedPrice);
 
       const atcText = variant.available
