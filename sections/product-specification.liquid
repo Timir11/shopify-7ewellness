@@ -1924,7 +1924,7 @@ $(document).ready(function () {
 <script>
 (function () {
   debugger
-  const section = document.getElementsByClassName('ProductSection-{{ product.id }}');
+  const section = document.getElementById('ProductSection-{{ product.id }}');
   if (!section) return;
 
   const productSection = document.getElementsByClassName('top-sticky-block');
