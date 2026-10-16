@@ -1920,3 +1920,115 @@ $(document).ready(function () {
 });
 
 </script>
+
+<script>
+(function () {
+  debugger;
+  const section = document.getElementByClassName('top-sticky-block');
+  if (!section) return;
+
+  const variants = {{ product.variants | json }};
+  const optionNames = {{ product.options | json }};
+  const productDiscount = {{ product.metafields.custom.discount_percentage | default: 0 | plus: 0 }};
+  const isRestoreGel = {{ product.handle | json }} === 'restore-gel';
+
+  const variantDiscounts = {
+    {% for variant in product.variants %}
+      "{{ variant.id }}": {{ variant.metafields.custom.discount_percentage | default: 0 | plus: 0 }}{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  };
+
+  function formatPrice(cents) {
+    if (window.Shopify && typeof Shopify.formatMoney === 'function') {
+      return Shopify.formatMoney(cents, Shopify.money_format);
+    }
+    return (cents / 100).toFixed(2);
+  }
+
+  function getSelectedVariant() {
+    // Collect checked radios / selects for each option (search the whole section, not just the form)
+    const selected = optionNames.map(function (name) {
+      const radio = section.querySelector('input[type="radio"][name="' + name + '"]:checked');
+      if (radio) return radio.value;
+      const select = section.querySelector('select[name="' + name + '"]');
+      return select ? select.value : null;
+    });
+
+    if (selected.every(Boolean)) {
+      const match = variants.find(function (v) {
+        return v.options.every(function (opt, i) { return opt === selected[i]; });
+      });
+      if (match) return match;
+    }
+
+    // Fallback: variant ID from URL or the form's id field
+    const urlId = new URLSearchParams(window.location.search).get('variant');
+    const idInput = section.querySelector('[name="id"]');
+    const id = urlId || (idInput && idInput.value);
+    return variants.find(function (v) { return String(v.id) === String(id); });
+  }
+
+  function updateVariantPrice() {
+    const variant = getSelectedVariant();
+    if (!variant) return;
+
+    const variantDiscount = Number(variantDiscounts[String(variant.id)] || 0);
+    const discount = variantDiscount > 0 ? variantDiscount : productDiscount;
+    const hasDiscount = discount > 0 && !isRestoreGel;
+    const discountedPrice = hasDiscount
+      ? Math.round(variant.price * (1 - discount / 100))
+      : variant.price;
+
+    const priceContainer = section.querySelector('.product-single__prices');
+    if (!priceContainer) return;
+
+    priceContainer.querySelectorAll('.discounted-price.atc_variant_price').forEach(function (el) {
+      el.textContent = theme.Currency.formatMoney(discountedPrice);
+    });
+
+    priceContainer.querySelectorAll('.slashed-price.atc_variant_price').forEach(function (el) {
+      if (hasDiscount) {
+        el.textContent = theme.Currency.formatMoney(variant.price);
+        el.style.display = '';
+      } else {
+        el.style.display = 'none';
+      }
+    });
+
+    const label = section.querySelector('.dynamic-discount-label');
+    if (label) {
+      label.textContent = discount + '% OFF';
+      label.style.display = discount > 0 ? 'inline-block' : 'none';
+    }
+
+    const btn =
+      section.querySelector('button[name="add"]');
+
+    if (btn) {
+      btn.disabled = !variant.available;
+
+      const text = theme.Currency.formatMoney(discountedPrice);
+
+      // Prefer a dedicated text element so icons/spinners inside the button survive
+      const textEl =
+        btn.querySelector('.discounted-price.atc_variant_price');
+
+      if (textEl) {
+        textEl.textContent = text;
+      } else {
+        btn.textContent = text;
+      }
+    }
+  }
+
+  // Listen on the whole section so events from inputs outside the <form> are caught
+  section.addEventListener('change', function (e) {
+    if (e.target.matches('select, input[type="radio"], input[name="id"]')) {
+      setTimeout(updateVariantPrice, 100);
+    }
+  });
+
+  window.addEventListener('popstate', function () { setTimeout(updateVariantPrice, 100); });
+  updateVariantPrice();
+})();
+</script>
