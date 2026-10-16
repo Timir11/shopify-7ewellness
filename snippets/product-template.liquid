@@ -940,11 +940,11 @@ Changes:
   // Listen on the whole section so events from inputs outside the <form> are caught
   section.addEventListener('change', function (e) {
     if (e.target.matches('select, input[type="radio"], input[name="id"]')) {
-      setTimeout(updateVariantPrice, 100);
+      setTimeout(updateVariantPrice, 200);
     }
   });
 
-  window.addEventListener('popstate', function () { setTimeout(updateVariantPrice, 100); });
+  window.addEventListener('popstate', function () { setTimeout(updateVariantPrice, 200); });
   updateVariantPrice();
 })();
 </script>
