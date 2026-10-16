@@ -2011,8 +2011,12 @@ $(document).ready(function () {
     if (btn) {
       btn.disabled = !variant.available;
 
-      const text = theme.Currency.formatMoney(discountedPrice);
+      const addtocartText = btn.querySelector("span['data-add-to-cart-text']");
+      {% comment %} const text = theme.Currency.formatMoney(discountedPrice); {% endcomment %}
 
+      const text = variant.available
+        ? 'Add to Cart  -  ' + theme.Currency.formatMoney(discountedPrice)
+        : 'Sold Out  -  ' + theme.Currency.formatMoney(discountedPrice);
       // Prefer a dedicated text element so icons/spinners inside the button survive
       const textEl =
         btn.querySelector('.atc_variant_price');
