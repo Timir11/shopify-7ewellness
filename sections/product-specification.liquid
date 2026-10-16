@@ -1923,8 +1923,11 @@ $(document).ready(function () {
 
 <script>
 (function () {
-  const section = document.getElementsByClassName('top-sticky-block');
+  const section = document.getElementById('ProductSection-{{ section_id }}');
   if (!section) return;
+
+  const productSection = document.getElementsByClassName('top-sticky-block');
+  if (!productSection) return;
 
   const variants = {{ product.variants | json }};
   const optionNames = {{ product.options | json }};
@@ -1978,14 +1981,14 @@ $(document).ready(function () {
       ? Math.round(variant.price * (1 - discount / 100))
       : variant.price;
 
-    const priceContainer = section.querySelector('.product-single__prices');
+    const priceContainer = productSection.querySelector('.product-single__prices');
     if (!priceContainer) return;
 
-    priceContainer.querySelectorAll('.discounted-price.atc_variant_price').forEach(function (el) {
+    priceContainer.querySelectorAll('.product__price').forEach(function (el) {
       el.textContent = theme.Currency.formatMoney(discountedPrice);
     });
 
-    priceContainer.querySelectorAll('.slashed-price.atc_variant_price').forEach(function (el) {
+    priceContainer.querySelectorAll('.atc_variant_price').forEach(function (el) {
       if (hasDiscount) {
         el.textContent = theme.Currency.formatMoney(variant.price);
         el.style.display = '';
@@ -2010,7 +2013,7 @@ $(document).ready(function () {
 
       // Prefer a dedicated text element so icons/spinners inside the button survive
       const textEl =
-        btn.querySelector('.discounted-price.atc_variant_price');
+        btn.querySelector('.atc_variant_price');
 
       if (textEl) {
         textEl.textContent = text;
@@ -2022,7 +2025,6 @@ $(document).ready(function () {
 
   // Listen on the whole section so events from inputs outside the <form> are caught
   section.addEventListener('change', function (e) {
-    debugger
     if (e.target.matches('select, input[type="radio"], input[name="id"]')) {
       setTimeout(updateVariantPrice, 100);
     }
